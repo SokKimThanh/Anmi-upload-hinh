@@ -1,198 +1,249 @@
-# 15-Day Learning Plan: Build a WordPress Download Center
+Kế hoạch học tập 15 ngày: Xây dựng Trung tâm Tải tài liệu trên WordPress
+========================================================================
 
-## Introduction  
-This document guides you step by step from basic concepts to an advanced, production-ready Download Center in WordPress. Over 15 days, you’ll cover theory, hands-on exercises, and focused tasks to absorb each topic effectively.
+Giới thiệu
+----------
 
----
+Tài liệu này hướng dẫn bạn từng bước từ khái niệm cơ bản đến triển khai một Download Center sẵn sàng vận hành trên WordPress. Trong 15 ngày, bạn sẽ cân bằng giữa lý thuyết và thực hành, với mỗi buổi chỉ tập trung vào một chủ đề cụ thể để đảm bảo tiếp thu hiệu quả.
 
-## Prerequisites  
-- A local or remote WordPress installation (latest version)  
-- Administrator access to the WP dashboard and server (FTP or SSH)  
-- Basic knowledge of PHP, HTML, CSS  
-- A code editor (VS Code, PhpStorm, etc.)  
-- Familiarity with Git (optional but recommended)  
+Điều kiện tiên quyết
+--------------------
 
----
+-   Đã cài đặt WordPress (bản mới nhất) trên máy chủ hoặc môi trường local.
 
-## Plan Overview  
-Each day is split into two parts:  
-1. Theory & Concepts  
-2. Practice Exercise  
+-   Quyền quản trị đầy đủ (Dashboard, FTP/SSH).
 
-Allocate 1–2 hours per day and limit scope to fully absorb the material before moving on.
+-   Hiểu biết cơ bản về PHP, HTML, CSS.
 
----
+-   Trình soạn thảo mã (VS Code, PhpStorm...) và Git (khuyến khích).
 
-## Daily Schedule
+Tổng quan kế hoạch
+------------------
 
-### Day 1: WordPress Fundamentals  
-Theory & Concepts  
-- CMS architecture: themes, plugins, hooks, template hierarchy  
-- How WP handles content and URLs  
+Mỗi ngày chia làm hai phần:
 
-Practice Exercise  
-1. Install WP locally (e.g., Local by Flywheel or XAMPP)  
-2. Explore core folders: wp-content, wp-includes, wp-admin  
+1.  Lý thuyết & khái niệm
 
----
+2.  Bài tập thực hành
 
-### Day 2: Child Themes & Customization  
-Theory & Concepts  
-- Child theme purpose and structure  
-- Enqueuing styles and scripts  
+Dành 1--2 giờ mỗi ngày và giữ phạm vi nhỏ để nắm vững trước khi chuyển sang chủ đề tiếp theo.
 
-Practice Exercise  
-1. Create a child theme of Twenty Twenty-Three  
-2. Enqueue a custom stylesheet and JS file  
+Lịch trình chi tiết
+-------------------
 
----
+### Ngày 1: Cơ bản về WordPress
 
-### Day 3: Custom Post Types & Taxonomies  
-Theory & Concepts  
-- register_post_type() and register_taxonomy() functions  
-- When to use CPT vs. categories/tags  
+Lý thuyết
 
-Practice Exercise  
-1. Register a “Download” CPT  
-2. Create taxonomies “Document Type” and “Topic”  
+-   Kiến trúc CMS: theme, plugin, hook, template hierarchy
 
----
+-   Cách WordPress xử lý nội dung và URL
 
-### Day 4: Advanced Custom Fields (ACF)  
-Theory & Concepts  
-- ACF plugin overview and field groups  
-- Field types for file uploads, selects, text  
+Thực hành
 
-Practice Exercise  
-1. Install and activate ACF  
-2. Add file, text, and select fields to the Download CPT  
+1.  Cài WordPress local (Local by Flywheel, XAMPP...).
 
----
+2.  Khám phá thư mục wp-content, wp-includes, wp-admin.
 
-### Day 5: Media Library & File Management  
-Theory & Concepts  
-- WP Media Library vs. direct uploads via FTP  
-- File URL structure and mime types  
+### Ngày 2: Child Theme & Tùy chỉnh
 
-Practice Exercise  
-1. Upload a PDF and image via Media Library  
-2. Link the media item to a Download post  
+Lý thuyết
 
----
+-   Mục đích và cấu trúc child theme
 
-### Day 6: Plugin-Based Download Center Exploration  
-Theory & Concepts  
-- Pros and cons of using a dedicated plugin  
-- Overview: Download Monitor, WP File Download, Easy Digital Downloads  
+-   Đăng ký và enqueue file CSS/JS
 
-Practice Exercise  
-1. Install Download Monitor plugin  
-2. Create a sample download entry and test basic download link  
+Thực hành
 
----
+1.  Tạo child theme của Twenty Twenty-Three.
 
-### Day 7: Customizing Download Monitor  
-Theory & Concepts  
-- Shortcodes, templates, and hooks provided by the plugin  
-- Tracking and limiting downloads  
+2.  Enqueue stylesheet và script tùy chỉnh.
 
-Practice Exercise  
-1. Display download list via shortcode on a page  
-2. Enable and view download statistics  
+### Ngày 3: Custom Post Type & Taxonomy
 
----
+Lý thuyết
 
-### Day 8: Coding a Manual CPT Download Center  
-Theory & Concepts  
-- Why build custom vs. plugin approach  
-- Key functions: add_meta_box(), save_post(), wp_nonce_field()  
+-   Hàm register_post_type() và register_taxonomy()
 
-Practice Exercise  
-1. Add a meta box for file URL input in Download CPT  
-2. Save and retrieve the file URL on the front end  
+-   Khi nào nên dùng CPT thay vì category/tag
 
----
+Thực hành
 
-### Day 9: Metadata & File Attachments  
-Theory & Concepts  
-- wp_handle_upload() function  
-- Storing attachment IDs vs. raw URLs  
+1.  Đăng ký CPT "Download".
 
-Practice Exercise  
-1. Create a form to upload files directly in the WP admin  
-2. Validate, save, and attach the file to the Download post  
+2.  Tạo taxonomy "Loại tài liệu" và "Chủ đề".
 
----
+### Ngày 4: Advanced Custom Fields (ACF)
 
-### Day 10: Front-End Templates & Listings  
-Theory & Concepts  
-- WP Query basics for CPT loops  
-- Template hierarchy for archive-download.php  
+Lý thuyết
 
-Practice Exercise  
-1. Build an archive template listing all downloads  
-2. Include title, excerpt, download button  
+-   Giới thiệu plugin ACF và các nhóm trường (Field Group)
 
----
+-   Loại trường phù hợp cho file, lựa chọn, văn bản
 
-### Day 11: Filtering & Search  
-Theory & Concepts  
-- Custom query parameters and tax_query  
-- Integrating WP Search or FacetWP  
+Thực hành
 
-Practice Exercise  
-1. Add dropdown filters by “Document Type” and “Topic”  
-2. Implement AJAX search for downloads  
+1.  Cài và kích hoạt ACF.
 
----
+2.  Thêm nhóm trường chứa file, text, select cho CPT Download.
 
-### Day 12: Permissions & Access Control  
-Theory & Concepts  
-- current_user_can() and custom capabilities  
-- Restricting content based on roles  
+### Ngày 5: Thư viện Phương tiện & Quản lý tệp
 
-Practice Exercise  
-1. Allow only logged-in users to download  
-2. Create a new role “Subscriber” with download privileges  
+Lý thuyết
 
----
+-   So sánh Media Library và upload thủ công qua FTP
 
-### Day 13: Security & Performance  
-Theory & Concepts  
-- Nonces, sanitization, and capability checks  
-- Caching strategies for query results  
+-   Cấu trúc URL và mime type
 
-Practice Exercise  
-1. Add nonce checks to file download handler  
-2. Cache download listings with transient API  
+Thực hành
 
----
+1.  Upload PDF và hình ảnh qua Media Library.
 
-### Day 14: UX, Styling & Responsiveness  
-Theory & Concepts  
-- Mobile-first design principles  
-- Accessible buttons and ARIA labels  
+2.  Gắn kết tệp vào bài Download.
 
-Practice Exercise  
-1. Style the Download Center page with CSS or a front-end framework  
-2. Test on mobile viewport and adjust as needed  
+### Ngày 6: Khám phá plugin Download Center
 
----
+Lý thuyết
 
-### Day 15: Testing, Deployment & Documentation  
-Theory & Concepts  
-- Cross-browser testing, backups, and migration  
-- Creating user documentation and changelogs  
+-   Ưu/nhược điểm của plugin chuyên dụng
 
-Practice Exercise  
-1. Test all download links, filters, and permissions  
-2. Write a README.md summarizing setup, features, and maintenance  
+-   Tổng quan Download Monitor, WP File Download, Easy Digital Downloads
 
----
+Thực hành
 
-## Next Steps  
-- Explore integration with email workflows (notify on new downloads)  
-- Advanced: implement paid downloads via Easy Digital Downloads  
-- Gather user feedback and iterate on UI/UX  
+1.  Cài plugin Download Monitor.
 
-Save this file as `download-center-plan.md` and follow each day’s steps to build a robust, user-friendly Download Center in WordPress. Good luck!  
+2.  Tạo mục tải mẫu và kiểm thử liên kết download.
+
+### Ngày 7: Tùy chỉnh Download Monitor
+
+Lý thuyết
+
+-   Shortcode, template override, hook của plugin
+
+-   Theo dõi và giới hạn lượt tải
+
+Thực hành
+
+1.  Hiển thị danh sách download qua shortcode.
+
+2.  Kích hoạt và xem thống kê download.
+
+### Ngày 8: Xây dựng Download Center thủ công
+
+Lý thuyết
+
+-   So sánh cách tự code và plugin
+
+-   Các hàm add_meta_box(), save_post(), wp_nonce_field()
+
+Thực hành
+
+1.  Thêm meta box nhập URL tệp cho CPT Download.
+
+2.  Lưu và hiển thị URL trên front-end.
+
+### Ngày 9: Metadata & File Attachment
+
+Lý thuyết
+
+-   Hàm wp_handle_upload()
+
+-   Lưu ID attachment so với URL thô
+
+Thực hành
+
+1.  Tạo form upload file trong admin.
+
+2.  Validate, lưu và attach file vào bài Download.
+
+### Ngày 10: Template & Danh sách hiển thị
+
+Lý thuyết
+
+-   WP_Query cho CPT loop
+
+-   Tên file template archive-download.php
+
+Thực hành
+
+1.  Xây dựng template archive hiển thị tất cả download.
+
+2.  Hiển thị tiêu đề, mô tả ngắn và nút download.
+
+### Ngày 11: Bộ lọc & Tìm kiếm
+
+Lý thuyết
+
+-   Tham số tax_query, meta_query
+
+-   Tích hợp AJAX search hoặc FacetWP
+
+Thực hành
+
+1.  Thêm dropdown lọc theo "Loại tài liệu" và "Chủ đề".
+
+2.  Xây dựng tìm kiếm AJAX cho downloads.
+
+### Ngày 12: Phân quyền & Kiểm soát truy cập
+
+Lý thuyết
+
+-   current_user_can(), custom capability
+
+-   Chặn tải theo vai trò
+
+Thực hành
+
+1.  Chỉ cho phép user đã đăng nhập tải tài liệu.
+
+2.  Tạo role "Subscriber" với quyền download.
+
+### Ngày 13: Bảo mật & Hiệu suất
+
+Lý thuyết
+
+-   Nonce, sanitization, capability check
+
+-   Caching kết quả bằng Transients API
+
+Thực hành
+
+1.  Bổ sung nonce cho handler download.
+
+2.  Cache danh sách downloads với transient.
+
+### Ngày 14: UX, Styling & Responsive
+
+Lý thuyết
+
+-   Thiết kế mobile-first
+
+-   Accessibility: ARIA labels, button rõ ràng
+
+Thực hành
+
+1.  Tùy chỉnh giao diện Download Center với CSS hoặc framework.
+
+2.  Kiểm thử trên thiết bị di động và điều chỉnh.
+
+### Ngày 15: Kiểm thử, Triển khai & Tài liệu
+
+Lý thuyết
+
+-   Cross-browser test, backup, migration
+
+-   Viết hướng dẫn sử dụng và changelog
+
+Thực hành
+
+1.  Chạy thử toàn bộ chức năng và kiểm tra phân quyền.
+
+2.  Viết README.md tóm tắt cách cài đặt, tính năng và bảo trì.
+
+Các bước kế tiếp
+----------------
+
+-   Tích hợp thông báo email khi có download mới.
+
+-   Triển khai tính năng download trả phí với Easy Digital Downloads.
