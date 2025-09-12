@@ -1,5 +1,15 @@
 Kế hoạch học tập 15 ngày: Xây dựng Trung tâm Tải tài liệu trên WordPress
 ========================================================================
+gantt
+  title Thời khóa biểu hàng ngày – 15 ngày
+  dateFormat  HH:mm
+  axisFormat  %H:%M
+  section Buổi sáng
+  Biên tập & upload hình ảnh        :img,     08:00, 4h
+  Nghỉ trưa                        :break,   12:00, 1h
+  section Buổi chiều
+  Làm đồ án                        :project, 13:00, 2h
+  Học WordPress (Download Center)  :learn,   15:00, 2h
 
 Giới thiệu
 ----------
