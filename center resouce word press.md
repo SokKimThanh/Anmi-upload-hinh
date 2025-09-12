@@ -46,215 +46,215 @@ Dành 1--2 giờ mỗi ngày và giữ phạm vi nhỏ để nắm vững trư�
 Lịch trình chi tiết
 -------------------
 
-### Ngày 1: Cơ bản về WordPress
+### Ngày 1: Khởi tạo và Khám phá WordPress
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Kiến trúc CMS: theme, plugin, hook, template hierarchy
+-   Hướng dẫn cài đặt WordPress (wordpress.org/install/)
 
--   Cách WordPress xử lý nội dung và URL
+-   Bài viết "File and Directory Structure" trên WPBeginner
 
-Thực hành
+Thực hành (2h)
 
-1.  Cài WordPress local (Local by Flywheel, XAMPP...).
+-   Cài đặt WordPress trên Local by Flywheel hoặc XAMPP
 
-2.  Khám phá thư mục wp-content, wp-includes, wp-admin.
+-   Khám phá thư mục wp-content, wp-includes, wp-admin
 
-### Ngày 2: Child Theme & Tùy chỉnh
+### Ngày 2: Child Theme & Enqueue Scripts
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Mục đích và cấu trúc child theme
+-   Codex: "Child Themes" (developer.wordpress.org/themes/advanced-topics/child-themes/)
 
--   Đăng ký và enqueue file CSS/JS
+-   Hướng dẫn enqueue styles & scripts (developer.wordpress.org/themes/basics/including-css-javascript/)
 
-Thực hành
+Thực hành (2h)
 
-1.  Tạo child theme của Twenty Twenty-Three.
+-   Tạo child theme từ Twenty Twenty-Three
 
-2.  Enqueue stylesheet và script tùy chỉnh.
+-   Enqueue custom.css và custom.js
 
 ### Ngày 3: Custom Post Type & Taxonomy
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Hàm register_post_type() và register_taxonomy()
+-   Codex: register_post_type() (developer.wordpress.org/reference/functions/register_post_type/)
 
--   Khi nào nên dùng CPT thay vì category/tag
+-   Bài hướng dẫn taxonomy (WPBeginner: "Custom Taxonomies")
 
-Thực hành
+Thực hành (2h)
 
-1.  Đăng ký CPT "Download".
+-   Đăng ký CPT "Download"
 
-2.  Tạo taxonomy "Loại tài liệu" và "Chủ đề".
+-   Tạo taxonomy "Loại tài liệu" và "Chủ đề"
 
 ### Ngày 4: Advanced Custom Fields (ACF)
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Giới thiệu plugin ACF và các nhóm trường (Field Group)
+-   Trang chính ACF (www.advancedcustomfields.com/)
 
--   Loại trường phù hợp cho file, lựa chọn, văn bản
+-   Hướng dẫn tạo Field Group và Field Types
 
-Thực hành
+Thực hành (2h)
 
-1.  Cài và kích hoạt ACF.
+-   Cài và kích hoạt plugin ACF
 
-2.  Thêm nhóm trường chứa file, text, select cho CPT Download.
+-   Tạo nhóm trường chứa file upload, select, text cho CPT Download
 
-### Ngày 5: Thư viện Phương tiện & Quản lý tệp
+### Ngày 5: Media Library & Quản lý tệp
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   So sánh Media Library và upload thủ công qua FTP
+-   Codex: "Media Library" (developer.wordpress.org/themes/functionality/media-handling/)
 
--   Cấu trúc URL và mime type
+-   Bài WPBeginner: "WordPress Media Library Guide"
 
-Thực hành
+Thực hành (2h)
 
-1.  Upload PDF và hình ảnh qua Media Library.
+-   Upload một PDF và hình ảnh qua Media Library
 
-2.  Gắn kết tệp vào bài Download.
+-   Gắn media vào bài "Download" qua ACF field
 
-### Ngày 6: Khám phá plugin Download Center
+### Ngày 6: Giới thiệu Download Monitor
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Ưu/nhược điểm của plugin chuyên dụng
+-   Trang plugin Download Monitor (wordpress.org/plugins/download-monitor/)
 
--   Tổng quan Download Monitor, WP File Download, Easy Digital Downloads
+-   Hướng dẫn cơ bản trên Docs của Download Monitor
 
-Thực hành
+Thực hành (2h)
 
-1.  Cài plugin Download Monitor.
+-   Cài và kích hoạt Download Monitor
 
-2.  Tạo mục tải mẫu và kiểm thử liên kết download.
+-   Tạo một mục download mẫu và kiểm thử link
 
 ### Ngày 7: Tùy chỉnh Download Monitor
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Shortcode, template override, hook của plugin
+-   Shortcodes & Hooks (Docs Download Monitor)
 
--   Theo dõi và giới hạn lượt tải
+-   Bài viết "Tracking Downloads with Download Monitor"
 
-Thực hành
+Thực hành (2h)
 
-1.  Hiển thị danh sách download qua shortcode.
+-   Hiển thị danh sách download qua shortcode trên trang riêng
 
-2.  Kích hoạt và xem thống kê download.
+-   Bật thống kê lượt tải và xem dashboard
 
-### Ngày 8: Xây dựng Download Center thủ công
+### Ngày 8: Meta Box & Nonce
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   So sánh cách tự code và plugin
+-   Codex: add_meta_box(), save_post(), wp_nonce_field()
 
--   Các hàm add_meta_box(), save_post(), wp_nonce_field()
+-   Bài hướng dẫn "Secure Custom Meta Boxes"
 
-Thực hành
+Thực hành (2h)
 
-1.  Thêm meta box nhập URL tệp cho CPT Download.
+-   Thêm meta box nhập URL tệp cho CPT Download
 
-2.  Lưu và hiển thị URL trên front-end.
+-   Thêm nonce kiểm chứng và lưu dữ liệu
 
-### Ngày 9: Metadata & File Attachment
+### Ngày 9: Upload File Thủ Công
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Hàm wp_handle_upload()
+-   Codex: wp_handle_upload() (developer.wordpress.org/reference/functions/wp_handle_upload/)
 
--   Lưu ID attachment so với URL thô
+-   Bài viết "Custom File Upload in WordPress"
 
-Thực hành
+Thực hành (2h)
 
-1.  Tạo form upload file trong admin.
+-   Tạo form upload file trong admin area
 
-2.  Validate, lưu và attach file vào bài Download.
+-   Validate, lưu và attach file vào Download post
 
-### Ngày 10: Template & Danh sách hiển thị
+### Ngày 10: Template & Archive
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   WP_Query cho CPT loop
+-   Codex: Template Hierarchy (developer.wordpress.org/themes/basics/template-hierarchy/)
 
--   Tên file template archive-download.php
+-   Hướng dẫn WP_Query Basics
 
-Thực hành
+Thực hành (2h)
 
-1.  Xây dựng template archive hiển thị tất cả download.
+-   Tạo file archive-download.php
 
-2.  Hiển thị tiêu đề, mô tả ngắn và nút download.
+-   Hiển thị loop các download với nút download
 
-### Ngày 11: Bộ lọc & Tìm kiếm
+### Ngày 11: Bộ lọc & Tìm kiếm AJAX
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Tham số tax_query, meta_query
+-   Bài viết "Custom WordPress Queries with tax_query"
 
--   Tích hợp AJAX search hoặc FacetWP
+-   Hướng dẫn AJAX trong WordPress (developer.wordpress.org/plugins/javascript/ajax/)
 
-Thực hành
+Thực hành (2h)
 
-1.  Thêm dropdown lọc theo "Loại tài liệu" và "Chủ đề".
+-   Thêm dropdown lọc theo taxonomy
 
-2.  Xây dựng tìm kiếm AJAX cho downloads.
+-   Tạo AJAX request để lọc danh sách
 
 ### Ngày 12: Phân quyền & Kiểm soát truy cập
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   current_user_can(), custom capability
+-   Codex: current_user_can() & Roles (developer.wordpress.org/plugins/users/roles-and-capabilities/)
 
--   Chặn tải theo vai trò
+-   Bài viết "Restrict Content in WordPress"
 
-Thực hành
+Thực hành (2h)
 
-1.  Chỉ cho phép user đã đăng nhập tải tài liệu.
+-   Chỉ cho user đã đăng nhập tải tài liệu
 
-2.  Tạo role "Subscriber" với quyền download.
+-   Tạo role "Subscriber" và gán capability download
 
-### Ngày 13: Bảo mật & Hiệu suất
+### Ngày 13: Bảo mật & Caching
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Nonce, sanitization, capability check
+-   Codex: Data Validation & Sanitization (developer.wordpress.org/plugins/security/data-validation-sanitization/)
 
--   Caching kết quả bằng Transients API
+-   Hướng dẫn Transients API
 
-Thực hành
+Thực hành (2h)
 
-1.  Bổ sung nonce cho handler download.
+-   Thêm nonce & sanitize trước khi xuất file
 
-2.  Cache danh sách downloads với transient.
+-   Cache danh sách download qua set_transient()/get_transient()
 
 ### Ngày 14: UX, Styling & Responsive
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Thiết kế mobile-first
+-   Bài viết "Mobile-First Design Principles"
 
--   Accessibility: ARIA labels, button rõ ràng
+-   Hướng dẫn ARIA labels trong HTML
 
-Thực hành
+Thực hành (2h)
 
-1.  Tùy chỉnh giao diện Download Center với CSS hoặc framework.
+-   Style Download Center bằng CSS hoặc framework (Bootstrap/Tailwind)
 
-2.  Kiểm thử trên thiết bị di động và điều chỉnh.
+-   Test giao diện trên mobile và chỉnh sửa
 
-### Ngày 15: Kiểm thử, Triển khai & Tài liệu
+### Ngày 15: Test, Triển khai & Documentation
 
-Lý thuyết
+Tài liệu đọc (2h)
 
--   Cross-browser test, backup, migration
+-   Bài viết "WordPress Deployment Best Practices"
 
--   Viết hướng dẫn sử dụng và changelog
+-   Hướng dẫn viết README cho dự án Open Source
 
-Thực hành
+Thực hành (2h)
 
-1.  Chạy thử toàn bộ chức năng và kiểm tra phân quyền.
+-   Kiểm tra toàn bộ chức năng và cross-browser
 
-2.  Viết README.md tóm tắt cách cài đặt, tính năng và bảo trì.
+-   Viết README.md, changelog và hướng dẫn cài đặt
 
 Các bước kế tiếp
 ----------------
