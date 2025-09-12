@@ -16,6 +16,33 @@ gantt
   Làm đồ án                   :proj,  13:00, 2h
   Học WordPress (Download Center) :learn, 15:00, 2h
 ```
+## Tóm tắt nội dung
+
+Tài liệu này là kế hoạch học tập trong 15 ngày, hướng dẫn bạn từ khái niệm cơ bản đến triển khai hoàn chỉnh một “Trung tâm Tải tài liệu” (Download/Resource Center) trên nền tảng WordPress. Mỗi ngày bao gồm phần lý thuyết và bài tập thực hành với thời lượng 1–2 giờ, tập trung vào các chủ đề như tạo Custom Post Type, quản lý tệp, tùy chỉnh giao diện, phân quyền, bảo mật và tối ưu hiệu suất. Kết thúcplan, bạn sẽ có một module download riêng biệt, thân thiện với người dùng và sẵn sàng đưa vào vận hành.
+
+## Mục lục
+
+- [Giới thiệu](#giới-thiệu)  
+- [Điều kiện tiên quyết](#điều-kiện-tiên-quyết)  
+- [Tổng quan kế hoạch](#tổng-quan-kế-hoạch)  
+- [Lịch trình chi tiết](#lịch-trình-chi-tiết)  
+  - [Ngày 1: Cơ bản về WordPress](#ngày-1-cơ-bản-về-wordpress)  
+  - [Ngày 2: Child Theme & Tùy chỉnh](#ngày-2-child-theme--tùy-chỉnh)  
+  - [Ngày 3: Custom Post Type & Taxonomy](#ngày-3-custom-post-type--taxonomy)  
+  - [Ngày 4: Advanced Custom Fields (ACF)](#ngày-4-advanced-custom-fields-acf)  
+  - [Ngày 5: Thư viện Phương tiện & Quản lý tệp](#ngày-5-thư-viện-phương-tiện--quản-lý-tệp)  
+  - [Ngày 6: Giới thiệu Download Monitor](#ngày-6-giới-thiệu-download-monitor)  
+  - [Ngày 7: Tùy chỉnh Download Monitor](#ngày-7-tùy-chỉnh-download-monitor)  
+  - [Ngày 8: Xây dựng Download Center thủ công](#ngày-8-xây-dựng-download-center-thủ-công)  
+  - [Ngày 9: Metadata & File Attachment](#ngày-9-metadata--file-attachment)  
+  - [Ngày 10: Template & Archive](#ngày-10-template--archive)  
+  - [Ngày 11: Bộ lọc & Tìm kiếm AJAX](#ngày-11-bộ-lọc--tìm-kiếm-ajax)  
+  - [Ngày 12: Phân quyền & Kiểm soát truy cập](#ngày-12-phân-quyền--kiểm-soát-truy-cập)  
+  - [Ngày 13: Bảo mật & Caching](#ngày-13-bảo-mật--caching)  
+  - [Ngày 14: UX, Styling & Responsive](#ngày-14-ux-styling--responsive)  
+  - [Ngày 15: Test, Triển khai & Documentation](#ngày-15-test-triển-khai--documentation)  
+- [Các bước kế tiếp](#các-bước-kế-tiếp)
+
 Giới thiệu
 ----------
 
