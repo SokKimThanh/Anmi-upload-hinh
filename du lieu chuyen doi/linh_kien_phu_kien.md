@@ -9,18 +9,6 @@ Chấu kẹp kiểu đẩy (Push-type collet) chuyên dùng cho máy tiện tự
 Mô tả chi tiết
 --------------
 
--   **Đặc điểm kỹ thuật** - Cấu trúc kiểu đẩy, truyền lực trực tiếp từ trục chính đến chấu kẹp - Kích thước phổ biến: d = 0 mm, L = 25 mm, D = 0 mm *(theo bảng kỹ thuật từng dòng máy)* - Tương thích với các mã DIN: 6343-32 - Mã sản phẩm: từ F28/39 đến F49/72 tùy model - Mã nội bộ: 231.004 / 231.005 - Gia công chính xác, độ đồng tâm cao, sai số nhỏ - Bề mặt xử lý chống mài mòn, tăng tuổi thọ sử dụng
-PUSH-TYPE COLLETS
-=================
-
-Mô tả ngắn
-----------
-
-Chấu kẹp kiểu đẩy (Push-type collet) chuyên dùng cho máy tiện tự động, giúp kẹp chặt chi tiết với độ chính xác cao và thao tác thay nhanh. Phù hợp với nhiều dòng máy như MIYANO, CC, LICO, RIKEN, INDEX, TRAUB.
-
-Mô tả chi tiết
---------------
-
 ### Đặc điểm kỹ thuật
 
 -   Cấu trúc kiểu đẩy, truyền lực trực tiếp từ trục chính đến chấu kẹp
