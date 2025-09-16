@@ -1,0 +1,55 @@
+✅ Quy chuẩn chỉnh sửa nội dung sản phẩm
+1. Tên sản phẩm
+Ngắn gọn, rõ ràng, có kèm ký hiệu hoặc series.
+
+Giữ nguyên mã sản phẩm (VD: V-shape Cutting Heads THQCMT10-Y-SVVCN11-JCT-P).
+
+2. Mô tả ngắn
+2–3 câu.
+
+Nêu công dụng chính và ưu điểm nổi bật.
+
+Không liệt kê thông số kỹ thuật chi tiết.
+
+3. Mô tả chi tiết
+Giới thiệu công dụng và ứng dụng trong gia công.
+
+Nêu rõ ưu điểm nổi bật: độ chính xác, bề mặt mịn, tuổi thọ dao, tiết kiệm chi phí, giảm rung động.
+
+Chỉ giữ lại thông tin chắc chắn (ví dụ: góc cắt 72.5°).
+
+Bỏ qua: kích thước (L, H, F), phụ kiện (vít, lục giác), lớp phủ, tiêu chuẩn… nếu chưa xác minh.
+
+4. Danh mục sản phẩm
+Đưa vào danh mục DỤNG CỤ LIỀN KHỐI.
+
+Không tự tạo danh mục mới.
+
+5. Thẻ sản phẩm (Tags)
+Viết bằng tiếng Việt + tiếng Anh kỹ thuật (nếu cần).
+
+Cách nhau bằng dấu phẩy (,).
+
+Gồm: tên sản phẩm, mã series, loại dao, ứng dụng, vật liệu gia công.
+
+Ví dụ:
+
+Mã
+V-shape Cutting Heads, THQCMT10-Y-SVVCN11-JCT-P, Dao phay V-shape, Dao phay hợp kim cứng, Dao phay vát mép, CNC milling tool, Gia công thép hợp kim, Dao phay tốc độ cao
+6. Thông tin bổ sung
+Chỉ giữ thông tin chắc chắn:
+
+Insert sử dụng (VD: VCMT series).
+
+Góc cắt (VD: 72.5°).
+
+Bỏ qua các thông tin chưa xác minh (chất liệu thân dao, lớp phủ, tiêu chuẩn…).
+
+7. Nguyên tắc chung
+Không bịa đặt thông số.
+
+Không ghi “cần xác minh” trong nội dung chính thức.
+
+Chỉ đưa những gì chắc chắn từ catalog/spec sheet.
+
+Nội dung hướng đến khách hàng kỹ thuật: rõ ràng, ngắn gọn, dễ hiểu.
