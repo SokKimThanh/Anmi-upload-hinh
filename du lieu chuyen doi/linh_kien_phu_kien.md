@@ -1,4 +1,83 @@
-# Danh mục LINH KIỆN & PHỤ KIỆN
+PUSH-TYPE COLLETS
+=================
+
+Mô tả ngắn
+----------
+
+Chấu kẹp kiểu đẩy (Push-type collet) chuyên dùng cho máy tiện tự động, giúp kẹp chặt chi tiết với độ chính xác cao và thao tác thay nhanh. Phù hợp với nhiều dòng máy như MIYANO, CC, LICO, RIKEN, INDEX, TRAUB.
+
+Mô tả chi tiết
+--------------
+
+### Đặc điểm kỹ thuật
+
+-   Cấu trúc kiểu đẩy, truyền lực trực tiếp từ trục chính đến chấu kẹp
+
+-   Kích thước phổ biến: d = 0 mm, L = 25 mm, D = 0 mm (theo bảng kỹ thuật từng dòng máy)
+
+-   Tương thích với các mã DIN: 6343-32
+
+-   Mã sản phẩm: từ F28/39 đến F49/72 tùy model
+
+-   Mã nội bộ: 231.004 / 231.005
+
+-   Gia công chính xác, độ đồng tâm cao, sai số nhỏ
+
+-   Bề mặt xử lý chống mài mòn, tăng tuổi thọ sử dụng
+
+### Ứng dụng
+
+-   Kẹp phôi trong máy tiện tự động, đặc biệt hiệu quả với chi tiết nhỏ và yêu cầu độ chính xác cao
+
+-   Phù hợp với các dòng máy MIYANO, CC, LICO, RIKEN, INDEX, TRAUB
+
+-   Thay thế nhanh, giảm thời gian setup trong sản xuất hàng loạt
+
+### Ưu điểm nổi bật
+
+-   Kẹp nhanh -- chính xác -- ổn định
+
+-   Tăng hiệu suất gia công nhờ giảm thời gian thay chấu
+
+-   Tương thích đa dạng dòng máy, dễ tích hợp
+
+-   Thiết kế tối ưu cho lực kẹp đồng đều, giảm rung lắc
+
+Danh mục sản phẩm
+-----------------
+
+Linh kiện & Phụ kiện / Collet
+
+Thẻ sản phẩm: push-type-collet, collet-kieu-day, miyano, lico, riken, index, traub, cnc, tool-holder, precision, auto-lathe
+
+Thông tin bổ sung
+-----------------
+
+-   Chất liệu: Thép hợp kim tôi cứng
+
+-   Tiêu chuẩn sản xuất: DIN 6343-32
+
+-   Xử lý bề mặt: phủ chống mài mòn (cần xác minh)
+
+-   Tùy chọn kích thước: theo từng model máy (xem bảng kỹ thuật)
+-   **Ứng dụng** - Dùng để kẹp phôi trong máy tiện tự động, đặc biệt hiệu quả với chi tiết nhỏ và yêu cầu độ chính xác cao - Phù hợp với các dòng máy MIYANO, CC, LICO, RIKEN, INDEX, TRAUB - Thay thế nhanh, giảm thời gian setup trong sản xuất hàng loạt
+
+-   **Ưu điểm nổi bật** - Kẹp nhanh -- chính xác -- ổn định - Tăng hiệu suất gia công nhờ giảm thời gian thay chấu - Tương thích đa dạng dòng máy, dễ tích hợp - Thiết kế tối ưu cho lực kẹp đồng đều, giảm rung lắc
+
+Danh mục sản phẩm
+-----------------
+
+Linh kiện & Phụ kiện / Collet
+
+Thẻ sản phẩm
+------------
+
+push-type-collet, collet-kieu-day, miyano, lico, riken, index, traub, cnc, tool-holder, precision, auto-lathe
+
+Thông tin bổ sung
+-----------------
+
+Chất liệu: Thép hợp kim tôi cứng Tiêu chuẩn sản xuất: DIN 6343-32 Xử lý bề mặt: phủ chống mài mòn *(cần xác minh)* Tùy chọn kích thước: theo từng model máy *(xem bảng kỹ thuật)*# Danh mục LINH KIỆN & PHỤ KIỆN
 
 Dưới đây là danh sách các sản phẩm linh kiện và phụ kiện, được soạn theo cấu trúc hỗ trợ upload sản phẩm (WooCommerce).
 
