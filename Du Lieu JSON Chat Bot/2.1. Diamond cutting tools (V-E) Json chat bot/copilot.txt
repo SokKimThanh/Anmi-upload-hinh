@@ -1,0 +1,165 @@
+{
+  "total_articles": 10,
+  "articles": [
+    {
+      "title": "ONE FLUTE ENDMILL – MCD/CVD",
+      "pdf_page": 21,
+      "images": {
+        "main": {
+          "filename": "one_flute_endmill_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "one_flute_endmill_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "DOUBLE FLUTES ENDMILL – MCD/CVD",
+      "pdf_page": 21,
+      "images": {
+        "main": {
+          "filename": "double_flutes_endmill_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "double_flutes_endmill_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tool – DH003 Series",
+      "pdf_page": 22,
+      "images": {
+        "main": {
+          "filename": "dh003_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "dh003_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tool – DH004 Series (R Endmill)",
+      "pdf_page": 22,
+      "images": {
+        "main": {
+          "filename": "dh004_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "dh004_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tool – DH005 Series (Angle Endmill)",
+      "pdf_page": 23,
+      "images": {
+        "main": {
+          "filename": "dh005_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "dh005_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tool – DH006 Series (R-Angle Endmill)",
+      "pdf_page": 23,
+      "images": {
+        "main": {
+          "filename": "dh006_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "dh006_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PCD INSERT – IDCCGW / IDCGW / IDAPKT / IDVCGW / IDTCGW",
+      "pdf_page": 24,
+      "images": {
+        "main": {
+          "filename": "pcd_insert_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_insert_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PCD INSERT – IDMRGN / IDMGGN / IDTGR Series",
+      "pdf_page": 25,
+      "images": {
+        "main": {
+          "filename": "pcd_insert_idmrgn_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_insert_idmrgn_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "CBN INSERT – IBOA / IBOB Series",
+      "pdf_page": 26,
+      "images": {
+        "main": {
+          "filename": "cbn_insert_iboa_ibob_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "cbn_insert_iboa_ibob_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "CBN INSERT – IBOC Series",
+      "pdf_page": 27,
+      "images": {
+        "main": {
+          "filename": "cbn_insert_iboc_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "cbn_insert_iboc_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    }
+  ]
+}

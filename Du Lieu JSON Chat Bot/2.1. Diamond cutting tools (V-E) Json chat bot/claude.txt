@@ -1,0 +1,173 @@
+{
+  "total_articles": 6,
+  "articles": [
+    {
+      "title": "Dụng cụ cắt PCD/CBN cho ngành 3C - Gia công điện tử chính xác",
+      "pdf_page": "8-12",
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_3c_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_keycap_machining",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_camera_hole",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_chamfer_edge",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_waterproof_gasket",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Dụng cụ cắt PCD/CBN cho ngành ô tô xe máy - Gia công linh kiện động cơ",
+      "pdf_page": "12-14",
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_automotive_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_motor_housing",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_piston_groove",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_brake_disc",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_engine_connector",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Dụng cụ cắt MCD/CVD cho ngành 3C - Công nghệ kim cương đơn tinh thể",
+      "pdf_page": "15-18",
+      "images": {
+        "main": {
+          "filename": "mcd_cvd_3c_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "mcd_cvd_lcd_light_guide",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_sim_tray",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_camera_lens_mold",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_optical_mold",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Dụng cụ cắt MCD/CVD cho ngành ô tô xe máy - Gia công siêu chính xác",
+      "pdf_page": "19-21",
+      "images": {
+        "main": {
+          "filename": "mcd_cvd_automotive_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "mcd_cvd_piston_part",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_rim_part",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_brake_caliper",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_cylinder_surface",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Dao phay đầu cầu MCD/CVD - One Flute & Double Flutes Endmill",
+      "pdf_page": "22-24",
+      "images": {
+        "main": {
+          "filename": "mcd_endmill_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "one_flute_endmill_specs",
+            "size": "600x600"
+          },
+          {
+            "filename": "double_flute_endmill_specs",
+            "size": "600x600"
+          },
+          {
+            "filename": "ball_nose_endmill_specs",
+            "size": "600x600"
+          },
+          {
+            "filename": "chamfer_endmill_specs",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Chèn dao PCD/CBN Insert - Thông số kỹ thuật và ứng dụng",
+      "pdf_page": "25-28",
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_insert_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_insert_specifications",
+            "size": "600x600"
+          },
+          {
+            "filename": "cbn_insert_specifications",
+            "size": "600x600"
+          },
+          {
+            "filename": "insert_geometry_chart",
+            "size": "600x600"
+          },
+          {
+            "filename": "insert_application_guide",
+            "size": "600x600"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "pages": [2, 3, 4],
+  "title": "Giới thiệu về Dụng cụ cắt kim cương An Mi",
+  "category": "Giới thiệu công ty",
+  "summary": "Bài viết giới thiệu quá trình hình thành, phát triển và các công nghệ cốt lõi của Dụng cụ An Mi. Nội dung bao gồm lịch sử công ty, danh mục máy móc và thiết bị sản xuất hiện đại, cùng với các vật liệu chuyên dụng như MCD, CVD và CBN.",
+  "tags": [
+    "công cụ cắt kim cương",
+    "An Mi",
+    "công nghệ cốt lõi",
+    "máy móc sản xuất",
+    "vật liệu MCD",
+    "vật liệu CVD",
+    "vật liệu CBN"
+  ],
+  "slug": "gioi-thieu-dung-cu-cat-kim-cuong-an-mi"
+}{
+  "pages": [5, 6, 7, 8, 9, 10, 11],
+  "title": "MCD/CVD Endmill: Tổng quan và Thông số kỹ thuật",
+  "category": "Bài viết chuyên môn",
+  "summary": "Đây là một bài viết chuyên sâu về dòng sản phẩm MCD/CVD Endmill. Nội dung bao gồm cấu tạo, tính năng, ứng dụng, vật liệu gia công phù hợp và bảng thông số kỹ thuật chi tiết của các sản phẩm Endmill một me và hai me.",
+  "tags": [
+    "MCD Endmill",
+    "CVD Endmill",
+    "dao phay ngón",
+    "kỹ thuật gia công",
+    "thông số kỹ thuật",
+    "vật liệu nhôm",
+    "nhựa"
+  ],
+  "slug": "mcd-cvd-endmill-thong-so-ky-thuat"
+}{
+  "pages": [12, 13, 14, 15, 16],
+  "title": "Dụng cụ tạo ren và doa lỗ MCD/CVD",
+  "category": "Bài viết chuyên môn",
+  "summary": "Bài viết chuyên về các loại dụng cụ tạo ren (Tapping Tools) và doa lỗ (Reamer) làm từ vật liệu MCD/CVD. Nội dung phân tích đặc điểm, ưu điểm nổi bật và cung cấp bảng thông số kỹ thuật chi tiết cho từng loại dụng cụ, giúp người dùng lựa chọn sản phẩm phù hợp.",
+  "tags": [
+    "dụng cụ tạo ren",
+    "Tapping Tools",
+    "dụng cụ doa lỗ",
+    "Reamer",
+    "MCD",
+    "CVD",
+    "gia công ren"
+  ],
+  "slug": "dung-cu-tao-ren-doa-lo-mcd-cvd"
+}{
+  "pages": [17, 18, 19, 20, 21],
+  "title": "PCD Endmill: Lựa chọn tối ưu cho gia công vật liệu khó",
+  "category": "Bài viết chuyên môn",
+  "summary": "Nội dung tập trung vào dòng sản phẩm dao phay ngón PCD (PCD Endmill). Bài viết nhấn mạnh ưu điểm vượt trội khi gia công các vật liệu phi kim và hợp kim nhôm, đồng thời cung cấp bảng thông số kỹ thuật chi tiết các sản phẩm dao phay PCD hai me và ba me.",
+  "tags": [
+    "PCD Endmill",
+    "dao phay PCD",
+    "gia công vật liệu khó",
+    "nhôm",
+    "graphite",
+    "composite"
+  ],
+  "slug": "pcd-endmill-lua-chon-toi-uu"
+}{
+  "pages": [22, 23, 24],
+  "title": "Mảnh dao tiện PCD và các ứng dụng đột phá",
+  "category": "Bài viết chuyên môn",
+  "summary": "Bài viết giới thiệu về các loại mảnh dao tiện (PCD Insert) và các loại dụng cụ tiện khác làm từ PCD. Nội dung phân tích khả năng ứng dụng trong gia công tinh và siêu tinh, đồng thời cung cấp bảng thông số kích thước chi tiết.",
+  "tags": [
+    "mảnh dao tiện PCD",
+    "PCD Insert",
+    "gia công tiện",
+    "gia công tinh",
+    "hợp kim nhôm"
+  ],
+  "slug": "manh-dao-tien-pcd-ung-dung"
+}{
+  "pages": [25, 26, 27],
+  "title": "Tổng quan và Thông số kỹ thuật Mảnh dao PCD",
+  "category": "Bài viết chuyên môn",
+  "summary": "Bài viết này tập trung vào các loại mảnh dao PCD (PCD Insert) với các hình dạng và thông số kích thước đa dạng. Nội dung chi tiết bao gồm bảng thông số đầy đủ, giúp người dùng dễ dàng tra cứu và lựa chọn sản phẩm phù hợp cho nhu cầu gia công của mình.",
+  "tags": [
+    "mảnh dao PCD",
+    "PCD Insert",
+    "gia công tiện",
+    "bảng thông số"
+  ],
+  "slug": "manh-dao-pcd-thong-so-ky-thuat"
+}{
+  "pages": [27, 28],
+  "title": "Mảnh dao tiện CBN: Giải pháp cho gia công vật liệu siêu cứng",
+  "category": "Bài viết chuyên môn",
+  "summary": "Bài viết giới thiệu về mảnh dao tiện CBN (CBN Insert) - vật liệu lý tưởng để gia công các loại thép đã nhiệt luyện và vật liệu siêu cứng. Nội dung cung cấp bảng thông số kích thước, hình dạng và giải thích các mã hiệu phổ biến.",
+  "tags": [
+    "mảnh dao CBN",
+    "CBN Insert",
+    "gia công vật liệu cứng",
+    "thép nhiệt luyện",
+    "gang"
+  ],
+  "slug": "manh-dao-tien-cbn"
+}

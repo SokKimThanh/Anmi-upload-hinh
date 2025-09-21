@@ -1,0 +1,58 @@
+Trước khi tạo bài viết, thực hiện công việc cơ bản là chuẩn bị:
+
+Danh sách tiêu đề bài viết.
+
+Hình ảnh sản phẩm tương ứng:
+
+Ảnh đại diện chính kích thước 1000×1000 (hiển thị trong phần giới thiệu).
+
+Ảnh thư viện kích thước 600×600 (chứa ảnh tổng quan và thông số).
+
+Ghi rõ mỗi hình ảnh thuộc tiêu đề bài viết nào và nằm ở trang bao nhiêu của file PDF phiên bản 2.1.
+
+Không cần tạo nội dung thẻ, mô tả ngắn hay mô tả chi tiết cho bài.
+
+Đầu vào
+File PDF phiên bản 2.1 chứa thông tin sản phẩm.
+
+Đầu ra yêu cầu
+Xuất ra một cấu trúc dữ liệu JSON với định dạng sau:
+
+json
+{
+  "total_articles": <số lượng bài viết có thể sinh>,
+  "articles": [
+    {
+      "title": "<Tiêu đề bài viết>",
+      "pdf_page": <số trang trong PDF>,
+      "images": {
+        "main": {
+          "filename": "<tên hoặc id ảnh chính>",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "<tên hoặc id ảnh thư viện>",
+            "size": "600x600"
+          },
+          …
+        ]
+      }
+    },
+    …
+  ]
+}
+Các bước thực hiện
+Phân tích file PDF 2.1 để xác định bao nhiêu bài viết có thể tạo dựa trên tiêu đề và sản phẩm.
+
+Với mỗi bài viết:
+
+Lấy tiêu đề.
+
+Xác định trang chứa hình ảnh chính và hình ảnh thư viện.
+
+Ghi nhận tên (hoặc id) và kích thước của từng ảnh.
+
+Tổng hợp kết quả thành JSON theo cấu trúc ở Đầu ra yêu cầu.
+
+Hãy bắt đầu từ bước 1 và cho biết ngay số lượng bài viết tìm được, sau đó xuất JSON đầy đủ.

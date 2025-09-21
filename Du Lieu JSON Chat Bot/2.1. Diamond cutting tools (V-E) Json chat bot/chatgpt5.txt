@@ -1,0 +1,155 @@
+PCD/CBN Cutting Tools for 3C Industry (Dụng cụ cắt PCD/CBN cho ngành 3C)
+
+PCD/CBN Cutting Tools for Automotive Industry (Dụng cụ cắt PCD/CBN cho ngành ô tô – xe máy)
+
+MCD/CVD Cutting Tools (Dụng cụ cắt MCD/CVD – phần giới thiệu, so sánh)
+
+MCD/CVD Cutting Tools for 3C Industry (Dụng cụ cắt MCD/CVD cho ngành 3C)
+
+MCD/CVD Cutting Tools for Automotive Industry (Dụng cụ cắt MCD/CVD cho ngành ô tô – xe máy)
+
+MCD/CVD Cutting Tools Information (Thông số kích thước – order code DH001–DH006)
+
+PCD/CBN Cutting Tools Information (Thông số insert PCD & CBN)
+
+{
+  "total_articles": 7,
+  "articles": [
+    {
+      "title": "PCD/CBN Cutting Tools for 3C Industry",
+      "pdf_page": 9,
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_3c_main_p9",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_3c_gallery_p10",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_3c_gallery_p11",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PCD/CBN Cutting Tools for Automotive Industry",
+      "pdf_page": 12,
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_auto_main_p12",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_auto_gallery_p13",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tools",
+      "pdf_page": 14,
+      "images": {
+        "main": {
+          "filename": "mcd_cvd_intro_main_p14",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "mcd_cvd_intro_gallery_p14",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tools for 3C Industry",
+      "pdf_page": 15,
+      "images": {
+        "main": {
+          "filename": "mcd_cvd_3c_main_p15",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "mcd_cvd_3c_gallery_p16",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_3c_gallery_p18",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tools for Automotive Industry",
+      "pdf_page": 19,
+      "images": {
+        "main": {
+          "filename": "mcd_cvd_auto_main_p19",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "mcd_cvd_auto_gallery_p20",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_auto_gallery_p21",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tools Information",
+      "pdf_page": 22,
+      "images": {
+        "main": {
+          "filename": "mcd_cvd_info_main_p22",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "mcd_cvd_info_gallery_p23",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_info_gallery_p24",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PCD/CBN Cutting Tools Information",
+      "pdf_page": 25,
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_info_main_p25",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_info_gallery_p26",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_info_gallery_p27",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_info_gallery_p28",
+            "size": "600x600"
+          }
+        ]
+      }
+    }
+  ]
+}

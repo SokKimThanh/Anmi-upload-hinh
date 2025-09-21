@@ -1,0 +1,169 @@
+{
+  "total_articles": 8,
+  "articles": [
+    {
+      "title": "PCD/CBN Cutting Tools for 3C Industry - Aluminum, Zinc, Graphite, and Non-Metallic Materials",
+      "pdf_page": 9,
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_3c_non_metallic_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_3c_non_metallic_gallery_1",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_3c_non_metallic_gallery_2",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PCD/CBN Cutting Tools for 3C Industry - Aluminum, Titanium, and Plastic Applications",
+      "pdf_page": 10,
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_3c_metal_plastic_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_3c_metal_plastic_gallery_1",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_3c_metal_plastic_gallery_2",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PCD/CBN Cutting Tools for 3C Industry - Keyboard Frames, Mouse Pads, and Alloy Cases",
+      "pdf_page": 11,
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_3c_keyboard_frame_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_3c_keyboard_frame_gallery_1",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_3c_keyboard_frame_gallery_2",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PCD/CBN Cutting Tools for Automotive Industry - Machine Parts and Electric Vehicle Motor Housings",
+      "pdf_page": 12,
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_auto_motor_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_auto_motor_gallery_1",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_auto_motor_gallery_2",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PCD/CBN Cutting Tools for Automotive Industry - Piston Grooves, Motor Shafts, and Brake Components",
+      "pdf_page": 13,
+      "images": {
+        "main": {
+          "filename": "pcd_cbn_auto_piston_brake_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "pcd_cbn_auto_piston_brake_gallery_1",
+            "size": "600x600"
+          },
+          {
+            "filename": "pcd_cbn_auto_piston_brake_gallery_2",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tools for 3C Industry - LCD Light Guide Plates, Buttons, SIM Trays, and Camera Frames",
+      "pdf_page": 16,
+      "images": {
+        "main": {
+          "filename": "mcd_cvd_3c_lcd_buttons_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "mcd_cvd_3c_lcd_buttons_gallery_1",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_3c_lcd_buttons_gallery_2",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_3c_lcd_buttons_gallery_3",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tools for 3C Industry - Optical Molds, Aspherical Lenses, and Camera Lens Molds",
+      "pdf_page": 17,
+      "images": {
+        "main": {
+          "filename": "mcd_cvd_3c_optical_molds_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "mcd_cvd_3c_optical_molds_gallery_1",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_3c_optical_molds_gallery_2",
+            "size": "600x600"
+          }
+        ]
+      }
+    },
+    {
+      "title": "MCD/CVD Cutting Tools for Automotive Industry - Cylinder Surfaces, Piston Grooves, and EV Battery Housings",
+      "pdf_page": 20,
+      "images": {
+        "main": {
+          "filename": "mcd_cvd_auto_cylinder_piston_main",
+          "size": "1000x1000"
+        },
+        "gallery": [
+          {
+            "filename": "mcd_cvd_auto_cylinder_piston_gallery_1",
+            "size": "600x600"
+          },
+          {
+            "filename": "mcd_cvd_auto_cylinder_piston_gallery_2",
+            "size": "600x600"
+          }
+        ]
+      }
+    }
+  ]
+}

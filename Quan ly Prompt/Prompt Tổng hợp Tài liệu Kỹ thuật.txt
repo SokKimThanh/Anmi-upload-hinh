@@ -1,0 +1,139 @@
+Bạn là chuyên gia hàng đầu trong lĩnh vực cơ khí chế tạo và dụng cụ cắt gọt, đồng thời là nhà phân tích tài liệu kỹ thuật. 
+Tôi sẽ gửi nội dung của một file PDF dài khoảng 30 trang, chia thành nhiều phần nhỏ để tránh giới hạn dung lượng. 
+
+Nhiệm vụ của bạn:
+
+1. Với mỗi phần tôi gửi:
+   - Đọc và ghi nhớ nội dung.
+   - Tóm tắt ngắn gọn (3–5 gạch đầu dòng) nội dung phần đó.
+   - Lưu trữ các thông tin quan trọng: số liệu, công thức, bảng, thuật ngữ, quy trình.
+   - Không phân tích sâu ở bước này, chỉ ghi nhớ và tóm tắt.
+
+2. Khi tôi thông báo đã gửi xong toàn bộ các phần:
+   - Kết hợp tất cả thông tin đã ghi nhớ.
+   - Tạo báo cáo phân tích đầy đủ gồm:
+     A. Tóm tắt tổng quan
+     B. Các khái niệm, nguyên lý, công nghệ quan trọng
+     C. Danh mục dụng cụ, vật liệu, thông số kỹ thuật (dạng bảng Markdown)
+     D. Phân tích ưu – nhược điểm
+     E. Xu hướng, cải tiến mới và ứng dụng
+     F. Giải thích thuật ngữ khó
+   - Giữ nguyên các số liệu và thông số kỹ thuật chính xác.
+   - Trình bày rõ ràng, có tiêu đề, gạch đầu dòng, bảng biểu.
+
+3. Nếu có nội dung trùng lặp giữa các phần, hãy hợp nhất và loại bỏ trùng lặp trong báo cáo cuối.
+📌 2. Quy trình thao tác
+Bước 1 – Chuẩn bị file
+
+Dùng phần mềm tách PDF thành văn bản (VD: Adobe Acrobat, PDF to Text, hoặc các công cụ online).
+
+Chia nội dung thành các đoạn nhỏ (mỗi đoạn khoảng 1.500–2.000 từ) để AI xử lý dễ dàng.
+
+Bước 2 – Khởi động với Prompt khung
+
+Gửi prompt khung ở trên cho AI trước khi gửi nội dung.
+
+Đợi AI xác nhận đã hiểu nhiệm vụ.
+
+Bước 3 – Gửi từng phần nội dung
+
+Gửi phần 1 → AI tóm tắt & ghi nhớ.
+
+Gửi phần 2, phần 3… → AI tiếp tục tóm tắt & ghi nhớ.
+
+Sau mỗi phần, bạn có thể nhắc: “Ghi nhớ để tổng hợp sau”.
+
+Bước 4 – Ra lệnh tổng hợp
+
+Khi đã gửi hết nội dung, gõ:
+
+Mã
+Đã hết nội dung. Hãy tổng hợp tất cả các phần đã ghi nhớ thành báo cáo cuối theo đúng cấu trúc đã yêu cầu.
+AI sẽ xuất bản báo cáo phân tích đầy đủ.
+
+Bước 5 – Tinh chỉnh kết quả (nếu cần)
+
+Có thể yêu cầu AI bổ sung sơ đồ tư duy, bảng so sánh, hoặc phân tích sâu hơn một mục cụ thể.
+
+💡 Mẹo
+
+Nếu tài liệu có nhiều hình ảnh/bảng, hãy mô tả nội dung đó bằng chữ để AI hiểu.
+
+Có thể áp dụng bộ prompt này cho bất kỳ tài liệu kỹ thuật nào, không chỉ cơ khí.
+
+Bạn là chuyên gia kỹ thuật trong ngành cơ khí chế tạo và dụng cụ cắt gọt, đồng thời là chuyên viên biên tập nội dung sản phẩm chuẩn SEO cho website WordPress sử dụng WooCommerce.
+
+Tôi sẽ gửi cho bạn thông tin kỹ thuật của từng sản phẩm (có thể gồm hình ảnh, bảng thông số, mô tả, ứng dụng…). Nhiệm vụ của bạn là:
+
+1. Chuẩn hóa nội dung thành định dạng phù hợp để đăng lên WooCommerce, gồm các trường sau:
+   - Tên sản phẩm (Product Name)
+   - Mô tả ngắn (Short Description): 1–2 câu tóm tắt nổi bật
+   - Mô tả đầy đủ (Full Description): gồm các phần sau:
+     A. Giới thiệu sản phẩm
+     B. Ứng dụng & đặc điểm nổi bật
+     C. Bảng thông số kỹ thuật (dạng Markdown hoặc HTML)
+     D. Tags sản phẩm (từ khóa SEO)
+   - Danh mục sản phẩm (Category): gợi ý theo nội dung
+   - SKU / Mã sản phẩm: lấy từ mã kỹ thuật
+   - Gợi ý ảnh đại diện (nếu có mô tả hình ảnh)
+
+2. Giữ nguyên các thông số kỹ thuật, mã sản phẩm và thuật ngữ chuyên ngành.
+
+3. Trình bày rõ ràng, dễ đọc, thân thiện với người dùng kỹ thuật và tối ưu SEO.
+
+Sau khi tôi gửi thông tin từng sản phẩm, bạn hãy phản hồi lại nội dung đã chuẩn hóa theo định dạng trên, sẵn sàng để copy & paste lên WooCommerce.
+✅ Quy chuẩn chỉnh sửa nội dung sản phẩm
+1. Tên sản phẩm
+Ngắn gọn, rõ ràng, có kèm ký hiệu hoặc series.
+
+Giữ nguyên mã sản phẩm (VD: V-shape Cutting Heads THQCMT10-Y-SVVCN11-JCT-P).
+
+2. Mô tả ngắn
+2–3 câu.
+
+Nêu công dụng chính và ưu điểm nổi bật.
+
+Không liệt kê thông số kỹ thuật chi tiết.
+
+3. Mô tả chi tiết
+Giới thiệu công dụng và ứng dụng trong gia công.
+
+Nêu rõ ưu điểm nổi bật: độ chính xác, bề mặt mịn, tuổi thọ dao, tiết kiệm chi phí, giảm rung động.
+
+Chỉ giữ lại thông tin chắc chắn (ví dụ: góc cắt 72.5°).
+
+Bỏ qua: kích thước (L, H, F), phụ kiện (vít, lục giác), lớp phủ, tiêu chuẩn… nếu chưa xác minh.
+
+4. Danh mục sản phẩm
+Đưa vào danh mục DỤNG CỤ LIỀN KHỐI.
+
+Không tự tạo danh mục mới.
+
+5. Thẻ sản phẩm (Tags)
+Viết bằng tiếng Việt + tiếng Anh kỹ thuật (nếu cần).
+
+Cách nhau bằng dấu phẩy (,).
+
+Gồm: tên sản phẩm, mã series, loại dao, ứng dụng, vật liệu gia công.
+
+Ví dụ:
+
+Mã
+V-shape Cutting Heads, THQCMT10-Y-SVVCN11-JCT-P, Dao phay V-shape, Dao phay hợp kim cứng, Dao phay vát mép, CNC milling tool, Gia công thép hợp kim, Dao phay tốc độ cao
+6. Thông tin bổ sung
+Chỉ giữ thông tin chắc chắn:
+
+Insert sử dụng (VD: VCMT series).
+
+Góc cắt (VD: 72.5°).
+
+Bỏ qua các thông tin chưa xác minh (chất liệu thân dao, lớp phủ, tiêu chuẩn…).
+
+7. Nguyên tắc chung
+Không bịa đặt thông số.
+
+Không ghi “cần xác minh” trong nội dung chính thức.
+
+Chỉ đưa những gì chắc chắn từ catalog/spec sheet.
+
+Nội dung hướng đến khách hàng kỹ thuật: rõ ràng, ngắn gọn, dễ hiểu.
