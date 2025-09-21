@@ -6,31 +6,31 @@ Kế hoạch học tập 15 ngày: Xây dựng Trung tâm Tải tài liệu trê
 
 gantt
 
-&nbsp; title Thời khóa biểu hàng ngày – Lặp lại 15 ngày
+ title Thời khóa biểu hàng ngày – Lặp lại 15 ngày
 
-&nbsp; dateFormat  HH:mm
+ dateFormat  HH:mm
 
-&nbsp; axisFormat  %H:%M
-
-
-
-&nbsp; section Buổi sáng
-
-&nbsp; Biên tập \& upload hình ảnh  :img,   08:00, 4h
+ axisFormat  %H:%M
 
 
 
-&nbsp; section Trưa
+ section Buổi sáng
 
-&nbsp; Nghỉ trưa                   :break, 12:00, 1h
+ Biên tập \& upload hình ảnh  :img,   08:00, 4h
 
 
 
-&nbsp; section Buổi chiều
+ section Trưa
 
-&nbsp; Làm đồ án                   :proj,  13:00, 2h
+ Nghỉ trưa                   :break, 12:00, 1h
 
-&nbsp; Học WordPress (Download Center) :learn, 15:00, 2h
+
+
+ section Buổi chiều
+
+ Làm đồ án                   :proj,  13:00, 2h
+
+ Học WordPress (Download Center) :learn, 15:00, 2h
 
 ```
 
@@ -54,35 +54,35 @@ Tài liệu này là kế hoạch học tập trong 15 ngày, hướng dẫn b�
 
 \- \[Lịch trình chi tiết](#lịch-trình-chi-tiết)  
 
-&nbsp; - \[Ngày 1: Cơ bản về WordPress](#ngày-1-cơ-bản-về-wordpress)  
+ - \[Ngày 1: Cơ bản về WordPress](#ngày-1-cơ-bản-về-wordpress)  
 
-&nbsp; - \[Ngày 2: Child Theme \& Tùy chỉnh](#ngày-2-child-theme--tùy-chỉnh)  
+ - \[Ngày 2: Child Theme \& Tùy chỉnh](#ngày-2-child-theme--tùy-chỉnh)  
 
-&nbsp; - \[Ngày 3: Custom Post Type \& Taxonomy](#ngày-3-custom-post-type--taxonomy)  
+ - \[Ngày 3: Custom Post Type \& Taxonomy](#ngày-3-custom-post-type--taxonomy)  
 
-&nbsp; - \[Ngày 4: Advanced Custom Fields (ACF)](#ngày-4-advanced-custom-fields-acf)  
+ - \[Ngày 4: Advanced Custom Fields (ACF)](#ngày-4-advanced-custom-fields-acf)  
 
-&nbsp; - \[Ngày 5: Thư viện Phương tiện \& Quản lý tệp](#ngày-5-thư-viện-phương-tiện--quản-lý-tệp)  
+ - \[Ngày 5: Thư viện Phương tiện \& Quản lý tệp](#ngày-5-thư-viện-phương-tiện--quản-lý-tệp)  
 
-&nbsp; - \[Ngày 6: Giới thiệu Download Monitor](#ngày-6-giới-thiệu-download-monitor)  
+ - \[Ngày 6: Giới thiệu Download Monitor](#ngày-6-giới-thiệu-download-monitor)  
 
-&nbsp; - \[Ngày 7: Tùy chỉnh Download Monitor](#ngày-7-tùy-chỉnh-download-monitor)  
+ - \[Ngày 7: Tùy chỉnh Download Monitor](#ngày-7-tùy-chỉnh-download-monitor)  
 
-&nbsp; - \[Ngày 8: Xây dựng Download Center thủ công](#ngày-8-xây-dựng-download-center-thủ-công)  
+ - \[Ngày 8: Xây dựng Download Center thủ công](#ngày-8-xây-dựng-download-center-thủ-công)  
 
-&nbsp; - \[Ngày 9: Metadata \& File Attachment](#ngày-9-metadata--file-attachment)  
+ - \[Ngày 9: Metadata \& File Attachment](#ngày-9-metadata--file-attachment)  
 
-&nbsp; - \[Ngày 10: Template \& Archive](#ngày-10-template--archive)  
+ - \[Ngày 10: Template \& Archive](#ngày-10-template--archive)  
 
-&nbsp; - \[Ngày 11: Bộ lọc \& Tìm kiếm AJAX](#ngày-11-bộ-lọc--tìm-kiếm-ajax)  
+ - \[Ngày 11: Bộ lọc \& Tìm kiếm AJAX](#ngày-11-bộ-lọc--tìm-kiếm-ajax)  
 
-&nbsp; - \[Ngày 12: Phân quyền \& Kiểm soát truy cập](#ngày-12-phân-quyền--kiểm-soát-truy-cập)  
+ - \[Ngày 12: Phân quyền \& Kiểm soát truy cập](#ngày-12-phân-quyền--kiểm-soát-truy-cập)  
 
-&nbsp; - \[Ngày 13: Bảo mật \& Caching](#ngày-13-bảo-mật--caching)  
+ - \[Ngày 13: Bảo mật \& Caching](#ngày-13-bảo-mật--caching)  
 
-&nbsp; - \[Ngày 14: UX, Styling \& Responsive](#ngày-14-ux-styling--responsive)  
+ - \[Ngày 14: UX, Styling \& Responsive](#ngày-14-ux-styling--responsive)  
 
-&nbsp; - \[Ngày 15: Test, Triển khai \& Documentation](#ngày-15-test-triển-khai--documentation)  
+ - \[Ngày 15: Test, Triển khai \& Documentation](#ngày-15-test-triển-khai--documentation)  
 
 \- \[Các bước kế tiếp](#các-bước-kế-tiếp)
 
