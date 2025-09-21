@@ -1,7 +1,5 @@
 Kế hoạch học tập 15 ngày: Xây dựng Trung tâm Tải tài liệu trên WordPress
 
-========================================================================
-
 ```mermaid
 
 gantt
