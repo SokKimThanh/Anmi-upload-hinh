@@ -1,0 +1,34 @@
+Tôi đã ghi chú cụ thể các hình ảnh tương ứng với từng bài viết để bạn dễ dàng quản lý và đăng tải. Bạn có thể sử dụng thông tin này để tải lên các hình ảnh vào thư viện của bạn và gắn chúng vào bài viết tương ứng.
+
+---
+
+### 1. Dụng cụ cắt PCD Insert
+- **Hình ảnh giới thiệu (trang 25):** Sử dụng hình ảnh tổng quan của sản phẩm.
+    * Tên file: `trang 25.png`
+- **Hình ảnh thông số (trang 26):** Sử dụng để minh họa các thông số kỹ thuật chi tiết.
+    * Tên file: `trang 26.jpg`
+
+---
+
+### 2. Dụng cụ cắt CBN Insert
+- **Hình ảnh giới thiệu (trang 27):** Sử dụng hình ảnh tổng quan của sản phẩm.
+    * Tên file: `trang 27.jpg`
+- **Hình ảnh thông số (trang 28):** Sử dụng để minh họa các thông số kỹ thuật chi tiết.
+    * Tên file: `trang 28.jpg`
+
+---
+
+### 3. Dụng cụ cắt MCD/CVD
+- **Hình ảnh giới thiệu (trang 14):** Sử dụng làm ảnh đại diện chính.
+    * Tên file: `trang 14.jpg`
+- **Hình ảnh thư viện (trang 15 - 24):** Sử dụng để minh họa các ứng dụng và thông số kỹ thuật chi tiết.
+    * Tên file: `trang 15.jpg`
+    * Tên file: `trang 16.jpg`
+    * Tên file: `trang 17.jpg`
+    * Tên file: `trang 18.jpg`
+    * Tên file: `trang 19.jpg`
+    * Tên file: `trang 20.jpg`
+    * Tên file: `trang 21.jpg`
+    * Tên file: `trang 22.jpg`
+    * Tên file: `trang 23.jpg`
+    * Tên file: `trang 24.png`

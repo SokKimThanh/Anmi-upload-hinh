@@ -1,0 +1,30 @@
+Type,SKU,Name,Published,Short description,Description,In stock?,Categories,Danh mục cụ thể,Tags
+simple,PCD-INSERT,"Dụng cụ cắt PCD Insert",1,"PCD (Polycrystalline Diamond) là vật liệu bao gồm nhiều hạt kim cương nhỏ được thiêu kết với nhau, có độ cứng 8000 HV, cao hơn carbide từ 8-12 lần và phù hợp để gia công các vật liệu như hợp kim nhôm, hợp kim titan, nhựa và các kim loại màu khác.","Dụng cụ cắt PCD Insert có ứng dụng rộng rãi trong ngành công nghiệp 3C (thiết bị điện tử) và ô tô - xe máy. Các ứng dụng cụ thể bao gồm gia công viền hốc gắn camera, hốc gắn phim, chi tiết vát cạnh, bo viền cạnh và rãnh gioăng chống nước trên các vật liệu như hợp kim nhôm, hợp kim kẽm, than chì và nhựa. Ngoài ra, chúng còn được dùng để gia công khung viền cho điện thoại, máy tính, đồng hồ thông minh, khung bàn phím, bàn di chuột, và vỏ hợp kim. Với độ cứng và hệ số ma sát thấp, dụng cụ này giúp đạt được độ chính xác và chất lượng bề mặt cao khi gia công.","1","DỤNG CỤ LIỀN KHỐI","PCD mảnh","dụng cụ cắt, PCD, dao phay, mũi khoan, công nghiệp 3C, ô tô-xe máy"
+simple,CBN-INSERT,"Dụng cụ cắt CBN Insert",1,"CBN (Cubic Boron Nitride) là vật liệu tổng hợp, có độ cứng chỉ đứng sau kim cương và phù hợp hơn với điều kiện cắt khô và nhiệt độ cao khi gia công kim loại cứng.","Dụng cụ cắt CBN Insert được ứng dụng trong các ngành công nghiệp 3C, phụ tùng ô tô và khuôn mẫu. Với đặc tính chịu nhiệt cao, chúng đặc biệt hiệu quả trong việc gia công các chi tiết máy, vỏ động cơ xe điện, và linh kiện máy gia công làm từ hợp kim nhôm, hợp kim đồng và các kim loại màu khác. Chúng còn được sử dụng để gia công rãnh piston, trục động cơ, la zăng bánh xe, đĩa phanh và má phanh. Dụng cụ này là lựa chọn lý tưởng cho các ứng dụng đòi hỏi độ chính xác cao và khả năng làm việc trong môi trường nhiệt độ cao.","1","DỤNG CỤ LIỀN KHỐI","CBN mảnh","dụng cụ cắt, CBN, dao phay, mũi khoan, công nghiệp 3C, ô tô-xe máy"
+simple,MCD-CVD-CUTTER,"Dụng cụ cắt MCD/CVD",1,"MCD (Monocrystalline Diamond) là một loại vật liệu cắt kim cương được làm từ cấu trúc tinh thể đơn và thường được dùng vì độ sắc nét hoàn hảo và độ ổn định vượt trội. CVD (Chemical Vapor Deposition) là phương pháp tạo kim cương trong phòng thí nghiệm, có cùng tính chất hóa học với kim cương tự nhiên nên cũng có độ cứng và độ sắc nét tuyệt vời.","Dụng cụ cắt MCD/CVD được ứng dụng trong các ngành công nghiệp như 3C, ô tô, xe máy và hàng không. Chúng có độ cứng từ 8000-10000HV, cao nhất trong các vật liệu, và hệ số ma sát rất thấp (0.05-0.15) so với PCD (0.1-0.3). Các ứng dụng cụ thể bao gồm gia công khuôn quang học, khuôn kính cầu, khuôn ống kính máy ảnh, các chi tiết trong màn hình LCD, cũng như gia công hoàn thiện bề mặt xi lanh và các chi tiết đòi hỏi chất lượng bề mặt cực cao trong ngành ô tô.","1","DỤNG CỤ LIỀN KHỐI","MCD/CVD/ND mảnh","dụng cụ cắt, MCD, CVD, dao tiện, dao phay, công nghiệp 3C, ô tô-xe máy, hàng không"
+
+Bài viết	Số trang	Tên tệp hình ảnh
+PCD/CBN & MCD/CVD	1	trang 1.jpg
+QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN	2	trang 2.jpg
+CÔNG NGHỆ CỐT LÕI & SẢN PHẨM KHÁC	3	trang 3.jpg
+4	trang 4.jpg
+VẬT LIỆU MCD & CVD	5	trang 5.jpg
+6	trang 6.jpg
+SO SÁNH CÁC VẬT LIỆU	7	trang 7.jpg
+DỤNG CỤ CẮT MCD/CVD	14	trang 14.jpg
+15	trang 15.jpg
+16	trang 16.jpg
+17	trang 17.jpg
+18	trang 18.jpg
+19	trang 19.jpg
+20	trang 20.jpg
+21	trang 21.jpg
+22	trang 22.jpg
+23	trang 23.jpg
+24	trang 24.png
+DỤNG CỤ CẮT PCD Insert	25	trang 25.png
+26	trang 26.jpg
+DỤNG CỤ CẮT CBN Insert	27	trang 27.jpg
+28	trang 28.jpg
+DỤNG CỤ TIỆN	29	trang 29.jpg
+30	trang 30.jpg
