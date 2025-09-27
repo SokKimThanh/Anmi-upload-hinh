@@ -1,0 +1,281 @@
+/* ===== Contact dock widget ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+.contact-dock {
+    position: fixed;
+    right: 8px;
+    bottom: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    z-index: 9999;
+}
+
+.contact-item {
+    --accent-color: #ff5722;
+    --icon-size: 56px;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 3px;
+    min-width: var(--icon-size);
+    border-radius: var(--icon-size);
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    color: #111111;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.32;
+    overflow: hidden;
+    transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease, padding 0.25s ease, border-radius 0.25s ease, gap 0.25s ease;
+}
+
+.contact-item.hotline {
+    --accent-color: #ff5722;
+}
+
+.contact-item.zalo {
+    --accent-color: #009688;
+}
+
+.contact-item.messenger {
+    --accent-color: #0084ff;
+}
+
+.contact-item.whatsapp {
+    --accent-color: #25d366;
+}
+
+.icon-wrap {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: soft-shake 3s ease-in-out infinite;
+}
+
+.icon-wrap img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+}
+
+.label-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 4px;
+    max-width: 0;
+    padding: 0;
+    color: #1f1f1f;
+    opacity: 0;
+    transform: translateX(12px);
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: max-width 0.28s ease, opacity 0.24s ease, transform 0.24s ease;
+}
+
+.label-wrap strong {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.label-wrap span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.contact-item:hover,
+.contact-item:focus-visible {
+    padding: 6px 16px 6px 18px;
+    gap: 12px;
+    border-color: var(--accent-color);
+    border-radius: 44px;
+    background: #ffffff;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item:hover .label-wrap,
+.contact-item:focus-visible .label-wrap {
+    max-width: 220px;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.contact-item:hover .icon-wrap,
+.contact-item:focus-visible .icon-wrap {
+    transform: scale(1.08);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+}
+
+.contact-item:focus-visible {
+    outline: none;
+}
+
+.contact-item:focus-visible::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 48px;
+    border: 2px dashed rgba(0, 132, 255, 0.5);
+    pointer-events: none;
+}
+
+@keyframes soft-shake {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    4% {
+        transform: translate(1px, -2px) rotate(-4deg);
+    }
+    8% {
+        transform: translate(-2px, 2px) rotate(4deg);
+    }
+    12% {
+        transform: translate(2px, -1px) rotate(-3deg);
+    }
+    16% {
+        transform: translate(-2px, 1px) rotate(3deg);
+    }
+    20% {
+        transform: translate(1px, -1px) rotate(-2deg);
+    }
+    24% {
+        transform: translate(-1px, 1px) rotate(2deg);
+    }
+    28% {
+        transform: translate(1px, -1px) rotate(-1deg);
+    }
+    32%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .icon-wrap {
+        --icon-size: 52px;
+    }
+
+    .icon-wrap img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-dock {
+        right: 12px;
+        bottom: 14%;
+        gap: 10px;
+        align-items: flex-end;
+    }
+
+    .contact-item {
+        min-width: auto;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background: transparent;
+        box-shadow: none;
+        gap: 0;
+    }
+
+    .contact-item:hover,
+    .contact-item:focus-visible {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .contact-item:focus-visible::after {
+        inset: -4px;
+    }
+
+    .label-wrap {
+        display: none !important;
+    }
+
+    .icon-wrap {
+        --icon-size: 48px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    }
+
+    .icon-wrap img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-dock {
+        right: 10px;
+        bottom: 10%;
+        gap: 9px;
+    }
+
+    .icon-wrap {
+        --icon-size: 44px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    }
+
+    .icon-wrap img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact-dock {
+        right: 8px;
+        gap: 8px;
+    }
+
+    .icon-wrap {
+        --icon-size: 42px;
+    }
+
+    .icon-wrap img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .icon-wrap {
+        animation: none;
+    }
+
+    .contact-item,
+    .label-wrap {
+        transition: none !important;
+    }
+}
