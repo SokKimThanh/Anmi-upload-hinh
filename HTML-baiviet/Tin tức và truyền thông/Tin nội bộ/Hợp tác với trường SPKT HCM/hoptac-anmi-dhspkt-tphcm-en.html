@@ -1,0 +1,87 @@
+<style><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><br />        :root {<br />            /* Colors */<br />            --primary-color: #1a5490;<br />            --secondary-color: #e74c3c;<br />            --text-primary: #2c3e50;<br />            --text-secondary: #5a6c7d;<br />            --text-light: #95a5a6;<br />            --bg-main: #ffffff;<br />            --bg-accent: #f8f9fa;<br />            --border-color: #e1e8ed;</p>
+<p>            /* Typography */<br />            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;<br />            --font-size-base: 18px;<br />            --line-height-base: 1.8;</p>
+<p>            /* Spacing - Generous negative space */<br />            --space-xs: 12px;<br />            --space-sm: 24px;<br />            --space-md: 48px;<br />            --space-lg: 72px;<br />            --space-xl: 96px;</p>
+<p>            /* Container */<br />            --container-max: 800px;<br />            --container-padding: 32px;</p>
+<p>            /* Border radius */<br />            --radius-sm: 4px;<br />            --radius-md: 8px;<br />        }</p>
+<p>        * {<br />            margin: 0;<br />            padding: 0;<br />            box-sizing: border-box;<br />        }</p>
+<p>        body {<br />            font-family: var(--font-primary);<br />            font-size: var(--font-size-base);<br />            line-height: var(--line-height-base);<br />            color: var(--text-primary);<br />            background-color: var(--bg-main);<br />        }</p>
+<p>        /* Header */<br />        header {<br />            background-color: var(--bg-main);<br />            border-bottom: 1px solid var(--border-color);<br />            padding: var(--space-md) 0;<br />            margin-bottom: var(--space-xl);<br />        }</p>
+<p>        .header-container {<br />            max-width: var(--container-max);<br />            margin: 0 auto;<br />            padding: 0 var(--container-padding);<br />            text-align: center;<br />        }</p>
+<p>        .logo {<br />            display: inline-flex;<br />            align-items: center;<br />            gap: var(--space-sm);<br />            margin-bottom: var(--space-sm);<br />        }</p>
+<p>        .logo-text {<br />            font-size: 14px;<br />            font-weight: 600;<br />            color: var(--primary-color);<br />            letter-spacing: 2px;<br />            text-transform: uppercase;<br />        }</p>
+<p>        .lang-switch {<br />            margin-top: var(--space-sm);<br />        }</p>
+<p>        .lang-btn {<br />            background: none;<br />            border: 1px solid var(--border-color);<br />            padding: 8px 16px;<br />            margin: 0 4px;<br />            border-radius: var(--radius-sm);<br />            cursor: pointer;<br />            font-size: 14px;<br />            color: var(--text-secondary);<br />            transition: all 0.2s;<br />        }</p>
+<p>        .lang-btn.active {<br />            background-color: var(--primary-color);<br />            color: white;<br />            border-color: var(--primary-color);<br />        }</p>
+<p>        .lang-btn:hover:not(.active) {<br />            border-color: var(--primary-color);<br />            color: var(--primary-color);<br />        }</p>
+<p>        /* Container */<br />        .container {<br />            max-width: var(--container-max);<br />            margin: 0 auto;<br />            padding: 0 var(--container-padding) var(--space-xl);<br />        }</p>
+<p>        /* Article */<br />        article {<br />            margin-bottom: var(--space-xl);<br />        }</p>
+<p>        .article-meta {<br />            text-align: center;<br />            margin-bottom: var(--space-lg);<br />            color: var(--text-light);<br />            font-size: 14px;<br />        }</p>
+<p>        /* Typography */<br />        h1 {<br />            font-size: 36px;<br />            line-height: 1.3;<br />            font-weight: 700;<br />            color: var(--primary-color);<br />            margin-bottom: var(--space-md);<br />            text-align: center;<br />        }</p>
+<p>        h2 {<br />            font-size: 24px;<br />            line-height: 1.4;<br />            font-weight: 600;<br />            color: var(--text-primary);<br />            margin-top: var(--space-lg);<br />            margin-bottom: var(--space-md);<br />        }</p>
+<p>        .lead {<br />            font-size: 21px;<br />            line-height: 1.7;<br />            color: var(--text-secondary);<br />            margin-bottom: var(--space-lg);<br />            padding: var(--space-md);<br />            background-color: var(--bg-accent);<br />            border-left: 4px solid var(--primary-color);<br />            border-radius: var(--radius-sm);<br />        }</p>
+<p>        p {<br />            margin-bottom: var(--space-md);<br />            color: var(--text-primary);<br />        }</p>
+<p>        /* Figure & Images */<br />        figure {<br />            margin: var(--space-lg) 0;<br />        }</p>
+<p>        figure img {<br />            width: 100%;<br />            height: auto;<br />            border-radius: var(--radius-md);<br />            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);<br />        }</p>
+<p>        figcaption {<br />            margin-top: var(--space-sm);<br />            font-size: 15px;<br />            line-height: 1.6;<br />            color: var(--text-light);<br />            font-style: italic;<br />            text-align: center;<br />            padding: 0 var(--space-sm);<br />        }</p>
+<p>        /* Conclusion box */<br />        .conclusion {<br />            background-color: var(--bg-accent);<br />            padding: var(--space-md);<br />            border-radius: var(--radius-md);<br />            margin-top: var(--space-lg);<br />            border-top: 3px solid var(--secondary-color);<br />        }</p>
+<p>        .conclusion h2 {<br />            margin-top: 0;<br />            color: var(--secondary-color);<br />        }</p>
+<p>        /* Message highlight */<br />        .message-highlight {<br />            font-weight: 600;<br />            color: var(--primary-color);<br />        }</p>
+<p>        /* Footer */<br />        footer {<br />            border-top: 1px solid var(--border-color);<br />            padding: var(--space-md) 0;<br />            margin-top: var(--space-xl);<br />            text-align: center;<br />            color: var(--text-light);<br />            font-size: 14px;<br />        }</p>
+<p>        .stats {<br />            margin-top: var(--space-sm);<br />            color: var(--text-light);<br />        }</p>
+<p>        /* Language content toggle */<br />        .lang-content {<br />            display: none;<br />        }</p>
+<p>        .lang-content.active {<br />            display: block;<br />        }</p>
+<p>        /* Responsive */<br />        @media (max-width: 768px) {<br />            :root {<br />                --font-size-base: 16px;<br />                --container-padding: 20px;<br />                --space-lg: 48px;<br />                --space-xl: 64px;<br />            }</p>
+<p>            h1 {<br />                font-size: 28px;<br />            }</p>
+<p>            h2 {<br />                font-size: 21px;<br />            }</p>
+<p>            .lead {<br />                font-size: 18px;<br />                padding: var(--space-sm);<br />            }<br />        }</p>
+<p>        /* Smooth scroll */<br />        html {<br />            scroll-behavior: smooth;<br />        }</p>
+<p>        /* Breathing room for sections */<br />        section {<br />            margin-bottom: var(--space-lg);<br />        }<br />    </style>
+
+<main class="container">
+<!-- English Content --></main><article id="content-en" class="lang-content">
+<div class="article-meta">September 12 - 16, 2025</div>
+<h1>Partnership Signing between the Faculty of Mechanical Engineering – HCMUTE and ANMI Tools Strengthening Practice-Oriented Mechanical Training</h1>
+<div class="lead">On 12 September 2025, the Faculty of Mechanical Engineering at Ho Chi Minh City University of Technology and Education (HCMUTE) and ANMI Tools signed a cooperation agreement. The signing marks a significant step in connecting academia with industry, aiming to cultivate high-quality mechanical engineering talent and enhance access to relevant technology. Four days later, on 16 September 2025, a follow-on technical seminar was jointly organized.</div>
+<section>
+<h2>Context &amp; Objectives</h2>
+The agreement is framed by the growing demand for mechanical engineers who combine theoretical grounding with practical application skills. Through this collaboration, both sides seek to help students engage with applied knowledge, strengthen adaptability to production environments, and maintain a channel for exchanging views on machining technology trends.
+
+The coordination also supports academic staff in aligning instructional focus with evolving industry expectations. In a general sense, the cooperation is expected to contribute to a more agile training foundation, enabling learners to internalize process awareness, technical discipline, and quality requirements aligned with modern manufacturing.
+
+</section><section>
+<h2>Signing Ceremony – 12 September 2025</h2>
+The signing took place in a formal working setting, with agreement documents placed on the table and representatives of the two sides performing a handshake to affirm the cooperation. Participants included representatives from the faculty and the enterprise positioned centrally, with other members standing in support.
+
+The general scope covers coordination in training activities, technical knowledge sharing, and creating conditions for students to access real production environments. The event is regarded as an initial platform upon which subsequent academic and practical engagement activities can be structured, reinforcing intent toward long-term collaboration aligned with workforce development needs.
+<figure><img src="https://anmitools.com/wp-content/uploads/2025/09/01-1.jpg" alt="Partnership signing ceremony" /><figcaption>Representatives of the Faculty of Mechanical Engineering – HCMUTE and ANMI Tools formalize the cooperation with a handshake during the 12 September 2025 signing.</figcaption></figure>
+</section><section>
+<h2>Technical Seminar – 16 September 2025</h2>
+Continuing from the signing, on 16 September 2025 the two parties jointly held a seminar on machining techniques and cutting tool topics at the faculty's classroom facility. A classroom perspective shows a long table arrangement, the presenter standing at the front, and participants seated in aligned rows.
+
+The session content, at a general level, focused on sharing machining knowledge, application considerations, and orientations helping students clarify practical skill expectations. During the presentation segment, a display screen was used to illustrate information while attendees followed and took notes.
+<figure><img src="https://anmitools.com/wp-content/uploads/2025/09/02-1.jpg" alt="Seminar classroom view" /><figcaption>Classroom perspective of the 16 September 2025 seminar with the presenter at the front and participants seated along the table layout.</figcaption></figure>
+A wider panoramic view shows a stable level of participation with seating rows occupied consistent with a focused academic technical session. These observations underscore structured organization and coordinated execution between the academic side and the enterprise in facilitating practical knowledge transfer.
+<figure><img src="https://anmitools.com/wp-content/uploads/2025/09/03-1.jpg" alt="Seminar panoramic view" /><figcaption>Wide view of the 16 September 2025 seminar with the presenter using the display screen and rows of attendees following the material.</figcaption></figure>
+</section><section>
+<h2>Value &amp; Outlook</h2>
+The two milestone activities illustrate coordinated efforts to channel practical insight into the training process. Students gain direct observation of presented content, while the faculty strengthens channels for updating machining trend awareness.
+
+The enterprise, in turn, introduces application-oriented orientations at a general level, supporting foundation building for future forms of suitable cooperation. Both sides express an expectation that collaboration will continue to expand in alignment with training demand and mechanical workforce development priorities, contributing to improved alignment between education outcomes and production environment needs.
+<figure><img src="https://anmitools.com/wp-content/uploads/2025/09/04-1.jpg" alt="Group photo" /><figcaption>Group photo at the conclusion of the 16 September 2025 seminar documenting participation by students and representatives of both sides.</figcaption></figure>
+</section>
+<div class="conclusion">
+<h2>Conclusion &amp; Message</h2>
+The cooperation activities reaffirm a direction of linking training with practical industry contexts while emphasizing the shared message: <span class="message-highlight">"Collaboration – Development – Sustainable Success."</span>
+
+Appreciation is extended to the faculty members of HCMUTE and the leadership of ANMI for their coordination in implementing the activity sequence. This foundation is expected to support students in engaging with applied technical knowledge systematically and to encourage continued constructive interaction shaping future collaborative initiatives.
+
+</div>
+</article>&nbsp;
+
+<footer>
+<div class="container">
+
+© 2025 ANMI Tools &amp; HCMUTE. All rights reserved.
+
+</div>
+</footer>

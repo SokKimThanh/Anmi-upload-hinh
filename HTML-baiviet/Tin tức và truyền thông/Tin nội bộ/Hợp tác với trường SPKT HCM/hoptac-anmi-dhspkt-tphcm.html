@@ -1,0 +1,79 @@
+<style><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><br />        :root {<br />            /* Colors */<br />            --primary-color: #1a5490;<br />            --secondary-color: #e74c3c;<br />            --text-primary: #2c3e50;<br />            --text-secondary: #5a6c7d;<br />            --text-light: #95a5a6;<br />            --bg-main: #ffffff;<br />            --bg-accent: #f8f9fa;<br />            --border-color: #e1e8ed;</p>
+<p>            /* Typography */<br />            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;<br />            --font-size-base: 18px;<br />            --line-height-base: 1.8;</p>
+<p>            /* Spacing - Generous negative space */<br />            --space-xs: 12px;<br />            --space-sm: 24px;<br />            --space-md: 48px;<br />            --space-lg: 72px;<br />            --space-xl: 96px;</p>
+<p>            /* Container */<br />            --container-max: 800px;<br />            --container-padding: 32px;</p>
+<p>            /* Border radius */<br />            --radius-sm: 4px;<br />            --radius-md: 8px;<br />        }</p>
+<p>        * {<br />            margin: 0;<br />            padding: 0;<br />            box-sizing: border-box;<br />        }</p>
+<p>        body {<br />            font-family: var(--font-primary);<br />            font-size: var(--font-size-base);<br />            line-height: var(--line-height-base);<br />            color: var(--text-primary);<br />            background-color: var(--bg-main);<br />        }</p>
+<p>        /* Header */<br />        header {<br />            background-color: var(--bg-main);<br />            border-bottom: 1px solid var(--border-color);<br />            padding: var(--space-md) 0;<br />            margin-bottom: var(--space-xl);<br />        }</p>
+<p>        .header-container {<br />            max-width: var(--container-max);<br />            margin: 0 auto;<br />            padding: 0 var(--container-padding);<br />            text-align: center;<br />        }</p>
+<p>        .logo {<br />            display: inline-flex;<br />            align-items: center;<br />            gap: var(--space-sm);<br />            margin-bottom: var(--space-sm);<br />        }</p>
+<p>        .logo-text {<br />            font-size: 14px;<br />            font-weight: 600;<br />            color: var(--primary-color);<br />            letter-spacing: 2px;<br />            text-transform: uppercase;<br />        }</p>
+<p>        .lang-switch {<br />            margin-top: var(--space-sm);<br />        }</p>
+<p>        .lang-btn {<br />            background: none;<br />            border: 1px solid var(--border-color);<br />            padding: 8px 16px;<br />            margin: 0 4px;<br />            border-radius: var(--radius-sm);<br />            cursor: pointer;<br />            font-size: 14px;<br />            color: var(--text-secondary);<br />            transition: all 0.2s;<br />        }</p>
+<p>        .lang-btn.active {<br />            background-color: var(--primary-color);<br />            color: white;<br />            border-color: var(--primary-color);<br />        }</p>
+<p>        .lang-btn:hover:not(.active) {<br />            border-color: var(--primary-color);<br />            color: var(--primary-color);<br />        }</p>
+<p>        /* Container */<br />        .container {<br />            max-width: var(--container-max);<br />            margin: 0 auto;<br />            padding: 0 var(--container-padding) var(--space-xl);<br />        }</p>
+<p>        /* Article */<br />        article {<br />            margin-bottom: var(--space-xl);<br />        }</p>
+<p>        .article-meta {<br />            text-align: center;<br />            margin-bottom: var(--space-lg);<br />            color: var(--text-light);<br />            font-size: 14px;<br />        }</p>
+<p>        /* Typography */<br />        h1 {<br />            font-size: 36px;<br />            line-height: 1.3;<br />            font-weight: 700;<br />            color: var(--primary-color);<br />            margin-bottom: var(--space-md);<br />            text-align: center;<br />        }</p>
+<p>        h2 {<br />            font-size: 24px;<br />            line-height: 1.4;<br />            font-weight: 600;<br />            color: var(--text-primary);<br />            margin-top: var(--space-lg);<br />            margin-bottom: var(--space-md);<br />        }</p>
+<p>        .lead {<br />            font-size: 21px;<br />            line-height: 1.7;<br />            color: var(--text-secondary);<br />            margin-bottom: var(--space-lg);<br />            padding: var(--space-md);<br />            background-color: var(--bg-accent);<br />            border-left: 4px solid var(--primary-color);<br />            border-radius: var(--radius-sm);<br />        }</p>
+<p>        p {<br />            margin-bottom: var(--space-md);<br />            color: var(--text-primary);<br />        }</p>
+<p>        /* Figure & Images */<br />        figure {<br />            margin: var(--space-lg) 0;<br />        }</p>
+<p>        figure img {<br />            width: 100%;<br />            height: auto;<br />            border-radius: var(--radius-md);<br />            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);<br />        }</p>
+<p>        figcaption {<br />            margin-top: var(--space-sm);<br />            font-size: 15px;<br />            line-height: 1.6;<br />            color: var(--text-light);<br />            font-style: italic;<br />            text-align: center;<br />            padding: 0 var(--space-sm);<br />        }</p>
+<p>        /* Conclusion box */<br />        .conclusion {<br />            background-color: var(--bg-accent);<br />            padding: var(--space-md);<br />            border-radius: var(--radius-md);<br />            margin-top: var(--space-lg);<br />            border-top: 3px solid var(--secondary-color);<br />        }</p>
+<p>        .conclusion h2 {<br />            margin-top: 0;<br />            color: var(--secondary-color);<br />        }</p>
+<p>        /* Message highlight */<br />        .message-highlight {<br />            font-weight: 600;<br />            color: var(--primary-color);<br />        }</p>
+<p>        /* Footer */<br />        footer {<br />            border-top: 1px solid var(--border-color);<br />            padding: var(--space-md) 0;<br />            margin-top: var(--space-xl);<br />            text-align: center;<br />            color: var(--text-light);<br />            font-size: 14px;<br />        }</p>
+<p>        .stats {<br />            margin-top: var(--space-sm);<br />            color: var(--text-light);<br />        }</p>
+<p>        /* Language content toggle */<br />        .lang-content {<br />            display: none;<br />        }</p>
+<p>        .lang-content.active {<br />            display: block;<br />        }</p>
+<p>        /* Responsive */<br />        @media (max-width: 768px) {<br />            :root {<br />                --font-size-base: 16px;<br />                --container-padding: 20px;<br />                --space-lg: 48px;<br />                --space-xl: 64px;<br />            }</p>
+<p>            h1 {<br />                font-size: 28px;<br />            }</p>
+<p>            h2 {<br />                font-size: 21px;<br />            }</p>
+<p>            .lead {<br />                font-size: 18px;<br />                padding: var(--space-sm);<br />            }<br />        }</p>
+<p>        /* Smooth scroll */<br />        html {<br />            scroll-behavior: smooth;<br />        }</p>
+<p>        /* Breathing room for sections */<br />        section {<br />            margin-bottom: var(--space-lg);<br />        }<br />    </style>
+
+<main class="container">
+<!-- Vietnamese Content --></main><article id="content-vi" class="lang-content active">
+<div class="article-meta">12 - 16 Tháng 9, 2025</div>
+<h1>Hợp tác giữa Khoa Cơ khí Chế tạo máy – ĐH SPKT TP.HCM và ANMI Tools hướng tới đào tạo cơ khí gắn thực tiễn</h1>
+<div class="lead">Khoa Cơ khí Chế tạo máy – Trường Đại học Sư phạm Kỹ thuật TP. HCM và ANMI Tools đã ký kết thỏa thuận hợp tác ngày 12/09/2025. Sự kiện đánh dấu bước tiến quan trọng trong gắn kết Nhà trường và Doanh nghiệp, hướng đến đào tạo nguồn nhân lực cơ khí chất lượng cao và tiếp cận công nghệ hiện đại. Hoạt động tiếp nối là seminar chuyên đề diễn ra ngày 16/09/2025.</div>
+<section>
+<h2>Bối cảnh và mục tiêu hợp tác</h2>
+Thỏa thuận hợp tác được xây dựng trên nhu cầu tăng cường kết nối đào tạo với yêu cầu thực tiễn của doanh nghiệp trong lĩnh vực cơ khí chế tạo. Hai bên cùng hướng tới mục tiêu giúp sinh viên tiếp cận kiến thức ứng dụng, nâng cao kỹ năng và hiểu rõ nhu cầu công nghiệp.
+
+Sự phối hợp còn tạo kênh trao đổi giữa đội ngũ giảng dạy và doanh nghiệp về xu hướng công nghệ gia công. Ở mức tổng quát, hợp tác kỳ vọng đóng góp vào việc hình thành nguồn nhân lực chất lượng cao, thích ứng nhanh với môi trường sản xuất và yêu cầu kỹ thuật ngày càng nghiêm ngặt.
+
+</section><section>
+<h2>Lễ ký kết 12/09/2025</h2>
+Lễ ký kết diễn ra trong không gian làm việc trang trọng với bàn hồ sơ đặt phía trước, đại diện hai bên thực hiện bắt tay xác nhận thỏa thuận. Thành phần tham dự gồm đại diện phía Nhà trường và đại diện doanh nghiệp ở vị trí trung tâm, các thành viên khác đứng thành hàng hỗ trợ.
+
+Nội dung hợp tác ở mức khung: phối hợp trong các hoạt động đào tạo, chia sẻ kiến thức kỹ thuật và tạo điều kiện để sinh viên tiếp cận thực tiễn doanh nghiệp. Buổi ký kết được nhìn nhận như bước khởi đầu xây dựng nền tảng lâu dài cho chuỗi hoạt động học thuật và chuyển giao kinh nghiệm sản xuất.
+<figure><img class="aligncenter size-full wp-image-3707" src="https://anmitools.com/wp-content/uploads/2025/09/01-1.jpg" alt="" width="2048" height="1536" /><figcaption>Đại diện Khoa Cơ khí Chế tạo máy – ĐH SPKT TP.HCM và ANMI Tools bắt tay tại lễ ký kết thỏa thuận hợp tác ngày 12/09/2025.</figcaption></figure>
+</section><section>
+<h2>Seminar 16/09/2025 – Chia sẻ kiến thức</h2>
+Tiếp nối lễ ký kết, ngày 16/09/2025 hai bên phối hợp tổ chức buổi seminar về kỹ thuật gia công và dụng cụ cắt gọt kim loại tại phòng học của Khoa. Góc nhìn lớp học cho thấy bố cục bàn dài, người trình bày đứng phía trước và người tham dự ngồi hai bên theo dãy thẳng.
+
+Nội dung seminar tập trung ở mức tổng quát vào việc chia sẻ kiến thức kỹ thuật gia công, kinh nghiệm ứng dụng và định hướng giúp sinh viên hiểu rõ yêu cầu chuyên môn thực tế. Ở thời điểm trình bày, người thuyết trình sử dụng màn hình phía trước để minh họa thông tin, trong khi người tham dự theo dõi và ghi chép.
+<figure><img class="aligncenter size-full wp-image-3708" src="https://anmitools.com/wp-content/uploads/2025/09/02-1.jpg" alt="" width="2048" height="1536" /><figcaption>Góc nhìn lớp học tại buổi seminar ngày 16/09/2025 với người trình bày và người tham dự ngồi theo bố cục bàn dài.</figcaption></figure>
+Góc toàn cảnh khác cho thấy số lượng người tham dự ổn định, các hàng ghế được lấp đầy phù hợp với quy mô một buổi chuyên đề học thuật. Các quan sát nhấn mạnh tính tổ chức và sự phối hợp giữa Nhà trường và doanh nghiệp trong việc triển khai hoạt động tiếp nhận kiến thức thực tiễn.
+<figure><img class="aligncenter size-full wp-image-3709" src="https://anmitools.com/wp-content/uploads/2025/09/03-1.jpg" alt="" width="2048" height="1536" /><figcaption>Toàn cảnh buổi seminar ngày 16/09/2025 với người trình bày sử dụng màn hình trình chiếu và các dãy người tham dự theo dõi nội dung.</figcaption></figure>
+</section><section>
+<h2>Giá trị và triển vọng hợp tác</h2>
+Chuỗi hoạt động từ lễ ký kết đến seminar bước đầu cho thấy sự phối hợp đồng bộ giữa môi trường đào tạo và doanh nghiệp trong việc hỗ trợ kiến thức thực tiễn. Sinh viên có cơ hội quan sát trình bày, tiếp cận nội dung kỹ thuật ở bối cảnh lớp học tổ chức bài bản.
+
+Nhà trường tăng cường kênh kết nối để cập nhật xu hướng kỹ thuật gia công, trong khi doanh nghiệp có điều kiện giới thiệu định hướng ứng dụng ở mức khái quát. Các bên kỳ vọng hợp tác sẽ tiếp tục mở rộng ở những hoạt động phù hợp, góp phần nâng cao chất lượng đào tạo và tạo nền tảng phát triển nguồn nhân lực cơ khí gắn với yêu cầu sản xuất.
+<figure><img class="aligncenter size-full wp-image-3710" src="https://anmitools.com/wp-content/uploads/2025/09/04-1.jpg" alt="" width="2048" height="1536" /><figcaption>Ảnh tập thể cuối buổi seminar ngày 16/09/2025 ghi nhận sự tham gia của sinh viên và đại diện hai bên.</figcaption></figure>
+</section>
+<div class="conclusion">
+<h2>Kết luận và thông điệp</h2>
+Hoạt động hợp tác giữa Khoa Cơ khí Chế tạo máy – ĐH SPKT TP.HCM và ANMI Tools thể hiện định hướng gắn kết đào tạo với thực tiễn sản xuất, nhấn mạnh giá trị <span class="message-highlight">"Hợp tác – Phát triển – Thành công bền vững"</span>.
+
+Ban tổ chức gửi lời cảm ơn đến Quý Thầy Cô của Trường và Ban lãnh đạo ANMI đã đồng hành trong việc triển khai chuỗi hoạt động. Đây được xem là nền tảng cho các bước phối hợp tiếp theo nhằm hỗ trợ sinh viên tiếp cận kiến thức ứng dụng một cách hệ thống.
+
+</div>
+</article>

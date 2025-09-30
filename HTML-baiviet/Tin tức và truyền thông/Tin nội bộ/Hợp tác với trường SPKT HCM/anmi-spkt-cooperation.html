@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hợp tác ANMI Tools & ĐH SPKT TP.HCM</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #1a5490;
+            --secondary-color: #e74c3c;
+            --text-primary: #2c3e50;
+            --text-secondary: #5a6c7d;
+            --text-light: #95a5a6;
+            --bg-main: #ffffff;
+            --bg-accent: #f8f9fa;
+            --border-color: #e1e8ed;
+            
+            /* Typography */
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            --font-size-base: 18px;
+            --line-height-base: 1.8;
+            
+            /* Spacing - Generous negative space */
+            --space-xs: 12px;
+            --space-sm: 24px;
+            --space-md: 48px;
+            --space-lg: 72px;
+            --space-xl: 96px;
+            
+            /* Container */
+            --container-max: 800px;
+            --container-padding: 32px;
+            
+            /* Border radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-base);
+            color: var(--text-primary);
+            background-color: var(--bg-main);
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--bg-main);
+            border-bottom: 1px solid var(--border-color);
+            padding: var(--space-md) 0;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .header-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+            text-align: center;
+        }
+        
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+        }
+        
+        .logo-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .lang-switch {
+            margin-top: var(--space-sm);
+        }
+        
+        .lang-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            margin: 0 4px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+        
+        .lang-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .lang-btn:hover:not(.active) {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        /* Container */
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--container-padding) var(--space-xl);
+        }
+        
+        /* Article */
+        article {
+            margin-bottom: var(--space-xl);
+        }
+        
+        .article-meta {
+            text-align: center;
+            margin-bottom: var(--space-lg);
+            color: var(--text-light);
+            font-size: 14px;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: 36px;
+            line-height: 1.3;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: var(--space-md);
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 24px;
+            line-height: 1.4;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-top: var(--space-lg);
+            margin-bottom: var(--space-md);
+        }
+        
+        .lead {
+            font-size: 21px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-lg);
+            padding: var(--space-md);
+            background-color: var(--bg-accent);
+            border-left: 4px solid var(--primary-color);
+            border-radius: var(--radius-sm);
+        }
+        
+        p {
+            margin-bottom: var(--space-md);
+            color: var(--text-primary);
+        }
+        
+        /* Figure & Images */
+        figure {
+            margin: var(--space-lg) 0;
+        }
+        
+        figure img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        figcaption {
+            margin-top: var(--space-sm);
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-light);
+            font-style: italic;
+            text-align: center;
+            padding: 0 var(--space-sm);
+        }
+        
+        /* Conclusion box */
+        .conclusion {
+            background-color: var(--bg-accent);
+            padding: var(--space-md);
+            border-radius: var(--radius-md);
+            margin-top: var(--space-lg);
+            border-top: 3px solid var(--secondary-color);
+        }
+        
+        .conclusion h2 {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+        
+        /* Message highlight */
+        .message-highlight {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: var(--space-md) 0;
+            margin-top: var(--space-xl);
+            text-align: center;
+            color: var(--text-light);
+            font-size: 14px;
+        }
+        
+        .stats {
+            margin-top: var(--space-sm);
+            color: var(--text-light);
+        }
+        
+        /* Language content toggle */
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --font-size-base: 16px;
+                --container-padding: 20px;
+                --space-lg: 48px;
+                --space-xl: 64px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 21px;
+            }
+            
+            .lead {
+                font-size: 18px;
+                padding: var(--space-sm);
+            }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Breathing room for sections */
+        section {
+            margin-bottom: var(--space-lg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">ANMI Tools × HCMUTE</span>
+            </div>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('vi')">Tiếng Việt</button>
+                <button class="lang-btn" onclick="switchLang('en')">English</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Vietnamese Content -->
+        <article id="content-vi" class="lang-content active">
+            <div class="article-meta">12 - 16 Tháng 9, 2025</div>
+            
+            <h1>Hợp tác giữa Khoa Cơ khí Chế tạo máy – ĐH SPKT TP.HCM và ANMI Tools hướng tới đào tạo cơ khí gắn thực tiễn</h1>
+            
+            <div class="lead">
+                Khoa Cơ khí Chế tạo máy – Trường Đại học Sư phạm Kỹ thuật TP. HCM và ANMI Tools đã ký kết thỏa thuận hợp tác ngày 12/09/2025. Sự kiện đánh dấu bước tiến quan trọng trong gắn kết Nhà trường và Doanh nghiệp, hướng đến đào tạo nguồn nhân lực cơ khí chất lượng cao và tiếp cận công nghệ hiện đại. Hoạt động tiếp nối là seminar chuyên đề diễn ra ngày 16/09/2025.
+            </div>
+            
+            <section>
+                <h2>Bối cảnh và mục tiêu hợp tác</h2>
+                <p>Thỏa thuận hợp tác được xây dựng trên nhu cầu tăng cường kết nối đào tạo với yêu cầu thực tiễn của doanh nghiệp trong lĩnh vực cơ khí chế tạo. Hai bên cùng hướng tới mục tiêu giúp sinh viên tiếp cận kiến thức ứng dụng, nâng cao kỹ năng và hiểu rõ nhu cầu công nghiệp.</p>
+                <p>Sự phối hợp còn tạo kênh trao đổi giữa đội ngũ giảng dạy và doanh nghiệp về xu hướng công nghệ gia công. Ở mức tổng quát, hợp tác kỳ vọng đóng góp vào việc hình thành nguồn nhân lực chất lượng cao, thích ứng nhanh với môi trường sản xuất và yêu cầu kỹ thuật ngày càng nghiêm ngặt.</p>
+            </section>
+            
+            <section>
+                <h2>Lễ ký kết 12/09/2025</h2>
+                <p>Lễ ký kết diễn ra trong không gian làm việc trang trọng với bàn hồ sơ đặt phía trước, đại diện hai bên thực hiện bắt tay xác nhận thỏa thuận. Thành phần tham dự gồm đại diện phía Nhà trường và đại diện doanh nghiệp ở vị trí trung tâm, các thành viên khác đứng thành hàng hỗ trợ.</p>
+                <p>Nội dung hợp tác ở mức khung: phối hợp trong các hoạt động đào tạo, chia sẻ kiến thức kỹ thuật và tạo điều kiện để sinh viên tiếp cận thực tiễn doanh nghiệp. Buổi ký kết được nhìn nhận như bước khởi đầu xây dựng nền tảng lâu dài cho chuỗi hoạt động học thuật và chuyển giao kinh nghiệm sản xuất.</p>
+                
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop" alt="Lễ ký kết hợp tác">
+                    <figcaption>Đại diện Khoa Cơ khí Chế tạo máy – ĐH SPKT TP.HCM và ANMI Tools bắt tay tại lễ ký kết thỏa thuận hợp tác ngày 12/09/2025.</figcaption>
+                </figure>
+            </section>
+            
+            <section>
+                <h2>Seminar 16/09/2025 – Chia sẻ kiến thức</h2>
+                <p>Tiếp nối lễ ký kết, ngày 16/09/2025 hai bên phối hợp tổ chức buổi seminar về kỹ thuật gia công và dụng cụ cắt gọt kim loại tại phòng học của Khoa. Góc nhìn lớp học cho thấy bố cục bàn dài, người trình bày đứng phía trước và người tham dự ngồi hai bên theo dãy thẳng.</p>
+                <p>Nội dung seminar tập trung ở mức tổng quát vào việc chia sẻ kiến thức kỹ thuật gia công, kinh nghiệm ứng dụng và định hướng giúp sinh viên hiểu rõ yêu cầu chuyên môn thực tế. Ở thời điểm trình bày, người thuyết trình sử dụng màn hình phía trước để minh họa thông tin, trong khi người tham dự theo dõi và ghi chép.</p>
+                
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=500&fit=crop" alt="Buổi seminar góc phòng học">
+                    <figcaption>Góc nhìn lớp học tại buổi seminar ngày 16/09/2025 với người trình bày và người tham dự ngồi theo bố cục bàn dài.</figcaption>
+                </figure>
+                
+                <p>Góc toàn cảnh khác cho thấy số lượng người tham dự ổn định, các hàng ghế được lấp đầy phù hợp với quy mô một buổi chuyên đề học thuật. Các quan sát nhấn mạnh tính tổ chức và sự phối hợp giữa Nhà trường và doanh nghiệp trong việc triển khai hoạt động tiếp nhận kiến thức thực tiễn.</p>
+                
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=500&fit=crop" alt="Toàn cảnh seminar">
+                    <figcaption>Toàn cảnh buổi seminar ngày 16/09/2025 với người trình bày sử dụng màn hình trình chiếu và các dãy người tham dự theo dõi nội dung.</figcaption>
+                </figure>
+            </section>
+            
+            <section>
+                <h2>Giá trị và triển vọng hợp tác</h2>
+                <p>Chuỗi hoạt động từ lễ ký kết đến seminar bước đầu cho thấy sự phối hợp đồng bộ giữa môi trường đào tạo và doanh nghiệp trong việc hỗ trợ kiến thức thực tiễn. Sinh viên có cơ hội quan sát trình bày, tiếp cận nội dung kỹ thuật ở bối cảnh lớp học tổ chức bài bản.</p>
+                <p>Nhà trường tăng cường kênh kết nối để cập nhật xu hướng kỹ thuật gia công, trong khi doanh nghiệp có điều kiện giới thiệu định hướng ứng dụng ở mức khái quát. Các bên kỳ vọng hợp tác sẽ tiếp tục mở rộng ở những hoạt động phù hợp, góp phần nâng cao chất lượng đào tạo và tạo nền tảng phát triển nguồn nhân lực cơ khí gắn với yêu cầu sản xuất.</p>
+                
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop" alt="Ảnh tập thể">
+                    <figcaption>Ảnh tập thể cuối buổi seminar ngày 16/09/2025 ghi nhận sự tham gia của sinh viên và đại diện hai bên.</figcaption>
+                </figure>
+            </section>
+            
+            <div class="conclusion">
+                <h2>Kết luận và thông điệp</h2>
+                <p>Hoạt động hợp tác giữa Khoa Cơ khí Chế tạo máy – ĐH SPKT TP.HCM và ANMI Tools thể hiện định hướng gắn kết đào tạo với thực tiễn sản xuất, nhấn mạnh giá trị <span class="message-highlight">"Hợp tác – Phát triển – Thành công bền vững"</span>.</p>
+                <p>Ban tổ chức gửi lời cảm ơn đến Quý Thầy Cô của Trường và Ban lãnh đạo ANMI đã đồng hành trong việc triển khai chuỗi hoạt động. Đây được xem là nền tảng cho các bước phối hợp tiếp theo nhằm hỗ trợ sinh viên tiếp cận kiến thức ứng dụng một cách hệ thống.</p>
+            </div>
+        </article>
+
+        <!-- English Content -->
+        <article id="content-en" class="lang-content">
+            <div class="article-meta">September 12 - 16, 2025</div>
+            
+            <h1>Partnership Signing between the Faculty of Mechanical Engineering – HCMUTE and ANMI Tools Strengthening Practice-Oriented Mechanical Training</h1>
+            
+            <div class="lead">
+                On 12 September 2025, the Faculty of Mechanical Engineering at Ho Chi Minh City University of Technology and Education (HCMUTE) and ANMI Tools signed a cooperation agreement. The signing marks a significant step in connecting academia with industry, aiming to cultivate high-quality mechanical engineering talent and enhance access to relevant technology. Four days later, on 16 September 2025, a follow-on technical seminar was jointly organized.
+            </div>
+            
+            <section>
+                <h2>Context & Objectives</h2>
+                <p>The agreement is framed by the growing demand for mechanical engineers who combine theoretical grounding with practical application skills. Through this collaboration, both sides seek to help students engage with applied knowledge, strengthen adaptability to production environments, and maintain a channel for exchanging views on machining technology trends.</p>
+                <p>The coordination also supports academic staff in aligning instructional focus with evolving industry expectations. In a general sense, the cooperation is expected to contribute to a more agile training foundation, enabling learners to internalize process awareness, technical discipline, and quality requirements aligned with modern manufacturing.</p>
+            </section>
+            
+            <section>
+                <h2>Signing Ceremony – 12 September 2025</h2>
+                <p>The signing took place in a formal working setting, with agreement documents placed on the table and representatives of the two sides performing a handshake to affirm the cooperation. Participants included representatives from the faculty and the enterprise positioned centrally, with other members standing in support.</p>
+                <p>The general scope covers coordination in training activities, technical knowledge sharing, and creating conditions for students to access real production environments. The event is regarded as an initial platform upon which subsequent academic and practical engagement activities can be structured, reinforcing intent toward long-term collaboration aligned with workforce development needs.</p>
+                
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop" alt="Partnership signing ceremony">
+                    <figcaption>Representatives of the Faculty of Mechanical Engineering – HCMUTE and ANMI Tools formalize the cooperation with a handshake during the 12 September 2025 signing.</figcaption>
+                </figure>
+            </section>
+            
+            <section>
+                <h2>Technical Seminar – 16 September 2025</h2>
+                <p>Continuing from the signing, on 16 September 2025 the two parties jointly held a seminar on machining techniques and cutting tool topics at the faculty's classroom facility. A classroom perspective shows a long table arrangement, the presenter standing at the front, and participants seated in aligned rows.</p>
+                <p>The session content, at a general level, focused on sharing machining knowledge, application considerations, and orientations helping students clarify practical skill expectations. During the presentation segment, a display screen was used to illustrate information while attendees followed and took notes.</p>
+                
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=500&fit=crop" alt="Seminar classroom view">
+                    <figcaption>Classroom perspective of the 16 September 2025 seminar with the presenter at the front and participants seated along the table layout.</figcaption>
+                </figure>
+                
+                <p>A wider panoramic view shows a stable level of participation with seating rows occupied consistent with a focused academic technical session. These observations underscore structured organization and coordinated execution between the academic side and the enterprise in facilitating practical knowledge transfer.</p>
+                
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=500&fit=crop" alt="Seminar panoramic view">
+                    <figcaption>Wide view of the 16 September 2025 seminar with the presenter using the display screen and rows of attendees following the material.</figcaption>
+                </figure>
+            </section>
+            
+            <section>
+                <h2>Value & Outlook</h2>
+                <p>The two milestone activities illustrate coordinated efforts to channel practical insight into the training process. Students gain direct observation of presented content, while the faculty strengthens channels for updating machining trend awareness.</p>
+                <p>The enterprise, in turn, introduces application-oriented orientations at a general level, supporting foundation building for future forms of suitable cooperation. Both sides express an expectation that collaboration will continue to expand in alignment with training demand and mechanical workforce development priorities, contributing to improved alignment between education outcomes and production environment needs.</p>
+                
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop" alt="Group photo">
+                    <figcaption>Group photo at the conclusion of the 16 September 2025 seminar documenting participation by students and representatives of both sides.</figcaption>
+                </figure>
+            </section>
+            
+            <div class="conclusion">
+                <h2>Conclusion & Message</h2>
+                <p>The cooperation activities reaffirm a direction of linking training with practical industry contexts while emphasizing the shared message: <span class="message-highlight">"Collaboration – Development – Sustainable Success."</span></p>
+                <p>Appreciation is extended to the faculty members of HCMUTE and the leadership of ANMI for their coordination in implementing the activity sequence. This foundation is expected to support students in engaging with applied technical knowledge systematically and to encourage continued constructive interaction shaping future collaborative initiatives.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ANMI Tools & HCMUTE. All rights reserved.</p>
+            <p class="stats">500-800 words · 4 photos · Practice-oriented cooperation</p>
+        </div>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById('content-' + lang).classList.add('active');
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
