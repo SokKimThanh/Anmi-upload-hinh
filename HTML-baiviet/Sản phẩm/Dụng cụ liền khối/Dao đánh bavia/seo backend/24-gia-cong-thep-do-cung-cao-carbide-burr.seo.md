@@ -119,11 +119,11 @@ Thiếu: RPM cụ thể, lực cắt, độ nhám định lượng. Không tự 
 ## 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
-| Primary | Nhờ kỹ thuật tư vấn chọn mũi burr cho thép cứng | /contact/ | Sau H2 #4 |
-| Secondary | Xem hướng dẫn chọn carbide burr tổng quát | /carbide-burr/huong-dan-chon-carbide-burr/ | Sau checklist |
-| Soft Support | Chat nhanh: gửi ảnh chi tiết thép | Form/Chat | After FAQ |
+| Primary | Gửi ảnh chi tiết → nhận phân tích điểm khó | /contact/ | Sau H2 #4 |
+| Secondary | Quay lại hướng dẫn chọn tổng quát | /carbide-burr/huong-dan-chon-carbide-burr/ | Sau checklist |
+| Soft Support | Không chắc bước tiếp? Trao đổi 2 phút | Form/Chat | After FAQ |
 
-Tone: Hỗ trợ – không nói “tăng tuổi thọ X%”.
+Tone: Hỗ trợ, thực tế – không dùng % cải thiện.
 
 ## 15. Author & E-E-A-T Block
 - Author Name: (điền sau)

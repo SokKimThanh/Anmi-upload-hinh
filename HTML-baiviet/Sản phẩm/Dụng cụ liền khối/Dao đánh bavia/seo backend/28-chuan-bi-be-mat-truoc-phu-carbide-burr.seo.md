@@ -113,9 +113,9 @@ Thiếu: Độ nhám Ra số, độ sâu bo cạnh chuẩn. Không đưa % cải
 ## 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
-| Primary | Nhờ tư vấn chọn burr làm sạch trước phủ | /contact/ | Sau H2 #4 |
-| Secondary | Xem hướng dẫn chọn carbide burr | /carbide-burr/huong-dan-chon-carbide-burr/ | Sau checklist |
-| Soft Support | Gửi ảnh chi tiết cần xử lý | Form/Chat | After FAQ |
+| Primary | Gửi khu vực cần xử lý → nhận gợi ý làm sạch an toàn | /contact/ | Sau H2 #4 |
+| Secondary | Quay lại hướng dẫn chọn tổng quát | /carbide-burr/huong-dan-chon-carbide-burr/ | Sau checklist |
+| Soft Support | Muốn xác nhận không chọn sai? Hỏi kỹ thuật | Form/Chat | After FAQ |
 
 ## 15. Author & E-E-A-T Block
 - Author Name: (điền sau)

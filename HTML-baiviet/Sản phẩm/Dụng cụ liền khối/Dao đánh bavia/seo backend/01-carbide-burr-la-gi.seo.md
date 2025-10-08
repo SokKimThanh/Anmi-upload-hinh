@@ -121,11 +121,11 @@ FAQ JSON (draft):
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
-| Primary | Gửi ứng dụng & vật liệu → nhận gợi ý Burr | /lien-he/ | Sau Checklist |
-| Secondary | Xem bảng so sánh Cut Type & Shape | /carbide-burr/so-sanh/ | Cuối Section 3 |
-| Soft Support | Cần giúp lọc nhanh? Chat với kỹ thuật | Chat Widget | After FAQ |
+| Primary | Gửi 3 thông tin ứng dụng → nhận gợi ý burr phù hợp | /lien-he/ | Sau Checklist |
+| Secondary | Khám phá 14 hình dạng burr phổ biến | /carbide-burr/shape-overview/ (hoặc trang shape hub) | Sau Section 4 |
+| Soft Support | Chat nhanh: gửi ảnh chi tiết để nhận gợi ý | Chat Widget | After FAQ |
 
-Tone: Trợ giúp – không ép mua.
+Tone: Hỗ trợ, trung lập – tránh hứa hẹn tuyệt đối.
 
 ### 15. Author & E-E-A-T Block
 - Author Name: (Điền) – ví dụ: Nguyễn Văn A

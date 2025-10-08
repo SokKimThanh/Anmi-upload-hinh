@@ -131,6 +131,7 @@ Nguyên tắc: Luôn ghi rõ “Chưa có dữ liệu trong catalogue dạng tex
 
 
 ## 14. CTA Architecture
+Note: Tham chiếu thư viện CTA trong `CLUSTER_CTA_STRATEGY.md`. Chọn 1 Primary + 1 Secondary + 1 Soft. Tránh lặp động từ mở đầu. Primary đặt sau decision moment; Soft sau FAQ.
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
 | Primary |  | /contact-us/ | Giữa hoặc cuối |
