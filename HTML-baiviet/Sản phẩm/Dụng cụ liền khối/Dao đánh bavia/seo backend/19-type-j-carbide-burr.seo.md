@@ -4,7 +4,7 @@
 - Mã bài: 19
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
-- H1: Carbide Burr Shape J (Taper Radius End): Vát bo mềm kiểm soát?
+- H1: Carbide Burr Shape J (Taper Radius End): Vát bo mềm kiểm soát
 - Slug: type-j-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)

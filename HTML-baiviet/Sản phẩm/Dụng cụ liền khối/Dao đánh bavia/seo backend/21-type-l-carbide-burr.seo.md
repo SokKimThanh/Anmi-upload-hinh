@@ -4,7 +4,7 @@
 - Mã bài: 21
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
-- H1: Carbide Burr Shape L (Cone 60°): Vát chuẩn góc trung bình?
+- H1: Carbide Burr Shape L (Cone 60°): Vát chuẩn góc trung bình
 - Slug: type-l-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)

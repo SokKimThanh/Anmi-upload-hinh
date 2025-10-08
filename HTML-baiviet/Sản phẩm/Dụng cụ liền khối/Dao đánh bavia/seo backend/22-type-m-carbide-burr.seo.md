@@ -4,7 +4,7 @@
 - Mã bài: 22
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
-- H1: Carbide Burr Shape M (Cone 90°): Vát góc vuông & mép lỗ lớn?
+- H1: Carbide Burr Shape M (Cone 90°): Vát góc vuông & mép lỗ lớn
 - Slug: type-m-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)

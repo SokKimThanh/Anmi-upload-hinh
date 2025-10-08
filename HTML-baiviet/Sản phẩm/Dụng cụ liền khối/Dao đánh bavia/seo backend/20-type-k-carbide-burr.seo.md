@@ -4,7 +4,7 @@
 - Mã bài: 20
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
-- H1: Carbide Burr Shape K (Taper Pointed End): Vát sắc & sửa góc?
+- H1: Carbide Burr Shape K (Taper Pointed End): Vát sắc & sửa góc
 - Slug: type-k-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)

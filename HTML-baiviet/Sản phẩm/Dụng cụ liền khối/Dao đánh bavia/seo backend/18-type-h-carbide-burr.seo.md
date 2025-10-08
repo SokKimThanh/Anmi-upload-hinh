@@ -4,7 +4,7 @@
 - Mã bài: 18
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
-- H1: Carbide Burr Shape H (Flame): Chuyển tiếp cong thuôn dài?
+- H1: Carbide Burr Shape H (Flame): Chuyển tiếp cong thuôn dài
 - Slug: type-h-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)

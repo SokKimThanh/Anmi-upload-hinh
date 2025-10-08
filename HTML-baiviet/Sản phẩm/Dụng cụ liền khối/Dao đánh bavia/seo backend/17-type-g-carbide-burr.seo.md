@@ -4,7 +4,7 @@
 - Mã bài: 17
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
-- H1: Carbide Burr Shape G (Tree Point End): Vươn sâu vào góc nhọn?
+- H1: Carbide Burr Shape G (Tree Point End): Vươn sâu vào góc nhọn
 - Slug: type-g-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)
