@@ -1,0 +1,75 @@
+
+PROMPT PHÂN LOẠI DANH MỤC — Carbider Burr (An Mi Tools)
+
+[MỤC TIÊU HUẤN LUYỆN]
+Huấn luyện chatbot có khả năng:
+1. Phân tích nội dung quyển “Carbider Burr.pdf” và xác định các danh mục chính xác mà tài liệu mô tả.
+2. Phân biệt rõ giữa:
+   - Danh mục sản phẩm (Category)
+   - Thuộc tính sản phẩm (Attributes)
+   - Thẻ nhận dạng (Tags)
+3. Không được tạo danh mục mới ngoài hệ thống chuẩn của nhà sản xuất.
+4. Khi thiếu dữ liệu, phải báo rõ “Không đủ thông tin để xác định”.
+
+[HƯỚNG DẪN PHÂN LOẠI TỪ TÀI LIỆU]
+1. Đọc toàn bộ nội dung văn bản trong “Carbider Burr.pdf”.
+2. Tìm các cụm từ hoặc tiêu đề có từ khóa như: Carbide Burr, Cut Type, Burr Shape, Deburring, Polishing, Grinding.
+3. Xác định cấp danh mục cha - con như sau:
+   - Cấp cha (Parent Category): DỤNG CỤ CẮT CÔNG NGHIỆP
+   - Cấp con (Subcategory): DỤNG CỤ MÀI – ĐÁNH BAVIA (CARBIDE BURR)
+   - Dưới cấp con (Item level): các loại burr cụ thể theo hình dạng (A → N).
+4. Nếu tài liệu chỉ mô tả hình dạng, kiểu cắt hoặc ứng dụng mà không có thông số kỹ thuật (D–L–d), vẫn ghi nhận danh mục.
+
+[KẾT QUẢ PHÂN LOẠI CHUẨN DỰ KIẾN]
+1️⃣ Danh mục cha (Parent Category):
+> DAO CẮT CÔNG NGHIỆP (CUTTING TOOLS)
+
+2️⃣ Danh mục con (Subcategory):
+> DỤNG CỤ MÀI – ĐÁNH BAVIA (CARBIDE BURR TOOLS)
+
+3️⃣ Danh mục chi tiết hơn (Detailed categories):
+| Nhóm con | Mô tả | Ghi chú |
+|-----------|-------|----------|
+| CARBIDE BURR CYLINDER TYPE (A) | Dạng trụ | Gia công mặt phẳng, mép ngoài |
+| CARBIDE BURR BALL TYPE (D) | Dạng cầu | Đánh bavia cung, biên dạng bo tròn |
+| CARBIDE BURR CONE TYPE (M) | Dạng nón | Vát mép, rãnh sâu |
+| CARBIDE BURR INVERTED CONE (N) | Dạng nón ngược | Vát trong lòng chi tiết |
+| CARBIDE BURR OVAL / FLAME TYPE (E/H) | Dạng oval / ngọn lửa | Biên dạng cung |
+| CARBIDE BURR COUNTERSINK (J/K) | 60°–90° | Vát mép lỗ |
+| SET BURR TOOL KIT | Bộ dụng cụ tổng hợp | Nếu tài liệu liệt kê bộ burr nhiều đầu |
+
+[THUỘC TÍNH (ATTRIBUTES) CẦN TRÍCH XUẤT]
+| Tên thuộc tính | Kiểu dữ liệu | Mô tả / Ví dụ |
+|----------------|--------------|----------------|
+| Vật liệu dụng cụ (Tool Material) | Text | Tungsten Carbide |
+| Kiểu cắt (Cut Type) | Enum | Double Cut, Single Cut, Aluminium Cut, Fine Cut, Coarse Cut, MR Cut, ZX Cut |
+| Đường kính đầu (Head Diameter – D) | Numeric (mm) | 6mm, 8mm, 12mm |
+| Chiều dài đầu (Head Length – L) | Numeric (mm) | 12mm, 25mm... |
+| Đường kính chuôi (Shank – d) | Numeric (mm) | 3mm, 6mm... |
+| Hình dạng (Shape) | Enum | A–N |
+| Ứng dụng vật liệu gia công | Text | Thép, gang, nhôm, inox, composite |
+| Loại gia công (Operation Type) | Text | Deburring, Grinding, Chamfering |
+| Tốc độ quay khuyến nghị | Text/Note | Ghi chú nếu tài liệu không cung cấp con số |
+| Hướng dẫn an toàn | Text | Các nguyên tắc vận hành an toàn |
+
+[THẺ (TAGS) GỢI Ý CHUẨN SEO / TRA CỨU]
+carbide burr, rotary burr, deburring tool, an mi tools, dao đánh bavia, dụng cụ mài hợp kim,
+double cut burr, single cut burr, cylinder burr, ball burr, cone burr, flame burr, bavia removal,
+metal finishing, high speed grinding tool, precision burr tool
+
+[NGUYÊN TẮC KIỂM TRA SAU KHI PHÂN LOẠI]
+1. Phải tồn tại ít nhất 1 danh mục cha và 1 danh mục con.
+2. Nếu chatbot chỉ trích được “Carbide Burr” mà không có cấp cha → cảnh báo.
+3. Nếu chatbot không trích được cut type hoặc hình dạng A→N → cảnh báo.
+4. Báo cáo kết quả gồm:
+   - Danh mục đầy đủ (cha → con → chi tiết)
+   - Danh sách thuộc tính (attributes)
+   - Danh sách tag SEO
+   - Mức độ hoàn thiện (% completeness)
+
+[KẾT LUẬN]
+Khi chatbot áp dụng prompt này, nó sẽ:
+- Xác định đúng vị trí tài liệu “Carbider Burr.pdf” trong hệ thống danh mục sản phẩm,
+- Tự động nhận biết loại sản phẩm (Carbide Burr Tools),
+- Gắn thuộc tính và thẻ tra cứu hợp lý,
+- Và tránh tạo danh mục sai hoặc dư thừa ngoài hệ thống.

@@ -1,0 +1,71 @@
+
+PROMPT ĐÁNH GIÁ KHẢ NĂNG VIẾT BÀI SEO SẢN PHẨM — Dựa trên tài liệu Carbider Burr.pdf
+
+[MỤC TIÊU HUẤN LUYỆN]
+Huấn luyện chatbot có khả năng:
+1. Đọc các tri thức kỹ thuật thu được từ tài liệu Carbider Burr.pdf.
+2. Đánh giá xem phần nội dung / trang nào trong tài liệu có thể chuyển hóa thành bài sản phẩm SEO cho website.
+3. Xác định tiêu chí “đủ dữ liệu để viết bài SEO” gồm:
+   - Có tên sản phẩm cụ thể.
+   - Có ứng dụng hoặc công dụng rõ ràng.
+   - Có đặc tính kỹ thuật / vật liệu / hình dạng.
+   - Có ưu điểm, lợi ích sử dụng.
+   - Có từ khóa SEO tiềm năng.
+4. Nếu thiếu dữ liệu quan trọng, chatbot phải báo: “Phần này chưa đủ dữ liệu để viết thành bài SEO (thiếu: …).”
+
+[CÁC BƯỚC ĐỌC & ĐÁNH GIÁ]
+1. Đọc toàn bộ nội dung tri thức hiện có.
+2. Chia thông tin theo nhóm: Cut Type, Burr Shape (A–N), Ứng dụng, Hướng dẫn an toàn.
+3. Với từng nhóm, đặt câu hỏi:
+   - Có mô tả công dụng cụ thể không?
+   - Có ưu điểm kỹ thuật không?
+   - Có thông tin vật liệu không?
+   - Có thể xác định nhóm người dùng / ngành ứng dụng không?
+4. Nếu trả lời “có” ≥ 3 tiêu chí → đề xuất viết bài SEO.
+   Nếu “có” ≤ 2 tiêu chí → báo thiếu thông tin cần bổ sung.
+
+[ĐẦU RA KỲ VỌNG]
+A. Kết quả đánh giá tổng thể
+| Phần nội dung / Hạng mục | Đủ dữ liệu SEO? | Ghi chú |
+|---------------------------|----------------|----------|
+| Giới thiệu Carbide Burr | ✅ Có thể viết bài tổng quan SEO (“Dao mài hợp kim Carbide Burr”) | Đầy đủ thông tin tổng quát |
+| Double Cut Burr | ✅ Có thể viết bài riêng | Có công dụng, vật liệu, ứng dụng |
+| Aluminium Cut Burr | ⚠️ Thiếu ví dụ hoặc ảnh minh họa | Cần bổ sung hình ảnh |
+| Burr Shape A – Cylinder Type | ✅ Đủ dữ liệu viết bài SEO sản phẩm | Mô tả rõ công dụng, hình dạng, ứng dụng |
+| Burr Shape N – Inverted Cone | ✅ Đủ | Có công dụng vát mép trong |
+| Safety Instructions | ❌ Không phù hợp viết bài SEO sản phẩm | Nội dung kỹ thuật nội bộ |
+| Company Vision | ⚠️ Phù hợp viết bài giới thiệu doanh nghiệp | Cần tách riêng |
+
+B. Đề xuất cấu trúc SEO cho từng phần (template)
+[Title] DAO MÀI CARBIDE BURR DẠNG TRỤ (CYLINDER TYPE) — ĐỘ BỀN CAO, GIA CÔNG MƯỢT MỊN
+[Meta Description]
+Dụng cụ mài hợp kim dạng trụ Carbide Burr giúp đánh bavia, tạo hình và hoàn thiện bề mặt kim loại nhanh chóng.
+Phù hợp cho thép, inox, nhôm và vật liệu cứng.
+
+[Main Content]
+- Giới thiệu sản phẩm: Carbide Burr Cylinder Type (A)
+- Cấu tạo: tungsten carbide liền khối, mài chính xác
+- Ứng dụng: đánh bavia, tạo rãnh, làm mịn cạnh
+- Ưu điểm: tuổi thọ cao, bề mặt mịn, độ đồng tâm tốt
+- Phân loại: Cut type Double / Fine / Coarse
+- Hướng dẫn an toàn: tốc độ quay phù hợp, không ấn mạnh
+- Liên hệ: Công ty An Mi Tools – đại diện phân phối chính thức
+
+[TIÊU CHÍ CHẤM ĐIỂM KHẢ NĂNG VIẾT SEO]
+| Tiêu chí | Mô tả | Trọng số |
+|-----------|--------|-----------|
+| Có tên sản phẩm cụ thể | VD: Double Cut Burr, Shape D Ball Type | 20% |
+| Có công dụng / ứng dụng thực tế | Đánh bavia, mài nhẵn, tạo biên dạng | 20% |
+| Có ưu điểm kỹ thuật | Cứng vững, hiệu suất cao | 15% |
+| Có vật liệu / đặc tính kỹ thuật | Carbide, phủ TiN, HSS… | 15% |
+| Có thể gắn từ khóa SEO | “dao mài hợp kim”, “carbide burr”, “rotary burr” | 10% |
+| Có cấu trúc mô tả chuẩn | giới thiệu–ứng dụng–ưu điểm–thông số–liên hệ | 20% |
+
+Nếu tổng điểm ≥ 70% → Đủ điều kiện viết bài SEO.
+Nếu < 70% → Ghi rõ lý do chưa đủ.
+
+[KẾT LUẬN]
+Khi chatbot áp dụng prompt này, nó sẽ:
+- Đánh giá chính xác phần nào trong tài liệu đủ dữ liệu để viết bài SEO sản phẩm website,
+- Gợi ý danh sách trang tiềm năng có thể triển khai nội dung SEO,
+- Và sinh báo cáo kèm mẫu cấu trúc bài SEO tự động cho từng sản phẩm.

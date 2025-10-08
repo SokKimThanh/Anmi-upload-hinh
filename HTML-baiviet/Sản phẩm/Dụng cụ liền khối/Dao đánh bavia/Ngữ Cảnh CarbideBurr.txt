@@ -1,0 +1,120 @@
+ Tuyệt vời! Dưới đây là toàn bộ ngữ cảnh (context) đã được trích xuất và tổ chức từ tài liệu **“Carbider Burr.pdf” (AN MI TOOLS)**. Ngữ cảnh này được tổng hợp từ 3 bước huấn luyện trước, đảm bảo cung cấp đầy đủ thông tin kỹ thuật chính xác, đã được phân loại và kiểm chứng.
+
+Nội dung này có thể được sử dụng để huấn luyện một chatbot mới về sản phẩm Carbide Burr của AN MI TOOLS.
+
+---
+
+## 1. Thông tin Tổng quan về Doanh nghiệp & Tài liệu
+
+| Trường | Giá trị | Nguồn |
+| :--- | :--- | :--- |
+| **Công ty** | **AN MI TOOLS** (Hơn 15 năm kinh nghiệm tại Việt Nam) | Trang 2 |
+| **Tài liệu** | **Carbide Burr.pdf** (Catalogue dụng cụ mài hợp kim cứng) | Trang 1 |
+| **Mục đích** | Giới thiệu, phân loại các loại dao mài hợp kim cứng, hướng dẫn an toàn và ứng dụng. | Trang 1 |
+| **Triết lý/Sứ mệnh** | Cống hiến vì một nền công nghiệp mạnh mẽ, hiệu quả thông qua kiến thức, sự tử tế, gắn liền với kinh tế tuần hoàn. Xây dựng chuỗi sản phẩm chất lượng cao, khẳng định đẳng cấp người Việt. | Trang 3 |
+| **Vật liệu Dụng cụ** | **Tungsten Carbide** (Hợp kim cứng) | Trang 1 |
+
+---
+
+## 2. Phân loại Sản phẩm & Thuộc tính Kỹ thuật
+
+### A. Hệ thống Danh mục Sản phẩm
+
+| Cấp | Tên Danh mục |
+| :--- | :--- |
+| **Cấp Cha** | DỤNG CỤ CẮT CÔNG NGHIỆP (Cutting Tools) |
+| **Cấp Con** | DỤNG CỤ MÀI – ĐÁNH BAVIA (Carbide Burr Tools) |
+| **Cấp Chi tiết** | CARBIDE BURR CYLINDER TYPE (A, B, C) |
+| **Cấp Chi tiết** | CARBIDE BURR BALL TYPE (D) |
+| **Cấp Chi tiết** | CARBIDE BURR CONE TYPE (L, M, N) |
+| **Cấp Chi tiết** | CARBIDE BURR COUNTERSINK (J, K) |
+| **Cấp Chi tiết** | CARBIDE BURR OVAL / FLAME / TREE TYPE (E, F, G, H) |
+
+### B. Các Kiểu Cắt (Cut Types)
+
+| Mã | Tên (Tiếng Việt) | Ứng dụng Chính | Vật liệu Phù hợp |
+| :--- | :--- | :--- | :--- |
+| **Double Cut** | Lưỡi cắt đôi | Gia công thép < 60 HRC, Inox, Vật liệu chịu nhiệt | Thép, thép không gỉ, vật liệu chịu nhiệt |
+| **Cut MX** | Single Cut (Lưỡi cắt đơn) | Gia công gang, thép, inox < 60 HRC | Gang, thép, thép không gỉ |
+| **Cut W** | **Aluminium Cut** | Gia công nhôm, hợp kim nhôm, kim loại màu, nhựa | Nhôm, kim loại màu, nhựa |
+| **Cut C** | Coarse Cut (Lưỡi cắt thô) | Gia công hoàn thiện kim loại mềm, thép, gang | Kim loại mềm, kim loại màu, thép, gang |
+| **Cut F** | Fine Cut (Lưỡi cắt mịn) | Gia công tinh xảo gang, thép < 60 HRC, inox | Gang, thép, thép không gỉ |
+| **Cut L** | Diamond Cut | Gia công chính xác mọi vật liệu < 60 HRC | Mọi vật liệu (< 60 HRC) |
+| **Cut MR** | Chip Breaker Cut | Gia công thép không gỉ, thép và gang | Thép không gỉ, thép, gang |
+
+### C. Hình dạng Burr (Shapes A $\rightarrow$ N)
+
+| Mã | Hình dạng | Ứng dụng Chính (Công dụng) |
+| :--- | :--- | :--- |
+| **A (SA)** | Cylinder Shape (Trụ) | Gia công **bề mặt** của chi tiết (surface profile). |
+| **B (SB)** | Cylinder w/ End Cut | Gia công bề mặt và **hoán đổi hai mặt vuông góc**. |
+| **C (SC)** | Ball Nosed Cylinder | Gia công bề mặt và **hình dạng cung tròn**. |
+| **D** | Ball Shape (Cầu) | Gia công cung tròn, loại bỏ burr đường kính, **gia công điểm hàn**. |
+| **E** | Oval Shape | Gia công hình dạng cung tròn. |
+| **F** | Ball Nosed Tree | Gia công cung tròn **trong không gian hạn chế**. |
+| **G** | Point Tree (Cây nhọn) | Gia công cung tròn trong không gian hạn chế và **hình dạng góc nhọn**. |
+| **H** | Flame Shape (Ngọn lửa) | Gia công hình dạng cung tròn. |
+| **J** | **60° Countersink** | Gia công **vát mép cung doa ngược 60°** của phôi. |
+| **K** | 90° Countersink | Gia công hình dạng cung tròn (dạng 90°). |
+| **L** | Ball Nose Cone | Gia công các **bề mặt và hình dạng hẹp**. |
+| **M** | Cone Shape (Nón) | Gia công các bề mặt và hình dạng hẹp. |
+| **N** | Inverted Cone (Nón ngược) | Gia công làm **tôn vát bên trong** chi tiết (chamfering of inside). |
+
+---
+
+## 3. Hướng dẫn An toàn và Ghi chú
+
+### Hướng dẫn Vận hành An toàn (Trang 21)
+
+1.  Vui lòng chọn **tốc độ quay phù hợp theo khuyến nghị** trước khi mài.
+2.  Chọn mũi mài carbide phù hợp về **hình dạng, đường kính và loại răng** cho các kiểu gia công khác nhau.
+3.  Đảm bảo phần **chuôi của mũi mài và đầu kẹp của máy mài được kết nối chắc chắn** trước khi sử dụng.
+4.  **Không đặt quá nhiều áp lực** lên mũi mài khi mài (sẽ làm tăng nhiệt độ và rút ngắn tuổi thọ).
+5.  **Không tiếp tục quay khi mũi mài bị kẹt** trong rãnh hoặc khe của vật liệu.
+6.  **Không sử dụng mũi mài trong môi trường có nhiều khí dễ cháy**.
+
+### Ghi nhận Dữ liệu Thống kê
+
+* **Tốc độ quay (RPM):** Tài liệu có đề cập khuyến nghị chọn tốc độ quay nhưng **không cung cấp số liệu cụ thể** (cần tra cứu bảng chi tiết).
+* **Kích thước (D-L-d):** Các bảng chi tiết kích thước (Metric/Inch Size) tồn tại cho từng loại burr (A $\rightarrow$ N), nhưng không được trích xuất thành số liệu cụ thể trong ngữ cảnh này.
+* **Mâu thuẫn văn bản:** Mô tả tiếng Việt cho **Type J** có ghi "Khoan chóp $90^{\circ}$", mâu thuẫn với tên tiếng Anh và ứng dụng $60^{\circ}$.Để làm rõ ngữ cảnh về việc chuẩn hóa SEO (Search Engine Optimization) cho các bài viết được xây dựng dựa trên tài liệu **“Carbider Burr.pdf”**, tôi bổ sung phần đánh giá chiến lược nội dung.
+
+Ngữ cảnh này giúp chatbot hiểu được **giá trị thương mại** và **khả năng tối ưu hóa** của từng đoạn thông tin kỹ thuật, từ đó sinh ra nội dung không chỉ chính xác mà còn hấp dẫn công cụ tìm kiếm và khách hàng mục tiêu.
+
+---
+
+## 4. Ngữ cảnh Chuẩn hóa SEO và Chiến lược Nội dung
+
+Phần này phân tích khả năng chuyển đổi dữ liệu kỹ thuật thành nội dung tiếp thị trên website, tập trung vào việc xác định **từ khóa, mục đích tìm kiếm** và **cấu trúc bài viết chuẩn SEO**.
+
+### A. Đánh giá Khả năng Viết bài SEO Tổng thể
+
+| Hạng mục Nội dung | Khả năng Viết SEO | Giá trị SEO & Mục tiêu |
+| :--- | :--- | :--- |
+| **Giới thiệu Carbide Burr (Tổng quan)** | ✅ Cao (100%) | **Mục tiêu:** Thu hút traffic đầu phễu (Top of Funnel) bằng các từ khóa tìm kiếm chung như: "**Carbide Burr là gì?**", "**Dao mài hợp kim cứng là gì?**". |
+| **Các Kiểu Cắt (Cut Types)** | ✅ Cao (90-95%) | **Mục tiêu:** Cung cấp thông tin chuyên sâu (Middle of Funnel) cho người dùng đã biết về sản phẩm. Tập trung vào từ khóa so sánh: "**Double Cut vs Single Cut**", "**Carbide Burr cắt nhôm**". |
+| **Các Hình dạng Burr (Shapes A $\rightarrow$ N)** | ✅ Cao (95-100%) | **Mục tiêu:** Thu hút traffic cuối phễu (Bottom of Funnel) và cung cấp thông tin sản phẩm cụ thể. Tập trung vào từ khóa mang tính giao dịch: "**Carbide Burr Type A giá**", "**Dao mài nón ngược**". |
+| **Hướng dẫn An toàn** | ❌ Thấp | **Mục tiêu:** Không phù hợp cho SEO sản phẩm, chỉ nên dùng làm nội dung bổ sung hoặc tài liệu kỹ thuật/chính sách. |
+
+### B. Tiêu chí Cấu trúc Bài viết Chuẩn SEO
+
+Các bài viết sản phẩm (ví dụ: Type A, Double Cut) cần tuân thủ cấu trúc sau để tối ưu hóa khả năng xếp hạng:
+
+1.  **[Title Tag & H1]** Chứa từ khóa chính + mô tả lợi ích (VD: **DAO MÀI CARBIDE BURR DẠNG TRỤ** – Gia công bề mặt kim loại chính xác).
+2.  **[Meta Description]** Tóm tắt công dụng, vật liệu và kêu gọi hành động (CTA), chứa từ khóa.
+3.  **[Mục Lợi ích/Ưu điểm (H2)]** Chuyển hóa đặc tính kỹ thuật (Carbide, độ chính xác cao) thành lợi ích cho khách hàng (Tuổi thọ cao, bề mặt mịn, tiết kiệm chi phí).
+4.  **[Mục Ứng dụng Chi tiết (H2)]** Mô tả rõ ràng công dụng trích xuất từ tài liệu (VD: **Type N** dùng để *vát mép bên trong chi tiết*).
+5.  **[Bảng Thông số Kỹ thuật]** Cần bổ sung dữ liệu D-L-d (mặc dù tài liệu gốc không đọc được chi tiết số, bảng phải được thiết kế để chứa thông số này sau khi bổ sung).
+
+### C. Gợi ý Thẻ (Tags) Chuẩn SEO/Tra cứu
+
+Các thẻ này giúp tăng cường khả năng hiển thị của sản phẩm trong các truy vấn liên quan:
+
+| Nhóm Thẻ | Ví dụ Tags (Tối ưu hóa) |
+| :--- | :--- |
+| **Chính & Thương hiệu** | **carbide burr**, **rotary burr**, **dao đánh bavia**, **dụng cụ mài hợp kim**, **an mi tools** |
+| **Ứng dụng** | **deburring tool**, **metal finishing**, **bavia removal**, **high speed grinding tool**, **mài inox**, **gia công nhôm** |
+| **Hình dạng** | **cylinder burr**, **ball burr**, **cone burr**, **countersink burr**, **inverted cone burr** |
+| **Kiểu cắt** | **double cut burr**, **single cut burr**, **aluminium cut burr**, **fine cut burr** |
+
+**Kết luận về SEO:** Dữ liệu kỹ thuật trong tài liệu rất phong phú và chi tiết, cho phép xây dựng một chiến lược nội dung mạnh mẽ, tập trung vào cả nhu cầu tìm kiếm tổng quan lẫn các truy vấn sản phẩm cụ thể. Mục tiêu là định vị AN MI TOOLS là chuyên gia trong lĩnh vực DỤNG CỤ MÀI CARBIDE BURR.

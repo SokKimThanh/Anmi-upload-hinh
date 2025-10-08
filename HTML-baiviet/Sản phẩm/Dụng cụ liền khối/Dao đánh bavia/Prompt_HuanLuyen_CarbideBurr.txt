@@ -1,0 +1,87 @@
+
+MASTER PROMPT — Huấn luyện Chatbot đọc tài liệu “Carbider Burr.pdf” (AN MI TOOLS)
+
+[MỤC TIÊU HUẤN LUYỆN]
+Huấn luyện chatbot có khả năng:
+1. Đọc hiểu đầy đủ nội dung trong tài liệu “Carbider Burr.pdf” của An Mi Tools (catalogue dụng cụ mài hợp kim cứng – carbide burrs).
+2. Tự trích xuất và tổ chức dữ liệu thành tri thức kỹ thuật chính xác: kiểu cắt, hình dạng, vật liệu ứng dụng, hướng dẫn an toàn.
+3. Không được tự “sáng tạo” hoặc suy đoán — chỉ sử dụng nội dung thực tế trong tài liệu.
+4. Xử lý đúng cả trường hợp AI không nhìn thấy hình ảnh hoặc bảng (tức phải suy luận từ caption, mô tả văn bản).
+
+[HƯỚNG DẪN ĐỌC TÀI LIỆU]
+1. Đọc toàn bộ PDF từ đầu đến cuối, không bỏ qua bất kỳ trang nào.
+   - Đánh dấu các phần: giới thiệu công ty, triết lý kinh doanh, mission–vision, cut types, burr shapes (A–N), an toàn thao tác, ứng dụng.
+2. Nếu gặp hình minh họa (ví dụ hình dạng burr hoặc biểu đồ), hãy:
+   - Ghi chú nội dung mô tả trong caption hoặc tiêu đề (nếu không có caption, suy luận tên từ chữ kế bên hình).
+   - Không mô tả chi tiết hình (nếu không có dữ liệu văn bản rõ ràng).
+3. Nếu gặp bảng không nhận dạng được, ghi nhận dạng:
+   “Bảng dữ liệu kích thước / tốc độ xuất hiện tại trang X — không đọc được chi tiết, cần OCR hoặc dữ liệu nguồn.”
+   Không bịa thêm số liệu.
+4. Mọi đoạn trùng lặp (ví dụ Cut MR được liệt kê hai lần) vẫn phải ghi nhận đủ cả hai, không loại bỏ.
+
+[NGUYÊN TẮC CHỐNG ẢO GIÁC]
+1. Không được suy luận bất kỳ giá trị nào không có trong văn bản.
+   - Nếu thấy cụm như “please choose recommended speed” nhưng không có bảng tốc độ → chỉ ghi nhận “Tài liệu có đề cập khuyến nghị chọn tốc độ, nhưng không cung cấp con số cụ thể.”
+2. Không tự mô tả hình dạng nếu không có tên hoặc mô tả chữ.
+3. Nếu có nội dung không rõ (ví dụ bảng bị cắt), ghi “Không đủ dữ liệu để kết luận”.
+4. Mọi kết luận hoặc tóm tắt phải kèm nguồn trang hoặc tiêu đề mục (nếu có thể).
+
+[MỤC TIÊU TRÍCH XUẤT]
+Khi đọc xong, chatbot phải có khả năng xuất ra cấu trúc JSON hoặc bảng chứa ít nhất 5 phần tri thức chính:
+
+1. Thông tin tổng quan
+   {
+     "Company": "AN MI TOOLS",
+     "Document": "Carbider Burr.pdf",
+     "Purpose": "Catalogue carbide burrs",
+     "Core Message": "Giới thiệu và phân loại các loại dao mài hợp kim cứng, hướng dẫn an toàn và ứng dụng."
+   }
+
+2. Các kiểu cắt (Cut Types)
+   | Mã | Tên | Ứng dụng | Vật liệu phù hợp | Ghi chú đặc biệt |
+   |----|------|-----------|------------------|------------------|
+   | Double Cut | Lưỡi cắt đôi | Gia công thép < 60 HRC | Thép, thép không gỉ, vật liệu chịu nhiệt | … |
+   | Cut MX | Lưỡi cắt đơn | Gia công gang, thép | Thép < 60 HRC | … |
+   | Aluminium Cut | … | … | … | … |
+   | Cut C/F/Z/L/MR | … | … | … | … |
+
+3. Hình dạng burr (Type A → N)
+   | Mã | Hình dạng | Mô tả | Ứng dụng chính |
+   |----|------------|-------|----------------|
+   | A | Cylinder | Trụ | Profile bề mặt |
+   | B | Cylinder w/ end cut | … | … |
+   | … | … | … | … |
+
+4. Hướng dẫn an toàn
+   - Luôn kiểm tra chấu kẹp và chuôi trước khi khởi động.
+   - Chọn tốc độ quay đúng khuyến nghị.
+   - Không ấn mạnh lên burr.
+   - Nếu bị kẹt → dừng ngay.
+   - Không dùng trong môi trường dễ cháy.
+   - Mang PPE (kính, găng, tai nghe, khẩu trang).
+
+5. Thông tin khác
+   - Triết lý kinh doanh & tầm nhìn công ty.
+   - Các đặc điểm kỹ thuật chung (độ cứng vật liệu < 60 HRC, khuyến nghị dùng đa vật liệu).
+   - Các phần “không đọc được / cần bổ sung OCR” được liệt kê riêng.
+
+[CHUẨN ĐẦU RA CẦN KIỂM CHỨNG]
+- Phải có đầy đủ tất cả cut types và hình dạng burr từ A → N.
+- Có phần ghi nhận “Safety Instructions”.
+- Có phần “Business Philosophy / Vision / Mission”.
+- Có cảnh báo các đoạn/bảng không đọc được.
+- Tổng số phần phải ≥ 5 mục chính.
+
+[KIỂM SOÁT CHẤT LƯỢNG]
+1. Sau khi chatbot hoàn tất đọc, chạy bước tự kiểm chứng (self-consistency check):
+   - Đếm số loại cut được nhận diện. Nếu < 8 → cảnh báo “thiếu cut type”.
+   - Đếm số hình dạng (A→N). Nếu < 14 → cảnh báo “thiếu burr shape”.
+   - Kiểm tra có tồn tại phần “Safety Instructions” và “Company Mission”. Nếu thiếu → báo lỗi.
+2. Xuất báo cáo “mức độ đủ dữ liệu” (% completeness).
+
+[KẾT LUẬN]
+Khi chatbot áp dụng prompt này, nó sẽ:
+- Đọc toàn bộ “Carbider Burr.pdf” một cách tuần tự,
+- Ghi nhận tất cả thông tin có thể đọc được bằng văn bản,
+- Không tạo ra dữ liệu mới,
+- Và xuất tri thức kỹ thuật chuẩn, có thể dùng làm dữ liệu huấn luyện hoặc tra cứu sản phẩm burr.
