@@ -1,0 +1,3250 @@
+ Tuyệt vời! Dưới đây là toàn bộ ngữ cảnh (context) đã được trích xuất và tổ chức từ tài liệu **“Carbider Burr.pdf” (AN MI TOOLS)**. Ngữ cảnh này được tổng hợp từ 3 bước huấn luyện trước, đảm bảo cung cấp đầy đủ thông tin kỹ thuật chính xác, đã được phân loại và kiểm chứng.
+
+Nội dung này có thể được sử dụng để huấn luyện một chatbot mới về sản phẩm Carbide Burr của AN MI TOOLS.
+
+---
+
+## 1. Thông tin Tổng quan về Doanh nghiệp & Tài liệu
+
+| Trường | Giá trị | Nguồn |
+| :--- | :--- | :--- |
+| **Công ty** | **AN MI TOOLS** (Hơn 15 năm kinh nghiệm tại Việt Nam) | Trang 2 |
+| **Tài liệu** | **Carbide Burr.pdf** (Catalogue dụng cụ mài hợp kim cứng) | Trang 1 |
+| **Mục đích** | Giới thiệu, phân loại các loại dao mài hợp kim cứng, hướng dẫn an toàn và ứng dụng. | Trang 1 |
+| **Triết lý/Sứ mệnh** | Cống hiến vì một nền công nghiệp mạnh mẽ, hiệu quả thông qua kiến thức, sự tử tế, gắn liền với kinh tế tuần hoàn. Xây dựng chuỗi sản phẩm chất lượng cao, khẳng định đẳng cấp người Việt. | Trang 3 |
+| **Vật liệu Dụng cụ** | **Tungsten Carbide** (Hợp kim cứng) | Trang 1 |
+
+---
+
+## 2. Phân loại Sản phẩm & Thuộc tính Kỹ thuật
+
+### A. Hệ thống Danh mục Sản phẩm
+
+| Cấp | Tên Danh mục |
+| :--- | :--- |
+| **Cấp Cha** | DỤNG CỤ CẮT CÔNG NGHIỆP (Cutting Tools) |
+| **Cấp Con** | DỤNG CỤ MÀI – ĐÁNH BAVIA (Carbide Burr Tools) |
+| **Cấp Chi tiết** | CARBIDE BURR CYLINDER TYPE (A, B, C) |
+| **Cấp Chi tiết** | CARBIDE BURR BALL TYPE (D) |
+| **Cấp Chi tiết** | CARBIDE BURR CONE TYPE (L, M, N) |
+| **Cấp Chi tiết** | CARBIDE BURR COUNTERSINK (J, K) |
+| **Cấp Chi tiết** | CARBIDE BURR OVAL / FLAME / TREE TYPE (E, F, G, H) |
+
+### B. Các Kiểu Cắt (Cut Types)
+
+| Mã | Tên (Tiếng Việt) | Ứng dụng Chính | Vật liệu Phù hợp |
+| :--- | :--- | :--- | :--- |
+| **Double Cut** | Lưỡi cắt đôi | Gia công thép < 60 HRC, Inox, Vật liệu chịu nhiệt | Thép, thép không gỉ, vật liệu chịu nhiệt |
+| **Cut MX** | Single Cut (Lưỡi cắt đơn) | Gia công gang, thép, inox < 60 HRC | Gang, thép, thép không gỉ |
+| **Cut W** | **Aluminium Cut** | Gia công nhôm, hợp kim nhôm, kim loại màu, nhựa | Nhôm, kim loại màu, nhựa |
+| **Cut C** | Coarse Cut (Lưỡi cắt thô) | Gia công hoàn thiện kim loại mềm, thép, gang | Kim loại mềm, kim loại màu, thép, gang |
+| **Cut F** | Fine Cut (Lưỡi cắt mịn) | Gia công tinh xảo gang, thép < 60 HRC, inox | Gang, thép, thép không gỉ |
+| **Cut L** | Diamond Cut | Gia công chính xác mọi vật liệu < 60 HRC | Mọi vật liệu (< 60 HRC) |
+| **Cut MR** | Chip Breaker Cut | Gia công thép không gỉ, thép và gang | Thép không gỉ, thép, gang |
+
+### C. Hình dạng Burr (Shapes A $\rightarrow$ N)
+
+| Mã | Hình dạng | Ứng dụng Chính (Công dụng) |
+| :--- | :--- | :--- |
+| **A (SA)** | Cylinder Shape (Trụ) | Gia công **bề mặt** của chi tiết (surface profile). |
+| **B (SB)** | Cylinder w/ End Cut | Gia công bề mặt và **hoán đổi hai mặt vuông góc**. |
+| **C (SC)** | Ball Nosed Cylinder | Gia công bề mặt và **hình dạng cung tròn**. |
+| **D** | Ball Shape (Cầu) | Gia công cung tròn, loại bỏ burr đường kính, **gia công điểm hàn**. |
+| **E** | Oval Shape | Gia công hình dạng cung tròn. |
+| **F** | Ball Nosed Tree | Gia công cung tròn **trong không gian hạn chế**. |
+| **G** | Point Tree (Cây nhọn) | Gia công cung tròn trong không gian hạn chế và **hình dạng góc nhọn**. |
+| **H** | Flame Shape (Ngọn lửa) | Gia công hình dạng cung tròn. |
+| **J** | **60° Countersink** | Gia công **vát mép cung doa ngược 60°** của phôi. |
+| **K** | 90° Countersink | Gia công hình dạng cung tròn (dạng 90°). |
+| **L** | Ball Nose Cone | Gia công các **bề mặt và hình dạng hẹp**. |
+| **M** | Cone Shape (Nón) | Gia công các bề mặt và hình dạng hẹp. |
+| **N** | Inverted Cone (Nón ngược) | Gia công làm **tôn vát bên trong** chi tiết (chamfering of inside). |
+
+---
+
+## 3. Hướng dẫn An toàn và Ghi chú
+
+### Hướng dẫn Vận hành An toàn (Trang 21)
+
+1.  Vui lòng chọn **tốc độ quay phù hợp theo khuyến nghị** trước khi mài.
+2.  Chọn mũi mài carbide phù hợp về **hình dạng, đường kính và loại răng** cho các kiểu gia công khác nhau.
+3.  Đảm bảo phần **chuôi của mũi mài và đầu kẹp của máy mài được kết nối chắc chắn** trước khi sử dụng.
+4.  **Không đặt quá nhiều áp lực** lên mũi mài khi mài (sẽ làm tăng nhiệt độ và rút ngắn tuổi thọ).
+5.  **Không tiếp tục quay khi mũi mài bị kẹt** trong rãnh hoặc khe của vật liệu.
+6.  **Không sử dụng mũi mài trong môi trường có nhiều khí dễ cháy**.
+
+### Ghi nhận Dữ liệu Thống kê
+
+* **Tốc độ quay (RPM):** Tài liệu có đề cập khuyến nghị chọn tốc độ quay nhưng **không cung cấp số liệu cụ thể** (cần tra cứu bảng chi tiết).
+* **Kích thước (D-L-d):** Các bảng chi tiết kích thước (Metric/Inch Size) tồn tại cho từng loại burr (A $\rightarrow$ N), nhưng không được trích xuất thành số liệu cụ thể trong ngữ cảnh này.
+* **Mâu thuẫn văn bản:** Mô tả tiếng Việt cho **Type J** có ghi "Khoan chóp $90^{\circ}$", mâu thuẫn với tên tiếng Anh và ứng dụng $60^{\circ}$.Để làm rõ ngữ cảnh về việc chuẩn hóa SEO (Search Engine Optimization) cho các bài viết được xây dựng dựa trên tài liệu **“Carbider Burr.pdf”**, tôi bổ sung phần đánh giá chiến lược nội dung.
+
+Ngữ cảnh này giúp chatbot hiểu được **giá trị thương mại** và **khả năng tối ưu hóa** của từng đoạn thông tin kỹ thuật, từ đó sinh ra nội dung không chỉ chính xác mà còn hấp dẫn công cụ tìm kiếm và khách hàng mục tiêu.
+
+---
+
+## 4. Ngữ cảnh Chuẩn hóa SEO và Chiến lược Nội dung
+
+Phần này phân tích khả năng chuyển đổi dữ liệu kỹ thuật thành nội dung tiếp thị trên website, tập trung vào việc xác định **từ khóa, mục đích tìm kiếm** và **cấu trúc bài viết chuẩn SEO**.
+
+### A. Đánh giá Khả năng Viết bài SEO Tổng thể
+
+| Hạng mục Nội dung | Khả năng Viết SEO | Giá trị SEO & Mục tiêu |
+| :--- | :--- | :--- |
+| **Giới thiệu Carbide Burr (Tổng quan)** | ✅ Cao (100%) | **Mục tiêu:** Thu hút traffic đầu phễu (Top of Funnel) bằng các từ khóa tìm kiếm chung như: "**Carbide Burr là gì?**", "**Dao mài hợp kim cứng là gì?**". |
+| **Các Kiểu Cắt (Cut Types)** | ✅ Cao (90-95%) | **Mục tiêu:** Cung cấp thông tin chuyên sâu (Middle of Funnel) cho người dùng đã biết về sản phẩm. Tập trung vào từ khóa so sánh: "**Double Cut vs Single Cut**", "**Carbide Burr cắt nhôm**". |
+| **Các Hình dạng Burr (Shapes A $\rightarrow$ N)** | ✅ Cao (95-100%) | **Mục tiêu:** Thu hút traffic cuối phễu (Bottom of Funnel) và cung cấp thông tin sản phẩm cụ thể. Tập trung vào từ khóa mang tính giao dịch: "**Carbide Burr Type A giá**", "**Dao mài nón ngược**". |
+| **Hướng dẫn An toàn** | ❌ Thấp | **Mục tiêu:** Không phù hợp cho SEO sản phẩm, chỉ nên dùng làm nội dung bổ sung hoặc tài liệu kỹ thuật/chính sách. |
+
+### B. Tiêu chí Cấu trúc Bài viết Chuẩn SEO
+
+Các bài viết sản phẩm (ví dụ: Type A, Double Cut) cần tuân thủ cấu trúc sau để tối ưu hóa khả năng xếp hạng:
+
+1.  **[Title Tag & H1]** Chứa từ khóa chính + mô tả lợi ích (VD: **DAO MÀI CARBIDE BURR DẠNG TRỤ** – Gia công bề mặt kim loại chính xác).
+2.  **[Meta Description]** Tóm tắt công dụng, vật liệu và kêu gọi hành động (CTA), chứa từ khóa.
+3.  **[Mục Lợi ích/Ưu điểm (H2)]** Chuyển hóa đặc tính kỹ thuật (Carbide, độ chính xác cao) thành lợi ích cho khách hàng (Tuổi thọ cao, bề mặt mịn, tiết kiệm chi phí).
+4.  **[Mục Ứng dụng Chi tiết (H2)]** Mô tả rõ ràng công dụng trích xuất từ tài liệu (VD: **Type N** dùng để *vát mép bên trong chi tiết*).
+5.  **[Bảng Thông số Kỹ thuật]** Cần bổ sung dữ liệu D-L-d (mặc dù tài liệu gốc không đọc được chi tiết số, bảng phải được thiết kế để chứa thông số này sau khi bổ sung).
+
+### C. Gợi ý Thẻ (Tags) Chuẩn SEO/Tra cứu
+
+Các thẻ này giúp tăng cường khả năng hiển thị của sản phẩm trong các truy vấn liên quan:
+
+| Nhóm Thẻ | Ví dụ Tags (Tối ưu hóa) |
+| :--- | :--- |
+| **Chính & Thương hiệu** | **carbide burr**, **rotary burr**, **dao đánh bavia**, **dụng cụ mài hợp kim**, **an mi tools** |
+| **Ứng dụng** | **deburring tool**, **metal finishing**, **bavia removal**, **high speed grinding tool**, **mài inox**, **gia công nhôm** |
+| **Hình dạng** | **cylinder burr**, **ball burr**, **cone burr**, **countersink burr**, **inverted cone burr** |
+| **Kiểu cắt** | **double cut burr**, **single cut burr**, **aluminium cut burr**, **fine cut burr** |
+
+**Kết luận về SEO:** Dữ liệu kỹ thuật trong tài liệu rất phong phú và chi tiết, cho phép xây dựng một chiến lược nội dung mạnh mẽ, tập trung vào cả nhu cầu tìm kiếm tổng quan lẫn các truy vấn sản phẩm cụ thể. Mục tiêu là định vị AN MI TOOLS là chuyên gia trong lĩnh vực DỤNG CỤ MÀI CARBIDE BURR.Việc bổ sung ngữ cảnh về các danh mục bài viết SEO chi tiết sẽ giúp Agent hiểu rõ hơn về **từng chủ đề cụ thể** có thể triển khai từ tài liệu, từ đó tối ưu hóa đầu ra nội dung.
+
+Dưới đây là phần ngữ cảnh bổ sung, phân loại chi tiết các bài viết SEO tiềm năng dựa trên **Cut Type** và **Burr Shape**, bao gồm cả **Tiêu đề gợi ý** và **Mục đích tìm kiếm** (Search Intent).
+
+---
+
+## 5. Ngữ cảnh Chi tiết về Các Bài viết SEO Tiềm năng
+
+Ngữ cảnh này được tổ chức thành 3 nhóm chủ đề chính, giúp Agent dễ dàng chọn lọc và triển khai nội dung cho từng trang sản phẩm/chuyên mục.
+
+### A. Nhóm 1: Bài viết Tổng quan & Khái niệm (Top of Funnel)
+
+| Tên Bài viết | Tiêu đề SEO Gợi ý | Dữ liệu Nguồn Chính | Mục đích Tìm kiếm (Intent) |
+| :--- | :--- | :--- | :--- |
+| **Giới thiệu Carbide Burr** | **Carbide Burr là gì?** Ứng dụng và Lợi ích của Dao Mài Hợp Kim Cứng | Trang 1, 6 (Định nghĩa, Vật liệu, Mục đích) | **Information** (Tìm hiểu khái niệm) |
+| **Triết lý Công ty AN MI TOOLS** | **AN MI TOOLS** — **Triết Lý Kinh Doanh** và Tầm nhìn trong lĩnh vực Dụng cụ Cắt Gọt | Trang 3 (Triết lý, Sứ mệnh, Tầm nhìn) | **Commercial** (Nghiên cứu thương hiệu/đối tác) |
+| **Phạm vi Ứng dụng** | **Dao Mài Carbide Burr** — Giải pháp tối ưu cho **Thép, Gang, Inox, Nhôm** dưới **60 HRC** | Trang 6-7 (Vật liệu phù hợp) | **Information/Commercial** (Tìm kiếm giải pháp cho vật liệu cụ thể) |
+
+---
+
+### B. Nhóm 2: Bài viết về Kiểu Cắt (Cut Types) — Chuyên sâu & So sánh
+
+Các bài viết này tập trung vào hiệu suất và ứng dụng chuyên biệt của từng loại răng cắt, giải quyết nhu cầu so sánh và lựa chọn sản phẩm.
+
+| Mã Cut Type | Tên Bài viết | Tiêu đề SEO Gợi ý | Công dụng Chính (Trọng tâm SEO) |
+| :--- | :--- | :--- | :--- |
+| **Double Cut** | **Double Cut Burr** | **Double Cut Carbide Burr** — Lựa chọn hàng đầu cho **Thép Cứng và Inox** (Hiệu suất cao) | **Gia công thép < 60 HRC**, inox, vật liệu chịu nhiệt. |
+| **Cut MX** | **Single Cut Burr** | **Single Cut Carbide Burr** — Ưu điểm khi **Mài Gang và Thép Tiêu chuẩn** | **Gia công Gang, Thép** (Độ mịn và kiểm soát phoi). |
+| **Cut W** | **Aluminium Cut Burr** | **Aluminium Cut (Cut W)** — **Dao Mài Chống Bám Dính** cho Nhôm và Kim loại mềm | **Gia công Nhôm, Kim loại màu** (Tránh hiện tượng bám phoi). |
+| **Cut F/L** | **Fine Cut & Diamond Cut** | **Cut F (Fine) và Cut L (Diamond)** — Mài **Tinh Xảo** và **Chính Xác** | **Gia công tinh**, yêu cầu độ mịn bề mặt cao. |
+| **Cut C/ZX/MR** | **Các Kiểu Cắt Đặc biệt** | **Chip Breaker (MR) và Coarse Cut (C)** — Các giải pháp **Xử lý Vết Hàn** và Gia công thô | **Xử lý vết hàn** (ZX), **Gia công thô/hoàn thiện** (C). |
+
+---
+
+### C. Nhóm 3: Bài viết về Hình dạng (Burr Shapes A $\rightarrow$ N) — Sản phẩm cụ thể
+
+Mỗi hình dạng tương đương với một trang sản phẩm, tối ưu hóa cho **từ khóa giao dịch (Transactional Intent)**.
+
+| Mã Shape | Tên Bài viết | Tiêu đề SEO Gợi ý | Ứng dụng Cụ thể |
+| :--- | :--- | :--- | :--- |
+| **Type A, B, C** | **Carbide Burr Dạng Trụ** | **DAO MÀI HỢP KIM DẠNG TRỤ (Type A, B, C)** — Mài bề mặt và tạo biên dạng cung | **Gia công bề mặt**, hoán đổi hai mặt vuông góc, tạo hình cung tròn. |
+| **Type D & E** | **Carbide Burr Dạng Cầu/Oval** | **Carbide Burr Ball Shape (Type D)** — Xử lý điểm hàn và tạo biên dạng tròn | **Gia công điểm hàn**, tạo hình dạng cung tròn. |
+| **Type F & G** | **Carbide Burr Dạng Cây** | **Carbide Burr Tree Shape** — Giải pháp Mài **trong không gian hẹp** | **Gia công không gian hạn chế** và hình dạng góc nhọn. |
+| **Type H** | **Carbide Burr Dạng Ngọn Lửa** | **Carbide Burr Flame Shape (Type H)** — Tạo biên dạng cung | Gia công hình dạng cung tròn. |
+| **Type J & K** | **Carbide Burr Countersink** | **Carbide Burr Vát Mép (60° & 90°)** — Tối ưu hóa cho Vát Mép Lỗ | **Vát mép lỗ** ($60^{\circ}$ và $90^{\circ}$) trên phôi. |
+| **Type N** | **Carbide Burr Nón Ngược** | **DAO MÀI HỢP KIM NÓN NGƯỢC (Type N)** — Chuyên dụng **Vát Mép Bên Trong** chi tiết | **Làm tôn vát bên trong** chi tiết (chamfering of inside). |
+| **Type L & M** | **Carbide Burr Dạng Nón** | **Carbide Burr Cone Shape (Type L, M)** — Mài chi tiết hẹp và phức tạp | Gia công các **bề mặt và hình dạng hẹp**. |
+
+Ngữ cảnh chi tiết này đảm bảo Agent có thể tạo ra tối thiểu **15+ bài viết SEO** chuyên biệt, bao phủ mọi khía cạnh kỹ thuật và ứng dụng sản phẩm Carbider Burr của AN MI TOOLS.Tuyệt vời! Đây là ngữ cảnh bổ sung tập trung vào việc xác định **ranh giới thông tin (data boundaries)** và **các điểm yếu dữ liệu (data weaknesses)** trong tài liệu **“Carbider Burr.pdf”**. Ngữ cảnh này sẽ huấn luyện Agent của bạn trở thành một nguồn thông tin có trách nhiệm, biết khi nào cần nói "Tôi không biết" hoặc "Thông tin này cần được xác nhận."
+
+---
+
+## 6. Ngữ cảnh Quản lý Thông tin Thiếu & Xử lý Mâu thuẫn Dữ liệu
+
+Phần này giúp Agent hiểu rõ những thông tin **KHÔNG TỒN TẠI** trong tài liệu và cách xử lý các trường hợp ngoại lệ để duy trì độ tin cậy tuyệt đối.
+
+### A. Ranh giới Thông tin (Data Gaps) — Những gì Tài liệu KHÔNG CÓ
+
+Khi khách hàng hỏi về các thông số sau, Agent **BẮT BUỘC** phải báo rằng dữ liệu không có sẵn trong tài liệu, hoặc cần tra cứu bảng số liệu chi tiết.
+
+| Thuộc tính Kỹ thuật | Trạng thái Dữ liệu (Trong PDF) | Hướng Dẫn cho Agent khi Trả lời |
+| :--- | :--- | :--- |
+| **Thông số Kích thước Cụ thể** | **THIẾU SỐ LIỆU ĐỊNH LƯỢNG.** (Đường kính chuôi **d**, Đường kính đầu **D**, Chiều dài cắt **L**). | **Nói rõ:** "Thông tin kích thước cụ thể (ví dụ: D6xL12) **chưa được trích xuất** thành văn bản. Vui lòng tham khảo bảng kích thước trong catalogue gốc hoặc liên hệ AN MI TOOLS để xác nhận mã hàng." |
+| **Tốc độ Quay (RPM) Khuyến nghị** | **THIẾU SỐ LIỆU ĐỊNH LƯỢNG.** Tài liệu chỉ ghi nhận "Vui lòng chọn tốc độ quay phù hợp theo khuyến nghị." (Trang 22). | **KHÔNG** được tự suy đoán hoặc cung cấp bất kỳ con số RPM nào. Trả lời: "Tài liệu khuyến nghị chọn tốc độ quay phù hợp, nhưng **không cung cấp bảng số liệu RPM** cụ thể." |
+| **Thông tin Mã Phủ (Coating)** | **KHÔNG TỒN TẠI.** | **Nói rõ:** "Tài liệu **không đề cập** đến các lớp phủ bề mặt (ví dụ: TiN, TiAlN) cho các mũi burr." |
+| **Bộ Dụng Cụ (SET Burrs)** | **KHÔNG TỒN TẠI.** | **Nói rõ:** "Tài liệu này chỉ giới thiệu từng đầu burr đơn lẻ, **không có thông tin** về các bộ dụng cụ **SET** burr." |
+| **Hướng dẫn Bảo hộ Cá nhân (PPE)** | **THIẾU SỰ LIỆT KÊ CHI TIẾT.** | **Nói rõ:** "Tài liệu chỉ nêu các quy tắc vận hành máy (chuôi kẹp, áp lực), **không liệt kê chi tiết** các thiết bị bảo hộ cá nhân (kính, găng tay, khẩu trang)." |
+
+---
+
+### B. Xử lý Mâu thuẫn Dữ liệu và Điểm yếu
+
+| Điểm Yếu Dữ liệu | Mô tả Sự cố | Chiến lược Xử lý cho Agent |
+| :--- | :--- | :--- |
+| **Mâu thuẫn Type J** | Tên gọi **$60^{\circ}$ Countersink** ($60^{\circ}$), nhưng mô tả tiếng Việt có ghi "**Khoan chóp $90^{\circ}$**". | **Ưu tiên mã sản phẩm ($60^{\circ}$)**. Khi trả lời, sử dụng thuật ngữ **$60^{\circ}$** và ghi chú rằng: "Có sự mâu thuẫn văn bản trong tài liệu, nhưng dựa trên tên gọi kỹ thuật, đây là burr vát mép $60^{\circ}$." |
+| **Nội dung Trùng lặp** | **Cut MR (Chip Breaker Cut)** được liệt kê lặp lại 2 lần (Trang 7). | **Lược bỏ.** Ghi nhận chỉ là một loại cắt duy nhất (**Cut MR**). Mục đích là truyền tải thông tin kỹ thuật chính xác, không phải lỗi biên tập. |
+| **Sự cố Kỹ thuật** | Nguyên tắc "Không ấn quá mạnh" (Do not put too much pressure) và "Không tiếp tục quay khi bị kẹt". | **Nhấn mạnh** đây là nguyên tắc quan trọng nhất liên quan đến **tuổi thọ sản phẩm** và **an toàn thao tác**. |
+
+---
+
+## 7. Danh Sách Bài Viết SEO Đã Triển Khai
+
+Phần này ghi nhận các file HTML đã được tạo sẵn trong thư mục `HTML-baiviet/Sản phẩm/Dụng cụ liền khối/Dao đánh bavia/Seo website/` để Agent có thể tham chiếu và điền nội dung khi cần.
+
+### A. Thông tin Lưu trữ File
+
+| Thông tin | Chi tiết |
+| :--- | :--- |
+| **Đường dẫn gốc** | `e:\ANMI_Dự Án bảo trì phần mềm website AnMi\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\` |
+| **Số lượng file** | **28 file HTML** |
+| **Trạng thái** | Template rỗng (chỉ có cấu trúc HTML cơ bản, chưa có nội dung) |
+| **Ngày tạo** | 08/10/2025 |
+
+### B. Danh Sách File HTML Theo Nhóm
+
+#### **Nhóm 1: Bài Viết Tổng Quan (3 file)**
+
+| STT | Tên File | Tiêu Đề Trang | Mục Đích SEO |
+| :--- | :--- | :--- | :--- |
+| 01 | `01-carbide-burr-la-gi.html` | Carbide Burr là gì? Ứng dụng và Lợi ích của Dao Mài Hợp Kim Cứng | Top of Funnel - Thu hút traffic tìm kiếm chung |
+| 02 | `02-so-sanh-cac-loai-carbide-burr.html` | So Sánh Các Loại Carbide Burr - Lựa Chọn Phù Hợp | Middle of Funnel - So sánh sản phẩm |
+| 03 | `03-huong-dan-chon-carbide-burr.html` | Hướng Dẫn Chọn Carbide Burr Phù Hợp Cho Từng Ứng Dụng | Middle of Funnel - Hướng dẫn lựa chọn |
+
+#### **Nhóm 2: Bài Viết Theo Kiểu Cắt (7 file)**
+
+| STT | Tên File | Tiêu Đề Trang | Loại Cắt | Vật Liệu Chính |
+| :--- | :--- | :--- | :--- | :--- |
+| 04 | `04-double-cut-carbide-burr.html` | Double Cut Carbide Burr - Lựa Chọn Hàng Đầu Cho Thép Cứng và Inox | Double Cut | Thép < 60 HRC, Inox |
+| 05 | `05-single-cut-carbide-burr.html` | Single Cut Carbide Burr - Ưu Điểm Khi Mài Gang và Thép Tiêu Chuẩn | Cut MX (Single) | Gang, Thép |
+| 06 | `06-aluminium-cut-carbide-burr.html` | Aluminium Cut Carbide Burr - Dao Mài Chống Bám Dính Cho Nhôm | Cut W | Nhôm, Kim loại màu |
+| 07 | `07-fine-cut-carbide-burr.html` | Fine Cut Carbide Burr - Gia Công Tinh Xảo Bề Mặt Mịn | Cut F | Gang, Thép, Inox (gia công tinh) |
+| 08 | `08-diamond-cut-carbide-burr.html` | Diamond Cut Carbide Burr - Độ Chính Xác Cao Cho Mọi Vật Liệu | Cut L | Mọi vật liệu < 60 HRC |
+| 09 | `09-coarse-cut-carbide-burr.html` | Coarse Cut Carbide Burr - Gia Công Thô Kim Loại Mềm | Cut C | Kim loại mềm, Thép, Gang |
+| 10 | `10-chip-breaker-cut-carbide-burr.html` | Chip Breaker Cut Carbide Burr - Xử Lý Vết Hàn Chuyên Nghiệp | Cut MR | Thép không gỉ, Thép, Gang |
+
+#### **Nhóm 3: Bài Viết Theo Hình Dạng Type A-N (14 file)**
+
+| STT | Tên File | Tiêu Đề Trang | Type | Ứng Dụng Chính |
+| :--- | :--- | :--- | :--- | :--- |
+| 11 | `11-carbide-burr-type-a-dang-tru.html` | Carbide Burr Type A Dạng Trụ - Gia Công Bề Mặt Chính Xác | Type A (SA) | Gia công bề mặt |
+| 12 | `12-carbide-burr-type-b-tru-co-dau-cat.html` | Carbide Burr Type B Trụ Có Đầu Cắt - Gia Công 2 Mặt Vuông Góc | Type B (SB) | Gia công 2 mặt vuông góc |
+| 13 | `13-carbide-burr-type-c-tru-mui-cau.html` | Carbide Burr Type C Trụ Mũi Cầu - Tạo Hình Cung Tròn | Type C (SC) | Gia công hình cung tròn |
+| 14 | `14-carbide-burr-type-d-dang-cau.html` | Carbide Burr Type D Dạng Cầu - Xử Lý Điểm Hàn và Loại Bỏ Bavia | Type D | Xử lý điểm hàn, loại bỏ bavia |
+| 15 | `15-carbide-burr-type-e-dang-oval.html` | Carbide Burr Type E Dạng Oval - Gia Công Hình Cung Tròn | Type E | Gia công hình cung tròn |
+| 16 | `16-carbide-burr-type-f-cay-mui-cau.html` | Carbide Burr Type F Dạng Cây Mũi Cầu - Gia Công Không Gian Hẹp | Type F | Gia công trong không gian hạn chế |
+| 17 | `17-carbide-burr-type-g-cay-nhon.html` | Carbide Burr Type G Dạng Cây Nhọn - Gia Công Góc Nhọn Chuyên Nghiệp | Type G | Gia công góc nhọn |
+| 18 | `18-carbide-burr-type-h-dang-ngon-lua.html` | Carbide Burr Type H Dạng Ngọn Lửa - Tạo Biên Dạng Cung | Type H | Gia công hình cung tròn |
+| 19 | `19-carbide-burr-type-j-vat-mep-60-do.html` | Carbide Burr Type J Vát Mép 60 Độ - Countersink Chuyên Nghiệp | Type J | Vát mép 60° |
+| 20 | `20-carbide-burr-type-k-vat-mep-90-do.html` | Carbide Burr Type K Vát Mép 90 Độ - Countersink Chuẩn Xác | Type K | Vát mép 90° |
+| 21 | `21-carbide-burr-type-l-non-mui-cau.html` | Carbide Burr Type L Nón Mũi Cầu - Gia Công Bề Mặt Hẹp | Type L | Gia công bề mặt hẹp |
+| 22 | `22-carbide-burr-type-m-dang-non.html` | Carbide Burr Type M Dạng Nón - Gia Công Hình Dạng Hẹp | Type M | Gia công hình dạng hẹp |
+| 23 | `23-carbide-burr-type-n-non-nguoc.html` | Carbide Burr Type N Nón Ngược - Vát Mép Bên Trong Chuyên Dụng | Type N | Vát mép bên trong chi tiết |
+
+#### **Nhóm 4: Bài Viết Theo Ứng Dụng (5 file)**
+
+| STT | Tên File | Tiêu Đề Trang | Vật Liệu/Ứng Dụng |
+| :--- | :--- | :--- | :--- |
+| 24 | `24-carbide-burr-gia-cong-thep.html` | Carbide Burr Cho Gia Công Thép - Giải Pháp Tối Ưu | Thép |
+| 25 | `25-carbide-burr-gia-cong-inox.html` | Carbide Burr Cho Gia Công Inox - Hiệu Suất Cao | Inox |
+| 26 | `26-carbide-burr-gia-cong-nhom.html` | Carbide Burr Cho Gia Công Nhôm - Chống Bám Dính Hoàn Hảo | Nhôm |
+| 27 | `27-carbide-burr-xu-ly-diem-han.html` | Carbide Burr Xử Lý Điểm Hàn - Bề Mặt Hoàn Thiện Chuyên Nghiệp | Xử lý điểm hàn |
+| 28 | `28-carbide-burr-vat-mep-loai-bo-bavia.html` | Carbide Burr Vát Mép và Loại Bỏ Bavia - Hoàn Thiện Chi Tiết | Vát mép, loại bỏ bavia |
+
+### C. Hướng Dẫn Sử Dụng cho Agent
+
+**Khi được yêu cầu viết nội dung cho một bài cụ thể, Agent cần:**
+
+1. **Xác định file tương ứng** từ bảng trên dựa vào yêu cầu của người dùng.
+2. **Trích xuất thông tin kỹ thuật** từ Phần 2 (Phân loại Sản phẩm) và Phần 5 (Bài viết SEO Tiềm năng).
+3. **Áp dụng cấu trúc SEO chuẩn** từ Phần 4.B (Title, Meta, H2 Lợi ích, H2 Ứng dụng, Bảng thông số).
+4. **Chèn từ khóa** phù hợp từ Phần 4.C (Tags SEO).
+5. **Tuân thủ ranh giới dữ liệu** từ Phần 6.A (không bịa số liệu RPM, kích thước cụ thể).
+6. **Xử lý mâu thuẫn** theo Phần 6.B (ví dụ: Type J là 60° không phải 90°).
+
+**Ví dụ Flow Công việc:**
+- User: "Viết nội dung cho file `04-double-cut-carbide-burr.html`"
+- Agent:
+  1. Xác định: Double Cut (Mã từ Phần 2.B)
+  2. Nội dung chính: Gia công thép < 60 HRC, Inox, vật liệu chịu nhiệt
+  3. Title: "Double Cut Carbide Burr - Lựa Chọn Hàng Đầu Cho Thép Cứng và Inox | AN MI TOOLS"
+  4. Lợi ích: Tuổi thọ cao, hiệu suất ổn định, bề mặt hoàn thiện mịn
+  5. Ứng dụng: Gia công thép các loại dưới 60 HRC...
+  6. Tags: double cut burr, carbide burr steel, dao mài thép cứng, an mi tools
+
+---
+
+## 8. Ghi Chú Cập Nhật & Phát Triển Tương Lai
+
+### A. Trạng Thái Hiện Tại (08/10/2025)
+
+✅ **Hoàn thành:**
+- Trích xuất toàn bộ thông tin kỹ thuật từ PDF
+- Phân loại 7 Kiểu Cắt và 14 Hình dạng
+- Xác định ranh giới dữ liệu và điểm yếu
+- Tạo 28 file HTML template
+
+⏳ **Đang chờ:**
+- Điền nội dung chi tiết cho 28 file HTML
+- Bổ sung hình ảnh sản phẩm cho từng Type
+- Tạo bảng kích thước chi tiết (cần trích xuất từ PDF gốc)
+
+### B. Nhiệm Vụ Tiếp Theo
+
+1. **Ưu tiên cao:**
+   - Viết nội dung cho 3 bài tổng quan (file 01-03) để thu hút traffic ban đầu
+   - Tạo template CSS chung cho tất cả 28 file
+   - Bổ sung hình ảnh đại diện cho từng nhóm sản phẩm
+
+2. **Ưu tiên trung bình:**
+   - Viết nội dung cho 7 bài kiểu cắt (file 04-10)
+   - Tạo bảng so sánh các kiểu cắt (có thể dùng cho file 02)
+
+3. **Ưu tiên thấp:**
+   - Viết nội dung cho 14 bài hình dạng (file 11-23)
+   - Viết nội dung cho 5 bài ứng dụng (file 24-28)
+
+### C. Checklist Khi Viết Nội Dung
+
+Mỗi bài viết cần đảm bảo:
+
+- [ ] Title tag < 60 ký tự, chứa từ khóa chính
+- [ ] Meta description 150-160 ký tự, có CTA
+- [ ] H1 khớp với Title hoặc biến thể ngắn gọn
+- [ ] Ít nhất 2-3 heading H2 (Lợi ích, Ứng dụng, Thông số kỹ thuật)
+- [ ] Bảng thông số kỹ thuật (nếu có dữ liệu)
+- [ ] Hình ảnh sản phẩm với alt text tối ưu
+- [ ] Internal links đến các bài viết liên quan
+- [ ] CTA rõ ràng (Liên hệ AN MI TOOLS, Yêu cầu báo giá)
+- [ ] Độ dài nội dung: 800-1500 từ (tùy loại bài)
+
+---
+
+## 9. Ngữ Cảnh SEO Backend Website
+
+Phần này cung cấp hướng dẫn kỹ thuật triển khai SEO backend cho toàn bộ 28 bài viết, đảm bảo website tuân thủ các tiêu chuẩn SEO hiện đại và tối ưu hóa khả năng xếp hạng trên công cụ tìm kiếm.
+
+### A. Cấu Trúc URL Chuẩn SEO
+
+**Nguyên tắc thiết kế URL:**
+
+| Yếu tố | Khuyến nghị | Ví dụ Áp dụng |
+| :--- | :--- | :--- |
+| **Cấu trúc thư mục** | `/san-pham/carbide-burr/[loai-san-pham]/` | `/san-pham/carbide-burr/double-cut/` |
+| **Độ dài URL** | < 75 ký tự | ✅ `/san-pham/carbide-burr-type-a/` |
+| **Ký tự đặc biệt** | Không dùng ký tự đặc biệt, dấu, số | ❌ `/type_A/`, ✅ `/type-a/` |
+| **Từ khóa trong URL** | Chứa từ khóa chính, cách nhau bởi dấu gạch ngang `-` | `/carbide-burr-gia-cong-inox/` |
+| **Trailing slash** | Nhất quán (có hoặc không) | `https://anmitools.com/san-pham/carbide-burr/` |
+
+**Sơ đồ URL đề xuất cho 28 bài viết:**
+
+```
+https://anmitools.com/
+├── /carbide-burr/                          (Trang chủ danh mục)
+│   ├── /la-gi/                             (File 01 - Giới thiệu)
+│   ├── /so-sanh/                           (File 02 - So sánh)
+│   ├── /huong-dan-chon/                    (File 03 - Hướng dẫn)
+│   │
+│   ├── /double-cut/                        (File 04)
+│   ├── /single-cut/                        (File 05)
+│   ├── /aluminium-cut/                     (File 06)
+│   ├── /fine-cut/                          (File 07)
+│   ├── /diamond-cut/                       (File 08)
+│   ├── /coarse-cut/                        (File 09)
+│   ├── /chip-breaker-cut/                  (File 10)
+│   │
+│   ├── /type-a/                            (File 11)
+│   ├── /type-b/                            (File 12)
+│   ├── /type-c/                            (File 13)
+│   ├── /type-d/                            (File 14)
+│   ├── /type-e/                            (File 15)
+│   ├── /type-f/                            (File 16)
+│   ├── /type-g/                            (File 17)
+│   ├── /type-h/                            (File 18)
+│   ├── /type-j-60-do/                      (File 19)
+│   ├── /type-k-90-do/                      (File 20)
+│   ├── /type-l/                            (File 21)
+│   ├── /type-m/                            (File 22)
+│   ├── /type-n/                            (File 23)
+│   │
+│   ├── /gia-cong-thep/                     (File 24)
+│   ├── /gia-cong-inox/                     (File 25)
+│   ├── /gia-cong-nhom/                     (File 26)
+│   ├── /xu-ly-diem-han/                    (File 27)
+│   └── /vat-mep-loai-bo-bavia/             (File 28)
+```
+
+### B. Schema Markup & Dữ liệu Có Cấu trúc
+
+**Schema.org markup bắt buộc cho từng bài viết:**
+
+#### **1. Product Schema (Cho file 11-23, 24-28)**
+
+**Rank Math tự động tạo Product Schema với các trường sau:**
+
+```json
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "%wc_title%",
+  "image": "%wc_gallery%",
+  "description": "%wc_shortdesc%",
+  "sku": "%wc_sku%",
+  "brand": {
+    "@type": "Brand",
+    "name": "%wc_brand%" // Tự động lấy từ Product Brand taxonomy
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "%url%",
+    "priceCurrency": "%wc_currency%",
+    "price": "%wc_price%",
+    "availability": "%wc_availability%",
+    "seller": {
+      "@type": "Organization",
+      "name": "AN MI TOOLS"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "%wc_rating%",
+    "reviewCount": "%wc_review_count%"
+  }
+}
+```
+
+**Tùy chỉnh Schema trong Rank Math (functions.php):**
+
+```php
+// Custom Schema cho Carbide Burr Products
+add_filter( 'rank_math/snippet/rich_snippet_product_entity', function( $entity ) {
+    // Thêm manufacturer
+    $entity['manufacturer'] = [
+        '@type' => 'Organization',
+        'name'  => 'AN MI TOOLS',
+        'url'   => 'https://anmitools.com'
+    ];
+    
+    // Thêm material
+    $entity['material'] = 'Tungsten Carbide';
+    
+    // Thêm additionalProperty
+    $product_id = get_the_ID();
+    $entity['additionalProperty'] = [];
+    
+    // Kiểu cắt
+    $cut_type = get_post_meta( $product_id, '_pa_kieu-cat', true );
+    if ( $cut_type ) {
+        $entity['additionalProperty'][] = [
+            '@type' => 'PropertyValue',
+            'name'  => 'Kiểu Cắt',
+            'value' => $cut_type
+        ];
+    }
+    
+    // Hình dạng
+    $shape = get_post_meta( $product_id, '_pa_hinh-dang', true );
+    if ( $shape ) {
+        $entity['additionalProperty'][] = [
+            '@type' => 'PropertyValue',
+            'name'  => 'Hình Dạng',
+            'value' => $shape
+        ];
+    }
+    
+    return $entity;
+});
+```
+
+#### **2. Article Schema (Cho file 01-03)**
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Carbide Burr là gì? Ứng dụng và Lợi ích",
+  "image": "https://anmitools.com/images/carbide-burr-overview.jpg",
+  "datePublished": "2025-10-08T08:00:00+07:00",
+  "dateModified": "2025-10-08T08:00:00+07:00",
+  "author": {
+    "@type": "Organization",
+    "name": "AN MI TOOLS"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AN MI TOOLS",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://anmitools.com/logo.png"
+    }
+  },
+  "description": "Hướng dẫn chi tiết về Carbide Burr...",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://anmitools.com/carbide-burr/la-gi/"
+  }
+}
+```
+
+#### **3. BreadcrumbList Schema (Tất cả 28 file)**
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Trang chủ",
+      "item": "https://anmitools.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Carbide Burr",
+      "item": "https://anmitools.com/carbide-burr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Type A Dạng Trụ",
+      "item": "https://anmitools.com/carbide-burr/type-a/"
+    }
+  ]
+}
+```
+
+#### **4. FAQ Schema (Cho file 01-03, 04-10)**
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Carbide Burr là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Carbide Burr là dao mài hợp kim cứng Tungsten Carbide..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Double Cut khác gì Single Cut?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Double Cut có răng cắt chéo nhau..."
+      }
+    }
+  ]
+}
+```
+
+### C. Meta Tags Chuẩn SEO
+
+**Template meta tags cho mỗi bài viết:**
+
+```html
+<!-- Primary Meta Tags -->
+<title>Carbide Burr Type A Dạng Trụ - Gia Công Bề Mặt Chính Xác | AN MI TOOLS</title>
+<meta name="title" content="Carbide Burr Type A Dạng Trụ - Gia Công Bề Mặt Chính Xác">
+<meta name="description" content="Dao mài Carbide Burr Type A dạng trụ chuyên dụng gia công bề mặt kim loại. Hợp kim cứng Tungsten, độ bền cao, phù hợp thép, inox, gang. Liên hệ AN MI TOOLS 0901234567">
+<meta name="keywords" content="carbide burr type a, dao mài dạng trụ, carbide burr cylinder, an mi tools">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="AN MI TOOLS">
+<link rel="canonical" href="https://anmitools.com/carbide-burr/type-a/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://anmitools.com/carbide-burr/type-a/">
+<meta property="og:title" content="Carbide Burr Type A Dạng Trụ - Gia Công Bề Mặt Chính Xác">
+<meta property="og:description" content="Dao mài Carbide Burr Type A dạng trụ chuyên dụng gia công bề mặt kim loại. Hợp kim cứng Tungsten, độ bền cao...">
+<meta property="og:image" content="https://anmitools.com/images/carbide-burr-type-a-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:site_name" content="AN MI TOOLS">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://anmitools.com/carbide-burr/type-a/">
+<meta property="twitter:title" content="Carbide Burr Type A Dạng Trụ - Gia Công Bề Mặt Chính Xác">
+<meta property="twitter:description" content="Dao mài Carbide Burr Type A dạng trụ chuyên dụng gia công bề mặt kim loại...">
+<meta property="twitter:image" content="https://anmitools.com/images/carbide-burr-type-a-twitter.jpg">
+
+<!-- Additional Meta Tags -->
+<meta name="language" content="Vietnamese">
+<meta name="revisit-after" content="7 days">
+<meta name="distribution" content="global">
+<meta http-equiv="content-language" content="vi">
+```
+
+### D. Tối Ưu Hóa Hình Ảnh
+
+**Quy chuẩn hình ảnh cho từng loại bài viết:**
+
+| Loại Hình | Kích Thước | Format | Alt Text Pattern | Tên File Pattern |
+| :--- | :--- | :--- | :--- | :--- |
+| **Hero Image** | 1200x630px | WebP + JPG fallback | "Carbide Burr Type A dạng trụ - AN MI TOOLS" | `carbide-burr-type-a-hero.webp` |
+| **Product Image** | 800x800px | WebP + JPG | "Dao mài hợp kim Carbide Burr Type A" | `carbide-burr-type-a-product-01.webp` |
+| **Infographic** | 1080x1350px | WebP + PNG | "Bảng so sánh các loại Carbide Burr" | `carbide-burr-comparison-chart.webp` |
+| **Thumbnail** | 400x300px | WebP | "Carbide Burr Type A thumbnail" | `carbide-burr-type-a-thumb.webp` |
+| **OG Image** | 1200x630px | JPG | "Carbide Burr Type A - AN MI TOOLS" | `carbide-burr-type-a-og.jpg` |
+
+**Tối ưu hóa kỹ thuật:**
+
+```html
+<!-- Lazy loading + srcset + WebP -->
+<picture>
+  <source 
+    type="image/webp" 
+    srcset="
+      /images/carbide-burr-type-a-400w.webp 400w,
+      /images/carbide-burr-type-a-800w.webp 800w,
+      /images/carbide-burr-type-a-1200w.webp 1200w"
+    sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px">
+  <source 
+    type="image/jpeg" 
+    srcset="
+      /images/carbide-burr-type-a-400w.jpg 400w,
+      /images/carbide-burr-type-a-800w.jpg 800w,
+      /images/carbide-burr-type-a-1200w.jpg 1200w"
+    sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px">
+  <img 
+    src="/images/carbide-burr-type-a-800w.jpg" 
+    alt="Dao mài Carbide Burr Type A dạng trụ chuyên gia công bề mặt kim loại - AN MI TOOLS"
+    title="Carbide Burr Type A"
+    loading="lazy"
+    width="800"
+    height="800"
+    decoding="async">
+</picture>
+```
+
+### E. Internal Linking Strategy (Chiến lược Liên kết Nội bộ)
+
+**Nguyên tắc liên kết:**
+
+1. **Mỗi bài viết phải có ít nhất 3-5 internal links**
+2. **Anchor text phải chứa từ khóa liên quan**
+3. **Liên kết theo hierarchy (Top → Middle → Bottom of Funnel)**
+
+**Sơ đồ Internal Linking cho 28 bài viết:**
+
+```
+File 01 (Carbide Burr là gì?) → Links ra:
+  ├── File 02 (So sánh các loại)
+  ├── File 04 (Double Cut)
+  ├── File 11 (Type A)
+  └── File 24 (Gia công thép)
+
+File 04 (Double Cut) → Links ra:
+  ├── File 01 (Giới thiệu)
+  ├── File 05 (Single Cut - so sánh)
+  ├── File 11 (Type A với Double Cut)
+  ├── File 24 (Ứng dụng gia công thép)
+  └── File 25 (Ứng dụng gia công inox)
+
+File 11 (Type A) → Links ra:
+  ├── File 01 (Carbide Burr là gì?)
+  ├── File 12 (Type B - sản phẩm tương tự)
+  ├── File 04 (Double Cut - kiểu cắt phù hợp)
+  ├── File 24 (Ứng dụng gia công thép)
+  └── File 03 (Hướng dẫn chọn)
+```
+
+**Template HTML cho internal link:**
+
+```html
+<!-- Contextual Link -->
+<p>
+  Để hiểu rõ hơn về đặc điểm của 
+  <a href="/carbide-burr/type-a/" 
+     title="Carbide Burr Type A - Dao mài dạng trụ"
+     rel="noopener">
+    Carbide Burr Type A dạng trụ
+  </a>, 
+  bạn có thể tham khảo thêm về 
+  <a href="/carbide-burr/double-cut/" 
+     title="Double Cut Carbide Burr - Lưỡi cắt đôi">
+    kiểu cắt Double Cut
+  </a> 
+  phù hợp với sản phẩm này.
+</p>
+
+<!-- Related Products Section -->
+<section class="related-products">
+  <h2>Sản Phẩm Liên Quan</h2>
+  <ul>
+    <li><a href="/carbide-burr/type-b/">Carbide Burr Type B - Trụ có đầu cắt</a></li>
+    <li><a href="/carbide-burr/type-c/">Carbide Burr Type C - Trụ mũi cầu</a></li>
+    <li><a href="/carbide-burr/type-d/">Carbide Burr Type D - Dạng cầu</a></li>
+  </ul>
+</section>
+```
+
+### F. Performance & Technical SEO
+
+**Core Web Vitals Targets:**
+
+| Metric | Target | Critical |
+| :--- | :--- | :--- |
+| **LCP** (Largest Contentful Paint) | < 2.5s | ⚠️ Hình ảnh hero phải tối ưu |
+| **FID** (First Input Delay) | < 100ms | ⚠️ JavaScript phải defer/async |
+| **CLS** (Cumulative Layout Shift) | < 0.1 | ⚠️ Khai báo width/height cho ảnh |
+| **TTFB** (Time to First Byte) | < 600ms | ⚠️ CDN + Server caching |
+| **Page Size** | < 2MB | ⚠️ Compress images + minify CSS/JS |
+
+**Technical Checklist:**
+
+```html
+<!-- Preload Critical Resources -->
+<link rel="preload" href="/fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/css/critical.css" as="style">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- DNS Prefetch -->
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//cdn.anmitools.com">
+
+<!-- Defer Non-Critical CSS -->
+<link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/main.css"></noscript>
+
+<!-- Async JavaScript -->
+<script src="/js/main.js" defer></script>
+
+<!-- Mobile Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+```
+
+### G. Sitemap XML Structure
+
+**Sitemap cho 28 bài viết Carbide Burr:**
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Bài viết tổng quan (Priority cao nhất) -->
+  <url>
+    <loc>https://anmitools.com/carbide-burr/la-gi/</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://anmitools.com/images/carbide-burr-overview.jpg</image:loc>
+      <image:caption>Carbide Burr là gì?</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Bài viết kiểu cắt (Priority trung bình) -->
+  <url>
+    <loc>https://anmitools.com/carbide-burr/double-cut/</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Bài viết sản phẩm cụ thể (Priority thấp hơn) -->
+  <url>
+    <loc>https://anmitools.com/carbide-burr/type-a/</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Repeat for all 28 pages... -->
+  
+</urlset>
+```
+
+### H. Robots.txt Configuration
+
+```
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /*?print=
+Disallow: /*?share=
+
+# Sitemap
+Sitemap: https://anmitools.com/sitemap.xml
+Sitemap: https://anmitools.com/sitemap-carbide-burr.xml
+
+# Crawl-delay for specific bots
+User-agent: Baiduspider
+Crawl-delay: 5
+
+User-agent: Yandex
+Crawl-delay: 2
+```
+
+### I. Analytics & Tracking Setup
+
+**Google Tag Manager (GTM) Events cho từng bài viết:**
+
+```javascript
+// Event: Product View
+dataLayer.push({
+  'event': 'productView',
+  'ecommerce': {
+    'detail': {
+      'products': [{
+        'name': 'Carbide Burr Type A',
+        'id': 'CB-TYPE-A-001',
+        'price': '',  // Không công khai giá
+        'brand': 'AN MI TOOLS',
+        'category': 'Carbide Burr/Cylinder Type',
+        'variant': 'Double Cut'
+      }]
+    }
+  }
+});
+
+// Event: Contact CTA Click
+document.querySelector('.contact-cta').addEventListener('click', function() {
+  dataLayer.push({
+    'event': 'contactCTA',
+    'eventCategory': 'Engagement',
+    'eventAction': 'Click',
+    'eventLabel': 'Carbide Burr Type A - Contact Button'
+  });
+});
+
+// Event: Scroll Depth
+// Track 25%, 50%, 75%, 100% scroll depth
+```
+
+### J. Hreflang Tags (Nếu có phiên bản Tiếng Anh)
+
+```html
+<!-- Trong <head> của mỗi trang -->
+<link rel="alternate" hreflang="vi" href="https://anmitools.com/carbide-burr/type-a/" />
+<link rel="alternate" hreflang="en" href="https://anmitools.com/en/carbide-burr/type-a/" />
+<link rel="alternate" hreflang="x-default" href="https://anmitools.com/carbide-burr/type-a/" />
+```
+
+### K. Mobile-First Optimization - Typography & Image Styles
+
+**⚠️ QUAN TRỌNG: Đơn vị đo lường tốt nhất**
+
+**Tại sao dùng `rem` thay vì `px`:**
+- ✅ **Accessibility**: Tôn trọng thiết lập font-size của người dùng (WCAG AA/AAA)
+- ✅ **Responsive**: Dễ scale toàn bộ typography bằng cách thay đổi `html { font-size }`
+- ✅ **Consistency**: 1rem luôn bằng font-size của `<html>` (mặc định 16px)
+- ✅ **SEO**: Google ưu tiên websites có accessibility tốt
+- ❌ **px**: Cứng nhắc, không thân thiện với người khiếm thị dùng screen reader
+
+**Quy đổi rem sang px (base 16px):**
+- 0.875rem = 14px (mobile body text)
+- 1rem = 16px (desktop body text)
+- 1.5rem = 24px (mobile h1)
+- 2rem = 32px (desktop h1)
+- 2.25rem = 36px (large desktop h1)
+
+**Responsive Font Sizes (Mobile First - Sử dụng rem):**
+
+```css
+/* Mobile First Approach - Typography with rem units */
+
+/* Base font-size cho html để rem có thể tính toán */
+html {
+  font-size: 16px; /* 1rem = 16px baseline */
+}
+
+/* Base styles: Mobile (< 576px) */
+body {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.4;
+}
+
+h4, h5, h6 {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5;
+}
+
+p, ul, ol {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.6;
+}
+
+/* Lists - Mobile first */
+ul, ol {
+  margin-left: 1.25rem; /* 20px */
+}
+
+li {
+  margin-bottom: 0.5rem; /* 8px */
+}
+
+/* Tables - Mobile first */
+table {
+  font-size: 0.8125rem; /* 13px */
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Tablet (≥ 576px) */
+@media (min-width: 576px) {
+  body {
+    font-size: 0.9375rem; /* 15px */
+  }
+  
+  h1 {
+    font-size: 1.75rem; /* 28px */
+  }
+  
+  h2 {
+    font-size: 1.375rem; /* 22px */
+  }
+  
+  h3 {
+    font-size: 1.1875rem; /* 19px */
+  }
+  
+  p, ul, ol {
+    font-size: 0.9375rem; /* 15px */
+  }
+  
+  table {
+    font-size: 0.875rem; /* 14px */
+    display: table;
+  }
+}
+
+/* Desktop (≥ 992px) */
+@media (min-width: 992px) {
+  body {
+    font-size: 1rem; /* 16px - baseline */
+  }
+  
+  h1 {
+    font-size: 2rem; /* 32px */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+  
+  h3 {
+    font-size: 1.25rem; /* 20px */
+  }
+  
+  h4 {
+    font-size: 1.125rem; /* 18px */
+  }
+  
+  p, ul, ol {
+    font-size: 1rem; /* 16px */
+  }
+  
+  table {
+    font-size: 0.9375rem; /* 15px */
+  }
+  
+  li {
+    margin-bottom: 0.625rem; /* 10px */
+  }
+}
+
+/* Large Desktop (≥ 1400px) */
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 2.25rem; /* 36px */
+  }
+  
+  h2 {
+    font-size: 1.625rem; /* 26px */
+  }
+  
+  h3 {
+    font-size: 1.375rem; /* 22px */
+  }
+}
+
+/* Buttons - Touch-friendly với rem */
+.cta-button,
+.woocommerce-button,
+.button {
+  font-size: 0.9375rem; /* 15px */
+  padding: 0.75rem 1.5rem; /* 12px 24px */
+  min-height: 3rem; /* 48px - WCAG touch target */
+  min-width: 3rem; /* 48px */
+}
+
+@media (min-width: 992px) {
+  .cta-button,
+  .woocommerce-button,
+  .button {
+    font-size: 1rem; /* 16px */
+    padding: 0.875rem 1.75rem; /* 14px 28px */
+  }
+}
+```
+
+**Image Caption Styles (Center Aligned - Sử dụng rem):**
+
+```css
+/* Caption styles cho tất cả hình ảnh - rem units */
+.wp-caption,
+.wp-block-image figcaption,
+figure figcaption,
+.woocommerce-product-gallery__image figcaption {
+  text-align: center;
+  font-size: 0.8125rem; /* 13px */
+  color: #666;
+  margin-top: 0.5rem; /* 8px */
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Responsive caption font size */
+@media (min-width: 576px) {
+  .wp-caption,
+  .wp-block-image figcaption,
+  figure figcaption {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+@media (min-width: 992px) {
+  .wp-caption,
+  .wp-block-image figcaption,
+  figure figcaption {
+    font-size: 0.9375rem; /* 15px */
+    margin-top: 0.625rem; /* 10px */
+  }
+}
+
+/* Image wrapper centering */
+.wp-caption,
+.wp-block-image,
+figure {
+  text-align: center;
+}
+
+.wp-caption img,
+.wp-block-image img,
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+```
+
+**Khi nào dùng px thay vì rem:**
+- ✅ Border: `border: 1px solid #ddd;` (không cần scale)
+- ✅ Box shadow: `box-shadow: 0 2px 4px rgba(0,0,0,0.1);`
+- ✅ Border radius: `border-radius: 4px;` (trang trí, không ảnh hưởng accessibility)
+- ❌ **KHÔNG dùng px cho font-size, padding, margin của text elements**
+
+**Touch-Friendly Elements:**
+
+```css
+/* Minimum tap target size: 48x48px */
+.cta-button,
+button,
+.button,
+input[type="submit"] {
+  min-height: 48px;
+  min-width: 48px;
+  font-size: 15px;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 767px) {
+  .cta-button,
+  button,
+  .button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  
+  /* Table font size on mobile */
+  table {
+    font-size: 13px;
+  }
+  
+  /* List spacing on mobile */
+  ul li,
+  ol li {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 992px) {
+  .cta-button,
+  button,
+  .button {
+    font-size: 16px;
+    padding: 14px 28px;
+  }
+  
+  table {
+    font-size: 15px;
+  }
+  
+  ul li,
+  ol li {
+    font-size: 16px;
+  }
+}
+```
+
+---
+
+## 10. Workflow Triển Khai SEO Backend
+
+### A. Quy Trình Xuất Bản Một Bài Viết
+
+**Checklist 15 bước khi publish:**
+
+- [ ] **Bước 1:** Hoàn thiện nội dung HTML (800-1500 từ)
+- [ ] **Bước 2:** Tối ưu Title tag (< 60 ký tự, chứa từ khóa)
+- [ ] **Bước 3:** Viết Meta Description (150-160 ký tự, có CTA)
+- [ ] **Bước 4:** Thiết lập URL chuẩn SEO (dấu gạch ngang, không ký tự đặc biệt)
+- [ ] **Bước 5:** Chèn Schema Markup (Product/Article + Breadcrumb + FAQ)
+- [ ] **Bước 6:** Tối ưu hình ảnh (WebP + alt text + lazy loading)
+- [ ] **Bước 7:** Thêm 3-5 internal links
+- [ ] **Bước 8:** Kiểm tra H1-H6 hierarchy
+- [ ] **Bước 9:** Thêm Open Graph tags
+- [ ] **Bước 10:** Thiết lập canonical URL
+- [ ] **Bước 11:** Test mobile responsiveness
+- [ ] **Bước 12:** Kiểm tra Core Web Vitals (PageSpeed Insights)
+- [ ] **Bước 13:** Cập nhật sitemap.xml
+- [ ] **Bước 14:** Submit URL to Google Search Console
+- [ ] **Bước 15:** Thiết lập Google Analytics tracking
+
+### B. Công Cụ Kiểm Tra SEO
+
+| Công cụ | Mục đích | URL |
+| :--- | :--- | :--- |
+| **Google Search Console** | Index status, crawl errors, search performance | https://search.google.com/search-console |
+| **PageSpeed Insights** | Core Web Vitals, performance score | https://pagespeed.web.dev/ |
+| **Google Rich Results Test** | Kiểm tra Schema Markup | https://search.google.com/test/rich-results |
+| **Mobile-Friendly Test** | Kiểm tra mobile optimization | https://search.google.com/test/mobile-friendly |
+| **Screaming Frog** | Technical SEO audit | https://www.screamingfrog.co.uk/seo-spider/ |
+| **Ahrefs/SEMrush** | Keyword ranking, backlinks | https://ahrefs.com/ |
+
+### C. KPI & Metrics Tracking
+
+**Chỉ số theo dõi cho 28 bài viết:**
+
+| Metric | Target (Tháng 1-3) | Target (Tháng 4-6) | Tool |
+| :--- | :--- | :--- | :--- |
+| **Organic Traffic** | 500 visits/month | 2,000 visits/month | Google Analytics |
+| **Keyword Rankings** | Top 20 (5 từ khóa chính) | Top 10 (15 từ khóa) | Ahrefs/SEMrush |
+| **Avg. Session Duration** | > 1:30 min | > 2:00 min | Google Analytics |
+| **Bounce Rate** | < 60% | < 50% | Google Analytics |
+| **Pages per Session** | > 1.5 | > 2.0 | Google Analytics |
+| **CTR (Search)** | > 3% | > 5% | Google Search Console |
+| **Conversions** | 10 leads/month | 30 leads/month | Google Analytics Goals |
+
+---
+
+## 11. Ngữ Cảnh SEO Cho WordPress WooCommerce
+
+Phần này cung cấp hướng dẫn chi tiết về việc triển khai SEO cho 28 bài viết Carbide Burr trên nền tảng **WordPress với WooCommerce**, bao gồm cấu hình plugin, taxonomy, và tối ưu hóa đặc thù cho hệ thống này.
+
+### A. Thông Tin Hệ Thống
+
+| Thông tin | Chi tiết |
+| :--- | :--- |
+| **Platform** | WordPress 6.4+ |
+| **E-commerce Plugin** | WooCommerce 8.0+ |
+| **Hosting Khuyến nghị** | VPS/Cloud (tối thiểu 2GB RAM, SSD) |
+| **PHP Version** | PHP 8.1+ |
+| **Database** | MySQL 5.7+ hoặc MariaDB 10.3+ |
+
+### B. Plugin SEO Backend - Rank Math SEO
+
+**1. Rank Math SEO (Plugin Chính - Khuyến nghị sử dụng)**
+
+| Phiên bản | Tính năng chính | Giá |
+| :--- | :--- | :--- |
+| **Rank Math Free** | Schema markup, XML sitemap, Breadcrumbs, Basic SEO analysis, Google Search Console integration | Miễn phí |
+| **Rank Math Pro** | Advanced Schema, Keyword tracking (5-500 keywords), Content AI, Local SEO, Video SEO, Google Trends, WooCommerce SEO Module | $59/năm (1 site) hoặc $199/năm (unlimited) |
+
+**Tại sao chọn Rank Math?**
+```
+✅ Giao diện trực quan, dễ sử dụng hơn Yoast
+✅ Tích hợp sẵn Google Search Console & Analytics
+✅ Schema markup đa dạng (17+ loại)
+✅ WooCommerce SEO Module tích hợp sẵn
+✅ Content AI suggestions (Pro)
+✅ Keyword tracking trực tiếp trong WordPress
+✅ Giá rẻ hơn Yoast SEO Premium ($59 vs $99)
+✅ Hỗ trợ 5 từ khóa/bài (Free) vs 1 từ khóa của Yoast Free
+```
+
+**2. Plugin Hỗ trợ Bổ sung**
+
+```
+✅ WP Rocket (Caching & Performance) - $49/năm
+✅ ShortPixel (Image Optimization) - $9.99/tháng
+✅ Pretty Links (Link Management) - $79/năm
+⚠️ KHÔNG CẦN Schema Pro (Rank Math đã có sẵn)
+⚠️ KHÔNG CẦN MonsterInsights (Rank Math tích hợp GA sẵn)
+```
+
+### C. Cấu Trúc Taxonomy WooCommerce
+
+**Taxonomy đề xuất cho 28 bài viết Carbide Burr:**
+
+#### **1. Product Categories (Danh mục Sản phẩm)**
+
+```
+Dụng Cụ Cắt Công Nghiệp (Parent)
+└── Carbide Burr - Dao Mài Hợp Kim (Parent)
+    ├── Carbide Burr Theo Kiểu Cắt (Child)
+    │   ├── Double Cut Burr
+    │   ├── Single Cut Burr
+    │   ├── Aluminium Cut Burr
+    │   ├── Fine Cut Burr
+    │   ├── Diamond Cut Burr
+    │   ├── Coarse Cut Burr
+    │   └── Chip Breaker Cut Burr
+    │
+    ├── Carbide Burr Theo Hình Dạng (Child)
+    │   ├── Type A - Dạng Trụ
+    │   ├── Type B - Trụ Có Đầu Cắt
+    │   ├── Type C - Trụ Mũi Cầu
+    │   ├── Type D - Dạng Cầu
+    │   ├── Type E - Dạng Oval
+    │   ├── Type F - Dạng Cây Mũi Cầu
+    │   ├── Type G - Dạng Cây Nhọn
+    │   ├── Type H - Dạng Ngọn Lửa
+    │   ├── Type J - Vát Mép 60°
+    │   ├── Type K - Vát Mép 90°
+    │   ├── Type L - Nón Mũi Cầu
+    │   ├── Type M - Dạng Nón
+    │   └── Type N - Nón Ngược
+    │
+    └── Carbide Burr Theo Ứng Dụng (Child)
+        ├── Gia Công Thép
+        ├── Gia Công Inox
+        ├── Gia Công Nhôm
+        ├── Xử Lý Điểm Hàn
+        └── Vát Mép - Loại Bỏ Bavia
+```
+
+#### **2. Product Tags (Thẻ Sản phẩm)**
+
+```php
+// Định nghĩa Product Tags trong WooCommerce
+$product_tags = [
+    // Tags Chính
+    'carbide-burr',
+    'dao-mai-hop-kim',
+    'rotary-burr',
+    'tungsten-carbide',
+    'an-mi-tools',
+    
+    // Tags Kiểu Cắt
+    'double-cut',
+    'single-cut',
+    'aluminium-cut',
+    'fine-cut',
+    'diamond-cut',
+    'coarse-cut',
+    'chip-breaker',
+    
+    // Tags Hình Dạng
+    'cylinder-burr',
+    'ball-burr',
+    'cone-burr',
+    'countersink-burr',
+    'inverted-cone-burr',
+    'oval-burr',
+    'flame-burr',
+    'tree-burr',
+    
+    // Tags Ứng Dụng
+    'gia-cong-thep',
+    'gia-cong-inox',
+    'gia-cong-nhom',
+    'xu-ly-diem-han',
+    'loai-bo-bavia',
+    'metal-finishing',
+    'deburring-tool',
+    
+    // Tags Độ Cứng
+    '60-hrc',
+    'thep-cung',
+    'kim-loai-mem',
+    
+    // Tags Thương Hiệu
+    'made-in-vietnam',
+    'industrial-tools'
+];
+```
+
+#### **3. Product Attributes (Thuộc tính Sản phẩm)**
+
+**Định nghĩa Attributes trong WooCommerce Admin:**
+
+| Attribute Name | Slug | Type | Values | Visible on Product Page | Used for Variations |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Kiểu Cắt** | `pa_kieu-cat` | Select | Double Cut, Single Cut, Aluminium Cut, Fine Cut, Diamond Cut, Coarse Cut, Chip Breaker | ✅ Yes | ❌ No |
+| **Hình Dạng** | `pa_hinh-dang` | Select | Type A, Type B, Type C... Type N | ✅ Yes | ❌ No |
+| **Vật Liệu Gia Công** | `pa_vat-lieu` | Select | Thép, Inox, Nhôm, Gang, Kim loại màu | ✅ Yes | ❌ No |
+| **Độ Cứng Tối Đa** | `pa_do-cung` | Text | < 60 HRC, < 55 HRC | ✅ Yes | ❌ No |
+| **Đường Kính Đầu (D)** | `pa_duong-kinh` | Text | 6mm, 8mm, 10mm, 12mm... | ✅ Yes | ✅ Yes |
+| **Chiều Dài Cắt (L)** | `pa_chieu-dai` | Text | 12mm, 15mm, 20mm, 25mm... | ✅ Yes | ✅ Yes |
+| **Đường Kính Chuôi (d)** | `pa_duong-kinh-chuoi` | Text | 3mm, 6mm | ✅ Yes | ✅ Yes |
+| **Vật Liệu Dụng Cụ** | `pa_chat-lieu` | Text | Tungsten Carbide | ✅ Yes | ❌ No |
+
+### D. Cấu Hình Rank Math SEO (Plugin Backend SEO)
+
+#### **1. Setup Wizard - Cài đặt Ban đầu**
+
+**Truy cập: Rank Math → Setup Wizard**
+
+```
+Bước 1: Import Settings
+  ⚪ Start from Scratch (Khuyến nghị cho website mới)
+  
+Bước 2: Your Site
+  ✅ Site Type: Small Business
+  ✅ Organization Name: AN MI TOOLS
+  ✅ Logo: [Upload logo 512x512px]
+  
+Bước 3: Search Console
+  ✅ Connect Google Search Console (khuyến nghị)
+  
+Bước 4: Sitemap
+  ✅ Posts, Pages, Products: YES
+  ✅ Categories, Tags: YES
+  ✅ Product Categories: YES
+  ✅ Product Tags: NO (tránh duplicate)
+  
+Bước 5: Optimize
+  ✅ Noindex Empty Category and Tag Archives: YES
+  ✅ Nofollow External Links: NO
+  ✅ Open External Links in New Tab: YES
+  ✅ Strip Category Base: YES
+```
+
+#### **2. Rank Math Settings - Products (WooCommerce)**
+
+**Truy cập: Rank Math → Titles & Meta → Products**
+
+```
+✅ Show Products in Search Results: YES
+
+📝 Title Template:
+%title% | %sep% | %sitename%
+
+📝 Description Template:
+%wc_shortdesc% | Liên hệ AN MI TOOLS: %cf_phone%
+
+✅ Robots Meta:
+   ✅ Index: YES
+   ✅ Follow: YES
+   ⚠️ Advanced Robots: (để mặc định)
+
+✅ Schema Type: Product (Auto-detected by Rank Math)
+```
+
+#### **3. Schema Markup Configuration (Rank Math)**
+
+**Truy cập: Rank Math → Titles & Meta → Products → Schema**
+
+```json
+{
+  "defaultSchema": "Product",
+  "productFields": {
+    "name": "%%title%%",
+    "description": "%%excerpt%%",
+    "sku": "%%wc_sku%%",
+    "brand": {
+      "@type": "Brand",
+      "name": "AN MI TOOLS"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "AN MI TOOLS"
+    },
+    "material": "Tungsten Carbide",
+    "offers": {
+      "@type": "Offer",
+      "url": "%%url%%",
+      "priceCurrency": "VND",
+      "price": "%%wc_price%%",
+      "availability": "%%wc_availability%%",
+      "priceValidUntil": "%%wc_price_valid_until%%"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "%%wc_rating%%",
+      "reviewCount": "%%wc_review_count%%"
+    }
+  }
+}
+```
+
+#### **4. Breadcrumbs Configuration (Rank Math)**
+
+**Truy cập: Rank Math → General Settings → Breadcrumbs**
+
+```
+✅ Enable Breadcrumbs: ON
+
+📝 Breadcrumb Settings:
+   ✅ Separator: › 
+   ✅ Home Text: Trang Chủ
+   ✅ Prefix: (để trống)
+   ✅ Archive Format: (để trống)
+   ✅ Search Format: Kết quả tìm kiếm cho "%s"
+   
+📝 Advanced Settings:
+   ✅ Hide Breadcrumbs on Homepage: YES
+   ✅ Show Breadcrumbs after title: NO (hiển thị trong theme)
+   ✅ Show Post Categories: YES
+   ✅ Show Ancestor Categories: YES
+   
+📝 WooCommerce Settings:
+   ✅ Show Product Categories in Breadcrumbs: YES
+   ✅ Hide WooCommerce Shop Page: NO
+```
+
+**Thêm Breadcrumbs vào Theme (header.php hoặc single-product.php):**
+
+```php
+<?php
+if ( function_exists('rank_math_the_breadcrumbs') ) {
+    rank_math_the_breadcrumbs();
+}
+?>
+```
+
+**Hoặc dùng Shortcode:**
+
+```
+[rank_math_breadcrumb]
+```
+
+### E. Permalink Structure (Cấu Trúc URL)
+
+**Truy cập: Settings → Permalinks**
+
+#### **1. General Permalink Settings**
+
+```
+✅ Common Settings: Custom Structure
+✅ Custom Structure: /%category%/%postname%/
+
+Ví dụ output:
+https://anmitools.com/carbide-burr/type-a/
+https://anmitools.com/carbide-burr/double-cut/
+```
+
+#### **2. WooCommerce Product Permalink Settings**
+
+**Truy cập: WooCommerce → Settings → Products → Advanced**
+
+```
+Product permalink base: /carbide-burr/
+
+✅ Default product category base: /danh-muc/
+✅ Product tag base: /tag/
+✅ Product attribute base: (để trống)
+
+Kết quả:
+- Product: /carbide-burr/type-a-dang-tru/
+- Category: /danh-muc/carbide-burr-theo-hinh-dang/
+- Tag: /tag/double-cut/
+```
+
+### F. WooCommerce Product Data Configuration
+
+#### **1. Product Type: Simple Product**
+
+**Thiết lập cho mỗi sản phẩm Carbide Burr:**
+
+```
+Product Data:
+├── General
+│   ├── Regular price: (Không điền - liên hệ)
+│   ├── Sale price: (Không điền)
+│   └── Tax class: Standard
+│
+├── Inventory
+│   ├── SKU: CB-TYPE-A-D6L12 (ví dụ)
+│   ├── Manage stock: YES
+│   ├── Stock quantity: 100
+│   └── Stock status: In stock
+│
+├── Shipping
+│   ├── Weight: 0.05 (kg)
+│   ├── Dimensions: (L x W x H)
+│   └── Shipping class: Small Items
+│
+└── Attributes
+    ├── Kiểu Cắt: Double Cut
+    ├── Hình Dạng: Type A
+    ├── Vật Liệu Gia Công: Thép, Inox
+    └── Vật Liệu Dụng Cụ: Tungsten Carbide
+```
+
+#### **2. Product Short Description (Excerpt)**
+
+**Template cho Meta Description (150-160 ký tự):**
+
+```
+Dao mài Carbide Burr [TYPE/CUT TYPE] chuyên [ỨNG DỤNG CHÍNH]. 
+Hợp kim Tungsten, độ bền cao, phù hợp [VẬT LIỆU]. 
+Liên hệ AN MI TOOLS: [SỐ ĐIỆN THOẠI]
+```
+
+**Ví dụ:**
+```
+Dao mài Carbide Burr Type A dạng trụ chuyên gia công bề mặt kim loại. 
+Hợp kim Tungsten, độ bền cao, phù hợp thép, inox, gang. 
+Liên hệ AN MI TOOLS: 0901234567
+```
+
+#### **3. Product Description (Nội dung chính)**
+
+**Cấu trúc HTML cho Tab "Description":**
+
+```html
+<div class="product-description-wrapper">
+  <!-- Tổng quan -->
+  <section class="overview">
+    <h2>Tổng Quan về [TÊN SẢN PHẨM]</h2>
+    <p>[Giới thiệu tổng quan 2-3 câu]</p>
+  </section>
+
+  <!-- Đặc điểm nổi bật -->
+  <section class="features">
+    <h2>Đặc Điểm Nổi Bật</h2>
+    <ul class="check-list">
+      <li>✅ Vật liệu: Hợp kim cứng Tungsten Carbide</li>
+      <li>✅ Độ bền: Tuổi thọ cao gấp 3-5 lần dao thường</li>
+      <li>✅ Ứng dụng: [Liệt kê ứng dụng]</li>
+      <li>✅ Bảo hành: 6 tháng lỗi nhà sản xuất</li>
+    </ul>
+  </section>
+
+  <!-- Ứng dụng -->
+  <section class="applications">
+    <h2>Ứng Dụng</h2>
+    <p>[Mô tả chi tiết ứng dụng]</p>
+  </section>
+
+  <!-- Thông số kỹ thuật -->
+  <section class="specifications">
+    <h2>Thông Số Kỹ Thuật</h2>
+    <table class="specs-table">
+      <tr>
+        <th>Thuộc tính</th>
+        <th>Giá trị</th>
+      </tr>
+      <tr>
+        <td>Vật liệu</td>
+        <td>Tungsten Carbide</td>
+      </tr>
+      <tr>
+        <td>Kiểu cắt</td>
+        <td>[DOUBLE CUT / SINGLE CUT...]</td>
+      </tr>
+      <tr>
+        <td>Hình dạng</td>
+        <td>[TYPE A / TYPE B...]</td>
+      </tr>
+      <tr>
+        <td>Vật liệu gia công</td>
+        <td>[Thép, Inox, Nhôm...]</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Hướng dẫn sử dụng -->
+  <section class="usage-guide">
+    <h2>Hướng Dẫn Sử Dụng An Toàn</h2>
+    <ol>
+      <li>Chọn tốc độ quay phù hợp theo khuyến nghị</li>
+      <li>Kết nối chắc chắn chuôi dao với đầu kẹp máy</li>
+      <li>Không ấn quá mạnh khi gia công</li>
+      <li>Không sử dụng trong môi trường khí dễ cháy</li>
+    </ol>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Liên Hệ Báo Giá</h2>
+    <p>Để được tư vấn chi tiết về sản phẩm và nhận báo giá tốt nhất:</p>
+    <div class="contact-buttons">
+      <a href="tel:0901234567" class="btn btn-primary">📞 Gọi Ngay: 0901 234 567</a>
+      <a href="https://zalo.me/0901234567" class="btn btn-secondary">💬 Chat Zalo</a>
+      <a href="/lien-he/" class="btn btn-outline">📧 Gửi Yêu Cầu</a>
+    </div>
+  </section>
+</div>
+```
+
+### G. WooCommerce SEO Optimization Settings
+
+#### **1. Disable WooCommerce Sidebar (Nếu không cần)**
+
+**File: functions.php**
+
+```php
+// Remove WooCommerce default sidebar
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+
+// Full width product page
+add_filter( 'woocommerce_product_tabs', 'remove_wc_tabs', 98 );
+function remove_wc_tabs( $tabs ) {
+    // Giữ lại tab Description và Additional Information
+    unset( $tabs['reviews'] ); // Tắt tab Reviews nếu không dùng
+    return $tabs;
+}
+```
+
+#### **2. Custom Product Schema với Rank Math (functions.php)**
+
+```php
+// Tùy chỉnh Product Schema cho Rank Math
+add_filter( 'rank_math/snippet/rich_snippet_product_entity', 'anmi_custom_rankmath_product_schema' );
+function anmi_custom_rankmath_product_schema( $entity ) {
+    global $product;
+    
+    if ( ! is_object( $product ) ) {
+        $product = wc_get_product( get_the_ID() );
+    }
+    
+    // Thêm Brand
+    $entity['brand'] = [
+        '@type' => 'Brand',
+        'name'  => 'AN MI TOOLS',
+        'url'   => home_url()
+    ];
+    
+    // Thêm Manufacturer
+    $entity['manufacturer'] = [
+        '@type' => 'Organization',
+        'name'  => 'AN MI TOOLS',
+        'url'   => home_url(),
+        'logo'  => [
+            '@type' => 'ImageObject',
+            'url'   => get_site_icon_url()
+        ]
+    ];
+    
+    // Thêm Material
+    $entity['material'] = 'Tungsten Carbide';
+    
+    // Thêm Category
+    $categories = get_the_terms( get_the_ID(), 'product_cat' );
+    if ( $categories && ! is_wp_error( $categories ) ) {
+        $entity['category'] = $categories[0]->name;
+    }
+    
+    // Thêm Additional Properties từ Attributes
+    $entity['additionalProperty'] = [];
+    
+    // Kiểu cắt
+    $terms = get_the_terms( get_the_ID(), 'pa_kieu-cat' );
+    if ( $terms && ! is_wp_error( $terms ) ) {
+        $entity['additionalProperty'][] = [
+            '@type' => 'PropertyValue',
+            'name'  => 'Kiểu Cắt',
+            'value' => $terms[0]->name
+        ];
+    }
+    
+    // Hình dạng
+    $terms = get_the_terms( get_the_ID(), 'pa_hinh-dang' );
+    if ( $terms && ! is_wp_error( $terms ) ) {
+        $entity['additionalProperty'][] = [
+            '@type' => 'PropertyValue',
+            'name'  => 'Hình Dạng',
+            'value' => $terms[0]->name
+        ];
+    }
+    
+    // Vật liệu gia công
+    $terms = get_the_terms( get_the_ID(), 'pa_vat-lieu' );
+    if ( $terms && ! is_wp_error( $terms ) ) {
+        $material_names = wp_list_pluck( $terms, 'name' );
+        $entity['additionalProperty'][] = [
+            '@type' => 'PropertyValue',
+            'name'  => 'Vật Liệu Gia Công',
+            'value' => implode( ', ', $material_names )
+        ];
+    }
+    
+    // Nếu không có giá (liên hệ), xử lý offers
+    if ( ! $product->get_price() ) {
+        $entity['offers'] = [
+            '@type'          => 'Offer',
+            'url'            => get_permalink(),
+            'availability'   => 'https://schema.org/InStock',
+            'priceSpecification' => [
+                '@type'      => 'PriceSpecification',
+                'price'      => '0',
+                'priceCurrency' => 'VND',
+                'valueAddedTaxIncluded' => 'true'
+            ],
+            'seller'         => [
+                '@type' => 'Organization',
+                'name'  => 'AN MI TOOLS'
+            ]
+        ];
+    }
+    
+    return $entity;
+}
+```
+
+#### **3. Custom Breadcrumbs for Products (Rank Math)**
+
+```php
+// Custom product breadcrumbs cho Rank Math
+add_filter( 'rank_math/frontend/breadcrumb/items', 'anmi_custom_rankmath_breadcrumbs' );
+function anmi_custom_rankmath_breadcrumbs( $crumbs ) {
+    if ( is_singular( 'product' ) ) {
+        global $post;
+        
+        // Xóa breadcrumb mặc định của WooCommerce nếu có
+        foreach ( $crumbs as $key => $crumb ) {
+            if ( isset( $crumb[1] ) && strpos( $crumb[1], 'shop' ) !== false ) {
+                unset( $crumbs[ $key ] );
+            }
+        }
+        
+        // Tạo lại breadcrumb
+        $new_crumbs = [];
+        $new_crumbs[] = $crumbs[0]; // Giữ Home
+        
+        // Thêm "Carbide Burr" hub page
+        $new_crumbs[] = [
+            'Carbide Burr',
+            home_url( '/carbide-burr/' )
+        ];
+        
+        // Lấy category chính của product
+        $terms = get_the_terms( $post->ID, 'product_cat' );
+        if ( $terms && ! is_wp_error( $terms ) ) {
+            // Lọc bỏ category cha "Carbide Burr" nếu trùng
+            $filtered_terms = array_filter( $terms, function( $term ) {
+                return $term->slug !== 'carbide-burr';
+            });
+            
+            if ( ! empty( $filtered_terms ) ) {
+                $main_term = array_shift( $filtered_terms );
+                
+                // Thêm parent categories nếu có
+                if ( $main_term->parent ) {
+                    $parent_term = get_term( $main_term->parent, 'product_cat' );
+                    $new_crumbs[] = [
+                        $parent_term->name,
+                        get_term_link( $parent_term )
+                    ];
+                }
+                
+                // Thêm category chính
+                $new_crumbs[] = [
+                    $main_term->name,
+                    get_term_link( $main_term )
+                ];
+            }
+        }
+        
+        // Thêm product title (không có link)
+        $new_crumbs[] = [
+            get_the_title()
+        ];
+        
+        return $new_crumbs;
+    }
+    
+    return $crumbs;
+}
+```
+
+### H. Custom Fields cho WooCommerce Products
+
+#### **1. Advanced Custom Fields (ACF) Configuration**
+
+**Định nghĩa Field Group:**
+
+```php
+// ACF Field Group cho Carbide Burr Products
+$field_group = [
+    'key' => 'group_carbide_burr',
+    'title' => 'Thông Tin Kỹ Thuật Carbide Burr',
+    'fields' => [
+        [
+            'key' => 'field_cut_type_detail',
+            'label' => 'Chi Tiết Kiểu Cắt',
+            'name' => 'cut_type_detail',
+            'type' => 'wysiwyg',
+            'instructions' => 'Mô tả chi tiết về kiểu cắt (Double Cut, Single Cut...)'
+        ],
+        [
+            'key' => 'field_material_compatibility',
+            'label' => 'Vật Liệu Tương Thích',
+            'name' => 'material_compatibility',
+            'type' => 'checkbox',
+            'choices' => [
+                'thep' => 'Thép < 60 HRC',
+                'inox' => 'Inox',
+                'gang' => 'Gang',
+                'nhom' => 'Nhôm',
+                'kim_loai_mau' => 'Kim loại màu',
+                'nhua' => 'Nhựa'
+            ]
+        ],
+        [
+            'key' => 'field_rpm_recommendation',
+            'label' => 'Tốc Độ Quay Khuyến Nghị (RPM)',
+            'name' => 'rpm_recommendation',
+            'type' => 'text',
+            'instructions' => 'Ví dụ: 15,000 - 25,000 RPM'
+        ],
+        [
+            'key' => 'field_application_images',
+            'label' => 'Hình Ảnh Ứng Dụng',
+            'name' => 'application_images',
+            'type' => 'gallery',
+            'max' => 5
+        ],
+        [
+            'key' => 'field_technical_drawing',
+            'label' => 'Bản Vẽ Kỹ Thuật',
+            'name' => 'technical_drawing',
+            'type' => 'image',
+            'return_format' => 'url'
+        ],
+        [
+            'key' => 'field_youtube_video',
+            'label' => 'Video Hướng Dẫn (YouTube)',
+            'name' => 'youtube_video',
+            'type' => 'url',
+            'instructions' => 'Link YouTube video demo sản phẩm'
+        ]
+    ],
+    'location' => [
+        [
+            [
+                'param' => 'post_type',
+                'operator' => '==',
+                'value' => 'product'
+            ],
+            [
+                'param' => 'product_cat',
+                'operator' => '==',
+                'value' => 'carbide-burr' // Slug của category
+            ]
+        ]
+    ]
+];
+```
+
+### I. WooCommerce Performance Optimization
+
+#### **1. Database Optimization**
+
+```sql
+-- Tối ưu database cho WooCommerce
+-- Chạy định kỳ mỗi tháng
+
+-- Dọn dẹp transients cũ
+DELETE FROM wp_options WHERE option_name LIKE '_transient_%' AND option_name NOT LIKE '_transient_timeout_%';
+
+-- Dọn dẹp post meta orphaned
+DELETE pm FROM wp_postmeta pm
+LEFT JOIN wp_posts wp ON wp.ID = pm.post_id
+WHERE wp.ID IS NULL;
+
+-- Optimize tables
+OPTIMIZE TABLE wp_posts, wp_postmeta, wp_options, wp_woocommerce_sessions;
+```
+
+#### **2. WP-Config.php Optimization**
+
+```php
+// WP-Config.php settings cho WooCommerce
+
+// Enable object caching
+define( 'WP_CACHE', true );
+
+// Increase memory limit
+define( 'WP_MEMORY_LIMIT', '256M' );
+define( 'WP_MAX_MEMORY_LIMIT', '512M' );
+
+// Disable post revisions cho products
+define( 'WP_POST_REVISIONS', 3 );
+
+// Auto-save interval (giây)
+define( 'AUTOSAVE_INTERVAL', 300 );
+
+// Disable WooCommerce admin
+if ( ! defined( 'WC_ADMIN_DISABLED' ) ) {
+    define( 'WC_ADMIN_DISABLED', false ); // Set true nếu muốn tắt
+}
+
+// Enable WooCommerce HPOS (High-Performance Order Storage)
+define( 'WC_USE_HPOS', true );
+```
+
+#### **3. WP Rocket Settings cho WooCommerce**
+
+**Truy cập: Settings → WP Rocket**
+
+```
+✅ Cache:
+   ✅ Enable caching for mobile devices
+   ✅ Separate cache files for mobile devices
+   ✅ Enable caching for logged-in users: NO (WooCommerce)
+
+✅ File Optimization:
+   ✅ Minify CSS files
+   ✅ Combine CSS files
+   ✅ Optimize CSS delivery
+   ✅ Minify JavaScript files
+   ⚠️ Combine JavaScript: NO (có thể gây lỗi WooCommerce)
+   ✅ Load JavaScript deferred
+
+✅ Media:
+   ✅ Enable LazyLoad for images
+   ✅ Enable LazyLoad for iframes/videos
+   ✅ Replace YouTube iframe with preview image
+
+✅ Preload:
+   ✅ Enable preload cache
+   ✅ Preload Fonts: (thêm URL font nếu dùng custom fonts)
+
+✅ Advanced Rules:
+   ✅ Never cache URL(s): 
+      /cart/
+      /checkout/
+      /my-account/
+      /tai-khoan/
+      /gio-hang/
+      /thanh-toan/
+   
+   ✅ Never cache Cookies:
+      woocommerce_*
+      wp_woocommerce_session_*
+      
+   ✅ Never cache User Agent(s):
+      (để trống)
+
+✅ Database:
+   ✅ Post Cleanup: Run monthly
+   ✅ Comments Cleanup: Run monthly
+   ✅ Transients Cleanup: Run weekly
+   ⚠️ Database Cleanup: Run monthly (backup trước!)
+
+✅ CDN:
+   ✅ Enable CDN (nếu có): [CDN URL của bạn]
+```
+
+### J. XML Sitemap cho WooCommerce (Rank Math)
+
+#### **1. Rank Math Sitemap Settings**
+
+**Truy cập: Rank Math → Sitemap Settings**
+
+```
+✅ Sitemap: ON
+
+📝 General Settings:
+   ✅ Include Images: YES
+   ✅ Include Featured Image: YES
+   ✅ Links Per Sitemap: 200
+   
+📝 Post Types:
+   ✅ Posts: YES (nếu có blog)
+   ✅ Pages: YES
+   ✅ Products: YES ← QUAN TRỌNG
+   ✅ Media: NO
+   
+📝 Taxonomies:
+   ✅ Categories: YES (nếu có blog)
+   ✅ Tags: NO
+   ✅ Product Categories: YES ← QUAN TRỌNG
+   ✅ Product Tags: NO (tránh duplicate content)
+   ✅ Product Attributes: NO
+   
+📝 Exclude Posts:
+   (Thêm IDs của draft, private products nếu có)
+   
+📝 Exclude Terms:
+   (Thêm IDs của empty categories nếu có)
+```
+
+**Truy cập Sitemap:**
+- Main Sitemap: `https://anmitools.com/sitemap_index.xml`
+- Product Sitemap: `https://anmitools.com/product-sitemap.xml`
+- Product Category Sitemap: `https://anmitools.com/product_cat-sitemap.xml`
+
+#### **2. Custom Sitemap Priority cho Rank Math (functions.php)**
+
+```php
+// Custom sitemap priority và frequency cho products
+add_filter( 'rank_math/sitemap/entry', 'anmi_custom_rankmath_sitemap', 10, 3 );
+function anmi_custom_rankmath_sitemap( $url, $type, $object ) {
+    
+    // Chỉ áp dụng cho products
+    if ( 'product' !== $type ) {
+        return $url;
+    }
+    
+    // Ưu tiên mặc định cho products
+    $url['priority'] = 0.8;
+    $url['changefreq'] = 'monthly';
+    
+    // Bài viết tổng quan (file 01-03) có priority cao nhất
+    $overview_slugs = [
+        'carbide-burr-la-gi',
+        'so-sanh-cac-loai-carbide-burr',
+        'huong-dan-chon-carbide-burr'
+    ];
+    
+    if ( in_array( $object->post_name, $overview_slugs ) ) {
+        $url['priority'] = 1.0;
+        $url['changefreq'] = 'weekly';
+    }
+    
+    // Bài viết kiểu cắt (file 04-10) có priority trung bình cao
+    $cut_type_slugs = [
+        'double-cut-carbide-burr',
+        'single-cut-carbide-burr',
+        'aluminium-cut-carbide-burr',
+        'fine-cut-carbide-burr',
+        'diamond-cut-carbide-burr',
+        'coarse-cut-carbide-burr',
+        'chip-breaker-cut-carbide-burr'
+    ];
+    
+    if ( in_array( $object->post_name, $cut_type_slugs ) ) {
+        $url['priority'] = 0.9;
+        $url['changefreq'] = 'monthly';
+    }
+    
+    // Sản phẩm mới (< 30 ngày) có changefreq cao hơn
+    $post_date = strtotime( $object->post_date );
+    $days_old = ( time() - $post_date ) / DAY_IN_SECONDS;
+    
+    if ( $days_old < 30 ) {
+        $url['changefreq'] = 'weekly';
+    }
+    
+    return $url;
+}
+
+// Thêm lastmod date chính xác
+add_filter( 'rank_math/sitemap/entry', 'anmi_custom_rankmath_lastmod', 11, 3 );
+function anmi_custom_rankmath_lastmod( $url, $type, $object ) {
+    if ( 'product' === $type ) {
+        // Sử dụng modified date thay vì publish date
+        $url['mod'] = mysql2date( 'Y-m-d\TH:i:s+00:00', $object->post_modified_gmt, false );
+    }
+    
+    return $url;
+}
+```
+
+#### **3. Ping Search Engines khi có Product mới**
+
+```php
+// Tự động ping sitemap khi publish product mới
+add_action( 'woocommerce_new_product', 'anmi_ping_sitemap_on_new_product' );
+add_action( 'woocommerce_update_product', 'anmi_ping_sitemap_on_new_product' );
+
+function anmi_ping_sitemap_on_new_product( $product_id ) {
+    // Chỉ ping khi product được publish
+    if ( 'publish' !== get_post_status( $product_id ) ) {
+        return;
+    }
+    
+    // Ping Google
+    $sitemap_url = home_url( '/sitemap_index.xml' );
+    $google_ping = 'https://www.google.com/ping?sitemap=' . urlencode( $sitemap_url );
+    wp_remote_get( $google_ping );
+    
+    // Ping Bing
+    $bing_ping = 'https://www.bing.com/ping?sitemap=' . urlencode( $sitemap_url );
+    wp_remote_get( $bing_ping );
+}
+```
+
+### K. WooCommerce Analytics Integration (Rank Math Built-in)
+
+#### **1. Kết nối Google Analytics 4 trong Rank Math**
+
+**Truy cập: Rank Math → General Settings → Analytics**
+
+```
+✅ Connect Google Analytics: ON
+✅ Google Account: [Đăng nhập tài khoản Google]
+✅ Select Property: [Chọn GA4 Property của anmitools.com]
+✅ Measurement ID: G-XXXXXXXXXX
+
+📝 Tracking Options:
+   ✅ Track Logged-in Users: NO (WooCommerce customers)
+   ✅ Enhanced Link Attribution: YES
+   ✅ Anonymize IP: YES (GDPR compliance)
+   ✅ Exclude Tracking Roles: Administrator, Shop Manager
+   
+📝 Enhanced Ecommerce:
+   ✅ Enable Enhanced Ecommerce: YES (tự động với WooCommerce)
+   ✅ Track Add to Cart: YES
+   ✅ Track Remove from Cart: YES
+```
+
+**Rank Math tự động track các events sau:**
+
+```javascript
+// Rank Math tự động inject code này
+// KHÔNG CẦN thêm plugin MonsterInsights ($99/năm)
+
+```javascript
+// Enhanced Ecommerce Tracking
+// Automatically tracked by MonsterInsights:
+
+// Product Views
+gtag('event', 'view_item', {
+  currency: 'VND',
+  value: 0,
+  items: [{
+    item_id: 'CB-TYPE-A-D6L12',
+    item_name: 'Carbide Burr Type A Dạng Trụ',
+    item_category: 'Carbide Burr',
+    item_category2: 'Theo Hình Dạng',
+    item_brand: 'AN MI TOOLS',
+    price: 0
+  }]
+});
+
+// Add to Cart
+gtag('event', 'add_to_cart', {
+  currency: 'VND',
+  value: 0,
+  items: [...]
+});
+
+// Contact CTA Click
+gtag('event', 'generate_lead', {
+  currency: 'VND',
+  value: 0,
+  lead_source: 'Product Page - Carbide Burr Type A'
+});
+```
+
+#### **2. Facebook Pixel for WooCommerce**
+
+**Plugin: PixelYourSite hoặc Facebook for WooCommerce**
+
+```javascript
+// ViewContent Event
+fbq('track', 'ViewContent', {
+  content_ids: ['CB-TYPE-A-D6L12'],
+  content_type: 'product',
+  content_name: 'Carbide Burr Type A Dạng Trụ',
+  content_category: 'Carbide Burr',
+  value: 0,
+  currency: 'VND'
+});
+
+// Contact Event (Custom)
+fbq('trackCustom', 'Contact', {
+  product_id: 'CB-TYPE-A-D6L12',
+  contact_method: 'phone'
+});
+```
+
+---
+
+## 12. Checklist Triển Khai WordPress WooCommerce SEO
+
+### A. Checklist Cài Đặt Ban Đầu (One-time Setup)
+
+- [ ] **Bước 1:** Cài đặt WordPress 6.4+ trên VPS/Cloud hosting
+- [ ] **Bước 2:** Cài đặt và kích hoạt WooCommerce 8.0+
+- [ ] **Bước 3:** Cài đặt theme tối ưu (Flatsome, Astra Pro, OceanWP)
+- [ ] **Bước 4:** Cài đặt và cấu hình Yoast SEO Premium / Rank Math Pro
+- [ ] **Bước 5:** Cài đặt WP Rocket và cấu hình caching
+- [ ] **Bước 6:** Cài đặt ShortPixel và tối ưu hình ảnh
+- [ ] **Bước 7:** Tạo Product Categories theo cấu trúc taxonomy
+- [ ] **Bước 8:** Tạo Product Tags (28+ tags)
+- [ ] **Bước 9:** Tạo Product Attributes (8 attributes)
+- [ ] **Bước 10:** Cấu hình Permalink structure
+- [ ] **Bước 11:** Cấu hình WooCommerce Product permalink
+- [ ] **Bước 12:** Thiết lập Breadcrumbs
+- [ ] **Bước 13:** Cấu hình Schema Markup
+- [ ] **Bước 14:** Cài đặt Google Analytics & Search Console
+- [ ] **Bước 15:** Tạo Robots.txt và Sitemap.xml
+
+### B. Checklist Tạo Mỗi Product (28 lần)
+
+- [ ] **Bước 1:** Tạo Simple Product mới
+- [ ] **Bước 2:** Điền Product Title (H1)
+- [ ] **Bước 3:** Viết Short Description (Excerpt) - 150-160 ký tự
+- [ ] **Bước 4:** Viết Product Description (800-1500 từ)
+- [ ] **Bước 5:** Set Product Image (Featured) - 800x800px
+- [ ] **Bước 6:** Add Product Gallery (4-6 ảnh)
+- [ ] **Bước 7:** Điền Product Data (SKU, Stock, Shipping)
+- [ ] **Bước 8:** Gán Product Categories (2-3 categories)
+- [ ] **Bước 9:** Gán Product Tags (5-10 tags)
+- [ ] **Bước 10:** Điền Product Attributes (8 attributes)
+- [ ] **Bước 11:** Điền ACF Custom Fields (nếu có)
+- [ ] **Bước 12:** Tối ưu Yoast SEO (Title, Meta, Focus Keyword)
+- [ ] **Bước 13:** Thêm Internal Links (3-5 links)
+- [ ] **Bước 14:** Thêm Related Products (4 sản phẩm)
+- [ ] **Bước 15:** Preview và Publish
+
+### C. Checklist Bảo Trì Định Kỳ
+
+**Hàng tuần:**
+- [ ] Kiểm tra Google Search Console (errors, warnings)
+- [ ] Kiểm tra site speed (PageSpeed Insights)
+- [ ] Clear cache (WP Rocket + Browser cache)
+
+**Hàng tháng:**
+- [ ] Optimize database (WP-Optimize plugin)
+- [ ] Cập nhật WordPress Core + Plugins
+- [ ] Kiểm tra broken links (Broken Link Checker)
+- [ ] Review Analytics (traffic, conversions)
+- [ ] Backup website (UpdraftPlus)
+
+**Hàng quý:**
+- [ ] Review và cập nhật nội dung cũ
+- [ ] Audit SEO toàn bộ site (Screaming Frog)
+- [ ] Cập nhật Schema Markup (nếu có thay đổi)
+- [ ] Review competitor analysis
+
+---
+
+## 13. Style Guide & Code Standards - Quy Chuẩn Thống Nhất
+
+### A. Nguyên tắc Chung khi Generate Code
+
+**🎯 MỤC TIÊU:** Đảm bảo tất cả 28 bài viết SEO có style nhất quán, dễ maintain, và tuân thủ best practices.
+
+**📌 NGUYÊN TẮC CỐT LÕI:**
+1. **Consistency First**: Tất cả code phải follow cùng một pattern
+2. **Accessibility Mandatory**: WCAG AA minimum, hướng đến AAA
+3. **Mobile-First Always**: Design cho mobile trước, desktop sau
+4. **Performance Optimized**: Core Web Vitals là ưu tiên hàng đầu
+5. **SEO-Driven**: Mọi quyết định code phải có lý do SEO rõ ràng
+
+### A1. Human-Centered Writing (Giọng văn giàu tính người)
+
+**MỤC TIÊU:** Nội dung không chỉ “chuẩn SEO” mà còn tạo sự tin cậy, cảm giác được đồng hành, thân thiện và tôn trọng người đọc trong ngành gia công cơ khí.
+
+**Nguyên tắc giọng văn:**
+- Ấm áp – chuyên nghiệp – không phô trương.
+- Tránh câu quá “marketing”, ưu tiên tính hữu ích thực tế.
+- Viết cho kỹ thuật viên, chủ xưởng, quản lý sản xuất: rõ ràng, không lên lớp.
+- Không hứa hẹn quá mức: chỉ nói điều chắc chắn có trong tài liệu.
+- Dùng “bạn” và “chúng tôi” khi phù hợp: tạo kết nối.
+
+**Cấu trúc cảm xúc (Emotional Framing) áp dụng ở mở bài & CTA:**
+1. Ghi nhận vấn đề: “Bạn đang gặp…”, “Nhiều xưởng gặp khó ở chỗ…”
+2. Đồng cảm: “Điều này rất phổ biến khi…”, “Chúng tôi đã gặp nhiều case tương tự…”
+3. Trao quyền: “Bạn có thể cải thiện bằng cách…”, “Chỉ cần chọn đúng kiểu cắt…”
+4. Hành động nhẹ nhàng: “Nếu cần hỗ trợ thêm, đội ngũ kỹ thuật có thể giúp bạn chọn nhanh.”
+
+**Mẫu câu nên dùng:**
+- “Nếu bạn đang…”
+- “Một lỗi thường gặp là…”
+- “Giải pháp thực tế là…”
+- “Bạn không cần cố ép tốc độ – hãy để lưỡi cắt làm việc.”
+- “Khi chưa có dữ liệu (RPM, kích thước), tốt nhất đừng phỏng đoán.”
+
+**Mẫu cần hạn chế:** (Tránh robot / bán hàng thô)
+- ❌ “Sản phẩm tuyệt vời nhất thị trường”
+- ❌ “Cam kết chất lượng số 1”
+- ❌ Lặp từ khóa dày đặc chỉ để SEO
+
+**Chèn cảm xúc nhẹ tự nhiên:**
+- Sau cảnh báo an toàn: “Điều này không chỉ giúp dụng cụ bền hơn mà còn bảo vệ người thao tác.”
+- Sau hướng dẫn chọn: “Nếu bạn vẫn phân vân giữa hai kiểu, cứ ghi chú lại ứng dụng chính – chúng tôi có thể hỗ trợ lọc giúp.”
+
+**Checklist Human Tone trong mỗi bài:**
+- [ ] Có 1–2 câu đồng cảm ở phần mở bài.
+- [ ] Có 1 đoạn trao quyền giải quyết vấn đề (empowerment).
+- [ ] CTA không gây áp lực (“Liên hệ nếu cần thêm”, tránh “MUA NGAY”).
+- [ ] Không bịa số liệu – nếu thiếu nói rõ “Chưa có trong tài liệu”.
+- [ ] Tối thiểu 1 câu trấn an: “Đây là tình huống rất thường gặp…”
+
+### A2. WordPress Editor Mode (Không dùng full HTML skeleton)
+
+**Bối cảnh:** Các bài được soạn trực tiếp trong WordPress (Block Editor / Classic Editor), không xuất bản thủ công file .html tĩnh.
+
+**QUY TẮC:**
+- ❌ Không thêm: `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`
+- ✅ Chỉ soạn phần nội dung: headings, đoạn văn, danh sách, bảng, hình ảnh, CTA.
+- ✅ Schema / Meta sẽ do Rank Math + Theme xử lý → không lặp lại thủ công trong nội dung.
+- ✅ CSS riêng (nếu cần) đặt trong file: `style-carbide-burr.css` (đã tạo) và enqueue hoặc copy vào Customizer.
+
+**Mẫu cấu trúc nội dung trong WP:**
+```
+H1: Carbide Burr là gì? (tự động là tiêu đề bài viết)
+Intro (đồng cảm + định nghĩa tự nhiên)
+H2: [Cấu trúc / Ứng dụng / Phân loại / Lợi ích]
+H2: [Hướng dẫn lựa chọn]
+H2: [An toàn & bảo quản]
+H2: FAQ (nếu có)
+CTA mềm cuối bài
+```
+
+**Các Block nên ưu tiên:**
+- Paragraph, Heading, List, Table, Image, Columns (tiết chế), Quote (cho cảnh báo), FAQ (nếu dùng plugin hỗ trợ Schema).
+
+**Tránh:**
+- Inline CSS tràn lan.
+- Embedding script không cần thiết.
+- Lạm dụng block “Group” lồng nhiều lớp gây DOM nặng.
+
+### A3. Image & Media Guidelines (Chuẩn hóa hiển thị & tối thiểu số lượng)
+
+**Kích thước hiển thị thiết kế:**
+- Container tối đa: 1000px (desktop)
+- Ảnh: width: 100%; max-width: 1000px; height: auto;
+- Caption: căn giữa, font-size 14px (15px desktop), italic.
+
+**File & Format:**
+- Ưu tiên WebP (plugin tạo fallback JPG nếu cần).
+- Đặt tên chứa ngữ nghĩa: `carbide-burr-double-cut-ung-dung-phan-mem.webp`
+- Tránh ký tự có dấu hoặc khoảng trắng.
+
+**Số lượng hình ảnh tối thiểu / bài:**
+| Loại bài | Files | Tối thiểu | Gợi ý nội dung ảnh |
+| :--- | :--- | :--- | :--- |
+| Tổng quan / Pillar | 01–03 | 5–7 | Hero, cấu tạo, cut types, shapes, ứng dụng, thao tác, ví dụ lỗi thường gặp |
+| Cut Type | 04–10 | 4–6 | Hero, bề mặt trước/sau, phoi minh họa, ứng dụng thực tế, cảnh báo sai thao tác |
+| Shape Type | 11–23 | 3–5 | Hero shape, góc tiếp cận, biên dạng trước/sau, ứng dụng đặc thù |
+| Ứng dụng | 24–28 | 4–6 | Ứng dụng thực tế, trước/sau, khuyến nghị chọn, lỗi thường gặp, case nhỏ |
+
+**Yêu cầu bắt buộc cho mỗi ảnh:**
+- ALT mô tả rõ: chức năng / bối cảnh (tránh nhồi keyword).
+- Có width/height khi chèn (WordPress tự thêm → giữ nguyên → giảm CLS).
+- Nếu là ảnh so sánh: thêm mô tả “Trước – Sau”.
+- Ảnh quan trọng đầu bài (hero) không lazy (WP thường auto xử lý, kiểm tra lại).
+
+**Caption best practice:**
+- Dùng khi ảnh cần giải thích thêm hoặc nhấn thông điệp.
+- Tránh lặp y nguyên ALT.
+- Có thể thêm lợi ích: “Thoát phoi tốt hơn → ít nóng mép cắt”.
+
+**Checklist chèn hình:**
+- [ ] Tên file sạch (không dấu, không khoảng trắng)
+- [ ] ALT mô tả tự nhiên
+- [ ] Không nhồi từ khóa
+- [ ] Caption (nếu mang giá trị)
+- [ ] Đúng số lượng tối thiểu
+- [ ] Có internal link gần ảnh nếu phù hợp
+
+**CSS áp dụng (trong file style-carbide-burr.css):** Tạo sẵn lớp xử lý figure + caption + responsive (xem file source).
+
+**Lỗi thường gặp cần tránh:**
+- Dùng ảnh 4000px chưa nén → tăng tải trang.
+- ALT chung chung: “hinh1”, “anh demo”.
+- Chèn 10 ảnh liên tiếp không có ngắt nội dung.
+- Dùng ảnh bảng thay vì bảng HTML thật.
+
+---
+
+**Ví dụ Before → After:**
+
+Before: “Carbide Burr là dụng cụ quan trọng và hiệu quả cao trong gia công.”
+After: “Nếu bạn từng mất thời gian xử lý ba via hoặc mép sắc sau hàn, một mũi Carbide Burr đúng loại sẽ giúp rút ngắn thao tác mà không phải mài đi mài lại.”
+
+Before: “Chọn đúng kiểu giúp tăng năng suất.”
+After: “Chỉ cần đổi từ Single Cut sang Double Cut ở vật liệu inox, bạn sẽ thấy phoi nhỏ hơn, ít kẹt – thao tác nhẹ tay hơn.”
+
+**Giới hạn trung thực (Transparency Standard):**
+- Khi thiếu dữ liệu: dùng mẫu “Hiện tài liệu gốc chưa cung cấp [RPM/kích thước], chúng tôi sẽ cập nhật sau – tránh phỏng đoán để không làm sai lựa chọn.”
+- Khi có mâu thuẫn: “Type J được xác nhận theo chuẩn 60°, mặc dù một số mô tả tiếng Việt có thể gây nhầm.”
+
+**TONE MATRIX (Áp dụng):**
+| Trục | Mức | Ghi chú |
+| :--- | :--- | :--- |
+| Formality | Trung bình | Không quá suồng sã, không quá hàn lâm |
+| Warmth | 60% | Dùng câu động viên vừa phải |
+| Technical Density | 70% | Giải thích khi lần đầu xuất hiện thuật ngữ |
+| Sales Push | 10% | Chỉ CTA nhẹ, không ép hành động |
+| Transparency | 100% | Luôn chỉ rõ giới hạn dữ liệu |
+
+**CTA Library (được phép dùng):**
+- “Bạn có thể gửi câu hỏi thực tế – chúng tôi sẽ gợi ý loại phù hợp.”
+- “Cần chọn gấp? Ghi lại vật liệu + thao tác, đội kỹ thuật sẽ phản hồi.”
+- “Muốn so sánh nhanh hai kiểu? Chúng tôi hỗ trợ đối chiếu ứng dụng.”
+
+**Không dùng trong CTA:** “Mua ngay”, “Đặt hàng ngay hôm nay”, “Nhanh tay sở hữu”.
+
+---
+
+---
+
+### B. HTML Structure Standards
+
+**1. Semantic HTML (Bắt buộc):**
+```html
+<!-- ✅ ĐÚNG - Semantic markup -->
+<article class="product-article">
+  <header class="article-header">
+    <h1>Tiêu đề bài viết</h1>
+    <p class="article-meta">Đăng ngày: <time datetime="2025-10-08">08/10/2025</time></p>
+  </header>
+  
+  <section class="product-overview">
+    <h2>Tổng quan sản phẩm</h2>
+    <p>Nội dung...</p>
+  </section>
+  
+  <figure class="product-image">
+    <img src="image.webp" alt="Mô tả chi tiết" loading="lazy" />
+    <figcaption>Caption căn giữa</figcaption>
+  </figure>
+  
+  <aside class="related-products">
+    <h3>Sản phẩm liên quan</h3>
+    <ul>...</ul>
+  </aside>
+  
+  <footer class="article-footer">
+    <p>Liên hệ AN MI TOOLS...</p>
+  </footer>
+</article>
+
+<!-- ❌ SAI - Non-semantic -->
+<div class="article">
+  <div class="header">
+    <div class="title">Tiêu đề</div>
+  </div>
+</div>
+```
+
+**2. Meta Tags Pattern (Chuẩn cho tất cả 28 files):**
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>[Focus Keyword] | AN MI TOOLS - Dụng cụ cắt công nghiệp</title>
+  <meta name="description" content="[Meta description 150-160 ký tự có chứa focus keyword và CTA]">
+  <meta name="keywords" content="[focus keyword], [related keyword 1], [related keyword 2]">
+  
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="[SEO Title]">
+  <meta property="og:description" content="[Meta description]">
+  <meta property="og:image" content="https://anmitools.com/images/[product]-og.jpg">
+  <meta property="og:url" content="https://anmitools.com/carbide-burr/[slug]/">
+  <meta property="og:site_name" content="AN MI TOOLS">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="[SEO Title]">
+  <meta name="twitter:description" content="[Meta description]">
+  <meta name="twitter:image" content="https://anmitools.com/images/[product]-twitter.jpg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://anmitools.com/carbide-burr/[slug]/">
+  
+  <!-- Robots -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  
+  <!-- Author & Publisher -->
+  <meta name="author" content="AN MI TOOLS">
+  <meta name="publisher" content="AN MI TOOLS">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "[Tên sản phẩm]",
+    "description": "[Mô tả ngắn]",
+    "brand": {
+      "@type": "Brand",
+      "name": "AN MI TOOLS"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "AN MI TOOLS"
+    },
+    "image": "https://anmitools.com/images/[product].webp",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "VND",
+      "url": "https://anmitools.com/carbide-burr/[slug]/"
+    }
+  }
+  </script>
+</head>
+```
+
+**3. Image Standards (Bắt buộc cho tất cả hình ảnh):**
+```html
+<!-- Product Images -->
+<figure class="wp-block-image">
+  <img 
+    src="https://anmitools.com/wp-content/uploads/2025/10/carbide-burr-[type]-800x800.webp"
+    srcset="
+      https://anmitools.com/wp-content/uploads/2025/10/carbide-burr-[type]-400x400.webp 400w,
+      https://anmitools.com/wp-content/uploads/2025/10/carbide-burr-[type]-800x800.webp 800w,
+      https://anmitools.com/wp-content/uploads/2025/10/carbide-burr-[type]-1200x1200.webp 1200w
+    "
+    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 800px"
+    alt="Carbide Burr [TYPE] [SHAPE] - Dụng cụ mài hợp kim cứng AN MI TOOLS"
+    loading="lazy"
+    width="800"
+    height="800"
+  />
+  <figcaption>Carbide Burr Type [X] - Ứng dụng [Application]</figcaption>
+</figure>
+
+<!-- ⚠️ RULES: -->
+<!-- - Alt text PHẢI mô tả chi tiết, có focus keyword -->
+<!-- - Caption LUÔN căn giữa (CSS đã setup) -->
+<!-- - Dùng WebP format -->
+<!-- - Srcset cho responsive -->
+<!-- - Width/height để tránh CLS (Core Web Vitals) -->
+<!-- - loading="lazy" cho tất cả ảnh không above-the-fold -->
+```
+
+---
+
+### C. CSS Standards - Typography & Spacing
+
+**1. Font Size Units - CHỈ DÙNG REM:**
+```css
+/* ✅ ĐÚNG - Dùng rem */
+body { font-size: 1rem; }
+h1 { font-size: 2.25rem; }
+p { font-size: 0.875rem; }
+
+/* ❌ SAI - Không dùng px cho typography */
+body { font-size: 16px; }
+h1 { font-size: 36px; }
+```
+
+**2. Color Palette - Cố định cho toàn bộ project:**
+```css
+:root {
+  /* Brand Colors */
+  --color-primary: #003d82;      /* AN MI Blue - CTA, Links */
+  --color-secondary: #f39c12;    /* Orange - Accent */
+  --color-success: #27ae60;      /* Green - In Stock */
+  --color-danger: #e74c3c;       /* Red - Out of Stock */
+  
+  /* Neutral Colors */
+  --color-text: #333333;         /* Main text */
+  --color-text-light: #666666;   /* Caption, meta */
+  --color-background: #ffffff;   /* Body background */
+  --color-background-light: #f8f9fa; /* Section background */
+  --color-border: #dddddd;       /* Borders, dividers */
+  
+  /* Typography */
+  --font-family-base: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-heading: 'Montserrat', sans-serif;
+  
+  /* Spacing (rem-based) */
+  --spacing-xs: 0.5rem;   /* 8px */
+  --spacing-sm: 1rem;     /* 16px */
+  --spacing-md: 1.5rem;   /* 24px */
+  --spacing-lg: 2rem;     /* 32px */
+  --spacing-xl: 3rem;     /* 48px */
+}
+```
+
+**3. Responsive Breakpoints - Chuẩn cho tất cả media queries:**
+```css
+/* Mobile First: Base styles cho < 576px */
+
+/* Small tablets */
+@media (min-width: 576px) { ... }
+
+/* Tablets & Small Desktop */
+@media (min-width: 768px) { ... }
+
+/* Desktop */
+@media (min-width: 992px) { ... }
+
+/* Large Desktop */
+@media (min-width: 1200px) { ... }
+
+/* Extra Large Desktop */
+@media (min-width: 1400px) { ... }
+```
+
+**4. Button Styles - Nhất quán toàn bộ site:**
+```css
+.cta-button,
+.woocommerce-button,
+.button-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  /* Touch-friendly */
+  min-height: 3rem;  /* 48px - WCAG */
+  min-width: 3rem;
+  
+  /* Accessibility */
+  outline: none;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #002a5c;
+  border-color: #002a5c;
+  box-shadow: 0 4px 8px rgba(0, 61, 130, 0.3);
+}
+
+.cta-button:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Secondary Button */
+.button-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.button-secondary:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+```
+
+---
+
+### D. Content Writing Standards
+
+**1. Heading Hierarchy (Bắt buộc):**
+```
+H1: Tiêu đề chính (1 lần duy nhất, có focus keyword)
+  └─ H2: Section chính
+      ├─ H3: Subsection
+      │   └─ H4: Chi tiết nhỏ
+      └─ H3: Subsection khác
+```
+
+**Example:**
+```html
+<h1>Carbide Burr Double Cut - Giải pháp mài chính xác vật liệu cứng</h1>
+
+  <h2>Carbide Burr Double Cut là gì?</h2>
+    <h3>Cấu tạo và nguyên lý hoạt động</h3>
+    <h3>Ưu điểm nổi bật</h3>
+  
+  <h2>Ứng dụng của Carbide Burr Double Cut</h2>
+    <h3>Gia công thép không gỉ</h3>
+    <h3>Gia công hợp kim chịu nhiệt</h3>
+  
+  <h2>Cách chọn Carbide Burr phù hợp</h2>
+    <h3>Theo vật liệu gia công</h3>
+      <h4>Thép < 60 HRC</h4>
+      <h4>Inox 304/316</h4>
+```
+
+**2. Keyword Density Rules:**
+- **Focus keyword**: 1-2% (xuất hiện 5-10 lần trong bài 800-1500 từ)
+- **Related keywords**: 0.5-1% mỗi từ
+- **LSI keywords**: Tự nhiên, không ép keyword
+
+**3. Internal Linking Pattern:**
+```html
+<!-- Trong mỗi bài PHẢI có 3-5 internal links -->
+
+<!-- Link đến bài tổng quan (Top of Funnel) -->
+<p>Tìm hiểu thêm về <a href="/carbide-burr/tong-quan/" title="Tổng quan Carbide Burr">các loại Carbide Burr</a>...</p>
+
+<!-- Link đến bài cut type liên quan -->
+<p>So sánh với <a href="/carbide-burr/single-cut/" title="Single Cut vs Double Cut">Carbide Burr Single Cut</a>...</p>
+
+<!-- Link đến shape khác -->
+<p>Xem thêm <a href="/carbide-burr/type-a/" title="Carbide Burr Type A">Type A Cylinder Shape</a>...</p>
+
+<!-- Link đến category page -->
+<p>Khám phá toàn bộ <a href="/danh-muc/dung-cu-mai/" title="Dụng cụ mài">dụng cụ mài công nghiệp</a>...</p>
+
+<!-- Link đến contact/quote -->
+<p><a href="/lien-he/" title="Liên hệ AN MI TOOLS" class="cta-link">Liên hệ ngay</a> để được tư vấn...</p>
+```
+
+**4. Content Structure Template (Chuẩn cho 28 files):**
+```
+1. Introduction (100-150 từ)
+   - Hook: Vấn đề/nhu cầu của khách hàng
+   - Focus keyword xuất hiện trong 100 từ đầu
+   - CTA nhẹ (tìm hiểu thêm)
+
+2. Main Content (600-1200 từ)
+   H2: [Focus Keyword] là gì?
+   - Định nghĩa
+   - Đặc điểm kỹ thuật
+   - Hình ảnh minh họa (1-2 ảnh)
+   
+   H2: Ứng dụng/Lợi ích
+   - Bullet points (3-5 items)
+   - Case study ngắn (nếu có)
+   - Hình ảnh ứng dụng (1 ảnh)
+   
+   H2: So sánh/Lựa chọn
+   - Bảng so sánh (nếu có)
+   - Hướng dẫn lựa chọn
+   
+   H2: Hướng dẫn sử dụng
+   - Step-by-step
+   - Tips & tricks
+   - Safety notes
+
+3. Conclusion & CTA (100-150 từ)
+   - Tóm tắt lợi ích
+   - Call-to-action mạnh
+   - Contact info (phone, email, website)
+
+4. FAQ Section (Optional - Tốt cho SEO)
+   - 3-5 câu hỏi thường gặp
+   - Schema FAQ markup
+```
+
+---
+
+### E. WordPress WooCommerce Standards
+
+**1. Product Category Structure (Cố định):**
+```
+DỤNG CỤ CẮT CÔNG NGHIỆP (Parent)
+└─ DỤNG CỤ MÀI - ĐÁNH BAVIA (Child)
+    ├─ Carbide Burr Double Cut
+    ├─ Carbide Burr Single Cut
+    ├─ Carbide Burr Aluminium Cut
+    └─ ... (7 cut types total)
+```
+
+**2. Product Attributes (Bắt buộc cho mỗi sản phẩm):**
+```
+- Cut Type: Double Cut | Single Cut | Aluminium Cut | ...
+- Shape: Type A | Type B | Type C | ... | Type N
+- Material: Tungsten Carbide
+- Hardness: < 60 HRC
+- Shank Diameter: 3mm | 6mm (tùy sản phẩm)
+- Head Diameter: [Giá trị cụ thể]
+- Working Length: [Giá trị cụ thể]
+- Application: Thép | Inox | Nhôm | Gang | ...
+```
+
+**3. Product Short Description Template:**
+```html
+<p><strong>[Product Name]</strong> - Dụng cụ mài hợp kim cứng chuyên dụng cho [application]. Thiết kế [shape] với [cut type] mang lại hiệu suất gia công vượt trội trên [material].</p>
+<ul class="product-features">
+  <li>✓ Vật liệu: Tungsten Carbide cao cấp</li>
+  <li>✓ Độ cứng: < 60 HRC</li>
+  <li>✓ Ứng dụng: [Specific applications]</li>
+  <li>✓ Bảo hành: 6 tháng</li>
+</ul>
+```
+
+---
+
+### F. Rank Math SEO Configuration Standards
+
+**1. Focus Keyword Setup (Cho mỗi bài):**
+```
+Primary Focus Keyword: [Main keyword - ví dụ: "carbide burr double cut"]
+Secondary Keywords (max 5):
+  - [Related keyword 1]
+  - [Related keyword 2]
+  - [Related keyword 3]
+```
+
+**2. SEO Score Checklist (Mục tiêu: 80-100/100):**
+- ✅ Focus keyword trong SEO Title
+- ✅ Focus keyword trong URL slug
+- ✅ Focus keyword trong meta description
+- ✅ Focus keyword trong H1
+- ✅ Focus keyword trong first paragraph
+- ✅ Focus keyword density 1-2%
+- ✅ Content length 800-1500 words
+- ✅ 3-5 internal links
+- ✅ 1-2 external links (authoritative)
+- ✅ Alt text cho tất cả images
+- ✅ Schema markup (Product/Article)
+- ✅ Readability score: Good/Great
+
+**3. Schema Markup Template (Rank Math Custom Fields):**
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "[Product Name]",
+      "description": "[Short description]",
+      "image": "[Image URL]",
+      "brand": {
+        "@type": "Brand",
+        "name": "AN MI TOOLS"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "AN MI TOOLS",
+        "url": "https://anmitools.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "VND",
+        "url": "[Product URL]"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Cut Type",
+          "value": "[Cut Type]"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Shape",
+          "value": "[Shape]"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Material",
+          "value": "Tungsten Carbide"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang chủ",
+          "item": "https://anmitools.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Carbide Burr",
+          "item": "https://anmitools.com/carbide-burr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "[Product Name]",
+          "item": "[Product URL]"
+        }
+      ]
+    }
+  ]
+}
+```
+
+---
+
+### G. Performance & Accessibility Standards
+
+**1. Core Web Vitals Targets:**
+```
+✅ LCP (Largest Contentful Paint): < 2.5s
+✅ FID (First Input Delay): < 100ms
+✅ CLS (Cumulative Layout Shift): < 0.1
+✅ FCP (First Contentful Paint): < 1.8s
+✅ TTI (Time to Interactive): < 3.8s
+```
+
+**2. Image Optimization Checklist:**
+- [ ] Format: WebP (fallback JPG cho Safari cũ)
+- [ ] Compression: 80-85% quality
+- [ ] Dimensions: Max 1200px width cho full-size
+- [ ] File size: < 100KB cho product images
+- [ ] Lazy loading: Tất cả images below-the-fold
+- [ ] Alt text: Descriptive, có keyword
+- [ ] Width/Height attributes: Bắt buộc (tránh CLS)
+
+**3. Accessibility (WCAG AA Minimum):**
+```css
+/* Color Contrast - Minimum 4.5:1 for text */
+.text-primary { color: #003d82; } /* Contrast: 8.2:1 on white ✅ */
+.text-secondary { color: #666666; } /* Contrast: 5.7:1 on white ✅ */
+
+/* Touch Targets - Minimum 48x48px */
+button, a.button, .cta { min-height: 48px; min-width: 48px; }
+
+/* Focus Indicators - Visible & Clear */
+:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Skip to Content Link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+```
+
+**4. Mobile Performance Optimizations:**
+```css
+/* Reduce animations on low-end devices */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Font loading strategy */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto.woff2') format('woff2');
+  font-display: swap; /* Prevent FOIT */
+}
+```
+
+---
+
+### H. Naming Conventions
+
+**1. CSS Class Names (BEM Methodology):**
+```css
+/* Block */
+.product-card { }
+
+/* Block__Element */
+.product-card__image { }
+.product-card__title { }
+.product-card__price { }
+
+/* Block--Modifier */
+.product-card--featured { }
+.product-card--sale { }
+
+/* Block__Element--Modifier */
+.product-card__button--primary { }
+.product-card__button--secondary { }
+```
+
+**2. File Naming Convention:**
+```
+HTML Files: [number]-[category]-[slug].html
+  Example: 01-tong-quan-carbide-burr.html
+  Example: 04-carbide-burr-double-cut.html
+
+CSS Files: [component].css
+  Example: product-card.css
+  Example: hero-section.css
+
+Images: [product]-[variant]-[dimension].webp
+  Example: carbide-burr-double-cut-800x800.webp
+  Example: carbide-burr-type-a-og-1200x630.webp
+
+JavaScript: [feature].js
+  Example: product-gallery.js
+  Example: ajax-add-to-cart.js
+```
+
+**3. URL Slug Pattern:**
+```
+✅ ĐÚNG:
+/carbide-burr/double-cut/
+/carbide-burr/type-a-cylinder/
+/carbide-burr/ung-dung-gia-cong-thep/
+
+❌ SAI:
+/carbide-burr/DoubleĐỂCut/  (mixed case, tiếng Việt có dấu)
+/carbide_burr_double_cut/   (underscore thay vì dash)
+/carbide-burr?id=123        (query parameters trong URL chính)
+```
+
+---
+
+### I. Version Control & Maintenance
+
+**1. Comment Standards trong Code:**
+```html
+<!-- ========================================
+     SECTION: Product Overview
+     Description: Main hero section with product image and CTA
+     Last updated: 2025-10-08
+     Author: [Your name]
+========================================= -->
+<section class="product-overview">
+  ...
+</section>
+
+<!-- END: Product Overview -->
+```
+
+```css
+/**
+ * Product Card Component
+ * 
+ * Used for displaying product listings on:
+ * - Category pages
+ * - Related products section
+ * - Search results
+ * 
+ * Dependencies: None
+ * Breakpoints: 576px, 992px, 1400px
+ * 
+ * @version 1.0.0
+ * @since 2025-10-08
+ */
+.product-card {
+  /* Styles here */
+}
+```
+
+**2. Changelog Template (Thêm vào cuối mỗi file):**
+```html
+<!-- 
+CHANGELOG:
+v1.0.0 (2025-10-08)
+- Initial creation
+- Added product overview section
+- Implemented responsive images
+
+v1.0.1 (2025-10-15)
+- Fixed mobile layout issue
+- Updated meta description
+- Added FAQ section
+
+v1.1.0 (2025-10-20)
+- Added Schema markup
+- Optimized images for WebP
+- Improved accessibility (WCAG AA)
+-->
+```
+
+---
+
+### J. Testing Checklist (Trước khi Publish)
+
+**SEO Testing:**
+- [ ] Rank Math score ≥ 80/100
+- [ ] Focus keyword trong title, URL, H1, first paragraph
+- [ ] Meta description 150-160 characters
+- [ ] Alt text cho tất cả images
+- [ ] Internal links (3-5) và external links (1-2)
+- [ ] Schema markup validated (Google Rich Results Test)
+- [ ] Sitemap updated
+- [ ] Robots.txt không block URL
+
+**Performance Testing:**
+- [ ] PageSpeed Insights: ≥ 90 (Mobile & Desktop)
+- [ ] GTmetrix Grade: A
+- [ ] Image optimization (WebP, lazy loading)
+- [ ] CSS/JS minified
+- [ ] No render-blocking resources
+- [ ] HTTPS enabled
+- [ ] CDN configured
+
+**Accessibility Testing:**
+- [ ] WAVE tool: 0 errors
+- [ ] Keyboard navigation works
+- [ ] Screen reader friendly (NVDA/JAWS test)
+- [ ] Color contrast ≥ 4.5:1
+- [ ] Touch targets ≥ 48x48px
+- [ ] Focus indicators visible
+- [ ] Alt text descriptive
+
+**Responsive Testing:**
+- [ ] Mobile (320px, 375px, 414px)
+- [ ] Tablet (768px, 1024px)
+- [ ] Desktop (1366px, 1920px)
+- [ ] No horizontal scroll
+- [ ] Images scale properly
+- [ ] Typography readable on all devices
+
+**Browser Testing:**
+- [ ] Chrome (latest)
+- [ ] Firefox (latest)
+- [ ] Safari (latest)
+- [ ] Edge (latest)
+- [ ] Mobile Safari (iOS)
+- [ ] Chrome Mobile (Android)
+
+**Content Quality:**
+- [ ] No spelling/grammar errors
+- [ ] Readability score: Good/Great (Rank Math)
+- [ ] Content length: 800-1500 words
+- [ ] Heading hierarchy correct
+- [ ] CTAs clear and visible
+- [ ] Contact info accurate
+
+---
+
+### K. Quick Reference Card (In ra hoặc bookmark)
+
+```
+📏 MEASUREMENTS:
+- Font sizes: rem units only
+- Spacing: 0.5rem, 1rem, 1.5rem, 2rem, 3rem
+- Touch targets: ≥ 48x48px
+- Max content width: 1200px
+
+🎨 COLORS:
+- Primary: #003d82 (AN MI Blue)
+- Secondary: #f39c12 (Orange)
+- Text: #333333
+- Text Light: #666666
+- Background: #ffffff
+
+📱 BREAKPOINTS:
+- Mobile: < 576px
+- Tablet: ≥ 576px
+- Desktop: ≥ 992px
+- Large: ≥ 1400px
+
+🗣️ HUMAN TONE (ESSENTIAL):
+- Mở bài: Ghi nhận vấn đề thực tế trước khi định nghĩa
+- Ít áp lực bán hàng – CTA = hỗ trợ kỹ thuật, không "mua ngay"
+- Minh bạch dữ liệu thiếu: nêu rõ "chưa có trong tài liệu"
+- Trao quyền: “Bạn có thể…”, “Chỉ cần…” thay vì mệnh lệnh
+- Một câu trấn an: “Đây là tình huống rất thường gặp…”
+
+🖼️ IMAGES (MINIMUM):
+- Tổng quan: 5–7
+- Cut type: 4–6
+- Shape: 3–5
+- Ứng dụng: 4–6
+- Max width: 1000px (figure/img), caption center
+
+🖼️ IMAGES:
+- Format: WebP
+- Size: < 100KB
+- Dimensions: 800x800px (product)
+- Alt text: Always required
+- Loading: lazy (below fold)
+
+🔤 TYPOGRAPHY:
+- Font: Roboto (body), Montserrat (headings)
+- Line height: 1.6 (body), 1.3 (headings)
+- Max line length: 75 characters
+
+📝 SEO:
+- Title: 50-60 chars
+- Description: 150-160 chars
+- Keyword density: 1-2%
+- Internal links: 3-5
+- Content: 800-1500 words
+
+✅ SCORES TO AIM FOR:
+- Rank Math: ≥ 80/100
+- PageSpeed: ≥ 90/100
+- WAVE: 0 errors
+- GTmetrix: Grade A
+```
+
+---
+
+### L. Common Mistakes to AVOID (❌)
+
+1. **❌ Dùng px cho font-size**
+   - ✅ Dùng rem để responsive và accessible
+
+2. **❌ Không có alt text cho images**
+   - ✅ Mỗi image phải có alt text mô tả chi tiết
+
+3. **❌ Heading không theo thứ tự (H1 → H3 → H2)**
+   - ✅ Luôn theo hierarchy: H1 → H2 → H3 → H4
+
+4. **❌ Keyword stuffing (lạm dụng keyword)**
+   - ✅ Keyword density 1-2%, tự nhiên trong ngữ cảnh
+
+5. **❌ Không có internal links**
+   - ✅ Mỗi bài phải có 3-5 internal links
+
+6. **❌ Meta description quá ngắn (< 120 chars)**
+   - ✅ 150-160 characters, có focus keyword và CTA
+
+7. **❌ Images không có width/height attributes**
+   - ✅ Luôn thêm width/height để tránh CLS
+
+8. **❌ CSS inline trong HTML**
+   - ✅ Tách riêng CSS vào file external
+
+9. **❌ Không test trên mobile**
+   - ✅ Mobile first, test trên nhiều devices
+
+10. **❌ Không có Schema markup**
+    - ✅ Bắt buộc Product Schema cho tất cả sản phẩm
+
+---
+
+**Kết thúc Ngữ Cảnh CarbideBurr.txt**
+
+*Tài liệu này được cập nhật lần cuối: 08/10/2025*
+*Tổng số file HTML đã tạo: 28/28*
+*Trạng thái nội dung: Template rỗng - Chờ điền nội dung*
+*Trạng thái SEO Backend: Đã thiết lập ngữ cảnh đầy đủ - Sẵn sàng triển khai*
+*Trạng thái WordPress WooCommerce: Đã bổ sung hướng dẫn chi tiết - Sẵn sàng triển khai*
+*Trạng thái Style Guide: ✅ Đã hoàn thiện - Ready for consistent code generation*
+*Cập nhật 08/10/2025: Thêm A2 (WP Editor Mode), A3 (Image Guidelines), file style-carbide-burr.css, Quick Reference mở rộng*
+*Cập nhật Human Tone: Thêm Section A1 + Quick Reference + điều chỉnh bài 01 (08/10/2025)*
