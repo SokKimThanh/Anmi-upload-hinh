@@ -1,12 +1,135 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carbide Burr Cho Gia Công Thép - Giải Pháp Tối Ưu | AN MI TOOLS</title>
-    <meta name="description" content="">
-</head>
-<body>
-    <!-- Nội dung bài viết sẽ được bổ sung -->
-</body>
-</html>
+<!-- WordPress fragment: Article 24 – Gia công thép độ cứng cao -->
+<div class="article-wrapper" id="main-content">
+    <header class="article-intro">
+        <h1>Gia công thép độ cứng cao bằng carbide burr: lựa chọn & kiểm soát rủi ro như thế nào?</h1>
+        <p class="lead">Thép đã nhiệt luyện dễ sinh nhiệt cục bộ, mẻ cạnh và mòn burr nếu chọn sai cut / hình hoặc thao tác giữ đứng một điểm. Bài này giúp bạn <strong>chọn đúng kiểu cut + hình dạng + kỹ thuật di chuyển</strong> để ổn định bề mặt mà không cần thông số RPM tuyệt đối.</p>
+        <ul class="meta-benefits">
+            <li>Hiểu vì sao quá nhiệt & mẻ cạnh xảy ra.</li>
+            <li>Biết lúc chuyển từ Double sang Fine hoặc Diamond.</li>
+            <li>Có checklist nhanh trước khi chạy.</li>
+        </ul>
+        <p class="transparency">Minh bạch: Không đưa RPM, lực cắt, độ nhám định lượng – cần thử trên phôi thực.</p>
+    </header>
+
+    <section id="problem">
+        <h2>1. Vấn đề khi gia công thép đã nhiệt luyện</h2>
+        <p>Thép đã qua xử lý nhiệt có độ cứng cao & dẫn nhiệt kém; khi burr tiếp xúc liên tục tại một điểm, nhiệt tích tụ → đổi màu, làm mềm cục bộ hoặc tạo micro-crack mép sắc. Thêm vào đó, cạnh sắc chưa phá bavia dễ mẻ nếu <strong>ép lực ngang</strong>. Burr cũng mòn nhanh nếu phoi không thoát & bám vào rãnh cắt.</p>
+        <ul class="problem-list">
+            <li><strong>Quá nhiệt:</strong> Giữ lâu một vị trí.</li>
+            <li><strong>Mẻ cạnh:</strong> Ép mạnh vào góc sắc phôi cứng.</li>
+            <li><strong>Rung (chatter):</strong> Cán dài + kẹp lỏng + lực biến thiên.</li>
+            <li><strong>Bám phoi:</strong> Phoi tích tụ do không làm sạch / cắt ngắt quãng.</li>
+        </ul>
+    </section>
+
+    <section id="cut-selection">
+        <h2>2. Tiêu chí chọn cut (Double / Fine / Diamond)</h2>
+        <p>Không có một cut “vạn năng” cho thép cứng. Bạn bước dần từ nhám → tinh để cân bằng tốc độ và kiểm soát bề mặt:</p>
+        <div class="table-wrapper">
+            <table aria-label="Tiêu chí chọn cut thép cứng" class="comparison-table">
+                <thead><tr><th>Cut</th><th>Khi dùng</th><th>Mục tiêu</th><th>Chuyển khi nào</th></tr></thead>
+                <tbody>
+                    <tr><td>Double Cut</td><td>Phá bavia, chuẩn bị hình</td><td>Gỡ vật liệu ổn định</td><td>Khi cần bề mặt mịn hơn</td></tr>
+                    <tr><td>Fine Cut</td><td>Sau Double / trước tinh</td><td>Giảm vệt cắt rõ</td><td>Khi vẫn thấy gờ / cần kiểm soát lớn</td></tr>
+                    <tr><td>Diamond Cut</td><td>Hoàn thiện, kiểm soát cao</td><td>Giảm “nhảy” trên contour</td><td>Dừng khi đạt mức đều cần</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Tham khảo thêm: <a href="/carbide-burr/huong-dan-chon-carbide-burr/" title="Hướng dẫn chọn">chọn loại cut carbide burr</a>, <a href="/carbide-burr/double-cut-carbide-burr/" title="Double Cut">double cut carbide burr</a>, <a href="/carbide-burr/fine-cut-carbide-burr/" title="Fine Cut">fine cut carbide burr</a>.</p>
+    </section>
+
+    <section id="shape-selection">
+        <h2>3. Chọn hình dạng theo vùng làm việc</h2>
+        <p>Mỗi vùng (góc, rãnh nghiêng, mép trong) cần hình học hỗ trợ tiếp cận & phân phối áp lực phù hợp để giảm rung / mẻ cạnh.</p>
+        <div class="table-wrapper">
+            <table aria-label="Chọn hình dạng burr theo vùng" class="comparison-table">
+                <thead><tr><th>Vùng / Tình huống</th><th>Shape gợi ý</th><th>Lý do</th><th>Thay thế</th></tr></thead>
+                <tbody>
+                    <tr><td>Rãnh nghiêng / bo đa hướng</td><td><a href="/carbide-burr/type-d-carbide-burr/" title="Shape D">Shape D (Ball)</a></td><td>Linh hoạt nhiều hướng</td><td>Shape C khi cần thân dẫn hướng</td></tr>
+                    <tr><td>Mép trong / undercut nhẹ</td><td><a href="/carbide-burr/type-n-carbide-burr/" title="Shape N">Shape N</a></td><td>Cạnh cắt ngược tiếp cận từ dưới</td><td>Point (K) nếu chỉ sửa nhẹ</td></tr>
+                    <tr><td>Chuyển tiếp cong hẹp</td><td>Ball (D) hoặc Oval (E)</td><td>Tiếp xúc mềm</td><td>Flame (H) nếu cong dài</td></tr>
+                    <tr><td>Góc bo nông / mép bán kính</td><td>Shape J (Radius taper)</td><td>Vát + bo nhẹ</td><td>Shape K nếu cần sắc</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Liên kết shape tiêu biểu: <a href="/carbide-burr/type-d-carbide-burr/" title="Shape D">type-d taper burr</a>, <a href="/carbide-burr/type-n-carbide-burr/" title="Shape N">type-n inverted cone</a>.</p>
+    </section>
+
+    <section id="technique">
+        <h2>4. Thao tác & kiểm soát nhiệt</h2>
+        <p>Kết hợp di chuyển liên tục + áp lực nhẹ + làm sạch phoi định kỳ giúp tránh quá nhiệt & mẻ cạnh. Tránh “mài đứng” một điểm để không tạo màu hoặc soften cục bộ.</p>
+        <ul class="technique-list">
+            <li><strong>Quỹ đạo chồng đều:</strong> Quét cung / vòng nhỏ chồng 30–40% thay vì zigzag rời.</li>
+            <li><strong>Áp lực tăng dần:</strong> Bắt đầu chạm nhẹ tạo đường dẫn, sau đó tăng vừa đủ cắt – không nén.</li>
+            <li><strong>Làm sạch phoi:</strong> Dừng ngắn dùng chổi / khí loại phoi bám, tránh trượt bóng.</li>
+            <li><strong>Giảm nhô cán:</strong> Chỉ để chiều dài đủ vươn – giảm rung.</li>
+            <li><strong>Chuyển cut sớm:</strong> Khi bề mặt đã tương đối đều đừng cố “ép” Double để tinh.</li>
+        </ul>
+        <figure class="wp-block-image">
+            <img src="/wp-content/uploads/2025/10/gia-cong-thep-goc-tiep-xuc.webp" alt="Sơ đồ góc tiếp xúc giảm quá nhiệt thép cứng" width="800" height="480" loading="lazy">
+            <figcaption>Góc tiếp xúc hợp lý: giảm nhiệt cục bộ.</figcaption>
+        </figure>
+    </section>
+
+    <section id="risks">
+        <h2>5. Rủi ro & giảm thiểu</h2>
+        <div class="table-wrapper">
+            <table aria-label="Rủi ro gia công thép cứng" class="comparison-table">
+                <thead><tr><th>Rủi ro</th><th>Khi nào xảy ra</th><th>Hậu quả</th><th>Giảm thiểu</th></tr></thead>
+                <tbody>
+                    <tr><td>Quá nhiệt</td><td>Giữ 1 điểm lâu</td><td>Đổi màu / mềm cục bộ</td><td>Di chuyển liên tục, giảm lực</td></tr>
+                    <tr><td>Mẻ cạnh</td><td>Ép ngang vào góc sắc</td><td>Hư biên dạng</td><td>Pass nhẹ nhiều lần</td></tr>
+                    <tr><td>Rung</td><td>Cán nhô dài / kẹp lỏng</td><td>Bề mặt sần</td><td>Giảm nhô, kiểm tra kẹp</td></tr>
+                    <tr><td>Bám phoi</td><td>Nhiệt + không làm sạch</td><td>Kẹt, vết kéo</td><td>Làm sạch định kỳ</td></tr>
+                    <tr><td>Bụi / tia lửa</td><td>Mài mạnh diện rộng</td><td>Nguy cơ an toàn</td><td>Bảo hộ, hút bụi</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="checklist">
+        <h2>6. Checklist ngắn trước khi chạy</h2>
+        <ul class="checklist">
+            <li>Cắt thô bằng Double – dừng khi còn vệt nông.</li>
+            <li>Chuyển Fine (hoặc Diamond) cho bước tinh.</li>
+            <li>Giảm nhô cán tối đa có thể.</li>
+            <li>Làm sạch phoi giữa các pass.</li>
+            <li>Không giữ đứng một điểm >1–2s.</li>
+        </ul>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <h2>7. FAQ</h2>
+        <ul class="faq-list">
+            <li><strong>Có dùng dầu cắt không?</strong><p>Tùy bề mặt – nhiều trường hợp khô vẫn ổn nếu di chuyển liên tục. Tránh tưới dồi gây bắn phoi bẩn.</p></li>
+            <li><strong>Khi nào chuyển sang Fine?</strong><p>Khi Double chỉ còn tạo vệt nhám nhẹ thay vì bóc vật liệu rõ.</p></li>
+            <li><strong>Giảm mẻ cạnh rãnh nhỏ?</strong><p>Dùng pass nhẹ + chọn hình cầu / radius thay vì point đầu.</p></li>
+            <li><strong>Tăng tốc để nhanh hơn?</strong><p>Không – dễ quá nhiệt & rung; ưu tiên quỹ đạo đều.</p></li>
+        </ul>
+    </section>
+
+    <section id="cta" class="cta-cluster">
+        <div class="cta-block cta-block--primary" data-cta-type="primary" data-cta-variant="p_send_usecase_need" data-article-id="24" data-article-group="usecase" data-cta-position="after-technique">
+            <h3>Gửi ảnh chi tiết → nhận phân tích điểm khó</h3>
+            <p>Tải ảnh vùng thép cứng (góc, rãnh, mép) + mục tiêu hoàn thiện. Đội kỹ thuật phản hồi: cut & shape đề xuất + thứ tự pass.</p>
+            <p><a class="cta-button" href="/contact/" title="Gửi ảnh thép cứng" aria-label="Gửi ảnh thép độ cứng cao để nhận tư vấn">Gửi ảnh thép cứng</a></p>
+        </div>
+        <div class="cta-inline-secondary" data-cta-type="secondary" data-cta-variant="s_back_guide" data-cta-position="after-checklist">
+            <a href="/carbide-burr/huong-dan-chon-carbide-burr/" class="cta-link" title="Quay lại hướng dẫn chọn tổng quát" aria-label="Quay lại hướng dẫn chọn tổng quát">Quay lại hướng dẫn chọn tổng quát</a>
+        </div>
+        <div class="cta-soft-support" data-cta-type="soft" data-cta-variant="ss_chat" data-cta-position="footer">
+            <p><strong>Không chắc định dùng cut nào?</strong> <a href="#chat-support" data-action="open-chat" class="cta-soft-link" aria-label="Mở chat tư vấn thép cứng">Chat 2 phút</a></p>
+        </div>
+    </section>
+
+    <footer class="article-footer">
+        <p class="disclaimer">Không đưa RPM, lực hoặc độ nhám cụ thể. Luôn thử trên phôi scrap trước khi áp vào chi tiết giá trị cao.</p>
+    </footer>
+</div>
+
+<!--
+    CHANGELOG
+    v1.0.0 (2025-10-08): Tạo fragment Use Case thép cứng – sections 1–7 + CTA cluster.
+    - Tuân thủ data boundaries: không RPM, không độ nhám.
+    - Internal links: hướng dẫn chọn, double, fine, shape D, shape N.
+-->
