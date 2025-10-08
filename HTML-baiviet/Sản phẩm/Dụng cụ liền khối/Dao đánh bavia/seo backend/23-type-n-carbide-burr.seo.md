@@ -1,0 +1,150 @@
+## SEO BACKEND SPEC – 23 (Rank Math v1.2.0)
+
+### 1. Identification
+- Mã bài: 23
+- Nhóm: Shape Detail
+- Primary Category: Carbide Burr
+- H1: Carbide Burr Shape N (Inverted Cone): Xử lý mép trong & undercut?
+- Slug: type-n-carbide-burr
+- Legacy Redirects: (trống)
+- Pillar Content?: NO (Supporting)
+- Word Count Target: 750–900
+
+### 2. Intent & Persona
+- Intent: Informational (vát mép trong / undercut)
+- Persona: Người cần xử lý mép trong hốc / tạo vát ngược khó tiếp cận
+- Pain: Cone thường không vào được mặt dưới mép; các shape khác ăn sai mặt
+- Outcome: Hiểu khi nào dùng inverted cone & giới hạn kiểm soát
+
+### 3. Focus Keywords
+| Type | Keyword | Use in | Priority | Note |
+|------|---------|--------|----------|------|
+| Primary | carbide burr shape n | H1, Title | P1 | Core |
+| Secondary | burr inverted cone n | Intro | P2 | VN variant |
+| Secondary | ứng dụng burr shape n | Ứng dụng | P2 | Benefit |
+| Long-tail | khi nào dùng burr shape n | FAQ / Khi nào dùng | P3 | Decision |
+| Semantic | inverted cone burr | 1 lần | P3 | Semantic |
+
+### 4. Meta Fields
+- Title: Carbide Burr Shape N (Inverted Cone): Xử lý mép trong & undercut? | AN MI TOOLS
+- Meta Description: Shape N (inverted cone) giúp vát mép trong & undercut mà cone thường không tới. Khi nào ưu tiên và giới hạn ổn định cạnh.
+- Canonical: https://anmitools.com/carbide-burr/shape-n/
+- Robots: index, follow
+- Cornerstone/Pillar: FALSE
+
+### 5. Open Graph & Twitter
+- OG Title: Carbide Burr Shape N (Inverted Cone)
+- OG Description: Xử lý mép trong & undercut?
+- OG Image: /wp-content/uploads/2025/10/carbide-burr-shape-n-og.webp
+- Twitter Card: summary_large_image
+
+### 6. URL & Breadcrumb
+```
+/carbide-burr/shape-n/
+```
+Breadcrumb: Trang chủ › Carbide Burr › Shape N
+
+### 7. Content Outline
+1. Shape N là gì? (inverted cone)
+2. Khả năng tiếp cận mép trong & undercut
+3. Ứng dụng (bảng tình huống)
+4. Khi KHÔNG nên dùng (bề mặt mở phẳng / rung cạnh)
+5. So với Shape L / M / K
+6. FAQ
+7. CTA
+
+### 8. Internal Linking Plan
+| Anchor Text | Target URL | Reason | Placement |
+|-------------|------------|--------|-----------|
+| so sánh các loại | /carbide-burr/so-sanh/ | Overview | Intro |
+| Shape L | /carbide-burr/shape-l/ | Cone 60° đối chứng | So sánh |
+| Shape M | /carbide-burr/shape-m/ | Cone 90° đối chứng | So sánh |
+| hướng dẫn chọn | /carbide-burr/huong-dan-chon/ | Funnel | CTA |
+
+### 9. External Links
+| Anchor | URL | Purpose | Nofollow? |
+|--------|-----|---------|----------|
+| inverted cone burr note | https://example-inverted.org/ | Ứng dụng mép trong | YES |
+
+### 10. Media / Asset Plan
+| # | Type | Purpose | File | Alt Text | Caption? |
+|---|------|---------|------|---------|----------|
+| 1 | Shape diagram | Hình dạng | shape-n-diagram.webp | Carbide Burr Shape N | Có |
+| 2 | Undercut demo | Undercut | shape-n-undercut.webp | Tạo undercut bằng Shape N | Có |
+| 3 | Inner edge | Mép trong | shape-n-inner-edge.webp | Xử lý mép trong | Có |
+| 4 | Comparison | So sánh | shape-n-vs-lm.webp | Shape N vs L/M | Có |
+| 5 | Limitation | Giới hạn | shape-n-limitation.webp | Giới hạn ổn định | Có |
+| 6 | CTA | Hỗ trợ | shape-n-cta.webp | Tư vấn chọn shape | Có |
+
+### 11. FAQ Planning
+| Q | A (tóm tắt) | Intent | Keyword Target? |
+|---|-------------|--------|-----------------|
+| Khi nào dùng Shape N? | Khi cần vát mép trong / undercut | Decision | khi nào dùng burr shape n |
+| Khác cone 60°/90°? | Inverted tiếp cận mặt dưới; cone thường không | Compare | carbide burr shape n |
+| Có gây rung cạnh? | Có thể – cần kiểm soát áp lực | Clarify |  |
+| Pattern đề xuất? | Double / Single tùy vật liệu | Clarify |  |
+
+FAQ JSON: (viết sau)
+
+### 12. Additional Schema
+- Article + FAQPage
+
+### 13. Data Boundaries
+- Không độ sâu undercut cụ thể
+- Không % cải thiện tiếp cận
+
+### 14. CTA Architecture
+| CTA Type | Copy | URL/Action | Placement |
+|----------|------|-----------|-----------|
+| Primary | Gửi dạng mép trong + vật liệu → gợi ý shape | /lien-he/ | Sau Ứng dụng |
+| Secondary | Xem hướng dẫn chọn Burr | /carbide-burr/huong-dan-chon/ | After FAQ |
+| Soft Support | Chat kỹ thuật | Chat Widget | Footer |
+
+### 15. Author & E-E-A-T
+- Author: (Điền) Kỹ thuật viên dụng cụ
+- Reviewed By: (Reviewer) Mép trong & undercut
+- Review Date: 2025-10-08
+- E-E-A-T Note: Dựa ca xử lý mép trong thực tế.
+- Bio: Hỗ trợ chọn burr cho undercut & mép khó.
+
+### 16. Human Tone
+| Checklist | OK? | Note |
+|-----------|-----|------|
+| Cụ thể | ✔ | Ứng dụng rõ |
+| Minh bạch | ✔ | Giới hạn ổn định |
+| Không phóng đại | ✔ | Không % |
+| Hỗ trợ | ✔ | CTA mềm |
+
+### 17. Technical SEO Execution
+| Hạng mục | Trạng thái | Ghi chú |
+|----------|-----------|---------|
+| H1 unique | ✔ | 1 H1 |
+| Meta Title | ✔ | OK |
+| Meta Description | ✔ | ~158 chars |
+| Internal links | ✔ | 4 |
+| FAQ block | Pending | Rank Math |
+| Schema | ✔ | Article+FAQ |
+| OG Image | Pending | 1200x630 |
+| Canonical | ✔ | Set |
+| Alt text | Pending | Khi upload |
+| Redirects | N/A | None |
+
+### 18. Performance (Post-publish)
+| Metric | Target | Current | Note |
+|--------|--------|---------|------|
+| LCP | <2.5s |  |  |
+| CLS | <0.1 |  |  |
+| INP | <200ms |  |  |
+| Total Size | <0.8MB |  |  |
+
+### 19. Success Metrics (90d)
+| Metric | Target |
+|--------|--------|
+| Clicks | 75 |
+| Impressions | 1,500 |
+| Avg Position | < 26 |
+| CTR | > 3.9% |
+| Leads | 3 |
+
+### 20. Changelog
+- v1.0.0 (2025-10-08): Skeleton tạo theo template v1.2.0
