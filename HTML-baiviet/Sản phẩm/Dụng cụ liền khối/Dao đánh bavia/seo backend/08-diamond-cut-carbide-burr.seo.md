@@ -4,7 +4,7 @@
 - Mã bài: 08
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
-- H1: Diamond Cut Carbide Burr: Kiểm soát tốt hơn?
+- H1: Diamond Cut Carbide Burr: Kiểm soát tốt hơn
 - Slug: diamond-cut-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)

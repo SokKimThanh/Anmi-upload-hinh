@@ -4,7 +4,7 @@
 - Mã bài: 14
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
-- H1: Carbide Burr Shape D (Ball): Xử lý hốc & bo đa hướng?
+- H1: Carbide Burr Shape D (Ball): Xử lý hốc & bo đa hướng
 - Slug: type-d-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)

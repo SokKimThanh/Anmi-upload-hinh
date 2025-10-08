@@ -4,7 +4,7 @@
 - Mã bài: 16
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
-- H1: Carbide Burr Shape F (Tree Radius End): Truy cập hốc cong bó hẹp?
+- H1: Carbide Burr Shape F (Tree Radius End): Truy cập hốc cong bó hẹp
 - Slug: type-f-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)

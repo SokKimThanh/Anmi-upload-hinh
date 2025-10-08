@@ -4,7 +4,7 @@
 - Mã bài: 09
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
-- H1: Coarse Cut Carbide Burr: Khi ưu tiên tốc độ thô?
+- H1: Coarse Cut Carbide Burr: Khi ưu tiên tốc độ thô
 - Slug: coarse-cut-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)

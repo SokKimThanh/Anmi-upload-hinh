@@ -4,7 +4,7 @@
 - Mã bài: 12
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
-- H1: Carbide Burr Shape B (Cylinder End Rounded): Xử lý mép bo & chuyển tiếp phẳng?
+- H1: Carbide Burr Shape B (Cylinder End Rounded): Xử lý mép bo & chuyển tiếp phẳng
 - Slug: type-b-carbide-burr
 - Legacy Redirects: (trống)
 - Pillar Content?: NO (Supporting)
