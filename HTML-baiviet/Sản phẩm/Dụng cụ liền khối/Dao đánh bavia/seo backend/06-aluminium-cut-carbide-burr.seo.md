@@ -33,48 +33,154 @@
 4. So sánh với Double / Single Cut (bảng nhỏ)
 5. Ứng dụng: Nhôm đúc, đồng, nhựa kỹ thuật
 6. Lỗi thường gặp (ấn mạnh, không vệ sinh phoi)
-7. Checklist thao tác tối ưu
-8. FAQ
-9. CTA
+## SEO BACKEND SPEC – 06 (Rank Math v1.2.0)
 
-## 6. Internal Links
-| Anchor | URL | Vị trí |
-|--------|-----|-------|
-| so sánh các loại | /carbide-burr/so-sanh/ | Section 4 |
-| Double Cut | /carbide-burr/double-cut/ | Comparison |
-| Single Cut | /carbide-burr/single-cut/ | Comparison |
-| hướng dẫn chọn | /carbide-burr/huong-dan-chon/ | CTA |
+### 1. Identification
+- Mã bài: 06
+- Nhóm: Cut Type Detail
+- Primary Category: Carbide Burr
+- H1: Aluminium Cut Carbide Burr: Tối ưu vật liệu mềm?
+- Slug: aluminium-cut-carbide-burr
+- Legacy Redirects: (trống)
+- Pillar Content?: NO (Supporting)
+- Word Count Target: 800–1000
 
-## 7. Media Plan
-| # | Loại | File | Alt |
-|---|------|------|-----|
-| 1 | Hero | aluminium-cut-hero.webp | Carbide Burr Aluminium Cut trên phôi nhôm |
-| 2 | Rãnh macro | aluminium-cut-flute.webp | Rãnh rộng sâu của Aluminium Cut |
-| 3 | So sánh | aluminium-vs-double-vs-single.webp | So sánh Aluminium vs Double vs Single Cut |
-| 4 | Ứng dụng | aluminium-cut-usecase-cnc.webp | Làm sạch bavia nhôm đúc bằng Aluminium Cut |
-| 5 | CTA | carbide-burr-support-team.webp | Đội kỹ thuật tư vấn Burr Aluminium Cut |
+### 2. Intent & Persona
+- Intent: Informational cụ thể
+- Persona: Người xử lý nhôm / đồng mềm / hợp kim nhẹ bị bám phoi
+- Pain: Phoi dính, clogging khi dùng Double Cut
+- Outcome: Biết khi nào chuyển sang Aluminium Cut & giới hạn tránh lạm dụng
 
-## 8. Data Boundaries
-Không thêm thông số RPM; không giả định % nhanh hơn.
+### 3. Focus Keywords
+| Type | Keyword | Use in | Priority | Note |
+|------|---------|--------|----------|------|
+| Primary | aluminium cut carbide burr | H1, Title | P1 | Core |
+| Secondary | burr aluminium cut là gì | Intro | P2 | Định nghĩa |
+| Secondary | burr chống bám phoi | Lợi ích | P2 | Benefit |
+| Long-tail | khi nào dùng aluminium cut burr | FAQ, Khi nào chuyển | P3 | Decision |
+| Semantic | non ferrous burr | 1 lần | P3 | Semantic |
 
-## 9. FAQ
-- Aluminium Cut khác gì Double Cut?
-- Có dùng cho inox được không?
-- Vì sao vẫn bị bám phoi dù dùng Aluminium Cut?
+### 4. Meta Fields
+- Title: Aluminium Cut Carbide Burr: Tối ưu vật liệu mềm? | AN MI TOOLS
+- Meta Description: Pattern rãnh thưa sâu Aluminium Cut giảm bám phoi cho nhôm & kim loại màu. Khi nào nên chuyển từ Double Cut? Giới hạn & bảo quản.
+- Canonical: https://anmitools.com/carbide-burr/aluminium-cut/
+- Robots: index, follow
+- Cornerstone/Pillar: FALSE
 
-## 10. Tech SEO Checklist
-- [ ] 4 internal links
-- [ ] 5 ảnh alt đúng
-- [ ] Bảng so sánh 3 loại
+### 5. Open Graph & Twitter
+- OG Title: Aluminium Cut Carbide Burr
+- OG Description: Giảm bám phoi vật liệu mềm.
+- OG Image: /wp-content/uploads/2025/10/aluminium-cut-carbide-burr-og.webp
+- Twitter Card: summary_large_image
 
-## 11. Success Metrics
+### 6. URL & Breadcrumb
+```
+/carbide-burr/aluminium-cut/
+```
+Breadcrumb: Trang chủ › Carbide Burr › Aluminium Cut
+
+### 7. Content Outline
+1. Aluminium Cut là gì (pattern rãnh thưa sâu)
+2. Cơ chế chống bám phoi & thoát phoi
+3. Lợi ích chính (đẩy phoi, giảm tải)
+4. So với Double Cut (khi nào chuyển)
+5. Giới hạn & KHI KHÔNG nên dùng (bề mặt, kiểm soát)
+6. FAQ
+7. CTA
+
+### 8. Internal Linking Plan
+| Anchor Text | Target URL | Reason | Placement |
+|-------------|------------|--------|-----------|
+| so sánh các loại | /carbide-burr/so-sanh/ | Quay về overview | So sánh |
+| Double Cut | /carbide-burr/double-cut/ | Điểm chuyển đổi | So với Double |
+| hướng dẫn chọn | /carbide-burr/huong-dan-chon/ | Funnel | CTA |
+| Single Cut | /carbide-burr/single-cut/ | Giới hạn | Giới hạn |
+
+### 9. External Links
+| Anchor | URL | Purpose | Nofollow? |
+|--------|-----|---------|----------|
+| aluminium burr chip load study | https://example-materials.org/ | Bổ sung cơ chế phoi | YES |
+
+### 10. Media / Asset Plan
+| # | Type | Purpose | File | Alt Text | Caption? |
+|---|------|---------|------|---------|----------|
+| 1 | Macro flute | Rãnh sâu thưa | aluminium-cut-flute-macro.webp | Cấu trúc rãnh Aluminium Cut | Có |
+| 2 | Chip evacuation | Thoát phoi | aluminium-cut-chip-evac.webp | Thoát phoi vật liệu mềm | Có |
+| 3 | Clogging compare | So sánh bám phoi | aluminium-cut-vs-double.webp | Double bị bám vs Aluminium thoát | Có |
+| 4 | Surface result | Bề mặt sau cắt | aluminium-cut-surface.webp | Bề mặt sau Aluminium Cut | Có |
+| 5 | Limitation | Giới hạn | aluminium-cut-limitation.webp | Giới hạn kiểm soát bề mặt | Có |
+| 6 | CTA | Hỗ trợ | aluminium-cut-cta.webp | Tư vấn chọn Burr | Có |
+
+### 11. FAQ Planning
+| Q | A (tóm tắt) | Intent | Keyword Target? |
+|---|-------------|--------|-----------------|
+| Khi nào chuyển từ Double sang Aluminium? | Khi phoi dính / clogging | Decision | khi nào dùng aluminium cut burr |
+| Dùng inox được không? | Không tối ưu – dễ tạo bề mặt xấu | Clarify |  |
+| Cần coating không? | Thường không – rãnh đã giảm bám | Clarify | burr chống bám phoi |
+| Bảo quản thế nào? | Làm sạch nhẹ, tránh va mẻ rãnh sâu | Care |  |
+
+FAQ JSON: (soạn sau)
+
+### 12. Additional Schema
+- Article + FAQPage
+
+### 13. Data Boundaries
+- Không % giảm bám phoi
+- Không RPM cụ thể
+
+### 14. CTA Architecture
+| CTA Type | Copy | URL/Action | Placement |
+|----------|------|-----------|-----------|
+| Primary | Gửi vật liệu + tình trạng bám phoi → gợi ý cut | /lien-he/ | Sau So với Double |
+| Secondary | Xem hướng dẫn chọn Burr | /carbide-burr/huong-dan-chon/ | Sau FAQ |
+| Soft Support | Chat kỹ thuật | Chat Widget | Footer |
+
+### 15. Author & E-E-A-T
+- Author: (Điền) Kỹ thuật viên dụng cụ
+- Reviewed By: (Reviewer) Vật liệu màu
+- Review Date: 2025-10-08
+- E-E-A-T Note: Thực tế xử lý nhôm đúc / đồng mềm.
+- Bio: Hỗ trợ giảm clogging & chọn pattern phù hợp.
+
+### 16. Human Tone
+| Checklist | OK? | Note |
+|-----------|-----|------|
+| Cụ thể | ✔ | Giải thích cơ chế |
+| Minh bạch | ✔ | Giới hạn bề mặt |
+| Không phóng đại | ✔ | Không % |
+| Hỗ trợ | ✔ | CTA tư vấn |
+
+### 17. Technical SEO Execution
+| Hạng mục | Trạng thái | Ghi chú |
+|----------|-----------|---------|
+| H1 unique | ✔ | 1 H1 |
+| Meta Title | ✔ | OK |
+| Meta Description | ✔ | ~157 chars |
+| Internal links | ✔ | 4 |
+| FAQ block | Pending | Rank Math |
+| Schema | ✔ | Article+FAQ |
+| OG Image | Pending | 1200x630 |
+| Canonical | ✔ | Set |
+| Alt text | Pending | Khi upload |
+| Redirects | N/A | None |
+
+### 18. Performance (Post-publish)
+| Metric | Target | Current | Note |
+|--------|--------|---------|------|
+| LCP | <2.5s |  |  |
+| CLS | <0.1 |  |  |
+| INP | <200ms |  |  |
+| Total Size | <0.9MB |  |  |
+
+### 19. Success Metrics (90d)
 | Metric | Target |
 |--------|--------|
-| Clicks | 95 |
-| Impr. | 2,300 |
-| Avg Pos | < 23 |
-| CTR | > 3.6% |
-| Leads | 6 |
+| Clicks | 105 |
+| Impressions | 2,300 |
+| Avg Position | < 23 |
+| CTR | > 4.1% |
+| Leads | 5 |
 
-## 12. Changelog
-- v1.0.0 (2025-10-08): Spec tạo
+### 20. Changelog
+- v1.0.0 (2025-10-08): Spec ban đầu
+- v1.1.0 (2025-10-08): Chuẩn hóa template Rank Math v1.2.0

@@ -15,89 +15,161 @@
 
 ## 3. Keyword Map
 | Loại | Từ khóa | Volume | Ghi chú |
-|------|---------|--------|--------|
-| Primary | hướng dẫn chọn carbide burr | low | H1/Intro |
-| Secondary | chọn carbide burr theo vật liệu | low | Section vật liệu |
-| Long-tail | cách chọn carbide burr đúng | low | CTA/FAQ |
-| Semantic | deburring / chamfer / blending | low | Mapping thao tác |
+## SEO BACKEND SPEC – 03 (Rank Math v1.2.0)
 
-## 4. Meta Data
-- Title: Hướng dẫn chọn Carbide Burr theo vật liệu & thao tác | AN MI TOOLS
-- Meta desc: Quy trình 5 bước chọn Carbide Burr: xác định mục tiêu, vật liệu, cut type, shape, kiểm tra dữ liệu thiếu. Có checklist tải nhanh.
+### 1. Identification
+- Mã bài: 03
+- Nhóm: How-to / Guided Decision
+- Primary Category: Carbide Burr
+- H1: Hướng dẫn chọn Carbide Burr đúng ngay từ đầu
+- Slug: huong-dan-chon-carbide-burr
+- Legacy Redirects: (trống)
+- Pillar Content?: YES (Decision Guide)
+- Word Count Target: 1300–1600
+
+### 2. Intent & Persona
+- Search Intent: Transactional Assist / Guided
+- Persona: Người chuẩn bị gửi yêu cầu báo giá / test dụng cụ
+- Pain: Thiếu checklist, sợ hỏi sai thông tin
+- Outcome: Có quy trình 6 bước + checklist + tránh sai lầm
+
+### 3. Focus Keywords
+| Type | Keyword | Use in | Priority | Note |
+|------|---------|--------|----------|------|
+| Primary | hướng dẫn chọn carbide burr | H1, Title, Intro | P1 | Core intent |
+| Secondary | cách chọn mũi mài carbide | Intro, Bước 2 | P2 | Variation |
+| Secondary | chọn cut type nào | Bước 3 | P2 | Section anchor |
+| Long-tail | checklist chọn carbide burr | CTA, Bước 9 | P3 | Lead gen |
+| Semantic | carbide burr selection guide | 1 lần English | P3 | Semantic breadth |
+
+### 4. Meta Fields
+- Title: Hướng dẫn chọn Carbide Burr đúng ngay từ đầu | AN MI TOOLS
+- Meta Description: Quy trình 6 bước chọn đúng Carbide Burr: vật liệu, mục tiêu bề mặt, cut type, shape, kích thước cán. Có checklist tải về.
 - Canonical: https://anmitools.com/carbide-burr/huong-dan-chon/
+- Robots: index, follow
+- Cornerstone/Pillar: TRUE
 
-## 5. URL Strategy
+### 5. Open Graph & Twitter
+- OG Title: Hướng dẫn chọn Carbide Burr
+- OG Description: 6 bước + checklist thực tế xưởng.
+- OG Image: /wp-content/uploads/2025/10/huong-dan-chon-carbide-burr-og.webp
+- Twitter Card: summary_large_image
+
+### 6. URL & Breadcrumb
+```
 /carbide-burr/huong-dan-chon/
+```
 Breadcrumb: Trang chủ › Carbide Burr › Hướng dẫn chọn
 
-## 6. Outline
-1. Tại sao cần quy trình (lỗi thường gặp)
-2. Bước 1 – Xác định mục tiêu thao tác (deburr / blend / chamfer / sửa khuôn)
-3. Bước 2 – Ghi nhận vật liệu & độ cứng (<60 HRC)
-4. Bước 3 – Chọn Cut Type theo phoi & cảm giác
-5. Bước 4 – Chọn Shape theo khả năng tiếp cận (A–N)
-6. Bước 5 – Kiểm tra dữ liệu thiếu (RPM, D-L-d, coating)
-7. Checklist tổng hợp (in nhanh)
-8. Sai lầm phổ biến & cách tránh
-9. FAQ
-10. CTA hỗ trợ kỹ thuật
+### 7. Content Outline
+1. Sai lầm chọn theo cảm tính (đồng cảm)
+2. Tổng quan quy trình 6 bước (preview)
+3. Bước 1: Xác định vật liệu (bảng đối chiếu)
+4. Bước 2: Mục tiêu gia công (kết quả mong muốn)
+5. Bước 3: Chọn Cut Type (liên kết so sánh)
+6. Bước 4: Chọn Shape theo truy cập
+7. Bước 5: Kích thước cán & đầu (an toàn)
+8. Bước 6: Kiểm tra an toàn & bảo quản
+9. Checklist tải về (form 5 trường)
+10. Sai lầm thường gặp & cách tránh
+11. FAQ
+12. CTA kết thúc mềm
 
-## 7. Internal Links
-| Anchor | URL | Vị trí |
-|--------|-----|-------|
-| so sánh cut type | /carbide-burr/so-sanh/ | Bước 3 |
-| Carbide Burr là gì | /carbide-burr/la-gi/ | Intro |
-| Double Cut | /carbide-burr/double-cut/ | Cut type table |
-| Type N | /carbide-burr/type-n/ | Shape section |
+### 8. Internal Linking Plan
+| Anchor Text | Target URL | Reason | Placement |
+|-------------|------------|--------|-----------|
+| Carbide Burr là gì | /carbide-burr/la-gi/ | Nền tảng | Optional pre-step |
+| so sánh các loại | /carbide-burr/so-sanh/ | Hỗ trợ chọn cut type | Bước 3 |
+| Double Cut | /carbide-burr/double-cut/ | Chi tiết | Bước 3 |
+| Shape A | /carbide-burr/type-a/ | Ví dụ cụ thể | Bước 4 |
 
-## 8. External (optional)
-| Anchor | URL | Lý do |
-|--------|-----|-------|
-| deburring process | https://en.wikipedia.org/wiki/Deburring | Giải thích thao tác |
+### 9. External Links
+| Anchor | URL | Purpose | Nofollow? |
+|--------|-----|---------|----------|
+| safety burr speed guideline | https://example-safety.org/ | Nhắc an toàn RPM tổng quát | YES |
 
-## 9. Schema
-- Article + FAQPage
-- FAQ: Chọn theo vật liệu hay thao tác trước?; Khi thiếu RPM xử lý sao?; Có cần nhiều shape không?; Khi nào đổi sang Fine Cut?
+### 10. Media / Asset Plan
+| # | Type | Purpose | File | Alt Text | Caption? |
+|---|------|---------|------|---------|----------|
+| 1 | Hero checklist | Nhấn mạnh quy trình | carbide-burr-selection-process.webp | Quy trình chọn Carbide Burr | Có |
+| 2 | Flowchart | Tổng quan 6 bước | carbide-burr-flow-6-steps.webp | Lưu đồ 6 bước chọn Burr | Có |
+| 3 | Material table | Vật liệu vs cut type | carbide-burr-material-table.webp | Bảng vật liệu & cut gợi ý | Có |
+| 4 | Shape access | Khả năng truy cập | carbide-burr-shape-access.webp | Hình dạng & hướng tiếp cận | Có |
+| 5 | Mistakes | Sai lầm phổ biến | carbide-burr-common-mistakes.webp | Sai lầm khi chọn Burr | Có |
+| 6 | CTA form | Kêu gọi gửi checklist | carbide-burr-checklist-cta.webp | Gửi 5 thông tin để nhận tư vấn | Có |
 
-## 10. Media Plan
-| # | Loại | Mục đích | File | Alt |
-|---|------|---------|------|-----|
-| 1 | Hero | Nhận diện hướng dẫn | carbide-burr-selection-guide-hero.webp | Hướng dẫn chọn Carbide Burr từng bước |
-| 2 | Flowchart | Quy trình chọn 5 bước | carbide-burr-selection-flow.webp | Sơ đồ 5 bước chọn Carbide Burr |
-| 3 | Cut decision | Phân loại cut type | carbide-burr-cut-decision.webp | Bảng chọn cut type theo vật liệu |
-| 4 | Shape access | Chọn shape theo vị trí | carbide-burr-shape-access.webp | Hình dạng Burr theo khu vực gia công |
-| 5 | Checklist | Tải nhanh | carbide-burr-checklist.webp | Checklist chọn Carbide Burr |
-| 6 | Team CTA | Hỗ trợ | carbide-burr-support-team.webp | Đội kỹ thuật hỗ trợ chọn Burr |
+### 11. FAQ Planning
+| Q | A (tóm tắt) | Intent | Keyword Target? |
+|---|-------------|--------|-----------------|
+| Chọn sai cut type hậu quả? | Phoi dài, rung, bề mặt xấu → hao mòn | Risk awareness | chọn cut type nào |
+| Có cần coating? | Thường không cho Burr tiêu chuẩn; ưu tiên nền tốt | Clarify |  |
+| RPM bao nhiêu là đúng? | Phụ thuộc đường kính & vật liệu – không phỏng đoán | Safety | RPM |
+| Một Burr dùng mọi vật liệu được không? | Không tối ưu – ảnh hưởng tuổi thọ & hoàn thiện | Myth bust | checklist chọn carbide burr |
 
-## 11. Data Boundaries
-Không chèn RPM giả; không tự tính tuổi thọ. Nhắc xác nhận D-L-d trước đặt hàng số lượng.
+FAQ JSON: (soạn sau)
 
-## 12. CTA
-Primary: Gửi ứng dụng + vật liệu → nhận đề xuất.  
-Secondary: Lưu/ tải checklist PDF.
+### 12. Additional Schema
+- Article + FAQPage + BreadcrumbList
 
-## 13. Human Tone
-| Mục | OK | Ghi chú |
-|-----|----|--------|
-| Đồng cảm | ✔ | “Thử sai gây mòn Burr sớm...” |
-| Trao quyền | ✔ | Flow 5 bước |
-| Cảnh báo dữ liệu thiếu | ✔ | Bước 5 |
-| CTA nhẹ | ✔ | Hỗ trợ, không bán mạnh |
+### 13. Data Boundaries
+- Không tự suy RPM cụ thể
+- Không gán coating nếu chưa xác thực
+- Không tạo bảng kích thước đầy đủ khi thiếu catalogue
 
-## 14. Tech SEO Checklist
-- [x] 5+ H2/Bước rõ ràng
-- [x] Internal hub link
-- [x] FAQ dàn ý
-- [x] 6 ảnh có alt
+### 14. CTA Architecture
+| CTA Type | Copy | URL/Action | Placement |
+|----------|------|-----------|-----------|
+| Primary | Gửi checklist 5 thông tin → nhận 2 gợi ý Burr | /lien-he/ | Sau Bước 9 |
+| Secondary | Xem bảng so sánh cut type | /carbide-burr/so-sanh/ | Bước 3 bottom |
+| Soft Support | Chat với kỹ thuật | Chat Widget | After FAQ |
 
-## 15. Success Metrics
+### 15. Author & E-E-A-T
+- Author: (Điền) Kỹ thuật viên dụng cụ
+- Reviewed By: (Reviewer) An toàn vận hành
+- Review Date: 2025-10-08
+- E-E-A-T Note: Biên soạn dựa thực tế xưởng & phản hồi khách hàng.
+- Bio: Tư vấn quy trình chọn Burr giảm lỗi.
+
+### 16. Human Tone
+| Checklist | OK? | Note |
+|-----------|-----|------|
+| Đồng cảm | ✔ | Sai lầm mở bài |
+| Có cấu trúc tiến trình | ✔ | 6 bước đánh số |
+| Minh bạch giới hạn | ✔ | Data boundaries |
+| CTA hỗ trợ | ✔ | Không ép mua |
+| Tính cụ thể | ✔ | Bảng & checklist |
+
+### 17. Technical SEO Execution
+| Hạng mục | Trạng thái | Ghi chú |
+|----------|-----------|---------|
+| H1 unique | ✔ | 1 H1 |
+| Meta Title | ✔ | Chuẩn độ dài |
+| Meta Description | ✔ | ~158 chars |
+| Internal links | ✔ | 4 |
+| FAQ block | Pending | Rank Math nhập |
+| Schema | ✔ | Article+FAQ |
+| OG Image | Pending | 1200x630 tạo |
+| Canonical | ✔ | Set |
+| Alt text | Pending | Khi upload |
+| Redirects | N/A | None |
+
+### 18. Performance (Post-publish)
+| Metric | Target | Current | Note |
+|--------|--------|---------|------|
+| LCP | <2.5s |  |  |
+| CLS | <0.1 |  |  |
+| INP | <200ms |  |  |
+| Total Size | <1.1MB |  |  |
+
+### 19. Success Metrics (90d)
 | Metric | Target |
 |--------|--------|
 | Clicks | 220 |
-| Impr. | 4,500 |
-| Avg Pos | < 19 |
-| CTR | > 4.3% |
-| Leads | 18 |
+| Impressions | 5,500 |
+| Avg Position | < 18 |
+| CTR | > 4.5% |
+| Leads | 20 |
 
-## 16. Changelog
-- v1.0.0 (2025-10-08): Khởi tạo spec
+### 20. Changelog
+- v1.0.0 (2025-10-08): Spec ban đầu
+- v1.1.0 (2025-10-08): Chuẩn hóa template Rank Math v1.2.0
