@@ -120,6 +120,16 @@ FAQ JSON (mẫu – điền khi finalize):
 Thiếu (nếu có): RPM / D-L-d đầy đủ / Coating / Giá.  
 Nguyên tắc: Luôn ghi rõ “Chưa có dữ liệu trong catalogue dạng text – liên hệ đội kỹ thuật”.
 
+## 13b. Rủi Ro & Giảm Thiểu (Use Case Only)
+| Rủi ro | Khi nào xảy ra | Hậu quả | Biện pháp giảm thiểu | Ghi chú |
+|--------|----------------|---------|----------------------|---------|
+| Quá nhiệt bề mặt | Tốc độ quá cao / giữ tại 1 điểm | Cháy xém / đổi màu | Di chuyển liên tục, giảm RPM | Không ước lượng % cải thiện |
+| Mẻ cạnh / sứt mép | Ấn lực ngang lớn trên vật liệu giòn | Bavia lớn hơn / nứt | Nhiều pass nhẹ, chọn hình dạng phù hợp | Tránh hứa giảm 100% |
+| Rung (chatter) | Cán dài / kẹp lỏng | Mặt nhám xấu, mòn sớm | Giảm nhô dao, kiểm tra collet | Ghi rõ nếu chưa có dữ liệu độ đảo |
+| Bám phoi | Gia công vật liệu mềm / không làm sạch | Nhiệt, kẹt dao | Thổi khí nhẹ, dừng làm sạch | Không nêu hóa chất nếu chưa kiểm chứng |
+| Bụi mịn nguy hại | Mài composite / hợp kim đặc biệt | Ảnh hưởng hô hấp | Khẩu trang đạt chuẩn, hút bụi cục bộ | Không khuyến nghị PPE cụ thể nếu thiếu chuẩn |
+
+
 ## 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
