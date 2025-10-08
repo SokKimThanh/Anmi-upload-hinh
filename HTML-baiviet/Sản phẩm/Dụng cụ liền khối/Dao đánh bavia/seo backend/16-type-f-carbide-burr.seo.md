@@ -26,7 +26,7 @@
 | Semantic | tree radius end burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape F (Tree Radius End): Truy cập hốc cong bó hẹp? | AN MI TOOLS
+- Title: Carbide Burr Shape F (Tree Radius End): Truy cập hốc cong bó hẹp | AN MI TOOLS
 - Meta Description: Shape F tiếp cận hốc cong bó hẹp với đầu bo kiểm soát. Khi nào nên chọn thay cầu hoặc oval & giới hạn góc nhọn sâu.
 - Canonical: https://anmitools.com/carbide-burr/shape-f/
 - Robots: index, follow

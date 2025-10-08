@@ -26,7 +26,7 @@
 | Semantic | flame carbide burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape H (Flame): Chuyển tiếp cong thuôn dài? | AN MI TOOLS
+- Title: Carbide Burr Shape H (Flame): Chuyển tiếp cong thuôn dài | AN MI TOOLS
 - Meta Description: Shape H (Flame) tối ưu cho chuyển tiếp cong kéo dài & bo mềm sâu vừa. Khi nào dùng thay cầu / tree & giới hạn diện phẳng.
 - Canonical: https://anmitools.com/carbide-burr/shape-h/
 - Robots: index, follow

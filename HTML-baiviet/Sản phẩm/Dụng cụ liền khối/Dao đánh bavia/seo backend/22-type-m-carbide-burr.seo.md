@@ -26,7 +26,7 @@
 | Semantic | 90 degree cone burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape M (Cone 90°): Vát góc vuông & mép lỗ lớn? | AN MI TOOLS
+- Title: Carbide Burr Shape M (Cone 90°): Vát góc vuông & mép lỗ lớn | AN MI TOOLS
 - Meta Description: Shape M (cone 90°) để vát mép lỗ & cạnh góc vuông tiêu chuẩn. Khi nào nên chọn thay 60° hoặc taper và giới hạn ứng dụng bo mềm.
 - Canonical: https://anmitools.com/carbide-burr/shape-m/
 - Robots: index, follow
@@ -34,7 +34,7 @@
 
 ### 5. Open Graph & Twitter
 - OG Title: Carbide Burr Shape M (Cone 90°)
-- OG Description: Vát góc vuông & mép lỗ lớn?
+- OG Description: Vát góc vuông & mép lỗ lớn
 - OG Image: /wp-content/uploads/2025/10/carbide-burr-shape-m-og.webp
 - Twitter Card: summary_large_image
 

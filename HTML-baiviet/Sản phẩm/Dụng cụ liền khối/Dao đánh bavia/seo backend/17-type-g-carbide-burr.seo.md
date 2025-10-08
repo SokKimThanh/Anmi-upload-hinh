@@ -26,7 +26,7 @@
 | Semantic | tree point end burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape G (Tree Point End): Vươn sâu vào góc nhọn? | AN MI TOOLS
+- Title: Carbide Burr Shape G (Tree Point End): Vươn sâu vào góc nhọn | AN MI TOOLS
 - Meta Description: Shape G (tree point) cho phép tiếp cận góc nhọn & khe thuôn sâu. Khi nào nên chọn và giới hạn ổn định bề mặt / rung.
 - Canonical: https://anmitools.com/carbide-burr/shape-g/
 - Robots: index, follow

@@ -26,7 +26,7 @@
 | Semantic | taper radius burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape J (Taper Radius End): Vát bo mềm kiểm soát? | AN MI TOOLS
+- Title: Carbide Burr Shape J (Taper Radius End): Vát bo mềm kiểm soát | AN MI TOOLS
 - Meta Description: Shape J vát thuôn với đầu bo giúp tạo vát bo mềm, giảm cạnh sắc. Khi nào chọn thay Shape K hoặc L.
 - Canonical: https://anmitools.com/carbide-burr/shape-j/
 - Robots: index, follow

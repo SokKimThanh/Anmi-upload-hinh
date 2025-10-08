@@ -26,7 +26,7 @@
 | Semantic | chipbreaking burr pattern | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Chip Breaker Carbide Burr: Giảm phoi dài & kẹt? | AN MI TOOLS
+- Title: Chip Breaker Carbide Burr: Giảm phoi dài & kẹt | AN MI TOOLS
 - Meta Description: Pattern có rãnh phá phoi giúp cắt gãy phoi dài, giảm quấn & cải thiện an toàn. Khi nào nên chọn & giới hạn so với Double Cut.
 - Canonical: https://anmitools.com/carbide-burr/chip-breaker/
 - Robots: index, follow
@@ -34,7 +34,7 @@
 
 ### 5. Open Graph & Twitter
 - OG Title: Chip Breaker Carbide Burr
-- OG Description: Giảm phoi dài & kẹt?
+- OG Description: Giảm phoi dài & kẹt
 - OG Image: /wp-content/uploads/2025/10/chip-breaker-carbide-burr-og.webp
 - Twitter Card: summary_large_image
 

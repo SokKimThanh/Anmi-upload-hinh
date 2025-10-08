@@ -26,7 +26,7 @@
 | Semantic | cylinder end rounded burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape B (Cylinder End Rounded): Xử lý mép bo & chuyển tiếp phẳng? | AN MI TOOLS
+- Title: Carbide Burr Shape B (Cylinder End Rounded): Xử lý mép bo & chuyển tiếp phẳng | AN MI TOOLS
 - Meta Description: Shape B (Cylinder đầu tròn) giúp gọt phẳng kèm chuyển tiếp bo mượt, giảm tạo rãnh sắc. Khi nào nên chọn thay Shape A.
 - Canonical: https://anmitools.com/carbide-burr/shape-b/
 - Robots: index, follow

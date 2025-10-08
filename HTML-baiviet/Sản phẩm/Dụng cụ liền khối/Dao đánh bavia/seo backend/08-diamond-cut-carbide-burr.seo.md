@@ -26,7 +26,7 @@
 | Semantic | precision carbide burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Diamond Cut Carbide Burr: Kiểm soát tốt hơn? | AN MI TOOLS
+- Title: Diamond Cut Carbide Burr: Kiểm soát tốt hơn | AN MI TOOLS
 - Meta Description: Pattern đan dày dạng kim cương giúp kiểm soát & hoàn thiện tinh trong một số ứng dụng. Khi nào nên chọn thay vì Double hoặc Fine?
 - Canonical: https://anmitools.com/carbide-burr/diamond-cut/
 - Robots: index, follow
@@ -34,7 +34,7 @@
 
 ### 5. Open Graph & Twitter
 - OG Title: Diamond Cut Carbide Burr
-- OG Description: Kiểm soát tốt hơn?
+- OG Description: Kiểm soát tốt hơn
 - OG Image: /wp-content/uploads/2025/10/diamond-cut-carbide-burr-og.webp
 - Twitter Card: summary_large_image
 

@@ -26,7 +26,7 @@
 | Semantic | 60 degree cone burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape L (Cone 60°): Vát chuẩn góc trung bình? | AN MI TOOLS
+- Title: Carbide Burr Shape L (Cone 60°): Vát chuẩn góc trung bình | AN MI TOOLS
 - Meta Description: Shape L (cone 60°) dùng vát mép lỗ & cạnh nghiêng góc trung bình. Khi nào nên dùng thay taper point hoặc 90° và giới hạn linh hoạt.
 - Canonical: https://anmitools.com/carbide-burr/shape-l/
 - Robots: index, follow
@@ -34,7 +34,7 @@
 
 ### 5. Open Graph & Twitter
 - OG Title: Carbide Burr Shape L (Cone 60°)
-- OG Description: Vát chuẩn góc trung bình?
+- OG Description: Vát chuẩn góc trung bình
 - OG Image: /wp-content/uploads/2025/10/carbide-burr-shape-l-og.webp
 - Twitter Card: summary_large_image
 

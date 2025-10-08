@@ -26,7 +26,7 @@
 | Semantic | taper pointed burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape K (Taper Pointed End): Vát sắc & sửa góc? | AN MI TOOLS
+- Title: Carbide Burr Shape K (Taper Pointed End): Vát sắc & sửa góc | AN MI TOOLS
 - Meta Description: Shape K đầu nhọn taper giúp tạo vát sắc và xử lý góc khó. Khi nào ưu tiên hơn Shape J / L và giới hạn ổn định.
 - Canonical: https://anmitools.com/carbide-burr/shape-k/
 - Robots: index, follow

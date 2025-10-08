@@ -26,7 +26,7 @@
 | Semantic | rapid stock removal burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Coarse Cut Carbide Burr: Khi ưu tiên tốc độ thô? | AN MI TOOLS
+- Title: Coarse Cut Carbide Burr: Khi nào ưu tiên tốc độ thô? | AN MI TOOLS
 - Meta Description: Coarse Cut Burr với rãnh lớn tối ưu loại bỏ vật liệu nhanh giai đoạn đầu. Khi nào nên chọn & cần lưu ý về bề mặt thô.
 - Canonical: https://anmitools.com/carbide-burr/coarse-cut/
 - Robots: index, follow
@@ -34,7 +34,7 @@
 
 ### 5. Open Graph & Twitter
 - OG Title: Coarse Cut Carbide Burr
-- OG Description: Khi ưu tiên tốc độ thô?
+- OG Description: Khi nào ưu tiên tốc độ thô?
 - OG Image: /wp-content/uploads/2025/10/coarse-cut-carbide-burr-og.webp
 - Twitter Card: summary_large_image
 

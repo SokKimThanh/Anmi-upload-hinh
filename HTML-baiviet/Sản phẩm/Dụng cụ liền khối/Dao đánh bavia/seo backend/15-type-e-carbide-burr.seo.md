@@ -26,7 +26,7 @@
 | Semantic | oval carbide burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape E (Oval): Làm mượt chuyển tiếp & mép bo nhẹ? | AN MI TOOLS
+- Title: Carbide Burr Shape E (Oval): Làm mượt chuyển tiếp & mép bo nhẹ | AN MI TOOLS
 - Meta Description: Shape E (Oval) giúp blend chuyển tiếp cong ổn định và bo nhẹ mép. Khi nào nên chọn thay hình cầu và giới hạn rãnh hẹp.
 - Canonical: https://anmitools.com/carbide-burr/shape-e/
 - Robots: index, follow

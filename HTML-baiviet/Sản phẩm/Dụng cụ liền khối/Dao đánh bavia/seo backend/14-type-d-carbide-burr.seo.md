@@ -26,7 +26,7 @@
 | Semantic | ball carbide burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape D (Ball): Xử lý hốc & bo đa hướng? | AN MI TOOLS
+- Title: Carbide Burr Shape D (Ball): Xử lý hốc & bo đa hướng | AN MI TOOLS
 - Meta Description: Shape D hình cầu để bo mép đa hướng & xử lý hốc lõm. Khi nào chọn và giới hạn diện phẳng / ổn định tiếp xúc.
 - Canonical: https://anmitools.com/carbide-burr/shape-d/
 - Robots: index, follow

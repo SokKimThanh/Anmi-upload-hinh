@@ -26,7 +26,7 @@
 | Semantic | inverted cone burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape N (Inverted Cone): Xử lý mép trong & undercut? | AN MI TOOLS
+- Title: Carbide Burr Shape N (Inverted Cone): Xử lý mép trong & undercut | AN MI TOOLS
 - Meta Description: Shape N (inverted cone) giúp vát mép trong & undercut mà cone thường không tới. Khi nào ưu tiên và giới hạn ổn định cạnh.
 - Canonical: https://anmitools.com/carbide-burr/shape-n/
 - Robots: index, follow
@@ -34,7 +34,7 @@
 
 ### 5. Open Graph & Twitter
 - OG Title: Carbide Burr Shape N (Inverted Cone)
-- OG Description: Xử lý mép trong & undercut?
+- OG Description: Xử lý mép trong & undercut
 - OG Image: /wp-content/uploads/2025/10/carbide-burr-shape-n-og.webp
 - Twitter Card: summary_large_image
 

@@ -26,7 +26,7 @@
 | Semantic | cylinder end ball burr | 1 lần | P3 | Semantic |
 
 ### 4. Meta Fields
-- Title: Carbide Burr Shape C (Cylinder End Ball): Tối ưu bo mép sâu? | AN MI TOOLS
+- Title: Carbide Burr Shape C (Cylinder End Ball): Tối ưu bo mép sâu | AN MI TOOLS
 - Meta Description: Shape C (Cylinder đầu cầu) cho bo mép sâu và chuyển tiếp hốc mượt hơn Shape B. Khi nào nên chọn & giới hạn vùng hẹp.
 - Canonical: https://anmitools.com/carbide-burr/shape-c/
 - Robots: index, follow
