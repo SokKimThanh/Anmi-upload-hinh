@@ -2317,6 +2317,7 @@ fbq('trackCustom', 'Contact', {
 - ✅ Chỉ soạn phần nội dung: headings, đoạn văn, danh sách, bảng, hình ảnh, CTA.
 - ✅ Schema / Meta sẽ do Rank Math + Theme xử lý → không lặp lại thủ công trong nội dung.
 - ✅ CSS riêng (nếu cần) đặt trong file: `style-carbide-burr.css` (đã tạo) và enqueue hoặc copy vào Customizer.
+- ✅ Theme thực tế (PBM Industry) bọc nội dung bằng class `.pbmit-entry-content`; plugin enqueue đã map sẵn nên CSS cần hỗ trợ cả selector này.
 
 **Mẫu cấu trúc nội dung trong WP:**
 ```
