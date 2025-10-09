@@ -86,7 +86,7 @@ Hub Matrix:
 | 2 | Diagram | Góc tiếp xúc hợp lý | gia-cong-thep-goc-tiep-xuc.webp | sơ đồ góc tiếp xúc giảm quá nhiệt |  |
 | 3 | Use Case | Mài góc khuôn | gia-cong-thep-goc-khuon.webp | mài tinh góc khuôn thép |  |
 | 4 | Comparison | Double vs Fine | gia-cong-thep-double-vs-fine.webp | so sánh vết cắt double và fine trên thép |  |
-| 5 | CTA | Đội hỗ trợ | carbide-burr-support-team.webp | đội hỗ trợ kỹ thuật carbide burr |  |
+| 5 | CTA | Đội hỗ trợ | trang-30_tools_diachi-editbyAI.webp | đội ngũ kỹ thuật ANMI TOOLS |  |
 
 Guidelines: Không đưa ảnh đo nhiệt / RPM cụ thể nếu chưa có dữ liệu kiểm chứng.
 

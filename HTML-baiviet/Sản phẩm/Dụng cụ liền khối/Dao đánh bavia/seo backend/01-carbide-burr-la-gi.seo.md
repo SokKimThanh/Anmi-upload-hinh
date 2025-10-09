@@ -83,7 +83,7 @@ Hub Matrix: Overview (01) trỏ xuống So sánh (02) & Hướng dẫn chọn (0
 | 2 | Diagram | Phân nhóm shape | carbide-burr-shape-chart.webp | Sơ đồ 14 hình dạng Carbide Burr | (Có) |
 | 3 | Cut Type Tile | Nhóm cut type | carbide-burr-cut-type-grid.webp | Các kiểu cắt Double / Single / Aluminium... | (Có) |
 | 4 | Use Case | Thực tế deburring | carbide-burr-application-deburring.webp | Dùng Burr loại bỏ bavia thép | (Có) |
-| 5 | CTA | Đội hỗ trợ | carbide-burr-support-team.webp | Đội kỹ thuật tư vấn chọn Carbide Burr | (Có) |
+| 5 | CTA | Đội hỗ trợ | trang-30_tools_diachi-editbyAI.webp | Đội ngũ kỹ thuật ANMI TOOLS | (Có) |
 
 Guidelines: WebP ≥1000px, lazy, alt mô tả hành động; không dùng tính từ phóng đại.
 

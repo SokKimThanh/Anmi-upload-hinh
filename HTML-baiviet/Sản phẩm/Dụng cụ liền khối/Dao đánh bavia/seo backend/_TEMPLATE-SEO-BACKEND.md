@@ -85,7 +85,7 @@ Nguyên tắc: 0–2 external; không link đối thủ trực tiếp VN.
 | 2 | Diagram | Minh họa chính | <slug>-diagram.webp |  |  |
 | 3 | Use Case | Thực tế | <slug>-usecase.webp |  |  |
 | 4 | Comparison | So sánh | <slug>-compare.webp |  |  |
-| 5 | CTA | Đội hỗ trợ | carbide-burr-support-team.webp |  |  |
+| 5 | CTA | Đội hỗ trợ | trang-30_tools_diachi-editbyAI.webp |  |  |
 
 Guidelines:
 - WebP, width 1000px, lazy, alt mô tả trung thực.

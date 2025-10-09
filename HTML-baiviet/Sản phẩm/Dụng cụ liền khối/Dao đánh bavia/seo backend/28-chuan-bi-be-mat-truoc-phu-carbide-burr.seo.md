@@ -83,7 +83,7 @@ Hub Matrix: lên hướng dẫn chọn; ngang cut double/single; xuống shapes 
 | 2 | Diagram | Vùng cần bo nhẹ | chuan-bi-vung-bo-nhe.webp | sơ đồ vùng bo nhẹ trước phủ |  |
 | 3 | Use Case | Làm sạch cạnh phẳng | chuan-bi-lam-sach-phang.webp | làm sạch bavia cạnh phẳng |  |
 | 4 | Comparison | Ball vs Flame rounding | ball-flame-rounding.webp | so sánh rounding ball vs flame |  |
-| 5 | CTA | Đội hỗ trợ | carbide-burr-support-team.webp | đội hỗ trợ carbide burr |  |
+| 5 | CTA | Đội hỗ trợ | trang-30_tools_diachi-editbyAI.webp | đội ngũ kỹ thuật ANMI TOOLS |  |
 
 ## 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |

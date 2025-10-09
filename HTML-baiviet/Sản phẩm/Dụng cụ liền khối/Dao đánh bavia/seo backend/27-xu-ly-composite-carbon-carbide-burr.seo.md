@@ -83,7 +83,7 @@ Hub Matrix: lên hướng dẫn chọn; ngang cut tinh; xuống các shape C/F/G
 | 2 | Diagram | Từng lớp vật liệu | composite-lop-vat-lieu.webp | sơ đồ lớp composite khi mài |  |
 | 3 | Use Case | Bo cạnh carbon | bo-canh-carbon.webp | bo cạnh carbon với burr |  |
 | 4 | Comparison | Fine vs Diamond vết cắt | fine-diamond-composite.webp | so sánh vết cắt composite |  |
-| 5 | CTA | Đội hỗ trợ | carbide-burr-support-team.webp | đội hỗ trợ carbide burr |  |
+| 5 | CTA | Đội hỗ trợ | trang-30_tools_diachi-editbyAI.webp | đội ngũ kỹ thuật ANMI TOOLS |  |
 
 ## 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |

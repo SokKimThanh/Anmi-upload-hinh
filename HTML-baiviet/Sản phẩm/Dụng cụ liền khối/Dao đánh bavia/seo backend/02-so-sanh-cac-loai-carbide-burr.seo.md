@@ -80,7 +80,7 @@ Checklist:
 | 3 | Shape diagram | Sơ đồ shape | carbide-burr-shape-diagram.webp | Sơ đồ 14 shape A–N | Có |
 | 4 | Matrix | Ma trận chọn | carbide-burr-selection-matrix.webp | Ma trận tình huống chọn Burr | Có |
 | 5 | Workbench | Thực tế | carbide-burr-workbench.webp | Bố trí Burr trên bàn làm việc | Có |
-| 6 | Team CTA | Hỗ trợ | carbide-burr-consulting-team.webp | Đội kỹ thuật tư vấn Burr | Có |
+| 6 | Team CTA | Hỗ trợ | trang-30_tools_diachi-editbyAI.webp | Đội ngũ kỹ thuật ANMI TOOLS | Có |
 
 ### 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |

@@ -52,7 +52,7 @@
 | 2 | Pattern | single-cut-pattern.webp | Cấu trúc rãnh Single Cut phóng to |
 | 3 | Comparison | single-vs-double-vs-coarse.webp | So sánh Single vs Double vs Coarse |
 | 4 | Use case | single-cut-roughing-cast-iron.webp | Phá bề mặt gang với Single Cut |
-| 5 | CTA | carbide-burr-support-team.webp | Đội kỹ thuật tư vấn lựa chọn Burr |
+| 5 | CTA | trang-30_tools_diachi-editbyAI.webp | Đội ngũ kỹ thuật ANMI TOOLS |
 
 ## 8. Data Boundaries
 Không ghi tốc độ RPM; không dùng % nhanh hơn nếu chưa có số liệu.

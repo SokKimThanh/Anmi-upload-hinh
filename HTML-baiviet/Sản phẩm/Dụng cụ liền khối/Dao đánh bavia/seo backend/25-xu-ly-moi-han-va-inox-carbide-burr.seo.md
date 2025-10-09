@@ -86,7 +86,7 @@ Hub Matrix:
 | 2 | Diagram | Góc thao tác bo cạnh | bo-canh-inox-goc.webp | góc thao tác bo cạnh inox giảm bám phoi |  |
 | 3 | Use Case | Làm sạch chân hàn | lam-sach-chan-han-inox.webp | làm sạch chân mối hàn inox |  |
 | 4 | Comparison | Double vs Coarse vết cắt | double-coarse-vest-cat-inox.webp | so sánh vết cắt trên inox |  |
-| 5 | CTA | Đội hỗ trợ | carbide-burr-support-team.webp | đội hỗ trợ carbide burr |  |
+| 5 | CTA | Đội hỗ trợ | trang-30_tools_diachi-editbyAI.webp | đội ngũ kỹ thuật ANMI TOOLS |  |
 
 ## 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |

@@ -83,7 +83,7 @@ Hub Matrix: lên hướng dẫn chọn, ngang cut tinh, xuống các shape cụ 
 | 2 | Diagram | Vùng tiếp xúc nhỏ | khuon-tinh-vung-tiep-xuc.webp | sơ đồ vùng tiếp xúc giảm rung |  |
 | 3 | Use Case | Chỉnh góc hẹp | khuon-tinh-goc-hep.webp | sửa góc hẹp bằng burr |  |
 | 4 | Comparison | Double vs Fine vết cắt | khuon-tinh-double-fine.webp | so sánh vết cắt khuôn tinh |  |
-| 5 | CTA | Đội hỗ trợ | carbide-burr-support-team.webp | đội hỗ trợ carbide burr |  |
+| 5 | CTA | Đội hỗ trợ | trang-30_tools_diachi-editbyAI.webp | đội ngũ kỹ thuật ANMI TOOLS |  |
 
 ## 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |
