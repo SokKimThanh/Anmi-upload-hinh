@@ -78,6 +78,8 @@ Hub Matrix: Overview (01) trỏ xuống So sánh (02) & Hướng dẫn chọn (0
 
 ### 10. Media / Asset Plan
 | # | Type | Purpose | File | Alt Text | Caption? |
+### Tags
+carbide burr, dao đánh bavia, mũi mài hợp kim, rotary burr, tungsten carbide, an mi tools, carbide burr là gì, ứng dụng carbide burr, phân loại carbide burr, deburring tool, metal finishing
 |---|------|---------|------|---------|----------|
 | 1 | Hero | Nhận diện chủ đề | carbide-burr-overview-hero.webp | Carbide Burr overview – shape A đến N | (Có) |
 | 2 | Diagram | Phân nhóm shape | carbide-burr-shape-chart.webp | Sơ đồ 14 hình dạng Carbide Burr | (Có) |
