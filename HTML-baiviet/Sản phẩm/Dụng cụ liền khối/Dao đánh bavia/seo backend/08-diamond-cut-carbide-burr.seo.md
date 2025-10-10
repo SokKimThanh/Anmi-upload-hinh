@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+diamond cut carbide burr, burr diamond cut là gì, kiểm soát rung carbide burr, khi nào dùng diamond cut burr, precision carbide burr, bề mặt ổn định, so với double cut, so với fine cut, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

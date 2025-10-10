@@ -132,6 +132,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+double cut carbide burr, burr double cut là gì, ưu điểm double cut, khi nào dùng double cut burr, single vs double cut burr, kiểm soát phoi, bề mặt mịn, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

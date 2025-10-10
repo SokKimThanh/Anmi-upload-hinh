@@ -71,6 +71,9 @@ Checklist:
 
 Hub Matrix: lên hướng dẫn chọn, ngang cut tinh, xuống các shape cụ thể.
 
+### Tags
+carbide burr khuôn tinh, chỉnh sửa chi tiết khuôn, tạo hình khuôn bằng burr, kiểm soát rung khi mài khuôn, fine cut khuôn tinh, diamond cut kiểm soát cao, shape c cylinder end ball, shape g tree point, shape d taper, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ## 9. External Links
 | Anchor | URL | Purpose | Nofollow? |
 |--------|-----|---------|----------|

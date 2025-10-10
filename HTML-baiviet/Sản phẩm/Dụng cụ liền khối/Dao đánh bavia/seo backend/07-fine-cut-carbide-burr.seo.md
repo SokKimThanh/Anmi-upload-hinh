@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+fine cut carbide burr, burr fine cut là gì, bề mặt mịn carbide burr, khi nào dùng fine cut burr, finishing carbide burr, cải thiện bề mặt, so với double cut, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

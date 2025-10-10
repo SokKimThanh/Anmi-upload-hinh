@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+chip breaker carbide burr, burr chip breaker là gì, gãy phoi carbide burr, khi nào dùng chip breaker burr, chipbreaking burr pattern, giảm quấn phoi, cải thiện an toàn, so với double coarse single, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

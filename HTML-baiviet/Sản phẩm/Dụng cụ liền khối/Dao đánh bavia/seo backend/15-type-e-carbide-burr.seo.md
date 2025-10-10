@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape e, burr oval shape e, ứng dụng burr shape e, khi nào dùng burr shape e, oval carbide burr, blend chuyển tiếp, bo mép nhẹ, so sánh shape d f, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

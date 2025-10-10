@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape l, burr cone 60 độ l, ứng dụng burr shape l, khi nào dùng burr shape l, 60 degree cone burr, vát lỗ 60 độ, countersink nhẹ, so sánh shape k m, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

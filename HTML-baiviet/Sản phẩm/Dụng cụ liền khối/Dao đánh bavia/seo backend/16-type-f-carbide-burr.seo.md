@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape f, burr cây đầu bo f, ứng dụng burr shape f, khi nào dùng burr shape f, tree radius end burr, hốc cong bó hẹp, kiểm soát tiếp xúc, so sánh shape d g e, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

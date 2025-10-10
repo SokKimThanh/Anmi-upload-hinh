@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape k, burr taper point k, ứng dụng burr shape k, khi nào dùng burr shape k, taper pointed burr, vát sắc, sửa góc, so sánh shape j l, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

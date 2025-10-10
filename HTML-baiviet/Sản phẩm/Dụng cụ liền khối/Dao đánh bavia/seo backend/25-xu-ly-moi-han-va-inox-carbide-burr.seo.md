@@ -74,6 +74,9 @@ Hub Matrix:
 - Ngang: các cut liên quan
 - Xuống: shapes F, L
 
+### Tags
+carbide burr mối hàn inox, xử lý mối hàn inox burr, bo cạnh inox carbide burr, giảm bám phoi inox, chọn cut xử lý mối hàn, double cut inox, coarse cut bavia dày, chip breaker giảm phoi dài, shape f flame, shape l cone 60 độ, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ## 9. External Links
 | Anchor | URL | Purpose | Nofollow? |
 |--------|-----|---------|----------|

@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape d, burr cầu shape d, ứng dụng burr shape d, khi nào dùng burr shape d, ball carbide burr, xử lý hốc lõm, bo mép đa hướng, so sánh shape c e g, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

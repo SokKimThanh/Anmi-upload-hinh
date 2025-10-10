@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape h, burr ngọn lửa h, ứng dụng burr shape h, khi nào dùng burr shape h, flame carbide burr, chuyển tiếp cong dài, bo kéo dài, so sánh shape f g d, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

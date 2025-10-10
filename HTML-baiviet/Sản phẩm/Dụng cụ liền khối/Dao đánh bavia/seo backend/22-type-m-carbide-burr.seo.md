@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape m, burr cone 90 độ m, ứng dụng burr shape m, khi nào dùng burr shape m, 90 degree cone burr, vát lỗ 90 độ, vát cạnh vuông, so sánh shape l k, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape c, burr trụ đầu cầu c, ứng dụng burr shape c, khi nào dùng burr shape c, cylinder end ball burr, bo mép sâu, chuyển tiếp hốc, so sánh shape b d e, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

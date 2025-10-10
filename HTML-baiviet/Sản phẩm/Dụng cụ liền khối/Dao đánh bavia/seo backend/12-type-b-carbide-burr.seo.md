@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape b, burr trụ đầu tròn b, ứng dụng burr shape b, khi nào dùng burr shape b, cylinder end rounded burr, chuyển tiếp phẳng bo, xử lý mép bo, so sánh shape a d, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

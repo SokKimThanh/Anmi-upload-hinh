@@ -139,6 +139,9 @@ FAQ JSON (draft): (tạo sau khi finalize copy sang Rank Math)
 | Alt text đầy đủ | Pending | Khi upload |
 | Redirects active | N/A | No old slug |
 
+### Tags
+so sánh carbide burr, phân biệt carbide burr, cut type carbide burr, double cut vs single cut, so sánh shape A–N, ma trận lựa chọn burr, bảng so sánh carbide burr, nên chọn carbide burr nào, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

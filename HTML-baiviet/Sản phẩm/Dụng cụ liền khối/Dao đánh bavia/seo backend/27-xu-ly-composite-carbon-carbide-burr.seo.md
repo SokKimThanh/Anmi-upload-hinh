@@ -71,6 +71,9 @@ Checklist:
 
 Hub Matrix: lên hướng dẫn chọn; ngang cut tinh; xuống các shape C/F/G.
 
+### Tags
+carbide burr composite, xử lý cạnh carbon burr, giảm bụi composite, hạn chế tưa sợi carbon, chọn burr xử lý composite, diamond cut composite, fine cut hoàn thiện composite, shape c cylinder, shape f flame, shape g ball, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ## 9. External Links
 | Anchor | URL | Purpose | Nofollow? |
 |--------|-----|---------|----------|

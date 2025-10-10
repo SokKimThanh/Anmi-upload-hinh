@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+carbide burr shape g, burr cây đầu nhọn g, ứng dụng burr shape g, khi nào dùng burr shape g, tree point end burr, vươn sâu gốc nhọn, khe thuôn hẹp, so sánh shape f h, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

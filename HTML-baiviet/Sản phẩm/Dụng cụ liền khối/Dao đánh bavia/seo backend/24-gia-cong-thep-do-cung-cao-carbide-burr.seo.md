@@ -74,6 +74,9 @@ Hub Matrix:
 - Ngang: cut types liên quan (double, fine)
 - Xuống: shape cụ thể (D, N)
 
+### Tags
+carbide burr thép cứng, gia công thép đã nhiệt luyện, chọn mũi mài thép cứng, giảm mẻ cạnh, kiểm soát nhiệt burr, double cut cho thép, fine cut hoàn thiện thép, shape d ball burr, shape n inverted cone, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ## 9. External Links (Authority / Optional)
 | Anchor | URL | Purpose | Nofollow? |
 |--------|-----|---------|----------|

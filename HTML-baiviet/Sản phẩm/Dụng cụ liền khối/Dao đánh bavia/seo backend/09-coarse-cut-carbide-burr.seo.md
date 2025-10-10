@@ -129,6 +129,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+coarse cut carbide burr, burr coarse cut là gì, loại bỏ vật liệu nhanh, khi nào dùng coarse cut burr, rapid stock removal burr, phoi lớn, bề mặt thô, so sánh single double coarse, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

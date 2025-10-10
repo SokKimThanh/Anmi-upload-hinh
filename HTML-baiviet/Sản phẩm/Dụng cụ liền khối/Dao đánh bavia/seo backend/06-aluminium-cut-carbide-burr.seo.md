@@ -164,6 +164,9 @@ FAQ JSON: (soạn sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+aluminium cut carbide burr, carbide burr cho nhôm, burr chống bám phoi, khi nào dùng aluminium cut burr, non ferrous burr, thoát phoi rộng, vật liệu mềm, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

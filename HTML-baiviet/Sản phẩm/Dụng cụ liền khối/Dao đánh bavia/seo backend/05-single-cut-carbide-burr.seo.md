@@ -188,6 +188,9 @@ FAQ JSON: (viết sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+single cut carbide burr, burr single cut là gì, khi nào dùng single cut, single vs double cut burr, tốc độ cắt single cut, thoát phoi dài, phá thô gang thép, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|

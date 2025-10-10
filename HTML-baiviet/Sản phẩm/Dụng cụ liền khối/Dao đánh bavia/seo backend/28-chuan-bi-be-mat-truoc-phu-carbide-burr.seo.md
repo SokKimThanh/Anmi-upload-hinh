@@ -71,6 +71,9 @@ Checklist:
 
 Hub Matrix: lên hướng dẫn chọn; ngang cut double/single; xuống shapes C/F/G.
 
+### Tags
+carbide burr chuẩn bị bề mặt, xử lý bề mặt trước khi phủ, làm sạch bavia trước coating, bo nhẹ cạnh trước sơn, chọn burr làm sạch, double cut làm sạch, single cut cắt sâu có kiểm soát, shape f flame rounding, shape g ball rounding, shape c cylinder, dao đánh bavia, mũi mài hợp kim, an mi tools
+
 ## 9. External Links
 | Anchor | URL | Purpose | Nofollow? |
 |--------|-----|---------|----------|
