@@ -153,6 +153,19 @@ FAQ JSON: (soạn sau)
 | Alt text | Pending | Khi upload |
 | Redirects | N/A | None |
 
+### Tags
+- hướng dẫn chọn carbide burr
+- cách chọn mũi mài carbide
+- chọn cut type nào
+- chọn shape burr
+- checklist chọn carbide burr
+- quy trình 6 bước
+- carbide burr selection guide
+- dao đánh bavia
+- mũi mài hợp kim
+- an toàn burr
+- an mi tools
+
 ### 18. Performance (Post-publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|
