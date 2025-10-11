@@ -54,6 +54,21 @@
 | 4 | Use case | single-cut-roughing-cast-iron.webp | Phá bề mặt gang với Single Cut |
 | 5 | CTA | trang-30_tools_diachi-editbyAI.webp | Đội ngũ kỹ thuật ANMI TOOLS |
 
+### 10b. Technical Support Image (Footer, required)
+- Placement: Cuối bài (sau CTA)
+- Source: https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp
+- Requirements: width="1000", loading="lazy", alt trung thực, có figcaption ngắn
+- HTML pattern:
+
+```html
+<figure class="wp-block-image">
+	<img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp"
+			 alt="Đội ngũ kỹ thuật AN MI TOOLS hỗ trợ tư vấn và bảo dưỡng dụng cụ"
+			 width="1000" height="560" loading="lazy">
+	<figcaption>AN MI TOOLS đồng hành cùng xưởng từ tư vấn lựa chọn đến bảo dưỡng dụng cụ.</figcaption>
+</figure>
+```
+
 ## 8. Data Boundaries
 Không ghi tốc độ RPM; không dùng % nhanh hơn nếu chưa có số liệu.
 ## SEO BACKEND SPEC – 05 (Rank Math v1.2.0)
@@ -155,7 +170,7 @@ FAQ JSON: (viết sau)
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
-| Primary | Gửi vật liệu + mục tiêu → gợi ý cut type | /lien-he/ | Sau Khi nào dùng |
+| Primary | Gửi vật liệu + mục tiêu → gợi ý cut type | /contact-us/ | Sau Khi nào dùng |
 | Secondary | So sánh các loại Burr | /carbide-burr/so-sanh/ | Sau bảng so sánh |
 | Soft Support | Chat kỹ thuật | Chat Widget | After FAQ |
 
