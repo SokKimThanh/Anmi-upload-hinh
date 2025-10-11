@@ -174,6 +174,22 @@ Tone: Trợ giúp, không “Mua ngay”, tránh capslock.
 | Alt text đầy đủ |  |  |
 | Redirects active (nếu có) |  |  |
 
+## 17b. Tags (Comma-separated)
+- Placement: Thêm mục "### Tags" ngay trước phần Performance (mục 18) trong từng file .seo.md.
+- Format: 1 dòng duy nhất, viết tag cách nhau bằng dấu phẩy và 1 dấu cách.
+- Số lượng gợi ý: 8–12 tag/bài; ưu tiên tiếng Việt + 0–2 từ khóa English semantic.
+- Quy tắc: chữ thường, không hashtag, không dấu chấm cuối; tránh trùng lặp; bám theo cluster (cut type, shape, use case, brand).
+
+Template điền:
+
+### Tags
+<primary/variation>, <cut type/shape>, <use case>, <brand>
+
+Ví dụ (File 03 – Hướng dẫn chọn):
+
+### Tags
+hướng dẫn chọn carbide burr, cách chọn mũi mài carbide, chọn cut type nào, chọn shape burr, checklist chọn carbide burr, quy trình 6 bước, carbide burr selection guide, dao đánh bavia, mũi mài hợp kim, an toàn burr, an mi tools
+
 ## 18. Performance & Core Web Vitals (Ghi sau khi publish)
 | Metric | Target | Current | Note |
 |--------|--------|---------|------|
