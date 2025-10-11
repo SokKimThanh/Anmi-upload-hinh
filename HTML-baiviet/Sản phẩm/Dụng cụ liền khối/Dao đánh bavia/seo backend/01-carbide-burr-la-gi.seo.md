@@ -78,8 +78,6 @@ Hub Matrix: Overview (01) trỏ xuống So sánh (02) & Hướng dẫn chọn (0
 
 ### 10. Media / Asset Plan
 | # | Type | Purpose | File | Alt Text | Caption? |
-### Tags
-carbide burr, dao đánh bavia, mũi mài hợp kim, rotary burr, tungsten carbide, an mi tools, carbide burr là gì, ứng dụng carbide burr, phân loại carbide burr, deburring tool, metal finishing
 |---|------|---------|------|---------|----------|
 | 1 | Hero | Nhận diện chủ đề | carbide-burr-overview-hero.webp | Carbide Burr overview – shape A đến N | (Có) |
 | 2 | Diagram | Phân nhóm shape | carbide-burr-shape-chart.webp | Sơ đồ 14 hình dạng Carbide Burr | (Có) |
@@ -88,6 +86,21 @@ carbide burr, dao đánh bavia, mũi mài hợp kim, rotary burr, tungsten carbi
 | 5 | CTA | Đội hỗ trợ | trang-30_tools_diachi-editbyAI.webp | Đội ngũ kỹ thuật ANMI TOOLS | (Có) |
 
 Guidelines: WebP ≥1000px, lazy, alt mô tả hành động; không dùng tính từ phóng đại.
+
+### 10b. Technical Support Image (Footer, required)
+- Placement: Cuối bài (sau CTA)
+- Source: https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp
+- Requirements: width="1000", loading="lazy", alt trung thực, có figcaption ngắn
+- HTML pattern:
+
+```html
+<figure class="wp-block-image">
+	<img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp"
+			 alt="Đội ngũ kỹ thuật AN MI TOOLS hỗ trợ tư vấn và bảo dưỡng dụng cụ"
+			 width="1000" height="560" loading="lazy">
+	<figcaption>AN MI TOOLS đồng hành cùng xưởng từ tư vấn lựa chọn đến bảo dưỡng dụng cụ.</figcaption>
+</figure>
+```
 
 ### 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |
@@ -123,7 +136,7 @@ FAQ JSON (draft):
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
-| Primary | Gửi 3 thông tin ứng dụng → nhận gợi ý burr phù hợp | /lien-he/ | Sau Checklist |
+| Primary | Gửi 3 thông tin ứng dụng → nhận gợi ý burr phù hợp | /contact-us/ | Sau Checklist |
 | Secondary | Khám phá 14 hình dạng burr phổ biến | /carbide-burr/shape-overview/ (hoặc trang shape hub) | Sau Section 4 |
 | Soft Support | Chat nhanh: gửi ảnh chi tiết để nhận gợi ý | Chat Widget | After FAQ |
 
@@ -162,6 +175,9 @@ Tone: Hỗ trợ, trung lập – tránh hứa hẹn tuyệt đối.
 | No duplicate intent | ✔ | Khác bài 02/03 |
 | Alt text đầy đủ | Pending | Khi upload media |
 | Redirects active | N/A | Không có slug cũ |
+
+### Tags
+carbide burr, dao đánh bavia, mũi mài hợp kim, rotary burr, tungsten carbide, an mi tools, carbide burr là gì, ứng dụng carbide burr, phân loại carbide burr, deburring tool, metal finishing
 
 ### 18. Performance & Core Web Vitals (Post-Publish)
 | Metric | Target | Current | Note |

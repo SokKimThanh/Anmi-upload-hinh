@@ -82,6 +82,20 @@ Checklist:
 | 5 | Workbench | Thực tế | carbide-burr-workbench.webp | Bố trí Burr trên bàn làm việc | Có |
 | 6 | Team CTA | Hỗ trợ | trang-30_tools_diachi-editbyAI.webp | Đội ngũ kỹ thuật ANMI TOOLS | Có |
 
+### 10b. Technical Support Image (Footer, required)
+- Placement: Cuối bài (sau CTA)
+- Source: https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp
+- Requirements: width="1000", loading="lazy", alt trung thực, có figcaption ngắn
+- HTML pattern:
+
+```html
+<figure class="wp-block-image">
+	<img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp"
+			 alt="Đội ngũ kỹ thuật AN MI TOOLS hỗ trợ tư vấn và bảo dưỡng dụng cụ"
+			 width="1000" height="560" loading="lazy">
+	<figcaption>AN MI TOOLS đồng hành cùng xưởng từ tư vấn lựa chọn đến bảo dưỡng dụng cụ.</figcaption>
+</figure>
+```
 ### 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |
 |---|-------------|--------|-----------------|
@@ -103,7 +117,7 @@ FAQ JSON (draft): (tạo sau khi finalize copy sang Rank Math)
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
-| Primary | Gửi 5 thông tin → nhận gợi ý Burr | /lien-he/ | Sau Checklist |
+| Primary | Gửi 5 thông tin → nhận gợi ý Burr | /contact-us/ | Sau Checklist |
 | Secondary | Xem hướng dẫn chọn chi tiết | /carbide-burr/huong-dan-chon/ | Sau CTA chính |
 | Soft Support | Chat nhanh với kỹ thuật | Chat Widget | After FAQ |
 

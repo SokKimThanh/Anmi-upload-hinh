@@ -98,6 +98,20 @@ Breadcrumb: Trang chủ › Carbide Burr › Hướng dẫn chọn
 | 5 | Mistakes | Sai lầm phổ biến | carbide-burr-common-mistakes.webp | Sai lầm khi chọn Burr | Có |
 | 6 | CTA form | Kêu gọi gửi checklist | carbide-burr-checklist-cta.webp | Gửi 5 thông tin để nhận tư vấn | Có |
 
+### 10b. Technical Support Image (Footer, required)
+- Placement: Cuối bài (sau CTA)
+- Source: https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp
+- Requirements: width="1000", loading="lazy", alt trung thực, có figcaption ngắn
+- HTML pattern:
+
+```html
+<figure class="wp-block-image">
+	<img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp"
+			 alt="Đội ngũ kỹ thuật AN MI TOOLS hỗ trợ tư vấn và bảo dưỡng dụng cụ"
+			 width="1000" height="560" loading="lazy">
+	<figcaption>AN MI TOOLS đồng hành cùng xưởng từ tư vấn lựa chọn đến bảo dưỡng dụng cụ.</figcaption>
+</figure>
+```
 ### 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |
 |---|-------------|--------|-----------------|
@@ -119,7 +133,7 @@ FAQ JSON: (soạn sau)
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
-| Primary | Gửi checklist 5 thông tin → nhận 2 gợi ý Burr | /lien-he/ | Sau Bước 9 |
+| Primary | Gửi checklist 5 thông tin → nhận 2 gợi ý Burr | /contact-us/ | Sau Bước 9 |
 | Secondary | Xem bảng so sánh cut type | /carbide-burr/so-sanh/ | Bước 3 bottom |
 | Soft Support | Chat với kỹ thuật | Chat Widget | After FAQ |
 
