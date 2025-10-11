@@ -1153,4 +1153,21 @@ Each image must:
   font-weight: 700;
   line-height: 1;
 }
+/* =============================================
+   A5: VISUAL HIERARCHY & NEGATIVE SPACE
+   - Trim first/last child margins inside sections
+   - Improve table cell line-height for readability
+   - Slightly reduce heading sizes on very small screens
+   ============================================= */
+.pbmit-entry-content section > :first-child { margin-top: 0; }
+.pbmit-entry-content section > :last-child { margin-bottom: 0; }
+
+.pbmit-entry-content table th,
+.pbmit-entry-content table td { line-height: 1.6; }
+
+@media (max-width: 575.98px) {
+  .pbmit-entry-content h1 { font-size: 2rem; }
+  .pbmit-entry-content h2 { font-size: 1.6rem; }
+  .pbmit-entry-content h3 { font-size: 1.25rem; }
+}
 /* End of style-carbide-burr.css */

@@ -2442,6 +2442,42 @@ Mục tiêu: Đảm bảo nội dung trung thực, không đưa suy đoán khi t
 
 **Ví dụ Before → After:**
 
+### A5. Visual Hierarchy & Negative Space (Bố cục – khoảng trống)
+
+Mục tiêu: Tăng khả năng quét nội dung, giảm mệt mắt, giữ nhịp đọc đều nhau trên mobile/desktop.
+
+1) Thang chữ (Type scale) và độ ưu tiên
+- H1 2.25rem, H2 1.75–2.0rem, H3 1.4–1.5rem; body 1rem; line-height base 1.7.
+- Độ tương phản màu theo palette đã chuẩn; H2/H3 dùng brand color, body text màu trung tính.
+
+2) Reading measure (độ dài dòng)
+- Nội dung khối p/ul/ol/figure/table/section: max-width ≈ 70ch; heading có thể rộng hơn +8ch.
+- Không kéo giãn toàn màn hình trừ hero/ảnh toàn chiều rộng có chủ đích.
+
+3) Vertical rhythm (nhịp dọc) – khoảng cách trên/dưới
+- Heading có margin-top lớn hơn margin-bottom để phân đoạn tự nhiên.
+- Cắt mép (trim) phần tử đầu/cuối trong section: phần tử đầu không thêm margin-top, phần tử cuối không margin-bottom.
+- Danh sách: tăng khoảng cách giữa các mục; không để dày đặc.
+
+4) Mật độ bảng và danh sách
+- Bảng dữ liệu có padding đều, line-height 1.6–1.7; xen kẽ nền hàng (zebra) để dễ quét.
+- Danh sách checklist/bullet có bullet rõ, cách dòng thoáng; sub-list có spacing riêng nhỏ hơn.
+
+5) CTA và cụm nội dung
+- CTA block có khoảng đệm lớn (padding) và margin trên/dưới đủ tách đoạn.
+- Liên kết nội tuyến (inline) không gạch chân quá đậm; hover thể hiện màu brand chuyển sẫm.
+
+6) Mobile-first điều chỉnh
+- Giảm kích thước heading nhẹ ở < 576px; tăng khoảng trắng dọc nhỏ để tránh cuộn quá dài.
+- Bảng chuyển sang dạng block; figure/margin thu gọn.
+
+7) Checklist áp dụng trước khi publish
+- [ ] Độ dài dòng ~60–75 ký tự; không quá rộng.
+- [ ] Không có “khối đặc” chữ: tách đoạn, thêm figure/bảng sau ~6–8 đoạn.
+- [ ] Danh sách dễ đọc: đủ khoảng cách; bullet rõ.
+- [ ] CTA tách biệt, không “dính” nội dung trước/sau.
+- [ ] Bảng có zebra, padding đều; trên mobile hiển thị block với nhãn cột.
+
 Before: “Carbide Burr là dụng cụ quan trọng và hiệu quả cao trong gia công.”
 After: “Nếu bạn từng mất thời gian xử lý ba via hoặc mép sắc sau hàn, một mũi Carbide Burr đúng loại sẽ giúp rút ngắn thao tác mà không phải mài đi mài lại.”
 
