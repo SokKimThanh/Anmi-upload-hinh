@@ -88,6 +88,27 @@ carbide burr khuôn tinh, chỉnh sửa chi tiết khuôn, tạo hình khuôn b�
 | 4 | Comparison | Double vs Fine vết cắt | khuon-tinh-double-fine.webp | so sánh vết cắt khuôn tinh |  |
 | 5 | CTA | Đội hỗ trợ | trang-30_tools_diachi-editbyAI.webp | đội ngũ kỹ thuật ANMI TOOLS |  |
 
+## 10b. Technical Support Image (Footer, required)
+- Placement: Khối ảnh cuối bài (sau CTA), để tăng độ tin cậy và hỗ trợ liên hệ.
+- Source (absolute URL):
+	https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp
+- CSS compliance: Dùng cấu trúc figure.wp-block-image + figcaption (không cần class riêng). `style-carbide-burr.css` sẽ tự áp.
+- Requirements:
+	- width="1000", height khai báo theo ảnh thực tế, loading="lazy"
+	- Alt mô tả trung thực (không nhồi từ khóa)
+	- Có figcaption, giọng tự nhiên, ngắn gọn
+
+HTML pattern (chèn ở cuối bài):
+
+```html
+<figure class="wp-block-image">
+	<img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp"
+			 alt="Đội ngũ kỹ thuật AN MI TOOLS hỗ trợ tư vấn và bảo dưỡng dụng cụ"
+			 width="1000" height="560" loading="lazy">
+	<figcaption>AN MI TOOLS đồng hành cùng xưởng từ tư vấn lựa chọn đến bảo dưỡng dụng cụ.</figcaption>
+	</figure>
+```
+
 ## 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |
 |---|-------------|--------|-----------------|
@@ -116,7 +137,7 @@ Thiếu: Thông số độ đảo, bán kính chính xác, tốc độ m/min. Kh
 ## 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
-| Primary | Nhờ kỹ thuật gợi ý burr cho khuôn tinh | /contact/ | Sau H2 #4 |
+| Primary | Nhờ kỹ thuật gợi ý burr cho khuôn tinh | /contact-us/ | Sau H2 #4 |
 | Secondary | Xem hướng dẫn chọn tổng quát | /carbide-burr/huong-dan-chon-carbide-burr/ | Sau checklist |
 | Soft Support | Gửi ảnh chi tiết khuôn để tư vấn | Form/Chat | After FAQ |
 

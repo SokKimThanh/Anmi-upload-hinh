@@ -76,6 +76,27 @@ Breadcrumb: Trang chủ › Carbide Burr › Shape L
 | 5 | Limitation | Giới hạn | shape-l-limitation.webp | Giới hạn góc cố định | Có |
 | 6 | CTA | Hỗ trợ | shape-l-cta.webp | Tư vấn chọn shape | Có |
 
+### 10b. Technical Support Image (Footer, required)
+- Placement: Khối ảnh cuối bài (sau CTA), để tăng độ tin cậy và hỗ trợ liên hệ.
+- Source (absolute URL):
+	https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp
+- CSS compliance: Dùng cấu trúc figure.wp-block-image + figcaption (không cần class riêng). `style-carbide-burr.css` sẽ tự áp.
+- Requirements:
+	- width="1000", height khai báo theo ảnh thực tế, loading="lazy"
+	- Alt mô tả trung thực (không nhồi từ khóa)
+	- Có figcaption, giọng tự nhiên, ngắn gọn
+
+HTML pattern (chèn ở cuối bài):
+
+```html
+<figure class="wp-block-image">
+	<img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp"
+			 alt="Đội ngũ kỹ thuật AN MI TOOLS hỗ trợ tư vấn và bảo dưỡng dụng cụ"
+			 width="1000" height="560" loading="lazy">
+	<figcaption>AN MI TOOLS đồng hành cùng xưởng từ tư vấn lựa chọn đến bảo dưỡng dụng cụ.</figcaption>
+	</figure>
+```
+
 ### 11. FAQ Planning
 | Q | A (tóm tắt) | Intent | Keyword Target? |
 |---|-------------|--------|-----------------|
@@ -96,7 +117,7 @@ FAQ JSON: (viết sau)
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
 |----------|------|-----------|-----------|
-| Primary | Gửi góc yêu cầu + vật liệu → gợi ý pattern | /lien-he/ | Sau Ứng dụng |
+| Primary | Gửi góc yêu cầu + vật liệu → gợi ý pattern | /contact-us/ | Sau Ứng dụng |
 | Secondary | Xem hướng dẫn chọn Burr | /carbide-burr/huong-dan-chon/ | After FAQ |
 | Soft Support | Chat kỹ thuật | Chat Widget | Footer |
 
