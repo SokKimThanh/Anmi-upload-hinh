@@ -7,6 +7,7 @@
 ## 1. Identification
 - Mã bài: 00
 - Nhóm: Overview | Cut Type | Shape | Use Case
+- Phân loại bài viết: Overview | Cut Type Detail | Shape Detail | Use Case (chọn 1; định dạng vai trò bài để điều chỉnh giọng điệu, CTA và chiều sâu nội dung)
 - Primary Category (Rank Math): 
 - H1 (Post Title): 
 - Slug: 
@@ -232,3 +233,4 @@ hướng dẫn chọn carbide burr, cách chọn mũi mài carbide, chọn cut t
 - v1.0.0 (yyyy-mm-dd): Khởi tạo spec theo template Rank Math
 - v1.1.0 (yyyy-mm-dd): Cập nhật keyword cluster / schema / CTA
 - v1.2.0 (yyyy-mm-dd): Thêm Primary Category / Redirects / E-E-A-T
+- v1.3.0 (yyyy-mm-dd): Thêm "Phân loại bài viết" vào mục Identification
