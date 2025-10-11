@@ -2387,6 +2387,59 @@ CTA mềm cuối bài
 
 ---
 
+### A4. Chính sách Biên tập khi Thiếu/Không chắc Dữ liệu (BẮT BUỘC)
+
+Mục tiêu: Đảm bảo nội dung trung thực, không đưa suy đoán khi thiếu dữ liệu; điều hướng người đọc liên hệ đội kỹ thuật để xác nhận.
+
+1) Nguyên tắc cứng
+- Không đưa nội dung suy đoán hoặc số liệu ước lượng khi chưa có dữ liệu xác thực (catalogue, thử nghiệm nội bộ đã phê duyệt).
+- Nếu thông tin “không biết chắc” hoặc “chưa có số liệu”, KHÔNG thêm vào bài viết; thay vào đó hướng dẫn liên hệ đội kỹ thuật.
+- Ghi rõ ràng tại các đoạn cần minh bạch: “Chưa có dữ liệu trong catalogue dạng text – liên hệ đội kỹ thuật để xác nhận.”
+
+2) Câu mẫu minh bạch dữ liệu
+- “Catalogue hiện chưa có bảng RPM/kích thước chi tiết. Để tránh hiểu lầm, nội dung chỉ sử dụng dữ liệu đã xác thực.”
+- “Chúng tôi không đưa số liệu ước lượng khi dữ liệu chưa được xác nhận. Vui lòng liên hệ đội kỹ thuật để được kiểm tra.”
+
+3) Chuẩn hóa CTA liên hệ
+- Primary CTA URL: /contact-us/
+- Secondary CTA gợi ý: /carbide-burr/huong-dan-chon/
+- Soft support: Form/Chat (sau FAQ hoặc chân trang).
+
+4) Ảnh hỗ trợ kỹ thuật bắt buộc ở cuối bài (10b)
+- Placement: Cuối bài (sau CTA), tăng độ tin cậy và hỗ trợ liên hệ.
+- Source (absolute URL):
+  https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp
+- CSS compliance: Dùng figure.wp-block-image + figcaption. Width=1000, loading="lazy", alt trung thực.
+- HTML pattern:
+
+```html
+<figure class="wp-block-image">
+  <img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp"
+       alt="Đội ngũ kỹ thuật AN MI TOOLS hỗ trợ tư vấn và bảo dưỡng dụng cụ"
+       width="1000" height="560" loading="lazy">
+  <figcaption>AN MI TOOLS đồng hành cùng xưởng từ tư vấn lựa chọn đến bảo dưỡng dụng cụ.</figcaption>
+</figure>
+```
+
+5) Wrapper & CSS thực tế trên WordPress
+- Wrapper nội dung: .pbmit-entry-content (theme PBM Industry). CSS chung nằm trong style-carbide-burr.css và áp theo wrapper này.
+- Ưu tiên không chèn inline CSS trong bài viết; mọi tuỳ biến nên đưa vào CSS dùng chung.
+
+6) Tags (Rank Math – SEO backend)
+- Thêm mục “### Tags” ngay trước phần Performance trong file .seo.md.
+- Format: 1 dòng duy nhất, các tag cách nhau bằng dấu phẩy và 1 khoảng trắng; 8–12 tag/bài; chữ thường, không hashtag, không dấu chấm cuối.
+
+7) Lớp CSS bổ sung đã dùng trong bài 04
+- .info-box: Thẻ nội dung nổi bật trong lưới .grid-two; có nền surface-alt, viền, radius, shadow nhẹ.
+- .bullet-diff: Danh sách gạch đầu dòng nhấn mạnh so sánh/khác biệt; bullet màu secondary, khoảng cách ổn định.
+
+8) Checklist tuân thủ chính sách (soát trước khi publish)
+- [ ] Không có tuyên bố suy đoán khi thiếu dữ liệu (đối chiếu mục 6.A – Data Gaps).
+- [ ] CTA chính dùng /contact-us/; không còn /lien-he/ hay /contact/ cũ.
+- [ ] Có chèn ảnh hỗ trợ kỹ thuật (10b) đúng URL, alt, caption, width=1000, lazy.
+- [ ] Wrapper đúng .pbmit-entry-content; không rewrap khác gây xung đột CSS.
+- [ ] Mục “### Tags” đúng vị trí và đúng định dạng 1 dòng.
+
 **Ví dụ Before → After:**
 
 Before: “Carbide Burr là dụng cụ quan trọng và hiệu quả cao trong gia công.”
