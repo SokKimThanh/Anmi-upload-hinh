@@ -1110,4 +1110,47 @@ Each image must:
 .pbmit-entry-content .w-600 { max-width: 37.5rem; }
 .pbmit-entry-content .center { margin-left: auto; margin-right: auto; }
 
+/* =============================================
+   ARTICLE-SPECIFIC ENHANCEMENTS (Cut Type 04)
+   ============================================= */
+/* Info boxes used in mechanism/benefits sections */
+.pbmit-entry-content .info-box {
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.pbmit-entry-content .info-box h3 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.pbmit-entry-content .grid-two .info-box { height: 100%; }
+
+/* Bullet list variant for contrastive notes */
+.pbmit-entry-content .bullet-diff {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 var(--spacing-md);
+}
+
+.pbmit-entry-content .bullet-diff li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.pbmit-entry-content .bullet-diff li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  color: var(--color-secondary);
+  font-weight: 700;
+  line-height: 1;
+}
 /* End of style-carbide-burr.css */

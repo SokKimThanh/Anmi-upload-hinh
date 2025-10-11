@@ -109,8 +109,10 @@ FAQ JSON: (viết sau)
 - Article + FAQPage
 
 ### 13. Data Boundaries
-- Không đưa RPM cụ thể
-- Không nêu % tuổi thọ so sánh
+- Không đưa RPM cụ thể.
+- Không nêu % tuổi thọ so sánh.
+- Không thêm nội dung suy đoán hoặc con số ước lượng khi chưa có dữ liệu xác thực (catalogue hoặc thử nghiệm nội bộ đã phê duyệt).
+- Nếu thông tin “không biết chắc” hoặc “chưa có số liệu”, KHÔNG thêm vào bài; thay vào đó hướng dẫn liên hệ đội kỹ thuật để xác nhận.
 
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |

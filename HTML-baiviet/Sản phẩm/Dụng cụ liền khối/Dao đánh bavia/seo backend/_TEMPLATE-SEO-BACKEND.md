@@ -140,7 +140,10 @@ FAQ JSON (mẫu – điền khi finalize):
 
 ## 13. Data Boundaries & Transparency
 Thiếu (nếu có): RPM / D-L-d đầy đủ / Coating / Giá.  
-Nguyên tắc: Luôn ghi rõ “Chưa có dữ liệu trong catalogue dạng text – liên hệ đội kỹ thuật”.
+Nguyên tắc:
+- Không đưa nội dung suy đoán hoặc con số ước lượng khi chưa có dữ liệu xác thực (catalogue, thử nghiệm nội bộ được phê duyệt).
+- Nếu thông tin “không biết chắc” hoặc “chưa có số liệu”, KHÔNG thêm vào bài viết; thay vào đó hướng dẫn liên hệ đội kỹ thuật để được xác nhận.
+- Ghi rõ: “Chưa có dữ liệu trong catalogue dạng text – liên hệ đội kỹ thuật”.
 
 ## 13b. Rủi Ro & Giảm Thiểu (Use Case Only)
 | Rủi ro | Khi nào xảy ra | Hậu quả | Biện pháp giảm thiểu | Ghi chú |
@@ -195,6 +198,7 @@ Tone: Trợ giúp, không “Mua ngay”, tránh capslock.
 | No duplicate intent |  |  |
 | Alt text đầy đủ |  |  |
 | Redirects active (nếu có) |  |  |
+| Không có tuyên bố suy đoán khi thiếu dữ liệu |  | Kiểm tra lại mục 13 |
 
 ## 17b. Tags (Comma-separated)
 - Placement: Thêm mục "### Tags" ngay trước phần Performance (mục 18) trong từng file .seo.md.
