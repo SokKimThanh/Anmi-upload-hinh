@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AN MI Tools Carbide Burr Styles
  * Description: Enqueue CSS chuyên dụng cho bài viết Carbide Burr (chỉ tải khi cần).
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: AN MI TOOLS
  * Text Domain: anmi-carbide-burr
  */
@@ -16,7 +16,6 @@ use WP_Post;
 class ANMI_Carbide_Burr_Styles {
 
     private const STYLE_HANDLE   = 'anmi-carbide-burr';
-    private const STYLE_VERSION  = '1.1.0';
     private const STYLE_FILENAME = 'style-carbide-burr.css';
 
     public function __construct() {
@@ -26,12 +25,11 @@ class ANMI_Carbide_Burr_Styles {
     }
 
     public function maybe_enqueue_styles() {
-        if ( ! is_singular() ) {
+        if ( ! is_singular() || is_feed() || is_embed() ) {
             return;
         }
 
         $post = get_queried_object();
-
         if ( ! $post instanceof WP_Post ) {
             return;
         }
@@ -48,7 +46,6 @@ class ANMI_Carbide_Burr_Styles {
         }
 
         global $post;
-
         if ( $post instanceof WP_Post && $this->should_enqueue_for_post( $post ) ) {
             $this->enqueue_style( '-admin' );
         }
@@ -56,25 +53,25 @@ class ANMI_Carbide_Burr_Styles {
 
     public function enqueue_block_editor_assets() {
         global $post;
-
         if ( $post instanceof WP_Post && $this->should_enqueue_for_post( $post ) ) {
             $this->enqueue_style( '-editor' );
         }
     }
 
     private function enqueue_style( string $suffix = '' ) : void {
-        wp_enqueue_style(
-            self::STYLE_HANDLE . $suffix,
-            plugin_dir_url( __FILE__ ) . self::STYLE_FILENAME,
-            array(),
-            self::STYLE_VERSION,
-            'all'
-        );
+        $src      = plugins_url( self::STYLE_FILENAME, __FILE__ );
+        $src      = apply_filters( 'anmi_carbide_burr_style_url', $src, $suffix );
+        $handle   = apply_filters( 'anmi_carbide_burr_style_handle', self::STYLE_HANDLE . $suffix, $suffix );
+        $ver_file = plugin_dir_path( __FILE__ ) . self::STYLE_FILENAME;
+        $version  = file_exists( $ver_file ) ? (string) filemtime( $ver_file ) : '1.1.1';
+
+        // Đăng ký rồi enqueue để tránh trùng lặp và cho phép phụ thuộc nếu cần
+        wp_register_style( $handle, $src, array(), $version, 'all' );
+        wp_enqueue_style( $handle );
     }
 
     private function should_enqueue_for_post( WP_Post $post ) : bool {
         $post_type = get_post_type( $post );
-
         if ( 'product' === $post_type ) {
             return true;
         }
@@ -90,14 +87,15 @@ class ANMI_Carbide_Burr_Styles {
             }
         }
 
-        $slug             = (string) $post->post_name;
-        $permalink        = get_permalink( $post );
-        $slug_contains    = strpos( $slug, 'carbide-burr' ) !== false;
-        $url_contains     = is_string( $permalink ) && strpos( $permalink, '/carbide-burr/' ) !== false;
-        $meta_flagged     = get_post_meta( $post->ID, '_anmi_enable_carbide_burr_css', true );
-        $meta_is_enabled  = in_array( $meta_flagged, array( '1', 1, true, 'true', 'yes' ), true );
+        $slug        = (string) $post->post_name;
+        $permalink   = (string) get_permalink( $post );
+        $slug_hit    = strpos( $slug, 'carbide-burr' ) !== false;
+        $url_hit     = strpos( $permalink, 'carbide-burr' ) !== false;
 
-        if ( $slug_contains || $url_contains || $meta_is_enabled ) {
+        $meta_flag   = get_post_meta( $post->ID, '_anmi_enable_carbide_burr_css', true );
+        $meta_on     = in_array( $meta_flag, array( '1', 1, true, 'true', 'yes' ), true );
+
+        if ( $slug_hit || $url_hit || $meta_on ) {
             return true;
         }
 
