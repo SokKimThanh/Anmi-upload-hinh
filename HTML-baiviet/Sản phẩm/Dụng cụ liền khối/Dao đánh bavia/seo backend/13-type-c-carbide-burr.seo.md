@@ -4,6 +4,7 @@
 - Mã bài: 13
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Shape Detail
 - H1: Carbide Burr Shape C (Cylinder End Ball): Tối ưu bo mép sâu
 - Slug: type-c-carbide-burr
 - Legacy Redirects: (trống)

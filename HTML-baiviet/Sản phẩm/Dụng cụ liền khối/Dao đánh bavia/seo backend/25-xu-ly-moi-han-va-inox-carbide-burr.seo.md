@@ -4,6 +4,7 @@
 - Mã bài: 25
 - Nhóm: Use Case
 - Primary Category (Rank Math): Carbide Burr Use Case
+- Phân loại bài viết: Use Case
 - H1 (Post Title): Xử lý mối hàn & bo cạnh inox bằng carbide burr: chọn cut & giảm bám phoi
 - Slug: xu-ly-moi-han-va-inox-carbide-burr
 - Legacy Slugs / Redirect 301: 
@@ -67,7 +68,7 @@ Checklist:
 | chipbreaker cut burr | /carbide-burr/chipbreaker-cut-carbide-burr/ | Giảm phoi dài | H2 #2 |
 | type-f flame burr | /carbide-burr/type-f-carbide-burr/ | Bo cạnh cong | H2 #3 |
 | type-l cone 60 burr | /carbide-burr/type-l-carbide-burr/ | Chân mối hàn hẹp | H2 #3 |
-| tư vấn chọn burr inox | /contact/ | CTA | Cuối bài |
+| tư vấn chọn burr inox | /contact-us/ | CTA | Cuối bài |
 
 Hub Matrix:
 - Lên: huong-dan-chon

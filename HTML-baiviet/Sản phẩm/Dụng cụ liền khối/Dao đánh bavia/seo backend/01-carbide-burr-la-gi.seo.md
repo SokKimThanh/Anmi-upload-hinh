@@ -4,6 +4,7 @@
 - Mã bài: 01
 - Nhóm: Overview
 - Primary Category (Rank Math): Carbide Burr
+- Phân loại bài viết: Overview
 - H1 (Post Title): Carbide Burr là gì? Ứng dụng và cách phân loại trong gia công kim loại
 - Slug: carbide-burr-la-gi
 - Legacy Slugs / Redirect 301: (trống)

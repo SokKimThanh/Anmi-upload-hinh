@@ -4,6 +4,7 @@
 - Mã bài: 10
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Cut Type Detail
 - H1: Chip Breaker Carbide Burr: Giảm phoi dài & kẹt
 - Slug: chipbreaker-cut-carbide-burr
 - Legacy Redirects: (trống)

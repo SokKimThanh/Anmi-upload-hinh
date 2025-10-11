@@ -4,6 +4,7 @@
 - Mã bài: 26
 - Nhóm: Use Case
 - Primary Category: Carbide Burr Use Case
+- Phân loại bài viết: Use Case
 - H1: Tạo hình & hiệu chỉnh chi tiết khuôn tinh bằng carbide burr: lựa chọn hình & cut ổn định
 - Slug: tao-hinh-chi-tiet-khuon-tinh-carbide-burr
 - Legacy Slugs: 
@@ -67,7 +68,7 @@ Checklist:
 | type-c cylindrical end | /carbide-burr/type-c-carbide-burr/ | Thành thẳng | H2 #3 |
 | type-g ball burr | /carbide-burr/type-g-carbide-burr/ | Chuyển tiếp cong | H2 #3 |
 | type-d taper burr | /carbide-burr/type-d-carbide-burr/ | Rãnh nghiêng | H2 #3 |
-| tư vấn chỉnh sửa khuôn | /contact/ | CTA | Cuối bài |
+| tư vấn chỉnh sửa khuôn | /contact-us/ | CTA | Cuối bài |
 
 Hub Matrix: lên hướng dẫn chọn, ngang cut tinh, xuống các shape cụ thể.
 

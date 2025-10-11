@@ -4,6 +4,7 @@
 - Mã bài: 23
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Shape Detail
 - H1: Carbide Burr Shape N (Inverted Cone): Xử lý mép trong & undercut
 - Slug: type-n-carbide-burr
 - Legacy Redirects: (trống)

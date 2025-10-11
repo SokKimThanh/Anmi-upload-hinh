@@ -4,6 +4,7 @@
 - Mã bài: 27
 - Nhóm: Use Case
 - Primary Category: Carbide Burr Use Case
+- Phân loại bài viết: Use Case
 - H1: Xử lý cạnh & làm sạch composite / carbon bằng carbide burr: giảm bụi & mẻ lớp
 - Slug: xu-ly-composite-carbon-carbide-burr
 - Legacy Slugs: 
@@ -67,7 +68,7 @@ Checklist:
 | type-c cylindrical burr | /carbide-burr/type-c-carbide-burr/ | Cạnh thẳng | H2 #3 |
 | type-g ball burr | /carbide-burr/type-g-carbide-burr/ | Góc cong / lỗ chuyển tiếp | H2 #3 |
 | type-f flame burr | /carbide-burr/type-f-carbide-burr/ | Biên dạng cong dài | H2 #3 |
-| tư vấn xử lý composite | /contact/ | CTA | Cuối bài |
+| tư vấn xử lý composite | /contact-us/ | CTA | Cuối bài |
 
 Hub Matrix: lên hướng dẫn chọn; ngang cut tinh; xuống các shape C/F/G.
 

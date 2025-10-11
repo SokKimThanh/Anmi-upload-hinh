@@ -4,6 +4,7 @@
 - Mã bài: 07
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Cut Type Detail
 - H1: Fine Cut Carbide Burr: Khi cần bề mặt tinh hơn
 - Slug: fine-cut-carbide-burr
 - Legacy Redirects: (trống)

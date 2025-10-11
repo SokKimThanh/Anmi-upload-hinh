@@ -4,6 +4,7 @@
 - Mã bài: 11
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Shape Detail
 - H1: Carbide Burr Shape A (Cylinder): Khi nào dùng dạng trụ phẳng
 - Slug: type-a-carbide-burr
 - Legacy Redirects: (trống)

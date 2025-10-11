@@ -77,6 +77,7 @@ Không ghi tốc độ RPM; không dùng % nhanh hơn nếu chưa có số liệ
 - Mã bài: 05
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Cut Type Detail
 - H1: Single Cut Carbide Burr: Đặc điểm & Ứng dụng
 - Slug: single-cut-carbide-burr
 - Legacy Redirects: (trống)

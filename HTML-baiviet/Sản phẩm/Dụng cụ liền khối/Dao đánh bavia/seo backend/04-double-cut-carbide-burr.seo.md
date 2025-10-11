@@ -6,6 +6,7 @@
 - Mã bài: 04
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Cut Type Detail
 - H1: Double Cut Carbide Burr: Khi nào tối ưu?
 - Slug: double-cut-carbide-burr
 - Legacy Redirects: (trống)

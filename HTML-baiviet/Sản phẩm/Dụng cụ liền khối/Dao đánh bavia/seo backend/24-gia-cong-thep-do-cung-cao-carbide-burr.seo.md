@@ -67,7 +67,7 @@ Checklist:
 | fine cut carbide burr | /carbide-burr/fine-cut-carbide-burr/ | Liên quan bề mặt gần hoàn thiện | H2 #2 |
 | type-d taper burr | /carbide-burr/type-d-carbide-burr/ | Hình dạng cho rãnh nghiêng | H2 #3 |
 | type-n inverted cone | /carbide-burr/type-n-carbide-burr/ | Xử lý hốc ngược | H2 #3 |
-| chọn carbide burr thép cứng (tư vấn) | /contact/ | CTA hỗ trợ | Cuối bài |
+| chọn carbide burr thép cứng (tư vấn) | /contact-us/ | CTA hỗ trợ | Cuối bài |
 
 Hub Matrix:
 - Liên kết lên: hướng dẫn chọn, so sánh nếu cần

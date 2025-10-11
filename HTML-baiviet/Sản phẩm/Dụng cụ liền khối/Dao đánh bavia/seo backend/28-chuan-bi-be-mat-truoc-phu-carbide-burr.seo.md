@@ -4,6 +4,7 @@
 - Mã bài: 28
 - Nhóm: Use Case
 - Primary Category: Carbide Burr Use Case
+- Phân loại bài viết: Use Case
 - H1: Chuẩn bị bề mặt trước khi phủ bằng carbide burr: làm sạch mà không hỏng biên dạng
 - Slug: chuan-bi-be-mat-truoc-phu-carbide-burr
 - Legacy Slugs: 
@@ -67,7 +68,7 @@ Checklist:
 | type-f flame burr | /carbide-burr/type-f-carbide-burr/ | Bo cạnh cong nhẹ | H2 #3 |
 | type-g ball burr | /carbide-burr/type-g-carbide-burr/ | Rounding cạnh cục bộ | H2 #3 |
 | type-c cylindrical burr | /carbide-burr/type-c-carbide-burr/ | Làm sạch bavia phẳng | H2 #2 |
-| tư vấn chuẩn bị bề mặt | /contact/ | CTA | Cuối bài |
+| tư vấn chuẩn bị bề mặt | /contact-us/ | CTA | Cuối bài |
 
 Hub Matrix: lên hướng dẫn chọn; ngang cut double/single; xuống shapes C/F/G.
 

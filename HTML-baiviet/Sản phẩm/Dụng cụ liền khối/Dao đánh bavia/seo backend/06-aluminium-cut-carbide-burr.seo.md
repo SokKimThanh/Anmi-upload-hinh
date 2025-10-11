@@ -39,6 +39,7 @@
 - Mã bài: 06
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Cut Type Detail
 - H1: Aluminium Cut Carbide Burr: Tối ưu vật liệu mềm
 - Slug: aluminium-cut-carbide-burr
 - Legacy Redirects: (trống)

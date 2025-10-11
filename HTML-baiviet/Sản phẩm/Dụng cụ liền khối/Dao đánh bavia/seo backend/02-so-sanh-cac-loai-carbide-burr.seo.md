@@ -4,6 +4,7 @@
 - Mã bài: 02
 - Nhóm: Overview (So sánh)
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Overview
 - H1: So sánh các loại Carbide Burr: Cut Type & Shape A–N
 - Slug: so-sanh-cac-loai-carbide-burr
 - Legacy Redirects: (trống)
