@@ -65,11 +65,21 @@
             margin-bottom: 12px;
             font-size: 13px;
             line-height: 1.8;
+            word-break: break-word;
         }
         
         .contact-item strong {
             display: block;
             margin-bottom: 3px;
+        }
+        
+        .contact-item a {
+            color: #c2185b;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
         }
         
         .education-item {
@@ -160,6 +170,15 @@
             margin-bottom: 5px;
         }
         
+        .job-description a {
+            color: #c2185b;
+            text-decoration: none;
+        }
+        
+        .job-description a:hover {
+            text-decoration: underline;
+        }
+        
         .summary-section ul {
             margin-left: 20px;
             font-size: 13px;
@@ -189,6 +208,15 @@
             margin-left: 15px;
         }
         
+        .project-desc a {
+            color: #c2185b;
+            text-decoration: none;
+        }
+        
+        .project-desc a:hover {
+            text-decoration: underline;
+        }
+        
         @media print {
             body {
                 background: white;
@@ -212,8 +240,9 @@
                     <strong>21 Street 5 Phuoc Binh Ward</strong>
                     Thu Duc City, HCMC<br>
                     092 496 4226<br>
-                    thanhsk1991@gmail.com<br>
-                    linkedin.com/in/thanh-sok-kim-374aa8126
+                    <a href="mailto:thanhsk1991@gmail.com">thanhsk1991@gmail.com</a><br>
+                    <a href="https://github.com/SokKimThanh" target="_blank">github.com/SokKimThanh</a><br>
+                    <a href="https://linkedin.com/in/thanh-sok-kim-374aa8126" target="_blank">linkedin.com/in/thanh-sok-kim-374aa8126</a>
                 </div>
             </div>
             
@@ -241,7 +270,7 @@
                 <h2 class="section-title">Core Skills</h2>
                 
                 <div class="skill-item">
-                    <div class="skill-name">C# & .NET 6</div>
+                    <div class="skill-name">C# & .NET 9</div>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 90%"></div>
                     </div>
@@ -249,6 +278,13 @@
                 
                 <div class="skill-item">
                     <div class="skill-name">ASP.NET Core Web API</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Clean Architecture</div>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 85%"></div>
                     </div>
@@ -269,7 +305,7 @@
                 </div>
                 
                 <div class="skill-item">
-                    <div class="skill-name">Angular & Frontend</div>
+                    <div class="skill-name">Angular & TypeScript</div>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 80%"></div>
                     </div>
@@ -297,7 +333,7 @@
             
             <div class="objective-section">
                 <h2 class="section-title">Professional Summary</h2>
-                <p>Results-driven Full-Stack Developer with 8+ years of experience in software development. Specialized in .NET 6, ASP.NET Core Web API, and Blazor (Server & WebAssembly). Proven track record in building efficient, user-friendly web applications with seamless frontend-backend integration. Proficient in Clean Architecture, database management, and UI/UX best practices. Strong foundation in Angular development with 3+ years of production experience.</p>
+                <p>Results-driven Full-Stack Developer with 8+ years of experience in software development. Specialized in .NET 9, ASP.NET Core Web API, Clean Architecture, and Blazor (Server & WebAssembly). Proven track record in building efficient, scalable web applications with seamless frontend-backend integration. Strong foundation in Angular development with 3+ years of production experience. Passionate about modern development practices and continuous learning.</p>
             </div>
             
             <div class="experience-section">
@@ -305,13 +341,16 @@
                 
                 <div class="experience-item">
                     <div class="job-title">Graphic Designer</div>
-                    <div class="company-info">Anmi Tools | Mar 2022 - Sep 2022</div>
+                    <div class="company-info">Anmi Tools | Mar 2022 - Sep 2022 (6 months)</div>
                     <div class="job-description">
                         <ul>
-                            <li>Designed marketing materials including flyers, brochures, and large-format posters</li>
+                            <li>Designed impactful marketing materials including flyers, brochures, and large-format posters</li>
+                            <li>Created exhibition poster for tools showcase event (highlight achievement)</li>
+                            <li>Developed comprehensive product introduction materials using Figma</li>
                             <li>Ensured brand consistency across all promotional materials</li>
-                            <li>Collaborated with marketing team to deliver creative solutions</li>
+                            <li>Prototype Portfolio: <a href="https://www.figma.com/proto/YpuUsLv8n1c8LSO7ZvLTvf/PCD---FILE-AN-MI-PROFILE?node-id=5-9&t=sF9HqPGUzvqTUllG-1" target="_blank">View Figma Demo</a></li>
                         </ul>
+                        <strong>Tools:</strong> Figma, Adobe Photoshop, Illustrator
                     </div>
                 </div>
                 
@@ -380,6 +419,19 @@
                 <h2 class="section-title">Key Projects</h2>
                 
                 <div class="project-item">
+                    <div class="project-title">LMS Mini - Learning Management System Backend API (Mar 2025 - Jun 2025)</div>
+                    <div class="project-desc">
+                        <strong>Personal Research Project - .NET 9 Backend Development</strong><br>
+                        • Developed comprehensive backend API for Learning Management System using .NET 9<br>
+                        • Implemented Clean Architecture with 5-layer separation for high scalability<br>
+                        • Built complete API endpoints for course management, student enrollment, assessment, and progress tracking<br>
+                        • Applied modern backend practices including Repository Pattern, CQRS, and Dependency Injection<br>
+                        • <strong>Technologies:</strong> .NET 9, ASP.NET Core Web API, Entity Framework Core, Clean Architecture, SQL Server<br>
+                        • <strong>GitHub:</strong> <a href="https://github.com/SokKimThanh/LmsMini.git" target="_blank">github.com/SokKimThanh/LmsMini</a>
+                    </div>
+                </div>
+                
+                <div class="project-item">
                     <div class="project-title">Self-Learning Projects - Blazor (Feb 2025 - Aug 2025)</div>
                     <div class="project-desc">
                         • <strong>Barbershop Booking Application:</strong> Comprehensive booking system for haircut scheduling using Blazor Server/WASM, .NET 6, SQL Server with responsive Bootstrap 6 UI<br>
@@ -388,9 +440,10 @@
                 </div>
                 
                 <div class="project-item">
-                    <div class="project-title">Thu Duc College of Technology (2022 - 2025)</div>
+                    <div class="project-title">Thu Duc College of Technology Projects (2022 - 2025)</div>
                     <div class="project-desc">
-                        • <strong>Cinema Management System:</strong> Built with .NET (C#), SQL Server, and Git version control<br>
+                        • <strong>Cinema Management System (Team Leader):</strong> Led 3-member team to develop cinema management application with CRUD functionalities using LINQ in three-layer model. Designed Fluent Design UI for improved UX. Built with .NET Framework 4.7.3, DevExpress, Visual Studio, Git<br>
+                        • <strong>GitHub:</strong> <a href="https://github.com/SokKimThanh/PTUD_CMProject.git" target="_blank">github.com/SokKimThanh/PTUD_CMProject</a><br><br>
                         • <strong>Multi-page Landing Pages:</strong> Created using HTML5, CSS3, Bootstrap, and JavaScript<br>
                         • <strong>Git History Aggregator App:</strong> Desktop application using WinForms (.NET Framework 4.7), C#, ADO.NET for Git repository analysis
                     </div>
@@ -410,13 +463,13 @@
             <div class="technical-skills-section" style="margin-top: 30px;">
                 <h2 class="section-title">Technical Proficiencies</h2>
                 <div style="font-size: 13px; line-height: 2;">
-                    <p><strong>Languages & Frameworks:</strong> C#, .NET 6, .NET Core, ASP.NET Core Web API, Blazor (Server & WebAssembly), Angular, TypeScript, JavaScript</p>
-                    <p><strong>Architecture & Patterns:</strong> Clean Architecture, Use-case Driven Design, Repository Pattern, State Management, MVC</p>
-                    <p><strong>Database:</strong> SQL Server, MySQL, Entity Framework Core, ADO.NET, Database Design, Indexing, Data Seeding</p>
+                    <p><strong>Languages & Frameworks:</strong> C#, .NET 9, .NET 6, .NET Core, ASP.NET Core Web API, Blazor (Server & WebAssembly), Angular, TypeScript, JavaScript</p>
+                    <p><strong>Architecture & Patterns:</strong> Clean Architecture (5-layer), Use-case Driven Design, Repository Pattern, CQRS, State Management, MVC, Dependency Injection</p>
+                    <p><strong>Database:</strong> SQL Server, MySQL, Entity Framework Core, ADO.NET, Database Design, Indexing, Data Seeding, LINQ</p>
                     <p><strong>Frontend & UI:</strong> HTML5, CSS3, SCSS, Bootstrap, Angular Material, Flex Layout, JavaScript Interop, RxJS, EditForm, Data Annotation Validation</p>
-                    <p><strong>Design Tools:</strong> Figma, Adobe Photoshop, Illustrator, Premiere Pro, Corel Draw</p>
+                    <p><strong>Design Tools:</strong> Figma, Adobe Photoshop, Illustrator, Premiere Pro, Corel Draw, DevExpress</p>
                     <p><strong>DevOps & Tools:</strong> Git/GitHub, Swagger/OpenAPI, Postman, Visual Studio, VS Code, JIRA, Source Tree, FileZilla</p>
-                    <p><strong>Methodologies:</strong> Agile/Scrum, RESTful API Design, Component-Based Architecture</p>
+                    <p><strong>Methodologies:</strong> Agile/Scrum, RESTful API Design, Component-Based Architecture, Test-Driven Development</p>
                 </div>
             </div>
         </div>
