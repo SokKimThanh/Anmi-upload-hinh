@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Sok Kim Thanh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .left-column {
+            background: #e0e0e0;
+            width: 35%;
+            padding: 40px 30px;
+        }
+        
+        .right-column {
+            width: 65%;
+            padding: 40px 40px;
+        }
+        
+        .profile-img {
+            width: 100%;
+            height: 280px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .section-title {
+            color: #c2185b;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .left-column .section-title {
+            color: #c2185b;
+        }
+        
+        .contact-item {
+            margin-bottom: 12px;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        
+        .contact-item strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+        
+        .education-item {
+            margin-bottom: 25px;
+        }
+        
+        .education-item h3 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .education-item p {
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+        
+        .skills-section {
+            margin-top: 30px;
+        }
+        
+        .skill-item {
+            margin-bottom: 18px;
+        }
+        
+        .skill-name {
+            font-size: 13px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        
+        .skill-bar {
+            width: 100%;
+            height: 8px;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #ec407a, #f48fb1);
+            border-radius: 4px;
+        }
+        
+        .objective-section {
+            margin-bottom: 40px;
+        }
+        
+        .objective-section p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .experience-item {
+            margin-bottom: 35px;
+        }
+        
+        .job-title {
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .company-info {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        
+        .job-description {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .job-description ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        
+        .job-description li {
+            margin-bottom: 5px;
+        }
+        
+        .summary-section ul {
+            margin-left: 20px;
+            font-size: 13px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .summary-section ul li {
+            margin-bottom: 8px;
+        }
+        
+        .project-item {
+            margin-bottom: 25px;
+        }
+        
+        .project-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .project-desc {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #555;
+            margin-left: 15px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="profile-img">
+                <img src="https://raw.githubusercontent.com/SokKimThanh/Anmi-upload-hinh/master/HTML-baiviet/S%E1%BA%A3n%20ph%E1%BA%A9m/D%E1%BB%A5ng%20c%E1%BB%A5%20li%E1%BB%81n%20kh%E1%BB%91i/Dao%20%C4%91%C3%A1nh%20bavia/SokKimThanh-Avatar2.png" alt="Sok Kim Thanh">
+            </div>
+            
+            <div class="contact-section">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-item">
+                    <strong>21 Street 5 Phuoc Binh Ward</strong>
+                    Thu Duc City, HCMC<br>
+                    092 496 4226<br>
+                    thanhsk1991@gmail.com<br>
+                    linkedin.com/in/thanh-sok-kim-374aa8126
+                </div>
+            </div>
+            
+            <div class="education-section" style="margin-top: 40px;">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-item">
+                    <h3>Thu Duc College of Technology</h3>
+                    <p>Practical Engineer Degree</p>
+                    <p>Information Technology</p>
+                    <p>2022 - May 2025 (Expected)</p>
+                    <p>GPA: 7.46/10 (Good)</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Saigon Vocational College</h3>
+                    <p>Software Development</p>
+                    <p>2010 - 2016</p>
+                    <p>Quang Trung Software City</p>
+                    <p>District 12, HCMC</p>
+                </div>
+            </div>
+            
+            <div class="skills-section">
+                <h2 class="section-title">Core Skills</h2>
+                
+                <div class="skill-item">
+                    <div class="skill-name">C# & .NET 6</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">ASP.NET Core Web API</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Blazor Server & WASM</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Entity Framework Core</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Angular & Frontend</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">SQL Server</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">UI/UX Design</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <h1 style="font-size: 36px; color: #c2185b; margin-bottom: 10px; font-weight: 700;">THANH SOK KIM</h1>
+            <p style="font-size: 16px; color: #666; margin-bottom: 35px; font-weight: 500;">.NET & BLAZOR DEVELOPER</p>
+            
+            <div class="objective-section">
+                <h2 class="section-title">Professional Summary</h2>
+                <p>Results-driven .NET & Blazor Developer with hands-on experience in .NET 6, ASP.NET Core Web API, and Blazor Server/WebAssembly. Adept at designing and delivering efficient, user-friendly web applications with seamless frontend-backend integration. Proficient in Clean Architecture, database management, and UI/UX best practices to create high-quality, scalable solutions.</p>
+            </div>
+            
+            <div class="experience-section">
+                <h2 class="section-title">Work Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="company-info">Innotech Vietnam (Onsite at Manulife) | Dec 2020 - Mar 2021</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Built Angular UI modules from Figma designs</li>
+                            <li>Integrated APIs for customer and contract data</li>
+                            <li>Ensured cross-platform compatibility and responsiveness</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-title">Marketing & Frontend Staff</div>
+                    <div class="company-info">Netspace Career Guidance Enterprise | Jul 2020 - Dec 2020</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Developed landing pages & websites</li>
+                            <li>Created reusable UI templates</li>
+                            <li>Improved UX for higher engagement</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="company-info">Wahsis Co., Ltd. | Sep 2017 - Jun 2020</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Built and maintained Angular-based web apps for smart home/apartment management</li>
+                            <li>Integrated REST APIs and optimized UI performance</li>
+                            <li>Collaborated with cross-functional teams to meet project milestones</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-title">Graphic Designer</div>
+                    <div class="company-info">Anmi Tools | Mar 2022 - Sep 2022</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Designed marketing materials (flyers, brochures, large-format posters)</li>
+                            <li>Ensured brand consistency in all promotional materials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-section">
+                <h2 class="section-title">Key Projects</h2>
+                
+                <div class="project-item">
+                    <div class="project-title">Self-Learning Projects - Blazor (Feb 2025 - Aug 2025)</div>
+                    <div class="project-desc">
+                        • <strong>Barbershop Booking Application:</strong> Developed booking system for haircut scheduling using Blazor Server/WASM, .NET 6, SQL Server with responsive Bootstrap 6 UI<br>
+                        • <strong>Holiday Sales Web Application:</strong> Seasonal sales platform with product, order management using Blazor, ASP.NET Core Web API, mobile-friendly UI
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-title">Thu Duc College of Technology (2022 - 2025)</div>
+                    <div class="project-desc">
+                        • <strong>Cinema Management System:</strong> .NET (C#), SQL Server, Git<br>
+                        • <strong>Multi-page Landing Pages:</strong> HTML5, CSS3, Bootstrap, JavaScript<br>
+                        • <strong>Git History Aggregator App:</strong> WinForms (.NET Framework 4.7), C#, ADO.NET
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-title">Internship Management System - VNITO 2015 (May 2015 - Apr 2016)</div>
+                    <div class="project-desc">
+                        • Saigon Vocational College project<br>
+                        • Stack: NodeJS backend, JavaScript, Bootstrap, Figma, Git<br>
+                        • Part of the first official VNITO training cohort
+                    </div>
+                </div>
+            </div>
+            
+            <div class="technical-skills-section" style="margin-top: 30px;">
+                <h2 class="section-title">Technical Proficiencies</h2>
+                <div style="font-size: 13px; line-height: 2;">
+                    <p><strong>Languages & Frameworks:</strong> C#, .NET 6, .NET Core, ASP.NET Core Web API, Blazor (Server & WebAssembly)</p>
+                    <p><strong>Architecture:</strong> Clean Architecture, Use-case Driven Design, Repository Pattern, State Management</p>
+                    <p><strong>Database:</strong> SQL Server, Entity Framework Core, Database Design, Indexing, Data Seeding, Mock API</p>
+                    <p><strong>Frontend & UI:</strong> Bootstrap, JavaScript Interop, EditForm, Data Annotation Validation, Custom Components</p>
+                    <p><strong>Design Tools:</strong> Figma, Adobe Photoshop, Illustrator, Premiere Pro</p>
+                    <p><strong>DevOps & Tools:</strong> Swagger/OpenAPI, Postman, Git/GitHub, API Documentation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
