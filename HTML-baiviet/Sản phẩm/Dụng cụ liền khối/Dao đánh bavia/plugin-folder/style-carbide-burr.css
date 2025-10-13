@@ -1221,4 +1221,35 @@ Each image must:
   .pbmit-entry-content h2, .woocommerce-tabs h2, .wc-tabs-wrapper h2, .woocommerce-Tabs-panel h2, .woocommerce-Tabs-panel--description h2, .product .entry-content h2 { font-size: 1.6rem; }
   .pbmit-entry-content h3, .woocommerce-tabs h3, .wc-tabs-wrapper h3, .woocommerce-Tabs-panel h3, .woocommerce-Tabs-panel--description h3, .product .entry-content h3 { font-size: 1.25rem; }
 }
+/* Download button */
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow-shallow);
+  transition: var(--transition-base);
+}
+
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .download-button:hover,
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .download-button:focus {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .download-button:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .download-button .icon {
+  width: 1.05em;
+  height: 1.05em;
+  display: inline-block;
+}
 /* End of style-carbide-burr.css */
