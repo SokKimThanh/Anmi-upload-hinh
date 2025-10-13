@@ -5,6 +5,7 @@
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng trụ phẳng chuyên gia công bề mặt, loại bỏ bavia và tạo biên dạng mặt phẳng trên các chi tiết kim loại.
 - H1: Carbide Burr Shape A (Cylinder): Khi nào dùng dạng trụ phẳng
 - Slug: type-a-carbide-burr
 - Legacy Redirects: (trống)
@@ -28,7 +29,7 @@
 
 ### 4. Meta Fields
 - Title: Carbide Burr Shape A (Cylinder): Khi nào dùng dạng trụ phẳng? | AN MI TOOLS
-- Meta Description: Shape A (Cylinder) dùng để gọt phẳng, phá bavia mặt phẳng & chuẩn bị bề mặt. Khi nào nên chọn và các giới hạn cạnh.
+- Meta Description: Carbide Burr Shape A (Cylinder) chuyên gia công bề mặt chi tiết, gọt phẳng và phá bavia mặt phẳng. Hướng dẫn chọn đúng và giới hạn ứng dụng.
 - Canonical: https://anmitools.com/carbide-burr/shape-a/
 - Robots: index, follow
 - Cornerstone/Pillar: FALSE
