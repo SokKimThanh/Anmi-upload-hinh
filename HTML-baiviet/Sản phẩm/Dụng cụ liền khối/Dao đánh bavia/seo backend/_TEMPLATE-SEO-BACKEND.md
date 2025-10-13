@@ -93,6 +93,13 @@ Guidelines:
 - WebP, width 1000px, lazy, alt mô tả trung thực.
 - Không tạo alt bán hàng; ưu tiên chức năng/hành động.
 
+### 10c. Download Document (PDF)
+- Official PDF: https://anmitools.com/wp-content/uploads/2025/09/6.-Carbider-Burr.pdf
+- Placement: Sau hình minh họa chính (figure) trong mục “1. [Định nghĩa Shape]” của các bài 11–23.
+- HTML snippet (paste as-is in HTML fragment):
+  <a class="download-button" href="https://anmitools.com/wp-content/uploads/2025/09/6.-Carbider-Burr.pdf" target="_blank" rel="noopener"><span class="icon">⬇️</span>Tải tài liệu Carbide Burr (PDF)</a>
+- Style: .download-button đã có trong style-carbide-burr.css; hoạt động trong cả nội dung bài và WooCommerce tabs (nhờ :where(...) scope).
+
 ## 10b. Technical Support Image (Footer, required)
 - Placement: Khối ảnh cuối bài (sau CTA), để tăng độ tin cậy và hỗ trợ liên hệ.
 - Source (absolute URL):
