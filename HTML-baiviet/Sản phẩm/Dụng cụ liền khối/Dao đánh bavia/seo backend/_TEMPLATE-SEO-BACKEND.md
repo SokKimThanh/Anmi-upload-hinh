@@ -139,12 +139,12 @@ FAQ JSON (mẫu – điền khi finalize):
 - Special Notes: (Ví dụ: Product schema defer do thiếu giá / offers)
 - Product fields tạm bỏ nếu chưa có SKU/price.
 
-## 13. Data Boundaries & Transparency
-Thiếu (nếu có): RPM / D-L-d đầy đủ / Coating / Giá.  
+## 13. Data Quality & Content Standards
 Nguyên tắc:
-- Không đưa nội dung suy đoán hoặc con số ước lượng khi chưa có dữ liệu xác thực (catalogue, thử nghiệm nội bộ được phê duyệt).
-- Nếu thông tin “không biết chắc” hoặc “chưa có số liệu”, KHÔNG thêm vào bài viết; thay vào đó hướng dẫn liên hệ đội kỹ thuật để được xác nhận.
-- Ghi rõ: “Chưa có dữ liệu trong catalogue dạng text – liên hệ đội kỹ thuật”.
+- Chỉ đưa thông tin đã được xác thực từ catalogue chính thức hoặc thử nghiệm nội bộ được phê duyệt.
+- Tránh ước lượng, suy đoán hoặc thông tin không chắc chắn.
+- Nếu không có dữ liệu cụ thể, tập trung vào đặc tính kỹ thuật và ứng dụng đã biết.
+- Hướng dẫn liên hệ đội kỹ thuật để được tư vấn thông số cụ thể cho ứng dụng riêng.
 
 ## 13b. Rủi Ro & Giảm Thiểu (Use Case Only)
 | Rủi ro | Khi nào xảy ra | Hậu quả | Biện pháp giảm thiểu | Ghi chú |
@@ -199,7 +199,7 @@ Tone: Trợ giúp, không “Mua ngay”, tránh capslock.
 | No duplicate intent |  |  |
 | Alt text đầy đủ |  |  |
 | Redirects active (nếu có) |  |  |
-| Không có tuyên bố suy đoán khi thiếu dữ liệu |  | Kiểm tra lại mục 13 |
+| Content chất lượng, dựa dữ liệu xác thực |  | Kiểm tra lại mục 13 |
 
 ## 17b. Tags (Comma-separated)
 - Placement: Thêm mục "### Tags" ngay trước phần Performance (mục 18) trong từng file .seo.md.
@@ -240,3 +240,4 @@ hướng dẫn chọn carbide burr, cách chọn mũi mài carbide, chọn cut t
 - v1.2.0 (yyyy-mm-dd): Thêm Primary Category / Redirects / E-E-A-T
 - v1.3.0 (yyyy-mm-dd): Thêm "Phân loại bài viết" vào mục Identification
 - v1.4.0 (2025-10-13): Thêm "Mô tả ngắn" vào mục Identification để chuẩn hóa mô tả sản phẩm
+- v1.5.0 (2025-10-13): Loại bỏ Data Boundaries disclaimer - tập trung nội dung chất lượng thay vì nhấn mạnh thiếu sót

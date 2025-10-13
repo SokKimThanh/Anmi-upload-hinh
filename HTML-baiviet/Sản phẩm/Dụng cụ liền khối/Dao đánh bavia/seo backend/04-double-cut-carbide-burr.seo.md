@@ -109,11 +109,9 @@ FAQ JSON: (viết sau)
 ### 12. Additional Schema
 - Article + FAQPage
 
-### 13. Data Boundaries
-- Không đưa RPM cụ thể.
-- Không nêu % tuổi thọ so sánh.
-- Không thêm nội dung suy đoán hoặc con số ước lượng khi chưa có dữ liệu xác thực (catalogue hoặc thử nghiệm nội bộ đã phê duyệt).
-- Nếu thông tin “không biết chắc” hoặc “chưa có số liệu”, KHÔNG thêm vào bài; thay vào đó hướng dẫn liên hệ đội kỹ thuật để xác nhận.
+### 13. Content Quality Standards
+- Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế của Double Cut
+- Hướng dẫn liên hệ kỹ thuật cho tư vấn thông số cụ thể theo ứng dụng
 
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
