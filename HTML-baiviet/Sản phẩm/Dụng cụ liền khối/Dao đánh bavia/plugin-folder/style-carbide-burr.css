@@ -818,7 +818,7 @@
   font-size: 0.9375rem;
 }
 
-.pbmit-entry-content .disclaimer {
+.pbmit-entry-content .disclaimer, .pbmit-entry-content .quality-note {
   margin: 0;
   font-style: italic;
 }
