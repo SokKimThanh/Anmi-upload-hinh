@@ -5,6 +5,7 @@
 - Nhóm: Use Case
 - Primary Category: Carbide Burr Use Case
 - Phân loại bài viết: Use Case
+- Mô tả ngắn: Hướng dẫn gia công vật liệu composite carbon bằng Carbide Burr với kỹ thuật và biện pháp an toàn chuyên biệt.
 - H1: Xử lý cạnh & làm sạch composite / carbon bằng carbide burr: giảm bụi & mẻ lớp
 - Slug: xu-ly-composite-carbon-carbide-burr
 - Legacy Slugs: 

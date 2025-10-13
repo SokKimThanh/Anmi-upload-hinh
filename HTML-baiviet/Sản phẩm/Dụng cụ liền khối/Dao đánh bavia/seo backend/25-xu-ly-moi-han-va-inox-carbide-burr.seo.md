@@ -5,6 +5,7 @@
 - Nhóm: Use Case
 - Primary Category (Rank Math): Carbide Burr Use Case
 - Phân loại bài viết: Use Case
+- Mô tả ngắn: Kỹ thuật xử lý mối hàn và gia công thép không gỉ bằng Carbide Burr với các loại cắt và hình dạng phù hợp.
 - H1 (Post Title): Xử lý mối hàn & bo cạnh inox bằng carbide burr: chọn cut & giảm bám phoi
 - Slug: xu-ly-moi-han-va-inox-carbide-burr
 - Legacy Slugs / Redirect 301: 

@@ -5,6 +5,7 @@
 - Nhóm: Use Case
 - Primary Category: Carbide Burr Use Case
 - Phân loại bài viết: Use Case
+- Mô tả ngắn: Quy trình chuẩn bị bề mặt kim loại trước phủ/sơn bằng Carbide Burr để đảm bảo độ bám dính tối ưu.
 - H1: Chuẩn bị bề mặt trước khi phủ bằng carbide burr: làm sạch mà không hỏng biên dạng
 - Slug: chuan-bi-be-mat-truoc-phu-carbide-burr
 - Legacy Slugs: 

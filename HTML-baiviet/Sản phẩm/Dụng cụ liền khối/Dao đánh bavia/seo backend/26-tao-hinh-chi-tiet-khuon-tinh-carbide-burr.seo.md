@@ -5,6 +5,7 @@
 - Nhóm: Use Case
 - Primary Category: Carbide Burr Use Case
 - Phân loại bài viết: Use Case
+- Mô tả ngắn: Ứng dụng Carbide Burr trong tạo hình chi tiết khuôn tinh xảo và gia công biên dạng phức tạp chuyên nghiệp.
 - H1: Tạo hình & hiệu chỉnh chi tiết khuôn tinh bằng carbide burr: lựa chọn hình & cut ổn định
 - Slug: tao-hinh-chi-tiet-khuon-tinh-carbide-burr
 - Legacy Slugs: 

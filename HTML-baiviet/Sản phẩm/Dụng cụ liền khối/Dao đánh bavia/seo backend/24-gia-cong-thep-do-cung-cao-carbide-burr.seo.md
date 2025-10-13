@@ -4,6 +4,8 @@
 - Mã bài: 24
 - Nhóm: Use Case
 - Primary Category (Rank Math): Carbide Burr Use Case
+- Phân loại bài viết: Use Case
+- Mô tả ngắn: Hướng dẫn lựa chọn và sử dụng Carbide Burr cho gia công thép độ cứng cao dưới 60 HRC với hiệu suất tối ưu.
 - H1 (Post Title): Gia công thép độ cứng cao bằng carbide burr: lựa chọn & kiểm soát rủi ro
 - Slug: gia-cong-thep-do-cung-cao-carbide-burr
 - Legacy Slugs / Redirect 301 (cũ → mới): (nếu có)
