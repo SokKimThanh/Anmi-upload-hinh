@@ -72,7 +72,11 @@ class ANMI_Carbide_Burr_Styles {
 
     private function should_enqueue_for_post( WP_Post $post ) : bool {
         $post_type = get_post_type( $post );
-        if ( 'product' === $post_type ) {
+        $slug      = (string) $post->post_name;
+        $title     = (string) $post->post_title;
+
+        // Áp dụng cho mọi sản phẩm có slug chứa 'carbide-burr' hoặc 'type-' (Type A–N)
+        if ( 'product' === $post_type && ( strpos( $slug, 'carbide-burr' ) !== false || strpos( $slug, 'type-' ) !== false ) ) {
             return true;
         }
 
@@ -87,7 +91,6 @@ class ANMI_Carbide_Burr_Styles {
             }
         }
 
-        $slug        = (string) $post->post_name;
         $permalink   = (string) get_permalink( $post );
         $slug_hit    = strpos( $slug, 'carbide-burr' ) !== false;
         $url_hit     = strpos( $permalink, 'carbide-burr' ) !== false;
