@@ -3,6 +3,7 @@
 ## 1. Basics
 - Mã: 06
 - Loại: Cut Type Detail
+- Mô tả ngắn: Carbide burr chống bám dính chuyên gia công nhôm, hợp kim nhôm, kim loại màu và nhựa mà không gây hiện tượng bám phoi.
 - H1: Carbide Burr Aluminium Cut: Giảm bám phoi khi gia công nhôm
 - Slug: aluminium-cut-carbide-burr
 - Độ dài: 850–1000 từ

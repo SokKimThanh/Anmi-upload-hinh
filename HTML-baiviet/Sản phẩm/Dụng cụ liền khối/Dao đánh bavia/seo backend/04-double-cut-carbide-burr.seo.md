@@ -7,6 +7,7 @@
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Cut Type Detail
+- Mô tả ngắn: Carbide burr răng cắt đôi chuyên gia công thép dưới 60 HRC, inox và vật liệu chịu nhiệt với hiệu suất cắt gọt cao.
 - H1: Double Cut Carbide Burr: Khi nào tối ưu?
 - Slug: double-cut-carbide-burr
 - Legacy Redirects: (trống)

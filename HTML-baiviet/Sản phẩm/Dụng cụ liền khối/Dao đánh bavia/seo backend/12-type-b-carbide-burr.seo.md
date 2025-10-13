@@ -5,6 +5,7 @@
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng trụ có đầu cắt chuyên gia công bề mặt và hoán đổi hai mặt vuông góc trên chi tiết.
 - H1: Carbide Burr Shape B (Cylinder End Rounded): Xử lý mép bo & chuyển tiếp phẳng
 - Slug: type-b-carbide-burr
 - Legacy Redirects: (trống)

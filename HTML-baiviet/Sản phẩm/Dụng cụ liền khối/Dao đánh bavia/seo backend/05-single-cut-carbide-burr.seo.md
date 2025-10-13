@@ -3,6 +3,7 @@
 ## 1. Basics
 - Mã: 05
 - Loại: Cut Type Detail
+- Mô tả ngắn: Carbide burr răng cắt đơn chuyên gia công gang, thép và inox dưới 60 HRC với khả năng kiểm soát phoi tốt.
 - H1: Carbide Burr Single Cut: Khi nào phù hợp & khác gì Double Cut
 - Slug: single-cut-carbide-burr
 - Độ dài: 800–950 từ

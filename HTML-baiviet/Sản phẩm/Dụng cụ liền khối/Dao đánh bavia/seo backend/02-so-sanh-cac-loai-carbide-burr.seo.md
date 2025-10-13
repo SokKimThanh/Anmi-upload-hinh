@@ -5,6 +5,7 @@
 - Nhóm: Overview (So sánh)
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Overview
+- Mô tả ngắn: So sánh chi tiết 7 kiểu cắt và 14 hình dạng Carbide Burr, giúp lựa chọn đúng loại cho từng vật liệu và ứng dụng cụ thể.
 - H1: So sánh các loại Carbide Burr: Cut Type & Shape A–N
 - Slug: so-sanh-cac-loai-carbide-burr
 - Legacy Redirects: (trống)

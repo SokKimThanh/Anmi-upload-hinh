@@ -5,6 +5,7 @@
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Cut Type Detail
+- Mô tả ngắn: Carbide burr răng cắt kim cương chuyên gia công chính xác mọi loại vật liệu dưới 60 HRC với độ bền và chất lượng cao.
 - H1: Diamond Cut Carbide Burr: Kiểm soát tốt hơn
 - Slug: diamond-cut-carbide-burr
 - Legacy Redirects: (trống)

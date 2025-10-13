@@ -3,6 +3,7 @@
 ## 1. Thông tin cơ bản
 - Mã bài: 03
 - Loại: Hướng dẫn quy trình (Decision Guide)
+- Mô tả ngắn: Hướng dẫn 6 bước lựa chọn Carbide Burr phù hợp dựa trên vật liệu gia công, hình dạng chi tiết và yêu cầu bề mặt hoàn thiện.
 - H1: Hướng dẫn chọn Carbide Burr theo vật liệu và thao tác
 - Slug: huong-dan-chon-carbide-burr
 - Độ dài: 1200–1400 từ
