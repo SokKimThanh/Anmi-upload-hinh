@@ -5,6 +5,7 @@
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng nón chuyên gia công các bề mặt và hình dạng hẹp trong không gian giới hạn.
 - H1: Carbide Burr Shape M (Cone 90°): Vát góc vuông & mép lỗ lớn
 - Slug: type-m-carbide-burr
 - Legacy Redirects: (trống)

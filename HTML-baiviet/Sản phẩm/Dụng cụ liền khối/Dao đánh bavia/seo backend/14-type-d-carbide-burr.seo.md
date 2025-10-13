@@ -4,6 +4,8 @@
 - Mã bài: 14
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng cầu chuyên gia công cung tròn, loại bỏ bavia đường kính và xử lý điểm hàn chuyên nghiệp.
 - H1: Carbide Burr Shape D (Ball): Xử lý hốc & bo đa hướng
 - Slug: type-d-carbide-burr
 - Legacy Redirects: (trống)

@@ -4,6 +4,8 @@
 - Mã bài: 19
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim countersink 60 độ chuyên gia công vát mép lỗ và tạo cung doa ngược 60° trên phôi.
 - H1: Carbide Burr Shape J (Taper Radius End): Vát bo mềm kiểm soát
 - Slug: type-j-carbide-burr
 - Legacy Redirects: (trống)

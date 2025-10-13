@@ -5,6 +5,7 @@
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng nón mũi cầu chuyên gia công các bề mặt và hình dạng hẹp với độ chính xác cao.
 - H1: Carbide Burr Shape L (Cone 60°): Vát chuẩn góc trung bình
 - Slug: type-l-carbide-burr
 - Legacy Redirects: (trống)

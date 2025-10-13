@@ -4,6 +4,8 @@
 - Mã bài: 18
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng ngọn lửa chuyên gia công tạo hình dạng cung tròn với profile đặc biệt.
 - H1: Carbide Burr Shape H (Flame): Chuyển tiếp cong thuôn dài
 - Slug: type-h-carbide-burr
 - Legacy Redirects: (trống)

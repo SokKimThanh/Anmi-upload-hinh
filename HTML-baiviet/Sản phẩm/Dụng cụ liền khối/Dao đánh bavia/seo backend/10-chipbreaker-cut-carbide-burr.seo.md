@@ -5,6 +5,7 @@
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Cut Type Detail
+- Mô tả ngắn: Carbide burr răng phá phoi chuyên gia công thép không gỉ, thép và gang với khả năng kiểm soát và xử lý phoi hiệu quả.
 - H1: Chip Breaker Carbide Burr: Giảm phoi dài & kẹt
 - Slug: chipbreaker-cut-carbide-burr
 - Legacy Redirects: (trống)

@@ -5,6 +5,7 @@
 - Nhóm: Cut Type Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Cut Type Detail
+- Mô tả ngắn: Carbide burr răng cắt thô chuyên gia công hoàn thiện kim loại mềm, kim loại màu, thép và gang với tốc độ loại bỏ vật liệu nhanh.
 - H1: Coarse Cut Carbide Burr: Khi ưu tiên tốc độ thô
 - Slug: coarse-cut-carbide-burr
 - Legacy Redirects: (trống)

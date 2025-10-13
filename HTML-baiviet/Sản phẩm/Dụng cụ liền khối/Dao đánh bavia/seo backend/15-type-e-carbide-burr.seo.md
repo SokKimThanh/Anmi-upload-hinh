@@ -4,6 +4,8 @@
 - Mã bài: 15
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng oval chuyên gia công tạo hình dạng cung tròn với khả năng tiếp cận linh hoạt.
 - H1: Carbide Burr Shape E (Oval): Làm mượt chuyển tiếp & mép bo nhẹ?
 - Slug: type-e-carbide-burr
 - Legacy Redirects: (trống)

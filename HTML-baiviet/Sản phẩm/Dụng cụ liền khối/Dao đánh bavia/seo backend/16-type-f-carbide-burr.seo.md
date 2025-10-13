@@ -5,6 +5,7 @@
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng cây mũi cầu chuyên gia công cung tròn trong không gian hạn chế và vùng khó tiếp cận.
 - H1: Carbide Burr Shape F (Tree Radius End): Truy cập hốc cong bó hẹp
 - Slug: type-f-carbide-burr
 - Legacy Redirects: (trống)

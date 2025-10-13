@@ -5,6 +5,7 @@
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng trụ mũi cầu chuyên gia công bề mặt và tạo hình dạng cung tròn trên các chi tiết kim loại.
 - H1: Carbide Burr Shape C (Cylinder End Ball): Tối ưu bo mép sâu
 - Slug: type-c-carbide-burr
 - Legacy Redirects: (trống)

@@ -5,6 +5,7 @@
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng nón ngược chuyên gia công vát mép bên trong chi tiết và làm tôn chamfering inside.
 - H1: Carbide Burr Shape N (Inverted Cone): Xử lý mép trong & undercut
 - Slug: type-n-carbide-burr
 - Legacy Redirects: (trống)

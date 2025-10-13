@@ -5,6 +5,7 @@
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
 - Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim countersink 90 độ chuyên gia công tạo hình dạng cung tròn và vát mép lỗ 90°.
 - H1: Carbide Burr Shape K (Taper Pointed End): Vát sắc & sửa góc
 - Slug: type-k-carbide-burr
 - Legacy Redirects: (trống)

@@ -4,6 +4,8 @@
 - Mã bài: 17
 - Nhóm: Shape Detail
 - Primary Category: Carbide Burr
+- Phân loại bài viết: Shape Detail
+- Mô tả ngắn: Dao mài hợp kim dạng cây nhọn chuyên gia công cung tròn trong không gian hạn chế và tạo hình dạng góc nhọn.
 - H1: Carbide Burr Shape G (Tree Point End): Vươn sâu vào góc nhọn
 - Slug: type-g-carbide-burr
 - Legacy Redirects: (trống)
