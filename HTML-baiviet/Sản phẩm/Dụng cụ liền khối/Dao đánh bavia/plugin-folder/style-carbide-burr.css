@@ -594,8 +594,8 @@
   box-shadow: var(--shadow-soft);
 }
 
-:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .cta-block h2 {
-  color: #ffffff;
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .cta-block h2, .cta-block h3 {
+  color: #ffffff ;
   margin-top: 0;
 }
 
