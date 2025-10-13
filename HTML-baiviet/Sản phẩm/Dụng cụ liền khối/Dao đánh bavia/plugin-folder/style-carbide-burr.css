@@ -594,9 +594,16 @@
   box-shadow: var(--shadow-soft);
 }
 
-:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .cta-block h2, .cta-block h3 {
-  color: #ffffff ;
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .cta-block h2,
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .cta-block h3 {
+  color: #ffffff;
   margin-top: 0;
+}
+
+/* Safety override for headings inside CTA clusters in case theme overrides kick in */
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .cta-cluster .cta-block h2,
+:where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .cta-cluster .cta-block h3 {
+  color: #ffffff;
 }
 
 :where(.pbmit-entry-content, .woocommerce-tabs, .wc-tabs-wrapper, .woocommerce-Tabs-panel, .woocommerce-Tabs-panel--description, .product .entry-content) .cta-block p {
