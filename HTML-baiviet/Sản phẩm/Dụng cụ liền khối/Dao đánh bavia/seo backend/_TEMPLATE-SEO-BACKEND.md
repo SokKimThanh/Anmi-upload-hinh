@@ -7,8 +7,9 @@
 ## 1. Identification
 - Mã bài: 00
 - Nhóm: Overview | Cut Type | Shape | Use Case
-- Phân loại bài viết: Overview | Cut Type Detail | Shape Detail | Use Case (chọn 1; định dạng vai trò bài để điều chỉnh giọng điệu, CTA và chiều sâu nội dung)
 - Primary Category (Rank Math): 
+- Phân loại bài viết: Overview | Cut Type Detail | Shape Detail | Use Case (chọn 1; định dạng vai trò bài để điều chỉnh giọng điệu, CTA và chiều sâu nội dung)
+- Mô tả ngắn: 
 - H1 (Post Title): 
 - Slug: 
 - Legacy Slugs / Redirect 301 (cũ → mới): 
@@ -238,3 +239,4 @@ hướng dẫn chọn carbide burr, cách chọn mũi mài carbide, chọn cut t
 - v1.1.0 (yyyy-mm-dd): Cập nhật keyword cluster / schema / CTA
 - v1.2.0 (yyyy-mm-dd): Thêm Primary Category / Redirects / E-E-A-T
 - v1.3.0 (yyyy-mm-dd): Thêm "Phân loại bài viết" vào mục Identification
+- v1.4.0 (2025-10-13): Thêm "Mô tả ngắn" vào mục Identification để chuẩn hóa mô tả sản phẩm
