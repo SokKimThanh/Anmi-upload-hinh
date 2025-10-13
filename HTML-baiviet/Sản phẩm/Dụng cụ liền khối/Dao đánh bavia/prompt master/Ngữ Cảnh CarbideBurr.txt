@@ -1178,6 +1178,16 @@ input[type="submit"] {
 
 ## 11. Ngữ Cảnh SEO Cho WordPress WooCommerce
 
+---
+
+10c. Official PDF & Download Button (UI)
+
+- Official PDF: https://anmitools.com/wp-content/uploads/2025/09/6.-Carbider-Burr.pdf
+- Placement: Ngay sau hình minh họa chính (figure) trong phần Định nghĩa của mỗi bài Shape (11–23). Áp dụng cho cả bài viết và tab mô tả sản phẩm WooCommerce.
+- HTML pattern:
+  <a class="download-button" href="https://anmitools.com/wp-content/uploads/2025/09/6.-Carbider-Burr.pdf" target="_blank" rel="noopener"><span class="icon">⬇️</span>Tải tài liệu Carbide Burr (PDF)</a>
+- CSS: class .download-button đã có trong plugin stylesheet (style-carbide-burr.css), kế thừa màu, hover, focus-visible, icon inline.
+
 Phần này cung cấp hướng dẫn chi tiết về việc triển khai SEO cho 28 bài viết Carbide Burr trên nền tảng **WordPress với WooCommerce**, bao gồm cấu hình plugin, taxonomy, và tối ưu hóa đặc thù cho hệ thống này.
 
 ### A. Thông Tin Hệ Thống
