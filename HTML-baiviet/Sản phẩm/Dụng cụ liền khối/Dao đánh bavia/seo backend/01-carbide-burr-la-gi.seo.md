@@ -131,9 +131,9 @@ FAQ JSON (draft):
 - Product schema: BỎ (không giá / SKU) – tránh dữ liệu thiếu
 - Notes: Có thể thêm HowTo nếu sau bổ sung quy trình chi tiết
 
-### 13. Data Boundaries & Transparency
-- Thiếu: RPM chi tiết, bảng kích thước D-L-d đầy đủ, coating nếu có phiên bản phủ.
-- Nguyên tắc: Không suy đoán tốc độ, không gán kích thước chưa xác thực, không mô tả coating nếu catalogue chưa xuất.
+### 13. Content Quality Standards
+- Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế của carbide burr
+- Hướng dẫn liên hệ kỹ thuật cho tư vấn thông số cụ thể theo ứng dụng
 
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |

@@ -112,9 +112,9 @@ FAQ JSON (draft): (tạo sau khi finalize copy sang Rank Math)
 - Article + FAQPage + BreadcrumbList
 - Không dùng Product (thiếu SKU/price)
 
-### 13. Data Boundaries
-- Thiếu: RPM cụ thể, kích thước đầy đủ, coating.
-- Ghi chú rõ trong callout minh bạch (đầu bài / checklist).
+### 13. Content Quality Standards
+- Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế của carbide burr các loại
+- Hướng dẫn liên hệ kỹ thuật cho tư vấn thông số cụ thể theo ứng dụng
 
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |

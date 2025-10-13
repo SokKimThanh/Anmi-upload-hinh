@@ -124,8 +124,8 @@ FAQ JSON: (điền sau)
 ## 12. Additional Schema
 - Type: Article, FAQPage
 
-## 13. Data Boundaries & Transparency
-Thiếu: Độ nhám Ra số, độ sâu bo cạnh chuẩn. Không đưa % cải thiện độ bám phủ.
+## 13. Content Quality Standards
+Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế của carbide burr cho chuẩn bị bề mặt trước phủ. Liên hệ kỹ thuật cho tư vấn thông số cụ thể.
 
 ## 13b. Rủi Ro & Giảm Thiểu
 | Rủi ro | Khi nào xảy ra | Hậu quả | Biện pháp giảm thiểu | Ghi chú |

@@ -112,9 +112,9 @@ FAQ JSON: (viết sau)
 ### 12. Additional Schema
 - Article + FAQPage
 
-### 13. Data Boundaries
-- Không độ sâu vát cụ thể
-- Không % chính xác mép
+### 13. Content Quality Standards
+- Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế của type L carbide burr
+- Hướng dẫn liên hệ kỹ thuật cho tư vấn thông số cụ thể theo ứng dụng
 
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |

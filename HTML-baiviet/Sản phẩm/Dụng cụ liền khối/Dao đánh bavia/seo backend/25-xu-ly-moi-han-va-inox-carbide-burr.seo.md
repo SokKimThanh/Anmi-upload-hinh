@@ -127,8 +127,8 @@ FAQ JSON: (điền sau)
 ## 12. Additional Schema
 - Type: Article, FAQPage
 
-## 13. Data Boundaries & Transparency
-Thiếu: Giá trị tốc độ, lực, tỷ lệ cải thiện thời gian. Không hứa “sáng bóng như gương”.
+## 13. Content Quality Standards
+Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế của carbide burr cho xử lý mối hàn và inox. Liên hệ kỹ thuật cho tư vấn thông số cụ thể.
 
 ## 13b. Rủi Ro & Giảm Thiểu
 | Rủi ro | Khi nào xảy ra | Hậu quả | Biện pháp giảm thiểu | Ghi chú |

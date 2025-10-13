@@ -106,9 +106,9 @@ FAQ JSON: (viết sau)
 ### 12. Additional Schema
 - Article + FAQPage
 
-### 13. Data Boundaries
-- Không % cải thiện bề mặt
-- Không RPM cụ thể
+### 13. Content Quality Standards
+- Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế của fine cut carbide burr
+- Hướng dẫn liên hệ kỹ thuật cho tư vấn thông số cụ thể theo ứng dụng
 
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |

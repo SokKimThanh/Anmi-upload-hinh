@@ -130,8 +130,8 @@ FAQ JSON: (điền sau)
 - Type: Article, FAQPage, BreadcrumbList
 - Special Notes: Không dùng Product (thiếu SKU/giá)
 
-## 13. Data Boundaries & Transparency
-Thiếu: RPM cụ thể, lực cắt, độ nhám định lượng. Không tự suy diễn. Luôn đề xuất kiểm tra mẫu trên phôi thật.
+## 13. Content Quality Standards
+Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế. Tư vấn thông số cụ thể theo ứng dụng. Luôn đề xuất kiểm tra mẫu trên phôi thật.
 
 ## 13b. Rủi Ro & Giảm Thiểu (Use Case Only)
 | Rủi ro | Khi nào xảy ra | Hậu quả | Biện pháp giảm thiểu | Ghi chú |

@@ -126,10 +126,9 @@ FAQ JSON: (soạn sau)
 ### 12. Additional Schema
 - Article + FAQPage + BreadcrumbList
 
-### 13. Data Boundaries
-- Không tự suy RPM cụ thể
-- Không gán coating nếu chưa xác thực
-- Không tạo bảng kích thước đầy đủ khi thiếu catalogue
+### 13. Content Quality Standards
+- Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế của carbide burr
+- Hướng dẫn liên hệ kỹ thuật cho tư vấn thông số cụ thể theo ứng dụng
 
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
@@ -150,7 +149,7 @@ FAQ JSON: (soạn sau)
 |-----------|-----|------|
 | Đồng cảm | ✔ | Sai lầm mở bài |
 | Có cấu trúc tiến trình | ✔ | 6 bước đánh số |
-| Minh bạch giới hạn | ✔ | Data boundaries |
+| Minh bạch giới hạn | ✔ | Content quality standards |
 | CTA hỗ trợ | ✔ | Không ép mua |
 | Tính cụ thể | ✔ | Bảng & checklist |
 

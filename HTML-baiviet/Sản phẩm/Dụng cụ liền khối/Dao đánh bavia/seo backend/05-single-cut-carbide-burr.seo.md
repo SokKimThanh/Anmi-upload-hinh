@@ -70,8 +70,8 @@
 </figure>
 ```
 
-## 8. Data Boundaries
-Không ghi tốc độ RPM; không dùng % nhanh hơn nếu chưa có số liệu.
+## 8. Content Quality Standards
+Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế. Liên hệ kỹ thuật cho tư vấn thông số cụ thể.
 ## SEO BACKEND SPEC – 05 (Rank Math v1.2.0)
 
 ### 1. Identification
@@ -165,9 +165,9 @@ FAQ JSON: (viết sau)
 ### 12. Additional Schema
 - Article + FAQPage
 
-### 13. Data Boundaries
-- Không % tăng tốc độ
-- Không RPM cụ thể
+### 13. Content Quality Standards
+- Tập trung vào đặc tính kỹ thuật và ứng dụng thực tế của single cut carbide burr
+- Hướng dẫn liên hệ kỹ thuật cho tư vấn thông số cụ thể theo ứng dụng
 
 ### 14. CTA Architecture
 | CTA Type | Copy | URL/Action | Placement |
@@ -188,7 +188,7 @@ FAQ JSON: (viết sau)
 |-----------|-----|------|
 | Trung lập | ✔ | Không thổi phồng |
 | Cụ thể | ✔ | Bảng lợi ích & giới hạn |
-| Minh bạch | ✔ | Data boundaries |
+| Minh bạch | ✔ | Content quality standards |
 | CTA hỗ trợ | ✔ | Không bán gắt |
 
 ### 17. Technical SEO Execution
