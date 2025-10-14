@@ -93,6 +93,13 @@ Guidelines:
 - WebP, width 1000px, lazy, alt mô tả trung thực.
 - Không tạo alt bán hàng; ưu tiên chức năng/hành động.
 
+### 10a. Sizes (Metric & Inch) – tuỳ chọn (áp dụng cho Shape 11–23)
+- Áp dụng khi có ảnh kích thước chính thức từ anmitools.com (uploads). Không OCR hoặc suy diễn số liệu.
+- Vị trí trong outline: đặt ngay sau mục Định nghĩa, với H2: "Kích thước (Metric & Inch)".
+- Thành phần: 2 figure liên tiếp (Metric trước, rồi Inch). Mỗi figure gồm img + figcaption ngắn.
+- Kỹ thuật: width="1000", height theo ảnh thực (nếu chưa rõ, dùng 560), loading="lazy". Alt tiếng Việt, mô tả trung thực.
+- Nếu thiếu ảnh: bỏ mục này, không thay bằng bảng số liệu text.
+
 ### 10c. Download Document (PDF)
 - Official PDF: https://anmitools.com/wp-content/uploads/2025/09/6.-Carbider-Burr.pdf
 - Placement: Sau hình minh họa chính (figure) trong mục “1. [Định nghĩa Shape]” của các bài 11–23.

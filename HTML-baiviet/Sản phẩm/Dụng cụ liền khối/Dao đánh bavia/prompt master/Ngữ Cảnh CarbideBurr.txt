@@ -79,6 +79,30 @@ Nội dung này có thể được sử dụng để huấn luyện một chatbo
 * **Kích thước (D-L-d):** Các bảng chi tiết kích thước (Metric/Inch Size) tồn tại cho từng loại burr (A $\rightarrow$ N), nhưng không được trích xuất thành số liệu cụ thể trong ngữ cảnh này.
 * **Mâu thuẫn văn bản:** Mô tả tiếng Việt cho **Type J** có ghi "Khoan chóp $90^{\circ}$", mâu thuẫn với tên tiếng Anh và ứng dụng $60^{\circ}$.Để làm rõ ngữ cảnh về việc chuẩn hóa SEO (Search Engine Optimization) cho các bài viết được xây dựng dựa trên tài liệu **“Carbider Burr.pdf”**, tôi bổ sung phần đánh giá chiến lược nội dung.
 
+### D. Quy tắc mục "Kích thước (Metric & Inch)" cho Shape 11–23
+
+Khi có ảnh kích thước chính thức (từ thư mục uploads của website), sử dụng ảnh thay vì trích xuất/bịa số liệu. Không OCR hoặc suy diễn các con số nếu tài liệu không cung cấp text rõ ràng.
+
+- Vị trí: đặt ngay sau mục "1. [Định nghĩa Shape]", dùng H2: "2. Kích thước (Metric & Inch)".
+- Nội dung: 2 figure liên tiếp (Metric trước, rồi Inch). Mỗi figure gồm img + figcaption ngắn, alt mô tả trung thực (tiếng Việt), có width="1000" và height theo ảnh thực tế (hiện dùng 560) + loading="lazy".
+- Bản quyền/nguồn: ưu tiên ảnh nội bộ anmitools.com (/wp-content/uploads/...). Không dùng nguồn ngoài nếu không có giấy phép.
+- Không lặp lại bảng số liệu dưới dạng text. Nếu cần số liệu cụ thể để đặt hàng, hướng dẫn người dùng "tham chiếu catalogue PDF chính thức hoặc liên hệ kỹ thuật".
+
+Ví dụ áp dụng (Type N – Inverted Cone):
+
+- Ảnh nền/nhận diện shape (bắt buộc trong mục Định nghĩa):
+  https://anmitools.com/wp-content/uploads/2025/10/TypeN-BG.webp
+- Ảnh kích thước Metric (mục 2):
+  https://anmitools.com/wp-content/uploads/2025/10/TypeN-MetricSize.webp
+- Ảnh kích thước Inch (mục 2):
+  https://anmitools.com/wp-content/uploads/2025/10/TypeN-InchSize.webp
+
+Gợi ý alt/figcaption chuẩn:
+- Alt (Metric): "Bảng kích thước Shape N – hệ Metric"; Figcaption: "Kích thước Shape N (Metric) – đường kính cán, cutter, chiều dài cắt và mã dụng cụ."
+- Alt (Inch): "Bảng kích thước Shape N – hệ Inch"; Figcaption: "Kích thước Shape N (Inch) – quy đổi theo hệ inch cho các tùy chọn phổ biến."
+
+Lưu ý: Phần "Khi KHÔNG nên dùng", "So sánh", "FAQ", CTA và "Technical Support" giữ nguyên cấu trúc theo template; chỉ loại bỏ/cắt giảm các figure minh họa nếu không có ảnh chính thức.
+
 Ngữ cảnh này giúp chatbot hiểu được **giá trị thương mại** và **khả năng tối ưu hóa** của từng đoạn thông tin kỹ thuật, từ đó sinh ra nội dung không chỉ chính xác mà còn hấp dẫn công cụ tìm kiếm và khách hàng mục tiêu.
 
 ---

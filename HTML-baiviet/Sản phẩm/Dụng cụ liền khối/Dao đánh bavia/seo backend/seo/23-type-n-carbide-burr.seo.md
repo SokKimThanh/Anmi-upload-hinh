@@ -48,12 +48,13 @@ Breadcrumb: Trang chủ › Carbide Burr › Shape N
 
 ### 7. Content Outline
 1. Shape N là gì? (inverted cone)
-2. Khả năng tiếp cận mép trong & undercut
-3. Ứng dụng (bảng tình huống)
-4. Khi KHÔNG nên dùng (bề mặt mở phẳng / rung cạnh)
-5. So với Shape L / M / K
-6. FAQ
-7. CTA
+2. Kích thước (Metric & Inch) – nếu có ảnh chính thức
+3. Khả năng tiếp cận mép trong & undercut
+4. Ứng dụng (bảng tình huống)
+5. Khi KHÔNG nên dùng (bề mặt mở phẳng / rung cạnh)
+6. So với Shape L / M / K
+7. FAQ
+8. CTA
 
 ### 8. Internal Linking Plan
 | Anchor Text | Target URL | Reason | Placement |
@@ -71,12 +72,12 @@ Breadcrumb: Trang chủ › Carbide Burr › Shape N
 ### 10. Media / Asset Plan
 | # | Type | Purpose | File | Alt Text | Caption? |
 |---|------|---------|------|---------|----------|
-| 1 | Shape diagram | Hình dạng | shape-n-diagram.webp | Carbide Burr Shape N | Có |
-| 2 | Undercut demo | Undercut | shape-n-undercut.webp | Tạo undercut bằng Shape N | Có |
-| 3 | Inner edge | Mép trong | shape-n-inner-edge.webp | Xử lý mép trong | Có |
-| 4 | Comparison | So sánh | shape-n-vs-lm.webp | Shape N vs L/M | Có |
-| 5 | Limitation | Giới hạn | shape-n-limitation.webp | Giới hạn ổn định | Có |
-| 6 | CTA | Hỗ trợ | shape-n-cta.webp | Tư vấn chọn shape | Có |
+| 1 | BG/Hero (bắt buộc) | Nhận diện shape | https://anmitools.com/wp-content/uploads/2025/10/TypeN-BG.webp | Carbide Burr Shape N (Inverted Cone) | Có |
+| 2 | Size – Metric | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeN-MetricSize.webp | Bảng kích thước Shape N – hệ Metric | Có |
+| 3 | Size – Inch | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeN-InchSize.webp | Bảng kích thước Shape N – hệ Inch | Có |
+| 4 | Comparison (tuỳ chọn) | So sánh | shape-n-vs-lm.webp | Shape N vs L/M/K | Có |
+| 5 | Limitation (tuỳ chọn) | Giới hạn | shape-n-limitation.webp | Giới hạn: không tối ưu diện mở rộng/chamfer sâu | Có |
+| 6 | CTA | Hỗ trợ | trang-30_tools_diachi-editbyAI.webp | Đội hỗ trợ AN MI TOOLS | Có |
 
 ### 10b. Technical Support Image (Footer, required)
 - Placement: Khối ảnh cuối bài (sau CTA), để tăng độ tin cậy và hỗ trợ liên hệ.
@@ -174,3 +175,4 @@ carbide burr shape n, burr inverted cone n, ứng dụng burr shape n, khi nào 
 
 ### 20. Changelog
 - v1.0.0 (2025-10-08): Skeleton tạo theo template v1.2.0
+- v1.1.0 (2025-10-14): Bổ sung mục "Kích thước (Metric & Inch)" và cập nhật Media/Asset theo ảnh chính thức (BG/Metric/Inch). 
