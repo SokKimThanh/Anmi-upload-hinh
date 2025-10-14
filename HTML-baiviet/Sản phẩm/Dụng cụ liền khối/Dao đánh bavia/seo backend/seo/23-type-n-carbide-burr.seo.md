@@ -75,9 +75,6 @@ Breadcrumb: Trang chủ › Carbide Burr › Shape N
 | 1 | BG/Hero (bắt buộc) | Nhận diện shape | https://anmitools.com/wp-content/uploads/2025/10/TypeN-BG.webp | Carbide Burr Shape N (Inverted Cone) | Có |
 | 2 | Size – Metric | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeN-MetricSize.webp | Bảng kích thước Shape N – hệ Metric | Có |
 | 3 | Size – Inch | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeN-InchSize.webp | Bảng kích thước Shape N – hệ Inch | Có |
-| 4 | Comparison (tuỳ chọn) | So sánh | shape-n-vs-lm.webp | Shape N vs L/M/K | Có |
-| 5 | Limitation (tuỳ chọn) | Giới hạn | shape-n-limitation.webp | Giới hạn: không tối ưu diện mở rộng/chamfer sâu | Có |
-| 6 | CTA | Hỗ trợ | trang-30_tools_diachi-editbyAI.webp | Đội hỗ trợ AN MI TOOLS | Có |
 
 ### 10b. Technical Support Image (Footer, required)
 - Placement: Khối ảnh cuối bài (sau CTA), để tăng độ tin cậy và hỗ trợ liên hệ.
@@ -174,5 +171,6 @@ carbide burr shape n, burr inverted cone n, ứng dụng burr shape n, khi nào 
 | Leads | 3 |
 
 ### 20. Changelog
-- v1.0.0 (2025-10-08): Skeleton tạo theo template v1.2.0
+- v1.1.1 (2025-10-14): Chuẩn hoá Media/Asset chỉ dùng BG + Sizes (Metric/Inch); hình minh hoạ so sánh/hạn chế chuyển thành mô tả text/table trong bài.
 - v1.1.0 (2025-10-14): Bổ sung mục "Kích thước (Metric & Inch)" và cập nhật Media/Asset theo ảnh chính thức (BG/Metric/Inch). 
+- v1.0.0 (2025-10-08): Skeleton tạo theo template v1.2.0

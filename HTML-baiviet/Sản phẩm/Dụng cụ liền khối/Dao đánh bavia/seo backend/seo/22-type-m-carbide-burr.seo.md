@@ -75,9 +75,6 @@ Breadcrumb: Trang chủ › Carbide Burr › Shape M
 | 1 | BG/Hero (bắt buộc) | Nhận diện shape | https://anmitools.com/wp-content/uploads/2025/10/TypeM-BG.webp | Carbide Burr Shape M (Cone 90°) | Có |
 | 2 | Size – Metric | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeM-MetricSize.webp | Bảng kích thước Shape M – hệ Metric | Có |
 | 3 | Size – Inch | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeM-InchSize.webp | Bảng kích thước Shape M – hệ Inch | Có |
-| 4 | Comparison (tuỳ chọn) | So sánh | shape-m-vs-l.webp | Shape M vs L/K | Có |
-| 5 | Limitation (tuỳ chọn) | Giới hạn | shape-m-limitation.webp | Giới hạn: không bo mềm / không góc trung bình | Có |
-| 6 | CTA | Hỗ trợ | trang-30_tools_diachi-editbyAI.webp | Đội hỗ trợ AN MI TOOLS | Có |
 
 ### 10b. Technical Support Image (Footer, required)
 - Placement: Khối ảnh cuối bài (sau CTA), để tăng độ tin cậy và hỗ trợ liên hệ.
@@ -174,5 +171,6 @@ carbide burr shape m, burr cone 90 độ m, ứng dụng burr shape m, khi nào 
 | Leads | 3 |
 
 ### 20. Changelog
+- v1.1.1 (2025-10-14): Chuẩn hoá Media/Asset chỉ dùng BG + Sizes (Metric/Inch); hình minh họa so sánh/hạn chế chuyển thành mô tả text/table trong bài.
 - v1.1.0 (2025-10-14): Bổ sung mục "Kích thước (Metric & Inch)" và cập nhật Media/Asset theo ảnh chính thức (BG/Metric/Inch).
 - v1.0.0 (2025-10-08): Skeleton tạo theo template v1.2.0
