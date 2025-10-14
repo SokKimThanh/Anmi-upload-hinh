@@ -48,12 +48,13 @@ Breadcrumb: Trang chủ › Carbide Burr › Shape L
 
 ### 7. Content Outline
 1. Shape L là gì? (cone 60°)
-2. Ứng dụng vát mép lỗ / cạnh nghiêng
-3. Bảng tình huống ứng dụng
-4. Khi KHÔNG nên dùng (cần bo mềm hoặc góc khác)
-5. So với Shape K (nhọn) & M (cone 90°)
-6. FAQ
-7. CTA
+2. Kích thước (Metric & Inch) – nếu có ảnh chính thức
+3. Ứng dụng vát mép lỗ / cạnh nghiêng
+4. Bảng tình huống ứng dụng
+5. Khi KHÔNG nên dùng (cần bo mềm hoặc góc khác)
+6. So với Shape K (nhọn) & M (cone 90°)
+7. FAQ
+8. CTA
 
 ### 8. Internal Linking Plan
 | Anchor Text | Target URL | Reason | Placement |
@@ -71,12 +72,9 @@ Breadcrumb: Trang chủ › Carbide Burr › Shape L
 ### 10. Media / Asset Plan
 | # | Type | Purpose | File | Alt Text | Caption? |
 |---|------|---------|------|---------|----------|
-| 1 | Shape diagram | Hình dạng | shape-l-diagram.webp | Carbide Burr Shape L | Có |
-| 2 | Chamfer hole | Vát lỗ | shape-l-chamfer-hole.webp | Vát mép lỗ 60° | Có |
-| 3 | Edge chamfer | Vát cạnh | shape-l-edge-chamfer.webp | Vát cạnh bằng Shape L | Có |
-| 4 | Comparison | So sánh | shape-l-vs-km.webp | Shape L vs K vs M | Có |
-| 5 | Limitation | Giới hạn | shape-l-limitation.webp | Giới hạn góc cố định | Có |
-| 6 | CTA | Hỗ trợ | shape-l-cta.webp | Tư vấn chọn shape | Có |
+| 1 | BG/Hero (bắt buộc) | Nhận diện shape | https://anmitools.com/wp-content/uploads/2025/10/TypeL-BG.webp | Carbide Burr Shape L (Cone 60°) | Có |
+| 2 | Size – Metric | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeL-MetricSize.webp | Bảng kích thước Shape L – hệ Metric | Có |
+| 3 | Size – Inch | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeL-InchSize.webp | Bảng kích thước Shape L – hệ Inch | Có |
 
 ### 10b. Technical Support Image (Footer, required)
 - Placement: Khối ảnh cuối bài (sau CTA), để tăng độ tin cậy và hỗ trợ liên hệ.
@@ -173,4 +171,6 @@ carbide burr shape l, burr cone 60 độ l, ứng dụng burr shape l, khi nào 
 | Leads | 3 |
 
 ### 20. Changelog
+- v1.1.1 (2025-10-14): Chuẩn hoá Media/Asset chỉ dùng BG + Sizes (Metric/Inch); hình minh hoạ so sánh/hạn chế chuyển thành mô tả text/table trong bài.
+- v1.1.0 (2025-10-14): Bổ sung mục "Kích thước (Metric & Inch)" và cập nhật Media/Asset theo ảnh chính thức (BG/Metric/Inch).
 - v1.0.0 (2025-10-08): Skeleton tạo theo template v1.2.0
