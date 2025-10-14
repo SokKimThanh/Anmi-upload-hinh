@@ -48,12 +48,13 @@ Breadcrumb: Trang chủ › Carbide Burr › Shape M
 
 ### 7. Content Outline
 1. Shape M là gì? (cone 90°)
-2. Ứng dụng vát mép lỗ & cạnh vuông
-3. Bảng tình huống ứng dụng
-4. Khi KHÔNG nên dùng (cần bo / góc trung bình)
-5. So với Shape L / K
-6. FAQ
-7. CTA
+2. Kích thước (Metric & Inch) – nếu có ảnh chính thức
+3. Ứng dụng vát mép lỗ & cạnh vuông
+4. Bảng tình huống ứng dụng
+5. Khi KHÔNG nên dùng (cần bo / góc trung bình)
+6. So với Shape L / K
+7. FAQ
+8. CTA
 
 ### 8. Internal Linking Plan
 | Anchor Text | Target URL | Reason | Placement |
@@ -71,12 +72,12 @@ Breadcrumb: Trang chủ › Carbide Burr › Shape M
 ### 10. Media / Asset Plan
 | # | Type | Purpose | File | Alt Text | Caption? |
 |---|------|---------|------|---------|----------|
-| 1 | Shape diagram | Hình dạng | shape-m-diagram.webp | Carbide Burr Shape M | Có |
-| 2 | Chamfer hole | Vát mép lỗ | shape-m-chamfer-hole.webp | Vát mép lỗ 90° | Có |
-| 3 | Edge chamfer | Vát cạnh | shape-m-edge-chamfer.webp | Vát cạnh 90° | Có |
-| 4 | Comparison | So sánh | shape-m-vs-l.webp | Shape M vs L | Có |
-| 5 | Limitation | Giới hạn | shape-m-limitation.webp | Giới hạn bo mềm | Có |
-| 6 | CTA | Hỗ trợ | shape-m-cta.webp | Tư vấn chọn shape | Có |
+| 1 | BG/Hero (bắt buộc) | Nhận diện shape | https://anmitools.com/wp-content/uploads/2025/10/TypeM-BG.webp | Carbide Burr Shape M (Cone 90°) | Có |
+| 2 | Size – Metric | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeM-MetricSize.webp | Bảng kích thước Shape M – hệ Metric | Có |
+| 3 | Size – Inch | Bảng kích thước | https://anmitools.com/wp-content/uploads/2025/10/TypeM-InchSize.webp | Bảng kích thước Shape M – hệ Inch | Có |
+| 4 | Comparison (tuỳ chọn) | So sánh | shape-m-vs-l.webp | Shape M vs L/K | Có |
+| 5 | Limitation (tuỳ chọn) | Giới hạn | shape-m-limitation.webp | Giới hạn: không bo mềm / không góc trung bình | Có |
+| 6 | CTA | Hỗ trợ | trang-30_tools_diachi-editbyAI.webp | Đội hỗ trợ AN MI TOOLS | Có |
 
 ### 10b. Technical Support Image (Footer, required)
 - Placement: Khối ảnh cuối bài (sau CTA), để tăng độ tin cậy và hỗ trợ liên hệ.
@@ -173,4 +174,5 @@ carbide burr shape m, burr cone 90 độ m, ứng dụng burr shape m, khi nào 
 | Leads | 3 |
 
 ### 20. Changelog
+- v1.1.0 (2025-10-14): Bổ sung mục "Kích thước (Metric & Inch)" và cập nhật Media/Asset theo ảnh chính thức (BG/Metric/Inch).
 - v1.0.0 (2025-10-08): Skeleton tạo theo template v1.2.0
