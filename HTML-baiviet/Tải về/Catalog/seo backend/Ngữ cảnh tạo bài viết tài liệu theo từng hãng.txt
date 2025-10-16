@@ -80,6 +80,22 @@ Có thể mở rộng thành từng danh mục con hoặc landing page riêng ch
   <div class="catalog-link"><a href="https://www.korloy.com/en/ebook/Cutting%20Tools_Rotating%2025-26(EM)/assets/contents/download.pdf" target="_blank">Tải về PDF</a></div>
 </div>
 
+---
+
+Preset SEO – Dormer Pramet (Rank Math backend)
+- Post Title: Catalog Dormer Pramet 2024 – Danh sách tải PDF EN/VN
+- Slug: catalog-dormer-pramet-2024
+- SEO Title (≤60): Catalog Dormer Pramet 2024 – Tạo lỗ, Phay, Tiện
+- SEO Description (≤160): Tổng hợp catalog Dormer Pramet 2024: Tạo lỗ, Phay liền khối, Phay gắn mảnh, Tiện, Tạo ren. Tải PDF EN & VN miễn phí.
+- Focus Keyword: catalog Dormer Pramet 2024
+- Meta Keywords (phân tách bằng dấu phẩy): Dormer Pramet, catalog Dormer Pramet, catalog 2024, tạo lỗ Dormer, phay liền khối Dormer, phay gắn mảnh Dormer, tiện Dormer, tạo ren Dormer, tài liệu Dormer, PDF Dormer Pramet, catalog kỹ thuật, cutting tools, solid milling, indexable milling, threading, turning
+- Tags (WP Tags): Dormer Pramet, Catalog Dormer Pramet 2024, Tạo lỗ, Phay liền khối, Phay gắn mảnh, Tiện, Tạo ren, Catalog kỹ thuật, PDF catalog, Cutting tools
+
+Gợi ý nội dung SEO on-page (không chèn link tải trong mô tả):
+- H1: Catalog Dormer Pramet 2024
+- Các H2: Giới thiệu, Danh mục tài liệu, Lý do nên tải
+- Đoạn mô tả súc tích, có CTA “Tải PDF”.
+
 <div class="catalog-item">
   <div class="catalog-title">Pipe Industry (2025)</div>
   <div class="catalog-code">Mã: 2025.03</div>
