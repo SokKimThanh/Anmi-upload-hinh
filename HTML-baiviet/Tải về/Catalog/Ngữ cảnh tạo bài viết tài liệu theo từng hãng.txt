@@ -1,0 +1,102 @@
+📂 Ngữ cảnh công việc: Thiết kế & SEO bài viết cho tài liệu từng hãng – An Mi Tools
+🎯 Mục tiêu chính
+Thiết kế nội dung và tối ưu SEO cho các bài viết giới thiệu catalog tài liệu kỹ thuật của từng hãng dụng cụ cắt.
+
+Tăng khả năng hiển thị trên Google, hỗ trợ người dùng dễ dàng tra cứu và tải tài liệu.
+
+🧱 Các quy tắc và cấu trúc đã thống nhất
+1. Bài viết SEO
+Mỗi hãng có bài viết riêng: Korloy, Dormer Pramet, An Mi Tools.
+
+Bài viết gồm: giới thiệu, danh mục tài liệu, mô tả từng loại, lý do nên tải, từ khóa SEO, thông tin liên hệ.
+
+2. Meta SEO (Rank Math)
+SEO Title: chứa từ khóa chính, dưới 60 ký tự.
+
+Meta Description: mô tả ngắn gọn, có CTA, dưới 160 ký tự.
+
+Slug: không dấu, ngắn gọn, chứa từ khóa chính.
+
+Focus Keyword: từ khóa chính của bài viết.
+
+Meta Keywords: danh sách từ khóa liên quan, cách nhau bằng dấu phẩy.
+
+3. CSS trình bày nội dung
+Class .catalog-title cho tiêu đề tài liệu.
+
+Class .catalog-description cho mô tả ngắn.
+
+Gợi ý phối màu nhẹ, dễ đọc, phù hợp giao diện kỹ thuật.
+
+4. Phân loại tài liệu
+Korloy: Solid, Rotating, Turning, Pipe Industry.
+
+Dormer Pramet: Tạo lỗ, phay, tiện, taro.
+
+An Mi Tools: Phủ PVD, kim cương V-K/V-E, dao liền khối, dụng cụ siêu chính xác.
+
+5. Không dùng mã tài liệu hoặc link tải trong phần mô tả nội dung chính
+→ Chỉ dùng trong phần kỹ thuật hoặc bảng tổng hợp riêng.
+
+📌 Ghi chú triển khai
+Nội dung có thể chèn vào Elementor, Gutenberg hoặc HTML thuần.
+
+CSS có thể dùng trong Elementor Pro (Custom CSS) hoặc file style.css..
+
+Có thể mở rộng thành từng danh mục con hoặc landing page riêng cho từng nhóm sản phẩm.
+
+<style>
+.catalog-item {
+  margin-bottom: 20px;
+  padding: 12px;
+  border-left: 4px solid #0073aa;
+  background-color: #f9f9f9;
+}
+.catalog-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+.catalog-code {
+  font-size: 14px;
+  color: #666;
+}
+.catalog-desc {
+  font-size: 15px;
+  color: #444;
+  margin: 4px 0;
+}
+.catalog-link a {
+  color: #0073aa;
+  text-decoration: underline;
+  font-weight: 500;
+}
+</style>
+
+<div class="catalog-item">
+  <div class="catalog-title">Cutting Tools – Solid (2025–2026)</div>
+  <div class="catalog-code">Mã: 2025.08</div>
+  <div class="catalog-desc">Dụng cụ cắt đặc như dao phay, khoan, taro.</div>
+  <div class="catalog-link"><a href="https://www.korloy.com/en/ebook/Cutting%20Tools_Rotating%2025-26(EM)/assets/contents/download.pdf" target="_blank">Tải về PDF</a></div>
+</div>
+
+<div class="catalog-item">
+  <div class="catalog-title">Pipe Industry (2025)</div>
+  <div class="catalog-code">Mã: 2025.03</div>
+  <div class="catalog-desc">Giải pháp dụng cụ cắt cho ngành công nghiệp ống.</div>
+  <div class="catalog-link"><a href="https://www.korloy.com/en/ebook/2025-Pipe%20Industry(EM)/assets/contents/download.pdf" target="_blank">Tải về PDF</a></div>
+</div>
+
+<div class="catalog-item">
+  <div class="catalog-title">Cutting Tools – Rotating (2025–2026)</div>
+  <div class="catalog-code">Mã: 2024.12</div>
+  <div class="catalog-desc">Dụng cụ cắt quay như mũi khoan, dao phay tròn.</div>
+  <div class="catalog-link"><a href="https://www.korloy.com/en/ebook/Cutting%20Tools_Rotating%2025-26(EM)/assets/contents/download.pdf" target="_blank">Tải về PDF</a></div>
+</div>
+
+<div class="catalog-item">
+  <div class="catalog-title">Cutting Tools – Turning (2025–2026)</div>
+  <div class="catalog-code">Mã: 2024.12</div>
+  <div class="catalog-desc">Dụng cụ tiện, insert tiện, holder tiện.</div>
+  <div class="catalog-link"><a href="https://www.korloy.com/en/ebook/Cutting%20Tools_Turning%2025-26(EM)/assets/contents/download.pdf" target="_blank">Tải về PDF</a></div>
+</div>
