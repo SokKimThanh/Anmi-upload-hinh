@@ -90,6 +90,19 @@ CSS bổ sung (nếu trang chưa có):
     <span class="file-meta">(PDF)</span>
   </div>
 
+---
+
+An Mi Tools – Danh sách link tài liệu (2025)
+- Phủ PVD: https://anmitools.com/wp-content/uploads/2025/09/10.-Phu.pdf
+- Lưỡi dao công nghiệp: https://anmitools.com/wp-content/uploads/2025/09/8.-Industrial-blade-1.pdf
+- Mũi mài hợp kim (Carbide Burr): https://anmitools.com/wp-content/uploads/2025/09/6.-Carbider-Burr.pdf
+- Kim cương V-K: https://anmitools.com/wp-content/uploads/2025/09/2.2.-Diamond-cutting-tools-V-K.pdf
+- Kim cương V-E: https://anmitools.com/wp-content/uploads/2025/09/2.1.-Diamond-cutting-tools-V-E.pdf
+- Hệ thống gá kẹp (Tooling Systems): https://anmitools.com/wp-content/uploads/2025/09/9.-Tooling-Systems.pdf
+- Dụng cụ siêu chính xác: https://anmitools.com/wp-content/uploads/2025/09/3.-ANMI-Ultra-precision.pdf
+- Dụng cụ cho máy tiện tự động: https://data.anmitools.com/d/s/13vi3KGGEOy8YK8yhA5GHqiDuk9qx1ju/webapi/entry.cgi/1.%20Tools%20for%20auto%20lathes.pdf?api=SYNO.SynologyDrive.Files&method=download&version=2&files=%5B%22id%3A892511247115790421%22%5D&force_download=false&download_type=%22download%22&sharing_token=%22.UpY8HWtd5LBnVX6KWfbrsK_b3Eg73eiEfmRV_J_ZPwHXtNDYEw_4VhzIEld7z3t0QSEcx5pEHxHk83Z.O04hsZ4X7MVT32uE351qCl9izPuYcQh7OC91W7Li8YQC8b0_4wGP4sKGECEMZ.XqAKDCcIAHtrWTUiIGFNF0RctzAheeSnq3HISTVptZf5XLYrIQpRkkGfx.Dm0bvvvSoK05y5Dz9n3Co4O3ZkPS7YPASt9ak4fC6MOXQ0X%22&_dc=1753862078504
+- Dao liền khối – Giá tốt: https://anmitools.com/wp-content/uploads/2025/07/4.-Solid-Products-High-Quality-Best-Price.pdf
+
 📌 Ghi chú triển khai
 Nội dung có thể chèn vào Elementor, Gutenberg hoặc HTML thuần.
 
