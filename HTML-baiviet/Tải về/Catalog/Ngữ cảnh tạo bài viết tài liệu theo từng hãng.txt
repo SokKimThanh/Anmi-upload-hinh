@@ -38,6 +38,58 @@ An Mi Tools: Phủ PVD, kim cương V-K/V-E, dao liền khối, dụng cụ siê
 5. Không dùng mã tài liệu hoặc link tải trong phần mô tả nội dung chính
 → Chỉ dùng trong phần kỹ thuật hoặc bảng tổng hợp riêng.
 
+5.1. Quy ước hiển thị link tải
+- Mỗi tài liệu hiển thị 2 dòng link tách biệt: EN và VN.
+- Dùng cấu trúc:
+  <div class="catalog-link">
+    <div class="link-row"><span class="link-label">EN</span><a href="...">[Tên EN] (PDF)</a></div>
+    <div class="link-row"><span class="link-label">VN</span><a href="...">[Tên VN] (PDF)</a></div>
+  </div>
+- CSS gợi ý:
+  .catalog-link{display:grid;gap:4px}
+  .link-row{display:flex;align-items:center;gap:8px}
+  .link-label{font-size:13px;color:#666;font-weight:600;min-width:34px;text-transform:uppercase}
+  /* Mobile-first: 1 cột; >=680px: 2 cột cho vùng tải */
+  @media(min-width:680px){.catalog-link{grid-template-columns:1fr 1fr}}
+
+6. Chuẩn layout hiển thị tài liệu (Desktop 2 cột, Mobile 1 cột)
+- Mobile-first: mỗi .catalog-item hiển thị 1 cột (thông tin + tải về xếp dọc); .catalog-link 1 cột.
+- Desktop (≥680px): .catalog-item hiển thị 2 cột (trái: tiêu đề + mô tả; phải: khối tải về). Riêng .catalog-link là grid 2 cột (EN | VN) và có tiêu đề "Tải về".
+- Nhãn EN/VN dùng .link-label, viết hoa; link hiển thị dạng: [Tên EN] (PDF) hoặc [Tên VN] (PDF).
+
+Mẫu HTML khuyến nghị:
+<div class="catalog-item">
+  <div>
+    <div class="catalog-title">[Tiêu đề hiển thị] – [English name] (Năm)</div>
+    <div class="catalog-desc">[Mô tả ngắn gọn về nhóm dụng cụ và lợi ích chính]</div>
+  </div>
+  <div class="catalog-link">
+    <div class="download-title">Tải về</div>
+    <div class="link-row"><span class="link-label">EN</span><a href="[PDF_EN_URL]" target="_blank" rel="noopener">[English name] (PDF)</a></div>
+    <div class="link-row"><span class="link-label">VN</span><a href="[PDF_VN_URL]" target="_blank" rel="noopener">[Tên tiếng Việt] (PDF)</a></div>
+  </div>
+  <!-- Lưu ý: Không chèn link tải trong phần mô tả; link chỉ nằm ở khối tải về. -->
+  
+</div>
+
+CSS bổ sung (nếu trang chưa có):
+.catalog-item{display:grid;grid-template-columns:1fr;gap:10px}
+.catalog-link{display:grid;grid-template-columns:1fr;gap:6px 12px;align-content:start}
+.link-row{display:flex;align-items:center;gap:8px}
+.link-label{font-size:13px;color:#666;font-weight:600;min-width:34px;text-transform:uppercase}
+.download-title{grid-column:1/-1;font-weight:700;font-size:14px;color:#333;margin-bottom:2px}
+@media(min-width:680px){.catalog-item{grid-template-columns:1.6fr 1fr;align-items:start}.catalog-link{grid-template-columns:1fr 1fr}}
+
+7. Chuẩn hiển thị link tải (Icon + Meta)
+- Mỗi link có icon tải nhỏ (SVG 16px) trước văn bản; thêm đoạn meta sau tiêu đề, ví dụ: (PDF) hoặc (PDF, 18 MB).
+- Lớp gợi ý: .link-icon (16px, màu thương hiệu), .file-meta (12px, màu xám vừa).
+- Ví dụ:
+  <div class="link-row"><span class="link-label">VN</span>
+    <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-16a1 1 0 011 1v7.59l2.29-2.3 1.42 1.42L12 15.42 7.29 11.7l1.42-1.42L11 12.59V5a1 1 0 011-1z"/></svg>
+    <a href="[PDF]" target="_blank" rel="noopener">[Tên tài liệu]</a>
+    <span class="file-meta">(PDF)</span>
+  </div>
+
 📌 Ghi chú triển khai
 Nội dung có thể chèn vào Elementor, Gutenberg hoặc HTML thuần.
 
