@@ -1,0 +1,539 @@
+/**
+ * An Mi Holder Products - Universal Styles
+ * Slug Parent: he-thong-ga-kep-can-dao
+ * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
+ * Version: 1.0.0
+ * Author: An Mi Tools Technical Team
+ * 
+ * File CSS chung duy nhất cho tất cả 40 sản phẩm holder.
+ * Plugin sẽ tự động inject file này khi phát hiện:
+ * - Slug cha: he-thong-ga-kep-can-dao
+ * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
+ */
+
+/* ============================================ */
+/* RESET & BASE */
+/* ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8;
+    color: #000000;
+    background-color: #FCF7EC;
+}
+
+/* ============================================ */
+/* CONTAINER - Áp dụng cho tất cả section sản phẩm */
+/* ============================================ */
+section[class*="bt-"],
+section[class*="hsk-"],
+section[class*="nbh"],
+section[class*="nbj"],
+section[class*="ewn"],
+section[class*="rbh"],
+section[class*="cbh"],
+section[class*="bst"],
+section[class*="ck-"],
+section[class*="cbs"],
+section[class*="sb-"],
+section[class*="gc-"],
+section[class*="er-"],
+section[class*="sk-"],
+section[class*="nt-"],
+.he-thong-ga-kep-can-dao {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* ============================================ */
+/* TYPOGRAPHY */
+/* ============================================ */
+section[class*="bt-"] h1,
+section[class*="hsk-"] h1,
+section[class*="nbh"] h1,
+section[class*="nbj"] h1,
+section[class*="ewn"] h1,
+.he-thong-ga-kep-can-dao h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #000000;
+    line-height: 1.2;
+}
+
+section[class*="bt-"] h2,
+section[class*="hsk-"] h2,
+section[class*="nbh"] h2,
+section[class*="nbj"] h2,
+section[class*="ewn"] h2,
+.he-thong-ga-kep-can-dao h2 {
+    font-size: clamp(1.5rem, 3vw, 1.875rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000000;
+    border-bottom: 3px solid #0055AA;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+section[class*="bt-"] h3,
+section[class*="hsk-"] h3,
+section[class*="nbh"] h3,
+section[class*="nbj"] h3,
+section[class*="ewn"] h3,
+.he-thong-ga-kep-can-dao h3 {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #000000;
+}
+
+section[class*="bt-"] p,
+section[class*="hsk-"] p,
+section[class*="nbh"] p,
+section[class*="nbj"] p,
+section[class*="ewn"] p,
+.he-thong-ga-kep-can-dao p {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #000000;
+}
+
+section[class*="bt-"] a,
+section[class*="hsk-"] a,
+section[class*="nbh"] a,
+section[class*="nbj"] a,
+section[class*="ewn"] a,
+.he-thong-ga-kep-can-dao a {
+    color: #0055AA;
+    text-decoration: none;
+}
+
+section[class*="bt-"] a:hover,
+section[class*="hsk-"] a:hover,
+section[class*="nbh"] a:hover,
+section[class*="nbj"] a:hover,
+section[class*="ewn"] a:hover,
+.he-thong-ga-kep-can-dao a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================ */
+/* SECTIONS */
+/* ============================================ */
+.section {
+    margin-bottom: 3rem;
+}
+
+/* ============================================ */
+/* IMAGES & FIGURES */
+/* ============================================ */
+figure {
+    width: 100%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bordered-img {
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+figcaption {
+    color: #333333;
+    font-size: 0.95rem;
+    margin-top: 0.75rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* ============================================ */
+/* LISTS */
+/* ============================================ */
+ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+.spec-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.spec-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.advantage-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.advantage-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: flex-start;
+}
+
+.advantage-item:last-child {
+    border-bottom: none;
+}
+
+.instruction-list,
+.maintenance-list {
+    color: #333333;
+    line-height: 1.7;
+}
+
+/* ============================================ */
+/* TABLES */
+/* ============================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+thead {
+    background-color: #0055AA;
+    color: #FFFFFF;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+.highlight-col {
+    text-align: center;
+}
+
+.highlight-value {
+    color: #0055AA;
+    font-weight: 600;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-note {
+    font-size: 0.95rem;
+    color: #333333;
+    line-height: 1.7;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.note {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+/* ============================================ */
+/* CARDS */
+/* ============================================ */
+.card {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* ============================================ */
+/* CONTACT SECTION */
+/* ============================================ */
+.contact-box {
+    background-color: #0055AA;
+    color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,85,170,0.2);
+}
+
+.contact-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.contact-item {
+    background-color: rgba(255,255,255,0.1);
+    padding: 1.25rem;
+    border-radius: 8px;
+}
+
+.contact-item h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #FFFFFF;
+}
+
+.contact-item p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.contact-item a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.contact-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.contact-footer p {
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* ============================================ */
+/* SUPPORT CARDS */
+/* ============================================ */
+.support-card {
+    text-align: center;
+}
+
+.support-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ============================================ */
+/* FAQ */
+/* ============================================ */
+.faq-container {
+    overflow: hidden;
+}
+
+details {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+details:last-child {
+    border-bottom: none;
+}
+
+summary {
+    padding: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary .toggle {
+    transform: rotate(45deg);
+}
+
+.toggle {
+    color: #0055AA;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-content {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    color: #333333;
+    line-height: 1.7;
+}
+
+.faq-content p {
+    margin: 0;
+}
+
+/* ============================================ */
+/* UTILITY CLASSES */
+/* ============================================ */
+.highlight-box {
+    background-color: #F0F8FF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #0055AA;
+    margin-bottom: 1.5rem;
+}
+
+.warning-box {
+    background-color: #FFF9E6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #FFA500;
+    margin-bottom: 1.5rem;
+}
+
+.info-box {
+    background-color: #F0F8FF;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.info-box p {
+    margin: 0;
+}
+
+.checkmark {
+    color: #0055AA;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+/* ============================================ */
+/* FOOTER */
+/* ============================================ */
+.footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.footer-main {
+    font-size: 0.95rem;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.footer-meta {
+    font-size: 0.875rem;
+    color: #666666;
+    margin: 0;
+}
+
+/* ============================================ */
+/* RESPONSIVE DESIGN */
+/* ============================================ */
+@media (max-width: 768px) {
+    section[class*="bt-"],
+    section[class*="hsk-"],
+    section[class*="nbh"],
+    section[class*="nbj"],
+    section[class*="ewn"],
+    .he-thong-ga-kep-can-dao {
+        padding: 1rem 0.5rem;
+    }
+    
+    table {
+        font-size: 0.875rem;
+    }
+    
+    th, td {
+        padding: 0.75rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================ */
+/* ACCESSIBILITY */
+/* ============================================ */
+*:focus {
+    outline: 2px solid #0055AA;
+    outline-offset: 2px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================ */
+/* PRINT STYLES */
+/* ============================================ */
+@media print {
+    section[class*="bt-"],
+    section[class*="hsk-"],
+    section[class*="nbh"],
+    section[class*="nbj"],
+    section[class*="ewn"],
+    .he-thong-ga-kep-can-dao {
+        background-color: #FFFFFF;
+    }
+    
+    .contact-box {
+        background-color: #FFFFFF;
+        color: #000000;
+        border: 1px solid #000000;
+    }
+}

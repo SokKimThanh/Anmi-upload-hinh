@@ -1,0 +1,194 @@
+🎯 Mục tiêu
+Tự động chuyển nội dung từ tài liệu chuyên ngành về holder CNC thành hệ thống bài viết sản phẩm chuẩn SEO, bao gồm:
+
+Một file mẫu: template.seo.md
+
+Các file gốc: NN-slug.seo.md (tuân theo template)
+
+Các file HTML xuất bản: NN-slug.seo.html (render từ .seo.md)
+
+Tất cả phải tương thích với Rank Math SEO, responsive, accessible, và tích hợp plugin duy nhất gắn CSS theo slug.
+
+📥 Đầu vào
+Nhiều file PDF chứa nội dung chuyên ngành về holder trong CNC
+
+📤 Đầu ra
+holder.txt: chứa tri thức nền, phân loại theo hệ thống gá kẹp
+
+template.seo.md: file mẫu chuẩn SEO (bắt buộc tạo trước)
+
+Với mỗi sản phẩm:
+
+NN-slug.seo.md: nội dung gốc chuẩn SEO
+
+NN-slug.seo.html: bản HTML render từ .seo.md
+
+🧠 Bước 1: Tạo tri thức nền
+Trích xuất toàn bộ nội dung liên quan đến holder CNC từ các PDF
+
+Lưu vào holder.txt theo phân loại sau:
+
+Danh mục phân loại
+BT SIDE LOCK
+BT-SHR
+CAT
+COLLET
+HSK
+MAS-BT
+NT
+SK
+Với mỗi loại: ghi rõ định nghĩa, đặc điểm kỹ thuật, ứng dụng, ưu/nhược điểm, hình ảnh minh họa nếu có
+
+Không được suy diễn ngoài tài liệu gốc
+
+🧱 Bước 2: Tạo file mẫu template.seo.md
+Bắt buộc tạo trước khi viết bất kỳ bài nào
+
+File phải bao gồm:
+
+Khối metadata chuẩn Rank Math SEO
+
+Cấu trúc nội dung rõ ràng: mô tả, thông số, ứng dụng, hỗ trợ kỹ thuật
+
+Hình ảnh có caption đúng vị trí, đúng ngữ cảnh
+
+Toàn bộ nội dung nằm trong <section class="slug"> để plugin nhận diện
+
+Ghi chú rõ ràng về CSS hook theo slug
+
+🔁 Bước 3: Sinh file sản phẩm theo thứ tự
+Tự động chia phase theo thứ tự sản phẩm trong tài liệu
+
+Với mỗi sản phẩm, tạo cặp file:
+
+NN-slug.seo.md
+
+NN-slug.seo.html
+
+Mỗi lần chỉ xử lý một sản phẩm duy nhất
+
+Chờ lệnh "viết tiếp" để tạo bài kế tiếp
+
+🧾 Bước 4: Metadata SEO và từ khóa
+primary_keyword: chỉ chứa một từ khóa chính duy nhất
+
+seo_score_target: phải là >=70
+
+category: khớp với danh mục phân loại; nếu không có, dùng:
+
+markdown
+category: "Hệ thống gá kẹp, cán dao"
+slug: không dấu, không khoảng trắng, duy nhất cho từng bài
+
+🖼️ Bước 5: Hình ảnh, caption và vị trí chèn
+Mỗi ảnh phải:
+
+Có caption riêng liên quan trực tiếp đến nội dung liền kề
+
+Có kích thước: width:1000px; height:auto;
+
+Căn giữa: margin:auto; text-align:center;
+
+Nếu đặc biệt: thêm border và box-shadow
+
+Ảnh phải đặt ngay sau đoạn nội dung mà nó minh họa
+
+🌐 Bước 6: HTML output và hook CSS theo slug
+File .seo.html phải bọc toàn bộ nội dung trong:
+
+html
+<section class="slug-cua-san-pham">
+  <!-- Nội dung -->
+</section>
+Plugin CSS theo slug:
+
+Chỉ dùng một plugin duy nhất
+
+Tự động nhận diện slug từ metadata và class HTML
+
+Không tạo plugin riêng cho từng bài
+
+🎨 Bước 7: Thiết kế, responsive, accessibility và màu sắc
+Dùng đơn vị rem cho font-size, padding, margin
+
+Màu nền: #FCF7EC
+
+Màu chữ chính và tiêu đề: #000000 (contrast ratio 18.96 : 1)
+
+Caption ảnh: #333333
+
+Link: #0055AA
+
+Tối ưu responsive: font-scale tự điều chỉnh trên mobile
+
+Đảm bảo accessibility: alt cho ảnh, độ tương phản đúng chuẩn
+
+📁 Bước 8: Quy tắc đặt tên và quản lý file
+Tên file theo mẫu:
+
+NN-slug.seo.md
+
+NN-slug.seo.html
+
+NN: số thứ tự sản phẩm trong tài liệu
+
+Mỗi .seo.md phải bắt đầu bằng metadata, sau đó là nội dung markdown chứa HTML inline
+
+📄 Template mẫu template.seo.md
+markdown
+---
+title: "Tên sản phẩm đầy đủ"
+slug: "ten-san-pham-khong-dau"
+primary_keyword: "từ khóa chính duy nhất"
+tags: "tag1, tag2"
+category: "BT SIDE LOCK"
+seo_title: "Tiêu đề SEO chứa từ khóa chính"
+seo_description: "Mô tả ngắn hấp dẫn chứa từ khóa chính"
+social_image_facebook: "link_ảnh_fb.jpg"
+social_image_twitter: "link_ảnh_x.jpg"
+seo_score_target: ">=70"
+---
+
+<section class="ten-san-pham-khong-dau">
+
+# Tên sản phẩm
+
+## Mô tả ngắn
+Đoạn giới thiệu tổng quan rút gọn từ tài liệu.
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="link_thumbnail.jpg" style="width:1000px; height:auto;" alt="Alt ảnh đại diện">
+  <figcaption style="color:#333333;">Caption liên quan trực tiếp tới đoạn Mô tả ngắn theo tri thức holder.txt</figcaption>
+</figure>
+
+## Thông số kỹ thuật
+- Thông số 1
+- Thông số 2
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="link_thongso.jpg" style="width:1000px; height:auto;" alt="Alt ảnh thông số">
+  <figcaption style="color:#333333;">Caption giải thích bảng thông số, đối chiếu với tiêu chuẩn phân loại</figcaption>
+</figure>
+
+## Ứng dụng
+Đoạn mô tả ứng dụng thực tế, trích xuất từ holder.txt.
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="link_chinh.jpg" style="width:1000px; height:auto; border:1px solid rgba(0,0,0,0.08); box-shadow:0 2px 12px rgba(0,0,0,0.08);" alt="Alt ảnh ứng dụng">
+  <figcaption style="color:#333333;">Caption nêu ví dụ ứng dụng thực tế tương ứng phần Ứng dụng</figcaption>
+</figure>
+
+## Hỗ trợ kỹ thuật
+Thông tin hỗ trợ, liên hệ, tài liệu tham khảo.
+
+</section>
+✅ Cam kết vận hành
+Chatbot phải tạo template.seo.md ngay khi bắt đầu
+
+Mỗi lần chỉ xử lý một sản phẩm
+
+Không được suy diễn ngoài tài liệu PDF
+
+Chỉ dùng một plugin duy nhất để gắn CSS theo slug
+
+Mục tiêu SEO: Rank Math ≥ 70
