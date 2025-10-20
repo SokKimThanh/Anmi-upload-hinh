@@ -1,0 +1,20 @@
+---
+title: "BT-SR Shrink Fit Chuck"
+slug: "bt-sr-shrink-fit-chuck"
+primary_keyword: "bt-sr shrink fit chuck"
+tags: "BT-SR, shrink fit, chuck, tool holder, CNC"
+category: "BT-SHR"
+seo_title: "BT-SR Shrink Fit Chuck - Chuck co nhiệt CNC chính xác cao"
+seo_description: "BT-SR Shrink Fit Chuck - Giải pháp chuck co nhiệt chính xác cao cho gia công CNC. Chất lượng Nhật Bản."
+social_image_facebook: ""
+social_image_twitter: ""
+seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-10-20"
+date_modified: "2025-10-20"
+schema_type: "Product"
+---
+
+<section class="bt-sr-shrink-fit-chuck">
+
+</section>
