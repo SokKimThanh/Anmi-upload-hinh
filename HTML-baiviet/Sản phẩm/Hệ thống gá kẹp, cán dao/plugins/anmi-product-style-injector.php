@@ -1,15 +1,19 @@
 <?php
 /**
- * Plugin Name: An Mi Product Style Injector
- * Plugin URI: https://anmitools.com
- * Description: Plugin load CSS chung cho tất cả sản phẩm. Tự động nhận diện khi có section product trong nội dung.
- * Version: 2.0.0
- * Author: An Mi Tools Technical Team
- * Author URI: https://anmitools.com
+ * Plugin Name: An Mi Tools - Product Style Injector
+ * Plugin URI: https://anmitools.com/plugins/product-style-injector
+ * Description: Automatically inject common CSS for all An Mi Tools holder products. Detects product section and loads unified stylesheet.
+ * Version: 2.0.1
+ * Requires at least: 5.8
+ * Requires PHP: 7.4
+ * Author: An Mi Tools Vietnam
+ * Author URI: https://anmitools.com/contact-us/
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: anmi-product-style
+ * Text Domain: anmi-tools-product-style
  * Domain Path: /languages
+ * Network: false
+ * Update URI: false
  * 
  * @package AnMiProductStyleInjector
  * @version 2.0.0
