@@ -1,0 +1,119 @@
+{
+  "csv_importer": {
+    "version": "1.0.0",
+    "max_file_size": 268435456,
+    "allowed_extensions": ["csv", "txt"],
+    "default_delimiter": ",",
+    "default_encoding": "UTF-8",
+    
+    "paths": {
+      "products_json": "../products-list.json",
+      "seo_backend": "../seo back end/products/",
+      "seo_html": "../seo html/",
+      "backup_dir": "./backups/"
+    },
+    
+    "required_columns": [
+      "id",
+      "title",
+      "slug",
+      "category"
+    ],
+    
+    "optional_columns": [
+      "primary_keyword",
+      "status",
+      "file_md",
+      "file_html",
+      "file_css",
+      "seo_title",
+      "seo_description",
+      "tags",
+      "price",
+      "stock"
+    ],
+    
+    "column_aliases": {
+      "id": ["id", "product_id", "mã", "ma"],
+      "title": ["title", "name", "tên", "ten", "product_name"],
+      "slug": ["slug", "url", "link", "duong_dan"],
+      "category": ["category", "danh_muc", "loại", "loai"],
+      "primary_keyword": ["primary_keyword", "keyword", "từ_khóa", "tu_khoa"],
+      "status": ["status", "trang_thai"],
+      "price": ["price", "giá", "gia"],
+      "stock": ["stock", "ton_kho", "quantity"]
+    },
+    
+    "default_values": {
+      "status": "pending",
+      "price": 0,
+      "stock": 0
+    },
+    
+    "validation": {
+      "id": {
+        "type": "integer",
+        "min": 1,
+        "required": true
+      },
+      "title": {
+        "type": "string",
+        "min_length": 3,
+        "max_length": 200,
+        "required": true
+      },
+      "slug": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$",
+        "min_length": 3,
+        "max_length": 200,
+        "required": true
+      },
+      "category": {
+        "type": "string",
+        "required": true
+      },
+      "price": {
+        "type": "number",
+        "min": 0
+      },
+      "stock": {
+        "type": "integer",
+        "min": 0
+      }
+    },
+    
+    "auto_backup": true,
+    "backup_format": "products-list.json.backup.%Y%m%d%H%M%S",
+    
+    "error_handling": {
+      "skip_invalid_rows": true,
+      "continue_on_error": true,
+      "log_errors": true,
+      "log_warnings": true
+    },
+    
+    "performance": {
+      "php_max_execution_time": 300,
+      "php_memory_limit": "512M",
+      "batch_size": 100
+    },
+    
+    "categories": [
+      "BT SIDE LOCK",
+      "HSK TOOL HOLDER",
+      "BT FRONT LOCK",
+      "BORING SYSTEM",
+      "CAT TOOL HOLDER",
+      "NT TOOL HOLDER",
+      "ACCESSORIES"
+    ],
+    
+    "status_options": [
+      "completed",
+      "pending",
+      "draft",
+      "archived"
+    ]
+  }
+}

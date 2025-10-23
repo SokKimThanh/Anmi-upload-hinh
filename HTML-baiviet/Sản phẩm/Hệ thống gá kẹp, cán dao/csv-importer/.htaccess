@@ -1,0 +1,27 @@
+# Prevent directory listing
+Options -Indexes
+
+# Deny access from all by default
+<Files "*">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Allow access to index.php and CSS/JS files
+<FilesMatch "^(index\.php|.*\.(css|js|png|jpg|jpeg|gif|svg))$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Optional: Add basic authentication (uncomment and configure)
+# AuthType Basic
+# AuthName "Restricted Area - Admin Only"
+# AuthUserFile /path/to/.htpasswd
+# Require valid-user
+
+# Increase upload limits for large CSV files
+php_value upload_max_filesize 256M
+php_value post_max_size 256M
+php_value max_execution_time 300
+php_value max_input_time 300
+php_value memory_limit 512M
