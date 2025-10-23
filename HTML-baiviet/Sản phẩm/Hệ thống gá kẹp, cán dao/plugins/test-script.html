@@ -1,0 +1,258 @@
+<!-- 
+    TEST SCRIPT - COPY/PASTE VÀO BROWSER CONSOLE
+    Chạy script này sau khi upload plugin để kiểm tra
+-->
+
+<script>
+/**
+ * An Mi Product Style Injector - Test Script
+ * Version: 2.1.0
+ * 
+ * Chạy script này trong browser console (F12) để test plugin
+ */
+
+(function() {
+    'use strict';
+    
+    console.log('='.repeat(60));
+    console.log('🔍 AN MI PRODUCT STYLE INJECTOR - TEST SCRIPT v2.1.0');
+    console.log('='.repeat(60));
+    console.log('');
+    
+    // Test 1: Check if CSS file is loaded
+    console.log('📋 TEST 1: Check CSS File Loading');
+    console.log('-'.repeat(60));
+    
+    const cssLinks = document.querySelectorAll('link[rel="stylesheet"]');
+    let cssFound = false;
+    let cssUrl = '';
+    
+    cssLinks.forEach(link => {
+        if (link.href.includes('anmi-holder-products.css')) {
+            cssFound = true;
+            cssUrl = link.href;
+            console.log('✅ CSS Found:', link.href);
+            console.log('   ID:', link.id);
+            console.log('   Media:', link.media);
+        }
+    });
+    
+    if (!cssFound) {
+        console.error('❌ CSS NOT FOUND! Plugin may not be active.');
+    }
+    console.log('');
+    
+    // Test 2: Fetch CSS and check if it loads (200 OK)
+    if (cssFound) {
+        console.log('📋 TEST 2: Fetch CSS File (Check 200 OK)');
+        console.log('-'.repeat(60));
+        
+        fetch(cssUrl)
+            .then(response => {
+                console.log('Status:', response.status, response.statusText);
+                console.log('Content-Type:', response.headers.get('content-type'));
+                console.log('Content-Length:', response.headers.get('content-length'), 'bytes');
+                
+                if (response.status === 200) {
+                    console.log('✅ CSS loads successfully (200 OK)');
+                    return response.text();
+                } else if (response.status === 301) {
+                    console.error('❌ CSS returns 301 REDIRECT - Path is wrong!');
+                    console.error('   Expected: .../anmi-product-style-injector/css/...');
+                    return null;
+                } else if (response.status === 404) {
+                    console.error('❌ CSS returns 404 NOT FOUND - File missing!');
+                    return null;
+                } else {
+                    console.warn('⚠️  Unexpected status:', response.status);
+                    return null;
+                }
+            })
+            .then(cssContent => {
+                if (cssContent) {
+                    console.log('CSS Size:', (cssContent.length / 1024).toFixed(2), 'KB');
+                    
+                    // Check for key selectors
+                    const hasHolderStyles = cssContent.includes('.holder-product-content');
+                    const hasBackground = cssContent.includes('#FCF7EC');
+                    const hasSections = cssContent.includes('.product-section');
+                    
+                    console.log('✅ Contains .holder-product-content:', hasHolderStyles);
+                    console.log('✅ Contains background #FCF7EC:', hasBackground);
+                    console.log('✅ Contains .product-section:', hasSections);
+                }
+                console.log('');
+            })
+            .catch(err => {
+                console.error('❌ Error fetching CSS:', err);
+                console.log('');
+            });
+    }
+    
+    // Test 3: Check computed styles
+    console.log('📋 TEST 3: Check Applied Styles');
+    console.log('-'.repeat(60));
+    
+    const productContent = document.querySelector('.holder-product-content');
+    if (productContent) {
+        const styles = window.getComputedStyle(productContent);
+        console.log('Element found: .holder-product-content');
+        console.log('Background:', styles.backgroundColor);
+        console.log('Padding:', styles.padding);
+        console.log('Font Size:', styles.fontSize);
+        
+        const expectedBg = 'rgb(252, 247, 236)'; // #FCF7EC
+        if (styles.backgroundColor === expectedBg) {
+            console.log('✅ Background color is correct!');
+        } else {
+            console.warn('⚠️  Background color mismatch!');
+            console.warn('   Expected:', expectedBg);
+            console.warn('   Got:', styles.backgroundColor);
+        }
+    } else {
+        console.warn('⚠️  .holder-product-content element not found');
+        console.warn('   This may be normal if not on a holder product page');
+    }
+    console.log('');
+    
+    // Test 4: Check sections
+    console.log('📋 TEST 4: Check Product Sections');
+    console.log('-'.repeat(60));
+    
+    const sections = document.querySelectorAll('.product-section');
+    if (sections.length > 0) {
+        console.log(`✅ Found ${sections.length} product section(s)`);
+        sections.forEach((section, index) => {
+            const styles = window.getComputedStyle(section);
+            console.log(`   Section ${index + 1}:`);
+            console.log(`     Border: ${styles.border}`);
+            console.log(`     Padding: ${styles.padding}`);
+            console.log(`     Margin: ${styles.marginBottom}`);
+        });
+    } else {
+        console.warn('⚠️  No .product-section elements found');
+    }
+    console.log('');
+    
+    // Test 5: Editor check (if in editor)
+    console.log('📋 TEST 5: Editor Mode Check');
+    console.log('-'.repeat(60));
+    
+    const isEditor = document.body.classList.contains('block-editor-page') || 
+                     document.querySelector('.editor-styles-wrapper');
+    
+    if (isEditor) {
+        console.log('✅ Editor mode detected');
+        
+        const editorWrapper = document.querySelector('.editor-styles-wrapper');
+        if (editorWrapper) {
+            const styles = window.getComputedStyle(editorWrapper);
+            console.log('Editor wrapper background:', styles.backgroundColor);
+            
+            const expectedBg = 'rgb(252, 247, 236)'; // #FCF7EC
+            if (styles.backgroundColor === expectedBg) {
+                console.log('✅ Editor background is correct!');
+            } else {
+                console.warn('⚠️  Editor background mismatch');
+            }
+        }
+    } else {
+        console.log('ℹ️  Not in editor mode (normal)');
+    }
+    console.log('');
+    
+    // Summary
+    console.log('='.repeat(60));
+    console.log('📊 SUMMARY');
+    console.log('='.repeat(60));
+    console.log('Plugin Version: 2.1.0');
+    console.log('Test Date:', new Date().toLocaleString());
+    console.log('Page URL:', window.location.href);
+    console.log('');
+    console.log('✅ = Pass');
+    console.log('⚠️  = Warning (may be normal)');
+    console.log('❌ = Fail (needs attention)');
+    console.log('='.repeat(60));
+    
+})();
+</script>
+
+<!-- 
+HOW TO USE:
+===========
+
+1. Mở trang sản phẩm holder:
+   https://anmitools.com/san-pham/er-high-precision-collet/
+
+2. Mở DevTools:
+   - Chrome/Edge: F12 hoặc Ctrl+Shift+I
+   - Firefox: F12
+
+3. Chuyển sang tab Console
+
+4. Copy toàn bộ code JavaScript trong thẻ <script> ở trên
+
+5. Paste vào console và nhấn Enter
+
+6. Xem kết quả test:
+   ✅ = Pass - OK
+   ⚠️  = Warning - Có thể bình thường
+   ❌ = Fail - Cần fix
+
+EXPECTED OUTPUT:
+================
+
+============================================================
+🔍 AN MI PRODUCT STYLE INJECTOR - TEST SCRIPT v2.1.0
+============================================================
+
+📋 TEST 1: Check CSS File Loading
+------------------------------------------------------------
+✅ CSS Found: https://anmitools.com/.../anmi-holder-products.css?ver=2.1.0
+   ID: anmi-holder-products-css
+   Media: all
+
+📋 TEST 2: Fetch CSS File (Check 200 OK)
+------------------------------------------------------------
+Status: 200 OK
+Content-Type: text/css
+Content-Length: 15234 bytes
+✅ CSS loads successfully (200 OK)
+CSS Size: 14.88 KB
+✅ Contains .holder-product-content: true
+✅ Contains background #FCF7EC: true
+✅ Contains .product-section: true
+
+📋 TEST 3: Check Applied Styles
+------------------------------------------------------------
+Element found: .holder-product-content
+Background: rgb(252, 247, 236)
+Padding: 40px 20px
+Font Size: 16px
+✅ Background color is correct!
+
+📋 TEST 4: Check Product Sections
+------------------------------------------------------------
+✅ Found 5 product section(s)
+   Section 1:
+     Border: 2px solid rgb(221, 204, 170)
+     Padding: 30px 20px
+     Margin: 40px
+
+📋 TEST 5: Editor Mode Check
+------------------------------------------------------------
+ℹ️  Not in editor mode (normal)
+
+============================================================
+📊 SUMMARY
+============================================================
+Plugin Version: 2.1.0
+Test Date: 10/23/2025, 9:10:00 AM
+Page URL: https://anmitools.com/san-pham/er-high-precision-collet/
+
+✅ = Pass
+⚠️  = Warning (may be normal)
+❌ = Fail (needs attention)
+============================================================
+
+-->
