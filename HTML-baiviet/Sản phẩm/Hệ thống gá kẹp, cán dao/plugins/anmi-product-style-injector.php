@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Tools - Product Style Injector
  * Plugin URI: https://anmitools.com/plugins/product-style-injector
  * Description: Automatically inject common CSS for all An Mi Tools holder products. Detects product section and loads unified stylesheet.
- * Version: 2.0.1
+ * Version: 2.1.0
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: An Mi Tools Vietnam
@@ -16,10 +16,11 @@
  * Update URI: false
  * 
  * @package AnMiProductStyleInjector
- * @version 2.0.0
+ * @version 2.1.0
  * @since 1.0.0
  * 
  * Changelog:
+ * 2.1.0 - Added CSS support for WordPress Editor (Gutenberg & Classic Editor)
  * 2.0.0 - Changed to use single common CSS file instead of individual files
  * 1.0.0 - Initial release with individual CSS files per product
  */
@@ -41,7 +42,7 @@ class AnMi_Product_Style_Injector {
      * 
      * @var string
      */
-    private $version = '1.0.0';
+    private $version = '2.1.0';
     
     /**
      * CSS directory path (relative to plugin)
@@ -85,9 +86,14 @@ class AnMi_Product_Style_Injector {
      * Constructor
      */
     public function __construct() {
-        // Define CSS paths
-        $this->css_dir = dirname(__FILE__) . '/../css/';
-        $this->css_url = plugins_url('../css/', __FILE__);
+        // Define CSS paths - CSS folder should be inside plugin directory
+        // Expected structure on WordPress:
+        // wp-content/plugins/anmi-product-style-injector/
+        //   ├── anmi-product-style-injector.php
+        //   └── css/
+        //       └── anmi-holder-products.css
+        $this->css_dir = dirname(__FILE__) . '/css/';
+        $this->css_url = plugins_url('css/', __FILE__);
         
         // Initialize hooks
         $this->init_hooks();
@@ -101,6 +107,12 @@ class AnMi_Product_Style_Injector {
     private function init_hooks() {
         // Enqueue styles based on post/page content
         add_action('wp_enqueue_scripts', array($this, 'enqueue_product_styles'), 20);
+        
+        // ✅ NEW: Enqueue styles in WordPress Editor (Gutenberg)
+        add_action('enqueue_block_editor_assets', array($this, 'enqueue_editor_styles'));
+        
+        // ✅ NEW: Add editor styles for Classic Editor
+        add_editor_style($this->css_url . $this->common_css_file);
         
         // Add admin menu for testing
         add_action('admin_menu', array($this, 'add_admin_menu'));
@@ -223,6 +235,93 @@ class AnMi_Product_Style_Injector {
             // Debug log (only in WP_DEBUG mode)
             if (defined('WP_DEBUG') && WP_DEBUG) {
                 error_log("An Mi Product Style Injector: Enqueued common CSS for holder product (Post ID: {$post->ID})");
+            }
+        }
+    }
+    
+    /**
+     * Enqueue styles in WordPress Editor (Gutenberg)
+     * 
+     * @since 2.0.1
+     */
+    public function enqueue_editor_styles() {
+        global $post;
+        
+        // Check if we're editing a product or holder-related post
+        if (!$post) {
+            return;
+        }
+        
+        $should_load = false;
+        
+        // Check if it's a WooCommerce product
+        if ($post->post_type === 'product') {
+            $should_load = true;
+        }
+        
+        // Check post slug patterns
+        if (!$should_load && isset($post->post_name)) {
+            foreach ($this->holder_slug_patterns as $pattern) {
+                if (strpos($post->post_name, $pattern) === 0) {
+                    $should_load = true;
+                    break;
+                }
+            }
+        }
+        
+        // Check if post has holder category
+        if (!$should_load) {
+            $categories = get_the_terms($post->ID, 'category');
+            if ($categories) {
+                foreach ($categories as $category) {
+                    if ($category->slug === $this->parent_slug || 
+                        strpos($category->slug, 'holder') !== false ||
+                        strpos($category->slug, 'ga-kep') !== false) {
+                        $should_load = true;
+                        break;
+                    }
+                }
+            }
+            
+            // Check WooCommerce product categories
+            $product_cats = get_the_terms($post->ID, 'product_cat');
+            if ($product_cats) {
+                foreach ($product_cats as $category) {
+                    if ($category->slug === $this->parent_slug || 
+                        strpos($category->slug, 'holder') !== false ||
+                        strpos($category->slug, 'ga-kep') !== false) {
+                        $should_load = true;
+                        break;
+                    }
+                }
+            }
+        }
+        
+        // Load CSS in editor if needed
+        if ($should_load) {
+            $css_url = $this->css_url . $this->common_css_file;
+            $css_path = $this->css_dir . $this->common_css_file;
+            $version = file_exists($css_path) ? filemtime($css_path) : $this->version;
+            
+            wp_enqueue_style(
+                'anmi-holder-products-editor',
+                $css_url,
+                array('wp-edit-blocks'),
+                $version,
+                'all'
+            );
+            
+            // Add custom CSS to wrap editor content
+            $custom_css = "
+                .editor-styles-wrapper {
+                    background-color: #FCF7EC;
+                    padding: 20px;
+                }
+            ";
+            wp_add_inline_style('anmi-holder-products-editor', $custom_css);
+            
+            if (defined('WP_DEBUG') && WP_DEBUG) {
+                error_log("An Mi Product Style Injector: Loaded CSS in editor for post ID: {$post->ID}");
             }
         }
     }
