@@ -1,0 +1,361 @@
+/**
+ * Admin Page Styles
+ * An Mi CSV Importer for WooCommerce
+ */
+
+.anmi-csv-importer {
+    margin: 20px 20px 20px 0;
+}
+
+.anmi-csv-importer h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.anmi-csv-importer h1 .dashicons {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+}
+
+.anmi-intro {
+    background: #e7f3ff;
+    border-left: 4px solid #0073aa;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.anmi-intro p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.anmi-container {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+    .anmi-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.anmi-panel {
+    min-width: 0;
+}
+
+.anmi-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.anmi-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.anmi-card h3 {
+    font-size: 16px;
+    margin: 20px 0 15px;
+}
+
+.anmi-card h4 {
+    font-size: 14px;
+    margin: 15px 0 10px;
+    color: #555;
+}
+
+.anmi-form-group {
+    margin-bottom: 20px;
+}
+
+.anmi-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.anmi-form-group input[type="file"],
+.anmi-form-group select {
+    width: 100%;
+    max-width: 500px;
+}
+
+.anmi-form-group input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.anmi-form-group .description {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+.anmi-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .anmi-form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.anmi-divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 25px 0;
+}
+
+.anmi-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.anmi-actions button {
+    padding: 10px 20px;
+}
+
+/* Progress Bar */
+.anmi-progress {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.anmi-progress-bar {
+    width: 100%;
+    height: 30px;
+    background: #e9ecef;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.anmi-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0073aa, #0096dd);
+    width: 0%;
+    transition: width 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.anmi-progress-text {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Results */
+.anmi-results {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.anmi-results.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.anmi-results.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.anmi-results h3 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.anmi-results-table {
+    width: 100%;
+    margin: 15px 0;
+    border-collapse: collapse;
+}
+
+.anmi-results-table th,
+.anmi-results-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.anmi-results-table th {
+    background: rgba(0,0,0,0.05);
+    font-weight: 600;
+}
+
+.anmi-results-table td {
+    font-size: 16px;
+}
+
+.anmi-results-list {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.anmi-results-list li {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+/* Sidebar Styles */
+.anmi-card-info {
+    background: #e7f3ff;
+    border-color: #0073aa;
+}
+
+.anmi-card-warning {
+    background: #fff3cd;
+    border-color: #ffc107;
+}
+
+.anmi-card-stats {
+    background: #f0f0f1;
+}
+
+.anmi-quick-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-block {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.anmi-stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.anmi-stat-item:last-child {
+    border-bottom: none;
+}
+
+.anmi-stat-label {
+    font-weight: 600;
+    color: #555;
+}
+
+.anmi-stat-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.anmi-card code {
+    background: rgba(0,0,0,0.05);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+}
+
+.anmi-card ul {
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+.anmi-card li {
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Loading Spinner */
+.anmi-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 0.8s linear infinite;
+    margin-right: 8px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Alerts */
+.anmi-alert {
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin: 15px 0;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.anmi-alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.anmi-alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.anmi-alert-warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.anmi-alert-info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .anmi-actions {
+        flex-direction: column;
+    }
+    
+    .anmi-actions button {
+        width: 100%;
+    }
+}
