@@ -27,6 +27,11 @@ body {
     background-color: #FCF7EC;
 }
 
+/* Vô hiệu hóa thẻ br */
+br {
+    display: none;
+}
+
 /* ============================================ */
 /* CONTAINER - Áp dụng cho tất cả section sản phẩm */
 /* ============================================ */
@@ -420,6 +425,484 @@ details[open] summary .toggle {
 }
 
 /* ============================================ */
+/* PRODUCT SPECIFIC CLASSES */
+/* ============================================ */
+/* Product Images */
+.product-image {
+    width: 100%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+/* Specifications Grid (for file 39 style) */
+.specs-grid {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.spec-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.spec-label {
+    font-weight: 600;
+    color: #0055AA;
+}
+
+.spec-value {
+    color: #333333;
+}
+
+.spec-note {
+    font-size: 0.95rem;
+    color: #666666;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Spec Table Wrapper (for file 01 style) */
+.spec-table-wrapper {
+    margin: 1rem 0;
+}
+
+/* Features */
+.feature-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 1.5rem 0;
+}
+
+.feature-item {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Applications */
+.application-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 1.5rem 0;
+}
+
+.application-card,
+.application-item {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.application-category {
+    margin-bottom: 2rem;
+}
+
+.application-note {
+    font-size: 0.95rem;
+    color: #666666;
+    font-style: italic;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #F0F8FF;
+    border-radius: 4px;
+}
+
+/* Performance Cards */
+.performance-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 1.5rem 0;
+}
+
+.performance-card {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.performance-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.performance-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0055AA;
+    margin: 0.5rem 0;
+}
+
+/* Comparison Tables */
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.comparison-note {
+    background-color: #F0F8FF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border-left: 4px solid #0055AA;
+}
+
+/* Machining Parameters */
+.machining-params {
+    margin: 2rem 0;
+}
+
+.params-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin: 1rem 0;
+}
+
+.params-note {
+    background-color: #FFF9E6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border-left: 4px solid #FFA500;
+}
+
+/* Guides */
+.guide-subsection {
+    margin: 2rem 0;
+}
+
+.guide-section {
+    margin: 2rem 0;
+}
+
+/* Troubleshooting */
+.troubleshooting {
+    margin: 1.5rem 0;
+}
+
+.issue {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 1.5rem;
+}
+
+/* Why Choose Section */
+.why-anmi {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.reason {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Contact CTA */
+.contact-cta {
+    background-color: #F0F8FF;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+}
+
+.contact-info {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 1.5rem 0;
+}
+
+.office {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.contact-image {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.warranty-note {
+    background-color: #FFF9E6;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+/* Advantages */
+.advantages-wrapper {
+    margin: 1.5rem 0;
+}
+
+.advantages-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Instructions */
+.instruction-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 1.5rem 0;
+}
+
+.instruction-card {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.installation-steps {
+    counter-reset: step;
+}
+
+.installation-steps li {
+    counter-increment: step;
+    margin-bottom: 1rem;
+}
+
+.installation-steps li::before {
+    content: counter(step) ". ";
+    font-weight: 700;
+    color: #0055AA;
+}
+
+/* Maintenance */
+.maintenance-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin: 1rem 0;
+}
+
+/* Download Buttons */
+.download-btn,
+.cta-button {
+    display: inline-block;
+    background-color: #0055AA;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+}
+
+.download-btn:hover,
+.cta-button:hover {
+    background-color: #003d7a;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,85,170,0.3);
+}
+
+/* CTA BUTTONS */
+.cta-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-buttons .btn-primary {
+    background-color: #0055AA;
+    color: #FFFFFF;
+}
+
+.cta-buttons .btn-primary:hover {
+    background-color: #003d7a;
+    text-decoration: none;
+}
+
+.cta-buttons .btn-secondary {
+    background-color: #F0F8FF;
+    color: #0055AA;
+    border: 2px solid #0055AA;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background-color: #0055AA;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Note Boxes */
+.note-box {
+    background-color: #F0F8FF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #0055AA;
+    margin: 1.5rem 0;
+}
+
+.tip-box {
+    background-color: #E8F5E9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+    margin: 1.5rem 0;
+}
+
+/* Support Cards */
+.support-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 1.5rem 0;
+}
+
+.support-note {
+    font-size: 0.95rem;
+    color: #666666;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* FAQ */
+.faq-item {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 1rem 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+    color: #333333;
+    line-height: 1.7;
+}
+
+.faq-icon {
+    color: #0055AA;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Footer Sections */
+.footer-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(0,0,0,0.08);
+}
+
+.footer-description {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Highlights */
+.highlight {
+    background-color: #FFF9E6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.highlight-green {
+    background-color: #E8F5E9;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #2E7D32;
+}
+
+/* Download Section */
+.download-section {
+    background-color: #F0F8FF;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Product Intro */
+.product-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Product Features */
+.product-features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.product-features li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Specifications Section */
+.specifications {
+    margin: 2rem 0;
+}
+
+/* ============================================ */
 /* UTILITY CLASSES */
 /* ============================================ */
 .highlight-box {
@@ -502,6 +985,47 @@ details[open] summary .toggle {
     
     .grid {
         grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    /* Responsive cho các grid layouts */
+    .feature-grid,
+    .application-grid,
+    .performance-grid,
+    .instruction-grid,
+    .support-grid,
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Spec row responsive */
+    .spec-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .spec-label {
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+    
+    /* Footer links responsive */
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Download buttons responsive */
+    .download-btn,
+    .cta-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
     }
 }
 
