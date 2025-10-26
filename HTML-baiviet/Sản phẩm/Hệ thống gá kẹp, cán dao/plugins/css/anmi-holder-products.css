@@ -2,13 +2,28 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.0.0
+ * Version: 1.1.0
+ * Last Updated: October 26, 2025
  * Author: An Mi Tools Technical Team
  * 
  * File CSS chung duy nhất cho tất cả 40 sản phẩm holder.
  * Plugin sẽ tự động inject file này khi phát hiện:
  * - Slug cha: he-thong-ga-kep-can-dao
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
+ * 
+ * === CHANGELOG ===
+ * v1.1.0 (2025-10-26):
+ * - Added .catalog-download section with modern gradient button design
+ * - Added download-btn with gradient background (purple: #667eea → #764ba2)
+ * - Added download-icon with bounce animation effect
+ * - Added hover effects: translateY, shadow enhancement, gradient reverse
+ * - Added responsive styles for mobile (font-size, padding adjustments)
+ * - Applied to 24 HTML files (files 16-40 with download links)
+ * 
+ * v1.0.0 (Initial):
+ * - Base styles for all holder products
+ * - Typography, tables, cards, contact sections
+ * - Responsive design and accessibility features
  */
 
 /* ============================================ */
