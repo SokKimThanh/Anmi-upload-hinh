@@ -7,7 +7,7 @@
 - Luôn nhắc tên thương hiệu **An Mi Tools** trong đoạn mở đầu và CTA để tăng nhận diện.
 - Nêu rõ An Mi Tools là đơn vị phân phối, tư vấn giải pháp dụng cụ cắt gọt và hệ thống gá kẹp tại Việt Nam, hợp tác cùng đối tác Nhật, Đức, Đài Loan.
 - Ưu tiên chèn liên kết nội bộ về trang danh mục chính và trang liên hệ: `https://anmitools.com/he-thong-ga-kep-can-dao/` và `https://anmitools.com/lien-he/`.
-- CTA khuyến khích liên hệ hotline **0909 927 274**, email **sales@anmitools.com**, hoặc đến showroom **KCN Tân Bình, TP.HCM**.
+- CTA khuyến khích liên hệ hotline **091 519 2325**, email **sales@anmitools.com**, hoặc đến showroom **KCN Tân Bình, TP.HCM**.
 - Trong meta description nêu lợi ích chính + An Mi Tools + từ khóa địa phương (ví dụ: "CNC Việt Nam", "HCM").
 - Tích hợp Schema Product và Breadcrumb (đã có trong template) và thêm `brand` = "An Mi Tools" khi phù hợp.
 - Tránh lặp lại cụm "Chất lượng Nhật Bản" cho sản phẩm không xuất xứ Nhật; mô tả nguồn gốc thật hoặc nhấn mạnh dịch vụ kỹ thuật của An Mi Tools.
