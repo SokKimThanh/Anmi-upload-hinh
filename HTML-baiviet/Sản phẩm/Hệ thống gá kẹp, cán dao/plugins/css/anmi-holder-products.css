@@ -2,7 +2,7 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.0
+ * Version: 1.1.1
  * Last Updated: October 26, 2025
  * Author: An Mi Tools Technical Team
  * 
@@ -12,6 +12,14 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.1.1 (2025-10-26):
+ * - Improved CTA button contrast and readability
+ * - Changed primary button color: #0055AA → #0066CC (brighter blue)
+ * - Changed hover color: #003d7a → #0052A3 (more vibrant)
+ * - Added text-shadow to all buttons for better text visibility
+ * - Changed secondary button background: #F0F8FF → #FFFFFF (pure white for better contrast)
+ * - Updated all button color variables consistently across .cta-button, .btn-primary, .btn-secondary
+ * 
  * v1.1.0 (2025-10-26):
  * - Added .catalog-download section with modern gradient button design
  * - Added download-btn with gradient background (purple: #667eea → #764ba2)
@@ -205,8 +213,8 @@ figure img {
 }
 
 .bordered-img {
-    border: 1px solid rgba(0,0,0,0.08);
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 figcaption {
@@ -220,7 +228,8 @@ figcaption {
 /* ============================================ */
 /* LISTS */
 /* ============================================ */
-ul, ol {
+ul,
+ol {
     padding-left: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -237,7 +246,7 @@ li {
 
 .spec-item {
     padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -254,7 +263,7 @@ li {
 
 .advantage-item {
     padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: flex-start;
 }
@@ -278,7 +287,7 @@ table {
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 thead {
@@ -286,18 +295,19 @@ thead {
     color: #FFFFFF;
 }
 
-th, td {
+th,
+td {
     padding: 1rem;
     text-align: left;
 }
 
 th {
     font-weight: 600;
-    border-bottom: 2px solid rgba(255,255,255,0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 tbody tr {
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 tbody tr:last-child {
@@ -339,7 +349,7 @@ tbody tr:last-child {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .grid {
@@ -356,7 +366,7 @@ tbody tr:last-child {
     color: #FFFFFF;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,85,170,0.2);
+    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.2);
 }
 
 .contact-title {
@@ -374,7 +384,7 @@ tbody tr:last-child {
 }
 
 .contact-item {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 1.25rem;
     border-radius: 8px;
 }
@@ -402,7 +412,7 @@ tbody tr:last-child {
     text-align: center;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-footer p {
@@ -431,7 +441,7 @@ tbody tr:last-child {
 }
 
 details {
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 details:last-child {
@@ -497,7 +507,7 @@ details[open] summary .toggle {
     grid-template-columns: 200px 1fr;
     gap: 1rem;
     padding: 0.75rem;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .spec-label {
@@ -533,7 +543,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 /* Applications */
@@ -549,7 +559,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .application-category {
@@ -578,7 +588,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     text-align: center;
 }
 
@@ -606,7 +616,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .comparison-note {
@@ -628,7 +638,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     margin: 1rem 0;
 }
 
@@ -658,7 +668,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     margin-bottom: 1.5rem;
 }
 
@@ -673,7 +683,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 /* Contact CTA */
@@ -695,7 +705,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .contact-image {
@@ -734,7 +744,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .installation-steps {
@@ -759,7 +769,7 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     margin: 1rem 0;
 }
 
@@ -768,7 +778,7 @@ details[open] summary .toggle {
 .cta-button,
 .btn {
     display: inline-block;
-    background-color: #0055AA;
+    background-color: #0066CC;
     color: #FFFFFF;
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -776,15 +786,17 @@ details[open] summary .toggle {
     font-weight: 600;
     transition: all 0.3s ease;
     margin: 0.5rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .download-btn:hover,
 .cta-button:hover,
 .btn:hover {
-    background-color: #003d7a;
+    background-color: #0052A3;
     text-decoration: none;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,85,170,0.3);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
+    color: #FFFFFF;
 }
 
 /* ============================================ */
@@ -839,9 +851,12 @@ details[open] summary .toggle {
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-4px);
     }
@@ -850,7 +865,7 @@ details[open] summary .toggle {
 /* CTA BUTTONS */
 .cta-buttons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 2rem 0;
 }
@@ -866,68 +881,75 @@ details[open] summary .toggle {
 }
 
 .cta-buttons .btn-primary {
-    background-color: #0055AA;
+    background-color: #0066CC;
     color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .cta-buttons .btn-primary:hover {
-    background-color: #003d7a;
+    background-color: #0052A3;
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 .cta-buttons .btn-secondary {
-    background-color: #F0F8FF;
-    color: #0055AA;
-    border: 2px solid #0055AA;
+    background-color: #FFFFFF;
+    color: #0066CC;
+    border: 2px solid #0066CC;
 }
 
 .cta-buttons .btn-secondary:hover {
-    background-color: #0055AA;
+    background-color: #0066CC;
     color: #FFFFFF;
     text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {
-    background-color: #0055AA;
+    background-color: #0066CC;
     color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:hover {
-    background-color: #003d7a;
+    background-color: #0052A3;
     color: #FFFFFF;
 }
 
 .btn-secondary {
-    background-color: #F0F8FF;
-    color: #0055AA;
-    border: 2px solid #0055AA;
+    background-color: #FFFFFF;
+    color: #0066CC;
+    border: 2px solid #0066CC;
 }
 
 .btn-secondary:hover {
-    background-color: #0055AA;
+    background-color: #0066CC;
     color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button.secondary {
-    background-color: #F0F8FF;
-    color: #0055AA;
-    border: 2px solid #0055AA;
+    background-color: #FFFFFF;
+    color: #0066CC;
+    border: 2px solid #0066CC;
 }
 
 .cta-button.secondary:hover {
-    background-color: #0055AA;
+    background-color: #0066CC;
     color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .secondary {
-    background-color: #F0F8FF;
-    color: #0055AA;
-    border: 2px solid #0055AA;
+    background-color: #FFFFFF;
+    color: #0066CC;
+    border: 2px solid #0066CC;
 }
 
 .secondary:hover {
-    background-color: #0055AA;
+    background-color: #0066CC;
     color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Note Boxes */
@@ -964,7 +986,7 @@ details[open] summary .toggle {
 
 /* FAQ */
 .faq-item {
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding: 1rem 0;
 }
 
@@ -993,7 +1015,7 @@ details[open] summary .toggle {
 .footer-section {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 2px solid rgba(0,0,0,0.08);
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
 }
 
 .footer-description {
@@ -1059,14 +1081,14 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .section.support-contact {
     background-color: #F0F8FF;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,85,170,0.12);
+    box-shadow: 0 2px 12px rgba(0, 85, 170, 0.12);
 }
 
 .section.support-contact p {
@@ -1076,6 +1098,10 @@ details[open] summary .toggle {
 
 .section.support-contact a {
     color: #0055AA;
+}
+
+.section.support-contact a.btn {
+    color: #fff;
 }
 
 .advantages,
@@ -1101,14 +1127,14 @@ details[open] summary .toggle {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .support-contact {
     background-color: #F0F8FF;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,85,170,0.12);
+    box-shadow: 0 2px 12px rgba(0, 85, 170, 0.12);
 }
 
 .support-contact p {
@@ -1134,7 +1160,7 @@ details[open] summary .toggle {
 
 .product-features li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Specifications Section */
@@ -1185,7 +1211,7 @@ details[open] summary .toggle {
 .footer {
     margin-top: 4rem;
     padding-top: 2rem;
-    border-top: 2px solid rgba(0,0,0,0.08);
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
     text-align: center;
 }
 
@@ -1206,6 +1232,7 @@ details[open] summary .toggle {
 /* RESPONSIVE DESIGN */
 /* ============================================ */
 @media (max-width: 768px) {
+
     section[class*="bt-"],
     section[class*="hsk-"],
     section[class*="nbh"],
@@ -1214,24 +1241,25 @@ details[open] summary .toggle {
     .he-thong-ga-kep-can-dao {
         padding: 1rem 0.5rem;
     }
-    
+
     table {
         font-size: 0.875rem;
     }
-    
-    th, td {
+
+    th,
+    td {
         padding: 0.75rem;
     }
-    
+
     .grid {
         grid-template-columns: 1fr;
     }
-    
+
     .cta-buttons {
         grid-template-columns: 1fr;
         gap: 0.75rem;
     }
-    
+
     /* Responsive cho các grid layouts */
     .feature-grid,
     .application-grid,
@@ -1241,24 +1269,24 @@ details[open] summary .toggle {
     .contact-info {
         grid-template-columns: 1fr;
     }
-    
+
     /* Spec row responsive */
     .spec-row {
         grid-template-columns: 1fr;
         gap: 0.5rem;
     }
-    
+
     .spec-label {
         font-weight: 700;
         margin-bottom: 0.25rem;
     }
-    
+
     /* Footer links responsive */
     .footer-links {
         flex-direction: column;
         align-items: center;
     }
-    
+
     /* Download buttons responsive */
     .download-btn,
     .cta-button {
@@ -1267,7 +1295,7 @@ details[open] summary .toggle {
         text-align: center;
         margin: 0.5rem 0;
     }
-    
+
     /* Catalog download responsive */
     .catalog-download .download-btn {
         padding: 12px 20px;
@@ -1275,7 +1303,7 @@ details[open] summary .toggle {
         width: 100%;
         justify-content: center;
     }
-    
+
     .catalog-download .download-btn span {
         font-size: 14px;
     }
@@ -1298,6 +1326,7 @@ img {
 /* PRINT STYLES */
 /* ============================================ */
 @media print {
+
     section[class*="bt-"],
     section[class*="hsk-"],
     section[class*="nbh"],
@@ -1306,7 +1335,7 @@ img {
     .he-thong-ga-kep-can-dao {
         background-color: #FFFFFF;
     }
-    
+
     .contact-box {
         background-color: #FFFFFF;
         color: #000000;
