@@ -50,6 +50,11 @@ section[class*="gc-"],
 section[class*="er-"],
 section[class*="sk-"],
 section[class*="nt-"],
+section[class*="cat-"],
+section[class*="mas-"],
+section[class*="mta"],
+section[class*="tck-"],
+section[class*="tool-holder"],
 .he-thong-ga-kep-can-dao {
     max-width: 1200px;
     margin: 0 auto;
@@ -64,6 +69,11 @@ section[class*="hsk-"] h1,
 section[class*="nbh"] h1,
 section[class*="nbj"] h1,
 section[class*="ewn"] h1,
+section[class*="cat-"] h1,
+section[class*="mas-"] h1,
+section[class*="mta"] h1,
+section[class*="tck-"] h1,
+section[class*="tool-holder"] h1,
 .he-thong-ga-kep-can-dao h1 {
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     font-weight: 700;
@@ -77,6 +87,11 @@ section[class*="hsk-"] h2,
 section[class*="nbh"] h2,
 section[class*="nbj"] h2,
 section[class*="ewn"] h2,
+section[class*="cat-"] h2,
+section[class*="mas-"] h2,
+section[class*="mta"] h2,
+section[class*="tck-"] h2,
+section[class*="tool-holder"] h2,
 .he-thong-ga-kep-can-dao h2 {
     font-size: clamp(1.5rem, 3vw, 1.875rem);
     font-weight: 600;
@@ -92,6 +107,11 @@ section[class*="hsk-"] h3,
 section[class*="nbh"] h3,
 section[class*="nbj"] h3,
 section[class*="ewn"] h3,
+section[class*="cat-"] h3,
+section[class*="mas-"] h3,
+section[class*="mta"] h3,
+section[class*="tck-"] h3,
+section[class*="tool-holder"] h3,
 .he-thong-ga-kep-can-dao h3 {
     font-size: clamp(1.125rem, 2vw, 1.25rem);
     font-weight: 600;
@@ -104,6 +124,11 @@ section[class*="hsk-"] p,
 section[class*="nbh"] p,
 section[class*="nbj"] p,
 section[class*="ewn"] p,
+section[class*="cat-"] p,
+section[class*="mas-"] p,
+section[class*="mta"] p,
+section[class*="tck-"] p,
+section[class*="tool-holder"] p,
 .he-thong-ga-kep-can-dao p {
     font-size: clamp(1rem, 1.5vw, 1.125rem);
     margin-bottom: 1rem;
@@ -116,6 +141,11 @@ section[class*="hsk-"] a,
 section[class*="nbh"] a,
 section[class*="nbj"] a,
 section[class*="ewn"] a,
+section[class*="cat-"] a,
+section[class*="mas-"] a,
+section[class*="mta"] a,
+section[class*="tck-"] a,
+section[class*="tool-holder"] a,
 .he-thong-ga-kep-can-dao a {
     color: #0055AA;
     text-decoration: none;
@@ -126,6 +156,11 @@ section[class*="hsk-"] a:hover,
 section[class*="nbh"] a:hover,
 section[class*="nbj"] a:hover,
 section[class*="ewn"] a:hover,
+section[class*="cat-"] a:hover,
+section[class*="mas-"] a:hover,
+section[class*="mta"] a:hover,
+section[class*="tck-"] a:hover,
+section[class*="tool-holder"] a:hover,
 .he-thong-ga-kep-can-dao a:hover {
     text-decoration: underline;
 }
@@ -715,7 +750,8 @@ details[open] summary .toggle {
 
 /* Download Buttons */
 .download-btn,
-.cta-button {
+.cta-button,
+.btn {
     display: inline-block;
     background-color: #0055AA;
     color: #FFFFFF;
@@ -728,7 +764,8 @@ details[open] summary .toggle {
 }
 
 .download-btn:hover,
-.cta-button:hover {
+.cta-button:hover,
+.btn:hover {
     background-color: #003d7a;
     text-decoration: none;
     transform: translateY(-2px);
@@ -773,6 +810,49 @@ details[open] summary .toggle {
     background-color: #0055AA;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #0055AA;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #003d7a;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    background-color: #F0F8FF;
+    color: #0055AA;
+    border: 2px solid #0055AA;
+}
+
+.btn-secondary:hover {
+    background-color: #0055AA;
+    color: #FFFFFF;
+}
+
+.cta-button.secondary {
+    background-color: #F0F8FF;
+    color: #0055AA;
+    border: 2px solid #0055AA;
+}
+
+.cta-button.secondary:hover {
+    background-color: #0055AA;
+    color: #FFFFFF;
+}
+
+.secondary {
+    background-color: #F0F8FF;
+    color: #0055AA;
+    border: 2px solid #0055AA;
+}
+
+.secondary:hover {
+    background-color: #0055AA;
+    color: #FFFFFF;
 }
 
 /* Note Boxes */
@@ -878,6 +958,91 @@ details[open] summary .toggle {
     border-radius: 8px;
     text-align: center;
     margin: 2rem 0;
+}
+
+/* Generic Section Wrappers */
+.section.advantages,
+.section.applications,
+.section.performance,
+.section.comparison,
+.section.installation-guide,
+.section.maintenance-guide,
+.section.storage-tips,
+.section.faq,
+.section.support-contact {
+    margin: 2rem 0;
+}
+
+.section.advantages,
+.section.applications,
+.section.performance,
+.section.comparison,
+.section.installation-guide,
+.section.maintenance-guide,
+.section.storage-tips,
+.section.faq {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.section.support-contact {
+    background-color: #F0F8FF;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,85,170,0.12);
+}
+
+.section.support-contact p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.section.support-contact a {
+    color: #0055AA;
+}
+
+.advantages,
+.applications,
+.performance,
+.comparison,
+.installation-guide,
+.maintenance-guide,
+.storage-tips,
+.faq,
+.support-contact {
+    margin: 2rem 0;
+}
+
+.advantages,
+.applications,
+.performance,
+.comparison,
+.installation-guide,
+.maintenance-guide,
+.storage-tips,
+.faq {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.support-contact {
+    background-color: #F0F8FF;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,85,170,0.12);
+}
+
+.support-contact p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.support-contact a {
+    color: #0055AA;
 }
 
 /* Product Intro */
