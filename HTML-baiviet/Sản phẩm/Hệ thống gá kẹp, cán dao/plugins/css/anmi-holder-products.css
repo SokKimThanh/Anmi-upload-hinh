@@ -12,6 +12,8 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.1.2 (2025-10-27):
+ * - Added border to .support-card for better separation
  * v1.1.1 (2025-10-26):
  * - Improved CTA button contrast and readability
  * - Changed primary button color: #0055AA → #0066CC (brighter blue)
@@ -560,6 +562,7 @@ details[open] summary .toggle {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #CED1DB;
 }
 
 .application-category {
