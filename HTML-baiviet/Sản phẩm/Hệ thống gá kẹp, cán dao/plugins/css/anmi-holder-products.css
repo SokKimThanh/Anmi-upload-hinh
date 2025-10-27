@@ -2,8 +2,8 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.1
- * Last Updated: October 26, 2025
+ * Version: 1.1.2
+ * Last Updated: October 27, 2025
  * Author: An Mi Tools Technical Team
  * 
  * File CSS chung duy nhất cho tất cả 40 sản phẩm holder.
@@ -13,7 +13,10 @@
  * 
  * === CHANGELOG ===
  * v1.1.2 (2025-10-27):
- * - Added border to .support-card for better separation
+ * - Enhanced .support-card styling with background, padding, border
+ * - Added box-shadow and border-radius for better card separation
+ * - Improved visual hierarchy for support section cards
+ * 
  * v1.1.1 (2025-10-26):
  * - Improved CTA button contrast and readability
  * - Changed primary button color: #0055AA → #0066CC (brighter blue)
@@ -428,6 +431,11 @@ tbody tr:last-child {
 /* ============================================ */
 .support-card {
     text-align: center;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E0E0E0;
 }
 
 .support-icon {
