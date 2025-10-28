@@ -296,11 +296,17 @@ Với 6 sizes này, **EWN micro boring head** thay thế 100+ boring bar cố đ
 
 ### 1. EWN Micro Boring Head có đạt IT6 mà không cần grinding không?
 
-**Trả lời:** Có. **EWN micro boring head** với precision 0.002mm/graduation đạt IT6 (±0.008mm) trực tiếp, surface finish Ra 0.4-0.6μm, không cần grinding post-process. Điều kiện: máy CNC rigid (no vibration), spindle runout <0.005mm, insert sharp (VB <0.1mm). Nếu máy cũ hoặc vibration cao, có thể chỉ đạt IT7, cần <a href="https://anmitools.com/fine-boring-head/" target="_blank" rel="noopener">fine boring head</a> hoặc light grinding.
+**Trả lời:** Có. **EWN micro boring head** với precision 0.002mm/graduation đạt IT6 (±0.008mm) trực tiếp, surface finish Ra 0.4-0.6μm, không cần grinding post-process. Điều kiện: máy CNC rigid (no vibration), spindle runout <0.005mm, insert sharp (VB <0.1mm). Nếu máy cũ hoặc vibration cao, có thể chỉ đạt IT7, cần <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">fine boring head</a> hoặc light grinding.
+
+</div>
+</details>
 
 ### 2. EWN khác NBH2084 như thế nào?
 
-**Trả lời:** **EWN micro boring head** precision 0.002mm (gấp 5 lần NBH2084 0.01mm), đạt IT6 vs. IT7. EWN range Φ20-203mm (6 sizes), NBH2084 range Φ6-290mm (8 sizes) nhưng precision thấp hơn. **EWN** phù hợp aerospace IT6, mold Ra 0.4μm. NBH2084 phù hợp general precision IT7. Nếu cần IT6 ultra-high precision, chọn <strong>EWN</strong>. Nếu cần range lớn Φ6-290mm IT7, chọn <a href="https://anmitools.com/nbh2084-boring-head/" target="_blank" rel="noopener">NBH2084</a>.
+**Trả lời:** **Trả lời:** **EWN micro boring head** precision 0.002mm (gấp 5 lần NBH2084 0.01mm), đạt IT6 vs. IT7. EWN range Φ20-203mm (6 sizes), NBH2084 range Φ6-290mm (8 sizes) nhưng precision thấp hơn. **EWN** phù hợp aerospace IT6, mold Ra 0.4μm. NBH2084 phù hợp general precision IT7. Nếu cần IT6 ultra-high precision, chọn <strong>EWN</strong>. Nếu cần range lớn Φ6-290mm IT7, chọn <a href="https://anmitools.com/san-pham/nbh2084-boring-head/" target="_blank" rel="noopener">NBH2084</a>.
+
+</div>
+</details>
 
 ### 3. CK module và LBK module khác nhau thế nào?
 
@@ -332,15 +338,15 @@ Với 6 sizes này, **EWN micro boring head** thay thế 100+ boring bar cố đ
 🏢 **Văn Phòng TP. Hồ Chí Minh:** 75 Đỗ Xuân Hợp, Phường Phước Long B, Quận Thủ Đức | ☎️ <a href="tel:+842862623959">+84 28 6262 3959</a>  
 
 📧 **Email:** support@anmitools.com  
-🌐 **Website:** <a href="https://anmitools.com/ewn-micro-boring-head/" target="_blank" rel="noopener">https://anmitools.com/ewn-micro-boring-head/</a>  
+🌐 **Website:** <a href="https://anmitools.com/san-pham/ewn-micro-boring-head/" target="_blank" rel="noopener">https://anmitools.com/san-pham/ewn-micro-boring-head/</a>  
 
 **Liên hệ ngay để nhận báo giá EWN micro boring head 6-size complete system, modular CK/LBK extension set, và tư vấn giải pháp IT6 precision boring tối ưu cho dự án aerospace/mold/hydraulic của bạn!**
 
 ---
 
 **Xem thêm các sản phẩm liên quan:**
-- <a href="https://anmitools.com/nbh2084-boring-head/" target="_blank" rel="noopener">NBH2084 Boring Head</a> – Precision boring head 0.01mm, Φ6-290mm
-- <a href="https://anmitools.com/fine-boring-head/" target="_blank" rel="noopener">Fine Boring Head</a> – Ultra-precision boring head for IT5-IT6
-- <a href="https://anmitools.com/adjustable-boring-head/" target="_blank" rel="noopener">Adjustable Boring Head</a> – General boring head Φ10-300mm
+- <a href="https://anmitools.com/san-pham/nbh2084-boring-head/" target="_blank" rel="noopener">NBH2084 Boring Head</a> – Precision boring head 0.01mm, Φ6-290mm
+- <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">Fine Boring Head</a> – Ultra-precision boring head for IT5-IT6
+- <a href="https://anmitools.com/san-pham/adjustable-boring-head/" target="_blank" rel="noopener">Adjustable Boring Head</a> – General boring head Φ10-300mm
 
 </section>
