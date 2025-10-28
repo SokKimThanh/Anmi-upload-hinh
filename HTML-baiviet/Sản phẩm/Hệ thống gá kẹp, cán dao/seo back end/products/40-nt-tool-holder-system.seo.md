@@ -193,7 +193,7 @@ schema_type: "Product"
   <div class="section support-contact">
     <h2>📞 Liên Hệ Tư Vấn & Đặt Hàng NT Tool Holder System</h2>
     <p><strong>An Mi Tools</strong> cung cấp <strong>NT tool holder</strong> chính hãng (NT30, NT40, NT50), bảo hành 24 tháng. Đội ngũ kỹ sư của chúng tôi sẵn sàng tư vấn kiểm tra NT/BT compatibility cho máy CNC, lựa chọn NT-FMB/SK/GER/APU phù hợp với operations, và giải pháp pull stud adapter nếu cần interchange NT holder trên BT spindle.</p>
-    <p>Tham khảo thêm: <a href="https://anmitools.com/bt-tool-holder/" target="_blank" rel="noopener">BT Tool Holder System</a>, <a href="https://anmitools.com/hsk-tool-holder/" target="_blank" rel="noopener">HSK Tool Holder System</a>, <a href="https://anmitools.com/cat-tool-holder/" target="_blank" rel="noopener">CAT Tool Holder System</a>.</p>
+    <p>Tham khảo thêm: <a href="https://anmitools.com/san-pham/bt-tool-holder/" target="_blank" rel="noopener">BT Tool Holder System</a>, <a href="https://anmitools.com/san-pham/hsk-tool-holder/" target="_blank" rel="noopener">HSK Tool Holder System</a>, <a href="https://anmitools.com/san-pham/cat-tool-holder/" target="_blank" rel="noopener">CAT Tool Holder System</a>.</p>
     
     <div class="contact-cta cta-buttons">
       <a href="https://anmitools.com/contact-us/" class="btn btn-primary cta-button">💬 Báo Giá NT Tool Holder</a>
@@ -229,7 +229,7 @@ schema_type: "Product"
       "@type": "AggregateOffer",
       "availability": "https://schema.org/InStock",
       "priceCurrency": "VND",
-      "url": "https://anmitools.com/nt-tool-holder-system/"
+      "url": "https://anmitools.com/san-pham/nt-tool-holder-system/"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -246,7 +246,7 @@ schema_type: "Product"
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://anmitools.com/"},
       {"@type": "ListItem", "position": 2, "name": "Tool Holders", "item": "https://anmitools.com/tool-holders/"},
-      {"@type": "ListItem", "position": 3, "name": "NT Tool Holder", "item": "https://anmitools.com/nt-tool-holder-system/"}
+      {"@type": "ListItem", "position": 3, "name": "NT Tool Holder", "item": "https://anmitools.com/san-pham/nt-tool-holder-system/"}
     ]
   }
   </script>

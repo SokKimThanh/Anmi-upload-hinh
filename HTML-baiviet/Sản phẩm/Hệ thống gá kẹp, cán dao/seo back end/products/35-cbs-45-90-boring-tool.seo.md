@@ -224,7 +224,7 @@ schema_type: "Product"
       "@type": "AggregateOffer",
       "availability": "https://schema.org/InStock",
       "priceCurrency": "VND",
-      "url": "https://anmitools.com/cbs-boring-tool-45-90-angle-boring/"
+      "url": "https://anmitools.com/san-pham/cbs-boring-tool-45-90-angle-boring/"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -241,7 +241,7 @@ schema_type: "Product"
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://anmitools.com/"},
       {"@type": "ListItem", "position": 2, "name": "Tool Holders", "item": "https://anmitools.com/tool-holders/"},
-      {"@type": "ListItem", "position": 3, "name": "CBS Boring Tool", "item": "https://anmitools.com/cbs-boring-tool-45-90-angle-boring/"}
+      {"@type": "ListItem", "position": 3, "name": "CBS Boring Tool", "item": "https://anmitools.com/san-pham/cbs-boring-tool-45-90-angle-boring/"}
     ]
   }
   </script>

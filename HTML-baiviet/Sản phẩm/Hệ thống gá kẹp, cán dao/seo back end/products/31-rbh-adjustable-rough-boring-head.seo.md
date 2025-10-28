@@ -233,7 +233,10 @@ Quick insert change giúp tăng machine utilization rate từ 65% lên 85%.
 
 ### 1. RBH Rough Boring Head có phù hợp cho finishing boring không?
 
-**Trả lời:** Không. **RBH rough boring head** chuyên dụng cho **rough boring** (gia công thô) với depth of cut 5-10mm/pass, surface finish Ra 6.3-12.5 µm. Để finishing boring (Ra 0.4-1.6 µm, IT6-IT7), cần sử dụng <a href="https://anmitools.com/fine-boring-head/" target="_blank" rel="noopener">fine boring head</a> hoặc <a href="https://anmitools.com/adjustable-boring-head/" target="_blank" rel="noopener">adjustable boring head</a> với micro-adjustment.
+**Trả lời:** Không. **RBH rough boring head** chuyên dụng cho **rough boring** (gia công thô) với depth of cut 5-10mm/pass, surface finish Ra 6.3-12.5 µm. Để finishing boring (Ra 0.4-1.6 µm, IT6-IT7), cần sử dụng <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">fine boring head</a> hoặc <a href="https://anmitools.com/san-pham/adjustable-boring-head/" target="_blank" rel="noopener">adjustable boring head</a> với micro-adjustment.
+
+</div>
+</details>
 
 ### 2. Tại sao RBH sử dụng 2 insert (twin-blade) thay vì 1 insert?
 
@@ -281,15 +284,15 @@ Không phù hợp cho máy phay nhỏ VMC (vertical machining center) do RBH wei
 🏢 **Văn Phòng TP. Hồ Chí Minh:** 75 Đỗ Xuân Hợp, Phường Phước Long B, Quận Thủ Đức | ☎️ <a href="tel:+842862623959">+84 28 6262 3959</a>  
 
 📧 **Email:** support@anmitools.com  
-🌐 **Website:** <a href="https://anmitools.com/rbh-rough-boring-head/" target="_blank" rel="noopener">https://anmitools.com/rbh-rough-boring-head/</a>  
+🌐 **Website:** <a href="https://anmitools.com/san-pham/rbh-rough-boring-head/" target="_blank" rel="noopener">https://anmitools.com/san-pham/rbh-rough-boring-head/</a>  
 
-**Liên hệ ngay để nhận báo giá RBH rough boring head, modular BST holder set, và tư vấn giải pháp rough boring tối ưu cho dự án của bạn!**
+**Liên hệ ngay để nhận báo giá RBH rough boring head 4-model complete system, twin-blade BST module, và tư vấn giải pháp rough boring tối ưu cho dự án manufacturing của bạn!**
 
 ---
 
 **Xem thêm các sản phẩm liên quan:**
-- <a href="https://anmitools.com/bst-twin-blade-boring-tool/" target="_blank" rel="noopener">BST Twin-Blade Boring Tool</a> – Module holder cho RBH
-- <a href="https://anmitools.com/cbs-boring-tool/" target="_blank" rel="noopener">CBS Boring Tool</a> – Cartridge boring system
-- <a href="https://anmitools.com/fine-boring-head/" target="_blank" rel="noopener">Fine Boring Head</a> – Finishing boring high precision
+- <a href="https://anmitools.com/san-pham/bst-twin-blade-boring-tool/" target="_blank" rel="noopener">BST Twin-Blade Boring Tool</a> – Module holder cho RBH
+- <a href="https://anmitools.com/san-pham/cbs-boring-tool/" target="_blank" rel="noopener">CBS Boring Tool</a> – Cartridge boring system
+- <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">Fine Boring Head</a> – Finishing boring high precision
 
 </section>

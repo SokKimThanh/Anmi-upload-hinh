@@ -199,7 +199,7 @@ schema_type: "Product"
   <div class="section support-contact">
     <h2>📞 Liên Hệ Tư Vấn & Đặt Hàng BST Twin Blade Boring Tool</h2>
     <p><strong>An Mi Tools</strong> cung cấp <strong>BST twin blade boring tool</strong> chính hãng, kèm modular extension bars (70-400mm), insert TPGH/TCMT set, bảo hành 24 tháng. Đội ngũ kỹ sư của chúng tôi sẵn sàng tư vấn lựa chọn extension bar length phù hợp, cutting parameters tối ưu cho material, và giải pháp <strong>BST twin blade boring system</strong> hoàn chỉnh kết hợp với RBH/CBH cho rough-fine workflow.</p>
-    <p>Tham khảo thêm: <a href="https://anmitools.com/rbh-rough-boring-head/" target="_blank" rel="noopener">RBH Rough Boring Head</a>, <a href="https://anmitools.com/cbh-fine-boring-head/" target="_blank" rel="noopener">CBH Fine Boring Head</a>, <a href="https://anmitools.com/tck-rough-boring-bar/" target="_blank" rel="noopener">TCK Rough Boring Bar</a>.</p>
+    <p>Tham khảo thêm: <a href="https://anmitools.com/san-pham/rbh-rough-boring-head/" target="_blank" rel="noopener">RBH Rough Boring Head</a>, <a href="https://anmitools.com/san-pham/cbh-fine-boring-head/" target="_blank" rel="noopener">CBH Fine Boring Head</a>, <a href="https://anmitools.com/san-pham/tck-rough-boring-bar/" target="_blank" rel="noopener">TCK Rough Boring Bar</a>.</p>
     
     <div class="contact-cta cta-buttons">
       <a href="https://anmitools.com/contact-us/" class="btn btn-primary cta-button">💬 Báo Giá BST Twin Blade Boring</a>
@@ -235,7 +235,7 @@ schema_type: "Product"
       "@type": "AggregateOffer",
       "availability": "https://schema.org/InStock",
       "priceCurrency": "VND",
-      "url": "https://anmitools.com/bst-twin-blade-boring-tool/"
+      "url": "https://anmitools.com/san-pham/bst-twin-blade-boring-tool/"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -252,7 +252,7 @@ schema_type: "Product"
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://anmitools.com/"},
       {"@type": "ListItem", "position": 2, "name": "Tool Holders", "item": "https://anmitools.com/tool-holders/"},
-      {"@type": "ListItem", "position": 3, "name": "BST Twin Blade Boring", "item": "https://anmitools.com/bst-twin-blade-boring-tool/"}
+      {"@type": "ListItem", "position": 3, "name": "BST Twin Blade Boring", "item": "https://anmitools.com/san-pham/bst-twin-blade-boring-tool/"}
     ]
   }
   </script>
