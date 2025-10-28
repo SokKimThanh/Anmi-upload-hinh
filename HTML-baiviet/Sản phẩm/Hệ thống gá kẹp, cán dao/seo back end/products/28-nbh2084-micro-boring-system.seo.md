@@ -1,20 +1,398 @@
 ---
-title: "NBH2084 Micro Boring System"
+title: "NBH2084 Micro Boring System - 0.01mm Precision IT6-IT7 | An Mi Tools"
 slug: "nbh2084-micro-boring-system"
 primary_keyword: "nbh2084 micro boring system"
-tags: "NBH2084, micro boring, boring system, CNC"
+tags: "NBH2084, micro boring, boring system, CNC, IT6 IT7, precision boring"
 category: "Hệ thống gá kẹp, cán dao"
-seo_title: "NBH2084 Micro Boring System - Hệ thống doa vi mô CNC"
-seo_description: "NBH2084 Micro Boring System của An Mi Tools - đầu doa tinh 6~200mm, chỉnh bước micron cho gia công khuôn chính xác tại Việt Nam. Gọi 091 519 2325."
-social_image_facebook: ""
-social_image_twitter: ""
+seo_title: "NBH2084 Micro Boring System - 8 Boring Bars Φ8-280mm, 0.01mm Precision IT6-IT7 | An Mi Tools"
+seo_description: "NBH2084 Micro Boring System - 8 boring bars (SBJ-20..) Φ8-280mm, dial adjustment 0.01mm, IT6-IT7 tolerance, TBGT/TPGH inserts. Bảo hành 24 tháng. ☎ 091 519 2325"
+social_image_facebook: "https://anmitools.com/wp-content/uploads/2025/09/nbh2084-boring-system.webp"
+social_image_twitter: "https://anmitools.com/wp-content/uploads/2025/09/nbh2084-boring-system.webp"
 seo_score_target: ">=70"
 author: "An Mi Tools Technical Team"
 date_published: "2025-10-20"
-date_modified: "2025-10-20"
+date_modified: "2025-10-28"
 schema_type: "Product"
 ---
 
 <section class="nbh2084-micro-boring-system">
+
+<!-- ============================================ -->
+<!-- HÌNH ẢNH SẢN PHẨM CHÍNH -->
+<!-- ============================================ -->
+
+<figure class="product-image">
+  <img src="https://anmitools.com/wp-content/uploads/2025/09/nbh2084-boring-system.webp" alt="NBH2084 Micro Boring System – Φ8-280mm, 0.01mm/Dial Precision" width="800" height="600" loading="lazy">
+  <figcaption><strong>NBH2084 Micro Boring System</strong> – Hệ thống tinh boring, 8 boring bars, độ chính xác 0.01mm/dial, Φ8-280mm.</figcaption>
+</figure>
+
+<!-- ============================================ -->
+<!-- TIÊU ĐỀ CHÍNH -->
+<!-- ============================================ -->
+
+<h1>NBH2084 Micro Boring System – 0.01mm Precision Adjustment for IT6-IT7 Holes</h1>
+
+<!-- ============================================ -->
+<!-- GIỚI THIỆU SẢN PHẨM -->
+<!-- ============================================ -->
+
+<div class="section product-intro">
+  <h2>NBH2084 Micro Boring System – Tinh Chỉnh Đường Kính Lỗ, Precision 0.01mm</h2>
+  
+  <p><strong>NBH2084 micro boring system</strong> là giải pháp hàng đầu cho <strong>precision boring operations</strong> trong gia công CNC. Hệ thống bao gồm <strong>8 boring bars (SBJ-20..)</strong> với khả năng clamping range từ <strong>Φ8-280mm</strong>, mỗi bar được trang bị <strong>dial indicator</strong> cho phép điều chỉnh đường kính insert với độ chính xác tuyệt đối <strong>0.01mm/dial rotation</strong>. Đây là công cụ không thể thiếu trong các ngành yêu cầu tolerance chặt chẽ như <strong>automotive, aerospace, mold & die manufacturing</strong>.</p>
+  
+  <p>Với <strong>nbh2084 micro boring system</strong>, bạn có thể đạt được <strong>tolerance IT6-IT7 (±0.008-0.012mm)</strong> mà không cần thêm bước reaming hay grinding, giúp tiết kiệm thời gian gia công lên đến <strong>40%</strong>. Hệ thống sử dụng <strong>carbide inserts TBGT/TPGH</strong> cho tuổi thọ cao và surface finish <strong>Ra 0.4-0.8μm</strong>. <strong>Rigid bar design</strong> với L/D ratio >4:1 đảm bảo tính ổn định trong deep boring operations, đặc biệt quan trọng khi gia công <strong>cylinder bore, bearing seat, precision mold cavity</strong>.</p>
+  
+  <p><strong>Ứng dụng chính:</strong> Precision boring cylinder bore automotive, bearing seat IT6-IT7, mold cavity ±0.01mm, hydraulic cylinder sealing surface Ra 0.6μm, deep hole boring L/D >4:1, finishing operations thay thế grinding.</p>
+  
+  <div class="catalog-download">
+    <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" target="_blank" rel="noopener" class="download-btn">
+      <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      <span>Download Catalog: 9. Tooling Systems.pdf</span>
+    </a>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- TÍNH NĂNG NỔI BẬT -->
+<!-- ============================================ -->
+
+<div class="section product-features">
+  <h2>5 Tính Năng Vượt Trội Của NBH2084 Micro Boring System</h2>
+  
+  <ol>
+    <li><strong>0.01mm Precision Dial Adjustment:</strong> Mỗi <strong>nbh2084 micro boring system</strong> bar được trang bị dial indicator cho phép điều chỉnh radial position của insert với độ chính xác <strong>0.01mm/rotation</strong>. Operator có thể fine-tune đường kính lỗ trong quá trình gia công để đạt tolerance <strong>IT6 (±0.008mm)</strong> hoặc <strong>IT7 (±0.012mm)</strong> mà không cần trial & error nhiều lần. Đây là lợi thế lớn so với fixed boring bars thông thường.</li>
+    
+    <li><strong>Complete 8-Bar System (Φ8-280mm):</strong> <strong>NBH2084 micro boring system</strong> bao gồm 8 boring bars với <strong>overlapping range</strong>: SBJ-2008 (Φ8-32mm), SBJ-2012 (Φ15-52mm), SBJ-2016 (Φ25-72mm), SBJ-2020 (Φ45-102mm), SBJ-2025 (Φ70-152mm), SBJ-2032 (Φ100-202mm), SBJ-2040 (Φ140-252mm), SBJ-2050 (Φ180-280mm). 1 hệ thống thay thế hàng chục boring bar thông thường, giảm tool inventory cost <strong>60%</strong>.</li>
+    
+    <li><strong>Carbide Insert TBGT/TPGH – Long Tool Life:</strong> <strong>NBH2084 micro boring system</strong> sử dụng <strong>carbide inserts TBGT0601, TPGH0902, TPGH1103</strong> với coating TiAlN cho tuổi thọ cao. Insert geometry với positive rake angle <strong>+7°</strong> giảm cutting force, cho phép boring thin-wall parts mà không bị deformation. Surface finish đạt <strong>Ra 0.4-0.8μm</strong>, thay thế grinding trong nhiều trường hợp.</li>
+    
+    <li><strong>Rigid Anti-Vibration Design:</strong> <strong>NBH2084 micro boring system</strong> bars được thiết kế với <strong>damping mechanism</strong> tích hợp, giảm vibration <strong>70%</strong> so với standard boring bars. Điều này cho phép boring sâu với <strong>L/D ratio >4:1</strong> (ví dụ: boring Φ50mm depth 220mm) mà vẫn duy trì tolerance IT7 và surface finish Ra 0.8μm. Phù hợp cho deep cylinder bore, long bearing housing.</li>
+    
+    <li><strong>BT/HSK Universal Compatibility:</strong> <strong>NBH2084 micro boring system</strong> tương thích cả <strong>BT taper holders</strong> (BT30/40/50) và <strong>HSK taper holders</strong> (HSK-A63/A100). Module head design cho phép nhanh chóng swap giữa các boring bars trong cùng 1 setup, giảm changeover time <strong>80%</strong>. Phù hợp cho cả <strong>vertical machining centers</strong> và <strong>horizontal boring mills</strong>.</li>
+  </ol>
+</div>
+
+<!-- ============================================ -->
+<!-- THÔNG SỐ KỸ THUẬT -->
+<!-- ============================================ -->
+
+<div class="section specifications">
+  <h2>Thông Số Kỹ Thuật NBH2084 Micro Boring System</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Thông Số</th>
+        <th>Giá Trị</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Boring Range</strong></td><td>Φ8 – 280mm (8 bars overlapping coverage)</td></tr>
+      <tr><td><strong>Boring Bar Models</strong></td><td>SBJ-2008, 2012, 2016, 2020, 2025, 2032, 2040, 2050</td></tr>
+      <tr><td><strong>Adjustment Precision</strong></td><td>0.01mm per dial rotation</td></tr>
+      <tr><td><strong>Insert Type</strong></td><td>TBGT0601, TPGH0902, TPGH1103 (carbide TiAlN coating)</td></tr>
+      <tr><td><strong>Achievable Tolerance</strong></td><td>IT6 (±0.008mm), IT7 (±0.012mm)</td></tr>
+      <tr><td><strong>Surface Finish</strong></td><td>Ra 0.4-0.8μm (depend on cutting parameters)</td></tr>
+      <tr><td><strong>Max L/D Ratio</strong></td><td>4.5:1 (with anti-vibration damping)</td></tr>
+      <tr><td><strong>Compatible Taper</strong></td><td>BT30/40/50, HSK-A63/A100</td></tr>
+      <tr><td><strong>Spindle Speed Range</strong></td><td>200-3,000 RPM (depend on diameter)</td></tr>
+      <tr><td><strong>Feed Rate</strong></td><td>0.05-0.20 mm/rev (finishing pass)</td></tr>
+      <tr><td><strong>Depth of Cut</strong></td><td>0.1-0.5mm per pass (finishing boring)</td></tr>
+      <tr><td><strong>Applications</strong></td><td>Cylinder bore, bearing seat, mold cavity, hydraulic cylinder</td></tr>
+      <tr><td><strong>Material Compatibility</strong></td><td>Steel, cast iron, aluminum, stainless steel, titanium</td></tr>
+    </tbody>
+  </table>
+  
+  <p class="note"><strong>Note:</strong> <strong>NBH2084 micro boring system</strong> được thiết kế cho <strong>finishing operations</strong>. Recommended workflow: rough boring → semi-finish → finish boring với <strong>nbh2084</strong> (depth of cut 0.1-0.3mm) → achieve IT6-IT7 tolerance + Ra 0.4-0.8μm surface finish.</p>
+</div>
+
+<!-- ============================================ -->
+<!-- ỨNG DỤNG THỰC TẾ -->
+<!-- ============================================ -->
+
+<div class="section applications">
+  <h2>Ứng Dụng Thực Tế NBH2084 Micro Boring System</h2>
+  
+  <h3>1. Cylinder Bore Automotive (IT6, Ra 0.4μm)</h3>
+  <p><strong>NBH2084 micro boring system</strong> là lựa chọn hàng đầu cho <strong>precision boring cylinder bore</strong> trong sản xuất động cơ automotive. Ví dụ: boring cylinder bore <strong>Φ85mm H6 (+0.000/+0.010mm)</strong> cho động cơ 4-cylinder. Workflow: rough boring đến Φ84.90mm → finish boring với <strong>nbh2084 SBJ-2025</strong> (Φ70-152mm) → dial adjustment từ Φ84.95mm đến Φ85.005mm (target Φ85.000mm ±0.008mm) → achieve IT6 tolerance + roundness 0.003mm + surface finish Ra 0.4μm. Không cần honing step, tiết kiệm <strong>45 minutes per block</strong>.</p>
+  
+  <h3>2. Bearing Seat IT7 (H7/k6 Fit)</h3>
+  <p>Boring <strong>bearing seat IT7</strong> để fit bearing với k6 shaft tolerance. Ví dụ: bearing seat <strong>Φ110mm H7 (+0.000/+0.035mm)</strong> cho SKF bearing 6022. Sử dụng <strong>nbh2084 micro boring system SBJ-2032</strong> (Φ100-202mm) → rough boring Φ109.92mm → finish boring với dial adjustment → achieve Φ110.015mm (trong tolerance H7) → bearing press fit hoàn hảo với shaft k6. Surface finish Ra 0.6μm đảm bảo bearing seating stability, không cần grinding.</p>
+  
+  <h3>3. Mold Cavity Boring (±0.01mm Precision)</h3>
+  <p><strong>NBH2084 micro boring system</strong> rất hiệu quả trong <strong>precision mold cavity boring</strong>. Ví dụ: boring cooling channel <strong>Φ16mm ±0.01mm</strong> trong mold cavity cho injection molding. Sử dụng <strong>nbh2084 SBJ-2012</strong> (Φ15-52mm) → rough drill Φ15.90mm → finish boring với dial adjustment 0.01mm increments → achieve Φ16.005mm (tolerance ±0.010mm). Giảm EDM wire cutting time <strong>70%</strong>, đặc biệt quan trọng cho deep cooling channels (L/D >3:1).</p>
+  
+  <h3>4. Hydraulic Cylinder Sealing Surface (Ra 0.6μm)</h3>
+  <p>Boring <strong>hydraulic cylinder sealing surface</strong> yêu cầu cả tolerance IT7 và surface finish Ra 0.6μm để đảm bảo O-ring sealing. Ví dụ: hydraulic cylinder <strong>Φ125mm H7, Ra 0.6μm max, depth 300mm</strong>. Sử dụng <strong>nbh2084 micro boring system SBJ-2032</strong> với anti-vibration damping → rough boring Φ124.92mm → finish boring với feed rate 0.08mm/rev, depth of cut 0.15mm, spindle 400 RPM → achieve IT7 tolerance + Ra 0.5μm surface finish. Không cần honing, sẵn sàng assembly với O-ring.</p>
+  
+  <h3>5. Deep Hole Boring L/D >4:1</h3>
+  <p><strong>NBH2084 micro boring system</strong> với <strong>rigid anti-vibration design</strong> xử lý tốt deep hole boring. Ví dụ: boring <strong>Φ50mm, depth 220mm (L/D = 4.4:1)</strong> cho long bearing housing. Sử dụng <strong>nbh2084 SBJ-2020</strong> (Φ45-102mm) → rough boring Φ49.85mm → finish boring với multiple passes (0.2mm depth of cut, feed 0.10mm/rev) → dial adjustment → achieve IT7 tolerance at entry and exit ends. Damping mechanism giảm chatter, maintain surface finish Ra 0.8μm through entire depth.</p>
+</div>
+
+<!-- ============================================ -->
+<!-- HƯỚNG DẪN SỬ DỤNG -->
+<!-- ============================================ -->
+
+<div class="section installation-guide">
+  <h2>Hướng Dẫn Sử Dụng NBH2084 Micro Boring System</h2>
+  
+  <h3>Setup & Dial Indicator Calibration</h3>
+  <ol class="installation-steps">
+    <li><strong>Chọn Boring Bar:</strong> Dựa vào target diameter, chọn <strong>nbh2084</strong> bar phù hợp (ví dụ: Φ85mm → SBJ-2025 range Φ70-152mm). Mount bar vào BT/HSK holder.</li>
+    <li><strong>Install Insert:</strong> Lắp carbide insert TBGT/TPGH vào boring bar. Tighten clamping screw với torque <strong>8-10 Nm</strong>. Đảm bảo insert seat flatness.</li>
+    <li><strong>Dial Indicator Zero Setting:</strong> Trước khi boring, set dial indicator về zero position tại insert initial position. Đây là reference point cho tất cả adjustments.</li>
+    <li><strong>Rough Boring Pass:</strong> Thực hiện rough boring pass với <strong>nbh2084 micro boring system</strong>, leaving stock <strong>0.10-0.15mm</strong> cho finish pass. Measure bore diameter bằng bore gauge.</li>
+    <li><strong>Calculate Required Adjustment:</strong> Ví dụ: target Φ85.000mm, measured Φ84.920mm → cần tăng 0.080mm radius (0.040mm trên dial). Rotate dial <strong>4 clicks</strong> (mỗi click = 0.01mm).</li>
+    <li><strong>Finish Boring Pass:</strong> Thực hiện finish pass với adjusted insert position. Feed rate <strong>0.08-0.12mm/rev</strong>, depth of cut <strong>0.10-0.20mm</strong>, spindle 300-600 RPM (depend on diameter). Measure bore diameter.</li>
+    <li><strong>Fine Adjustment If Needed:</strong> Nếu measured diameter chưa đạt target (ví dụ: Φ85.003mm thay vì Φ85.000mm), adjust dial thêm <strong>0.3 clicks</strong> (0.003mm radial) → thực hiện correction pass với depth of cut <strong>0.05mm</strong>.</li>
+  </ol>
+  
+  <p class="note"><strong>Pro Tip:</strong> <strong>NBH2084 micro boring system</strong> dial adjustment là <strong>radial movement</strong> (bán kính), nên để thay đổi đường kính lỗ <strong>X mm</strong>, cần adjust dial <strong>X/2 mm</strong>. Ví dụ: tăng diameter 0.08mm → adjust dial 0.04mm (4 clicks).</p>
+</div>
+
+<!-- ============================================ -->
+<!-- THÔNG SỐ GIA CÔNG TỐI ƯU -->
+<!-- ============================================ -->
+
+<div class="section machining-params">
+  <h2>Thông Số Gia Công Tối Ưu NBH2084 Micro Boring System</h2>
+  
+  <table class="params-table">
+    <thead>
+      <tr>
+        <th>Material</th>
+        <th>Spindle Speed (RPM)</th>
+        <th>Feed Rate (mm/rev)</th>
+        <th>Depth of Cut (mm)</th>
+        <th>Coolant</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Carbon Steel (S45C, S50C)</strong></td>
+        <td>300-600</td>
+        <td>0.08-0.15</td>
+        <td>0.10-0.30</td>
+        <td>Emulsion 8-10%</td>
+      </tr>
+      <tr>
+        <td><strong>Alloy Steel (SCM440, SNCM)</strong></td>
+        <td>250-500</td>
+        <td>0.06-0.12</td>
+        <td>0.10-0.25</td>
+        <td>Emulsion 10-12%</td>
+      </tr>
+      <tr>
+        <td><strong>Stainless Steel (SUS304, 316)</strong></td>
+        <td>200-400</td>
+        <td>0.05-0.10</td>
+        <td>0.08-0.20</td>
+        <td>Neat cutting oil</td>
+      </tr>
+      <tr>
+        <td><strong>Cast Iron (FC250, FCD450)</strong></td>
+        <td>400-800</td>
+        <td>0.10-0.20</td>
+        <td>0.15-0.35</td>
+        <td>Dry or air blow</td>
+      </tr>
+      <tr>
+        <td><strong>Aluminum Alloys (A5052, A6061)</strong></td>
+        <td>600-1200</td>
+        <td>0.12-0.25</td>
+        <td>0.20-0.40</td>
+        <td>Neat cutting oil</td>
+      </tr>
+      <tr>
+        <td><strong>Titanium (Ti-6Al-4V)</strong></td>
+        <td>150-300</td>
+        <td>0.04-0.08</td>
+        <td>0.05-0.15</td>
+        <td>High-pressure coolant</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="params-note"><strong>Note:</strong> Đây là recommended starting parameters cho <strong>nbh2084 micro boring system</strong>. For optimal results, adjust based on specific workpiece rigidity, boring depth, và machine tool stiffness. Finishing pass nên giảm feed rate <strong>30-40%</strong> để achieve surface finish Ra 0.4-0.6μm.</p>
+</div>
+
+<!-- ============================================ -->
+<!-- BẢO DƯỠNG & BẢO QUẢN -->
+<!-- ============================================ -->
+
+<div class="section maintenance-guide">
+  <h2>Bảo Dưỡng & Bảo Quản NBH2084 Micro Boring System</h2>
+  
+  <h3>Maintenance Schedule</h3>
+  <table class="maintenance-table">
+    <thead>
+      <tr>
+        <th>Frequency</th>
+        <th>Maintenance Task</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>After Each Use</strong></td>
+        <td>Clean boring bar và dial indicator bằng soft cloth. Remove chips từ adjustment mechanism. Apply thin layer rust preventive oil.</td>
+      </tr>
+      <tr>
+        <td><strong>Weekly</strong></td>
+        <td>Inspect insert clamping screw cho signs of wear. Check dial indicator movement (phải smooth, không sticking). Lubricate adjustment screw với light machine oil.</td>
+      </tr>
+      <tr>
+        <td><strong>Monthly</strong></td>
+        <td>Calibrate dial indicator bằng bore gauge (verify 0.01mm increment accuracy). Inspect boring bar cho straightness (runout <0.005mm). Replace worn inserts.</td>
+      </tr>
+      <tr>
+        <td><strong>Quarterly</strong></td>
+        <td>Deep clean tất cả <strong>nbh2084 micro boring system</strong> components. Check anti-vibration damping mechanism. Re-torque all clamping screws. Store trong protective case với desiccant packs.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h3>Storage Guidelines</h3>
+  <ul>
+    <li><strong>Climate Control:</strong> Store <strong>nbh2084 micro boring system</strong> trong environment với humidity <60%, temperature 15-25°C. Tránh extreme temperature fluctuations.</li>
+    <li><strong>Protection From Contamination:</strong> Store boring bars trong individual protective tubes. Dial indicators cần được covered để prevent dust accumulation.</li>
+    <li><strong>Insert Management:</strong> Store carbide inserts TBGT/TPGH trong original packaging. Separate unused vs used inserts để avoid confusion.</li>
+    <li><strong>Documentation:</strong> Maintain log book ghi lại dial adjustments, bore diameters achieved, và insert change dates cho mỗi <strong>nbh2084</strong> boring bar.</li>
+  </ul>
+</div>
+
+<!-- ============================================ -->
+<!-- FAQ -->
+<!-- ============================================ -->
+
+<div class="section faq">
+  <h2>Câu Hỏi Thường Gặp Về NBH2084 Micro Boring System</h2>
+  
+  <details>
+    <summary>NBH2084 micro boring system có thể boring lỗ sâu bao nhiêu? <span class="toggle">+</span></summary>
+    <div class="faq-content">
+      <p><strong>NBH2084 micro boring system</strong> với anti-vibration damping xử lý tốt deep boring up to <strong>L/D ratio 4.5:1</strong>. Ví dụ: boring Φ50mm có thể đạt depth <strong>225mm</strong> mà vẫn maintain IT7 tolerance và surface finish Ra 0.8μm. For even deeper holes (L/D >5:1), recommend sử dụng <strong>nbh2084</strong> kết hợp với <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">fine boring head</a> system có extended reach capabilities.</p>
+    </div>
+  </details>
+  
+  <details>
+    <summary>Dial adjustment 0.01mm có đủ chính xác cho IT6 tolerance không? <span class="toggle">+</span></summary>
+    <div class="faq-content">
+      <p>Có. <strong>NBH2084 micro boring system</strong> dial adjustment <strong>0.01mm radial = 0.02mm diameter change</strong>. IT6 tolerance cho Φ50-80mm là <strong>±0.009mm (0.018mm total)</strong>, tương đương <strong>~0.9 dial clicks</strong>. Operator có thể fine-tune bằng cách thực hiện partial rotation (ví dụ: 1/2 click = 0.005mm radial adjustment). Recommended workflow: measure bore → calculate required adjustment → adjust dial → correction pass với depth of cut 0.05mm → achieve IT6.</p>
+    </div>
+  </details>
+  
+  <details>
+    <summary>NBH2084 có thể boring aluminum alloys không bị built-up edge? <span class="toggle">+</span></summary>
+    <div class="faq-content">
+      <p><strong>NBH2084 micro boring system</strong> với carbide inserts TPGH <strong>positive rake +7°</strong> và polished flank face rất hiệu quả cho aluminum boring. Recommended parameters: spindle <strong>800-1200 RPM</strong>, feed <strong>0.15-0.25mm/rev</strong>, depth of cut <strong>0.25-0.40mm</strong>, sử dụng <strong>neat cutting oil</strong> hoặc water-soluble coolant. High cutting speed kết hợp với sharp insert edge ngăn chặn built-up edge formation, achieve surface finish <strong>Ra 0.3-0.5μm</strong>.</p>
+    </div>
+  </details>
+  
+  <details>
+    <summary>Insert TBGT và TPGH khác nhau như thế nào cho nbh2084? <span class="toggle">+</span></summary>
+    <div class="faq-content">
+      <p><strong>TBGT inserts</strong> (triangular shape) cho <strong>nbh2084 micro boring system</strong> có 6 cutting edges, economical, phù hợp cho general-purpose boring. <strong>TPGH inserts</strong> (triangular with hole, positive geometry) có 3 cutting edges nhưng free-cutting hơn, giảm cutting force <strong>20-30%</strong>, ideal cho thin-wall boring và aluminum alloys. For IT6-IT7 precision work, recommend <strong>TPGH</strong> cho better surface finish. For heavy-duty boring (depth of cut >0.3mm), <strong>TBGT</strong> cho stronger edge.</p>
+    </div>
+  </details>
+  
+  <details>
+    <summary>Làm thế nào để check dial indicator accuracy của nbh2084? <span class="toggle">+</span></summary>
+    <div class="faq-content">
+      <p>Calibrate <strong>nbh2084 micro boring system</strong> dial indicator monthly: (1) Set boring bar vào machining center spindle, (2) Boring test piece (mild steel Φ50mm x 100mm) với specific dial setting (ví dụ: 10 clicks = 0.10mm radial), (3) Measure bore diameter bằng precision bore gauge (resolution 0.001mm), (4) Verify measured diameter change = 0.20mm (2x radial adjustment). Nếu deviation >0.005mm, dial indicator cần re-calibration hoặc replacement. Tham khảo <a href="https://anmitools.com/san-pham/ewn-micro-boring-head/" target="_blank" rel="noopener">EWN micro boring head</a> cho alternative precision system.</p>
+    </div>
+  </details>
+</div>
+
+<!-- ============================================ -->
+<!-- LIÊN HỆ & HỖ TRỢ -->
+<!-- ============================================ -->
+
+<div class="section support-contact">
+  <h2>📞 Liên Hệ Tư Vấn & Đặt Hàng NBH2084 Micro Boring System</h2>
+  
+  <p><strong>An Mi Tools</strong> là nhà phân phối chính thức <strong>nbh2084 micro boring system</strong> tại Việt Nam, cung cấp full set gồm <strong>8 boring bars (SBJ-20..)</strong>, insert set TBGT/TPGH, dial indicators, carrying case, bảo hành <strong>24 tháng</strong>. Đội ngũ kỹ sư của chúng tôi có hơn 15 năm kinh nghiệm trong precision boring applications, sẵn sàng tư vấn:</p>
+  
+  <ul>
+    <li>Lựa chọn boring bar phù hợp với boring range requirements của bạn</li>
+    <li>Tối ưu cutting parameters (spindle speed, feed, depth of cut) cho specific materials</li>
+    <li>Dial adjustment techniques để achieve IT6-IT7 tolerance consistently</li>
+    <li>Troubleshooting surface finish issues (chatter, tool marks, roundness errors)</li>
+    <li>Preventive maintenance schedule và insert replacement strategies</li>
+  </ul>
+  
+  <p>Chúng tôi cung cấp <strong>on-site training</strong> cho operators và setup support để đảm bảo bạn maximize productivity của <strong>nbh2084 micro boring system</strong> ngay từ ngày đầu tiên. Demo units available for trial at customer facilities.</p>
+  
+  <p>Tham khảo thêm các giải pháp boring khác: <a href="https://anmitools.com/san-pham/rbh-rough-boring-head/" target="_blank" rel="noopener">RBH Rough Boring Head</a> cho rough operations, <a href="https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/" target="_blank" rel="noopener">CBH Fine Boring Head</a> cho large diameter precision boring, <a href="https://anmitools.com/san-pham/ewn-micro-boring-head/" target="_blank" rel="noopener">EWN Micro Boring Head</a> cho ultra-small diameter boring.</p>
+  
+  <div class="contact-cta cta-buttons">
+    <a href="https://anmitools.com/contact-us/" class="btn btn-primary cta-button">💬 Báo Giá NBH2084 Micro Boring System</a>
+    <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" class="btn btn-primary cta-button">📄 Tải Catalog An Mi Tools</a>
+  </div>
+  
+  <p style="margin-top: 1.5rem;">📞 <strong>Hotline Kinh Doanh:</strong> <a href="tel:0915192325">091 519 2325</a></p>
+  <p>📧 <strong>Email:</strong> support@anmitools.com | 🌐 <strong>Website:</strong> <a href="https://anmitools.com/san-pham/nbh2084-micro-boring-system/" target="_blank" rel="noopener">anmitools.com/san-pham/nbh2084-micro-boring-system/</a></p>
+  
+  <div class="contact-info">
+    <div class="office">
+      <h3>🏢 Hà Nội</h3>
+      <p>Suite 409, CT4 Building, Song Da Urban Area, Me Tri Street, Nam Tu Liem District</p>
+      <p>☎️ Tel: <a href="tel:+842435562635">+84 24 3556 2635</a></p>
+    </div>
+    <div class="office">
+      <h3>🏢 TP. Hồ Chí Minh</h3>
+      <p>75 Do Xuan Hop, W. Phuoc Long B, Thu Duc</p>
+      <p>☎️ Tel: <a href="tel:+842862623959">+84 28 6262 3959</a></p>
+    </div>
+  </div>
+
+  <figure class="contact-image">
+    <img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp" alt="An Mi Tools Contact - NBH2084 Micro Boring System" width="1200" height="400" loading="lazy">
+  </figure>
+</div>
+
+<!-- ============================================ -->
+<!-- SCHEMA MARKUP -->
+<!-- ============================================ -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "NBH2084 Micro Boring System",
+  "description": "NBH2084 Micro Boring System - 8 boring bars (SBJ-20..) Φ8-280mm, dial adjustment 0.01mm precision, IT6-IT7 tolerance, TBGT/TPGH carbide inserts, anti-vibration design, BT/HSK compatible.",
+  "brand": {
+    "@type": "Brand",
+    "name": "An Mi Tools"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "VND",
+    "url": "https://anmitools.com/san-pham/nbh2084-micro-boring-system/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "43"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://anmitools.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Hệ thống gá kẹp, cán dao", "item": "https://anmitools.com/tool-holders/"},
+    {"@type": "ListItem", "position": 3, "name": "NBH2084 Micro Boring System", "item": "https://anmitools.com/san-pham/nbh2084-micro-boring-system/"}
+  ]
+}
+</script>
 
 </section>
