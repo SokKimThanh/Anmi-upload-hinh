@@ -708,7 +708,7 @@ details[open] summary .toggle {
 .contact-info {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr 1fr; /* 2 cột cố định trên desktop */
     margin: 1.5rem 0;
 }
 
