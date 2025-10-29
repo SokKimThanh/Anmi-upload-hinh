@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Tools - Product Style Injector
  * Plugin URI: https://anmitools.com/plugins/product-style-injector
  * Description: Automatically inject common CSS for all An Mi Tools holder products. Detects product section and loads unified stylesheet.
- * Version: 2.1.0
+ * Version: 2.1.1
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: An Mi Tools Vietnam
@@ -16,10 +16,11 @@
  * Update URI: false
  * 
  * @package AnMiProductStyleInjector
- * @version 2.1.0
+ * @version 2.1.1
  * @since 1.0.0
  * 
  * Changelog:
+ * 2.1.1 - Added wpautop filter to prevent WordPress from auto-generating <p> tags in grid layouts
  * 2.1.0 - Added CSS support for WordPress Editor (Gutenberg & Classic Editor)
  * 2.0.0 - Changed to use single common CSS file instead of individual files
  * 1.0.0 - Initial release with individual CSS files per product
@@ -42,7 +43,7 @@ class AnMi_Product_Style_Injector {
      * 
      * @var string
      */
-    private $version = '2.1.0';
+    private $version = '2.1.1';
     
     /**
      * CSS directory path (relative to plugin)
@@ -114,8 +115,73 @@ class AnMi_Product_Style_Injector {
         // ✅ NEW: Add editor styles for Classic Editor
         add_editor_style($this->css_url . $this->common_css_file);
         
+        // ✅ NEW: Disable wpautop for product pages (prevent auto <p> tags)
+        add_filter('the_content', array($this, 'disable_wpautop_for_products'), 9);
+        
         // Add admin menu for testing
         add_action('admin_menu', array($this, 'add_admin_menu'));
+    }
+    
+    /**
+     * Disable WordPress wpautop for holder product pages
+     * This prevents WordPress from automatically adding <p> tags around content
+     * 
+     * @param string $content Post content
+     * @return string Modified content
+     * @since 2.1.1
+     */
+    public function disable_wpautop_for_products($content) {
+        // Only on singular posts/pages
+        if (!is_singular()) {
+            return $content;
+        }
+        
+        global $post;
+        
+        if (empty($post)) {
+            return $content;
+        }
+        
+        // Check if this is a holder product page
+        $is_holder_product = false;
+        
+        // Method 1: Check post content for holder slug patterns
+        foreach ($this->holder_slug_patterns as $pattern) {
+            if (strpos($post->post_content, 'class="' . $pattern) !== false ||
+                strpos($post->post_content, "class='" . $pattern) !== false) {
+                $is_holder_product = true;
+                break;
+            }
+        }
+        
+        // Method 2: Check if has grid classes (sign of product page)
+        if (!$is_holder_product) {
+            $grid_classes = array(
+                'feature-grid', 'application-grid', 'performance-grid',
+                'instruction-grid', 'support-grid', 'contact-info'
+            );
+            
+            foreach ($grid_classes as $class) {
+                if (strpos($post->post_content, $class) !== false) {
+                    $is_holder_product = true;
+                    break;
+                }
+            }
+        }
+        
+        // If this is a holder product, disable wpautop
+        if ($is_holder_product) {
+            // Remove wpautop filter to prevent auto <p> tag injection
+            remove_filter('the_content', 'wpautop');
+            remove_filter('the_excerpt', 'wpautop');
+            
+            // Log for debugging
+            if (defined('WP_DEBUG') && WP_DEBUG) {
+                error_log("An Mi Product Style Injector: Disabled wpautop for holder product (Post ID: {$post->ID})");
+            }
+        }
+        
+        return $content;
     }
     
     /**

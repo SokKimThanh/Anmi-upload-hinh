@@ -2,7 +2,7 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.3
+ * Version: 1.1.4
  * Last Updated: October 29, 2025
  * Author: An Mi Tools Technical Team
  * 
@@ -12,6 +12,12 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.1.4 (2025-10-29):
+ * - Added CSS rules to hide WordPress auto-generated <p> tags in grid layouts
+ * - Fixed issue where WordPress Editor adds unwanted <p> tags after each grid child div
+ * - Preserved <p> tags inside cards/items (actual content)
+ * - Improved responsive breakpoints: Desktop (>768px), Tablet (481-768px), Mobile (≤480px)
+ * 
  * v1.1.3 (2025-10-29):
  * - Fixed layout for application-grid and instruction-grid
  * - Changed from auto-fit to fixed 2-column layout (repeat(2, 1fr))
@@ -64,6 +70,67 @@ body {
 /* Vô hiệu hóa thẻ br */
 br {
     display: none;
+}
+
+/* ============================================ */
+/* FIX WORDPRESS EDITOR AUTO-GENERATED <p> TAGS */
+/* ============================================ */
+/* WordPress Editor tự động thêm thẻ <p> sau mỗi div con của grid.
+   Các rule này sẽ ẩn các thẻ <p> rỗng hoặc chỉ chứa &nbsp; trong grid layouts */
+
+/* Ẩn thẻ <p> rỗng hoặc chỉ có khoảng trắng bên trong các grid containers */
+.feature-grid > p:empty,
+.application-grid > p:empty,
+.performance-grid > p:empty,
+.instruction-grid > p:empty,
+.support-grid > p:empty,
+.contact-info > p:empty,
+.spec-grid > p:empty,
+.grid > p:empty {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    line-height: 0;
+}
+
+/* Ẩn thẻ <p> chỉ chứa &nbsp; hoặc khoảng trắng */
+.feature-grid > p:not(:has(*)),
+.application-grid > p:not(:has(*)),
+.performance-grid > p:not(:has(*)),
+.instruction-grid > p:not(:has(*)),
+.support-grid > p:not(:has(*)),
+.contact-info > p:not(:has(*)),
+.spec-grid > p:not(:has(*)),
+.grid > p:not(:has(*)) {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ẩn tất cả thẻ <p> là con trực tiếp của grid (WordPress auto-inject) */
+.feature-grid > p,
+.application-grid > p,
+.performance-grid > p,
+.instruction-grid > p,
+.support-grid > p,
+.contact-info > p,
+.spec-grid > p,
+.grid > p {
+    display: none !important;
+}
+
+/* Nhưng GIỮ LẠI thẻ <p> bên trong các card/item (nội dung thật) */
+.feature-card p,
+.application-card p,
+.performance-card p,
+.instruction-card p,
+.support-card p,
+.contact-item p,
+.spec-item p,
+.grid-item p {
+    display: block !important;
+    margin: 0.75rem 0;
 }
 
 /* ============================================ */
