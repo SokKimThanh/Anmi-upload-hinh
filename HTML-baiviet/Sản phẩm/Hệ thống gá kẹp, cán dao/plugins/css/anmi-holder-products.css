@@ -2,7 +2,7 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.4
+ * Version: 1.1.5
  * Last Updated: October 29, 2025
  * Author: An Mi Tools Technical Team
  * 
@@ -12,6 +12,12 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.1.5 (2025-10-29):
+ * - Enhanced CSS rules to completely hide WordPress auto-generated <p> tags in grids
+ * - Added comprehensive comment documentation about HTML comments wrapped in <p> tags
+ * - Added JavaScript cleanup script (grid-cleanup.js) to remove <p> tags from DOM
+ * - Combined CSS + JavaScript + PHP wpautop filter for triple-layer protection
+ * 
  * v1.1.4 (2025-10-29):
  * - Added CSS rules to hide WordPress auto-generated <p> tags in grid layouts
  * - Fixed issue where WordPress Editor adds unwanted <p> tags after each grid child div
@@ -76,7 +82,11 @@ br {
 /* FIX WORDPRESS EDITOR AUTO-GENERATED <p> TAGS */
 /* ============================================ */
 /* WordPress Editor tự động thêm thẻ <p> sau mỗi div con của grid.
-   Các rule này sẽ ẩn các thẻ <p> rỗng hoặc chỉ chứa &nbsp; trong grid layouts */
+   Các rule này sẽ ẩn các thẻ <p> rỗng hoặc chỉ chứa &nbsp; trong grid layouts 
+   
+   ⚠️ QUAN TRỌNG: WordPress Editor cũng wrap HTML comments <!-- --> bên trong thẻ <p>
+   Ví dụ: <p><!-- Comment --></p> làm loạn grid layout
+   Solution: Ẩn tất cả <p> là con trực tiếp của grid containers */
 
 /* Ẩn thẻ <p> rỗng hoặc chỉ có khoảng trắng bên trong các grid containers */
 .feature-grid > p:empty,
@@ -108,7 +118,10 @@ br {
     padding: 0;
 }
 
-/* Ẩn tất cả thẻ <p> là con trực tiếp của grid (WordPress auto-inject) */
+/* ⚠️ CRITICAL FIX: Ẩn tất cả thẻ <p> là con trực tiếp của grid 
+   Bao gồm cả <p> chứa HTML comments từ WordPress Editor
+   Ví dụ: <p><!-- Card 1: Gia công tốc độ cao --></p> 
+   WordPress Editor tự động wrap comment trong <p> → phá vỡ grid layout */
 .feature-grid > p,
 .application-grid > p,
 .performance-grid > p,
@@ -118,6 +131,10 @@ br {
 .spec-grid > p,
 .grid > p {
     display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 0 !important;
+    line-height: 0 !important;
 }
 
 /* Nhưng GIỮ LẠI thẻ <p> bên trong các card/item (nội dung thật) */

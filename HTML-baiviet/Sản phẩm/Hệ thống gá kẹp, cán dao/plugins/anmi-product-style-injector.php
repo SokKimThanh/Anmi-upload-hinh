@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Tools - Product Style Injector
  * Plugin URI: https://anmitools.com/plugins/product-style-injector
  * Description: Automatically inject common CSS for all An Mi Tools holder products. Detects product section and loads unified stylesheet.
- * Version: 2.1.1
+ * Version: 2.1.2
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: An Mi Tools Vietnam
@@ -16,10 +16,11 @@
  * Update URI: false
  * 
  * @package AnMiProductStyleInjector
- * @version 2.1.1
+ * @version 2.1.2
  * @since 1.0.0
  * 
  * Changelog:
+ * 2.1.2 - Added JavaScript cleanup to remove <p> tags wrapping HTML comments in grid layouts
  * 2.1.1 - Added wpautop filter to prevent WordPress from auto-generating <p> tags in grid layouts
  * 2.1.0 - Added CSS support for WordPress Editor (Gutenberg & Classic Editor)
  * 2.0.0 - Changed to use single common CSS file instead of individual files
@@ -43,7 +44,7 @@ class AnMi_Product_Style_Injector {
      * 
      * @var string
      */
-    private $version = '2.1.1';
+    private $version = '2.1.2';
     
     /**
      * CSS directory path (relative to plugin)
@@ -296,6 +297,15 @@ class AnMi_Product_Style_Injector {
                 array(),
                 $version,
                 'all'
+            );
+            
+            // ✅ NEW: Enqueue JavaScript to clean up WordPress auto-generated <p> tags
+            wp_enqueue_script(
+                'anmi-grid-cleanup',
+                plugins_url('js/grid-cleanup.js', __FILE__),
+                array(),
+                $version,
+                true // Load in footer
             );
             
             // Debug log (only in WP_DEBUG mode)
