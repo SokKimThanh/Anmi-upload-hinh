@@ -2,8 +2,8 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.2
- * Last Updated: October 27, 2025
+ * Version: 1.1.3
+ * Last Updated: October 29, 2025
  * Author: An Mi Tools Technical Team
  * 
  * File CSS chung duy nhất cho tất cả 40 sản phẩm holder.
@@ -12,6 +12,12 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.1.3 (2025-10-29):
+ * - Fixed layout for application-grid and instruction-grid
+ * - Changed from auto-fit to fixed 2-column layout (repeat(2, 1fr))
+ * - Improved visual balance and readability on desktop
+ * - Mobile remains 1 column (responsive @media)
+ * 
  * v1.1.2 (2025-10-27):
  * - Enhanced .support-card styling with background, padding, border
  * - Added box-shadow and border-radius for better card separation
@@ -560,7 +566,7 @@ details[open] summary .toggle {
 .application-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Cố định 2 cột */
     margin: 1.5rem 0;
 }
 
@@ -747,7 +753,7 @@ details[open] summary .toggle {
 .instruction-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Cố định 2 cột */
     margin: 1.5rem 0;
 }
 
