@@ -1248,6 +1248,17 @@ details[open] summary .toggle {
 /* ============================================ */
 /* RESPONSIVE DESIGN */
 /* ============================================ */
+
+/* Tablet (481-768px): Giữ 2 cột cho application và instruction */
+@media (min-width: 481px) and (max-width: 768px) {
+    .application-grid,
+    .instruction-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Mobile & Tablet: Common styles */
 @media (max-width: 768px) {
 
     section[class*="bt-"],
@@ -1275,16 +1286,6 @@ details[open] summary .toggle {
     .cta-buttons {
         grid-template-columns: 1fr;
         gap: 0.75rem;
-    }
-
-    /* Responsive cho các grid layouts */
-    .feature-grid,
-    .application-grid,
-    .performance-grid,
-    .instruction-grid,
-    .support-grid,
-    .contact-info {
-        grid-template-columns: 1fr;
     }
 
     /* Spec row responsive */
@@ -1323,6 +1324,18 @@ details[open] summary .toggle {
 
     .catalog-download .download-btn span {
         font-size: 14px;
+    }
+}
+
+/* Mobile nhỏ (≤480px): Ép tất cả về 1 cột */
+@media (max-width: 480px) {
+    .feature-grid,
+    .application-grid,
+    .performance-grid,
+    .instruction-grid,
+    .support-grid,
+    .contact-info {
+        grid-template-columns: 1fr;
     }
 }
 
