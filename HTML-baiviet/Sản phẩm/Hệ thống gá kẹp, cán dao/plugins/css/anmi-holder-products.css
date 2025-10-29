@@ -2,7 +2,7 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.5
+ * Version: 1.1.6
  * Last Updated: October 29, 2025
  * Author: An Mi Tools Technical Team
  * 
@@ -12,6 +12,12 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.1.6 (2025-10-29):
+ * - FIXED: Only hide EMPTY <p> tags, PRESERVE <p> tags with actual text content
+ * - Updated grid-cleanup.js to v1.1.0 with intelligent content detection
+ * - Product descriptions in <p> tags now display correctly
+ * - Only removes <p> tags containing ONLY comments or whitespace
+ * 
  * v1.1.5 (2025-10-29):
  * - Enhanced CSS rules to completely hide WordPress auto-generated <p> tags in grids
  * - Added comprehensive comment documentation about HTML comments wrapped in <p> tags
@@ -82,13 +88,13 @@ br {
 /* FIX WORDPRESS EDITOR AUTO-GENERATED <p> TAGS */
 /* ============================================ */
 /* WordPress Editor tự động thêm thẻ <p> sau mỗi div con của grid.
-   Các rule này sẽ ẩn các thẻ <p> rỗng hoặc chỉ chứa &nbsp; trong grid layouts 
+   CHÚ Ý: Chỉ ẩn thẻ <p> RỖNG hoặc chứa COMMENT, GIỮ LẠI thẻ <p> có nội dung thật
    
-   ⚠️ QUAN TRỌNG: WordPress Editor cũng wrap HTML comments <!-- --> bên trong thẻ <p>
-   Ví dụ: <p><!-- Comment --></p> làm loạn grid layout
-   Solution: Ẩn tất cả <p> là con trực tiếp của grid containers */
+   ⚠️ QUAN TRỌNG: WordPress Editor wrap HTML comments <!-- --> bên trong thẻ <p>
+   Ví dụ: <p><!-- Card 1: Gia công tốc độ cao --></p> làm loạn grid layout
+   Solution: Chỉ ẩn <p> rỗng hoặc chứa comment, KHÔNG ẩn <p> có text content */
 
-/* Ẩn thẻ <p> rỗng hoặc chỉ có khoảng trắng bên trong các grid containers */
+/* Ẩn thẻ <p> rỗng (không có nội dung gì) */
 .feature-grid > p:empty,
 .application-grid > p:empty,
 .performance-grid > p:empty,
@@ -97,39 +103,6 @@ br {
 .contact-info > p:empty,
 .spec-grid > p:empty,
 .grid > p:empty {
-    display: none;
-    margin: 0;
-    padding: 0;
-    height: 0;
-    line-height: 0;
-}
-
-/* Ẩn thẻ <p> chỉ chứa &nbsp; hoặc khoảng trắng */
-.feature-grid > p:not(:has(*)),
-.application-grid > p:not(:has(*)),
-.performance-grid > p:not(:has(*)),
-.instruction-grid > p:not(:has(*)),
-.support-grid > p:not(:has(*)),
-.contact-info > p:not(:has(*)),
-.spec-grid > p:not(:has(*)),
-.grid > p:not(:has(*)) {
-    display: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* ⚠️ CRITICAL FIX: Ẩn tất cả thẻ <p> là con trực tiếp của grid 
-   Bao gồm cả <p> chứa HTML comments từ WordPress Editor
-   Ví dụ: <p><!-- Card 1: Gia công tốc độ cao --></p> 
-   WordPress Editor tự động wrap comment trong <p> → phá vỡ grid layout */
-.feature-grid > p,
-.application-grid > p,
-.performance-grid > p,
-.instruction-grid > p,
-.support-grid > p,
-.contact-info > p,
-.spec-grid > p,
-.grid > p {
     display: none !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -137,18 +110,8 @@ br {
     line-height: 0 !important;
 }
 
-/* Nhưng GIỮ LẠI thẻ <p> bên trong các card/item (nội dung thật) */
-.feature-card p,
-.application-card p,
-.performance-card p,
-.instruction-card p,
-.support-card p,
-.contact-item p,
-.spec-item p,
-.grid-item p {
-    display: block !important;
-    margin: 0.75rem 0;
-}
+/* CSS KHÔNG THỂ detect comment node, phải dùng JavaScript để xóa <p> chứa comment */
+/* JavaScript sẽ xử lý trong grid-cleanup.js */
 
 /* ============================================ */
 /* CONTAINER - Áp dụng cho tất cả section sản phẩm */
