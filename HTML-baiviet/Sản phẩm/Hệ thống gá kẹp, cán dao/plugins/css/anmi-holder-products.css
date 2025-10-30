@@ -2,8 +2,8 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.6
- * Last Updated: October 29, 2025
+ * Version: 1.1.7
+ * Last Updated: October 30, 2025
  * Author: An Mi Tools Technical Team
  * 
  * File CSS chung duy nhất cho tất cả 40 sản phẩm holder.
@@ -12,6 +12,13 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.1.7 (2025-10-30):
+ * - Added responsive contact images: Desktop shows full address, Mobile shows large hotline number
+ * - Added .contact-image-desktop and .contact-image-mobile classes
+ * - Desktop: Shows full address image, hides mobile hotline image
+ * - Mobile (≤768px): Shows large hotline image, hides desktop address image
+ * - Improved mobile UX with bigger, clearer hotline numbers for easier contact
+ * 
  * v1.1.6 (2025-10-29):
  * - FIXED: Only hide EMPTY <p> tags, PRESERVE <p> tags with actual text content
  * - Updated grid-cleanup.js to v1.1.0 with intelligent content detection
@@ -777,6 +784,15 @@ details[open] summary .toggle {
     margin: 1.5rem 0;
 }
 
+/* Desktop: Hiển thị ảnh địa chỉ đầy đủ, ẩn ảnh hotline mobile */
+.contact-image-desktop {
+    display: block;
+}
+
+.contact-image-mobile {
+    display: none;
+}
+
 .warranty-note {
     background-color: #FFF9E6;
     padding: 1rem;
@@ -1367,6 +1383,15 @@ details[open] summary .toggle {
         font-size: 14px;
         width: 100%;
         justify-content: center;
+    }
+
+    /* Mobile: Ẩn ảnh desktop, hiển thị ảnh hotline số to */
+    .contact-image-desktop {
+        display: none;
+    }
+
+    .contact-image-mobile {
+        display: block;
     }
 
     .catalog-download .download-btn span {
