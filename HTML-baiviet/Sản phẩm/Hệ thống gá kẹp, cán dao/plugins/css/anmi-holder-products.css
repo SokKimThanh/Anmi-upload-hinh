@@ -2,7 +2,7 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.9
+ * Version: 1.2.0
  * Last Updated: October 30, 2025
  * Author: An Mi Tools Technical Team
  * 
@@ -12,6 +12,13 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.2.0 (2025-10-30):
+ * - WORDPRESS EDITOR INTEGRATION: Added global padding rules for WordPress content area
+ * - Added .woocommerce div.product .woocommerce-tabs .panel { padding: 0.5rem } for WooCommerce tabs
+ * - Added @media (max-width: 767px) padding: 1rem for #content on mobile to prevent content from touching edges
+ * - Ensures content in WordPress Editor has proper spacing and readability across all pages
+ * - Critical for preventing content from appearing flush against screen edges
+ * 
  * v1.1.9 (2025-10-30):
  * - WORDPRESS EDITOR OPTIMIZATION: Reduced section & content padding/margin
  * - Section container: 2rem 1rem → 1rem 0.5rem (desktop), 0.75rem 0.25rem → 0.5rem 0.15rem (mobile)
@@ -1324,6 +1331,30 @@ details[open] summary .toggle {
     font-size: 0.92rem; /* +5%: 0.875→0.92rem */
     color: #666666;
     margin: 0;
+}
+
+/* ============================================ */
+/* WORDPRESS EDITOR GLOBAL PADDING */
+/* ============================================ */
+/* 
+ * Đoạn CSS này đảm bảo nội dung trong WordPress Editor không bị sát viền
+ * Áp dụng cho:
+ * - WooCommerce product tabs (panel)
+ * - Tất cả các trang có #content (với hoặc không có sidebar)
+ * - Đặc biệt quan trọng trên mobile để nội dung có khoảng cách đẹp
+ */
+
+/* WooCommerce Product Tabs Padding */
+.woocommerce div.product .woocommerce-tabs .panel {
+    padding: 0.5rem;
+}
+
+/* WordPress Content Area Padding - Mobile Only */
+@media (max-width: 767px) {
+    .pbmit-sidebar-no #content,
+    .pbmit-sidebar-exists #content {
+        padding: 1rem;
+    }
 }
 
 /* ============================================ */
