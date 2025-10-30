@@ -2,7 +2,7 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.7
+ * Version: 1.1.8
  * Last Updated: October 30, 2025
  * Author: An Mi Tools Technical Team
  * 
@@ -12,6 +12,16 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.1.8 (2025-10-30):
+ * - MOBILE OPTIMIZATION: Reduced padding/margin on mobile for more screen space
+ * - Changed mobile section padding: 1rem 0.5rem → 0.75rem 0.25rem (tràn viền hơn)
+ * - Changed mobile figure margin: 3rem auto → 1.5rem 0 (gần sát mép hơn)
+ * - READABILITY: Increased all font sizes by 5% for better readability
+ * - H1: 1.75-2.5rem → 1.84-2.625rem, H2: 1.5-1.875rem → 1.575-1.97rem
+ * - H3: 1.125-1.25rem → 1.18-1.31rem, P: 1-1.125rem → 1.05-1.18rem
+ * - Table font: 0.875rem → 0.92rem on mobile
+ * - Better mobile reading experience with larger text and less whitespace
+ * 
  * v1.1.7 (2025-10-30):
  * - Added responsive contact images: Desktop shows full address, Mobile shows large hotline number
  * - Added .contact-image-desktop and .contact-image-mobile classes
@@ -163,7 +173,7 @@ section[class*="mta"] h1,
 section[class*="tck-"] h1,
 section[class*="tool-holder"] h1,
 .he-thong-ga-kep-can-dao h1 {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-size: clamp(1.84rem, 4.2vw, 2.625rem); /* +5%: 1.75→1.84rem, 2.5→2.625rem */
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: #000000;
@@ -181,7 +191,7 @@ section[class*="mta"] h2,
 section[class*="tck-"] h2,
 section[class*="tool-holder"] h2,
 .he-thong-ga-kep-can-dao h2 {
-    font-size: clamp(1.5rem, 3vw, 1.875rem);
+    font-size: clamp(1.575rem, 3.15vw, 1.97rem); /* +5%: 1.5→1.575rem, 1.875→1.97rem */
     font-weight: 600;
     margin-bottom: 1rem;
     color: #000000;
@@ -201,7 +211,7 @@ section[class*="mta"] h3,
 section[class*="tck-"] h3,
 section[class*="tool-holder"] h3,
 .he-thong-ga-kep-can-dao h3 {
-    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    font-size: clamp(1.18rem, 2.1vw, 1.31rem); /* +5%: 1.125→1.18rem, 1.25→1.31rem */
     font-weight: 600;
     margin-bottom: 0.75rem;
     color: #000000;
@@ -218,7 +228,7 @@ section[class*="mta"] p,
 section[class*="tck-"] p,
 section[class*="tool-holder"] p,
 .he-thong-ga-kep-can-dao p {
-    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    font-size: clamp(1.05rem, 1.575vw, 1.18rem); /* +5%: 1→1.05rem, 1.125→1.18rem */
     margin-bottom: 1rem;
     line-height: 1.8;
     color: #000000;
@@ -284,7 +294,7 @@ figure img {
 
 figcaption {
     color: #333333;
-    font-size: 0.95rem;
+    font-size: 1rem; /* +5%: 0.95→1rem */
     margin-top: 0.75rem;
     font-style: italic;
     line-height: 1.6;
@@ -393,7 +403,7 @@ tbody tr:last-child {
 }
 
 .table-note {
-    font-size: 0.95rem;
+    font-size: 1rem; /* +5%: 0.95→1rem */
     color: #333333;
     line-height: 1.7;
     margin-top: 1rem;
@@ -401,7 +411,7 @@ tbody tr:last-child {
 }
 
 .note {
-    font-size: 1rem;
+    font-size: 1.05rem; /* +5%: 1→1.05rem */
     color: #333333;
     line-height: 1.7;
     margin-top: 1rem;
@@ -435,7 +445,7 @@ tbody tr:last-child {
 }
 
 .contact-title {
-    font-size: 1.5rem;
+    font-size: 1.575rem; /* +5%: 1.5→1.575rem */
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: #FFFFFF;
@@ -455,14 +465,14 @@ tbody tr:last-child {
 }
 
 .contact-item h4 {
-    font-size: 1.125rem;
+    font-size: 1.18rem; /* +5%: 1.125→1.18rem */
     font-weight: 600;
     margin-bottom: 0.75rem;
     color: #FFFFFF;
 }
 
 .contact-item p {
-    font-size: 0.95rem;
+    font-size: 1rem; /* +5%: 0.95→1rem */
     line-height: 1.7;
     color: #FFFFFF;
     margin: 0;
@@ -481,7 +491,7 @@ tbody tr:last-child {
 }
 
 .contact-footer p {
-    font-size: 1rem;
+    font-size: 1.05rem; /* +5%: 1→1.05rem */
     color: #FFFFFF;
     margin: 0;
 }
@@ -499,7 +509,7 @@ tbody tr:last-child {
 }
 
 .support-icon {
-    font-size: 2.5rem;
+    font-size: 2.625rem; /* +5%: 2.5→2.625rem */
     margin-bottom: 0.5rem;
 }
 
@@ -638,7 +648,7 @@ details[open] summary .toggle {
 }
 
 .application-note {
-    font-size: 0.95rem;
+    font-size: 1rem; /* +5%: 0.95→1rem */
     color: #666666;
     font-style: italic;
     margin-top: 1rem;
@@ -664,12 +674,12 @@ details[open] summary .toggle {
 }
 
 .performance-icon {
-    font-size: 2.5rem;
+    font-size: 2.625rem; /* +5%: 2.5→2.625rem */
     margin-bottom: 1rem;
 }
 
 .performance-value {
-    font-size: 1.5rem;
+    font-size: 1.575rem; /* +5%: 1.5→1.575rem */
     font-weight: 700;
     color: #0055AA;
     margin: 0.5rem 0;
@@ -898,7 +908,7 @@ details[open] summary .toggle {
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 16.8px; /* +5%: 16→16.8px */
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
     border: none;
@@ -1058,7 +1068,7 @@ details[open] summary .toggle {
 }
 
 .support-note {
-    font-size: 0.95rem;
+    font-size: 1rem; /* +5%: 0.95→1rem */
     color: #666666;
     font-style: italic;
     margin-top: 1rem;
@@ -1087,7 +1097,7 @@ details[open] summary .toggle {
 
 .faq-icon {
     color: #0055AA;
-    font-size: 1.5rem;
+    font-size: 1.575rem; /* +5%: 1.5→1.575rem */
     margin-right: 0.5rem;
 }
 
@@ -1099,7 +1109,7 @@ details[open] summary .toggle {
 }
 
 .footer-description {
-    font-size: 0.95rem;
+    font-size: 1rem; /* +5%: 0.95→1rem */
     color: #666666;
     line-height: 1.7;
 }
@@ -1228,7 +1238,7 @@ details[open] summary .toggle {
 
 /* Product Intro */
 .product-intro {
-    font-size: 1.1rem;
+    font-size: 1.155rem; /* +5%: 1.1→1.155rem */
     line-height: 1.8;
 }
 
@@ -1281,7 +1291,7 @@ details[open] summary .toggle {
 .checkmark {
     color: #0055AA;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.31rem; /* +5%: 1.25→1.31rem */
     margin-right: 0.75rem;
 }
 
@@ -1296,14 +1306,14 @@ details[open] summary .toggle {
 }
 
 .footer-main {
-    font-size: 0.95rem;
+    font-size: 1rem; /* +5%: 0.95→1rem */
     color: #333333;
     line-height: 1.7;
     margin-bottom: 1rem;
 }
 
 .footer-meta {
-    font-size: 0.875rem;
+    font-size: 0.92rem; /* +5%: 0.875→0.92rem */
     color: #666666;
     margin: 0;
 }
@@ -1324,17 +1334,28 @@ details[open] summary .toggle {
 /* Mobile & Tablet: Common styles */
 @media (max-width: 768px) {
 
+    /* Giảm padding để nội dung tràn viền hơn trên mobile */
     section[class*="bt-"],
     section[class*="hsk-"],
     section[class*="nbh"],
     section[class*="nbj"],
     section[class*="ewn"],
     .he-thong-ga-kep-can-dao {
-        padding: 1rem 0.5rem;
+        padding: 0.75rem 0.25rem; /* Giảm: 1rem 0.5rem → 0.75rem 0.25rem */
+    }
+
+    /* Figure margin giảm để sát mép hơn */
+    figure {
+        margin: 1.5rem 0; /* Giảm: 3rem auto → 1.5rem 0 (tràn viền) */
+    }
+
+    /* Section margin giảm */
+    .section {
+        margin-bottom: 2rem; /* Giảm: 3rem → 2rem */
     }
 
     table {
-        font-size: 0.875rem;
+        font-size: 0.92rem; /* +5%: 0.875→0.92rem */
     }
 
     th,
@@ -1380,7 +1401,7 @@ details[open] summary .toggle {
     /* Catalog download responsive */
     .catalog-download .download-btn {
         padding: 12px 20px;
-        font-size: 14px;
+        font-size: 14.7px; /* +5%: 14→14.7px */
         width: 100%;
         justify-content: center;
     }
@@ -1395,7 +1416,7 @@ details[open] summary .toggle {
     }
 
     .catalog-download .download-btn span {
-        font-size: 14px;
+        font-size: 14.7px; /* +5%: 14→14.7px */
     }
 }
 
