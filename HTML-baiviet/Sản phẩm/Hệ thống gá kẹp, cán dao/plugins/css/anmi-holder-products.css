@@ -2,7 +2,7 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.1.8
+ * Version: 1.1.9
  * Last Updated: October 30, 2025
  * Author: An Mi Tools Technical Team
  * 
@@ -12,6 +12,14 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.1.9 (2025-10-30):
+ * - WORDPRESS EDITOR OPTIMIZATION: Reduced section & content padding/margin
+ * - Section container: 2rem 1rem → 1rem 0.5rem (desktop), 0.75rem 0.25rem → 0.5rem 0.15rem (mobile)
+ * - .section margin-bottom: 3rem → 1.5rem (desktop), 2rem → 1rem (mobile)
+ * - Figure margin: 3rem auto → 1.5rem auto (desktop), 1.5rem 0 → 1rem 0 (mobile)
+ * - Reduced padding on cards, boxes, grids for better space utilization
+ * - Maintains readability while maximizing content display area in WordPress editor
+ * 
  * v1.1.8 (2025-10-30):
  * - MOBILE OPTIMIZATION: Reduced padding/margin on mobile for more screen space
  * - Changed mobile section padding: 1rem 0.5rem → 0.75rem 0.25rem (tràn viền hơn)
@@ -156,7 +164,7 @@ section[class*="tool-holder"],
 .he-thong-ga-kep-can-dao {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem; /* Giảm: 2rem 1rem → 1rem 0.5rem để tràn viền hơn */
 }
 
 /* ============================================ */
@@ -267,7 +275,7 @@ section[class*="tool-holder"] a:hover,
 /* SECTIONS */
 /* ============================================ */
 .section {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem; /* Giảm: 3rem → 1.5rem */
 }
 
 /* ============================================ */
@@ -276,7 +284,7 @@ section[class*="tool-holder"] a:hover,
 figure {
     width: 100%;
     max-width: 1000px;
-    margin: 3rem auto;
+    margin: 1.5rem auto; /* Giảm: 3rem → 1.5rem */
     text-align: center;
 }
 
@@ -422,14 +430,14 @@ tbody tr:last-child {
 /* ============================================ */
 .card {
     background-color: #FFFFFF;
-    padding: 1.5rem;
+    padding: 1rem; /* Giảm: 1.5rem → 1rem */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem; /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
@@ -439,7 +447,7 @@ tbody tr:last-child {
 .contact-box {
     background-color: #0055AA;
     color: #FFFFFF;
-    padding: 2rem;
+    padding: 1.25rem; /* Giảm: 2rem → 1.25rem */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 85, 170, 0.2);
 }
@@ -447,20 +455,20 @@ tbody tr:last-child {
 .contact-title {
     font-size: 1.575rem; /* +5%: 1.5→1.575rem */
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Giảm: 1.5rem → 1rem */
     color: #FFFFFF;
     text-align: center;
 }
 
 .contact-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem; /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .contact-item {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 1.25rem;
+    padding: 1rem; /* Giảm: 1.25rem → 1rem */
     border-radius: 8px;
 }
 
@@ -502,7 +510,7 @@ tbody tr:last-child {
 .support-card {
     text-align: center;
     background-color: #FFFFFF;
-    padding: 1.5rem;
+    padding: 1rem; /* Giảm: 1.5rem → 1rem */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     border: 1px solid #E0E0E0;
@@ -614,14 +622,14 @@ details[open] summary .toggle {
 /* Features */
 .feature-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem; /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin: 1.5rem 0;
+    margin: 1rem 0; /* Giảm: 1.5rem → 1rem */
 }
 
 .feature-item {
     background-color: #FFFFFF;
-    padding: 1.5rem;
+    padding: 1rem; /* Giảm: 1.5rem → 1rem */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
@@ -629,15 +637,15 @@ details[open] summary .toggle {
 /* Applications */
 .application-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem; /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(2, 1fr); /* Cố định 2 cột */
-    margin: 1.5rem 0;
+    margin: 1rem 0; /* Giảm: 1.5rem → 1rem */
 }
 
 .application-card,
 .application-item {
     background-color: #FFFFFF;
-    padding: 1.5rem;
+    padding: 1rem; /* Giảm: 1.5rem → 1rem */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     border: 1px solid #CED1DB;
@@ -660,14 +668,14 @@ details[open] summary .toggle {
 /* Performance Cards */
 .performance-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem; /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin: 1.5rem 0;
+    margin: 1rem 0; /* Giảm: 1.5rem → 1rem */
 }
 
 .performance-card {
     background-color: #FFFFFF;
-    padding: 1.5rem;
+    padding: 1rem; /* Giảm: 1.5rem → 1rem */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     text-align: center;
@@ -688,7 +696,7 @@ details[open] summary .toggle {
 /* Comparison Tables */
 .comparison-table-wrapper {
     overflow-x: auto;
-    margin: 1.5rem 0;
+    margin: 1rem 0; /* Giảm: 1.5rem → 1rem */
 }
 
 .comparison-table {
@@ -1062,9 +1070,9 @@ details[open] summary .toggle {
 /* Support Cards */
 .support-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem; /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin: 1.5rem 0;
+    margin: 1rem 0; /* Giảm: 1.5rem → 1rem */
 }
 
 .support-note {
@@ -1263,25 +1271,25 @@ details[open] summary .toggle {
 /* ============================================ */
 .highlight-box {
     background-color: #F0F8FF;
-    padding: 1.5rem;
+    padding: 1rem; /* Giảm: 1.5rem → 1rem */
     border-radius: 8px;
     border-left: 4px solid #0055AA;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Giảm: 1.5rem → 1rem */
 }
 
 .warning-box {
     background-color: #FFF9E6;
-    padding: 1.5rem;
+    padding: 1rem; /* Giảm: 1.5rem → 1rem */
     border-radius: 8px;
     border-left: 4px solid #FFA500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Giảm: 1.5rem → 1rem */
 }
 
 .info-box {
     background-color: #F0F8FF;
     padding: 1rem;
     border-radius: 8px;
-    margin-top: 1.5rem;
+    margin-top: 1rem; /* Giảm: 1.5rem → 1rem */
 }
 
 .info-box p {
@@ -1341,17 +1349,17 @@ details[open] summary .toggle {
     section[class*="nbj"],
     section[class*="ewn"],
     .he-thong-ga-kep-can-dao {
-        padding: 0.75rem 0.25rem; /* Giảm: 1rem 0.5rem → 0.75rem 0.25rem */
+        padding: 0.5rem 0.15rem; /* Giảm thêm: 0.75rem 0.25rem → 0.5rem 0.15rem */
     }
 
     /* Figure margin giảm để sát mép hơn */
     figure {
-        margin: 1.5rem 0; /* Giảm: 3rem auto → 1.5rem 0 (tràn viền) */
+        margin: 1rem 0; /* Giảm: 1.5rem 0 → 1rem 0 */
     }
 
     /* Section margin giảm */
     .section {
-        margin-bottom: 2rem; /* Giảm: 3rem → 2rem */
+        margin-bottom: 1rem; /* Giảm: 2rem → 1rem */
     }
 
     table {
