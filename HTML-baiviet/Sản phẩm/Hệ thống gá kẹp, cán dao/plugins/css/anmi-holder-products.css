@@ -2,16 +2,25 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.2.0
- * Last Updated: October 30, 2025
+ * Version: 1.3.0
+ * Last Updated: October 31, 2025
  * Author: An Mi Tools Technical Team
  * 
- * File CSS chung duy nhất cho tất cả 40 sản phẩm holder.
+ * File CSS chung duy nhất cho tất cả 40+ sản phẩm holder.
  * Plugin sẽ tự động inject file này khi phát hiện:
  * - Slug cha: he-thong-ga-kep-can-dao
- * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, v.v.
+ * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, nt-*, cat-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.3.0 (2025-10-31):
+ * - PRODUCT LINE SECTION: Added styles for detailed product listings (NT-FMB, NT-NBH, NT-CK, NT-SK, NT-GER)
+ * - Added .product-line container for multi-category product sections
+ * - Added .product-category with card styling, border, shadow, and blue header
+ * - Added .comparison-table styles for NT vs BT vs HSK comparison tables
+ * - Added .guide-section styles for step-by-step instruction sections with blue left border
+ * - Enhanced .product-intro ul li styling with bottom border for better readability
+ * - Supports new file structure: 40-nt-tool-holder-system.seo.md and similar detailed product pages
+ * 
  * v1.2.0 (2025-10-30):
  * - WORDPRESS EDITOR INTEGRATION: Added global padding rules for WordPress content area
  * - Added .woocommerce div.product .woocommerce-tabs .panel { padding: 0.5rem } for WooCommerce tabs
@@ -1257,6 +1266,18 @@ details[open] summary .toggle {
     line-height: 1.8;
 }
 
+/* Product Intro list styling */
+.product-intro ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.product-intro ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 /* Product Features */
 .product-features ul {
     list-style-type: none;
@@ -1271,6 +1292,121 @@ details[open] summary .toggle {
 /* Specifications Section */
 .specifications {
     margin: 2rem 0;
+}
+
+/* ============================================ */
+/* PRODUCT LINE SECTION (For NT, BT, HSK detailed product listings) */
+/* ============================================ */
+.product-line {
+    margin: 3rem 0;
+}
+
+.product-category {
+    margin: 3rem 0;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.product-category h3 {
+    font-size: 1.575rem; /* +5%: 1.5→1.575rem */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #0055AA;
+    border-bottom: 2px solid #0055AA;
+    padding-bottom: 0.75rem;
+}
+
+.product-category h4 {
+    font-size: 1.31rem; /* +5%: 1.25→1.31rem */
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: #000000;
+}
+
+.product-category figure {
+    margin: 1.5rem auto;
+}
+
+.product-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.product-category ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.product-category ul li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+}
+
+/* Comparison Table (NT vs BT vs HSK style tables) */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.comparison-table thead tr {
+    background-color: #0055AA;
+    color: #FFFFFF;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 85, 170, 0.03);
+}
+
+.comparison-table tbody tr:hover {
+    background-color: rgba(0, 85, 170, 0.08);
+}
+
+/* ============================================ */
+/* GUIDE SECTION (Step-by-step instructions) */
+/* ============================================ */
+.guide-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #F0F8FF;
+    border-radius: 8px;
+    border-left: 4px solid #0055AA;
+}
+
+.guide-section h3 {
+    font-size: 1.31rem; /* +5%: 1.25→1.31rem */
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #0055AA;
+}
+
+.guide-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.guide-section ul li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.8;
+}
+
+.guide-section ul li::before {
+    content: "▶";
+    position: absolute;
+    left: 0.5rem;
+    color: #0055AA;
+    font-size: 0.875rem;
+}
+
+.guide-section ul li strong {
+    color: #000000;
+    font-weight: 700;
 }
 
 /* ============================================ */
