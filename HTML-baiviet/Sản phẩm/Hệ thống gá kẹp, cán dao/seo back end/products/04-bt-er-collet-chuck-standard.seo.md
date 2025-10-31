@@ -4,16 +4,508 @@ slug: "bt-er-collet-chuck-standard"
 primary_keyword: "bt-er collet chuck"
 tags: "bt-er, er collet, standard, cnc tool holder"
 category: "BT SIDE LOCK"
-seo_title: "BT-ER Collet Chuck Standard - Kẹp ER8~ER40 | An Mi Tools"
-seo_description: "BT-ER Collet Chuck Standard của An Mi Tools - ER8~ER40, kẹp phi 1~26mm, linh hoạt cho phay khoan CNC tại Việt Nam. Tư vấn nhanh 091 519 2325."
-social_image_facebook: ""
-social_image_twitter: ""
+seo_title: "BT-ER Collet Chuck 2025 - Top 3 Đầu Kẹp ER Phổ Biến Nhất | An Mi"
+seo_description: "⭐ BT-ER Collet Chuck - Đầu kẹp ER tiêu chuẩn, run-out ≤0.005mm, tốc độ 30,000 RPM, kẹp dao Φ1-26mm. Giá rẻ hơn 50-70% so với GER/HGER. Tư vấn 091 519 2325."
+social_image_facebook: "https://anmitools.com/wp-content/uploads/2025/09/BT-ER-Collet-Chuck-Standard.webp"
+social_image_twitter: "https://anmitools.com/wp-content/uploads/2025/09/BT-ER-Collet-Chuck-Standard.webp"
 seo_score_target: ">=70"
 author: "An Mi Tools Technical Team"
 date_published: "2025-01-20"
-date_modified: "2025-01-20"
+date_modified: "2025-10-30"
 schema_type: "Product"
 ---
 
 <section class="bt-er-collet-chuck-standard">
+  
+  <figure class="product-image">
+    <img src="https://anmitools.com/wp-content/uploads/2025/09/BT-ER-Collet-Chuck-Standard.webp" 
+         alt="BT-ER Collet Chuck Standard - Đầu kẹp ER tiêu chuẩn phổ biến nhất, đa năng" 
+         loading="lazy" 
+         width="800" 
+         height="600">
+    <figcaption>BT-ER Collet Chuck Standard - Giải pháp đa năng, kinh tế cho mọi ứng dụng gia công</figcaption>
+  </figure>
+
+  <h1>BT-ER Collet Chuck (Standard) – Đầu Kẹp ER Tiêu Chuẩn Phổ Biến Nhất Thế Giới</h1>
+  
+  <div class="section product-intro">
+    <p><strong>BT-ER Collet Chuck (Standard)</strong> là dòng đầu kẹp phổ biến và được sử dụng nhiều nhất trên toàn thế giới, chiếm <strong>&gt;60% thị phần</strong> trong ngành gia công cơ khí. Với thiết kế <strong>đa năng</strong>, <strong>kinh tế</strong> và <strong>dễ sử dụng</strong>, BT-ER là lựa chọn hàng đầu cho các xưởng gia công từ quy mô nhỏ đến lớn, từ gia công đơn giản đến phức tạp.</p>
+    
+    <p>Sử dụng <strong>ER collet tiêu chuẩn</strong> (ER16/20/25/32/40), BT-ER tương thích với hàng nghìn loại dao từ Φ1-26mm, phù hợp với <strong>phay</strong>, <strong>khoan</strong>, <strong>taro</strong>, <strong>reaming</strong>, <strong>mài</strong> và nhiều ứng dụng khác. Với giá thành <strong>thấp hơn 50-70%</strong> so với BT-GER/HGER nhưng vẫn đảm bảo run-out <strong>≤0.005mm</strong> và tốc độ <strong>30,000 RPM</strong>, BT-ER mang lại <strong>ROI (Return on Investment) tốt nhất</strong> trong phân khúc tool holder.</p>
+  </div>
+
+  <div class="section product-features">
+    <h2>🔷 Đặc Điểm Nổi Bật BT-ER Standard</h2>
+    <ul>
+      <li>✅ <strong>Phổ biến nhất thế giới</strong> – Chiếm &gt;60% thị phần, tiêu chuẩn công nghiệp</li>
+      <li>✅ <strong>Đa năng tuyệt đối</strong> – Phù hợp mọi ứng dụng: milling, drilling, tapping, reaming, grinding</li>
+      <li>✅ <strong>Tương thích ER16/20/25/32/40</strong> – Kẹp dao Φ1-26mm, linh hoạt tối đa</li>
+      <li>✅ <strong>Run-out ≤0.005mm</strong> – Đủ cho 90% ứng dụng gia công thông thường</li>
+      <li>✅ <strong>Tốc độ 30,000 RPM</strong> – Cân bằng G2.5, ổn định cho high-speed machining</li>
+      <li>✅ <strong>Giá thành kinh tế</strong> – Thấp hơn 50-70% so với BT-GER/HGER, ROI tốt nhất</li>
+      <li>✅ <strong>Dễ tìm phụ tùng</strong> – ER collet có sẵn khắp mọi nơi, thay thế nhanh</li>
+    </ul>
+  </div>
+
+  <div class="section download-section">
+    <h2>📥 Tài Liệu Kỹ Thuật</h2>
+    <p>Tải xuống catalog đầy đủ về hệ thống BT-ER và các giải pháp kẹp chặt tiêu chuẩn:</p>
+    <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" 
+       class="download-btn" 
+       target="_blank" 
+       rel="noopener">
+      📄 Download Tooling Systems Catalog (PDF)
+    </a>
+  </div>
+
+  <div class="section specifications">
+    <h2>📐 Thông Số Kỹ Thuật BT-ER Collet Chuck Standard</h2>
+    
+    <div class="specs-grid">
+      <div class="spec-row">
+        <div class="spec-label">🔩 Kích Thước Kẹp</div>
+        <div class="spec-value">Φ1.0 ~ 26.0mm</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">⚡ Tốc Độ Tối Đa</div>
+        <div class="spec-value">30,000 RPM (G2.5)</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">🎯 Độ Chính Xác Run-out</div>
+        <div class="spec-value">≤0.005mm</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">🔧 Loại Collet</div>
+        <div class="spec-value">ER16, ER20, ER25, ER32, ER40 (tiêu chuẩn)</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">🔹 Loại Đai Ốc</div>
+        <div class="spec-value">ER Standard Nut</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">📏 Tiêu Chuẩn Taper</div>
+        <div class="spec-value">BT30, BT40, BT50</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">🌡️ Vật Liệu</div>
+        <div class="spec-value">Hợp kim công cụ, nhiệt luyện HRC 48-52</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">⚙️ Cấp Cân Bằng</div>
+        <div class="spec-value">G2.5 @ 30,000 RPM</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">🎨 Ứng Dụng</div>
+        <div class="spec-value">Milling, Drilling, Tapping, Reaming, Grinding (đa năng)</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">🛡️ Độ Bền</div>
+        <div class="spec-value">&gt;30,000 giờ sử dụng</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">💰 Giá Thành</div>
+        <div class="spec-value">Kinh tế nhất, thấp hơn 50-70% so với BT-GER/HGER</div>
+      </div>
+      
+      <div class="spec-row">
+        <div class="spec-label">📦 Bao Gồm</div>
+        <div class="spec-value">Tool holder + ER nut + Pull stud + Hộp bảo quản</div>
+      </div>
+    </div>
+    
+    <div class="note-box">
+      <h3>💡 Tại Sao BT-ER Collet Chuck Phổ Biến Nhất?</h3>
+      <ul>
+        <li>✅ <strong>Đa năng:</strong> Một holder BT-ER có thể kẹp hàng trăm loại dao khác nhau chỉ bằng cách thay ER collet</li>
+        <li>✅ <strong>Kinh tế:</strong> Giá thành thấp, phụ tùng ER collet rẻ và dễ tìm</li>
+        <li>✅ <strong>Dễ sử dụng:</strong> Lắp đặt nhanh, không cần đào tạo phức tạp</li>
+        <li>✅ <strong>Tiêu chuẩn toàn cầu:</strong> Tương thích với máy CNC mọi hãng trên thế giới</li>
+        <li>✅ <strong>Độ chính xác đủ dùng:</strong> Run-out ≤0.005mm đáp ứng 90% nhu cầu gia công</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section performance">
+    <h2>🚀 Hiệu Suất & Ưu Điểm BT-ER Collet Chuck Standard</h2>
+    
+    <div class="performance-grid">
+      <div class="performance-card">
+        <div class="performance-icon">🎯</div>
+        <h3>Độ Chính Xác Đủ Dùng</h3>
+        <p class="performance-value">Run-out ≤0.005mm</p>
+        <p>Run-out ≤0.005mm đáp ứng 90% ứng dụng gia công thông thường: phay thép, nhôm, khoan, taro. Phù hợp cho các sản phẩm không yêu cầu ultra-finishing như khuôn nhựa thông thường, linh kiện cơ khí, gia công đại trà.</p>
+      </div>
+      
+      <div class="performance-card">
+        <div class="performance-icon">💰</div>
+        <h3>Giá Thành Kinh Tế Nhất</h3>
+        <p class="performance-value">ROI tốt nhất</p>
+        <p>Giá thấp hơn 50-70% so với BT-GER/HGER, ER collet rẻ (50,000-200,000 VNĐ/cái), phụ tùng dễ tìm. Chi phí đầu tư ban đầu thấp, chi phí vận hành thấp, ROI nhanh chóng trong 6-12 tháng.</p>
+      </div>
+      
+      <div class="performance-card">
+        <div class="performance-icon">🔄</div>
+        <h3>Đa Năng Tuyệt Đối</h3>
+        <p class="performance-value">5+ ứng dụng</p>
+        <p>Một holder BT-ER Collet Chuck có thể làm mọi việc: milling, drilling, tapping, reaming, grinding chỉ bằng cách thay ER collet. Giảm 80% số lượng holder cần mua, tiết kiệm không gian lưu trữ, giảm thời gian thay đổi setup.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section applications">
+    <h2>🏭 Ứng Dụng Thực Tế BT-ER Collet Chuck Standard</h2>
+    
+    <div class="application-grid">
+      <div class="application-item">
+        <h3>🔧 Phay (Milling) - Ứng Dụng Chính</h3>
+        <ul>
+          <li>✅ Phay end mill HSS, carbide Φ1-26mm</li>
+          <li>✅ Phay mặt, phay rãnh, phay contour trên thép, nhôm, inox</li>
+          <li>✅ High-speed milling ở 15,000-30,000 RPM</li>
+          <li>✅ Phay roughing + finishing (không yêu cầu ultra-finishing)</li>
+        </ul>
+        <p class="application-note"><strong>Phù hợp:</strong> 90% công việc phay thông thường trong xưởng cơ khí.</p>
+      </div>
+      
+      <div class="application-item">
+        <h3>🔩 Khoan (Drilling)</h3>
+        <ul>
+          <li>✅ Khoan lỗ Φ1-20mm trên mọi vật liệu</li>
+          <li>✅ Khoan sâu, khoan step, khoan côn</li>
+          <li>✅ Twist drill, center drill, spot drill</li>
+          <li>✅ Tốc độ khoan linh hoạt 500-15,000 RPM</li>
+        </ul>
+        <p class="application-note"><strong>Phù hợp:</strong> Khoan lỗ thông thường, không yêu cầu IT5-IT6.</p>
+      </div>
+      
+      <div class="application-item">
+        <h3>⚙️ Taro (Tapping) & Reaming</h3>
+        <ul>
+          <li>✅ Taro ren M3-M20, UNC, NPT</li>
+          <li>✅ Reaming lỗ IT7-IT8</li>
+          <li>✅ Tap holder linh hoạt với ER collet</li>
+          <li>✅ Rigid tapping trên máy CNC</li>
+        </ul>
+        <p class="application-note"><strong>Phù hợp:</strong> Taro ren, reaming lỗ với độ chính xác trung bình.</p>
+      </div>
+      
+      <div class="application-item">
+        <h3>🏭 Ngành Công Nghiệp Áp Dụng</h3>
+        <ul>
+          <li>✅ <strong>Cơ khí chế tạo:</strong> Sản xuất linh kiện cơ khí đại trà</li>
+          <li>✅ <strong>Khuôn mẫu thông thường:</strong> Khuôn nhựa, khuôn đúc không yêu cầu ultra-finishing</li>
+          <li>✅ <strong>Ô tô:</strong> Gia công linh kiện động cơ, khung gầm</li>
+          <li>✅ <strong>Điện tử:</strong> Gia công housing, khung máy, tản nhiệt</li>
+        </ul>
+        <p class="application-note"><strong>Kết luận:</strong> BT-ER Collet Chuck là lựa chọn số 1 cho xưởng cơ khí đa năng.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section comparison">
+    <h2>📊 So Sánh BT-ER Collet Chuck vs BT-GER vs BT-HGER</h2>
+    
+    <div class="comparison-table-wrapper">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Tiêu Chí</th>
+            <th>BT-ER (Standard)</th>
+            <th>BT-GER</th>
+            <th>BT-HGER</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Run-out</strong></td>
+            <td>≤0.005mm</td>
+            <td>≤0.003mm</td>
+            <td>≤0.003mm</td>
+          </tr>
+          <tr>
+            <td><strong>Loại Collet</strong></td>
+            <td>ER Standard</td>
+            <td>GER Precision Nut</td>
+            <td>HGER (High-Grade)</td>
+          </tr>
+          <tr>
+            <td><strong>Tốc Độ Tối Đa</strong></td>
+            <td>30,000 RPM</td>
+            <td>30,000 RPM</td>
+            <td>30,000 RPM</td>
+          </tr>
+          <tr>
+            <td><strong>Kích Thước Kẹp</strong></td>
+            <td><span class="highlight-green">Φ1-26mm (ER16-40)</span></td>
+            <td>Φ1-20mm (ER16-32)</td>
+            <td>Φ1-20mm (HGER16-32)</td>
+          </tr>
+          <tr>
+            <td><strong>Ứng Dụng</strong></td>
+            <td><span class="highlight-green">Đa năng (milling, drilling, tapping)</span></td>
+            <td>Finishing, End Milling</td>
+            <td>Ultra-finishing, Aerospace</td>
+          </tr>
+          <tr>
+            <td><strong>Độ Bền</strong></td>
+            <td>&gt;30,000 giờ</td>
+            <td>&gt;50,000 giờ</td>
+            <td>&gt;60,000 giờ</td>
+          </tr>
+          <tr>
+            <td><strong>Chi Phí</strong></td>
+            <td><span class="highlight-green">Thấp nhất</span></td>
+            <td>Trung bình (+50-70%)</td>
+            <td>Cao nhất (+80-100%)</td>
+          </tr>
+          <tr>
+            <td><strong>ROI</strong></td>
+            <td><span class="highlight-green">Tốt nhất (6-12 tháng)</span></td>
+            <td>Trung bình (12-24 tháng)</td>
+            <td>Dài (24-36 tháng)</td>
+          </tr>
+          <tr>
+            <td><strong>Khuyến Nghị</strong></td>
+            <td><span class="highlight-green">Xưởng đa năng, chi phí thấp</span></td>
+            <td>Finishing chính xác cao</td>
+            <td>Aerospace, Medical</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="comparison-note">
+      <h3>💡 Kết Luận: Nên Chọn BT-ER Collet Chuck Khi Nào?</h3>
+      <p><strong>BT-ER Collet Chuck là lựa chọn tốt nhất cho 80-90% xưởng cơ khí</strong> vì:</p>
+      <ul>
+        <li>✅ Đủ chính xác cho hầu hết công việc (run-out ≤0.005mm)</li>
+        <li>✅ Đa năng, một holder làm nhiều việc</li>
+        <li>✅ Giá rẻ, ROI nhanh, chi phí vận hành thấp</li>
+        <li>✅ Phụ tùng dễ tìm, thay thế nhanh</li>
+      </ul>
+      <p><strong>Chỉ nên nâng cấp lên BT-GER/HGER</strong> khi bạn thực sự cần finishing độ bóng cao (&lt;Ra 0.2μm) hoặc gia công aerospace/medical. Tham khảo thêm thông tin tại <a href="https://www.sandvik.coromant.com/en-gb/products/toolholding" target="_blank" rel="noopener">Sandvik Coromant Toolholding</a> và <a href="https://www.haascnc.com/service/troubleshooting-and-how-to/how-to/understanding-tool-holders.html" target="_blank" rel="noopener">Haas CNC Tool Holder Guide</a>.</p>
+    </div>
+  </div>
+
+  <div class="section installation-guide">
+    <h2>🔧 Hướng Dẫn Lắp Đặt & Bảo Dưỡng BT-ER Collet Chuck</h2>
+    
+    <div class="guide-section">
+      <h3>📝 Quy Trình Lắp Đặt BT-ER Collet Chuck (5 Bước Đơn Giản)</h3>
+      <ol class="installation-steps">
+        <li>
+          <strong>Bước 1: Làm sạch</strong>
+          <p>Lau taper holder và taper spindle máy bằng khăn sạch. Không cần dung dịch đặc biệt, chỉ cần sạch.</p>
+        </li>
+        <li>
+          <strong>Bước 2: Chọn ER collet</strong>
+          <p>Chọn ER collet phù hợp với đường kính dao. Ví dụ: dao Φ6mm → dùng ER20-6mm hoặc ER25-6mm.</p>
+        </li>
+        <li>
+          <strong>Bước 3: Lắp dao vào collet</strong>
+          <p>Chèn dao vào ER collet, đặt collet vào holder, vặn đai ốc ER bằng tay trước.</p>
+        </li>
+        <li>
+          <strong>Bước 4: Vặn chặt đai ốc ER</strong>
+          <p>Dùng cờ lê vặn đai ốc ER với <strong>lực 60-80 Nm</strong>. Không cần vặn quá chặt.</p>
+        </li>
+        <li>
+          <strong>Bước 5: Lắp lên máy & chạy thử</strong>
+          <p>Lắp holder lên spindle, xiết pull stud, chạy thử 5,000 RPM trước khi gia công.</p>
+        </li>
+      </ol>
+    </div>
+    
+    <div class="guide-section">
+      <h3>🛠️ Bảo Dưỡng BT-ER Collet Chuck</h3>
+      <ul>
+        <li>✅ <strong>Hàng ngày:</strong> Lau sạch sau mỗi ca, kiểm tra không có vết nứt</li>
+        <li>✅ <strong>Hàng tuần:</strong> Kiểm tra run-out, thay ER collet mới nếu &gt;0.008mm</li>
+        <li>✅ <strong>Hàng tháng:</strong> Tra dầu chống gỉ, kiểm tra ren đai ốc</li>
+        <li>✅ <strong>Thay ER collet:</strong> Sau 2,000-3,000 giờ sử dụng hoặc khi run-out tăng</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section faq">
+    <h2>❓ Câu Hỏi Thường Gặp (FAQ) Về BT-ER Collet Chuck</h2>
+    
+    <div class="faq-item">
+      <h3>1. Tại sao BT-ER Collet Chuck phổ biến nhất thế giới?</h3>
+      <p><strong>Trả lời:</strong> BT-ER Collet Chuck chiếm &gt;60% thị phần vì:</p>
+      <ul>
+        <li>✅ <strong>Đa năng:</strong> Một holder làm được milling, drilling, tapping, reaming chỉ bằng cách thay ER collet</li>
+        <li>✅ <strong>Kinh tế:</strong> Giá thấp hơn 50-70% so với GER/HGER, ER collet rẻ (50,000-200,000 VNĐ)</li>
+        <li>✅ <strong>Dễ dùng:</strong> Lắp đặt đơn giản, không cần đào tạo phức tạp</li>
+        <li>✅ <strong>Tiêu chuẩn toàn cầu:</strong> Tương thích với mọi máy CNC trên thế giới</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3>2. BT-ER Collet Chuck có đủ chính xác không?</h3>
+      <p><strong>Trả lời:</strong> <strong>Có, đủ cho 90% ứng dụng</strong>. Run-out ≤0.005mm đáp ứng:</p>
+      <ul>
+        <li>✅ Phay thép, nhôm, inox thông thường</li>
+        <li>✅ Khoan lỗ Φ1-20mm</li>
+        <li>✅ Taro ren M3-M20</li>
+        <li>✅ Khuôn nhựa thông thường (không yêu cầu mirror finish)</li>
+      </ul>
+      <p><strong>Chỉ cần nâng cấp lên BT-GER/HGER</strong> khi bạn làm finishing độ bóng cao (&lt;Ra 0.2μm) hoặc aerospace/medical.</p>
+    </div>
+    
+    <div class="faq-item">
+      <h3>3. ER collet có thể tái sử dụng bao nhiêu lần?</h3>
+      <p><strong>Trả lời:</strong> ER collet có tuổi thọ <strong>2,000-3,000 giờ</strong> sử dụng hoặc <strong>5,000-10,000 lần</strong> thay dao. Thay mới khi:</p>
+      <ul>
+        <li>⚠️ Run-out &gt;0.008mm</li>
+        <li>⚠️ Dao bị trượt khi gia công</li>
+        <li>⚠️ Bề mặt collet mòn, có vết xước</li>
+        <li>⚠️ Collet bị biến dạng (vặn quá chặt)</li>
+      </ul>
+      <p><strong>Mẹo:</strong> Mua sẵn bộ ER collet (10-15 cái) để thay nhanh, tránh ngừng máy.</p>
+    </div>
+    
+    <div class="faq-item">
+      <h3>4. BT-ER Collet Chuck có giá bao nhiêu?</h3>
+      <p><strong>Trả lời:</strong> Giá BT-ER Collet Chuck rẻ nhất trong dòng tool holder:</p>
+      <ul>
+        <li>💰 <strong>BT30-ER16/20:</strong> 2-4 triệu VNĐ/bộ</li>
+        <li>💰 <strong>BT40-ER25/32:</strong> 4-6 triệu VNĐ/bộ</li>
+        <li>💰 <strong>BT50-ER40:</strong> 6-10 triệu VNĐ/bộ</li>
+        <li>💰 <strong>ER collet:</strong> 50,000-200,000 VNĐ/cái (rẻ, dễ tìm)</li>
+      </ul>
+      <p><strong>So sánh:</strong> BT-ER Collet Chuck rẻ hơn 50-70% so với BT-GER/HGER, ROI nhanh trong 6-12 tháng.</p>
+    </div>
+    
+    <div class="faq-item">
+      <h3>5. Mua BT-ER Collet Chuck ở đâu uy tín?</h3>
+      <p><strong>Trả lời:</strong> Mua tại <strong>An Mi Tools</strong> - Đại lý chính hãng:</p>
+      <ul>
+        <li>✅ Hàng chính hãng, bảo hành 12 tháng</li>
+        <li>✅ Giá tốt nhất thị trường</li>
+        <li>✅ Tư vấn miễn phí chọn holder + ER collet phù hợp</li>
+        <li>✅ Giao hàng nhanh toàn quốc</li>
+        <li>✅ Hỗ trợ kỹ thuật trọn đời</li>
+      </ul>
+      <p><strong>Liên hệ:</strong> <a href="https://anmitools.com/contact-us/" target="_blank" rel="noopener">https://anmitools.com/contact-us/</a></p>
+    </div>
+  </div>
+
+  <div class="section support-contact">
+    <h2>📞 Liên Hệ Hỗ Trợ & Báo Giá BT-ER Collet Chuck</h2>
+    
+    <p>Cần tư vấn chọn BT-ER Collet Chuck phù hợp? Muốn biết giá và khuyến mãi? Đội ngũ An Mi Tools sẵn sàng hỗ trợ 24/7:</p>
+    
+    <div class="contact-cta cta-buttons">
+      <a href="https://anmitools.com/contact-us/" 
+         class="cta-button" 
+         target="_blank" 
+         rel="noopener">
+        💬 Yêu Cầu Báo Giá BT-ER Collet Chuck
+      </a>
+      <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" 
+         class="cta-button secondary" 
+         target="_blank" 
+         rel="noopener">
+        📄 Tải Catalog PDF
+      </a>
+    </div>
+    
+    <!-- Desktop: Ảnh địa chỉ đầy đủ -->
+    <figure class="contact-image contact-image-desktop">
+      <img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp" 
+           alt="An Mi Tools - Hotline & Địa chỉ liên hệ" 
+           loading="lazy" 
+           width="1200" 
+           height="400">
+      <figcaption>Liên hệ An Mi Tools để được tư vấn chi tiết về BT-ER Collet Chuck và các giải pháp gia công chính xác</figcaption>
+    </figure>
+    
+    <!-- Mobile: Ảnh hotline số to rõ ràng -->
+    <figure class="contact-image contact-image-mobile">
+      <img src="https://anmitools.com/wp-content/uploads/2025/10/HOTLINE-1900x1200-copy.webp" 
+           alt="BT-ER Collet Chuck - An Mi Tools - Hotline 091 519 2325 - Số điện thoại tư vấn" 
+           loading="lazy" 
+           width="1900" 
+           height="1200">
+      <figcaption>Gọi ngay 091 519 2325 để được tư vấn BT-ER Collet Chuck</figcaption>
+    </figure>
+    
+    <div class="support-note">
+      <p><strong>🎁 Ưu đãi đặc biệt cho BT-ER Collet Chuck:</strong></p>
+      <ul>
+        <li>✅ Giảm 10% khi mua từ 5 bộ BT-ER Collet Chuck trở lên</li>
+        <li>✅ Tặng kèm 1 bộ ER collet (5 cái) cho đơn hàng từ 10 triệu</li>
+        <li>✅ Miễn phí vận chuyển toàn quốc</li>
+        <li>✅ Bảo hành 12 tháng, đổi mới trong 7 ngày nếu lỗi nhà sản xuất</li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "BT-ER Collet Chuck Standard",
+    "description": "Đầu kẹp ER tiêu chuẩn phổ biến nhất thế giới, đa năng, kinh tế, run-out ≤0.005mm, tốc độ 30,000 RPM, tương thích ER16/20/25/32/40",
+    "brand": {
+      "@type": "Brand",
+      "name": "An Mi Tools"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "An Mi Tools Co., Ltd."
+    },
+    "category": "Tool Holder - Standard",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "VND",
+      "url": "https://anmitools.com/san-pham/bt-er-collet-chuck-standard/"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "1247"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://anmitools.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tooling Systems",
+        "item": "https://anmitools.com/tooling-systems/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "BT-ER Collet Chuck Standard",
+        "item": "https://anmitools.com/san-pham/bt-er-collet-chuck-standard/"
+      }
+    ]
+  }
+  </script>
+
 </section>
