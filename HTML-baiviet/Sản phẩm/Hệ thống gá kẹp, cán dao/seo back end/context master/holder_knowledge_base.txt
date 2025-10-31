@@ -393,6 +393,7 @@ NT là chuẩn Nhật Bản, tương tự BT nhưng có một số khác biệt 
 **Các dòng sản phẩm NT:**
 
 #### NT-FMB Face Milling Arbor
+📄 **Catalog: "9 Tooling Systems" - Trang 13-14**
 **Từ Catalog 2025 (Pages 13-14):**
 - **NT40-FMB Models (4 variants):**
   * NT40-FMB22-30: d=22mm, L=131.4mm, L1=30mm, pull stud M16×2.0, weight 2.10kg
@@ -414,6 +415,7 @@ NT là chuẩn Nhật Bản, tương tự BT nhưng có một số khác biệt 
   * Ứng dụng: Face milling cutter Φ50-160mm, heavy-duty cast iron/steel machining
 
 #### NT-SK Tool Holder
+📄 **Catalog: "9 Tooling Systems" - Trang 14**
 - Boring range: Φ1.0~20.0mm
 - SK collet: SK6, SK10, SK13, SK16, SK20
 - Max RPM: 30,000 (NT30-SK), 25,000 (NT40-SK), 18,000 (NT50-SK)
@@ -422,6 +424,7 @@ NT là chuẩn Nhật Bản, tương tự BT nhưng có một số khác biệt 
 - Models: NT30-SK6/10, NT40-SK13/16, NT50-SK20
 
 #### NT-GER Tool Holder
+📄 **Catalog: "9 Tooling Systems" - Trang 14**
 - Clamping range: Φ1.0~20.0mm (ER32)
 - GER collet: ER16, ER20, ER25, ER32
 - Max RPM: 30,000 (NT30), 25,000 (NT40), 20,000 (NT50)
@@ -430,6 +433,7 @@ NT là chuẩn Nhật Bản, tương tự BT nhưng có một số khác biệt 
 - Models: NT30-GER16, NT40-GER20/25, NT50-GER32
 
 #### NT-NBH Micro Boring System
+📄 **Catalog: "9 Tooling Systems" - Trang 68**
 **Từ Catalog 2025 (Page 68):**
 - **NT40-NBH-50:**
   * Spindle: NT40
@@ -453,6 +457,7 @@ NT là chuẩn Nhật Bản, tương tự BT nhưng có một số khác biệt 
   * Ứng dụng: Precision boring, mold making, aerospace
 
 #### NT-CK Modular Boring System
+📄 **Catalog: "9 Tooling Systems" - Trang 76**
 **Từ Catalog 2025 (Page 76):**
 - **NT40-CK6-55:**
   * Spindle: NT40
@@ -959,18 +964,22 @@ Các phụ kiện hỗ trợ cho hệ thống holder, bao gồm spanner (cờ l�
 
 **Version 2.1 (10/01/2025):**
 - ✅ Mở rộng NT-FMB Face Milling Arbor với specifications chi tiết:
+  * 📄 Catalog "9 Tooling Systems" - Trang 13-14
   * 9 models: 4x NT40-FMB (22/27/32/40mm), 5x NT50-FMB (22/27/32/40/60mm)
   * Pull stud threads: NT40 (M16×2.0), NT50 (M24×3.0)
   * Weights: 2.10~8.00kg, dimensions: L, L1, d từ catalog
 - ✅ Bổ sung NT-NBH Micro Boring System chi tiết:
+  * 📄 Catalog "9 Tooling Systems" - Trang 68
   * NT40-NBH-50: 9.3kg, NBH2084-8P head, boring Φ8~280mm
   * NT50-NBH-55: 10.8kg, NBH2084-8P head, boring Φ8~280mm
   * Accuracy: 0.01mm per graduation
 - ✅ Sửa lỗi NT-CK Boring System specifications:
+  * 📄 Catalog "9 Tooling Systems" - Trang 76
   * Boring range: Φ16~280mm (đã sửa từ Φ6~51mm sai)
   * Weights: NT40-CK6-55 (8.5kg), NT50-CK6-65 (10.3kg)
   * NBJ16 head compatibility
 - ✅ Làm rõ NT-SK và NT-GER với NT30/40/50 models
+  * 📄 Catalog "9 Tooling Systems" - Trang 14
   * RPM ranges by taper size
   * Balance grade specifications
 
