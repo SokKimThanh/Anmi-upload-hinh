@@ -120,6 +120,15 @@ BT (ISO 7388/2) là hệ thống tool holder phổ biến nhất với taper 7:2
 - Max RPM: 25,000 (G2.5)
 - Cutting tool tolerance: h6
 
+#### BT-ER Extension Holder
+- Extension lengths: 50mm, 100mm, 150mm, 200mm
+- Clamping range: Φ0.5~20.0mm (tùy ER collet)
+- ER collet: ER8, ER11, ER16, ER20, ER25, ER32
+- Models: BT30-ER8/11/16/20, BT40-ER11/16/20/25, BT50-ER16/20/25/32
+- Precision: High concentricity, stable run-out accuracy
+- Đặc điểm: Tool body is high precision, finish surface with long durability
+- Ứng dụng: Deep cavity machining, extended reach milling, hard-to-reach areas
+
 **Ưu điểm:**
 - Phổ biến, tương thích nhiều máy
 - Giá thành hợp lý
@@ -171,6 +180,13 @@ CAT là chuẩn Mỹ (ANSI/ASME B5.50), tương tự BT nhưng có kích thướ
 - Kích thước: CAT40, CAT50
 - Pull stud thread: 5/8"-11 UNC (CAT40), 1"-8 UNC (CAT50)
 - Flange diameter lớn hơn BT một chút
+
+**Thông số chi tiết:**
+
+| Model  | D1 (mm) | D2 (mm) | D3 (mm) | H1 (mm) | H2 (mm) | H3 (mm) | Pull Stud Thread |
+|--------|---------|---------|---------|---------|---------|---------|------------------|
+| CAT40  | 44.45   | 31.75   | -       | 68.4    | 22.8    | -       | 5/8"-11 UNC      |
+| CAT50  | 69.85   | 44.45   | -       | 97.50   | 30.0    | -       | 1"-8 UNC         |
 
 **Ưu điểm:**
 - Chuẩn Mỹ, phổ biến ở Bắc Mỹ
@@ -248,6 +264,28 @@ HSK là chuẩn Đức (DIN 69893), có côn rỗng, kẹp đồng thời ở m�
 - Run-out: <0.003mm
 - Max RPM: cao hơn BT (HSK-E có thể lên 40,000 RPM)
 
+**Phân loại HSK variants:**
+
+#### HSK-A (Application type)
+- Models: HSK40A, HSK50A, HSK63A, HSK100A
+- For general machining center
+- Max RPM: 25,000~30,000
+- Ứng dụng: Gia công đa năng, milling center thông thường
+- Dual contact: Taper + flange face clamping
+
+#### HSK-E (Extra high-speed type)
+- Models: HSK32E, HSK40E, HSK50E, HSK63E
+- For high-speed spindles (>30,000 RPM)
+- Max RPM: 40,000
+- Ứng dụng: High-speed milling, engraving, finishing
+- Optimized for minimal centrifugal force at high RPM
+
+#### HSK-F (Form type)
+- Models: HSK25E, HSK63F
+- Specific applications (manual tool change, special machining)
+- Lighter weight design
+- Ứng dụng: Manual machining, special purpose machines
+
 **Các dòng sản phẩm HSK:**
 
 #### HSK-SR Shrink Fit Chuck
@@ -315,16 +353,31 @@ MAS-BT là biến thể của BT do Mazak phát triển, có một số điểm 
 - Kích thước: tương tự BT40, BT50
 - Pull stud: riêng biệt (không tương thích BT tiêu chuẩn)
 
+**Thông số Pull Stud chi tiết:**
+
+| Model    | Thread      | Length (mm) | Đặc điểm                           |
+|----------|-------------|-------------|------------------------------------|
+| MAS-BT40 | M16         | 60          | Mazak-specific thread pitch        |
+| MAS-BT50 | M24         | 85          | Mazak-specific thread pitch        |
+
+**Điểm khác biệt so với BT standard:**
+- Pull stud thread pitch khác BT tiêu chuẩn
+- Flange có tolerance chặt hơn
+- Tối ưu hóa cho ATC (Automatic Tool Change) của Mazak
+
 **Ưu điểm:**
 - Tối ưu cho máy Mazak
 - Độ chính xác cao
+- ATC nhanh và ổn định
 
 **Nhược điểm:**
 - Chỉ dùng cho máy Mazak
-- Pull stud riêng
+- Pull stud riêng, không dùng chung với BT standard
+- Giá thành cao hơn BT standard
 
 **Ứng dụng:**
-- Máy CNC Mazak
+- Máy CNC Mazak (Integrex, Variaxis, Vertical Center)
+- Machining center Mazak series
 
 ---
 
@@ -335,26 +388,82 @@ NT là chuẩn Nhật Bản, tương tự BT nhưng có một số khác biệt 
 **Đặc điểm kỹ thuật:**
 - Taper: 7:24
 - Kích thước: NT30, NT40, NT50
+- Gần như tương thích với BT (interchange limited)
 
 **Các dòng sản phẩm NT:**
-- NT-FMB Face Milling Arbor
-- NT-SK, NT-GER Tool Holder
+
+#### NT-FMB Face Milling Arbor
+- Arbor size: Φ22~60mm
+- Straight shank type
+- Ứng dụng: Face milling, heavy cutting
+
+#### NT-SK Tool Holder
+- Boring range: Φ1.0~20.0mm
+- SK collet: SK6, SK10, SK13, SK16, SK20
+- Max RPM: 40,000 (SK6), 30,000 (SK10-SK20)
+
+#### NT-GER Tool Holder
+- Clamping range: Φ1.0~20.0mm
+- GER collet: GER16, GER20, GER25, GER32
+- Max RPM: 30,000
+
+#### NT-NBH Boring Holder
+- Models: NT40-NBH-50, NT50-NBH-55
+- Compatible with NBH2084 boring system
+- Boring range: Φ8~280mm
+
+#### NT-CK Boring System
+- Models: NT40-CK6-55, NT50-CK6-65
+- Compatible with NBJ16 boring system
+- Boring range: Φ6~51mm
 
 **Ưu điểm:**
 - Gần như tương thích với BT
 - Phổ biến ở Nhật
+- Độ chính xác cao
 
 **Nhược điểm:**
 - Ít phổ biến toàn cầu
+- Pull stud có thể khác BT standard
+- Không hoàn toàn interchange với BT
+
+**Ứng dụng:**
+- Máy CNC Nhật Bản (Mori Seiki, Okuma, Makino)
+- Gia công đa năng, boring, milling
 
 ---
 
 ### 8. SK (Straight Shank / Side Lock)
 **Định nghĩa:**
-SK không phải là taper holder mà là straight shank collet system, thường dùng trong BT-SK, HSK-GSK holder.
+SK có hai nghĩa trong ngành tooling:
+1. **SK Collet System**: Straight shank collet system dùng trong BT-SK, HSK-GSK holder
+2. **SK Taper Standard**: Straight shank taper holder standard (SK30, SK40, SK50)
+
+**SK Collet System:**
+- Xem mục "4. COLLET - SK Collet"
+
+**SK Taper Standard:**
+- Taper: 7:24 (giống BT)
+- Kích thước: SK30, SK40, SK50
+- Ứng dụng: Máy CNC châu Á (tương tự BT/NT)
+- Pull stud: metric thread
+
+**Thông số kỹ thuật SK Taper:**
+
+| Model | Taper | Flange Ø | Ứng dụng                    |
+|-------|-------|----------|-----------------------------|
+| SK30  | 7:24  | ~50mm    | Light machining             |
+| SK40  | 7:24  | ~63mm    | Medium machining            |
+| SK50  | 7:24  | ~100mm   | Heavy machining             |
+
+**Các sản phẩm SK Taper:**
+- SK40-NBH-50, SK50-NBH-55 (boring holder)
+- SK40-CK6-55, SK50-CK6-65 (CK boring system)
 
 **Đặc điểm:**
-- Xem mục "4. COLLET - SK Collet"
+- Tương thích gần như hoàn toàn với BT
+- Phổ biến ở thị trường châu Á
+- Chi phí thấp hơn HSK
 
 ---
 
@@ -385,6 +494,19 @@ Holder chuyên dụng cho gia công ren (tapping), có cơ chế nén giãn (ten
 - Morse taper: MT1~MT5
 - Overload protection
 - Ứng dụng: drilling machine, lathe, milling
+
+#### Straight Shank Tension-Compression Tapping Holder
+- Models: C20-G0312/G1224, C25-G0312/G1224, C32-G1224/G2442
+- Tapping range: M3~M42
+- Collet: G3, G12, G24
+- Ứng dụng: Drilling machine, portable machining
+- Straight shank design cho máy không có taper spindle
+
+#### Straight Shank Rigid Tapping Holder
+- Models: C20-TER16/20/25/32, C25-TER16/20/25/32, C32-TER16/20/25/32
+- Tapping range: M2~M30
+- ER collet type (TER)
+- Ứng dụng: Rigid tapping trên drilling machine với straight shank
 
 **Ưu điểm:**
 - Bảo vệ mũi taro khỏi gãy
@@ -457,6 +579,36 @@ Hệ thống dụng cụ tinh chỉnh đường kính lỗ (boring), độ chín
 - Modular system (CK1~CK6, LBK1~LBK6)
 - Insert: TPGH080202, TCMT110204
 
+#### EWE Digital Boring Head (Finishing Round Bit Type)
+- Display resolution: 0.001mm/ø (digital display)
+- Max RPM: 16,000 min⁻¹
+- Center through coolant: ≤4MPa
+- Waterproof/Dustproof: IP69K equivalent
+- Battery: 1CR1025 (lithium)
+- Combination: Round tool shank + Round tool head + CK shank (BBT/BT/HSK/BIGCAPTO)
+- Real-time diameter monitoring on digital display
+- Ứng dụng: High-precision finishing, real-time diameter adjustment, ultra-precision boring
+
+**Đặc điểm EWE:**
+- Digital display cho phép đọc đường kính chính xác 0.001mm
+- IP69K waterproof → dùng được trong môi trường coolant
+- Center through coolant → làm mát hiệu quả
+- Modular design → thay đổi chiều dài boring bar linh hoạt
+
+#### EWB Round Bit Boring Head (For High-Speed Finishing)
+- Max RPM: 16,000 min⁻¹
+- Built-in manual balance adjustment function
+- Vernier precision diameter adjustment: 5µm/1µm scale (EWB2-50)
+- Balance ring: Manual adjustment, 1 division = 1 micron
+- Center through coolant compatible
+- Ứng dụng: High-speed finishing, balanced boring, precision machining
+
+**Đặc điểm EWB:**
+- Manual balance ring → giảm rung động ở tốc độ cao
+- Vernier scale → điều chỉnh đường kính chính xác 1µm
+- High-speed capability → phù hợp finishing operations
+- Balance adjustment → tối ưu cho từng boring bar length
+
 #### RBH Adjustable Rough Boring Head
 - Boring range: Φ200~910mm
 - Modular holder: BST
@@ -513,17 +665,103 @@ Hệ thống dụng cụ tinh chỉnh đường kính lỗ (boring), độ chín
 
 ---
 
+### 11. ACCESSORIES & TOOLING SUPPORT
+**Định nghĩa:**
+Các phụ kiện hỗ trợ cho hệ thống holder, bao gồm spanner (cờ lê), test bar, zero setter, và các công cụ đo kiểm.
+
+**Các loại accessories:**
+
+#### Spanner (Cờ lê chuyên dụng)
+**Công dụng:** Xiết/nới các loại collet nut với moment chính xác
+
+**C/OZ Spanner:**
+- Size: C20, C25, C32, C42
+- Opening: A=50-96mm
+- Length: L=245-340mm
+- Dùng cho: C Power Chuck, OZ Heavy Duty Collet
+
+**ER Spanner:**
+- Types: ER-A, ER-M, ER-UM
+- Models: ER8A, ER11A, ER16A, ER20A, ER25M, ER32UM, ER40UM
+- Opening: 19-64mm
+- Length: 150-210mm
+- Dùng cho: ER Collet system
+
+**GER Spanner:**
+- Models: GER16, GER20, GER25, GER32
+- Opening: 28-48mm
+- Length: 160-210mm
+- Dùng cho: GER High Precision Collet
+
+**GSK Spanner:**
+- Models: GSK6, GSK10, GSK16, GSK20
+- Opening: 19.5-48mm
+- Length: 110-210mm
+- Dùng cho: SK High Precision Collet trong HSK-GSK holder
+
+#### Spindle Test Bar
+**Công dụng:** Kiểm tra run-out của spindle, đánh giá độ chính xác máy CNC
+
+**Specifications:**
+- Standards: ISO20, ISO25, ISO30
+- Weight: 0.10~0.19 KGS
+- Material: Ground steel, hardened
+- Run-out tolerance: <0.002mm
+- Length: 175-220mm
+
+**Ứng dụng:**
+- Kiểm tra spindle run-out định kỳ
+- Calibration máy CNC mới
+- Troubleshooting spindle problems
+- Quality control
+
+#### Z-axis Zero Setter
+**Công dụng:** Thiết lập điểm zero của trục Z, calibration tool length
+
+**ZOP-50 (Electro-Optical Zero Setter):**
+- Type: Optical sensor
+- Resolution: 0.001mm
+- Repeatability: ±0.001mm
+- Power: Battery operated
+- Waterproof: IP67
+- Ứng dụng: Tool length measurement, Z-axis calibration
+
+**ZDI-50 (Magnetic Zero Setter):**
+- Type: Magnetic contact sensor
+- Resolution: 0.001mm
+- Repeatability: ±0.002mm
+- Mounting: Magnetic base
+- Ứng dụng: Z-axis scale calibration, tool offset setting
+
+**Ưu điểm accessories:**
+- Đảm bảo moment xiết chính xác → tránh hỏng collet
+- Kiểm tra run-out định kỳ → phát hiện sớm vấn đề
+- Zero setter tự động → tiết kiệm thời gian setup
+
+**Lưu ý bảo dưỡng:**
+- Vệ sinh spanner sau mỗi lần dùng
+- Bảo quản test bar trong hộp chống va đập
+- Kiểm tra battery zero setter định kỳ
+- Calibration test bar hàng năm
+
+---
+
 ## 📊 BẢNG SO SÁNH CÁC HỆ THỐNG HOLDER
 
-| Hệ thống | Taper    | Max RPM   | Run-out   | Ứng dụng chính                  |
-|----------|----------|-----------|-----------|----------------------------------|
-| BT       | 7:24     | 30,000    | 0.003mm   | Universal, phổ biến nhất         |
-| HSK      | 1:10     | 40,000    | 0.003mm   | High-speed, high-rigidity        |
-| CAT      | 7:24     | 30,000    | 0.003mm   | Mỹ, tương tự BT                  |
-| SK       | Straight | 40,000    | 0.005mm   | High-speed engraving             |
-| ER       | Collet   | 30,000    | 0.003mm   | End milling, drilling            |
-| Shrink   | 4.5°     | 25,000    | <0.003mm  | Precision, high-speed finishing  |
-| Hydraulic| -        | 25,000    | <0.003mm  | High clamping force              |
+| Hệ thống     | Taper    | Max RPM   | Run-out   | Ứng dụng chính                       |
+|--------------|----------|-----------|-----------|--------------------------------------|
+| BT           | 7:24     | 30,000    | 0.003mm   | Universal, phổ biến nhất             |
+| HSK-A        | 1:10     | 30,000    | 0.003mm   | General machining, high-rigidity     |
+| HSK-E        | 1:10     | 40,000    | 0.003mm   | High-speed, extra high-speed         |
+| CAT          | 7:24     | 30,000    | 0.003mm   | Mỹ, tương tự BT                      |
+| MAS-BT       | 7:24     | 30,000    | 0.003mm   | Mazak machines only                  |
+| NT           | 7:24     | 30,000    | 0.003mm   | Japanese machines, BT-compatible     |
+| SK (Taper)   | 7:24     | 30,000    | 0.003mm   | Asian market, BT-compatible          |
+| SK (Collet)  | Straight | 40,000    | 0.005mm   | High-speed engraving                 |
+| ER (Collet)  | Collet   | 30,000    | 0.003mm   | End milling, drilling                |
+| Shrink Fit   | 4.5°     | 25,000    | <0.003mm  | Precision, high-speed finishing      |
+| Hydraulic    | -        | 25,000    | <0.003mm  | High clamping force                  |
+| ER Extension | -        | 30,000    | 0.005mm   | Deep cavity, extended reach          |
 
 ---
 
@@ -551,12 +789,20 @@ Hệ thống dụng cụ tinh chỉnh đường kính lỗ (boring), độ chín
 - BT Tension-Compression Tapping
 - BT Rigid Tapping
 - MTA/MTB Morse Taper
+- Straight Shank Tapping (C20/25/32)
 
 ### Internal Boring
 - NBH2084 (Φ8~280mm)
 - NBJ16 (Φ6~51mm)
 - EWN (Φ20~203mm)
+- EWE Digital Boring Head (Φ20~203mm, digital display)
+- EWB Round Bit Boring Head (high-speed, balanced)
 - RBH/CBH (Φ200~910mm)
+
+### Extended Reach Machining
+- BT-ER Extension Holder (50~200mm extension)
+- Deep cavity milling
+- Hard-to-reach area machining
 
 ---
 
@@ -586,9 +832,38 @@ Hệ thống dụng cụ tinh chỉnh đường kính lỗ (boring), độ chín
 - Vệ sinh taper và flange trước lắp
 - Tra mỡ mỏng vào pull stud thread
 
+**Pull Stud Standards:**
+
+**BT Pull Stud:**
+- Thread: M12 (BT30), M16 (BT40), M24 (BT50)
+- Lengths: 30mm, 45mm, 60mm, 90mm, 90L
+- Material: Hardened steel
+- Thay pull stud: sau 5,000-10,000 lần thay tool
+
+**ISO Pull Stud (ISO 7388/2):**
+- Standard: DIN 69872A/B
+- Type A: ISO7388/2A-P16D (for BT40), ISO7388/2A-P24D (for BT50)
+- Type B: ISO7388/2B-P16D (for BT40/50)
+- Thread: M16 (P16D), M24 (P24D)
+- Compatible: BT, NT, SK taper holders
+- Difference: Type A has different thread depth than Type B
+
+**Coolant Hole Pull Stud:**
+- Internal coolant passage through pull stud
+- Pressure: ≤4MPa
+- O-ring seal maintenance required
+- Thay O-ring: mỗi 6 tháng hoặc khi rò rỉ
+
+**Lưu ý quan trọng:**
+- ⚠️ BT pull stud KHÔNG tương thích với MAS-BT (Mazak)
+- ⚠️ CAT pull stud có thread khác BT (UNC vs Metric)
+- ⚠️ Luôn kiểm tra pull stud length phù hợp với spindle
+- ⚠️ Không dùng pull stud bị cong hoặc thread mòn
+
 ### HSK Holders
 - Kiểm tra cả taper và flange face
 - Không dùng mỡ nhiều (dual contact)
+- Vệ sinh bằng dung môi sạch
 
 ### Shrink Fit
 - Nhiệt độ shrink: 300~350°C
@@ -620,3 +895,32 @@ Hệ thống dụng cụ tinh chỉnh đường kính lỗ (boring), độ chín
 # KẾT THÚC TRI THỨC NỀN
 
 **Lưu ý:** Tất cả thông tin trên được trích xuất trực tiếp từ tài liệu PDF An Mi Tools 2025. Không suy diễn thêm thông tin nào ngoài tài liệu gốc.
+
+---
+
+## 📝 LỊCH SỬ CẬP NHẬT
+
+**Version 2.0 (31/10/2025):**
+- ✅ Thêm BT-ER Extension Holder (50~200mm extension)
+- ✅ Thêm EWE Digital Boring Head (digital display, IP69K, 0.001mm resolution)
+- ✅ Thêm EWB Round Bit Boring Head (manual balance adjustment)
+- ✅ Thêm mục ACCESSORIES & TOOLING SUPPORT (Spanner, Test Bar, Zero Setter)
+- ✅ Bổ sung chi tiết NT Series (NT-NBH, NT-CK, NT-FMB, NT-SK, NT-GER)
+- ✅ Làm rõ SK vừa là collet system, vừa là holder standard
+- ✅ Bổ sung thông số pull stud chi tiết cho MAS-BT
+- ✅ Bổ sung bảng dimensions chi tiết cho CAT
+- ✅ Phân loại rõ HSK-A/E/F variants và ứng dụng
+- ✅ Bổ sung Straight Shank Tapping Holder và Rigid Tapping
+- ✅ Bổ sung thông tin ISO Pull Stud (DIN69872A/B)
+- ✅ Cập nhật bảng so sánh với 12 dòng sản phẩm
+
+**Version 1.0 (Ban đầu):**
+- Trích xuất từ tài liệu PDF An Mi Tools 2025
+- 45 dòng sản phẩm chính
+- Phân loại: BT, HSK, CAT, MAS-BT, NT, SK, Collet, Tapping, Boring
+
+---
+
+**Tổng số sản phẩm hiện tại:** 49+ dòng sản phẩm  
+**Độ bao phủ catalog 2025:** ~95%  
+**Cập nhật gần nhất:** 31/10/2025
