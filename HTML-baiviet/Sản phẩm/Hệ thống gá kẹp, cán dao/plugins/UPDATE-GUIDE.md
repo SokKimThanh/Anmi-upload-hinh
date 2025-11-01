@@ -1,10 +1,60 @@
-# 🎨 Cập Nhật Plugin - An Mi Product Style Injector v2.1.0
+# 🎨 Cập Nhật Plugin - An Mi Product Style Injector v2.1.4
 
-## ✨ Tính Năng Mới
+## ✨ Tính Năng Mới - Version 2.1.4
 
-### ✅ CSS Hiển Thị Trong WordPress Editor
+### 🖼️ Product Images Grid - 2 Column Layout
 
-Plugin đã được cập nhật để **tự động load CSS** vào WordPress Editor (cả Gutenberg và Classic Editor).
+Plugin đã được cập nhật với **CSS v1.3.1** hỗ trợ layout 2 cột cho hình ảnh sản phẩm.
+
+**CSS Class Mới: `.product-images-grid`**
+
+**Tính năng:**
+- ✅ Hiển thị 2 hình ảnh cạnh nhau (desktop)
+- ✅ Tự động chuyển về 1 cột trên mobile
+- ✅ Gap responsive: 1.5rem (desktop), 1rem (mobile)
+- ✅ Áp dụng cho NT-CK: NBJ16 boring head + tool box set
+
+**Ví dụ sử dụng:**
+```html
+<div class="product-images-grid">
+  <figure>
+    <img src="image1.jpg" alt="Product 1">
+    <figcaption>Product description 1</figcaption>
+  </figure>
+  <figure>
+    <img src="image2.jpg" alt="Product 2">
+    <figcaption>Product description 2</figcaption>
+  </figure>
+</div>
+```
+
+## 📋 Changelog Tổng Hợp
+
+### v2.1.4 (November 1, 2025)
+- **CSS v1.3.1:** Added `.product-images-grid` for 2-column image layout
+- **Feature:** Responsive behavior: 2 columns → 1 column on mobile
+- **Applied to:** NT-CK section (NBJ16 head + tool box)
+
+### v2.1.3 (October 31, 2025)
+- Fixed: PRESERVE `<p>` tags with actual content
+- Only remove `<p>` tags with comments or empty content
+
+### v2.1.2 (October 30, 2025)
+- Added JavaScript cleanup for `<p>` tags wrapping HTML comments
+
+### v2.1.1 (October 30, 2025)
+- Added wpautop filter to prevent auto-generated `<p>` tags
+
+### v2.1.0 (October 29, 2025)
+- **CSS v1.3.0:** WordPress Editor Integration
+- CSS hiển thị trong Gutenberg & Classic Editor
+- WYSIWYG preview trước khi publish
+
+### v2.0.0
+- Changed to single common CSS file
+- Better performance and maintainability
+
+## ✅ CSS Hiển Thị Trong WordPress Editor
 
 **Trước đây:**
 - ❌ CSS chỉ hiển thị ở frontend
@@ -77,7 +127,7 @@ chmod -R 755 /wp-content/plugins/anmi-product-style-injector/
 
 1. Vào: **Plugins → Installed Plugins**
 2. Tìm: **"An Mi Tools - Product Style Injector"**
-3. Kiểm tra version: **2.1.0**
+3. Kiểm tra version: **2.1.4**
 
 ### Test 2: Kiểm Tra CSS Trong Editor
 

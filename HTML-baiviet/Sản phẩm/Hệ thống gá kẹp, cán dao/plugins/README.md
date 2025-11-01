@@ -1,14 +1,43 @@
 # 🎨 An Mi Product Style Injector Plugin
 
+**Version:** 2.1.4  
+**CSS Version:** 1.3.1  
+**Last Updated:** November 1, 2025
+
 ## 📁 Cấu Trúc Plugin
 
 ```
 anmi-product-style-injector/
-├── anmi-product-style-injector.php  ← Main plugin file
+├── anmi-product-style-injector.php  ← Main plugin file (v2.1.4)
 ├── css/
-│   └── anmi-holder-products.css     ← Product styling
+│   └── anmi-holder-products.css     ← Product styling (v1.3.1)
+├── js/
+│   └── grid-cleanup.js              ← Grid cleanup script
 ├── README.md                         ← This file
-└── UPDATE-GUIDE.md                   ← Update instructions
+├── UPDATE-GUIDE.md                   ← Update instructions
+└── WORDPRESS-FIX-README.md          ← WordPress fixes
+```
+
+## 🆕 Version 2.1.4 - What's New
+
+### CSS v1.3.1 Features:
+- ✅ **Product Images Grid:** `.product-images-grid` class for 2-column image layout
+- ✅ **Responsive:** 2 columns (desktop) → 1 column (mobile)
+- ✅ **Applied to:** NT-CK section (NBJ16 head + tool box set)
+- ✅ **Clean markup:** No inline styles needed
+
+**Example Usage:**
+```html
+<div class="product-images-grid">
+  <figure>
+    <img src="image1.jpg" alt="Product 1">
+    <figcaption>Product description 1</figcaption>
+  </figure>
+  <figure>
+    <img src="image2.jpg" alt="Product 2">
+    <figcaption>Product description 2</figcaption>
+  </figure>
+</div>
 ```
 
 ## 📦 Upload Lên WordPress
@@ -62,7 +91,7 @@ anmi-product-style-injector/
 2. Tìm dòng:
    ```html
    <link rel='stylesheet' id='anmi-holder-products-css'
-         href='https://anmitools.com/wp-content/plugins/anmi-product-style-injector/css/anmi-holder-products.css?ver=2.1.0'
+         href='https://anmitools.com/wp-content/plugins/anmi-product-style-injector/css/anmi-holder-products.css?ver=2.1.4'
          media='all' />
    ```
 
