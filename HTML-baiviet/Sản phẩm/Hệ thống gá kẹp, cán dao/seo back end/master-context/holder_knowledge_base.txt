@@ -414,23 +414,25 @@ NT là chuẩn Nhật Bản, tương tự BT nhưng có một số khác biệt 
   * Arbor diameter range: Φ22~60mm
   * Ứng dụng: Face milling cutter Φ50-160mm, heavy-duty cast iron/steel machining
 
-#### NT-SK Tool Holder
+#### NBT-SK High-Speed Tool Holder
 📄 **Catalog: "9 Tooling Systems" - Trang 14**
+- **Ý nghĩa**: **N**ational **BT** - **SK** Collet System
 - Boring range: Φ1.0~20.0mm
 - SK collet: SK6, SK10, SK13, SK16, SK20
-- Max RPM: 30,000 (NT30-SK), 25,000 (NT40-SK), 18,000 (NT50-SK)
+- Max RPM: 30,000 (NBT30-SK), 25,000 (NBT40-SK), 18,000 (NBT50-SK)
 - Run-out accuracy: ≤0.005mm
 - Balance grade: G2.5 @ 30,000 RPM
-- Models: NT30-SK6/10, NT40-SK13/16, NT50-SK20
+- Models: NBT30-SK6/10, NBT40-SK13/16, NBT50-SK20
 
-#### NT-GER Tool Holder
+#### NBT-GER ER Collet Chuck
 📄 **Catalog: "9 Tooling Systems" - Trang 14**
+- **Ý nghĩa**: **N**ational **BT** - **GER** (ER Collet System)
 - Clamping range: Φ1.0~20.0mm (ER32)
 - GER collet: ER16, ER20, ER25, ER32
-- Max RPM: 30,000 (NT30), 25,000 (NT40), 20,000 (NT50)
+- Max RPM: 30,000 (NBT30), 25,000 (NBT40), 20,000 (NBT50)
 - Run-out accuracy: ≤0.003mm
 - ER collet standard ISO → replacement dễ tìm
-- Models: NT30-GER16, NT40-GER20/25, NT50-GER32
+- Models: NBT30-GER16, NBT40-GER20/25, NBT50-GER32
 
 #### NT-NBH Micro Boring System
 📄 **Catalog: "9 Tooling Systems" - Trang 68**
@@ -962,6 +964,13 @@ Các phụ kiện hỗ trợ cho hệ thống holder, bao gồm spanner (cờ l�
 
 ## 📝 LỊCH SỬ CẬP NHẬT
 
+**Version 2.2 (31/10/2025):**
+- ✅ Sửa lỗi tên sản phẩm: NT-SK/NT-GER → **NBT-SK/NBT-GER**
+  * **NBT** = **N**ational **BT** (kết hợp BT taper với collet system)
+  * NBT-SK: SK collet system trên BT taper
+  * NBT-GER: ER collet system trên BT taper
+  * Làm rõ ý nghĩa và phân biệt với NT (National Taper thuần túy)
+
 **Version 2.1 (10/01/2025):**
 - ✅ Mở rộng NT-FMB Face Milling Arbor với specifications chi tiết:
   * 📄 Catalog "9 Tooling Systems" - Trang 13-14
@@ -978,8 +987,9 @@ Các phụ kiện hỗ trợ cho hệ thống holder, bao gồm spanner (cờ l�
   * Boring range: Φ16~280mm (đã sửa từ Φ6~51mm sai)
   * Weights: NT40-CK6-55 (8.5kg), NT50-CK6-65 (10.3kg)
   * NBJ16 head compatibility
-- ✅ Làm rõ NT-SK và NT-GER với NT30/40/50 models
+- ✅ Làm rõ NBT-SK và NBT-GER (National BT Collet Systems)
   * 📄 Catalog "9 Tooling Systems" - Trang 14
+  * NBT = National BT (không phải NT)
   * RPM ranges by taper size
   * Balance grade specifications
 
@@ -988,7 +998,7 @@ Các phụ kiện hỗ trợ cho hệ thống holder, bao gồm spanner (cờ l�
 - ✅ Thêm EWE Digital Boring Head (digital display, IP69K, 0.001mm resolution)
 - ✅ Thêm EWB Round Bit Boring Head (manual balance adjustment)
 - ✅ Thêm mục ACCESSORIES & TOOLING SUPPORT (Spanner, Test Bar, Zero Setter)
-- ✅ Bổ sung chi tiết NT Series (NT-NBH, NT-CK, NT-FMB, NT-SK, NT-GER)
+- ✅ Bổ sung chi tiết NT Series (NT-NBH, NT-CK, NT-FMB, NBT-SK, NBT-GER)
 - ✅ Làm rõ SK vừa là collet system, vừa là holder standard
 - ✅ Bổ sung thông số pull stud chi tiết cho MAS-BT
 - ✅ Bổ sung bảng dimensions chi tiết cho CAT
@@ -1006,4 +1016,4 @@ Các phụ kiện hỗ trợ cho hệ thống holder, bao gồm spanner (cờ l�
 
 **Tổng số sản phẩm hiện tại:** 49+ dòng sản phẩm (NT Series: 22+ models với full specs)  
 **Độ bao phủ catalog 2025:** ~95%  
-**Cập nhật gần nhất:** 10/01/2025
+**Cập nhật gần nhất:** 31/10/2025 (Version 2.2)

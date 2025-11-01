@@ -33,11 +33,13 @@ schema_type: "Product"
       <li>✅ <strong>NT-FMB Face Milling Arbor:</strong> NT40-FMB (Φ22~40mm), NT50-FMB (Φ22~60mm) – 9 models</li>
       <li>✅ <strong>NT-NBH Micro Boring System:</strong> NT40-NBH-50, NT50-NBH-55 với NBH2084 head (Φ8~280mm)</li>
       <li>✅ <strong>NT-CK Modular Boring Bar:</strong> NT40-CK6-55, NT50-CK6-65 với NBJ16 head</li>
-      <li>✅ <strong>NT-SK High-Speed Collet:</strong> NT30/40/50-SK6/10/13/16/20 (max 30,000 RPM)</li>
-      <li>✅ <strong>NT-GER ER Collet Chuck:</strong> NT30/40/50-GER16/20/25/32 (ER collet standard ISO)</li>
+      <li>✅ <strong>NBT-SK High-Speed Collet:</strong> NBT30/40/50-SK6/10/13/16/20 (max 30,000 RPM) – <em>National <strong>BT</strong> taper + SK collet</em></li>
+      <li>✅ <strong>NBT-GER ER Collet Chuck:</strong> NBT30/40/50-GER16/20/25/32 (ER collet standard ISO) – <em>National <strong>BT</strong> taper + ER collet</em></li>
     </ul>
     
-    <p><strong>Ứng dụng chính:</strong> CNC machining center Nhật Bản, face milling operations (Φ50-160mm), precision boring (Φ8~280mm), high-speed milling (30,000 RPM), universal drilling/tapping (ER16~ER32), BT-interchange applications, retrofit/upgrade máy CNC cũ.</p>
+    <p><strong>⚠️ Lưu ý:</strong> NBT-SK và NBT-GER sử dụng <strong>BT taper</strong> (không phải NT taper), nhưng được gọi là "National BT" để phân biệt với BT tiêu chuẩn quốc tế.</p>
+    
+    <p><strong>Ứng dụng chính:</strong> CNC machining center Nhật Bản, face milling operations (Φ50-160mm), precision boring (Φ8~280mm), high-speed milling (30,000 RPM với NBT-SK/GER), universal drilling/tapping (ER16~ER32), BT-interchange applications, retrofit/upgrade máy CNC cũ.</p>
     
     <div class="catalog-download">
       <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" target="_blank" rel="noopener" class="download-btn">
@@ -46,7 +48,7 @@ schema_type: "Product"
           <polyline points="7 10 12 15 17 10"></polyline>
           <line x1="12" y1="15" x2="12" y2="3"></line>
         </svg>
-        <span>Download Catalog: 9. Tooling Systems.pdf - Xem chi tiết NT-FMB, NT-NBH, NT-CK, NT-SK, NT-GER</span>
+        <span>Download Catalog: 9. Tooling Systems.pdf - Xem chi tiết NT-FMB, NT-NBH, NT-CK, NBT-SK, NBT-GER</span>
       </a>
     </div>
   </div>
@@ -54,17 +56,17 @@ schema_type: "Product"
   <div class="section product-features">
     <h2>6 Đặc Điểm Nổi Bật Của NT Tool Holder System</h2>
     <ol>
-      <li><strong>Complete NT Product Line – 5 Categories trong Catalog:</strong> An Mi Tools cung cấp đầy đủ <strong>NT tool holder</strong> từ catalog chính hãng: NT-FMB (9 models face milling Φ22~60mm), NT-NBH (2 models micro boring Φ8~280mm), NT-CK (2 models modular boring), NT-SK (5 sizes high-speed collet), NT-GER (4 sizes ER collet) → total 22+ NT holder models sẵn có.</li>
+      <li><strong>Complete NT Product Line – 5 Categories trong Catalog:</strong> An Mi Tools cung cấp đầy đủ <strong>NT tool holder</strong> từ catalog chính hãng: NT-FMB (9 models face milling Φ22~60mm), NT-NBH (2 models micro boring Φ8~280mm), NT-CK (2 models modular boring), NBT-SK (5 sizes high-speed collet với BT taper), NBT-GER (4 sizes ER collet với BT taper) → total 22+ NT/NBT holder models sẵn có.</li>
       
-      <li><strong>95% BT-Compatible – Interchange Flexibility:</strong> <strong>NT tool holder</strong> có thể interchange với BT holder trong 95% trường hợp (minor differences ở pull stud thread và flange dimension). NT40-FMB có thể dùng trên BT40 spindle, NT50-NBH trên BT50 spindle → giảm inventory cost, tăng flexibility cho xưởng có cả máy NT và BT.</li>
+      <li><strong>95% BT-Compatible – Interchange Flexibility:</strong> <strong>NT tool holder</strong> (NT-FMB, NT-NBH, NT-CK) có thể interchange với BT holder trong 95% trường hợp (minor differences ở pull stud thread và flange dimension). <strong>NBT-SK và NBT-GER</strong> sử dụng BT taper nên 100% compatible với BT spindle. NT40-FMB có thể dùng trên BT40 spindle, NT50-NBH trên BT50 spindle → giảm inventory cost, tăng flexibility.</li>
       
       <li><strong>NT-FMB Face Milling Arbor – Heavy-Duty Performance:</strong> <strong>NT40-FMB</strong> và <strong>NT50-FMB</strong> cover face milling cutter Φ50-160mm với pull stud M16×2.0 (NT40) và M24×3.0 (NT50). Clamping nuts included, internal coolant compatible → phù hợp cast iron/steel machining, heavy cutting operations.</li>
       
       <li><strong>NT-NBH/CK Precision Boring – 0.01mm Accuracy:</strong> <strong>NT40-NBH-50</strong> và <strong>NT50-NBH-55</strong> với NBH2084-8P head đạt precision 0.01mm/graduation, boring range Φ8~280mm. <strong>NT-CK</strong> với NBJ16 head cho small diameter boring Φ16~280mm → ideal cho mold making, aerospace, precision applications.</li>
       
-      <li><strong>NT-SK/GER High-Speed Capability – Max 30,000 RPM:</strong> <strong>NT-SK</strong> (SK6/10/13/16/20) và <strong>NT-GER</strong> (ER16/20/25/32) hỗ trợ max RPM 30,000 (NT30 size), balance grade G2.5 → phù hợp high-speed machining với carbide end mill, small diameter tool, aluminum/composite machining. Run-out ≤0.005mm (NT-SK), ≤0.003mm (NT-GER).</li>
+      <li><strong>NBT-SK/GER High-Speed Capability – Max 30,000 RPM:</strong> <strong>NBT-SK</strong> (SK6/10/13/16/20) và <strong>NBT-GER</strong> (ER16/20/25/32) sử dụng BT taper, hỗ trợ max RPM 30,000 (NBT30 size), balance grade G2.5 → phù hợp high-speed machining với carbide end mill, small diameter tool, aluminum/composite machining. Run-out ≤0.005mm (NBT-SK), ≤0.003mm (NBT-GER). <em>Lưu ý: NBT = National <strong>BT</strong>, không phải NT taper.</em></li>
       
-      <li><strong>Retrofit/Upgrade Solution cho Máy CNC Nhật Cũ:</strong> <strong>NT tool holder</strong> là giải pháp ideal để upgrade máy CNC Nhật cũ (1990-2010 Fanuc/Mazak/Mori Seiki) với holder mới từ catalog 2025 (NT-FMB modern design, NT-SK precision collet, NT-GER ER standard) → tăng performance (higher RPM, better accuracy) mà không cần thay spindle (low investment cost).</li>
+      <li><strong>Retrofit/Upgrade Solution cho Máy CNC Nhật Cũ:</strong> <strong>NT tool holder</strong> là giải pháp ideal để upgrade máy CNC Nhật cũ (1990-2010 Fanuc/Mazak/Mori Seiki) với holder mới từ catalog 2025 (NT-FMB modern design, NBT-SK precision collet, NBT-GER ER standard) → tăng performance (higher RPM, better accuracy) mà không cần thay spindle (low investment cost).</li>
     </ol>
   </div>
 
@@ -94,7 +96,7 @@ schema_type: "Product"
     <div class="product-category">
       <h3>1. NT-FMB Face Milling Arbor (Trục Gá Dao Phay Mặt)</h3>
       <figure class="product-image">
-        <img src="https://anmitools.com/wp-content/uploads/2025/09/nt-fmb-face-milling-arbor.webp" alt="NT-FMB Face Milling Arbor - NT40/NT50" width="600" height="400" loading="lazy">
+        <img src="https://anmitools.com/wp-content/uploads/2025/10/nt-fmb-copy.webp" alt="NT-FMB Face Milling Arbor - NT40/NT50" width="1000" height="1000" loading="lazy">
         <figcaption><strong>NT-FMB</strong> – Face Milling Arbor cho dao phay mặt Φ22~60mm</figcaption>
       </figure>
       
@@ -191,46 +193,52 @@ schema_type: "Product"
     </div>
     
     <div class="product-category">
-      <h3>4. NT-SK High-Speed Collet Holder (Đầu Kẹp SK Tốc Độ Cao)</h3>
+      <h3>4. NBT-SK High-Speed Collet Holder (Đầu Kẹp SK Tốc Độ Cao – BT Taper)</h3>
       <figure class="product-image">
-        <img src="https://anmitools.com/wp-content/uploads/2025/09/nt-sk-high-speed-collet.webp" alt="NT-SK High-Speed Collet Holder" width="600" height="400" loading="lazy">
-        <figcaption><strong>NT-SK</strong> – High-Speed Collet Holder, max 30,000 RPM</figcaption>
+        <img src="https://anmitools.com/wp-content/uploads/2025/09/nbt-sk-high-speed-collet.webp" alt="NBT-SK High-Speed Collet Holder" width="600" height="400" loading="lazy">
+        <figcaption><strong>NBT-SK</strong> – High-Speed Collet Holder, BT taper + SK collet, max 30,000 RPM</figcaption>
       </figure>
       
-      <p><strong>Đặc điểm NT-SK (tương tự BT-SK):</strong></p>
+      <p><strong>⚠️ Lưu ý: NBT-SK = National <u>BT</u> Taper + SK Collet</strong> (không phải NT taper)</p>
+      
+      <p><strong>Đặc điểm NBT-SK:</strong></p>
       <ul>
+        <li>✅ <strong>BT Taper 7:24</strong> (100% compatible với BT spindle)</li>
         <li>✅ SK Collet: SK6, SK10, SK13, SK16, SK20</li>
         <li>✅ Clamping range: Φ1.0~20.0mm</li>
-        <li>✅ Max RPM: 30,000 (NT30-SK), 25,000 (NT40-SK)</li>
+        <li>✅ Max RPM: 30,000 (NBT30-SK), 25,000 (NBT40-SK)</li>
         <li>✅ Run-out accuracy: ≤0.005mm</li>
         <li>✅ Balance grade: G2.5 @ 30,000 RPM</li>
         <li>✅ Ứng dụng: High-speed milling, small end mill, aluminum machining</li>
       </ul>
       
-      <h4>NT-SK Models Available</h4>
+      <h4>NBT-SK Models Available</h4>
       <table>
         <thead>
           <tr><th>Model</th><th>SK Size</th><th>Clamping Range</th><th>Max RPM</th><th>Application</th></tr>
         </thead>
         <tbody>
-          <tr><td>NT30-SK6</td><td>SK6</td><td>Φ1.0~6.0mm</td><td>30,000</td><td>Small end mill, drill</td></tr>
-          <tr><td>NT30-SK10</td><td>SK10</td><td>Φ3.0~10.0mm</td><td>30,000</td><td>General milling Φ3~10mm</td></tr>
-          <tr><td>NT40-SK13</td><td>SK13</td><td>Φ5.0~13.0mm</td><td>25,000</td><td>Medium end mill Φ6~12mm</td></tr>
-          <tr><td>NT40-SK16</td><td>SK16</td><td>Φ8.0~16.0mm</td><td>25,000</td><td>Heavy milling Φ10~16mm</td></tr>
-          <tr><td>NT50-SK20</td><td>SK20</td><td>Φ10.0~20.0mm</td><td>18,000</td><td>Large end mill Φ12~20mm</td></tr>
+          <tr><td>NBT30-SK6</td><td>SK6</td><td>Φ1.0~6.0mm</td><td>30,000</td><td>Small end mill, drill</td></tr>
+          <tr><td>NBT30-SK10</td><td>SK10</td><td>Φ3.0~10.0mm</td><td>30,000</td><td>General milling Φ3~10mm</td></tr>
+          <tr><td>NBT40-SK13</td><td>SK13</td><td>Φ5.0~13.0mm</td><td>25,000</td><td>Medium end mill Φ6~12mm</td></tr>
+          <tr><td>NBT40-SK16</td><td>SK16</td><td>Φ8.0~16.0mm</td><td>25,000</td><td>Heavy milling Φ10~16mm</td></tr>
+          <tr><td>NBT50-SK20</td><td>SK20</td><td>Φ10.0~20.0mm</td><td>18,000</td><td>Large end mill Φ12~20mm</td></tr>
         </tbody>
       </table>
     </div>
     
     <div class="product-category">
-      <h3>5. NT-GER High-Speed ER Collet Chuck (Đầu Kẹp ER Tốc Độ Cao)</h3>
+      <h3>5. NBT-GER High-Speed ER Collet Chuck (Đầu Kẹp ER Tốc Độ Cao – BT Taper)</h3>
       <figure class="product-image">
-        <img src="https://anmitools.com/wp-content/uploads/2025/09/nt-ger-er-collet-chuck.webp" alt="NT-GER High-Speed ER Collet Chuck" width="600" height="400" loading="lazy">
-        <figcaption><strong>NT-GER</strong> – High-Speed ER Collet Chuck, max 30,000 RPM</figcaption>
+        <img src="https://anmitools.com/wp-content/uploads/2025/09/nbt-ger-er-collet-chuck.webp" alt="NBT-GER High-Speed ER Collet Chuck" width="600" height="400" loading="lazy">
+        <figcaption><strong>NBT-GER</strong> – High-Speed ER Collet Chuck, BT taper + ER collet, max 30,000 RPM</figcaption>
       </figure>
       
-      <p><strong>Đặc điểm NT-GER (tương tự BT-GER):</strong></p>
+      <p><strong>⚠️ Lưu ý: NBT-GER = National <u>BT</u> Taper + ER Collet</strong> (không phải NT taper)</p>
+      
+      <p><strong>Đặc điểm NBT-GER:</strong></p>
       <ul>
+        <li>✅ <strong>BT Taper 7:24</strong> (100% compatible với BT spindle)</li>
         <li>✅ ER Collet: ER16, ER20, ER25, ER32</li>
         <li>✅ Clamping range: Φ1.0~20.0mm (ER32)</li>
         <li>✅ Max RPM: 30,000</li>
@@ -239,16 +247,16 @@ schema_type: "Product"
         <li>✅ Ứng dụng: Universal holder cho drilling, tapping, reaming, end milling</li>
       </ul>
       
-      <h4>NT-GER Models Available</h4>
+      <h4>NBT-GER Models Available</h4>
       <table>
         <thead>
           <tr><th>Model</th><th>ER Size</th><th>Clamping Range</th><th>Max RPM</th><th>Application</th></tr>
         </thead>
         <tbody>
-          <tr><td>NT30-GER16</td><td>ER16</td><td>Φ1.0~10.0mm</td><td>30,000</td><td>Small drill, tap, end mill</td></tr>
-          <tr><td>NT40-GER20</td><td>ER20</td><td>Φ1.0~13.0mm</td><td>30,000</td><td>General drilling/tapping</td></tr>
-          <tr><td>NT40-GER25</td><td>ER25</td><td>Φ1.0~16.0mm</td><td>25,000</td><td>Medium drill Φ6~16mm</td></tr>
-          <tr><td>NT50-GER32</td><td>ER32</td><td>Φ1.0~20.0mm</td><td>20,000</td><td>Heavy drilling/milling</td></tr>
+          <tr><td>NBT30-GER16</td><td>ER16</td><td>Φ1.0~10.0mm</td><td>30,000</td><td>Small drill, tap, end mill</td></tr>
+          <tr><td>NBT40-GER20</td><td>ER20</td><td>Φ1.0~13.0mm</td><td>30,000</td><td>General drilling/tapping</td></tr>
+          <tr><td>NBT40-GER25</td><td>ER25</td><td>Φ1.0~16.0mm</td><td>25,000</td><td>Medium drill Φ6~16mm</td></tr>
+          <tr><td>NBT50-GER32</td><td>ER32</td><td>Φ1.0~20.0mm</td><td>20,000</td><td>Heavy drilling/milling</td></tr>
         </tbody>
       </table>
     </div>
@@ -273,13 +281,13 @@ schema_type: "Product"
       </div>
       
       <div class="application-item">
-        <h3>⚡ NT-SK High-Speed Milling – Small End Mill</h3>
-        <p><strong>NT30-SK6/10</strong> (max 30,000 RPM) dùng cho high-speed machining với carbide end mill Φ1-10mm. Ứng dụng: aluminum smartphone housing (engraving patterns, pockets), small part milling (watch components Φ2~5mm), PCB drilling/milling. Balance grade G2.5 → minimal vibration ở 30,000 RPM.</p>
+        <h3>⚡ NBT-SK High-Speed Milling – Small End Mill (BT Taper)</h3>
+        <p><strong>NBT30-SK6/10</strong> (max 30,000 RPM) sử dụng <strong>BT taper</strong> + SK collet, 100% compatible với BT30 spindle. Dùng cho high-speed machining với carbide end mill Φ1-10mm. Ứng dụng: aluminum smartphone housing (engraving patterns, pockets), small part milling (watch components Φ2~5mm), PCB drilling/milling. Balance grade G2.5 → minimal vibration ở 30,000 RPM.</p>
       </div>
       
       <div class="application-item">
-        <h3>🔄 NT-GER Universal Operations – ER Collet Standard</h3>
-        <p><strong>NT40-GER20/25</strong> và <strong>NT50-GER32</strong> dùng cho universal operations: drilling (Φ1-20mm), tapping (M3-M16), reaming, end milling. ER collet standard ISO → dễ tìm replacement (ER20 collet available từ nhiều suppliers). Ví dụ: NT40-GER25 với ER25 collet cover 80% drilling/tapping operations trong general machining.</p>
+        <h3>🔄 NBT-GER Universal Operations – ER Collet Standard (BT Taper)</h3>
+        <p><strong>NBT40-GER20/25</strong> và <strong>NBT50-GER32</strong> sử dụng <strong>BT taper</strong> + ER collet, 100% compatible với BT40/50 spindle. Dùng cho universal operations: drilling (Φ1-20mm), tapping (M3-M16), reaming, end milling. ER collet standard ISO → dễ tìm replacement (ER20 collet available từ nhiều suppliers). Ví dụ: NBT40-GER25 với ER25 collet cover 80% drilling/tapping operations trong general machining.</p>
       </div>
       
       <div class="application-item">
