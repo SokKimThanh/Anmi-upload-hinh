@@ -1662,6 +1662,97 @@ img {
 }
 
 /* ============================================ */
+/* IMAGE LIGHTBOX */
+/* ============================================ */
+.anmi-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.anmi-lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+    animation: zoom 0.3s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.anmi-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1000000;
+}
+
+.anmi-lightbox-close:hover,
+.anmi-lightbox-close:focus {
+    color: #BBBBBB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.anmi-lightbox-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #CCCCCC;
+    padding: 10px 0;
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Mobile lightbox adjustments */
+@media (max-width: 768px) {
+    .anmi-lightbox {
+        padding-top: 30px;
+    }
+    
+    .anmi-lightbox-content {
+        max-width: 95%;
+        max-height: 70vh;
+    }
+    
+    .anmi-lightbox-close {
+        top: 10px;
+        right: 15px;
+        font-size: 35px;
+    }
+    
+    .anmi-lightbox-caption {
+        width: 90%;
+        font-size: 0.92rem;
+    }
+}
+
+/* ============================================ */
 /* PRINT STYLES */
 /* ============================================ */
 @media print {

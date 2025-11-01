@@ -301,10 +301,19 @@ class AnMi_Product_Style_Injector {
                 'all'
             );
             
-            // ✅ NEW: Enqueue JavaScript to clean up WordPress auto-generated <p> tags
+            // ✅ Enqueue JavaScript to clean up WordPress auto-generated <p> tags
             wp_enqueue_script(
                 'anmi-grid-cleanup',
                 plugins_url('js/grid-cleanup.js', __FILE__),
+                array(),
+                $version,
+                true // Load in footer
+            );
+            
+            // ✅ Enqueue Image Lightbox JavaScript
+            wp_enqueue_script(
+                'anmi-image-lightbox',
+                plugins_url('js/image-lightbox.js', __FILE__),
                 array(),
                 $version,
                 true // Load in footer
