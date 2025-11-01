@@ -1,34 +1,49 @@
-# 🎨 Cập Nhật Plugin - An Mi Product Style Injector v2.1.4
+# 🎨 Cập Nhật Plugin - An Mi Product Style Injector v2.1.5
 
-## ✨ Tính Năng Mới - Version 2.1.4
+## ✨ Tính Năng Mới - Version 2.1.5
 
-### 🖼️ Product Images Grid - 2 Column Layout
+### 🖼️ Image Lightbox - Click to Zoom!
 
-Plugin đã được cập nhật với **CSS v1.3.1** hỗ trợ layout 2 cột cho hình ảnh sản phẩm.
-
-**CSS Class Mới: `.product-images-grid`**
+Plugin đã được cập nhật với **Image Lightbox** cho phép phóng to hình ảnh sản phẩm.
 
 **Tính năng:**
-- ✅ Hiển thị 2 hình ảnh cạnh nhau (desktop)
-- ✅ Tự động chuyển về 1 cột trên mobile
-- ✅ Gap responsive: 1.5rem (desktop), 1rem (mobile)
-- ✅ Áp dụng cho NT-CK: NBJ16 boring head + tool box set
+- ✅ Click vào bất kỳ hình ảnh sản phẩm nào để phóng to full-screen
+- ✅ Smooth zoom animation (0.3s)
+- ✅ 3 cách đóng lightbox:
+  - Click nút ✕ (góc phải trên)
+  - Press phím ESC
+  - Click vào vùng tối bên ngoài hình
+- ✅ Hiển thị caption tự động từ figcaption
+- ✅ Cursor pointer với tooltip "Click để phóng to"
+- ✅ Mobile responsive (max-width 95%, max-height 70vh)
 
-**Ví dụ sử dụng:**
-```html
-<div class="product-images-grid">
-  <figure>
-    <img src="image1.jpg" alt="Product 1">
-    <figcaption>Product description 1</figcaption>
-  </figure>
-  <figure>
-    <img src="image2.jpg" alt="Product 2">
-    <figcaption>Product description 2</figcaption>
-  </figure>
-</div>
+**Technical Implementation:**
+```javascript
+// Tự động áp dụng cho tất cả images có class .bordered-img
+const productImages = document.querySelectorAll('figure img.bordered-img, .product-images-grid img.bordered-img');
 ```
 
+**CSS Lightbox Styles:**
+```css
+.anmi-lightbox {
+    position: fixed;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 0.9);
+    animation: zoom 0.3s;
+}
+```
+
+**Files Added:**
+- `js/image-lightbox.js` - Vanilla JavaScript lightbox (no dependencies)
+- CSS trong `anmi-holder-products.css` (v1.3.2)
+
 ## 📋 Changelog Tổng Hợp
+
+### v2.1.5 (November 1, 2025)
+- **CSS v1.3.2:** Added image lightbox functionality
+- **JavaScript:** image-lightbox.js for click-to-zoom
+- **Feature:** Full-screen image preview with smooth animation
+- **UX:** Multiple close methods (X button, ESC, outside click)
 
 ### v2.1.4 (November 1, 2025)
 - **CSS v1.3.1:** Added `.product-images-grid` for 2-column image layout
@@ -127,7 +142,29 @@ chmod -R 755 /wp-content/plugins/anmi-product-style-injector/
 
 1. Vào: **Plugins → Installed Plugins**
 2. Tìm: **"An Mi Tools - Product Style Injector"**
-3. Kiểm tra version: **2.1.4**
+3. Kiểm tra version: **2.1.5**
+
+### Test 2: Kiểm Tra Image Lightbox
+
+1. Mở bất kỳ trang sản phẩm holder nào
+2. **Click vào hình ảnh sản phẩm**
+3. Kiểm tra:
+   - ✅ Hình phóng to full-screen với nền đen trong suốt
+   - ✅ Animation zoom mượt mà (0.3s)
+   - ✅ Caption hiển thị bên dưới hình
+   - ✅ Nút ✕ ở góc phải trên
+   - ✅ Click ✕ hoặc ESC hoặc outside để đóng
+   - ✅ Cursor pointer khi hover vào hình
+
+### Test 3: Kiểm Tra Mobile
+
+1. Mở DevTools (F12) → Device Toolbar
+2. Chọn device: iPhone 12 Pro hoặc tương tự
+3. Click vào hình ảnh
+4. Kiểm tra:
+   - ✅ Hình fit màn hình mobile (max-width 95%)
+   - ✅ Nút ✕ vẫn click được dễ dàng
+   - ✅ Caption dễ đọc
 
 ### Test 2: Kiểm Tra CSS Trong Editor
 

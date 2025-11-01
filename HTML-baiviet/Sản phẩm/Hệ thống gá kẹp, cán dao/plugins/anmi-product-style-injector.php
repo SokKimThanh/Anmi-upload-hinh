@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Tools - Product Style Injector
  * Plugin URI: https://anmitools.com/plugins/product-style-injector
  * Description: Automatically inject common CSS for all An Mi Tools holder products. Detects product section and loads unified stylesheet.
- * Version: 2.1.4
+ * Version: 2.1.5
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: An Mi Tools Vietnam
@@ -16,10 +16,11 @@
  * Update URI: false
  * 
  * @package AnMiProductStyleInjector
- * @version 2.1.4
+ * @version 2.1.5
  * @since 1.0.0
  * 
  * Changelog:
+ * 2.1.5 - CSS v1.3.2: Added image lightbox functionality for click-to-zoom product images
  * 2.1.4 - CSS v1.3.1: Added .product-images-grid for 2-column image layout (NT-CK NBJ16)
  * 2.1.3 - Fixed: PRESERVE <p> tags with actual content, ONLY remove <p> with comments or empty
  * 2.1.2 - Added JavaScript cleanup to remove <p> tags wrapping HTML comments in grid layouts
@@ -46,7 +47,7 @@ class AnMi_Product_Style_Injector {
      * 
      * @var string
      */
-    private $version = '2.1.4';
+    private $version = '2.1.5';
     
     /**
      * CSS directory path (relative to plugin)

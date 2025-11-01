@@ -1,44 +1,65 @@
 # 🎨 An Mi Product Style Injector Plugin
 
-**Version:** 2.1.4  
-**CSS Version:** 1.3.1  
+**Version:** 2.1.5  
+**CSS Version:** 1.3.2  
 **Last Updated:** November 1, 2025
 
 ## 📁 Cấu Trúc Plugin
 
 ```
 anmi-product-style-injector/
-├── anmi-product-style-injector.php  ← Main plugin file (v2.1.4)
+├── anmi-product-style-injector.php  ← Main plugin file (v2.1.5)
 ├── css/
-│   └── anmi-holder-products.css     ← Product styling (v1.3.1)
+│   └── anmi-holder-products.css     ← Product styling (v1.3.2)
 ├── js/
-│   └── grid-cleanup.js              ← Grid cleanup script
+│   ├── grid-cleanup.js              ← Grid cleanup script
+│   └── image-lightbox.js            ← Image lightbox (NEW!)
 ├── README.md                         ← This file
 ├── UPDATE-GUIDE.md                   ← Update instructions
 └── WORDPRESS-FIX-README.md          ← WordPress fixes
 ```
 
-## 🆕 Version 2.1.4 - What's New
+## 🆕 Version 2.1.5 - What's New
 
-### CSS v1.3.1 Features:
+### 🖼️ Image Lightbox - Click to Zoom!
+
+**NEW Feature:** Click vào bất kỳ hình ảnh sản phẩm nào để phóng to!
+
+**Tính năng:**
+- ✅ **Click to Zoom:** Click vào hình để xem full-screen
+- ✅ **Smooth Animation:** Zoom animation mượt mà
+- ✅ **Multiple Close Methods:** 
+  - Click nút ✕ góc phải
+  - Press ESC key
+  - Click vào vùng tối bên ngoài
+- ✅ **Mobile Friendly:** Responsive, hoạt động tốt trên mobile
+- ✅ **Auto Caption:** Hiển thị caption từ figcaption
+- ✅ **Cursor Hint:** Cursor pointer + tooltip "Click để phóng to"
+
+**Applied to:**
+- Tất cả images có class `.bordered-img`
+- Images trong `figure` tags
+- Images trong `.product-images-grid`
+
+**Technical:**
+- **CSS:** `.anmi-lightbox` với full-screen overlay (z-index: 999999)
+- **JavaScript:** `image-lightbox.js` - Vanilla JS, no dependencies
+- **Performance:** Lazy initialization, no impact on page load
+
+### CSS v1.3.2 Features:
+```css
+.anmi-lightbox {
+    background: rgba(0, 0, 0, 0.9);
+    animation: zoom 0.3s;
+}
+```
+
+## 📋 Previous Updates
+
+### v1.3.1 (2025-11-01):
 - ✅ **Product Images Grid:** `.product-images-grid` class for 2-column image layout
 - ✅ **Responsive:** 2 columns (desktop) → 1 column (mobile)
 - ✅ **Applied to:** NT-CK section (NBJ16 head + tool box set)
-- ✅ **Clean markup:** No inline styles needed
-
-**Example Usage:**
-```html
-<div class="product-images-grid">
-  <figure>
-    <img src="image1.jpg" alt="Product 1">
-    <figcaption>Product description 1</figcaption>
-  </figure>
-  <figure>
-    <img src="image2.jpg" alt="Product 2">
-    <figcaption>Product description 2</figcaption>
-  </figure>
-</div>
-```
 
 ## 📦 Upload Lên WordPress
 
@@ -91,8 +112,9 @@ anmi-product-style-injector/
 2. Tìm dòng:
    ```html
    <link rel='stylesheet' id='anmi-holder-products-css'
-         href='https://anmitools.com/wp-content/plugins/anmi-product-style-injector/css/anmi-holder-products.css?ver=2.1.4'
+         href='https://anmitools.com/wp-content/plugins/anmi-product-style-injector/css/anmi-holder-products.css?ver=2.1.5'
          media='all' />
+   <script src='https://anmitools.com/wp-content/plugins/anmi-product-style-injector/js/image-lightbox.js?ver=2.1.5'></script>
    ```
 
 3. **Click vào URL CSS** - phải load được file (status 200)

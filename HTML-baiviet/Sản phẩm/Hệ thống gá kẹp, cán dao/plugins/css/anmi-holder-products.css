@@ -2,7 +2,7 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.3.1
+ * Version: 1.3.2
  * Last Updated: November 1, 2025
  * Author: An Mi Tools Technical Team
  * 
@@ -12,6 +12,13 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, nt-*, cat-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.3.2 (2025-11-01):
+ * - IMAGE LIGHTBOX: Added lightbox functionality for product images
+ * - CSS: .anmi-lightbox with full-screen overlay, zoom animation, close button
+ * - JS: image-lightbox.js for click-to-zoom functionality
+ * - Features: Click image to zoom, ESC to close, click outside to close
+ * - Applied to: All .bordered-img images in figure and .product-images-grid
+ * 
  * v1.3.1 (2025-11-01):
  * - IMAGE GALLERY: Added .product-images-grid for 2-column image layout in product categories
  * - Added responsive behavior: 2 columns desktop → 1 column mobile
