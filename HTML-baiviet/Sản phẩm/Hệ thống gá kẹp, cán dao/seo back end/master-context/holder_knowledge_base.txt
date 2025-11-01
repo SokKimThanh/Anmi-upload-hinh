@@ -393,29 +393,91 @@ NT là chuẩn Nhật Bản, tương tự BT nhưng có một số khác biệt 
 **Các dòng sản phẩm NT:**
 
 #### NT-FMB Face Milling Arbor
-- Arbor size: Φ22~60mm
-- Straight shank type
-- Ứng dụng: Face milling, heavy cutting
+📄 **Catalog: "9 Tooling Systems" - Trang 13-14**
+**Từ Catalog 2025 (Pages 13-14):**
+- **NT40-FMB Models (4 variants):**
+  * NT40-FMB22-30: d=22mm, L=131.4mm, L1=30mm, pull stud M16×2.0, weight 2.10kg
+  * NT40-FMB27-30: d=27mm, L=133.4mm, L1=30mm, pull stud M16×2.0, weight 2.30kg
+  * NT40-FMB32-45: d=32mm, L=135.4mm, L1=45mm, pull stud M16×2.0, weight 2.50kg
+  * NT40-FMB40-50: d=40mm, L=138.4mm, L1=50mm, pull stud M16×2.0, weight 3.00kg
+
+- **NT50-FMB Models (5 variants):**
+  * NT50-FMB22-35: d=22mm, L=164.8mm, L1=35mm, pull stud M24×3.0, weight 3.60kg
+  * NT50-FMB27-35: d=27mm, L=166.8mm, L1=35mm, pull stud M24×3.0, weight 5.20kg
+  * NT50-FMB32-35: d=32mm, L=168.8mm, L1=35mm, pull stud M24×3.0, weight 6.80kg
+  * NT50-FMB40-35: d=40mm, L=216.8mm, L1=35mm, pull stud M24×3.0, weight 7.00kg
+  * NT50-FMB60-65: d=60mm, L=216.8mm, L1=65mm, pull stud M24×3.0, weight 8.00kg
+
+- **Đặc điểm:**
+  * Clamping nuts included (đai ốc kẹp kèm theo)
+  * Internal coolant available (đặt riêng clamping nut cho coolant qua tâm)
+  * Arbor diameter range: Φ22~60mm
+  * Ứng dụng: Face milling cutter Φ50-160mm, heavy-duty cast iron/steel machining
 
 #### NT-SK Tool Holder
+📄 **Catalog: "9 Tooling Systems" - Trang 14**
 - Boring range: Φ1.0~20.0mm
 - SK collet: SK6, SK10, SK13, SK16, SK20
-- Max RPM: 40,000 (SK6), 30,000 (SK10-SK20)
+- Max RPM: 30,000 (NT30-SK), 25,000 (NT40-SK), 18,000 (NT50-SK)
+- Run-out accuracy: ≤0.005mm
+- Balance grade: G2.5 @ 30,000 RPM
+- Models: NT30-SK6/10, NT40-SK13/16, NT50-SK20
 
 #### NT-GER Tool Holder
-- Clamping range: Φ1.0~20.0mm
-- GER collet: GER16, GER20, GER25, GER32
-- Max RPM: 30,000
+📄 **Catalog: "9 Tooling Systems" - Trang 14**
+- Clamping range: Φ1.0~20.0mm (ER32)
+- GER collet: ER16, ER20, ER25, ER32
+- Max RPM: 30,000 (NT30), 25,000 (NT40), 20,000 (NT50)
+- Run-out accuracy: ≤0.003mm
+- ER collet standard ISO → replacement dễ tìm
+- Models: NT30-GER16, NT40-GER20/25, NT50-GER32
 
-#### NT-NBH Boring Holder
-- Models: NT40-NBH-50, NT50-NBH-55
-- Compatible with NBH2084 boring system
-- Boring range: Φ8~280mm
+#### NT-NBH Micro Boring System
+📄 **Catalog: "9 Tooling Systems" - Trang 68**
+**Từ Catalog 2025 (Page 68):**
+- **NT40-NBH-50:**
+  * Spindle: NT40
+  * Head model: NBH2084-8P
+  * Boring bar: SBJ-20 series
+  * Boring range: Φ8~280mm
+  * Weight: 9.3kg
+  * Accuracy: 0.01mm per graduation
 
-#### NT-CK Boring System
-- Models: NT40-CK6-55, NT50-CK6-65
-- Compatible with NBJ16 boring system
-- Boring range: Φ6~51mm
+- **NT50-NBH-55:**
+  * Spindle: NT50
+  * Head model: NBH2084-8P
+  * Boring bar: SBJ-20 series
+  * Boring range: Φ8~280mm
+  * Weight: 10.8kg
+  * Accuracy: 0.01mm per graduation
+
+- **Đặc điểm:**
+  * NBH2084-8P head (8-position fine adjustment)
+  * Modular boring bar system
+  * Ứng dụng: Precision boring, mold making, aerospace
+
+#### NT-CK Modular Boring System
+📄 **Catalog: "9 Tooling Systems" - Trang 76**
+**Từ Catalog 2025 (Page 76):**
+- **NT40-CK6-55:**
+  * Spindle: NT40
+  * Head model: NBJ16
+  * Boring bar: SBJ-16 series
+  * Boring range: Φ16~280mm (không phải Φ6~51mm)
+  * Weight: 8.5kg
+
+- **NT50-CK6-65:**
+  * Spindle: NT50
+  * Head model: NBJ16
+  * Boring bar: SBJ-16 series
+  * Boring range: Φ16~280mm
+  * Weight: 10.3kg
+
+- **Đặc điểm:**
+  * CK6 shank diameter Φ6mm
+  * NBJ16 micro boring head (high precision)
+  * Modular design: thay boring bar linh hoạt
+  * Ứng dụng: Small diameter boring, deep hole boring
 
 **Ưu điểm:**
 - Gần như tương thích với BT
@@ -900,6 +962,27 @@ Các phụ kiện hỗ trợ cho hệ thống holder, bao gồm spanner (cờ l�
 
 ## 📝 LỊCH SỬ CẬP NHẬT
 
+**Version 2.1 (10/01/2025):**
+- ✅ Mở rộng NT-FMB Face Milling Arbor với specifications chi tiết:
+  * 📄 Catalog "9 Tooling Systems" - Trang 13-14
+  * 9 models: 4x NT40-FMB (22/27/32/40mm), 5x NT50-FMB (22/27/32/40/60mm)
+  * Pull stud threads: NT40 (M16×2.0), NT50 (M24×3.0)
+  * Weights: 2.10~8.00kg, dimensions: L, L1, d từ catalog
+- ✅ Bổ sung NT-NBH Micro Boring System chi tiết:
+  * 📄 Catalog "9 Tooling Systems" - Trang 68
+  * NT40-NBH-50: 9.3kg, NBH2084-8P head, boring Φ8~280mm
+  * NT50-NBH-55: 10.8kg, NBH2084-8P head, boring Φ8~280mm
+  * Accuracy: 0.01mm per graduation
+- ✅ Sửa lỗi NT-CK Boring System specifications:
+  * 📄 Catalog "9 Tooling Systems" - Trang 76
+  * Boring range: Φ16~280mm (đã sửa từ Φ6~51mm sai)
+  * Weights: NT40-CK6-55 (8.5kg), NT50-CK6-65 (10.3kg)
+  * NBJ16 head compatibility
+- ✅ Làm rõ NT-SK và NT-GER với NT30/40/50 models
+  * 📄 Catalog "9 Tooling Systems" - Trang 14
+  * RPM ranges by taper size
+  * Balance grade specifications
+
 **Version 2.0 (31/10/2025):**
 - ✅ Thêm BT-ER Extension Holder (50~200mm extension)
 - ✅ Thêm EWE Digital Boring Head (digital display, IP69K, 0.001mm resolution)
@@ -921,6 +1004,6 @@ Các phụ kiện hỗ trợ cho hệ thống holder, bao gồm spanner (cờ l�
 
 ---
 
-**Tổng số sản phẩm hiện tại:** 49+ dòng sản phẩm  
+**Tổng số sản phẩm hiện tại:** 49+ dòng sản phẩm (NT Series: 22+ models với full specs)  
 **Độ bao phủ catalog 2025:** ~95%  
-**Cập nhật gần nhất:** 31/10/2025
+**Cập nhật gần nhất:** 10/01/2025
