@@ -2,8 +2,8 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.3.0
- * Last Updated: October 31, 2025
+ * Version: 1.3.1
+ * Last Updated: November 1, 2025
  * Author: An Mi Tools Technical Team
  * 
  * File CSS chung duy nhất cho tất cả 40+ sản phẩm holder.
@@ -12,6 +12,13 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, nt-*, cat-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.3.1 (2025-11-01):
+ * - IMAGE GALLERY: Added .product-images-grid for 2-column image layout in product categories
+ * - Added responsive behavior: 2 columns desktop → 1 column mobile
+ * - Enhanced figure styling within grid: removed default margins, improved spacing
+ * - Applied to NT-CK section (NBJ16 head + tool box set side-by-side)
+ * - Supports flexible image presentation for product variants and accessories
+ * 
  * v1.3.0 (2025-10-31):
  * - PRODUCT LINE SECTION: Added styles for detailed product listings (NT-FMB, NT-NBH, NT-CK, NT-SK, NT-GER)
  * - Added .product-line container for multi-category product sections
@@ -1346,6 +1353,34 @@ details[open] summary .toggle {
     left: 0;
 }
 
+/* ============================================ */
+/* PRODUCT IMAGES GRID (2-column layout for product variants) */
+/* ============================================ */
+.product-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.product-images-grid figure {
+    margin: 0;
+    text-align: center;
+}
+
+.product-images-grid figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-images-grid figcaption {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.6;
+}
+
 /* Comparison Table (NT vs BT vs HSK style tables) */
 .comparison-table {
     width: 100%;
@@ -1562,6 +1597,12 @@ details[open] summary .toggle {
     .footer-links {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Product images grid: 2 columns → 1 column on mobile */
+    .product-images-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     /* Download buttons responsive */
