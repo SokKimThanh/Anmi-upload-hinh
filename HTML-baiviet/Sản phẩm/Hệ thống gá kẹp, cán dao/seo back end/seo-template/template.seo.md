@@ -365,8 +365,6 @@ schema_type: "Product"
   </p>
 </div>
 
-<!-- ẢNH HỖ TRỢ KỸ THUẬT - ĐÃ BỎ (GỘP VỚI ẢNH LIÊN HỆ) -->
-
 <!-- ============================================ -->
 <!-- HỖ TRỢ KỸ THUẬT VÀ LIÊN HỆ -->
 <!-- ============================================ -->
@@ -403,16 +401,34 @@ schema_type: "Product"
   </div>
 </div>
 
-<!-- ẢNH LIÊN HỆ & HOTLINE (ĐẶT Ở CUỐI BÀI VIẾT) -->
-<figure style="width: 1000px; max-width: 100%; margin: 3rem auto 2rem auto; text-align: center;">
+<!-- ẢNH HOTLINE & ĐỊA CHỈ (ĐẶT Ở CUỐI BÀI VIẾT) -->
+<!-- Desktop: Ảnh địa chỉ đầy đủ -->
+<figure class="contact-image contact-image-desktop" style="width: 1200px; max-width: 100%; margin: 3rem auto 2rem auto; text-align: center;">
   <img 
     src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp" 
-    style="width: 1000px; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" 
+    style="width: 1200px; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" 
     alt="An Mi Tools - Thông tin liên hệ và hỗ trợ kỹ thuật 24/7"
     loading="lazy"
+    width="1200"
+    height="400"
   >
   <figcaption style="color: #333333; font-size: 0.95rem; margin-top: 0.75rem; font-style: italic; line-height: 1.6;">
-    Thông tin liên hệ đầy đủ các văn phòng và nhà máy <strong>An Mi Tools</strong> - Hỗ trợ kỹ thuật 24/7 cho <strong>[tên sản phẩm]</strong> và các giải pháp gá kẹp công cụ CNC
+    Thông tin liên hệ <strong>An Mi Tools</strong> - Hỗ trợ kỹ thuật 24/7 cho <strong>[tên sản phẩm]</strong> và các giải pháp gá kẹp công cụ CNC
+  </figcaption>
+</figure>
+
+<!-- Mobile: Ảnh hotline số to rõ ràng -->
+<figure class="contact-image contact-image-mobile" style="width: 1900px; max-width: 100%; margin: 3rem auto 2rem auto; text-align: center; display: none;">
+  <img 
+    src="https://anmitools.com/wp-content/uploads/2025/10/HOTLINE-1900x1200-copy.webp" 
+    style="width: 1900px; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" 
+    alt="An Mi Tools - Hotline tư vấn sản phẩm"
+    loading="lazy"
+    width="1900"
+    height="1200"
+  >
+  <figcaption style="color: #333333; font-size: 0.95rem; margin-top: 0.75rem; font-style: italic; line-height: 1.6;">
+    Gọi ngay hotline để được tư vấn <strong>[tên sản phẩm]</strong>
   </figcaption>
 </figure>
 
@@ -582,7 +598,14 @@ PLUGIN CSS SẼ NHẬN DIỆN CLASS: "ten-san-pham-khong-dau"
 CSS HOOK EXAMPLE:
 .ten-san-pham-khong-dau h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
 .ten-san-pham-khong-dau img { max-width: 100%; height: auto; }
+
+/* Contact Image Display - Desktop/Mobile */
+.contact-image-desktop { display: block; }
+.contact-image-mobile { display: none; }
+
 @media (max-width: 768px) {
   .ten-san-pham-khong-dau { padding: 1rem 0.5rem; }
+  .contact-image-desktop { display: none; }
+  .contact-image-mobile { display: block; }
 }
 -->
