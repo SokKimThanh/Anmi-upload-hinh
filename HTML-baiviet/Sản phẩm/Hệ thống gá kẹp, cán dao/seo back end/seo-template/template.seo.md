@@ -402,6 +402,21 @@ schema_type: "Product"
 </div>
 
 <!-- ẢNH HOTLINE & ĐỊA CHỈ (ĐẶT Ở CUỐI BÀI VIẾT) -->
+<!-- Desktop: Ảnh hotline số to -->
+<figure class="contact-image contact-image-desktop" style="width: 1900px; max-width: 100%; margin: 3rem auto 2rem auto; text-align: center;">
+  <img 
+    src="https://anmitools.com/wp-content/uploads/2025/10/HOTLINE-1900x1200-copy.webp" 
+    style="width: 1900px; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" 
+    alt="An Mi Tools - Hotline tư vấn sản phẩm"
+    loading="lazy"
+    width="1900"
+    height="1200"
+  >
+  <figcaption style="color: #333333; font-size: 0.95rem; margin-top: 0.75rem; font-style: italic; line-height: 1.6;">
+    Gọi ngay hotline để được tư vấn <strong>[tên sản phẩm]</strong>
+  </figcaption>
+</figure>
+
 <!-- Desktop: Ảnh địa chỉ đầy đủ -->
 <figure class="contact-image contact-image-desktop" style="width: 1200px; max-width: 100%; margin: 3rem auto 2rem auto; text-align: center;">
   <img 
