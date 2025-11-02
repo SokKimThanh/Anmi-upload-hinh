@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Tools - Product Style Injector
  * Plugin URI: https://anmitools.com/plugins/product-style-injector
  * Description: Automatically inject common CSS for all An Mi Tools holder products. Detects product section and loads unified stylesheet.
- * Version: 2.1.5
+ * Version: 2.1.6
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: An Mi Tools Vietnam
@@ -16,10 +16,11 @@
  * Update URI: false
  * 
  * @package AnMiProductStyleInjector
- * @version 2.1.5
+ * @version 2.1.6
  * @since 1.0.0
  * 
  * Changelog:
+ * 2.1.6 - CRITICAL FIX: Keep wpautop enabled, JS only removes <p> INSIDE grid containers with comments
  * 2.1.5 - CSS v1.3.2: Added image lightbox functionality for click-to-zoom product images
  * 2.1.4 - CSS v1.3.1: Added .product-images-grid for 2-column image layout (NT-CK NBJ16)
  * 2.1.3 - Fixed: PRESERVE <p> tags with actual content, ONLY remove <p> with comments or empty
@@ -47,7 +48,7 @@ class AnMi_Product_Style_Injector {
      * 
      * @var string
      */
-    private $version = '2.1.5';
+    private $version = '2.1.6';
     
     /**
      * CSS directory path (relative to plugin)
@@ -119,7 +120,8 @@ class AnMi_Product_Style_Injector {
         // ✅ NEW: Add editor styles for Classic Editor
         add_editor_style($this->css_url . $this->common_css_file);
         
-        // ✅ NEW: Disable wpautop for product pages (prevent auto <p> tags)
+        // ✅ NEW: Keep wpautop enabled for normal content
+        // JavaScript will only clean up <p> tags INSIDE grid containers
         add_filter('the_content', array($this, 'disable_wpautop_for_products'), 9);
         
         // Add admin menu for testing
@@ -127,12 +129,13 @@ class AnMi_Product_Style_Injector {
     }
     
     /**
-     * Disable WordPress wpautop for holder product pages
-     * This prevents WordPress from automatically adding <p> tags around content
+     * Smart wpautop control for holder product pages
+     * Disable wpautop ONLY inside grid containers (to prevent breaking CSS Grid layout)
+     * KEEP wpautop for normal paragraph content
      * 
      * @param string $content Post content
-     * @return string Modified content
-     * @since 2.1.1
+     * @return string Modified content with selective wpautop
+     * @since 2.1.6
      */
     public function disable_wpautop_for_products($content) {
         // Only on singular posts/pages
@@ -173,16 +176,12 @@ class AnMi_Product_Style_Injector {
             }
         }
         
-        // If this is a holder product, disable wpautop
-        if ($is_holder_product) {
-            // Remove wpautop filter to prevent auto <p> tag injection
-            remove_filter('the_content', 'wpautop');
-            remove_filter('the_excerpt', 'wpautop');
-            
-            // Log for debugging
-            if (defined('WP_DEBUG') && WP_DEBUG) {
-                error_log("An Mi Product Style Injector: Disabled wpautop for holder product (Post ID: {$post->ID})");
-            }
+        // ✅ CHANGED: Do NOT disable wpautop globally anymore
+        // Let WordPress handle <p> tags normally
+        // JavaScript will only clean up <p> tags INSIDE grid containers
+        
+        if ($is_holder_product && defined('WP_DEBUG') && WP_DEBUG) {
+            error_log("An Mi Product Style Injector: Detected holder product, wpautop remains ENABLED (Post ID: {$post->ID})");
         }
         
         return $content;

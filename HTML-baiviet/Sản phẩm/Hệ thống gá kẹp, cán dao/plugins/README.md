@@ -1,20 +1,36 @@
 # 🎨 An Mi Product Style Injector Plugin
 
-**Version:** 2.1.5  
+**Version:** 2.1.6 🆕  
 **CSS Version:** 1.3.2  
-**Last Updated:** November 1, 2025
+**Last Updated:** November 2, 2025
+
+## 🚨 CRITICAL UPDATE v2.1.6
+
+### 🔧 Fixed: Vấn Đề Mất Thẻ `<p>` Trong WordPress Editor
+
+**Vấn đề:** HTML paste vào WordPress editor bị mất tất cả thẻ `<p>`, gây ra văn bản không có cấu trúc.
+
+**Giải pháp:**
+- ✅ **Giữ wpautop enabled** - WordPress có thể tự tạo `<p>` tags
+- ✅ **JavaScript chỉ xóa `<p>` trong grid containers** - Không touch `<p>` ở nội dung thường
+- ✅ **Logic kiểm tra cải tiến** - Preserve `<p>` có text hoặc child elements
+
+**Chi tiết:** Xem [FIX-P-TAG-ISSUE.md](FIX-P-TAG-ISSUE.md)
+
+---
 
 ## 📁 Cấu Trúc Plugin
 
 ```
 anmi-product-style-injector/
-├── anmi-product-style-injector.php  ← Main plugin file (v2.1.5)
+├── anmi-product-style-injector.php  ← Main plugin file (v2.1.6) 🆕
 ├── css/
 │   └── anmi-holder-products.css     ← Product styling (v1.3.2)
 ├── js/
-│   ├── grid-cleanup.js              ← Grid cleanup script
-│   └── image-lightbox.js            ← Image lightbox (NEW!)
+│   ├── grid-cleanup.js              ← Grid cleanup script (v1.2.0) 🆕
+│   └── image-lightbox.js            ← Image lightbox
 ├── README.md                         ← This file
+├── FIX-P-TAG-ISSUE.md               ← Fix documentation 🆕
 ├── UPDATE-GUIDE.md                   ← Update instructions
 └── WORDPRESS-FIX-README.md          ← WordPress fixes
 ```
