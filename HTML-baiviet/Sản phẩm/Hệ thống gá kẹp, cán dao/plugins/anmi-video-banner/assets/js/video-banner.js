@@ -413,9 +413,21 @@
     
     // Elementor preview support
     $(window).on('elementor/frontend/init', function() {
+        // Generic widget ready handler
         elementorFrontend.hooks.addAction('frontend/element_ready/widget', function($scope) {
             $scope.find('.anmi-video-banner-container').each(function() {
+                if (!$(this).data('anmi-initialized')) {
+                    new AnMiVideoBanner(this);
+                    $(this).data('anmi-initialized', true);
+                }
+            });
+        });
+        
+        // Specific handler for our widget
+        elementorFrontend.hooks.addAction('frontend/element_ready/anmi_video_banner.default', function($scope) {
+            $scope.find('.anmi-video-banner-container').each(function() {
                 new AnMiVideoBanner(this);
+                $(this).data('anmi-initialized', true);
             });
         });
     });
