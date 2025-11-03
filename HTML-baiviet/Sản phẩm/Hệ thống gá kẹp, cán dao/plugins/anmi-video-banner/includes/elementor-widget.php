@@ -168,6 +168,61 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             ]
         );
         
+        // Visibility Controls Separator
+        $this->add_control(
+            'visibility_divider',
+            [
+                'type' => \Elementor\Controls_Manager::DIVIDER,
+            ]
+        );
+        
+        $this->add_control(
+            'visibility_heading',
+            [
+                'label' => __('Content Visibility', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::HEADING,
+            ]
+        );
+        
+        $this->add_control(
+            'show_title',
+            [
+                'label' => __('Show Title', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('Show', 'anmi-video-banner'),
+                'label_off' => __('Hide', 'anmi-video-banner'),
+                'return_value' => '1',
+                'default' => '0',
+                'description' => __('Toggle to show/hide the title on banner. Default: Hidden', 'anmi-video-banner'),
+            ]
+        );
+        
+        $this->add_control(
+            'show_subtitle',
+            [
+                'label' => __('Show Subtitle', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('Show', 'anmi-video-banner'),
+                'label_off' => __('Hide', 'anmi-video-banner'),
+                'return_value' => '1',
+                'default' => '0',
+                'description' => __('Toggle to show/hide the subtitle on banner. Default: Hidden', 'anmi-video-banner'),
+            ]
+        );
+        
+        $this->add_control(
+            'show_button',
+            [
+                'label' => __('Show CTA Button', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('Show', 'anmi-video-banner'),
+                'label_off' => __('Hide', 'anmi-video-banner'),
+                'return_value' => '1',
+                'default' => '0',
+                'description' => __('Toggle to show/hide the call-to-action button. Default: Hidden', 'anmi-video-banner'),
+            ]
+        );
+        
         $this->end_controls_section();
         
         // Settings Section
@@ -372,6 +427,9 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             $subtitle = $banner->subtitle;
             $button_text = $banner->button_text;
             $button_link = $banner->button_link;
+            $show_title = isset($banner->show_title) ? $banner->show_title : 0;
+            $show_subtitle = isset($banner->show_subtitle) ? $banner->show_subtitle : 0;
+            $show_button = isset($banner->show_button) ? $banner->show_button : 0;
             $height = $banner->height;
             $transition = $banner->transition;
             $slider_speed = $banner->slider_speed;
@@ -392,6 +450,9 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             $subtitle = $settings['subtitle'];
             $button_text = $settings['button_text'];
             $button_link = !empty($settings['button_link']['url']) ? $settings['button_link']['url'] : '#';
+            $show_title = !empty($settings['show_title']) ? 1 : 0;
+            $show_subtitle = !empty($settings['show_subtitle']) ? 1 : 0;
+            $show_button = !empty($settings['show_button']) ? 1 : 0;
             $height = $settings['height'];
             $transition = $settings['transition'];
             $slider_speed = $settings['slider_speed'];
@@ -438,16 +499,19 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             
             <?php if (!empty($title) || !empty($subtitle) || !empty($button_text)): ?>
             <!-- Content Overlay -->
-            <div class="anmi-banner-content">
-                <?php if (!empty($title)): ?>
+            <div class="anmi-banner-content"
+                 data-show-title="<?php echo esc_attr($show_title); ?>"
+                 data-show-subtitle="<?php echo esc_attr($show_subtitle); ?>"
+                 data-show-button="<?php echo esc_attr($show_button); ?>">
+                <?php if (!empty($title) && $show_title): ?>
                     <h1 class="anmi-banner-title"><?php echo esc_html($title); ?></h1>
                 <?php endif; ?>
                 
-                <?php if (!empty($subtitle)): ?>
+                <?php if (!empty($subtitle) && $show_subtitle): ?>
                     <p class="anmi-banner-subtitle"><?php echo esc_html($subtitle); ?></p>
                 <?php endif; ?>
                 
-                <?php if (!empty($button_text)): ?>
+                <?php if (!empty($button_text) && $show_button): ?>
                     <a href="<?php echo esc_url($button_link); ?>" class="anmi-banner-btn">
                         <?php echo esc_html($button_text); ?>
                     </a>
