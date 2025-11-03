@@ -36,7 +36,8 @@
     min-width: 100%;
     min-height: 100%;
     border: none;
-    pointer-events: none; /* Prevent click interference */
+    pointer-events: auto; /* Allow user interaction with controls */
+    z-index: 10; /* Above slider to allow clicks */
 }
 
 /* Scale iframe to cover like video */

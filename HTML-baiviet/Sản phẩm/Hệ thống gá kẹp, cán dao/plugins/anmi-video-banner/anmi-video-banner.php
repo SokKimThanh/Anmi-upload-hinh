@@ -2,8 +2,8 @@
 /**
  * Plugin Name: An Mi Video Banner
  * Plugin URI: https://anmitools.com
- * Description: Video banner với slider tự động + Admin CRUD panel - YouTube/Vimeo/MP4 support + Content Visibility Controls + Live Preview
- * Version: 1.5.0
+ * Description: Video banner với slider tự động + Admin CRUD panel - YouTube/Vimeo/MP4 support + Content Visibility Controls + Live Preview + Player Mode
+ * Version: 1.5.1
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('ANMI_VIDEO_BANNER_VERSION', '1.5.0');
+define('ANMI_VIDEO_BANNER_VERSION', '1.5.1');
 define('ANMI_VIDEO_BANNER_FILE', __FILE__);
 define('ANMI_VIDEO_BANNER_PATH', plugin_dir_path(__FILE__));
 define('ANMI_VIDEO_BANNER_URL', plugin_dir_url(__FILE__));
@@ -72,26 +72,41 @@ class AnMi_Video_Banner {
      * Detect video type and convert URL to embed format
      * 
      * @param string $url Video URL (YouTube, Vimeo, or direct MP4)
+     * @param bool $player_mode Enable player controls (default: false for background mode)
      * @return array ['type' => 'youtube|vimeo|direct', 'embed_url' => '...', 'video_id' => '...']
      */
-    private function parse_video_url($url) {
+    private function parse_video_url($url, $player_mode = false) {
         $result = array(
             'type' => 'direct',
             'embed_url' => $url,
             'video_id' => null
         );
         
-        // YouTube detection
+        // YouTube detection (supports regular URLs and iframe embed codes)
         if (preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i', $url, $match)) {
             $result['type'] = 'youtube';
             $result['video_id'] = $match[1];
-            $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?autoplay=1&mute=1&loop=1&playlist=' . $match[1] . '&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+            
+            if ($player_mode) {
+                // Player mode: Show controls, no autoplay, allow user interaction
+                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?controls=1&rel=0&modestbranding=1&playsinline=1';
+            } else {
+                // Background mode: Autoplay, muted, no controls
+                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?autoplay=1&mute=1&loop=1&playlist=' . $match[1] . '&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+            }
         }
         // Vimeo detection
         elseif (preg_match('/vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|)(\d+)(?:$|\/|\?)/i', $url, $match)) {
             $result['type'] = 'vimeo';
             $result['video_id'] = $match[1];
-            $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+            
+            if ($player_mode) {
+                // Player mode: Show controls
+                $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?controls=1';
+            } else {
+                // Background mode
+                $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+            }
         }
         
         return $result;
@@ -168,7 +183,8 @@ class AnMi_Video_Banner {
         }
         
         // Parse video URL to detect type (YouTube, Vimeo, or Direct)
-        $video_data = $this->parse_video_url($atts['video_url']);
+        // Use player mode (controls visible) for better UX
+        $video_data = $this->parse_video_url($atts['video_url'], true);
         
         // Generate unique ID
         $unique_id = 'anmi-vb-' . uniqid();
@@ -190,9 +206,8 @@ class AnMi_Video_Banner {
                 <iframe class="anmi-banner-video anmi-banner-iframe" 
                         src="<?php echo esc_url($video_data['embed_url']); ?>"
                         frameborder="0" 
-                        allow="autoplay; fullscreen; picture-in-picture" 
-                        allowfullscreen
-                        style="pointer-events: none;"></iframe>
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
             <?php else: ?>
                 <video class="anmi-banner-video" 
                        loop 

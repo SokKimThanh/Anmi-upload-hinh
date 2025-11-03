@@ -155,6 +155,17 @@
         setupEvents() {
             const self = this;
             
+            // For YouTube/Vimeo with controls, show video by default (not slider)
+            if (this.videoType === 'youtube' || this.videoType === 'vimeo') {
+                // Show video immediately
+                this.$video.css('opacity', '1');
+                this.$slider.css('opacity', '0');
+                
+                // No hover/leave events - user controls video via YouTube/Vimeo controls
+                return;
+            }
+            
+            // For direct video: Original hover behavior
             // Mouse enter event - Stop slider and play video
             this.$container.on('mouseenter', function() {
                 self.isHovering = true;
