@@ -284,15 +284,21 @@ jQuery(document).ready(function($) {
     // Preview banner modal
     $('.preview-banner').on('click', function(e) {
         e.preventDefault();
+        console.log('Preview button clicked!');
+        
         var bannerId = $(this).data('banner-id');
+        console.log('Banner ID:', bannerId);
         
         // Show loading modal
         showPreviewModal(bannerId);
     });
     
     function showPreviewModal(bannerId) {
+        console.log('showPreviewModal called with ID:', bannerId);
+        
         // Create modal HTML if not exists
         if ($('#anmi-preview-modal').length === 0) {
+            console.log('Creating modal HTML...');
             var modalHtml = '<div id="anmi-preview-modal" class="anmi-modal">' +
                 '<div class="anmi-modal-overlay"></div>' +
                 '<div class="anmi-modal-content">' +
@@ -323,11 +329,15 @@ jQuery(document).ready(function($) {
                     closePreviewModal();
                 }
             });
+        } else {
+            console.log('Modal already exists');
         }
         
         // Show modal
+        console.log('Showing modal...');
         $('#anmi-preview-modal').fadeIn(300);
         $('body').addClass('anmi-modal-open');
+        console.log('Modal display:', $('#anmi-preview-modal').css('display'));
         
         // Load banner data via AJAX
         $.ajax({
