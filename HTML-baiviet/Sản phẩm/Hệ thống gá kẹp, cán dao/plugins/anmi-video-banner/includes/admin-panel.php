@@ -132,12 +132,29 @@ class AnMi_Video_Banner_Admin {
             '1.2.0'
         );
         
+        // Frontend CSS for preview
+        wp_enqueue_style(
+            'anmi-video-banner-style',
+            plugin_dir_url(dirname(__FILE__)) . 'assets/css/video-banner.css',
+            array(),
+            '1.4.0'
+        );
+        
         // Admin JS
         wp_enqueue_script(
             'anmi-banner-admin-js',
             plugin_dir_url(dirname(__FILE__)) . 'assets/js/admin-script.js',
             array('jquery', 'jquery-ui-sortable'),
             '1.2.0',
+            true
+        );
+        
+        // Frontend JS for preview
+        wp_enqueue_script(
+            'anmi-video-banner-script',
+            plugin_dir_url(dirname(__FILE__)) . 'assets/js/video-banner.js',
+            array('jquery'),
+            '1.4.0',
             true
         );
         

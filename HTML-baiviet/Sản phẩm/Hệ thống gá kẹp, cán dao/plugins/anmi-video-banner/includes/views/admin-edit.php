@@ -404,6 +404,22 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                     </div>
                 </div>
                 
+                <!-- Live Preview -->
+                <div class="postbox">
+                    <div class="postbox-header">
+                        <h2>👁️ Xem Trước Trực Tiếp</h2>
+                    </div>
+                    <div class="inside">
+                        <p class="description" style="margin-bottom: 10px;">Hover chuột để xem video phát</p>
+                        <div id="live_preview_container" style="height: 300px; position: relative; background: #000; border-radius: 4px; overflow: hidden;">
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff; opacity: 0.5;">
+                                <span class="dashicons dashicons-format-video" style="font-size: 48px; width: 48px; height: 48px;"></span>
+                                <p>Nhập Video URL và tải lên hình ảnh<br>để xem preview</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             
         </div>
@@ -461,6 +477,7 @@ jQuery(document).ready(function($) {
             });
             
             updateImagesJson();
+            updateLivePreview(); // Update preview after adding images
         });
         
         mediaUploader.open();
@@ -480,6 +497,7 @@ jQuery(document).ready(function($) {
         });
         
         updateImagesJson();
+        updateLivePreview(); // Update preview after removing image
     });
     
     function updateImagesJson() {
@@ -569,7 +587,160 @@ jQuery(document).ready(function($) {
             });
             imagesArray = newOrder;
             updateImagesJson();
+            updateLivePreview(); // Update preview when reorder
         }
     });
+    
+    // ==========================================
+    // LIVE PREVIEW FUNCTIONALITY
+    // ==========================================
+    
+    var previewInstance = null;
+    
+    function updateLivePreview() {
+        var videoUrl = $('#video_url').val();
+        var title = $('#banner_title').val();
+        var subtitle = $('#banner_subtitle').val();
+        var buttonText = $('#button_text').val();
+        var buttonLink = $('#button_link').val();
+        var showTitle = $('#show_title').is(':checked') ? '1' : '0';
+        var showSubtitle = $('#show_subtitle').is(':checked') ? '1' : '0';
+        var showButton = $('#show_button').is(':checked') ? '1' : '0';
+        var transition = $('#transition').val();
+        var autoplayDelay = $('#autoplay_delay').val();
+        var sliderSpeed = $('#slider_speed').val() || '3000';
+        var sliderEffect = $('#slider_effect').val();
+        
+        // Check if we have minimum requirements
+        if (!videoUrl || imagesArray.length === 0) {
+            $('#live_preview_container').html(
+                '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff; opacity: 0.5;">' +
+                '<span class="dashicons dashicons-format-video" style="font-size: 48px; width: 48px; height: 48px;"></span>' +
+                '<p>Nhập Video URL và tải lên hình ảnh<br>để xem preview</p>' +
+                '</div>'
+            );
+            return;
+        }
+        
+        // Detect video type
+        var videoType = 'direct';
+        var embedUrl = videoUrl;
+        var videoId = null;
+        
+        // YouTube detection
+        var youtubeMatch = videoUrl.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i);
+        if (youtubeMatch) {
+            videoType = 'youtube';
+            videoId = youtubeMatch[1];
+            embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&mute=1&loop=1&playlist=' + videoId + '&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+        }
+        
+        // Vimeo detection
+        var vimeoMatch = videoUrl.match(/vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|)(\d+)(?:$|\/|\?)/i);
+        if (vimeoMatch) {
+            videoType = 'vimeo';
+            videoId = vimeoMatch[1];
+            embedUrl = 'https://player.vimeo.com/video/' + videoId + '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+        }
+        
+        // Generate unique ID
+        var uniqueId = 'anmi-preview-' + Date.now();
+        
+        // Build HTML
+        var html = '<div class="anmi-video-banner-container ' + uniqueId + ' transition-' + transition + '" ' +
+                   'style="height: 300px;" ' +
+                   'data-autoplay-delay="' + autoplayDelay + '" ' +
+                   'data-mobile-behavior="both" ' +
+                   'data-slider-speed="' + sliderSpeed + '" ' +
+                   'data-slider-effect="' + sliderEffect + '" ' +
+                   'data-video-type="' + videoType + '">';
+        
+        // Video/Iframe
+        if (videoType === 'youtube' || videoType === 'vimeo') {
+            html += '<iframe class="anmi-banner-video anmi-banner-iframe" ' +
+                    'src="' + embedUrl + '" ' +
+                    'frameborder="0" ' +
+                    'allow="autoplay; fullscreen; picture-in-picture" ' +
+                    'allowfullscreen ' +
+                    'style="pointer-events: none;"></iframe>';
+        } else {
+            html += '<video class="anmi-banner-video" loop muted playsinline preload="metadata" ' +
+                    'poster="' + (imagesArray[0] || '') + '">' +
+                    '<source src="' + embedUrl + '" type="video/mp4">' +
+                    '</video>';
+        }
+        
+        // Image Slider
+        html += '<div class="anmi-banner-slider">';
+        imagesArray.forEach(function(imageUrl, index) {
+            html += '<div class="anmi-slider-slide ' + (index === 0 ? 'active' : '') + '" ' +
+                    'style="background-image: url(\'' + imageUrl + '\');"></div>';
+        });
+        
+        // Slider dots (if multiple images)
+        if (imagesArray.length > 1) {
+            html += '<div class="anmi-slider-dots">';
+            imagesArray.forEach(function(imageUrl, index) {
+                html += '<span class="dot ' + (index === 0 ? 'active' : '') + '" data-slide="' + index + '"></span>';
+            });
+            html += '</div>';
+        }
+        html += '</div>'; // Close slider
+        
+        // Content Overlay
+        if (title || subtitle || buttonText) {
+            html += '<div class="anmi-banner-content" ' +
+                    'data-show-title="' + showTitle + '" ' +
+                    'data-show-subtitle="' + showSubtitle + '" ' +
+                    'data-show-button="' + showButton + '">';
+            
+            if (title && showTitle === '1') {
+                html += '<h1 class="anmi-banner-title">' + title + '</h1>';
+            }
+            if (subtitle && showSubtitle === '1') {
+                html += '<p class="anmi-banner-subtitle">' + subtitle + '</p>';
+            }
+            if (buttonText && showButton === '1') {
+                html += '<a href="' + buttonLink + '" class="anmi-banner-btn">' + buttonText + '</a>';
+            }
+            
+            html += '</div>';
+        }
+        
+        // Loading spinner
+        html += '<div class="anmi-banner-loader"><div class="spinner"></div></div>';
+        
+        html += '</div>'; // Close container
+        
+        // Inject HTML
+        $('#live_preview_container').html(html);
+        
+        // Destroy previous instance if exists
+        if (previewInstance) {
+            try {
+                previewInstance = null;
+            } catch(e) {}
+        }
+        
+        // Initialize banner functionality
+        setTimeout(function() {
+            var $container = $('.' + uniqueId);
+            if ($container.length && typeof AnMiVideoBanner !== 'undefined') {
+                previewInstance = new AnMiVideoBanner($container[0]);
+            }
+        }, 100);
+    }
+    
+    // Trigger preview update on field changes
+    $('#video_url, #banner_title, #banner_subtitle, #button_text, #button_link, #transition, #autoplay_delay, #slider_speed, #slider_effect').on('input change', function() {
+        updateLivePreview();
+    });
+    
+    $('#show_title, #show_subtitle, #show_button').on('change', function() {
+        updateLivePreview();
+    });
+    
+    // Initial preview render
+    updateLivePreview();
 });
 </script>
