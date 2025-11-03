@@ -182,6 +182,64 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                         <h2>📝 Content Overlay (Optional)</h2>
                     </div>
                     <div class="inside">
+                        <!-- Visibility Toggles -->
+                        <div class="visibility-toggles" style="background: #f0f0f1; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+                            <p style="margin-top: 0; font-weight: 600; color: #1d2327;">
+                                <span class="dashicons dashicons-visibility" style="vertical-align: middle;"></span> 
+                                Content Visibility Controls
+                            </p>
+                            <p class="description" style="margin-bottom: 15px;">
+                                Toggle to show/hide content elements on the banner. By default, all elements are hidden.
+                            </p>
+                            
+                            <table class="form-table" style="margin: 0;">
+                                <tr>
+                                    <th style="padding-top: 0;"><label for="show_title">Show Title</label></th>
+                                    <td style="padding-top: 0;">
+                                        <label class="switch">
+                                            <input type="checkbox" 
+                                                   id="show_title" 
+                                                   name="show_title" 
+                                                   value="1"
+                                                   <?php echo ($is_edit && !empty($banner->show_title)) ? 'checked' : ''; ?>>
+                                            <span class="slider-switch"></span>
+                                        </label>
+                                        <span class="description" style="margin-left: 10px;">Display the title text on banner</span>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <th><label for="show_subtitle">Show Subtitle</label></th>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox" 
+                                                   id="show_subtitle" 
+                                                   name="show_subtitle" 
+                                                   value="1"
+                                                   <?php echo ($is_edit && !empty($banner->show_subtitle)) ? 'checked' : ''; ?>>
+                                            <span class="slider-switch"></span>
+                                        </label>
+                                        <span class="description" style="margin-left: 10px;">Display the subtitle text on banner</span>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <th><label for="show_button">Show CTA Button</label></th>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox" 
+                                                   id="show_button" 
+                                                   name="show_button" 
+                                                   value="1"
+                                                   <?php echo ($is_edit && !empty($banner->show_button)) ? 'checked' : ''; ?>>
+                                            <span class="slider-switch"></span>
+                                        </label>
+                                        <span class="description" style="margin-left: 10px;">Display the call-to-action button</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        
                         <table class="form-table">
                             <tr>
                                 <th><label for="title">Title</label></th>
