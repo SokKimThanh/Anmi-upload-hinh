@@ -650,12 +650,10 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
                         src="<?php echo esc_url($video_embed_url); ?>" 
                         frameborder="0" 
                         allow="autoplay; fullscreen" 
-                        allowfullscreen
-                        style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.5s ease; z-index: 3; pointer-events: none;"></iframe>
+                        allowfullscreen></iframe>
             <?php else: ?>
                 <video class="anmi-banner-video" 
-                       loop muted playsinline preload="auto"
-                       style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.5s ease; z-index: 3; object-fit: cover;">
+                       loop muted playsinline preload="auto">
                     <source src="<?php echo esc_url($video_url); ?>" type="video/mp4">
                 </video>
             <?php endif; ?>
