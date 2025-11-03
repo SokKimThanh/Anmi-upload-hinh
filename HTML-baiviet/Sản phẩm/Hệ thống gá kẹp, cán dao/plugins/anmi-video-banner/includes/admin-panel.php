@@ -28,6 +28,7 @@ class AnMi_Video_Banner_Admin {
         add_action('wp_ajax_anmi_save_banner', array($this, 'ajax_save_banner'));
         add_action('wp_ajax_anmi_delete_banner', array($this, 'ajax_delete_banner'));
         add_action('wp_ajax_anmi_get_banner', array($this, 'ajax_get_banner'));
+        add_action('wp_ajax_anmi_get_banner_preview', array($this, 'ajax_get_banner_preview'));
         
         // Create database table on activation
         register_activation_hook(ANMI_VIDEO_BANNER_FILE, array($this, 'create_database_table'));
@@ -362,6 +363,46 @@ class AnMi_Video_Banner_Admin {
         return $wpdb->get_row($wpdb->prepare(
             "SELECT * FROM {$table_name} WHERE id = %d",
             $banner_id
+        ));
+    }
+    
+    /**
+     * AJAX handler for preview modal
+     */
+    public function ajax_get_banner_preview() {
+        check_ajax_referer('anmi_banner_nonce', 'nonce');
+        
+        $banner_id = intval($_POST['banner_id']);
+        
+        if (!$banner_id) {
+            wp_send_json_error('Invalid banner ID');
+        }
+        
+        $banner = self::get_banner($banner_id);
+        
+        if (!$banner) {
+            wp_send_json_error('Banner not found');
+        }
+        
+        // Return banner data
+        wp_send_json_success(array(
+            'id' => $banner->id,
+            'name' => $banner->name,
+            'video_url' => $banner->video_url,
+            'images' => $banner->images,
+            'title' => $banner->title,
+            'subtitle' => $banner->subtitle,
+            'button_text' => $banner->button_text,
+            'button_link' => $banner->button_link,
+            'show_title' => $banner->show_title,
+            'show_subtitle' => $banner->show_subtitle,
+            'show_button' => $banner->show_button,
+            'height' => $banner->height,
+            'transition' => $banner->transition,
+            'slider_speed' => $banner->slider_speed,
+            'slider_effect' => $banner->slider_effect,
+            'autoplay_delay' => $banner->autoplay_delay,
+            'mobile_behavior' => $banner->mobile_behavior
         ));
     }
 }

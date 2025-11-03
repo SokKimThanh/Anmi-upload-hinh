@@ -281,10 +281,219 @@ jQuery(document).ready(function($) {
         });
     });
     
-    // Preview banner (modal - to be implemented)
+    // Preview banner modal
     $('.preview-banner').on('click', function(e) {
         e.preventDefault();
-        alert('Preview functionality coming soon!');
+        var bannerId = $(this).data('banner-id');
+        
+        // Show loading modal
+        showPreviewModal(bannerId);
     });
+    
+    function showPreviewModal(bannerId) {
+        // Create modal HTML if not exists
+        if ($('#anmi-preview-modal').length === 0) {
+            var modalHtml = '<div id="anmi-preview-modal" class="anmi-modal">' +
+                '<div class="anmi-modal-overlay"></div>' +
+                '<div class="anmi-modal-content">' +
+                    '<div class="anmi-modal-header">' +
+                        '<h2>👁️ Xem Trước Banner</h2>' +
+                        '<button class="anmi-modal-close">&times;</button>' +
+                    '</div>' +
+                    '<div class="anmi-modal-body">' +
+                        '<div class="anmi-modal-loading">' +
+                            '<span class="dashicons dashicons-update spin"></span>' +
+                            '<p>Đang tải preview...</p>' +
+                        '</div>' +
+                        '<div id="anmi-preview-container" style="display: none;"></div>' +
+                    '</div>' +
+                '</div>' +
+            '</div>';
+            
+            $('body').append(modalHtml);
+            
+            // Close modal events
+            $('.anmi-modal-close, .anmi-modal-overlay').on('click', function() {
+                closePreviewModal();
+            });
+            
+            // ESC key to close
+            $(document).on('keyup', function(e) {
+                if (e.key === 'Escape') {
+                    closePreviewModal();
+                }
+            });
+        }
+        
+        // Show modal
+        $('#anmi-preview-modal').fadeIn(300);
+        $('body').addClass('anmi-modal-open');
+        
+        // Load banner data via AJAX
+        $.ajax({
+            url: anmiBannerAdmin.ajax_url,
+            type: 'POST',
+            data: {
+                action: 'anmi_get_banner_preview',
+                banner_id: bannerId,
+                nonce: anmiBannerAdmin.nonce
+            },
+            success: function(response) {
+                if (response.success) {
+                    renderPreview(response.data);
+                } else {
+                    showPreviewError(response.data || 'Không thể tải banner');
+                }
+            },
+            error: function() {
+                showPreviewError('Lỗi kết nối. Vui lòng thử lại.');
+            }
+        });
+    }
+    
+    function renderPreview(banner) {
+        $('.anmi-modal-loading').hide();
+        
+        // Parse images
+        var images = [];
+        try {
+            images = JSON.parse(banner.images);
+        } catch(e) {
+            images = [banner.images];
+        }
+        
+        if (!Array.isArray(images)) {
+            images = [images];
+        }
+        
+        // Detect video type
+        var videoType = 'direct';
+        var embedUrl = banner.video_url;
+        var videoId = null;
+        
+        // YouTube detection
+        var youtubeMatch = banner.video_url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i);
+        if (youtubeMatch) {
+            videoType = 'youtube';
+            videoId = youtubeMatch[1];
+            embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&mute=1&loop=1&playlist=' + videoId + '&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+        }
+        
+        // Vimeo detection
+        var vimeoMatch = banner.video_url.match(/vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|)(\d+)(?:$|\/|\?)/i);
+        if (vimeoMatch) {
+            videoType = 'vimeo';
+            videoId = vimeoMatch[1];
+            embedUrl = 'https://player.vimeo.com/video/' + videoId + '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+        }
+        
+        // Generate unique ID
+        var uniqueId = 'anmi-modal-preview-' + Date.now();
+        
+        // Build HTML
+        var html = '<div class="anmi-video-banner-container ' + uniqueId + ' transition-' + banner.transition + '" ' +
+                   'style="height: 500px;" ' +
+                   'data-autoplay-delay="' + banner.autoplay_delay + '" ' +
+                   'data-mobile-behavior="both" ' +
+                   'data-slider-speed="' + banner.slider_speed + '" ' +
+                   'data-slider-effect="' + banner.slider_effect + '" ' +
+                   'data-video-type="' + videoType + '">';
+        
+        // Video/Iframe
+        if (videoType === 'youtube' || videoType === 'vimeo') {
+            html += '<iframe class="anmi-banner-video anmi-banner-iframe" ' +
+                    'src="' + embedUrl + '" ' +
+                    'frameborder="0" ' +
+                    'allow="autoplay; fullscreen; picture-in-picture" ' +
+                    'allowfullscreen ' +
+                    'style="pointer-events: none;"></iframe>';
+        } else {
+            html += '<video class="anmi-banner-video" loop muted playsinline preload="metadata" ' +
+                    'poster="' + (images[0] || '') + '">' +
+                    '<source src="' + embedUrl + '" type="video/mp4">' +
+                    '</video>';
+        }
+        
+        // Image Slider
+        html += '<div class="anmi-banner-slider">';
+        images.forEach(function(imageUrl, index) {
+            html += '<div class="anmi-slider-slide ' + (index === 0 ? 'active' : '') + '" ' +
+                    'style="background-image: url(\'' + imageUrl + '\');"></div>';
+        });
+        
+        // Slider dots
+        if (images.length > 1) {
+            html += '<div class="anmi-slider-dots">';
+            images.forEach(function(imageUrl, index) {
+                html += '<span class="dot ' + (index === 0 ? 'active' : '') + '" data-slide="' + index + '"></span>';
+            });
+            html += '</div>';
+        }
+        html += '</div>'; // Close slider
+        
+        // Content Overlay
+        if (banner.title || banner.subtitle || banner.button_text) {
+            html += '<div class="anmi-banner-content" ' +
+                    'data-show-title="' + banner.show_title + '" ' +
+                    'data-show-subtitle="' + banner.show_subtitle + '" ' +
+                    'data-show-button="' + banner.show_button + '">';
+            
+            if (banner.title && banner.show_title == '1') {
+                html += '<h1 class="anmi-banner-title">' + banner.title + '</h1>';
+            }
+            if (banner.subtitle && banner.show_subtitle == '1') {
+                html += '<p class="anmi-banner-subtitle">' + banner.subtitle + '</p>';
+            }
+            if (banner.button_text && banner.show_button == '1') {
+                html += '<a href="' + banner.button_link + '" class="anmi-banner-btn" target="_blank">' + banner.button_text + '</a>';
+            }
+            
+            html += '</div>';
+        }
+        
+        // Loading spinner
+        html += '<div class="anmi-banner-loader"><div class="spinner"></div></div>';
+        
+        html += '</div>'; // Close container
+        
+        // Add info box
+        html += '<div class="anmi-preview-info">' +
+                '<p><strong>💡 Tip:</strong> Hover chuột vào banner để xem video phát</p>' +
+                '<p><strong>📋 Shortcode:</strong> <code>[anmi_video_banner id="' + banner.id + '"]</code></p>' +
+                '</div>';
+        
+        // Inject HTML
+        $('#anmi-preview-container').html(html).fadeIn(300);
+        
+        // Initialize banner functionality
+        setTimeout(function() {
+            var $container = $('.' + uniqueId);
+            if ($container.length && typeof AnMiVideoBanner !== 'undefined') {
+                new AnMiVideoBanner($container[0]);
+            }
+        }, 100);
+    }
+    
+    function showPreviewError(message) {
+        $('.anmi-modal-loading').hide();
+        $('#anmi-preview-container').html(
+            '<div class="anmi-preview-error">' +
+            '<span class="dashicons dashicons-warning"></span>' +
+            '<p>' + message + '</p>' +
+            '</div>'
+        ).fadeIn(300);
+    }
+    
+    function closePreviewModal() {
+        $('#anmi-preview-modal').fadeOut(300);
+        $('body').removeClass('anmi-modal-open');
+        
+        // Clear preview content after animation
+        setTimeout(function() {
+            $('#anmi-preview-container').html('').hide();
+            $('.anmi-modal-loading').show();
+        }, 300);
+    }
 });
 </script>
+
