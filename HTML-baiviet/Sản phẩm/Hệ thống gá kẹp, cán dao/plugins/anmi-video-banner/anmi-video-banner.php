@@ -2,8 +2,8 @@
 /**
  * Plugin Name: An Mi Video Banner
  * Plugin URI: https://anmitools.com
- * Description: Tạo video banner với slider ảnh tự động - hover để chuyển sang video với hiệu ứng transition
- * Version: 1.1.0
+ * Description: Video banner với slider tự động + Admin CRUD panel - YouTube/Vimeo/MP4 support
+ * Version: 1.2.0
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
@@ -14,6 +14,15 @@
 if (!defined('ABSPATH')) {
     exit;
 }
+
+// Define plugin constants
+define('ANMI_VIDEO_BANNER_VERSION', '1.2.0');
+define('ANMI_VIDEO_BANNER_FILE', __FILE__);
+define('ANMI_VIDEO_BANNER_PATH', plugin_dir_path(__FILE__));
+define('ANMI_VIDEO_BANNER_URL', plugin_dir_url(__FILE__));
+
+// Include admin panel
+require_once ANMI_VIDEO_BANNER_PATH . 'includes/admin-panel.php';
 
 class AnMi_Video_Banner {
     
@@ -62,10 +71,11 @@ class AnMi_Video_Banner {
     /**
      * Render video banner shortcode
      * 
-     * Usage: [anmi_video_banner video_url="video.mp4" images="image1.jpg,image2.jpg,image3.jpg" height="600px" slider_speed="3000"]
+     * Usage: [anmi_video_banner id="1"] OR [anmi_video_banner video_url="..." images="..."]
      */
     public function render_video_banner($atts) {
         $atts = shortcode_atts(array(
+            'id' => '', // Banner ID from database
             'video_url' => '',
             'images' => '', // Comma-separated image URLs for slider
             'image_url' => '', // Backward compatibility - single image
@@ -81,10 +91,38 @@ class AnMi_Video_Banner {
             'slider_effect' => 'fade', // fade, slide
         ), $atts, 'anmi_video_banner');
         
+        // If ID is provided, load banner from database
+        if (!empty($atts['id'])) {
+            $banner = AnMi_Video_Banner_Admin::get_banner(intval($atts['id']));
+            
+            if (!$banner) {
+                return '<p style="color:red;">Error: Banner not found!</p>';
+            }
+            
+            // Override attributes with database values
+            $atts['video_url'] = $banner->video_url;
+            $atts['images'] = $banner->images;
+            $atts['height'] = $banner->height;
+            $atts['title'] = $banner->title;
+            $atts['subtitle'] = $banner->subtitle;
+            $atts['button_text'] = $banner->button_text;
+            $atts['button_link'] = $banner->button_link;
+            $atts['transition'] = $banner->transition;
+            $atts['mobile_behavior'] = $banner->mobile_behavior;
+            $atts['autoplay_delay'] = $banner->autoplay_delay;
+            $atts['slider_speed'] = $banner->slider_speed;
+            $atts['slider_effect'] = $banner->slider_effect;
+        }
+        
         // Parse images - support both comma-separated and single image
         $image_urls = array();
         if (!empty($atts['images'])) {
-            $image_urls = array_map('trim', explode(',', $atts['images']));
+            // Check if it's JSON from database
+            if (is_string($atts['images']) && strpos($atts['images'], '[') === 0) {
+                $image_urls = json_decode($atts['images'], true);
+            } else {
+                $image_urls = array_map('trim', explode(',', $atts['images']));
+            }
         } elseif (!empty($atts['image_url'])) {
             $image_urls = array($atts['image_url']);
         }

@@ -35,12 +35,59 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
         // CONTENT TAB
         // ============================================
         
-        // Video & Image Section
+        // Banner Selection Section
+        $this->start_controls_section(
+            'section_banner_select',
+            [
+                'label' => __('Select Banner', 'anmi-video-banner'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+        
+        // Get banners from database
+        $banners = AnMi_Video_Banner_Admin::get_all_banners();
+        $banner_options = ['manual' => __('Manual Setup', 'anmi-video-banner')];
+        
+        if (!empty($banners)) {
+            foreach ($banners as $banner) {
+                $banner_options[$banner->id] = $banner->name;
+            }
+        }
+        
+        $this->add_control(
+            'banner_source',
+            [
+                'label' => __('Banner Source', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'options' => $banner_options,
+                'default' => 'manual',
+                'description' => __('Select from saved banners or configure manually', 'anmi-video-banner'),
+            ]
+        );
+        
+        $this->add_control(
+            'banner_note',
+            [
+                'type' => \Elementor\Controls_Manager::RAW_HTML,
+                'raw' => __('<a href="' . admin_url('admin.php?page=anmi-video-banner-new') . '" target="_blank">Create New Banner</a> in Admin Panel', 'anmi-video-banner'),
+                'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
+                'condition' => [
+                    'banner_source!' => 'manual',
+                ],
+            ]
+        );
+        
+        $this->end_controls_section();
+        
+        // Video & Image Section (Manual Mode)
         $this->start_controls_section(
             'section_media',
             [
-                'label' => __('Video & Image', 'anmi-video-banner'),
+                'label' => __('Video & Images', 'anmi-video-banner'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+                'condition' => [
+                    'banner_source' => 'manual',
+                ],
             ]
         );
         
@@ -48,24 +95,20 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             'video_url',
             [
                 'label' => __('Video URL', 'anmi-video-banner'),
-                'type' => \Elementor\Controls_Manager::MEDIA,
-                'media_type' => 'video',
-                'default' => [
-                    'url' => '',
-                ],
-                'description' => __('Upload or select a video file (.mp4 recommended)', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'input_type' => 'url',
+                'placeholder' => 'https://yourdomain.com/video.mp4',
+                'description' => __('YouTube, Vimeo, or direct MP4 URL', 'anmi-video-banner'),
             ]
         );
         
         $this->add_control(
-            'image_url',
+            'images',
             [
-                'label' => __('Image Overlay', 'anmi-video-banner'),
-                'type' => \Elementor\Controls_Manager::MEDIA,
-                'default' => [
-                    'url' => \Elementor\Utils::get_placeholder_image_src(),
-                ],
-                'description' => __('This image will be shown initially, video plays on hover', 'anmi-video-banner'),
+                'label' => __('Slider Images', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::GALLERY,
+                'default' => [],
+                'description' => __('Upload multiple images for the slider', 'anmi-video-banner'),
             ]
         );
         
@@ -77,6 +120,9 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             [
                 'label' => __('Content', 'anmi-video-banner'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+                'condition' => [
+                    'banner_source' => 'manual',
+                ],
             ]
         );
         
@@ -308,46 +354,108 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
     protected function render() {
         $settings = $this->get_settings_for_display();
         
-        $video_url = !empty($settings['video_url']['url']) ? $settings['video_url']['url'] : '';
-        $image_url = !empty($settings['image_url']['url']) ? $settings['image_url']['url'] : '';
+        // Check if using database banner or manual setup
+        if ($settings['banner_source'] !== 'manual') {
+            // Load from database
+            $banner_id = intval($settings['banner_source']);
+            $banner = AnMi_Video_Banner_Admin::get_banner($banner_id);
+            
+            if (!$banner) {
+                echo '<p style="color:red;">Banner not found. Please select a valid banner or use manual setup.</p>';
+                return;
+            }
+            
+            // Use database values
+            $video_url = $banner->video_url;
+            $images = json_decode($banner->images, true);
+            $title = $banner->title;
+            $subtitle = $banner->subtitle;
+            $button_text = $banner->button_text;
+            $button_link = $banner->button_link;
+            $height = $banner->height;
+            $transition = $banner->transition;
+            $slider_speed = $banner->slider_speed;
+            $autoplay_delay = $banner->autoplay_delay;
+            $mobile_behavior = $banner->mobile_behavior;
+        } else {
+            // Use manual setup
+            $video_url = !empty($settings['video_url']) ? $settings['video_url'] : '';
+            $images = array();
+            
+            if (!empty($settings['images'])) {
+                foreach ($settings['images'] as $image) {
+                    $images[] = $image['url'];
+                }
+            }
+            
+            $title = $settings['title'];
+            $subtitle = $settings['subtitle'];
+            $button_text = $settings['button_text'];
+            $button_link = !empty($settings['button_link']['url']) ? $settings['button_link']['url'] : '#';
+            $height = $settings['height'];
+            $transition = $settings['transition'];
+            $slider_speed = $settings['slider_speed'];
+            $autoplay_delay = $settings['autoplay_delay'];
+            $mobile_behavior = $settings['mobile_behavior'];
+        }
         
-        if (empty($video_url) || empty($image_url)) {
-            echo '<p style="color:red;">Please select both video and image in widget settings.</p>';
+        // Validate
+        if (empty($video_url) || empty($images)) {
+            echo '<p style="color:red;">Please provide both video URL and at least one image.</p>';
             return;
         }
         
         $unique_id = 'anmi-vb-' . $this->get_id();
-        $button_link = !empty($settings['button_link']['url']) ? $settings['button_link']['url'] : '#';
         ?>
         
-        <div class="anmi-video-banner-container <?php echo esc_attr($unique_id); ?> transition-<?php echo esc_attr($settings['transition']); ?>" 
-             data-autoplay-delay="<?php echo esc_attr($settings['autoplay_delay']); ?>"
-             data-mobile-behavior="<?php echo esc_attr($settings['mobile_behavior']); ?>">
+        <div class="anmi-video-banner-container <?php echo esc_attr($unique_id); ?> transition-<?php echo esc_attr($transition); ?>" 
+             style="height: <?php echo esc_attr($height); ?>;"
+             data-autoplay-delay="<?php echo esc_attr($autoplay_delay); ?>"
+             data-mobile-behavior="<?php echo esc_attr($mobile_behavior); ?>"
+             data-slider-speed="<?php echo esc_attr($slider_speed); ?>"
+             data-slider-effect="fade">
             
+            <!-- Video Background -->
             <video class="anmi-banner-video" loop muted playsinline preload="auto">
                 <source src="<?php echo esc_url($video_url); ?>" type="video/mp4">
             </video>
             
-            <div class="anmi-banner-image" style="background-image: url('<?php echo esc_url($image_url); ?>');"></div>
+            <!-- Image Slider -->
+            <div class="anmi-banner-slider">
+                <?php foreach ($images as $index => $image_url): ?>
+                    <div class="anmi-slider-slide <?php echo $index === 0 ? 'active' : ''; ?>" 
+                         style="background-image: url('<?php echo esc_url($image_url); ?>');"></div>
+                <?php endforeach; ?>
+                
+                <?php if (count($images) > 1): ?>
+                    <div class="anmi-slider-dots">
+                        <?php foreach ($images as $index => $image_url): ?>
+                            <span class="dot <?php echo $index === 0 ? 'active' : ''; ?>" data-slide="<?php echo $index; ?>"></span>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+            </div>
             
-            <?php if (!empty($settings['title']) || !empty($settings['subtitle']) || !empty($settings['button_text'])): ?>
+            <?php if (!empty($title) || !empty($subtitle) || !empty($button_text)): ?>
+            <!-- Content Overlay -->
             <div class="anmi-banner-content">
-                <?php if (!empty($settings['title'])): ?>
-                    <h1 class="anmi-banner-title"><?php echo esc_html($settings['title']); ?></h1>
+                <?php if (!empty($title)): ?>
+                    <h1 class="anmi-banner-title"><?php echo esc_html($title); ?></h1>
                 <?php endif; ?>
                 
-                <?php if (!empty($settings['subtitle'])): ?>
-                    <p class="anmi-banner-subtitle"><?php echo esc_html($settings['subtitle']); ?></p>
+                <?php if (!empty($subtitle)): ?>
+                    <p class="anmi-banner-subtitle"><?php echo esc_html($subtitle); ?></p>
                 <?php endif; ?>
                 
-                <?php if (!empty($settings['button_text'])): ?>
+                <?php if (!empty($button_text)): ?>
                     <a href="<?php echo esc_url($button_link); ?>" class="anmi-banner-btn">
-                        <?php echo esc_html($settings['button_text']); ?>
+                        <?php echo esc_html($button_text); ?>
                     </a>
                 <?php endif; ?>
             </div>
             <?php endif; ?>
             
+            <!-- Loading Spinner -->
             <div class="anmi-banner-loader">
                 <div class="spinner"></div>
             </div>

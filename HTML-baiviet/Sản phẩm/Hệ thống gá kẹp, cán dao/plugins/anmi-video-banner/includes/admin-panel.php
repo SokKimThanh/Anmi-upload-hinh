@@ -1,0 +1,335 @@
+<?php
+/**
+ * AN MI VIDEO BANNER - ADMIN PANEL
+ * Version: 1.2.0
+ * CRUD Interface for managing video banners
+ */
+
+// Prevent direct access
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+class AnMi_Video_Banner_Admin {
+    
+    private $table_name;
+    
+    public function __construct() {
+        global $wpdb;
+        $this->table_name = $wpdb->prefix . 'anmi_video_banners';
+        
+        // Admin menu
+        add_action('admin_menu', array($this, 'add_admin_menu'));
+        
+        // Admin scripts and styles
+        add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_assets'));
+        
+        // AJAX handlers
+        add_action('wp_ajax_anmi_save_banner', array($this, 'ajax_save_banner'));
+        add_action('wp_ajax_anmi_delete_banner', array($this, 'ajax_delete_banner'));
+        add_action('wp_ajax_anmi_get_banner', array($this, 'ajax_get_banner'));
+        
+        // Create database table on activation
+        register_activation_hook(ANMI_VIDEO_BANNER_FILE, array($this, 'create_database_table'));
+    }
+    
+    /**
+     * Create database table for banners
+     */
+    public function create_database_table() {
+        global $wpdb;
+        
+        $charset_collate = $wpdb->get_charset_collate();
+        
+        $sql = "CREATE TABLE IF NOT EXISTS {$this->table_name} (
+            id bigint(20) NOT NULL AUTO_INCREMENT,
+            name varchar(255) NOT NULL,
+            video_url text NOT NULL,
+            video_type varchar(50) DEFAULT 'url',
+            images text NOT NULL,
+            title varchar(255) DEFAULT '',
+            subtitle text DEFAULT '',
+            button_text varchar(100) DEFAULT '',
+            button_link varchar(255) DEFAULT '',
+            height varchar(50) DEFAULT '600px',
+            transition varchar(50) DEFAULT 'fade',
+            slider_speed int(11) DEFAULT 3000,
+            slider_effect varchar(50) DEFAULT 'fade',
+            autoplay_delay int(11) DEFAULT 0,
+            mobile_behavior varchar(50) DEFAULT 'image',
+            status varchar(20) DEFAULT 'active',
+            created_at datetime DEFAULT CURRENT_TIMESTAMP,
+            updated_at datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+            PRIMARY KEY (id)
+        ) $charset_collate;";
+        
+        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+        dbDelta($sql);
+    }
+    
+    /**
+     * Add admin menu
+     */
+    public function add_admin_menu() {
+        add_menu_page(
+            'An Mi Video Banners',
+            'Video Banners',
+            'manage_options',
+            'anmi-video-banners',
+            array($this, 'render_admin_page'),
+            'dashicons-video-alt3',
+            30
+        );
+        
+        add_submenu_page(
+            'anmi-video-banners',
+            'All Banners',
+            'All Banners',
+            'manage_options',
+            'anmi-video-banners',
+            array($this, 'render_admin_page')
+        );
+        
+        add_submenu_page(
+            'anmi-video-banners',
+            'Add New Banner',
+            'Add New',
+            'manage_options',
+            'anmi-video-banner-new',
+            array($this, 'render_edit_page')
+        );
+        
+        add_submenu_page(
+            null, // Hidden from menu
+            'Edit Banner',
+            'Edit Banner',
+            'manage_options',
+            'anmi-video-banner-edit',
+            array($this, 'render_edit_page')
+        );
+    }
+    
+    /**
+     * Enqueue admin assets
+     */
+    public function enqueue_admin_assets($hook) {
+        // Only load on our admin pages
+        if (strpos($hook, 'anmi-video-banner') === false) {
+            return;
+        }
+        
+        // WordPress Media Library
+        wp_enqueue_media();
+        
+        // Admin CSS
+        wp_enqueue_style(
+            'anmi-banner-admin-css',
+            plugin_dir_url(dirname(__FILE__)) . 'assets/css/admin-style.css',
+            array(),
+            '1.2.0'
+        );
+        
+        // Admin JS
+        wp_enqueue_script(
+            'anmi-banner-admin-js',
+            plugin_dir_url(dirname(__FILE__)) . 'assets/js/admin-script.js',
+            array('jquery', 'jquery-ui-sortable'),
+            '1.2.0',
+            true
+        );
+        
+        // Localize script
+        wp_localize_script('anmi-banner-admin-js', 'anmiBannerAdmin', array(
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'nonce' => wp_create_nonce('anmi_banner_nonce')
+        ));
+    }
+    
+    /**
+     * Render main admin page (list of banners)
+     */
+    public function render_admin_page() {
+        global $wpdb;
+        
+        // Get all banners
+        $banners = $wpdb->get_results("SELECT * FROM {$this->table_name} ORDER BY created_at DESC");
+        
+        include plugin_dir_path(dirname(__FILE__)) . 'includes/views/admin-list.php';
+    }
+    
+    /**
+     * Render edit/add banner page
+     */
+    public function render_edit_page() {
+        global $wpdb;
+        
+        $banner_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+        $banner = null;
+        
+        if ($banner_id > 0) {
+            $banner = $wpdb->get_row($wpdb->prepare(
+                "SELECT * FROM {$this->table_name} WHERE id = %d",
+                $banner_id
+            ));
+        }
+        
+        include plugin_dir_path(dirname(__FILE__)) . 'includes/views/admin-edit.php';
+    }
+    
+    /**
+     * AJAX: Save banner
+     */
+    public function ajax_save_banner() {
+        check_ajax_referer('anmi_banner_nonce', 'nonce');
+        
+        if (!current_user_can('manage_options')) {
+            wp_send_json_error('Permission denied');
+        }
+        
+        global $wpdb;
+        
+        $banner_id = isset($_POST['banner_id']) ? intval($_POST['banner_id']) : 0;
+        $name = sanitize_text_field($_POST['name']);
+        $video_url = esc_url_raw($_POST['video_url']);
+        $video_type = sanitize_text_field($_POST['video_type']);
+        $images = sanitize_textarea_field($_POST['images']); // JSON array
+        $title = sanitize_text_field($_POST['title']);
+        $subtitle = sanitize_textarea_field($_POST['subtitle']);
+        $button_text = sanitize_text_field($_POST['button_text']);
+        $button_link = esc_url_raw($_POST['button_link']);
+        $height = sanitize_text_field($_POST['height']);
+        $transition = sanitize_text_field($_POST['transition']);
+        $slider_speed = intval($_POST['slider_speed']);
+        $slider_effect = sanitize_text_field($_POST['slider_effect']);
+        $autoplay_delay = intval($_POST['autoplay_delay']);
+        $mobile_behavior = sanitize_text_field($_POST['mobile_behavior']);
+        $status = sanitize_text_field($_POST['status']);
+        
+        $data = array(
+            'name' => $name,
+            'video_url' => $video_url,
+            'video_type' => $video_type,
+            'images' => $images,
+            'title' => $title,
+            'subtitle' => $subtitle,
+            'button_text' => $button_text,
+            'button_link' => $button_link,
+            'height' => $height,
+            'transition' => $transition,
+            'slider_speed' => $slider_speed,
+            'slider_effect' => $slider_effect,
+            'autoplay_delay' => $autoplay_delay,
+            'mobile_behavior' => $mobile_behavior,
+            'status' => $status
+        );
+        
+        if ($banner_id > 0) {
+            // Update existing banner
+            $result = $wpdb->update(
+                $this->table_name,
+                $data,
+                array('id' => $banner_id),
+                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d', '%s', '%s'),
+                array('%d')
+            );
+            
+            if ($result !== false) {
+                wp_send_json_success(array(
+                    'message' => 'Banner updated successfully!',
+                    'banner_id' => $banner_id
+                ));
+            }
+        } else {
+            // Insert new banner
+            $result = $wpdb->insert(
+                $this->table_name,
+                $data,
+                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d', '%s', '%s')
+            );
+            
+            if ($result) {
+                wp_send_json_success(array(
+                    'message' => 'Banner created successfully!',
+                    'banner_id' => $wpdb->insert_id
+                ));
+            }
+        }
+        
+        wp_send_json_error('Failed to save banner');
+    }
+    
+    /**
+     * AJAX: Delete banner
+     */
+    public function ajax_delete_banner() {
+        check_ajax_referer('anmi_banner_nonce', 'nonce');
+        
+        if (!current_user_can('manage_options')) {
+            wp_send_json_error('Permission denied');
+        }
+        
+        global $wpdb;
+        
+        $banner_id = intval($_POST['banner_id']);
+        
+        $result = $wpdb->delete(
+            $this->table_name,
+            array('id' => $banner_id),
+            array('%d')
+        );
+        
+        if ($result) {
+            wp_send_json_success('Banner deleted successfully!');
+        }
+        
+        wp_send_json_error('Failed to delete banner');
+    }
+    
+    /**
+     * AJAX: Get banner data
+     */
+    public function ajax_get_banner() {
+        check_ajax_referer('anmi_banner_nonce', 'nonce');
+        
+        global $wpdb;
+        
+        $banner_id = intval($_POST['banner_id']);
+        
+        $banner = $wpdb->get_row($wpdb->prepare(
+            "SELECT * FROM {$this->table_name} WHERE id = %d",
+            $banner_id
+        ));
+        
+        if ($banner) {
+            wp_send_json_success($banner);
+        }
+        
+        wp_send_json_error('Banner not found');
+    }
+    
+    /**
+     * Get all banners (for Elementor widget)
+     */
+    public static function get_all_banners() {
+        global $wpdb;
+        $table_name = $wpdb->prefix . 'anmi_video_banners';
+        
+        return $wpdb->get_results("SELECT id, name FROM {$table_name} WHERE status = 'active' ORDER BY name ASC");
+    }
+    
+    /**
+     * Get banner by ID
+     */
+    public static function get_banner($banner_id) {
+        global $wpdb;
+        $table_name = $wpdb->prefix . 'anmi_video_banners';
+        
+        return $wpdb->get_row($wpdb->prepare(
+            "SELECT * FROM {$table_name} WHERE id = %d",
+            $banner_id
+        ));
+    }
+}
+
+// Initialize admin panel
+new AnMi_Video_Banner_Admin();
