@@ -122,6 +122,110 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
         
         $this->end_controls_section();
         
+        // Video Settings Section (Manual Mode) - v1.6.13
+        $this->start_controls_section(
+            'section_video_settings',
+            [
+                'label' => __('🎛️ Video Settings', 'anmi-video-banner'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+                'condition' => [
+                    'banner_source' => 'manual',
+                    'video_url!' => '',
+                ],
+            ]
+        );
+        
+        $this->add_control(
+            'video_autoplay',
+            [
+                'label' => __('▶️ Auto Play', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('On', 'anmi-video-banner'),
+                'label_off' => __('Off', 'anmi-video-banner'),
+                'return_value' => '1',
+                'default' => '1',
+                'description' => __('Automatically start video playback', 'anmi-video-banner'),
+            ]
+        );
+        
+        $this->add_control(
+            'video_muted',
+            [
+                'label' => __('🔇 Muted', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('On', 'anmi-video-banner'),
+                'label_off' => __('Off', 'anmi-video-banner'),
+                'return_value' => '1',
+                'default' => '1',
+                'description' => __('Start video with sound muted (recommended for autoplay)', 'anmi-video-banner'),
+            ]
+        );
+        
+        $this->add_control(
+            'video_loop',
+            [
+                'label' => __('🔁 Loop', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('On', 'anmi-video-banner'),
+                'label_off' => __('Off', 'anmi-video-banner'),
+                'return_value' => '1',
+                'default' => '1',
+                'description' => __('Loop video playback continuously', 'anmi-video-banner'),
+            ]
+        );
+        
+        $this->add_control(
+            'video_controls',
+            [
+                'label' => __('🎮 Show Controls', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('Show', 'anmi-video-banner'),
+                'label_off' => __('Hide', 'anmi-video-banner'),
+                'return_value' => '1',
+                'default' => '1',
+                'description' => __('Display video player controls (play, pause, volume)', 'anmi-video-banner'),
+            ]
+        );
+        
+        $this->add_control(
+            'video_modestbranding',
+            [
+                'label' => __('📺 Hide YouTube Logo', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('Hide', 'anmi-video-banner'),
+                'label_off' => __('Show', 'anmi-video-banner'),
+                'return_value' => '1',
+                'default' => '1',
+                'description' => __('Hide YouTube logo from control bar', 'anmi-video-banner'),
+            ]
+        );
+        
+        $this->add_control(
+            'video_rel',
+            [
+                'label' => __('🎬 Show Related Videos', 'anmi-video-banner'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('Show', 'anmi-video-banner'),
+                'label_off' => __('Hide', 'anmi-video-banner'),
+                'return_value' => '1',
+                'default' => '0',
+                'description' => __('Show related videos when playback ends', 'anmi-video-banner'),
+            ]
+        );
+        
+        $this->add_control(
+            'video_settings_note',
+            [
+                'type' => \Elementor\Controls_Manager::RAW_HTML,
+                'raw' => __('<div style="padding: 10px; background: #f0f0f1; border-left: 3px solid #0073aa; margin-top: 10px;">
+                    <strong>ℹ️ Note:</strong> Some browsers may block autoplay with sound. It\'s recommended to keep "Muted" ON when using "Auto Play".
+                    </div>', 'anmi-video-banner'),
+                'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
+            ]
+        );
+        
+        $this->end_controls_section();
+        
         // Content Section
         $this->start_controls_section(
             'section_content',
@@ -475,13 +579,13 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             $autoplay_delay = $settings['autoplay_delay'];
             $mobile_behavior = $settings['mobile_behavior'];
             
-            // Video settings defaults for manual mode
-            $video_autoplay = 1;
-            $video_muted = 1;
-            $video_loop = 1;
-            $video_controls = 1;
-            $video_modestbranding = 1;
-            $video_rel = 0;
+            // Video settings from widget controls (v1.6.13)
+            $video_autoplay = !empty($settings['video_autoplay']) ? 1 : 0;
+            $video_muted = !empty($settings['video_muted']) ? 1 : 0;
+            $video_loop = !empty($settings['video_loop']) ? 1 : 0;
+            $video_controls = !empty($settings['video_controls']) ? 1 : 0;
+            $video_modestbranding = !empty($settings['video_modestbranding']) ? 1 : 0;
+            $video_rel = !empty($settings['video_rel']) ? 1 : 0;
         }
         
         // Validate
