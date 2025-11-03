@@ -53,34 +53,71 @@
 
 ```
 anmi-video-banner/
-├── anmi-video-banner.php          # Main plugin file (v1.2.0)
-├── README.md                      # General documentation
-├── ADMIN-PANEL-GUIDE.md          # Admin panel tutorial (NEW)
-├── ELEMENTOR-SETUP-GUIDE.md      # Elementor tutorial (NEW)
-├── INSTALL.md                     # Installation guide
+├── anmi-video-banner.php          # Main plugin file
+├── README.md                      # Documentation chính
 │
-├── assets/
+├── assets/                        # Frontend assets
 │   ├── css/
 │   │   ├── video-banner.css       # Frontend styles
-│   │   └── admin-style.css        # Admin panel styles (NEW)
+│   │   └── admin-style.css        # Admin panel styles
 │   └── js/
 │       ├── video-banner.js        # Frontend JavaScript
-│       └── admin-script.js        # Admin JavaScript (NEW)
+│       └── admin-script.js        # Admin JavaScript
 │
-├── includes/
-│   ├── admin-panel.php            # Admin CRUD logic (NEW)
-│   ├── elementor-widget.php       # Elementor widget (updated)
+├── includes/                      # PHP core files
+│   ├── admin-panel.php            # Admin CRUD logic
+│   ├── elementor-widget.php       # Elementor widget
 │   └── views/
-│       ├── admin-list.php         # Banner list page (NEW)
-│       └── admin-edit.php         # Banner edit form (NEW)
+│       ├── admin-list.php         # Banner list page
+│       └── admin-edit.php         # Banner edit form
 │
-└── demo/
-    ├── index.html                 # General demo
-    ├── anmi-profile-demo.html     # An Mi video demo
-    └── slider-demo.html           # Slider demo (v1.1.0)
+├── demo/                          # HTML demos
+│   ├── index.html                 # General demo
+│   ├── anmi-profile-demo.html     # An Mi video demo
+│   └── slider-demo.html           # Slider demo
+│
+├── docs/                          # Documentation
+│   ├── PLUGIN-SUMMARY.md          # File này - Tổng quan plugin
+│   ├── guides/                    # Hướng dẫn sử dụng
+│   │   ├── INSTALL.md
+│   │   ├── ADMIN-PANEL-GUIDE.md
+│   │   ├── ELEMENTOR-SETUP-GUIDE.md
+│   │   ├── TROUBLESHOOTING.md
+│   │   ├── DEPLOYMENT-CHECKLIST.md
+│   │   ├── MOBILE-TESTING-GUIDE.md
+│   │   └── DEBUG-VOLUME-GUIDE.md
+│   ├── technical/                 # Tài liệu kỹ thuật
+│   │   ├── CSS-ARCHITECTURE.md
+│   │   ├── COMPARISON-YOUTUBE-VS-PLUGIN.md
+│   │   ├── ELEMENTOR-SYNC-NOTES.md
+│   │   ├── MOBILE-VIDEO-ISSUE-ANALYSIS.md
+│   │   ├── VOLUME-CONTROL-LIMITATIONS.md
+│   │   ├── VOLUME-CONTROL-TESTING.md
+│   │   ├── LIVE-PREVIEW-FEATURE.md
+│   │   ├── VIDEO-OPTIMIZATION-NOTES.md
+│   │   └── YOUTUBE-VIMEO-SUPPORT.md
+│   └── archive/                   # Lịch sử phát triển
+│       ├── CHANGELOG.md
+│       ├── FEATURE-SUMMARY-v1.6.13.md
+│       ├── MIGRATION-v1.6.13.md
+│       ├── MOBILE-FIX-SUMMARY.md
+│       ├── QUICK-FIX-SAVE-ERROR.md
+│       └── SUMMARY-v1.6.10.md
+│
+└── tests/                         # Testing & debugging
+    ├── check-database.sql
+    ├── migrate-v1.6.13.php
+    ├── EMBED-CODE-TEST.md
+    └── VOLUME-DEBUG-TEST.html
 ```
 
-**Total:** 15+ files, ~6000+ lines of code
+**Tổ chức theo chức năng:**
+- **Core files** (root): Plugin chính, README
+- **assets/**: CSS & JavaScript cho frontend và admin
+- **includes/**: PHP logic và templates
+- **demo/**: HTML demos để test
+- **docs/**: Documentation được phân loại rõ ràng
+- **tests/**: Tools để testing và debugging
 
 ---
 

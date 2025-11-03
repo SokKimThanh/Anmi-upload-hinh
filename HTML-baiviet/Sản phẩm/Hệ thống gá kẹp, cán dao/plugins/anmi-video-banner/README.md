@@ -24,7 +24,7 @@ Plugin WordPress chuyên nghiệp tạo video banner với image slider tự đ�
 - ✅ **Performance**: Preload video, lazy loading, optimized code
 - ✅ **Customizable**: Tùy chỉnh màu sắc, typography, spacing
 
-> **📘 Important:** Volume control chỉ hoạt động với **MP4 video files**. YouTube/Vimeo iframe videos không support volume control qua JavaScript (CORS limitation). Xem chi tiết: [VOLUME-CONTROL-LIMITATIONS.md](VOLUME-CONTROL-LIMITATIONS.md)
+> **📘 Important:** Volume control chỉ hoạt động với **MP4 video files**. YouTube/Vimeo iframe videos không support volume control qua JavaScript (CORS limitation).
 
 ---
 
