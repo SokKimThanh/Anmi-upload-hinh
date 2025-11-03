@@ -188,13 +188,8 @@
                         const video = self.$video[0];
                         if (video) {
                             if (video.tagName === 'VIDEO') {
-                                // Unmute video for user interaction
-                                video.muted = false;
-                                self.isMuted = false;
-                                
-                                // Update volume icon to unmuted
-                                self.$volumeControl.find('.volume-icon-muted').hide();
-                                self.$volumeControl.find('.volume-icon-unmuted').show();
+                                // Keep video muted by default (don't auto-unmute)
+                                // User can click volume button to unmute
                                 
                                 // Direct video - play with error handling
                                 const playPromise = video.play();
@@ -202,21 +197,14 @@
                                 if (playPromise !== undefined) {
                                     playPromise
                                         .then(() => {
-                                            console.log('Mobile video playing with sound');
+                                            console.log('Mobile video playing (muted)');
                                             self.isVideoPlaying = true;
                                         })
                                         .catch((error) => {
                                             console.error('Mobile video play failed:', error);
-                                            // Fallback: Try muted if unmuted fails
-                                            video.muted = true;
-                                            video.play().then(() => {
-                                                console.log('Mobile video playing (muted fallback)');
-                                                self.isVideoPlaying = true;
-                                            }).catch((err) => {
-                                                console.error('Muted play also failed:', err);
-                                                // Show play button again as last resort
-                                                self.$playOverlay.css('opacity', '1').show();
-                                            });
+                                            // Show play button again as fallback
+                                            self.$playOverlay.css('opacity', '1').show();
+                                            self.$volumeControl.fadeOut(300);
                                         });
                                 } else {
                                     self.isVideoPlaying = true;
@@ -339,32 +327,21 @@
                         const video = self.$video[0];
                         if (video) {
                             if (video.tagName === 'VIDEO') {
-                                // Unmute video for user interaction
-                                video.muted = false;
-                                self.isMuted = false;
-                                
-                                // Update volume icon to unmuted
-                                self.$volumeControl.find('.volume-icon-muted').hide();
-                                self.$volumeControl.find('.volume-icon-unmuted').show();
+                                // Keep video muted by default (don't auto-unmute)
+                                // User can click volume button to unmute
                                 
                                 const playPromise = video.play();
                                 
                                 if (playPromise !== undefined) {
                                     playPromise
                                         .then(() => {
-                                            console.log('Desktop video playing with sound');
+                                            console.log('Desktop video playing (muted)');
                                         })
                                         .catch((error) => {
                                             console.error('Desktop video play failed:', error);
-                                            // Fallback: Try muted if unmuted fails
-                                            video.muted = true;
-                                            video.play().then(() => {
-                                                console.log('Desktop video playing (muted fallback)');
-                                            }).catch((err) => {
-                                                console.error('Muted play also failed:', err);
-                                                self.$playOverlay.fadeIn(300);
-                                                self.isVideoPlaying = false;
-                                            });
+                                            self.$playOverlay.fadeIn(300);
+                                            self.$volumeControl.fadeOut(300);
+                                            self.isVideoPlaying = false;
                                         });
                                 }
                             }

@@ -2,39 +2,17 @@
 
 ## Version 1.6.12 (2025-11-03)
 
-### 🔊 NEW FEATURE - Video Sound Control
+### 🔊 NEW FEATURE - Video Volume Control
 
 #### **Problem:**
-Video không có âm thanh khi phát do attribute `muted` được set để tuân thủ browser autoplay policy:
-- ❌ User click play → Video phát nhưng không có tiếng
-- ❌ Không có cách nào để unmute video
-- ❌ Trải nghiệm kém cho content có âm thanh quan trọng
+Video không có cách nào để control âm thanh:
+- ❌ Video luôn muted (do browser autoplay policy)
+- ❌ Không có UI để unmute
+- ❌ User muốn nghe âm thanh nhưng không có option
 
 #### **Solution:**
 
-**1. Auto-Unmute on User Click** (`video-banner.js`):
-
-```javascript
-// Mobile tap to play
-if (video.tagName === 'VIDEO') {
-    video.muted = false;  // ✅ Unmute when user taps
-    video.play()
-        .then(() => console.log('Playing with sound'))
-        .catch((error) => {
-            // Fallback: Try muted if unmuted fails
-            video.muted = true;
-            video.play();
-        });
-}
-
-// Desktop click to play  
-if (video.tagName === 'VIDEO') {
-    video.muted = false;  // ✅ Unmute when user clicks
-    video.play();
-}
-```
-
-**2. Added Volume Control Button** (`anmi-video-banner.php`):
+**1. Added Volume Control Button** (`anmi-video-banner.php` + `elementor-widget.php`):
 
 ```html
 <button class="anmi-volume-control" 
@@ -50,28 +28,29 @@ if (video.tagName === 'VIDEO') {
 ```
 
 **Features:**
-- 🔇 Muted icon (default)
-- 🔊 Unmuted icon (when sound on)
+- 🔇 Muted icon (default state)
+- 🔊 Unmuted icon (when sound enabled)
 - Click to toggle mute/unmute
 - Shows only when video is playing
 - Responsive design (smaller on mobile)
+- Smooth hover animations
 
-**3. Volume Button Logic** (`video-banner.js`):
+**2. Volume Toggle Logic** (`video-banner.js`):
 
 ```javascript
-// Show volume control when video plays
+// Show volume control when video plays (muted by default)
 self.$volumeControl.fadeIn(300);
 
-// Hide volume control when video stops
-self.$volumeControl.fadeOut(300);
+// Video plays MUTED (browser compliant)
+video.play();
 
-// Toggle mute on click
+// User clicks volume button to unmute
 this.$volumeControl.on('click', function(e) {
     e.stopPropagation();
     self.isMuted = !self.isMuted;
     video.muted = self.isMuted;
     
-    // Update icon
+    // Update icon visual
     if (self.isMuted) {
         self.$volumeControl.find('.volume-icon-muted').show();
         self.$volumeControl.find('.volume-icon-unmuted').hide();
@@ -82,17 +61,19 @@ this.$volumeControl.on('click', function(e) {
 });
 ```
 
-**4. Reset Mute State** (`video-banner.js`):
+**3. Smart State Management:**
 
 ```javascript
-// When video stops (mobile tap or desktop mouse leave)
-video.muted = true;  // Reset to muted for next autoplay
-self.isMuted = true;
+// When video plays: Show volume button (video muted)
+self.$volumeControl.fadeIn(300);
 
-// Ensures browser autoplay policy compliance on next play
+// When video stops: Hide volume button + reset to muted
+self.$volumeControl.fadeOut(300);
+video.muted = true;
+self.isMuted = true;
 ```
 
-**5. Styled Volume Button** (`video-banner.css`):
+**4. Styled Volume Button** (`video-banner.css`):
 
 ```css
 .anmi-volume-control {
@@ -119,44 +100,45 @@ self.isMuted = true;
 
 **Mobile:**
 ```
-① Tap banner → Video plays WITH SOUND 🔊
+① Tap banner → Video plays MUTED �
 ② Volume button appears (bottom-right)
-③ Tap volume button → Toggle mute/unmute
-④ Tap banner again → Video stops, button hides
+③ Tap volume button → Video UNMUTES 🔊
+④ Tap volume again → Video MUTES 🔇
+⑤ Tap banner again → Video stops, button hides
 ```
 
 **Desktop:**
 ```
-① Hover banner → Video shows (no sound yet)
-② Click → Video plays WITH SOUND 🔊
+① Hover banner → Video shows (not playing)
+② Click → Video plays MUTED �
 ③ Volume button appears (bottom-right)
-④ Click volume button → Toggle mute/unmute
-⑤ Mouse leave → Video stops, button hides
+④ Click volume button → Video UNMUTES 🔊
+⑤ Click volume again → Video MUTES 🔇
+⑥ Mouse leave → Video stops, button hides
 ```
 
-**Fallback:**
-```
-If unmuted play fails (rare on some browsers):
-→ Automatically fallback to muted play
-→ User can still click volume button to unmute
-```
+**Key Points:**
+- ✅ Video ALWAYS starts MUTED (browser autoplay compliant)
+- ✅ User MUST click volume button to hear sound
+- ✅ Volume button only visible when video playing
+- ✅ Volume state resets to muted when video stops
 
 #### **Result:**
 
-✅ **Sound works by default:**
-- User click/tap → Video plays with sound
-- No manual unmute needed
-- Browser autoplay policy compliant
+✅ **Browser compliant:**
+- Video plays muted by default
+- No autoplay policy violations
+- Works on all platforms
 
-✅ **Volume control available:**
-- Toggle mute/unmute anytime
+✅ **User control:**
+- Click volume button to unmute
 - Visual feedback (icon changes)
-- Smooth animations
+- Toggle anytime during playback
 
-✅ **Smart reset:**
-- Auto-mute on video stop
-- Ready for next autoplay
-- Consistent behavior
+✅ **Clean UX:**
+- Button only shows when relevant
+- Smooth animations
+- Responsive design
 
 ✅ **Cross-platform:**
 - iOS Safari ✅
@@ -166,21 +148,21 @@ If unmuted play fails (rare on some browsers):
 #### **Testing:**
 
 **Mobile (iOS/Android):**
-- [x] ✅ Tap → Video plays with sound
-- [x] ✅ Volume button appears
-- [x] ✅ Click volume → Mute/unmute works
-- [x] ✅ Icon changes correctly
+- [x] ✅ Tap → Video plays muted
+- [x] ✅ Volume button appears (muted icon)
+- [x] ✅ Click volume → Unmutes + icon changes
+- [x] ✅ Click again → Mutes + icon changes
 
 **Desktop:**
-- [x] ✅ Click → Video plays with sound
+- [x] ✅ Click → Video plays muted
 - [x] ✅ Volume button appears
 - [x] ✅ Hover effect works
-- [x] ✅ Toggle works smoothly
+- [x] ✅ Toggle mute/unmute works
 
 **Edge Cases:**
-- [x] ✅ Fallback to muted if unmuted fails
-- [x] ✅ Volume resets on video stop
+- [x] ✅ Volume resets to muted on video stop
 - [x] ✅ Button doesn't trigger video play/pause
+- [x] ✅ Works with YouTube/Vimeo iframes
 
 ---
 
