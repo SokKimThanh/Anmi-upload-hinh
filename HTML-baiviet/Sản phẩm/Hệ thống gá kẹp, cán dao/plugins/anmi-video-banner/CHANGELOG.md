@@ -2,180 +2,228 @@
 
 ## Version 1.6.8 (2025-11-03)
 
-### 🎯 NEW FEATURE - Production Demo Preview (Hover Effect)
+### 🎯 NEW FEATURE - Production Demo Preview (Hover + Click to Play)
 
 #### **What's New:**
-Thêm **HÀNG MỚI** trong modal preview để demo **hover effect giống production** (website thực tế).
+Thêm **HÀNG MỚI** trong modal preview để demo **hover effect + click to play** giống production (website thực tế).
 
-#### **Layout Structure:**
+#### **User Flow (3 Steps):**
 
 ```
-┌─────────────────────────────────────────────────────┐
-│  Modal Preview                                      │
-├─────────────────────────────────────────────────────┤
-│  ROW 1: Split Layout (Existing - Không thay đổi)   │
-│  ┌──────────────────┬──────────────────┐           │
-│  │ 🎬 Video Preview │ 🖼️ Image Slider │           │
-│  │ (Clean view)     │ (Standalone)     │           │
-│  └──────────────────┴──────────────────┘           │
-├─────────────────────────────────────────────────────┤
-│  ROW 2: Production Demo (NEW!)                     │
-│  ┌─────────────────────────────────────┐           │
-│  │ 🎯 Production Preview (Hover Effect)│           │
-│  │                                     │           │
-│  │  [Slider with Play Button]         │           │
-│  │  Hover → Video plays               │           │
-│  │                                     │           │
-│  └─────────────────────────────────────┘           │
-│  ⚡ Hover Effect: Slider fade out → Video play      │
-└─────────────────────────────────────────────────────┘
+Step 1: Initial State
+┌─────────────────────────┐
+│  [Slider Auto-Playing]  │
+│  Image 1 → Image 2 → 3  │
+│  🔄 Slides rotating     │
+└─────────────────────────┘
+
+Step 2: Hover (Mouse Enter)
+┌─────────────────────────┐
+│  [Slider STOPS]         │
+│  [Video/Iframe SHOWS]   │
+│  ▶️ Play Button Visible │
+│  ⏸️ Waiting for click   │
+└─────────────────────────┘
+
+Step 3: Click Play Button
+┌─────────────────────────┐
+│  [Video PLAYING]        │
+│  Play button fades out  │
+│  🎬 Video active        │
+└─────────────────────────┘
+
+Step 4: Mouse Leave (ALWAYS)
+┌─────────────────────────┐
+│  [Video STOPS]          │
+│  🛑 video.pause()       │
+│  🔄 Reset to start      │
+│  ✅ Slider resumes      │
+└─────────────────────────┘
 ```
 
 ---
 
-### **Features Added:**
+### **Behavior Logic:**
 
-#### **1. Production Demo Container**
+#### **1. Before Hover (Initial State)**
 ```javascript
-// New section added below existing preview
-html += '<div class="anmi-preview-production-demo">';
-html += '<h3>🎯 Production Preview (Hover Effect)</h3>';
-html += '<p>Đây là cách banner hoạt động trên website thực tế</p>';
+✅ Slider: Auto-play (continues rotating)
+❌ Video: Hidden (opacity: 0)
+✅ Play Button: Visible on slider
+⏱️ Slider Speed: Based on banner settings
 ```
 
-#### **2. Full Production Behavior**
-- ✅ **Image slider** visible by default (auto-play)
-- ✅ **Video hidden** (opacity: 0) until hover
-- ✅ **Play button overlay** centered on banner
-- ✅ **Hover effect:** Slider fade out → Video fade in & play
-- ✅ **Slider dots** with click navigation
-- ✅ **Uses PRODUCTION CSS classes** (.anmi-banner-video, .anmi-banner-iframe)
+#### **2. On Hover (Mouse Enter)**
+```javascript
+🛑 Slider: STOP (clearInterval)
+✅ Video/Iframe: SHOW (opacity: 1)
+✅ Play Button: VISIBLE (waiting for click)
+❌ Video: NOT playing yet (paused state)
 
-#### **3. Play Button Overlay**
+console.log('Hover detected - slider stopped, video ready');
+```
+
+#### **3. On Click (Play Button)**
+```javascript
+▶️ Video: START playing
+💨 Play Button: Fade out
+🎬 Video State: isVideoPlaying = true
+
+if (video element):
+    video.play()
+if (iframe):
+    autoplay URL parameter handles it
+```
+
+#### **4. On Mouse Leave**
+```javascript
+// ALWAYS stop video and return to slider
+if (isVideoPlaying):
+    video.pause()              // Stop playback
+    video.currentTime = 0      // Reset to start
+    isVideoPlaying = false
+
+// Hide video
+$video.css('opacity', '0')
+
+// Show play button again
+$playOverlay.show()
+
+// Resume slider
+$images.eq(current).css('opacity', '1')
+productionSliderInterval = setInterval(...)
+
+console.log('Mouse leave - video stopped, slider resumed');
+```
+
+---
+
+### **JavaScript Implementation:**
+
+```javascript
+var isHovered = false;
+var isVideoPlaying = false;
+var productionSliderInterval = null;
+
+// Auto-play slider on load
+productionSliderInterval = setInterval(function() {
+    if (!isHovered && !isVideoPlaying) {
+        // Rotate slides
+    }
+}, banner.slider_speed);
+
+// HOVER: Stop slider, show video
+$container.on('mouseenter', function() {
+    isHovered = true;
+    clearInterval(productionSliderInterval); // Stop slider
+    $images.css('opacity', '0');            // Hide slider
+    $video.css('opacity', '1');             // Show video
+    $playOverlay.css('opacity', '1');       // Keep play button
+});
+
+// MOUSE LEAVE: Resume slider if video not playing
+$container.on('mouseleave', function() {
+    isHovered = false;
+    
+    if (!isVideoPlaying) {
+        $video.css('opacity', '0');         // Hide video
+        $images.eq(current).css('opacity', '1'); // Show current slide
+        productionSliderInterval = setInterval(...); // Resume slider
+    }
+});
+
+// CLICK: Play video
+$container.on('click', function() {
+    isVideoPlaying = true;
+    $playOverlay.fadeOut(300);              // Hide play button
+    $video[0].play();                       // Start video
+});
+```
+
+---
+
+### **HTML Structure:**
+
 ```html
-<div class="anmi-play-overlay">
-    <div> <!-- 80px white circle with play icon -->
-        <svg> ... play triangle ... </svg>
+<div class="anmi-preview-production-demo">
+    <h3>🎯 Production Preview (Hover + Click Effect)</h3>
+    <p>
+        <strong>Bước 1:</strong> Slider tự động chạy →
+        <strong>Bước 2:</strong> Hover vào banner (slider dừng, video hiện) →
+        <strong>Bước 3:</strong> Click play để phát video
+    </p>
+    
+    <div class="anmi-video-banner-container">
+        <!-- Slider images (visible by default) -->
+        <div class="anmi-banner-image active" style="opacity: 1;"></div>
+        <div class="anmi-banner-image" style="opacity: 0;"></div>
+        
+        <!-- Video/iframe (hidden by default) -->
+        <video class="anmi-banner-video" style="opacity: 0;"></video>
+        
+        <!-- Play button overlay -->
+        <div class="anmi-play-overlay">
+            <svg>play icon</svg>
+        </div>
+        
+        <!-- Slider dots -->
+        <div class="anmi-banner-dots">
+            <span class="anmi-banner-dot active"></span>
+        </div>
+    </div>
+    
+    <div style="background: #f0f0f0;">
+        <p>
+            <strong>⚡ Flow:</strong>
+            <span style="color: #2196F3;">①</span> Slider auto-play →
+            <span style="color: #FF9800;">②</span> Hover (slider dừng, video hiện) →
+            <span style="color: #4CAF50;">③</span> Click play button
+        </p>
     </div>
 </div>
 ```
 
-- Centered overlay với play icon
-- Fade out khi click/hover
-- Pointer-events: none để không block interactions
+---
 
-#### **4. Interactive Features**
-```javascript
-// Click to play
-$productionContainer.on('click', function() {
-    $images.css('opacity', '0');      // Hide slider
-    $playOverlay.fadeOut(300);        // Hide play button
-    $video.css('opacity', '1');       // Show video
-    $video[0].play();                 // Start playback
-});
+### **CSS (No Changes Needed):**
 
-// Auto-play slider
-setInterval(function() {
-    // Cycle through images
-}, banner.slider_speed);
-
-// Dot navigation
-$('.anmi-banner-dot').on('click', function() {
-    // Jump to specific slide
-});
-```
+Existing CSS already supports this behavior:
+- `.anmi-banner-video { opacity: 0; }` - Hidden by default
+- `.anmi-banner-image { opacity: 1; }` - Visible by default
+- Transitions handled by JavaScript opacity changes
 
 ---
 
-### **CSS Added:**
+### **Key Differences from v1.6.7:**
 
-```css
-/* Play button overlay animations */
-.anmi-play-overlay {
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.anmi-video-banner-container:hover .anmi-play-overlay {
-    transform: translate(-50%, -50%) scale(1.1); /* Grow on hover */
-    opacity: 0.8;
-}
-
-/* Hide when video playing */
-.anmi-video-banner-container.video-playing .anmi-play-overlay {
-    opacity: 0;
-    pointer-events: none;
-}
-
-/* Production demo styling */
-.anmi-preview-production-demo .anmi-video-banner-container {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    border-radius: 8px;
-    overflow: hidden;
-}
-```
-
----
-
-### **User Experience:**
-
-#### **Before (v1.6.7):**
-```
-Modal Preview:
-├─ Video Preview (clean, no context)
-└─ Image Slider (standalone)
-
-❌ User không thấy được "hover effect" hoạt động thế nào
-```
-
-#### **After (v1.6.8):**
-```
-Modal Preview:
-├─ Video Preview (clean view)
-├─ Image Slider (standalone)
-└─ 🆕 Production Demo (hover effect)
-    ├─ Shows slider with play button
-    ├─ Hover → Video plays (like real website)
-    └─ Full interactive experience
-
-✅ User thấy CHÍNH XÁC cách banner hoạt động trên website
-```
-
----
-
-### **Technical Details:**
-
-| Aspect | Implementation |
-|--------|---------------|
-| **HTML** | Separate `<div class="anmi-preview-production-demo">` section |
-| **CSS Classes** | Uses `.anmi-banner-video`, `.anmi-banner-iframe` (production classes) |
-| **JavaScript** | Full `AnMiVideoBanner` initialization + custom slider + click handlers |
-| **Position** | Below existing split layout (Row 2) |
-| **Height** | 500px (larger than preview for better demo) |
-| **Behavior** | Click to play + hover effect + auto-slider |
-
----
-
-### **Files Modified:**
-- `admin-list.php` - Added production demo HTML section (100+ lines)
-- `admin-list.php` - Added JS initialization for production demo
-- `video-banner.css` - Added play overlay animations
-- Version: 1.6.8
-
-### **Why This Matters:**
-
-**Problem:** Users couldn't see hover effect in preview  
-**Solution:** Added full production demo section  
-**Result:** Complete preview of ALL banner features in one modal!
+| Aspect | v1.6.7 (Old) | v1.6.8 (New) |
+|--------|--------------|--------------|
+| **Hover behavior** | Video plays immediately | Video shows, waits for click |
+| **Play trigger** | Hover = auto-play | Click = manual play |
+| **Slider control** | Always stops on hover | Stops on hover, resumes on leave |
+| **Mouse leave** | N/A | **ALWAYS stops video + resets** |
+| **Video state** | N/A | Resets to beginning (currentTime = 0) |
+| **User control** | Less | More (3-step flow) |
+| **Repeatability** | N/A | Can hover again to replay |
 
 ---
 
 ### **Benefits:**
 
-✅ **Complete Preview:** See both clean view AND production behavior  
-✅ **Better UX:** Users understand how banner works on real website  
-✅ **No Conflicts:** Production demo uses separate container  
-✅ **Reuses Code:** Leverages existing CSS and JS (AnMiVideoBanner class)  
-✅ **Clean Separation:** Row 1 = clean previews, Row 2 = production demo  
+✅ **Clearer UX:** 3-step flow is intuitive (auto → hover → click)  
+✅ **User Control:** Video doesn't autoplay on hover (wait for click)  
+✅ **Auto Stop:** Mouse leave ALWAYS stops video and resets slider  
+✅ **Repeatable:** Can hover again to replay (video resets to start)  
+✅ **Production-like:** Mimics real website behavior accurately  
+✅ **Better Demo:** Shows full interaction pattern  
+
+---
+
+### **Files Modified:**
+- `admin-list.php` - Rewrote production demo JavaScript logic (150+ lines)
+- `admin-list.php` - Updated HTML descriptions for 3-step flow
+- CHANGELOG.md - Documented new behavior
+- Version: 1.6.8
 
 ---
 
