@@ -162,7 +162,63 @@ self.isMuted = true;
 **Edge Cases:**
 - [x] ✅ Volume resets to muted on video stop
 - [x] ✅ Button doesn't trigger video play/pause
-- [x] ✅ Works with YouTube/Vimeo iframes
+- [x] ⚠️ **LIMITATION: Only works with HTML5 video (MP4)**
+- [x] ❌ **YouTube/Vimeo iframe: Volume button hidden**
+
+#### **Known Limitations:**
+
+**1. YouTube/Vimeo iframe videos:**
+```javascript
+// Problem: Cannot control iframe volume via JavaScript
+const video = this.$video[0];
+if (video.tagName === 'IFRAME') {
+    // ❌ video.muted = false; // Doesn't work!
+    // ❌ Cannot access iframe internals due to CORS
+    this.$volumeControl.hide(); // Solution: Hide button
+}
+```
+
+**Why it doesn't work:**
+- YouTube/Vimeo videos are loaded in **isolated iframe**
+- JavaScript cannot access iframe video element (security restriction)
+- `video.muted` property only works on **direct `<video>` elements**
+
+**Workaround:**
+- ✅ Volume button **hidden** for YouTube/Vimeo
+- 💡 Use YouTube/Vimeo's **native player controls**
+- 📅 **Future enhancement:** Implement YouTube IFrame API / Vimeo Player API
+
+**Example:**
+```javascript
+// HTML5 video (MP4): Volume control works ✅
+<video src="video.mp4" muted>
+    video.muted = false; // Works!
+</video>
+
+// YouTube iframe: Cannot control ❌
+<iframe src="https://youtube.com/embed/xxx">
+    video.muted = false; // Can't access!
+</iframe>
+```
+
+**2. Audio track dependency:**
+- ⚠️ Video file must have **audio track** to produce sound
+- 🔇 Silent videos (no audio) won't make sound even when unmuted
+- ✅ Volume button still toggles but no audible effect
+
+**3. Browser autoplay policy:**
+- 📌 Videos must start **muted** for autoplay to work
+- ✅ User interaction (click volume button) required for sound
+- 🔊 Complies with all modern browser policies
+
+**Future Enhancement Plan:**
+```javascript
+// TODO: Implement YouTube/Vimeo API for iframe volume control
+// - Load YouTube IFrame API
+// - Create player instance
+// - Use player.unMute() / player.setVolume()
+// - Handle postMessage communication
+```
 
 ---
 

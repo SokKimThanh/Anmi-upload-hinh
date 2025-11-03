@@ -354,29 +354,40 @@
             // ============================================
             // VOLUME CONTROL (Both Mobile & Desktop)
             // ============================================
-            this.$volumeControl.on('click', function(e) {
-                e.stopPropagation(); // Prevent triggering container click
-                
-                const video = self.$video[0];
-                if (video && video.tagName === 'VIDEO') {
-                    // Toggle mute
-                    self.isMuted = !self.isMuted;
-                    video.muted = self.isMuted;
+            // Check if video is HTML5 video or iframe (YouTube/Vimeo)
+            const video = this.$video[0];
+            const isIframe = video && video.tagName === 'IFRAME';
+            
+            if (isIframe) {
+                // Hide volume control for iframe videos (YouTube/Vimeo)
+                // These require their own APIs (YouTube IFrame API / Vimeo Player API)
+                this.$volumeControl.hide();
+                console.log('Volume control disabled for iframe video (YouTube/Vimeo)');
+            } else {
+                // Show and enable volume control for HTML5 video
+                this.$volumeControl.on('click', function(e) {
+                    e.stopPropagation(); // Prevent triggering container click
                     
-                    // Update icon
-                    if (self.isMuted) {
-                        self.$volumeControl.find('.volume-icon-muted').show();
-                        self.$volumeControl.find('.volume-icon-unmuted').hide();
-                        self.$volumeControl.attr('title', 'Unmute video');
-                    } else {
-                        self.$volumeControl.find('.volume-icon-muted').hide();
-                        self.$volumeControl.find('.volume-icon-unmuted').show();
-                        self.$volumeControl.attr('title', 'Mute video');
+                    if (video && video.tagName === 'VIDEO') {
+                        // Toggle mute
+                        self.isMuted = !self.isMuted;
+                        video.muted = self.isMuted;
+                        
+                        // Update icon
+                        if (self.isMuted) {
+                            self.$volumeControl.find('.volume-icon-muted').show();
+                            self.$volumeControl.find('.volume-icon-unmuted').hide();
+                            self.$volumeControl.attr('title', 'Unmute video');
+                        } else {
+                            self.$volumeControl.find('.volume-icon-muted').hide();
+                            self.$volumeControl.find('.volume-icon-unmuted').show();
+                            self.$volumeControl.attr('title', 'Mute video');
+                        }
+                        
+                        console.log('HTML5 Video ' + (self.isMuted ? 'muted' : 'unmuted'));
                     }
-                    
-                    console.log('Video ' + (self.isMuted ? 'muted' : 'unmuted'));
-                }
-            });
+                });
+            }
         }
     }
     

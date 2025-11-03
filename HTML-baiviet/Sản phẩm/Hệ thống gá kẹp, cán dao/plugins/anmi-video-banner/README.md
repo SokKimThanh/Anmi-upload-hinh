@@ -12,6 +12,7 @@ Plugin WordPress chuyên nghiệp tạo video banner với image slider tự đ�
 
 - ✅ **Image Slider**: Nhiều ảnh tự động chuyển đổi (auto-rotate)
 - ✅ **Hover to Play**: Video tự động phát khi hover, dừng khi rời chuột
+- ✅ **Volume Control**: Toggle mute/unmute cho HTML5 video (⚠️ MP4 only, not YouTube/Vimeo)
 - ✅ **Admin Panel**: CRUD interface để quản lý banner trong WordPress Admin
 - ✅ **Video Sources**: YouTube, Vimeo, Direct MP4 URL (không cần upload!)
 - ✅ **4 Transition Effects**: Fade, Zoom, Blur, Slide
@@ -22,6 +23,8 @@ Plugin WordPress chuyên nghiệp tạo video banner với image slider tự đ�
 - ✅ **Database Management**: Lưu trữ banner trong database, dễ quản lý
 - ✅ **Performance**: Preload video, lazy loading, optimized code
 - ✅ **Customizable**: Tùy chỉnh màu sắc, typography, spacing
+
+> **📘 Important:** Volume control chỉ hoạt động với **MP4 video files**. YouTube/Vimeo iframe videos không support volume control qua JavaScript (CORS limitation). Xem chi tiết: [VOLUME-CONTROL-LIMITATIONS.md](VOLUME-CONTROL-LIMITATIONS.md)
 
 ---
 
