@@ -268,6 +268,9 @@
         }
     }
     
+    // Expose AnMiVideoBanner to global scope for admin preview
+    window.AnMiVideoBanner = AnMiVideoBanner;
+    
     // Initialize all video banners on page load
     $(document).ready(function() {
         $('.anmi-video-banner-container').each(function() {
