@@ -443,6 +443,14 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             $slider_speed = $banner->slider_speed;
             $autoplay_delay = $banner->autoplay_delay;
             $mobile_behavior = $banner->mobile_behavior;
+            
+            // Video settings (v1.6.13)
+            $video_autoplay = isset($banner->video_autoplay) ? $banner->video_autoplay : 1;
+            $video_muted = isset($banner->video_muted) ? $banner->video_muted : 1;
+            $video_loop = isset($banner->video_loop) ? $banner->video_loop : 1;
+            $video_controls = isset($banner->video_controls) ? $banner->video_controls : 1;
+            $video_modestbranding = isset($banner->video_modestbranding) ? $banner->video_modestbranding : 1;
+            $video_rel = isset($banner->video_rel) ? $banner->video_rel : 0;
         } else {
             // Use manual setup
             $video_url = !empty($settings['video_url']) ? $settings['video_url'] : '';
@@ -466,6 +474,14 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             $slider_speed = $settings['slider_speed'];
             $autoplay_delay = $settings['autoplay_delay'];
             $mobile_behavior = $settings['mobile_behavior'];
+            
+            // Video settings defaults for manual mode
+            $video_autoplay = 1;
+            $video_muted = 1;
+            $video_loop = 1;
+            $video_controls = 1;
+            $video_modestbranding = 1;
+            $video_rel = 0;
         }
         
         // Validate
@@ -476,7 +492,7 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
         
         $unique_id = 'anmi-vb-' . $this->get_id();
         
-        // Detect video type
+        // Detect video type and build embed URL with settings
         $video_type = 'direct';
         $video_embed_url = $video_url;
         
@@ -484,13 +500,29 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             $video_type = 'youtube';
             preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i', $video_url, $matches);
             if (!empty($matches[1])) {
-                $video_embed_url = 'https://www.youtube.com/embed/' . $matches[1] . '?autoplay=1&mute=1&loop=1&playlist=' . $matches[1] . '&controls=0&showinfo=0&rel=0&modestbranding=1';
+                // Build YouTube URL with user settings
+                $video_embed_url = 'https://www.youtube.com/embed/' . $matches[1] . 
+                    '?autoplay=' . $video_autoplay .
+                    '&mute=' . $video_muted .
+                    '&loop=' . $video_loop .
+                    '&playlist=' . $matches[1] .
+                    '&controls=' . $video_controls .
+                    '&showinfo=0' .
+                    '&rel=' . $video_rel .
+                    '&modestbranding=' . $video_modestbranding .
+                    '&playsinline=1';
             }
         } elseif (strpos($video_url, 'vimeo.com') !== false) {
             $video_type = 'vimeo';
             preg_match('/vimeo\.com\/(\d+)/', $video_url, $matches);
             if (!empty($matches[1])) {
-                $video_embed_url = 'https://player.vimeo.com/video/' . $matches[1] . '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+                // Build Vimeo URL with user settings
+                $video_embed_url = 'https://player.vimeo.com/video/' . $matches[1] . 
+                    '?autoplay=' . $video_autoplay .
+                    '&muted=' . $video_muted .
+                    '&loop=' . $video_loop .
+                    '&background=' . ($video_controls ? 0 : 1) .
+                    '&controls=' . $video_controls;
             }
         }
         ?>
