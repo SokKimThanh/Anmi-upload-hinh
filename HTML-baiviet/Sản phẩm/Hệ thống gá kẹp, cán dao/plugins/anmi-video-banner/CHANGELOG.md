@@ -1,5 +1,156 @@
 # An Mi Video Banner - Changelog
 
+## Version 1.6.12b (2025-11-03)
+
+### 🎬 ENHANCEMENT - Volume Control in Admin Previews
+
+#### **Problem:**
+Admin previews (modal + edit page) không có volume control để test âm thanh:
+- ❌ Không thể test xem video có sound track không
+- ❌ Không thể kiểm tra volume control hoạt động
+- ❌ Phải publish mới test được âm thanh
+
+#### **Solution:**
+
+**1. Added Volume Control to Modal Preview** (`admin-list.php`):
+
+```javascript
+// Preview Video Section (top)
+html += '<button class="anmi-volume-control" ...>
+    <svg><!-- Volume icons --></svg>
+</button>';
+
+// Production Demo Section (bottom) 
+html += '<button class="anmi-volume-control" ...>
+    <svg><!-- Volume icons --></svg>
+</button>';
+```
+
+**2. Added Volume Control to Edit Page Preview** (`admin-edit.php`):
+
+```javascript
+// Live Preview Container
+html += '<button class="anmi-volume-control" ...>
+    <svg><!-- Volume icons --></svg>
+</button>';
+```
+
+**3. Added Info Notes:**
+
+```html
+<!-- Modal Preview -->
+<p><strong>🔊 Volume Control:</strong> Click volume button (bottom-right) 
+   để bật/tắt âm thanh khi video đang phát 
+   <span>(⚠️ Chỉ hoạt động với MP4 video, không hỗ trợ YouTube/Vimeo iframe)</span>
+</p>
+
+<!-- Edit Page Preview -->
+<p><strong>🔊 Volume Control:</strong> Click volume button (bottom-right) 
+   để bật/tắt âm thanh khi video đang phát 
+   <strong>(⚠️ Chỉ hoạt động với MP4 video, không hỗ trợ YouTube/Vimeo iframe)</strong>
+</p>
+```
+
+#### **Features:**
+
+**Modal Preview (admin-list.php):**
+- ✅ Volume button in **Preview Video** section (top)
+- ✅ Volume button in **Production Demo** section (bottom)
+- ✅ Info note about MP4-only limitation
+- ✅ Same functionality as production
+
+**Edit Page Preview (admin-edit.php):**
+- ✅ Volume button in **Live Preview** container
+- ✅ Warning note with orange color highlighting
+- ✅ Test sound before publishing
+- ✅ Real-time preview during editing
+
+#### **Behavior:**
+
+**Modal Preview - Preview Video Section:**
+```
+① Click "Preview" button → Modal opens
+② Video section shows at top
+③ Video plays (muted by default)
+④ Volume button appears (bottom-right)
+⑤ Click volume button → Test sound ✅
+```
+
+**Modal Preview - Production Demo Section:**
+```
+① Scroll down to "Production Preview"
+② Hover banner → Video shows
+③ Click play → Video plays (muted)
+④ Volume button appears
+⑤ Click volume button → Test sound ✅
+```
+
+**Edit Page Preview:**
+```
+① Fill in video URL + images
+② Preview updates automatically
+③ Hover preview → Video plays (muted)
+④ Volume button appears
+⑤ Click volume button → Test sound ✅
+⑥ Save banner with confidence!
+```
+
+#### **Result:**
+
+✅ **Test sound in admin:**
+- No need to publish first
+- Test volume control functionality
+- Verify video has audio track
+- Confirm MP4 vs iframe behavior
+
+✅ **Clear limitations:**
+- Warning notes in both previews
+- Orange color for visibility
+- Explains MP4-only support
+- Links to detailed documentation
+
+✅ **Complete preview experience:**
+- Modal preview: 2 volume buttons
+- Edit page: 1 volume button
+- Same behavior as production
+- Real-time testing capability
+
+#### **Files Modified:**
+
+1. **`includes/views/admin-list.php`**
+   - Added volume control HTML to Preview Video section
+   - Added volume control HTML to Production Demo section
+   - Added info note about MP4 limitation
+
+2. **`includes/views/admin-edit.php`**
+   - Added volume control HTML to Live Preview
+   - Added warning note with instructions
+   - Enhanced preview description
+
+#### **Testing:**
+
+**Modal Preview (admin-list.php):**
+- [x] ✅ Preview Video: Volume button appears for MP4
+- [x] ✅ Preview Video: Volume button hidden for YouTube/Vimeo
+- [x] ✅ Production Demo: Volume button appears for MP4
+- [x] ✅ Production Demo: Volume button hidden for YouTube/Vimeo
+- [x] ✅ Info note visible and clear
+
+**Edit Page Preview (admin-edit.php):**
+- [x] ✅ Live Preview: Volume button appears for MP4
+- [x] ✅ Live Preview: Volume button hidden for YouTube/Vimeo
+- [x] ✅ Warning note visible (orange color)
+- [x] ✅ Instructions clear
+
+**Functionality:**
+- [x] ✅ Click volume → Toggle mute/unmute
+- [x] ✅ Icon changes correctly
+- [x] ✅ Sound plays when unmuted
+- [x] ✅ AnMiVideoBanner class handles everything
+- [x] ✅ No console errors
+
+---
+
 ## Version 1.6.12 (2025-11-03)
 
 ### 🔊 NEW FEATURE - Video Volume Control

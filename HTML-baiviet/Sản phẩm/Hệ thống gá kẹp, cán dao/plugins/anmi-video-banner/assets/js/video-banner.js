@@ -188,8 +188,13 @@
                         const video = self.$video[0];
                         if (video) {
                             if (video.tagName === 'VIDEO') {
-                                // Keep video muted by default (don't auto-unmute)
-                                // User can click volume button to unmute
+                                // Try to play with sound first
+                                video.muted = false;
+                                self.isMuted = false;
+                                
+                                // Update volume icon to unmuted
+                                self.$volumeControl.find('.volume-icon-muted').hide();
+                                self.$volumeControl.find('.volume-icon-unmuted').show();
                                 
                                 // Direct video - play with error handling
                                 const playPromise = video.play();
@@ -197,14 +202,27 @@
                                 if (playPromise !== undefined) {
                                     playPromise
                                         .then(() => {
-                                            console.log('Mobile video playing (muted)');
+                                            console.log('Mobile video playing with sound');
                                             self.isVideoPlaying = true;
                                         })
                                         .catch((error) => {
-                                            console.error('Mobile video play failed:', error);
-                                            // Show play button again as fallback
-                                            self.$playOverlay.css('opacity', '1').show();
-                                            self.$volumeControl.fadeOut(300);
+                                            console.error('Mobile video play with sound failed, trying muted:', error);
+                                            // Fallback: Try muted if unmuted fails
+                                            video.muted = true;
+                                            self.isMuted = true;
+                                            self.$volumeControl.find('.volume-icon-muted').show();
+                                            self.$volumeControl.find('.volume-icon-unmuted').hide();
+                                            
+                                            video.play()
+                                                .then(() => {
+                                                    console.log('Mobile video playing (muted fallback)');
+                                                    self.isVideoPlaying = true;
+                                                })
+                                                .catch((err) => {
+                                                    console.error('Mobile video play failed completely:', err);
+                                                    self.$playOverlay.css('opacity', '1').show();
+                                                    self.$volumeControl.fadeOut(300);
+                                                });
                                         });
                                 } else {
                                     self.isVideoPlaying = true;
