@@ -96,10 +96,14 @@ class AnMi_Product_Style_Injector {
         // Expected structure on WordPress:
         // wp-content/plugins/anmi-product-style-injector/
         //   ├── anmi-product-style-injector.php
-        //   └── css/
-        //       └── anmi-holder-products.css
-        $this->css_dir = dirname(__FILE__) . '/css/';
-        $this->css_url = plugins_url('css/', __FILE__);
+        //   └── assets/
+        //       ├── css/
+        //       │   └── anmi-holder-products.css
+        //       └── js/
+        //           ├── grid-cleanup.js
+        //           └── image-lightbox.js
+        $this->css_dir = dirname(__FILE__) . '/assets/css/';
+        $this->css_url = plugins_url('assets/css/', __FILE__);
         
         // Initialize hooks
         $this->init_hooks();
@@ -304,7 +308,7 @@ class AnMi_Product_Style_Injector {
             // ✅ Enqueue JavaScript to clean up WordPress auto-generated <p> tags
             wp_enqueue_script(
                 'anmi-grid-cleanup',
-                plugins_url('js/grid-cleanup.js', __FILE__),
+                plugins_url('assets/js/grid-cleanup.js', __FILE__),
                 array(),
                 $version,
                 true // Load in footer
@@ -313,7 +317,7 @@ class AnMi_Product_Style_Injector {
             // ✅ Enqueue Image Lightbox JavaScript
             wp_enqueue_script(
                 'anmi-image-lightbox',
-                plugins_url('js/image-lightbox.js', __FILE__),
+                plugins_url('assets/js/image-lightbox.js', __FILE__),
                 array(),
                 $version,
                 true // Load in footer

@@ -1,118 +1,233 @@
-# 🎨 An Mi Product Style Injector Plugin
+# 🔌 An Mi Tools - WordPress Plugins# 🎨 An Mi Product Style Injector Plugin
 
-**Version:** 2.1.6 🆕  
+
+
+Collection of custom WordPress plugins for An Mi Tools website.**Version:** 2.1.6 🆕  
+
 **CSS Version:** 1.3.2  
-**Last Updated:** November 2, 2025
 
-## 🚨 CRITICAL UPDATE v2.1.6
+## 📦 Available Plugins**Last Updated:** November 2, 2025
+
+
+
+### 1. **An Mi Video Banner** (v1.3.0)## 🚨 CRITICAL UPDATE v2.1.6
+
+📍 **Folder:** `anmi-video-banner/`
 
 ### 🔧 Fixed: Vấn Đề Mất Thẻ `<p>` Trong WordPress Editor
 
+**Description:** Professional video banner with image slider, hover-to-play video, and content visibility controls.
+
 **Vấn đề:** HTML paste vào WordPress editor bị mất tất cả thẻ `<p>`, gây ra văn bản không có cấu trúc.
 
-**Giải pháp:**
-- ✅ **Giữ wpautop enabled** - WordPress có thể tự tạo `<p>` tags
-- ✅ **JavaScript chỉ xóa `<p>` trong grid containers** - Không touch `<p>` ở nội dung thường
-- ✅ **Logic kiểm tra cải tiến** - Preserve `<p>` có text hoặc child elements
+**Features:**
 
-**Chi tiết:** Xem [FIX-P-TAG-ISSUE.md](FIX-P-TAG-ISSUE.md)
+- ✅ Image slider with auto-advance**Giải pháp:**
+
+- ✅ Hover-triggered video playback (YouTube/Vimeo/MP4)- ✅ **Giữ wpautop enabled** - WordPress có thể tự tạo `<p>` tags
+
+- ✅ Admin CRUD panel with database storage- ✅ **JavaScript chỉ xóa `<p>` trong grid containers** - Không touch `<p>` ở nội dung thường
+
+- ✅ Elementor widget integration- ✅ **Logic kiểm tra cải tiến** - Preserve `<p>` có text hoặc child elements
+
+- ✅ Content visibility toggles (Title/Subtitle/Button)
+
+- ✅ 4 transition effects (fade/zoom/blur/slide)**Chi tiết:** Xem [FIX-P-TAG-ISSUE.md](FIX-P-TAG-ISSUE.md)
+
+- ✅ Mobile responsive
 
 ---
 
+**Documentation:** See `anmi-video-banner/README.md`
+
 ## 📁 Cấu Trúc Plugin
 
+---
+
 ```
-anmi-product-style-injector/
-├── anmi-product-style-injector.php  ← Main plugin file (v2.1.6) 🆕
+
+### 2. **An Mi Product Style Injector** (v2.1.6)anmi-product-style-injector/
+
+📍 **Folder:** `anmi-product-style-injector/`├── anmi-product-style-injector.php  ← Main plugin file (v2.1.6) 🆕
+
 ├── css/
-│   └── anmi-holder-products.css     ← Product styling (v1.3.2)
+
+**Description:** Automatically inject unified CSS styling for all holder product pages.│   └── anmi-holder-products.css     ← Product styling (v1.3.2)
+
 ├── js/
-│   ├── grid-cleanup.js              ← Grid cleanup script (v1.2.0) 🆕
-│   └── image-lightbox.js            ← Image lightbox
-├── README.md                         ← This file
-├── FIX-P-TAG-ISSUE.md               ← Fix documentation 🆕
-├── UPDATE-GUIDE.md                   ← Update instructions
-└── WORDPRESS-FIX-README.md          ← WordPress fixes
-```
 
-## 🆕 Version 2.1.5 - What's New
+**Features:**│   ├── grid-cleanup.js              ← Grid cleanup script (v1.2.0) 🆕
 
-### 🖼️ Image Lightbox - Click to Zoom!
+- ✅ Auto-detect holder products by slug pattern│   └── image-lightbox.js            ← Image lightbox
 
-**NEW Feature:** Click vào bất kỳ hình ảnh sản phẩm nào để phóng to!
+- ✅ Unified CSS for consistent styling├── README.md                         ← This file
 
-**Tính năng:**
-- ✅ **Click to Zoom:** Click vào hình để xem full-screen
-- ✅ **Smooth Animation:** Zoom animation mượt mà
-- ✅ **Multiple Close Methods:** 
-  - Click nút ✕ góc phải
-  - Press ESC key
-  - Click vào vùng tối bên ngoài
-- ✅ **Mobile Friendly:** Responsive, hoạt động tốt trên mobile
-- ✅ **Auto Caption:** Hiển thị caption từ figcaption
-- ✅ **Cursor Hint:** Cursor pointer + tooltip "Click để phóng to"
+- ✅ WordPress Editor support (Gutenberg + Classic)├── FIX-P-TAG-ISSUE.md               ← Fix documentation 🆕
 
-**Applied to:**
-- Tất cả images có class `.bordered-img`
-- Images trong `figure` tags
-- Images trong `.product-images-grid`
+- ✅ Image lightbox (click-to-zoom)├── UPDATE-GUIDE.md                   ← Update instructions
 
-**Technical:**
-- **CSS:** `.anmi-lightbox` với full-screen overlay (z-index: 999999)
-- **JavaScript:** `image-lightbox.js` - Vanilla JS, no dependencies
-- **Performance:** Lazy initialization, no impact on page load
+- ✅ Grid layout cleanup (removes empty `<p>` tags)└── WORDPRESS-FIX-README.md          ← WordPress fixes
 
-### CSS v1.3.2 Features:
-```css
-.anmi-lightbox {
-    background: rgba(0, 0, 0, 0.9);
-    animation: zoom 0.3s;
-}
-```
+- ✅ 2-column product image grid```
 
-## 📋 Previous Updates
 
-### v1.3.1 (2025-11-01):
-- ✅ **Product Images Grid:** `.product-images-grid` class for 2-column image layout
-- ✅ **Responsive:** 2 columns (desktop) → 1 column (mobile)
+
+**Documentation:** See `anmi-product-style-injector/README.md`## 🆕 Version 2.1.5 - What's New
+
+
+
+---### 🖼️ Image Lightbox - Click to Zoom!
+
+
+
+## 📁 Folder Structure**NEW Feature:** Click vào bất kỳ hình ảnh sản phẩm nào để phóng to!
+
+
+
+```**Tính năng:**
+
+plugins/- ✅ **Click to Zoom:** Click vào hình để xem full-screen
+
+├── README.md                          ← This file- ✅ **Smooth Animation:** Zoom animation mượt mà
+
+├── anmi-video-banner/- ✅ **Multiple Close Methods:** 
+
+│   ├── anmi-video-banner.php         ← Main plugin file  - Click nút ✕ góc phải
+
+│   ├── assets/  - Press ESC key
+
+│   │   ├── css/  - Click vào vùng tối bên ngoài
+
+│   │   │   ├── video-banner.css- ✅ **Mobile Friendly:** Responsive, hoạt động tốt trên mobile
+
+│   │   │   └── admin-style.css- ✅ **Auto Caption:** Hiển thị caption từ figcaption
+
+│   │   └── js/- ✅ **Cursor Hint:** Cursor pointer + tooltip "Click để phóng to"
+
+│   │       ├── video-banner.js
+
+│   │       └── admin-script.js**Applied to:**
+
+│   ├── includes/- Tất cả images có class `.bordered-img`
+
+│   │   ├── admin-panel.php- Images trong `figure` tags
+
+│   │   ├── elementor-widget.php- Images trong `.product-images-grid`
+
+│   │   └── views/
+
+│   │       ├── admin-list.php**Technical:**
+
+│   │       └── admin-edit.php- **CSS:** `.anmi-lightbox` với full-screen overlay (z-index: 999999)
+
+│   ├── demo/- **JavaScript:** `image-lightbox.js` - Vanilla JS, no dependencies
+
+│   │   ├── index.html- **Performance:** Lazy initialization, no impact on page load
+
+│   │   ├── anmi-profile-demo.html
+
+│   │   └── slider-demo.html### CSS v1.3.2 Features:
+
+│   └── *.md                          ← Documentation files```css
+
+│.anmi-lightbox {
+
+└── anmi-product-style-injector/    background: rgba(0, 0, 0, 0.9);
+
+    ├── anmi-product-style-injector.php ← Main plugin file    animation: zoom 0.3s;
+
+    ├── assets/}
+
+    │   ├── css/```
+
+    │   │   └── anmi-holder-products.css
+
+    │   └── js/## 📋 Previous Updates
+
+    │       ├── grid-cleanup.js
+
+    │       └── image-lightbox.js### v1.3.1 (2025-11-01):
+
+    └── *.md                            ← Documentation files- ✅ **Product Images Grid:** `.product-images-grid` class for 2-column image layout
+
+```- ✅ **Responsive:** 2 columns (desktop) → 1 column (mobile)
+
 - ✅ **Applied to:** NT-CK section (NBJ16 head + tool box set)
+
+## 🚀 Installation
 
 ## 📦 Upload Lên WordPress
 
+### Method 1: FTP Upload (Recommended)
+
 ### Cách 1: Upload Qua FTP (Khuyên Dùng)
 
-1. **Kết nối FTP** đến server WordPress
-2. **Navigate** đến: `/wp-content/plugins/`
-3. **Upload toàn bộ thư mục** `anmi-product-style-injector/`
-4. Cấu trúc sau khi upload:
+1. **Connect FTP** to WordPress server
 
-```
+2. **Navigate** to `/wp-content/plugins/`1. **Kết nối FTP** đến server WordPress
+
+3. **Upload entire folder** (e.g., `anmi-video-banner/`)2. **Navigate** đến: `/wp-content/plugins/`
+
+4. **Go to:** WordPress Admin → Plugins3. **Upload toàn bộ thư mục** `anmi-product-style-injector/`
+
+5. **Click:** "Activate"4. Cấu trúc sau khi upload:
+
+
+
+### Method 2: ZIP Upload```
+
 /wp-content/plugins/
-└── anmi-product-style-injector/
-    ├── anmi-product-style-injector.php
-    ├── css/
+
+1. **Compress** plugin folder to `.zip`└── anmi-product-style-injector/
+
+2. **Go to:** Plugins → Add New → Upload Plugin    ├── anmi-product-style-injector.php
+
+3. **Upload** and activate    ├── css/
+
     │   └── anmi-holder-products.css
-    ├── README.md
+
+## 📊 Plugin Status    ├── README.md
+
     └── UPDATE-GUIDE.md
-```
 
-5. **Set permissions:**
-   ```bash
+| Plugin | Version | Status | Last Updated |```
+
+|--------|---------|--------|--------------|
+
+| Video Banner | v1.3.0 | ✅ Active | Nov 3, 2025 |5. **Set permissions:**
+
+| Style Injector | v2.1.6 | ✅ Active | Nov 2, 2025 |   ```bash
+
    chmod -R 755 /wp-content/plugins/anmi-product-style-injector/
-   chmod 644 /wp-content/plugins/anmi-product-style-injector/*.php
-   chmod 644 /wp-content/plugins/anmi-product-style-injector/css/*.css
-   ```
 
-6. **Activate plugin:**
+## 🔗 Quick Links   chmod 644 /wp-content/plugins/anmi-product-style-injector/*.php
+
+   chmod 644 /wp-content/plugins/anmi-product-style-injector/css/*.css
+
+- **Video Banner Docs:** [anmi-video-banner/README.md](anmi-video-banner/README.md)   ```
+
+- **Style Injector Docs:** [anmi-product-style-injector/README.md](anmi-product-style-injector/README.md)
+
+- **Website:** https://anmitools.com6. **Activate plugin:**
+
    - Vào WordPress Admin: **Plugins → Installed Plugins**
-   - Tìm: **"An Mi Tools - Product Style Injector"**
+
+## 📞 Support   - Tìm: **"An Mi Tools - Product Style Injector"**
+
    - Click: **"Activate"**
 
-### Cách 2: Upload Qua WordPress Admin
+- **Email:** support@anmitools.com
 
-1. **Nén plugin thành ZIP:**
+- **Website:** https://anmitools.com/contact-us/### Cách 2: Upload Qua WordPress Admin
+
+
+
+---1. **Nén plugin thành ZIP:**
+
    - Nén thư mục `anmi-product-style-injector/`
-   - Tên file: `anmi-product-style-injector.zip`
+
+**Last Updated:** November 3, 2025   - Tên file: `anmi-product-style-injector.zip`
+
 
 2. **Upload ZIP:**
    - Vào: **Plugins → Add New → Upload Plugin**
