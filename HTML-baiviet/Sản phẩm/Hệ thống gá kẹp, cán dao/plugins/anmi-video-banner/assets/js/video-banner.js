@@ -1,6 +1,6 @@
 /**
  * AN MI VIDEO BANNER PLUGIN JAVASCRIPT
- * Version: 1.6.11 - Mobile Tap-to-Play Fix
+ * Version: 1.6.12 - Video Sound Control
  */
 
 (function($) {
@@ -14,6 +14,7 @@
             this.$playOverlay = this.$container.find('.anmi-play-overlay');
             this.$dots = this.$container.find('.anmi-banner-dot');
             this.$loader = this.$container.find('.anmi-banner-loader');
+            this.$volumeControl = this.$container.find('.anmi-volume-control');
             
             this.autoplayDelay = parseInt(this.$container.data('autoplay-delay')) || 0;
             this.mobileBehavior = this.$container.data('mobile-behavior') || 'image';
@@ -26,6 +27,7 @@
             this.currentSlide = 0;
             this.isHovered = false;
             this.isVideoPlaying = false;
+            this.isMuted = true; // Track mute state
             
             this.init();
         }
@@ -179,23 +181,42 @@
                         // Hide play button immediately
                         self.$playOverlay.css('opacity', '0').hide();
                         
+                        // Show volume control
+                        self.$volumeControl.fadeIn(300);
+                        
                         // Play video
                         const video = self.$video[0];
                         if (video) {
                             if (video.tagName === 'VIDEO') {
+                                // Unmute video for user interaction
+                                video.muted = false;
+                                self.isMuted = false;
+                                
+                                // Update volume icon to unmuted
+                                self.$volumeControl.find('.volume-icon-muted').hide();
+                                self.$volumeControl.find('.volume-icon-unmuted').show();
+                                
                                 // Direct video - play with error handling
                                 const playPromise = video.play();
                                 
                                 if (playPromise !== undefined) {
                                     playPromise
                                         .then(() => {
-                                            console.log('Mobile video playing');
+                                            console.log('Mobile video playing with sound');
                                             self.isVideoPlaying = true;
                                         })
                                         .catch((error) => {
                                             console.error('Mobile video play failed:', error);
-                                            // Show play button again as fallback
-                                            self.$playOverlay.css('opacity', '1').show();
+                                            // Fallback: Try muted if unmuted fails
+                                            video.muted = true;
+                                            video.play().then(() => {
+                                                console.log('Mobile video playing (muted fallback)');
+                                                self.isVideoPlaying = true;
+                                            }).catch((err) => {
+                                                console.error('Muted play also failed:', err);
+                                                // Show play button again as last resort
+                                                self.$playOverlay.css('opacity', '1').show();
+                                            });
                                         });
                                 } else {
                                     self.isVideoPlaying = true;
@@ -212,7 +233,12 @@
                         if (video && video.tagName === 'VIDEO') {
                             video.pause();
                             video.currentTime = 0;
+                            video.muted = true; // Reset to muted for next autoplay
+                            self.isMuted = true;
                         }
+                        
+                        // Hide volume control
+                        self.$volumeControl.fadeOut(300);
                         
                         // Reset to slider
                         self.$video.css('opacity', '0');
@@ -259,9 +285,14 @@
                         if (video && video.tagName === 'VIDEO') {
                             video.pause();
                             video.currentTime = 0;
+                            video.muted = true; // Reset to muted for next autoplay
+                            self.isMuted = true;
                         }
                         self.isVideoPlaying = false;
                     }
+                    
+                    // Hide volume control
+                    self.$volumeControl.fadeOut(300);
                     
                     // Hide video
                     self.$video.css('opacity', '0');
@@ -301,21 +332,39 @@
                         // Hide play button
                         self.$playOverlay.fadeOut(300);
                         
+                        // Show volume control
+                        self.$volumeControl.fadeIn(300);
+                        
                         // Play video
                         const video = self.$video[0];
                         if (video) {
                             if (video.tagName === 'VIDEO') {
+                                // Unmute video for user interaction
+                                video.muted = false;
+                                self.isMuted = false;
+                                
+                                // Update volume icon to unmuted
+                                self.$volumeControl.find('.volume-icon-muted').hide();
+                                self.$volumeControl.find('.volume-icon-unmuted').show();
+                                
                                 const playPromise = video.play();
                                 
                                 if (playPromise !== undefined) {
                                     playPromise
                                         .then(() => {
-                                            console.log('Desktop video playing');
+                                            console.log('Desktop video playing with sound');
                                         })
                                         .catch((error) => {
                                             console.error('Desktop video play failed:', error);
-                                            self.$playOverlay.fadeIn(300);
-                                            self.isVideoPlaying = false;
+                                            // Fallback: Try muted if unmuted fails
+                                            video.muted = true;
+                                            video.play().then(() => {
+                                                console.log('Desktop video playing (muted fallback)');
+                                            }).catch((err) => {
+                                                console.error('Muted play also failed:', err);
+                                                self.$playOverlay.fadeIn(300);
+                                                self.isVideoPlaying = false;
+                                            });
                                         });
                                 }
                             }
@@ -324,6 +373,33 @@
                     }
                 });
             }
+            
+            // ============================================
+            // VOLUME CONTROL (Both Mobile & Desktop)
+            // ============================================
+            this.$volumeControl.on('click', function(e) {
+                e.stopPropagation(); // Prevent triggering container click
+                
+                const video = self.$video[0];
+                if (video && video.tagName === 'VIDEO') {
+                    // Toggle mute
+                    self.isMuted = !self.isMuted;
+                    video.muted = self.isMuted;
+                    
+                    // Update icon
+                    if (self.isMuted) {
+                        self.$volumeControl.find('.volume-icon-muted').show();
+                        self.$volumeControl.find('.volume-icon-unmuted').hide();
+                        self.$volumeControl.attr('title', 'Unmute video');
+                    } else {
+                        self.$volumeControl.find('.volume-icon-muted').hide();
+                        self.$volumeControl.find('.volume-icon-unmuted').show();
+                        self.$volumeControl.attr('title', 'Mute video');
+                    }
+                    
+                    console.log('Video ' + (self.isMuted ? 'muted' : 'unmuted'));
+                }
+            });
         }
     }
     

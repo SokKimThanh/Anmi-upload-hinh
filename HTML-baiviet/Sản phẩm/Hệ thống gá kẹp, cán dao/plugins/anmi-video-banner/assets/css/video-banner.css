@@ -482,3 +482,37 @@
     display: none !important;
 }
 
+/* ============================================ */
+/* VOLUME CONTROL BUTTON */
+/* ============================================ */
+
+.anmi-volume-control {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.anmi-volume-control:hover {
+    opacity: 1;
+    background: rgba(0,0,0,0.8) !important;
+    transform: scale(1.1);
+}
+
+.anmi-volume-control:active {
+    transform: scale(0.95);
+}
+
+/* Hide volume button on small screens initially */
+@media (max-width: 480px) {
+    .anmi-volume-control {
+        width: 36px;
+        height: 36px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .anmi-volume-control svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
