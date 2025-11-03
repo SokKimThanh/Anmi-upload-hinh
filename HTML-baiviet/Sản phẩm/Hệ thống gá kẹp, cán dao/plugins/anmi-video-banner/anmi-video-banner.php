@@ -2,8 +2,8 @@
 /**
  * Plugin Name: An Mi Video Banner
  * Plugin URI: https://anmitools.com
- * Description: Tạo video banner với hiệu ứng hover transition - chuyển từ ảnh sang video khi rê chuột
- * Version: 1.0.0
+ * Description: Tạo video banner với slider ảnh tự động - hover để chuyển sang video với hiệu ứng transition
+ * Version: 1.1.0
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
@@ -62,12 +62,13 @@ class AnMi_Video_Banner {
     /**
      * Render video banner shortcode
      * 
-     * Usage: [anmi_video_banner video_url="video.mp4" image_url="image.jpg" height="600px" title="Title" subtitle="Subtitle" button_text="Learn More" button_link="#"]
+     * Usage: [anmi_video_banner video_url="video.mp4" images="image1.jpg,image2.jpg,image3.jpg" height="600px" slider_speed="3000"]
      */
     public function render_video_banner($atts) {
         $atts = shortcode_atts(array(
             'video_url' => '',
-            'image_url' => '',
+            'images' => '', // Comma-separated image URLs for slider
+            'image_url' => '', // Backward compatibility - single image
             'height' => '600px',
             'title' => '',
             'subtitle' => '',
@@ -76,11 +77,21 @@ class AnMi_Video_Banner {
             'transition' => 'fade', // fade, slide, zoom, blur
             'mobile_behavior' => 'image', // image, video, both
             'autoplay_delay' => '0', // delay in seconds before video plays on hover
+            'slider_speed' => '3000', // milliseconds between slides
+            'slider_effect' => 'fade', // fade, slide
         ), $atts, 'anmi_video_banner');
         
+        // Parse images - support both comma-separated and single image
+        $image_urls = array();
+        if (!empty($atts['images'])) {
+            $image_urls = array_map('trim', explode(',', $atts['images']));
+        } elseif (!empty($atts['image_url'])) {
+            $image_urls = array($atts['image_url']);
+        }
+        
         // Validate required fields
-        if (empty($atts['video_url']) || empty($atts['image_url'])) {
-            return '<p style="color:red;">Error: Video URL and Image URL are required!</p>';
+        if (empty($atts['video_url']) || empty($image_urls)) {
+            return '<p style="color:red;">Error: Video URL and at least one image are required!</p>';
         }
         
         // Generate unique ID
@@ -93,7 +104,9 @@ class AnMi_Video_Banner {
         <div class="anmi-video-banner-container <?php echo esc_attr($unique_id); ?> transition-<?php echo esc_attr($atts['transition']); ?>" 
              style="height: <?php echo esc_attr($atts['height']); ?>;"
              data-autoplay-delay="<?php echo esc_attr($atts['autoplay_delay']); ?>"
-             data-mobile-behavior="<?php echo esc_attr($atts['mobile_behavior']); ?>">
+             data-mobile-behavior="<?php echo esc_attr($atts['mobile_behavior']); ?>"
+             data-slider-speed="<?php echo esc_attr($atts['slider_speed']); ?>"
+             data-slider-effect="<?php echo esc_attr($atts['slider_effect']); ?>">
             
             <!-- Video Background -->
             <video class="anmi-banner-video" loop muted playsinline preload="auto">
@@ -101,8 +114,22 @@ class AnMi_Video_Banner {
                 Your browser does not support the video tag.
             </video>
             
-            <!-- Image Overlay -->
-            <div class="anmi-banner-image" style="background-image: url('<?php echo esc_url($atts['image_url']); ?>');"></div>
+            <!-- Image Slider Overlay -->
+            <div class="anmi-banner-slider">
+                <?php foreach ($image_urls as $index => $image_url): ?>
+                    <div class="anmi-slider-slide <?php echo $index === 0 ? 'active' : ''; ?>" 
+                         style="background-image: url('<?php echo esc_url($image_url); ?>');"></div>
+                <?php endforeach; ?>
+                
+                <?php if (count($image_urls) > 1): ?>
+                    <!-- Slider Navigation Dots -->
+                    <div class="anmi-slider-dots">
+                        <?php foreach ($image_urls as $index => $image_url): ?>
+                            <span class="dot <?php echo $index === 0 ? 'active' : ''; ?>" data-slide="<?php echo $index; ?>"></span>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+            </div>
             
             <?php if (!empty($atts['title']) || !empty($atts['subtitle']) || !empty($atts['button_text'])): ?>
             <!-- Content Overlay -->

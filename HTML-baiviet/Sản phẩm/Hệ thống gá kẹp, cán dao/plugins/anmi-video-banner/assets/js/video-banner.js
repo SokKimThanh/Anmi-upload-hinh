@@ -1,6 +1,6 @@
 /**
  * AN MI VIDEO BANNER PLUGIN JAVASCRIPT
- * Version: 1.0.0
+ * Version: 1.1.0 - With Image Slider Support
  */
 
 (function($) {
@@ -10,13 +10,21 @@
         constructor(container) {
             this.$container = $(container);
             this.$video = this.$container.find('.anmi-banner-video');
-            this.$image = this.$container.find('.anmi-banner-image');
+            this.$slider = this.$container.find('.anmi-banner-slider');
+            this.$slides = this.$container.find('.anmi-slider-slide');
+            this.$dots = this.$container.find('.anmi-slider-dots .dot');
             this.$loader = this.$container.find('.anmi-banner-loader');
             
             this.autoplayDelay = parseInt(this.$container.data('autoplay-delay')) || 0;
             this.mobileBehavior = this.$container.data('mobile-behavior') || 'image';
+            this.sliderSpeed = parseInt(this.$container.data('slider-speed')) || 3000;
+            this.sliderEffect = this.$container.data('slider-effect') || 'fade';
+            
             this.isVideoReady = false;
             this.hoverTimeout = null;
+            this.sliderInterval = null;
+            this.currentSlide = 0;
+            this.isHovering = false;
             
             this.init();
         }
@@ -25,6 +33,7 @@
             // Check if mobile
             if (this.isMobile() && this.mobileBehavior === 'image') {
                 this.disableVideoOnMobile();
+                this.startSlider(); // Still run slider on mobile
                 return;
             }
             
@@ -33,6 +42,11 @@
             
             // Setup events
             this.setupEvents();
+            
+            // Start image slider
+            if (this.$slides.length > 1) {
+                this.startSlider();
+            }
             
             // Video ready check
             this.checkVideoReady();
@@ -45,7 +59,49 @@
         
         disableVideoOnMobile() {
             this.$video.remove();
-            this.$image.css('opacity', '1');
+        }
+        
+        /* ============================================ */
+        /* SLIDER FUNCTIONALITY */
+        /* ============================================ */
+        
+        startSlider() {
+            // Auto-play slider
+            this.sliderInterval = setInterval(() => {
+                if (!this.isHovering) {
+                    this.nextSlide();
+                }
+            }, this.sliderSpeed);
+            
+            // Dot navigation
+            this.$dots.on('click', (e) => {
+                const slideIndex = $(e.target).data('slide');
+                this.goToSlide(slideIndex);
+            });
+        }
+        
+        stopSlider() {
+            if (this.sliderInterval) {
+                clearInterval(this.sliderInterval);
+                this.sliderInterval = null;
+            }
+        }
+        
+        nextSlide() {
+            this.currentSlide = (this.currentSlide + 1) % this.$slides.length;
+            this.goToSlide(this.currentSlide);
+        }
+        
+        goToSlide(index) {
+            this.currentSlide = index;
+            
+            // Update slides
+            this.$slides.removeClass('active');
+            this.$slides.eq(index).addClass('active');
+            
+            // Update dots
+            this.$dots.removeClass('active');
+            this.$dots.eq(index).addClass('active');
         }
         
         preloadVideo() {
@@ -74,11 +130,15 @@
             }
         }
         
+        
         setupEvents() {
             const self = this;
             
-            // Mouse enter event
+            // Mouse enter event - Stop slider and play video
             this.$container.on('mouseenter', function() {
+                self.isHovering = true;
+                self.stopSlider(); // Pause slider when hovering
+                
                 if (self.autoplayDelay > 0) {
                     self.hoverTimeout = setTimeout(() => {
                         self.playVideo();
@@ -88,19 +148,25 @@
                 }
             });
             
-            // Mouse leave event
+            // Mouse leave event - Resume slider and stop video
             this.$container.on('mouseleave', function() {
+                self.isHovering = false;
                 clearTimeout(self.hoverTimeout);
                 self.pauseVideo();
+                self.startSlider(); // Resume slider when not hovering
             });
             
             // Touch events for mobile (if enabled)
             if (this.mobileBehavior === 'video' || this.mobileBehavior === 'both') {
                 this.$container.on('touchstart', function() {
                     if (self.$video.css('opacity') === '0') {
+                        self.isHovering = true;
+                        self.stopSlider();
                         self.playVideo();
                     } else {
+                        self.isHovering = false;
                         self.pauseVideo();
+                        self.startSlider();
                     }
                 });
             }

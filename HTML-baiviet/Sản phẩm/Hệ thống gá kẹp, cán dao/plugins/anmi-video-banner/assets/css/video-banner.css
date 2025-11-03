@@ -1,6 +1,6 @@
 /* ============================================ */
 /* AN MI VIDEO BANNER PLUGIN STYLES */
-/* Version: 1.0.0 */
+/* Version: 1.1.0 - With Image Slider Support */
 /* ============================================ */
 
 /* Container */
@@ -29,7 +29,83 @@
     object-fit: cover;
 }
 
-/* Image Overlay */
+/* ============================================ */
+/* IMAGE SLIDER STYLES */
+/* ============================================ */
+
+/* Slider Container */
+.anmi-banner-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+/* Individual Slide */
+.anmi-slider-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.anmi-slider-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Slider Navigation Dots */
+.anmi-slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    gap: 10px;
+}
+
+.anmi-slider-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.anmi-slider-dots .dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+}
+
+.anmi-slider-dots .dot.active {
+    background: #ff6600;
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Hide slider when video is playing (on hover) */
+.anmi-video-banner-container:hover .anmi-banner-slider {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ============================================ */
+/* BACKWARD COMPATIBILITY - Single Image */
+/* ============================================ */
+
+/* Image Overlay (old version compatibility) */
 .anmi-banner-image {
     position: absolute;
     top: 0;
