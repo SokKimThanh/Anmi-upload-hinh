@@ -136,6 +136,18 @@
     overflow: hidden;
 }
 
+/* Admin preview: Always allow video controls access (no hover needed) */
+#live_preview_container .anmi-banner-iframe,
+#live_preview_container .anmi-banner-video {
+    z-index: 20 !important; /* Always on top */
+    pointer-events: auto !important; /* Always clickable */
+}
+
+#live_preview_container .anmi-banner-image,
+#live_preview_container .anmi-banner-slider {
+    opacity: 0.3 !important; /* Always dim to show video is primary */
+}
+
 /* ============================================ */
 /* IMAGE SLIDER STYLES */
 /* ============================================ */

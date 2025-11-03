@@ -548,9 +548,11 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                         <p class="description" style="margin-bottom: 5px;">
                             <strong>Desktop:</strong> Hover chuột để xem video phát → Click play button
                         </p>
+                        <p class="description" style="margin-bottom: 10px; color: #2196F3;">
+                            <strong>🎮 Video Controls:</strong> Click vào video để access YouTube/Vimeo controls (play, pause, volume, fullscreen)
+                        </p>
                         <p class="description" style="margin-bottom: 10px; color: #FF9800;">
-                            <strong>🔊 Volume Control:</strong> Click volume button (bottom-right) để bật/tắt âm thanh khi video đang phát 
-                            <strong>(⚠️ Chỉ hoạt động với MP4 video, không hỗ trợ YouTube/Vimeo iframe)</strong>
+                            <strong>⚠️ Lưu ý:</strong> Nếu "Muted" được bật, bạn cần click vào nút volume của YouTube để bật âm thanh
                         </p>
                         <div id="live_preview_container" style="height: 300px; position: relative; background: #000; border-radius: 4px; overflow: hidden;">
                             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff; opacity: 0.5;">
