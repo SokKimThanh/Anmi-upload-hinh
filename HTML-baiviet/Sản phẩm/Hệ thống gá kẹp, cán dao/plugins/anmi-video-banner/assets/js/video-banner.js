@@ -352,19 +352,20 @@
             }
             
             // ============================================
-            // VOLUME CONTROL (Both Mobile & Desktop)
+            // VOLUME CONTROL - HTML5 Video Only
             // ============================================
-            // Check if video is HTML5 video or iframe (YouTube/Vimeo)
+            // For YouTube/Vimeo iframe: Use native controls (controls=1 in URL)
+            // For HTML5 video: Custom volume control button
             const video = this.$video[0];
             const isIframe = video && video.tagName === 'IFRAME';
             
             if (isIframe) {
-                // Hide volume control for iframe videos (YouTube/Vimeo)
-                // These require their own APIs (YouTube IFrame API / Vimeo Player API)
-                this.$volumeControl.hide();
-                console.log('Volume control disabled for iframe video (YouTube/Vimeo)');
+                // Remove custom volume control for iframe videos
+                // User will use YouTube/Vimeo native controls
+                this.$volumeControl.remove();
+                console.log('Using native controls for iframe video (YouTube/Vimeo)');
             } else {
-                // Show and enable volume control for HTML5 video
+                // Enable custom volume control for HTML5 video
                 this.$volumeControl.on('click', function(e) {
                     e.stopPropagation(); // Prevent triggering container click
                     
