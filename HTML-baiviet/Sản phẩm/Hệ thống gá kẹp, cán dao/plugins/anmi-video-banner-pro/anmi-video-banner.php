@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: An Mi Video Banner
+ * Plugin Name: AnMi Video Banner Pro
  * Plugin URI: https://anmitools.com
  * Description: Video banner với slider tự động + Admin CRUD panel - YouTube/Vimeo/MP4 support + Iframe Embed + Modal Preview + Video Settings Control
- * Version: 1.6.13
+ * Version: 2.0.0
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
- * Text Domain: anmi-video-banner
+ * Text Domain: anmi-video-banner-pro
  */
 
 // Prevent direct access
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('ANMI_VIDEO_BANNER_VERSION', '1.6.13');
+define('ANMI_VIDEO_BANNER_VERSION', '2.0.0');
 define('ANMI_VIDEO_BANNER_FILE', __FILE__);
 define('ANMI_VIDEO_BANNER_PATH', plugin_dir_path(__FILE__));
 define('ANMI_VIDEO_BANNER_URL', plugin_dir_url(__FILE__));
@@ -33,7 +33,7 @@ function anmi_video_banner_activate() {
     $admin->create_database_table();
     
     // Log activation
-    error_log('An Mi Video Banner v' . ANMI_VIDEO_BANNER_VERSION . ' activated - Database migrated');
+    error_log('AnMi Video Banner Pro v' . ANMI_VIDEO_BANNER_VERSION . ' activated - Database migrated');
 }
 
 class AnMi_Video_Banner {
