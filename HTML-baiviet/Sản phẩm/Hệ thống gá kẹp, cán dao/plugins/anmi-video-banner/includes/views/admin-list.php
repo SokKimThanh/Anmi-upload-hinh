@@ -450,10 +450,10 @@ jQuery(document).ready(function($) {
                 'data-slider-effect="' + banner.slider_effect + '" ' +
                 'data-video-type="' + videoType + '">';
         
-        // Video/Iframe
+        // Video/Iframe - PREVIEW ONLY (separate from production classes)
         if (videoType === 'youtube' || videoType === 'vimeo') {
             console.log('Creating iframe for', videoType, 'with URL:', embedUrl);
-            html += '<iframe class="anmi-banner-video anmi-banner-iframe anmi-modal-iframe" ' +
+            html += '<iframe class="anmi-preview-iframe" ' +
                     'src="' + embedUrl + '" ' +
                     'frameborder="0" ' +
                     'allow="autoplay; fullscreen; picture-in-picture" ' +
@@ -461,7 +461,7 @@ jQuery(document).ready(function($) {
                     '</iframe>';
         } else {
             console.log('Creating video element with URL:', embedUrl);
-            html += '<video class="anmi-banner-video anmi-modal-video" ' +
+            html += '<video class="anmi-preview-video" ' +
                     'loop muted playsinline preload="metadata" ' +
                     'poster="' + (images[0] || '') + '">' +
                     '<source src="' + embedUrl + '" type="video/mp4">' +
@@ -565,15 +565,15 @@ jQuery(document).ready(function($) {
         
         // Hide loader when iframe/video loads (CRITICAL FIX)
         setTimeout(function() {
-            // For iframe (YouTube/Vimeo)
-            $('.anmi-modal-iframe').on('load', function() {
-                console.log('Iframe loaded - hiding loader');
+            // For iframe (YouTube/Vimeo) - Preview only
+            $('.anmi-preview-iframe').on('load', function() {
+                console.log('Preview iframe loaded - hiding loader');
                 $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
             });
             
-            // For video element (MP4)
-            $('.anmi-modal-video').on('loadeddata', function() {
-                console.log('Video loaded - hiding loader');
+            // For video element (MP4) - Preview only
+            $('.anmi-preview-video').on('loadeddata', function() {
+                console.log('Preview video loaded - hiding loader');
                 $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
             });
             
