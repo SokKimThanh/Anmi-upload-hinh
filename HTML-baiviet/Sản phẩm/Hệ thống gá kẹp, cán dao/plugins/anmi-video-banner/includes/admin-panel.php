@@ -51,6 +51,9 @@ class AnMi_Video_Banner_Admin {
             subtitle text DEFAULT '',
             button_text varchar(100) DEFAULT '',
             button_link varchar(255) DEFAULT '',
+            show_title tinyint(1) DEFAULT 0,
+            show_subtitle tinyint(1) DEFAULT 0,
+            show_button tinyint(1) DEFAULT 0,
             height varchar(50) DEFAULT '600px',
             transition varchar(50) DEFAULT 'fade',
             slider_speed int(11) DEFAULT 3000,
@@ -197,6 +200,9 @@ class AnMi_Video_Banner_Admin {
         $subtitle = sanitize_textarea_field($_POST['subtitle']);
         $button_text = sanitize_text_field($_POST['button_text']);
         $button_link = esc_url_raw($_POST['button_link']);
+        $show_title = isset($_POST['show_title']) ? 1 : 0;
+        $show_subtitle = isset($_POST['show_subtitle']) ? 1 : 0;
+        $show_button = isset($_POST['show_button']) ? 1 : 0;
         $height = sanitize_text_field($_POST['height']);
         $transition = sanitize_text_field($_POST['transition']);
         $slider_speed = intval($_POST['slider_speed']);
@@ -214,6 +220,9 @@ class AnMi_Video_Banner_Admin {
             'subtitle' => $subtitle,
             'button_text' => $button_text,
             'button_link' => $button_link,
+            'show_title' => $show_title,
+            'show_subtitle' => $show_subtitle,
+            'show_button' => $show_button,
             'height' => $height,
             'transition' => $transition,
             'slider_speed' => $slider_speed,
@@ -229,7 +238,7 @@ class AnMi_Video_Banner_Admin {
                 $this->table_name,
                 $data,
                 array('id' => $banner_id),
-                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d', '%s', '%s'),
+                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%d', '%d', '%s', '%s', '%d', '%s', '%d', '%s', '%s'),
                 array('%d')
             );
             
@@ -244,7 +253,7 @@ class AnMi_Video_Banner_Admin {
             $result = $wpdb->insert(
                 $this->table_name,
                 $data,
-                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d', '%s', '%s')
+                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%d', '%d', '%s', '%s', '%d', '%s', '%d', '%s', '%s')
             );
             
             if ($result) {
