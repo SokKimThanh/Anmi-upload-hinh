@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Mi Video Banner - Live Demo với Video Thật</title>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../assets/css/video-banner.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .demo-header {
+            background: linear-gradient(135deg, #ff6600 0%, #ff8533 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .demo-header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .demo-header p {
+            font-size: 20px;
+            opacity: 0.95;
+        }
+        
+        .demo-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .demo-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+        
+        .demo-section h2 {
+            color: #ff6600;
+            font-size: 32px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ff6600;
+            padding-bottom: 10px;
+        }
+        
+        .demo-section h3 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+        }
+        
+        .demo-section p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .info-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff6600;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .info-box strong {
+            color: #ff6600;
+        }
+        
+        .code-block {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .code-block .keyword { color: #c678dd; }
+        .code-block .string { color: #98c379; }
+        .code-block .attribute { color: #61afef; }
+        .code-block .value { color: #e5c07b; }
+        
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+        }
+        
+        .btn:hover {
+            background: #ff8533;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
+        }
+        
+        .btn-secondary {
+            background: #2c3e50;
+        }
+        
+        .btn-secondary:hover {
+            background: #34495e;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ff6600;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateX(5px);
+        }
+        
+        .feature-card h4 {
+            color: #ff6600;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .banner-wrapper {
+            margin: 40px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .instructions {
+            background: #e3f2fd;
+            border-left: 4px solid #2196F3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .instructions ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .instructions li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="demo-header">
+        <h1>🎬 An Mi Video Banner - Live Demo</h1>
+        <p>Video Profile An Mi Tools - Hover để xem video giới thiệu công ty</p>
+    </header>
+    
+    <div class="demo-container">
+        
+        <!-- Main Banner Demo -->
+        <div class="demo-section">
+            <h2>📹 Banner chính - Video Profile An Mi Tools</h2>
+            
+            <div class="info-box">
+                <strong>🎯 Hướng dẫn:</strong> Di chuột vào banner bên dưới để video tự động phát. Khi rời chuột ra, video sẽ dừng và quay về ảnh ban đầu.
+            </div>
+            
+            <div class="banner-wrapper">
+                <div class="anmi-video-banner-container transition-fade" 
+                     style="height: 600px;"
+                     data-autoplay-delay="0"
+                     data-mobile-behavior="image">
+                    
+                    <!-- Video từ An Mi Tools -->
+                    <video class="anmi-banner-video" loop muted playsinline preload="auto">
+                        <source src="https://anmitools.com/phim-profile-an-mi-tieng-viet/truyen-thong/ANMI-PROFILE-2025-tiengviet.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                    </video>
+                    
+                    <!-- Image Overlay - Screenshot từ video -->
+                    <div class="anmi-banner-image" style="background-image: url('https://anmitools.com/wp-content/uploads/2025/10/HOTLINE-1900x1200-copy.webp');"></div>
+                    
+                    <!-- Content Overlay -->
+                    <div class="anmi-banner-content">
+                        <h1 class="anmi-banner-title">An Mi Tools - Giải Pháp CNC Toàn Diện</h1>
+                        <p class="anmi-banner-subtitle">Hơn 20 năm kinh nghiệm cung cấp công cụ cắt gọt chất lượng cao cho ngành cơ khí Việt Nam</p>
+                        <a href="https://anmitools.com/gioi-thieu" class="anmi-banner-btn">Tìm hiểu thêm</a>
+                    </div>
+                    
+                    <!-- Loading Spinner -->
+                    <div class="anmi-banner-loader">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <strong>💡 Lưu ý khi sử dụng video này:</strong>
+                <ul>
+                    <li>Video sẽ tự động preload để đảm bảo phát mượt khi hover</li>
+                    <li>Trên mobile, mặc định chỉ hiển thị ảnh để tiết kiệm băng thông</li>
+                    <li>Video được muted để tuân thủ chính sách autoplay của trình duyệt</li>
+                    <li>Format: MP4 - tương thích tốt nhất với mọi trình duyệt</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Shortcode Example -->
+        <div class="demo-section">
+            <h2>📝 Shortcode để sử dụng video này</h2>
+            
+            <p>Copy shortcode sau và paste vào bất kỳ Post/Page nào trong WordPress:</p>
+            
+            <div class="code-block">
+<span class="keyword">[anmi_video_banner</span>
+    <span class="attribute">video_url</span>=<span class="string">"https://anmitools.com/phim-profile-an-mi-tieng-viet/truyen-thong/ANMI-PROFILE-2025-tiengviet.mp4"</span>
+    <span class="attribute">image_url</span>=<span class="string">"https://anmitools.com/wp-content/uploads/2025/10/HOTLINE-1900x1200-copy.webp"</span>
+    <span class="attribute">height</span>=<span class="string">"600px"</span>
+    <span class="attribute">title</span>=<span class="string">"An Mi Tools - Giải Pháp CNC Toàn Diện"</span>
+    <span class="attribute">subtitle</span>=<span class="string">"Hơn 20 năm kinh nghiệm cung cấp công cụ cắt gọt chất lượng cao"</span>
+    <span class="attribute">button_text</span>=<span class="string">"Tìm hiểu thêm"</span>
+    <span class="attribute">button_link</span>=<span class="string">"https://anmitools.com/gioi-thieu"</span>
+    <span class="attribute">transition</span>=<span class="string">"fade"</span>
+    <span class="attribute">mobile_behavior</span>=<span class="string">"image"</span>
+<span class="keyword">]</span>
+            </div>
+            
+            <h3>🎨 Tùy chọn Transition Effects:</h3>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>🌫️ Fade (Mặc định)</h4>
+                    <p>Ảnh từ từ mờ dần, video hiện lên mượt mà</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🔍 Zoom</h4>
+                    <p>Ảnh phóng to nhẹ khi chuyển sang video</p>
+                </div>
+                <div class="feature-card">
+                    <h4>💨 Blur</h4>
+                    <p>Ảnh làm mờ dần trong khi video hiện rõ</p>
+                </div>
+                <div class="feature-card">
+                    <h4>➡️ Slide</h4>
+                    <p>Ảnh trượt sang trái, video xuất hiện</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Zoom Effect Demo -->
+        <div class="demo-section">
+            <h2>🔍 Demo với Zoom Effect</h2>
+            
+            <div class="banner-wrapper">
+                <div class="anmi-video-banner-container transition-zoom" 
+                     style="height: 500px;"
+                     data-autoplay-delay="0"
+                     data-mobile-behavior="image">
+                    
+                    <video class="anmi-banner-video" loop muted playsinline preload="auto">
+                        <source src="https://anmitools.com/phim-profile-an-mi-tieng-viet/truyen-thong/ANMI-PROFILE-2025-tiengviet.mp4" type="video/mp4">
+                    </video>
+                    
+                    <div class="anmi-banner-image" style="background-image: url('https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp');"></div>
+                    
+                    <div class="anmi-banner-content">
+                        <h1 class="anmi-banner-title">Hệ Thống Gá Kẹp Cán Dao</h1>
+                        <p class="anmi-banner-subtitle">BT, HSK, CAT Tool Holders - Chất lượng cao, giá cạnh tranh</p>
+                        <a href="https://anmitools.com/san-pham" class="anmi-banner-btn">Xem sản phẩm</a>
+                    </div>
+                    
+                    <div class="anmi-banner-loader">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-block">
+<span class="keyword">[anmi_video_banner</span>
+    <span class="attribute">video_url</span>=<span class="string">"https://anmitools.com/phim-profile-an-mi-tieng-viet/truyen-thong/ANMI-PROFILE-2025-tiengviet.mp4"</span>
+    <span class="attribute">image_url</span>=<span class="string">"https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp"</span>
+    <span class="attribute">transition</span>=<span class="string">"zoom"</span>
+    ...
+<span class="keyword">]</span>
+            </div>
+        </div>
+        
+        <!-- Blur Effect Demo -->
+        <div class="demo-section">
+            <h2>💨 Demo với Blur Effect</h2>
+            
+            <div class="banner-wrapper">
+                <div class="anmi-video-banner-container transition-blur" 
+                     style="height: 500px;"
+                     data-autoplay-delay="0.5"
+                     data-mobile-behavior="image">
+                    
+                    <video class="anmi-banner-video" loop muted playsinline preload="auto">
+                        <source src="https://anmitools.com/phim-profile-an-mi-tieng-viet/truyen-thong/ANMI-PROFILE-2025-tiengviet.mp4" type="video/mp4">
+                    </video>
+                    
+                    <div class="anmi-banner-image" style="background-image: url('https://anmitools.com/wp-content/uploads/2025/10/HOTLINE-1900x1200-copy.webp');"></div>
+                    
+                    <div class="anmi-banner-content">
+                        <h1 class="anmi-banner-title">Nhà Máy Sản Xuất Hiện Đại</h1>
+                        <p class="anmi-banner-subtitle">Video phát sau 0.5 giây khi hover</p>
+                        <a href="https://anmitools.com/lien-he" class="anmi-banner-btn">Liên hệ ngay</a>
+                    </div>
+                    
+                    <div class="anmi-banner-loader">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-block">
+<span class="keyword">[anmi_video_banner</span>
+    <span class="attribute">transition</span>=<span class="string">"blur"</span>
+    <span class="attribute">autoplay_delay</span>=<span class="string">"0.5"</span>
+    ...
+<span class="keyword">]</span>
+            </div>
+        </div>
+        
+        <!-- Elementor Instructions -->
+        <div class="demo-section">
+            <h2>🎨 Sử dụng với Elementor</h2>
+            
+            <div class="instructions">
+                <strong>📋 Các bước thực hiện:</strong>
+                <ol style="margin-left: 20px; margin-top: 10px; line-height: 2;">
+                    <li>Mở trang với <strong>Elementor Editor</strong></li>
+                    <li>Tìm widget <strong>"An Mi Video Banner"</strong> trong panel</li>
+                    <li>Kéo thả vào vị trí mong muốn</li>
+                    <li>Trong tab <strong>"Video & Image"</strong>:
+                        <ul style="margin-left: 20px;">
+                            <li>Video URL: Paste link <code>https://anmitools.com/phim-profile-an-mi-tieng-viet/truyen-thong/ANMI-PROFILE-2025-tiengviet.mp4</code></li>
+                            <li>Image Overlay: Upload ảnh đại diện</li>
+                        </ul>
+                    </li>
+                    <li>Nhập <strong>Title</strong>, <strong>Subtitle</strong>, <strong>Button</strong></li>
+                    <li>Chọn <strong>Transition Effect</strong>: fade, zoom, blur, hoặc slide</li>
+                    <li>Tùy chỉnh <strong>Style</strong>: màu sắc, font chữ...</li>
+                    <li>Preview và Publish!</li>
+                </ol>
+            </div>
+        </div>
+        
+        <!-- Video Info -->
+        <div class="demo-section">
+            <h2>📊 Thông tin Video</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>📹 URL Video</h4>
+                    <p style="word-break: break-all; font-size: 12px;">
+                        https://anmitools.com/phim-profile-an-mi-tieng-viet/truyen-thong/ANMI-PROFILE-2025-tiengviet.mp4
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <h4>🎞️ Format</h4>
+                    <p>MP4 (H.264)<br>Tương thích mọi trình duyệt</p>
+                </div>
+                <div class="feature-card">
+                    <h4>⚡ Performance</h4>
+                    <p>Preload auto<br>Lazy loading<br>Optimized playback</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📱 Responsive</h4>
+                    <p>Mobile: Chỉ hiển thị ảnh<br>Desktop: Hover-to-play</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA Section -->
+        <div class="demo-section" style="text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+            <h2 style="color: white; border-bottom-color: white;">🚀 Sẵn sàng triển khai?</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 18px;">Plugin đã sẵn sàng để cài đặt và sử dụng ngay!</p>
+            
+            <div class="btn-group" style="justify-content: center; margin-top: 30px;">
+                <a href="../README.md" class="btn" style="background: white; color: #667eea;">📖 Đọc Documentation</a>
+                <a href="../INSTALL.md" class="btn" style="background: white; color: #667eea;">📥 Hướng dẫn cài đặt</a>
+                <a href="https://anmitools.com" class="btn btn-secondary">🏠 An Mi Tools</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Footer -->
+    <footer style="background: #2c3e50; color: white; padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <h3 style="margin-bottom: 20px;">📞 Liên hệ An Mi Tools</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto 30px auto;">
+            <div>
+                <h4 style="color: #ff6600; margin-bottom: 10px;">🏢 Hà Nội</h4>
+                <p>Suite 409, CT4 Building<br>Song Da Urban Area</p>
+                <p>☎️ +84 24 3556 2635</p>
+            </div>
+            <div>
+                <h4 style="color: #ff6600; margin-bottom: 10px;">🏢 TP. HCM</h4>
+                <p>75 Do Xuan Hop<br>Phuoc Long B, Thu Duc</p>
+                <p>☎️ +84 28 6262 3959</p>
+            </div>
+            <div>
+                <h4 style="color: #ff6600; margin-bottom: 10px;">📧 Email</h4>
+                <p>sales.hn@anmitools.com<br>sales.hcm@anmitools.com</p>
+            </div>
+        </div>
+        <p style="opacity: 0.8; margin-top: 20px;">© 2025 An Mi Tools - All Rights Reserved</p>
+        <p style="opacity: 0.6; margin-top: 10px; font-size: 14px;">An Mi Video Banner Plugin v1.0.0</p>
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Plugin JS -->
+    <script src="../assets/js/video-banner.js"></script>
+    
+</body>
+</html>
