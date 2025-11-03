@@ -370,40 +370,60 @@ class AnMi_Video_Banner_Admin {
      * AJAX handler for preview modal
      */
     public function ajax_get_banner_preview() {
-        check_ajax_referer('anmi_banner_nonce', 'nonce');
+        // Enable error logging
+        error_log('ANMI Banner Preview: AJAX called');
         
-        $banner_id = intval($_POST['banner_id']);
-        
-        if (!$banner_id) {
-            wp_send_json_error('Invalid banner ID');
+        try {
+            // Check nonce
+            if (!check_ajax_referer('anmi_banner_nonce', 'nonce', false)) {
+                error_log('ANMI Banner Preview: Nonce check failed');
+                wp_send_json_error('Invalid security token');
+                return;
+            }
+            
+            $banner_id = isset($_POST['banner_id']) ? intval($_POST['banner_id']) : 0;
+            error_log('ANMI Banner Preview: Banner ID = ' . $banner_id);
+            
+            if (!$banner_id) {
+                error_log('ANMI Banner Preview: Invalid banner ID');
+                wp_send_json_error('Invalid banner ID');
+                return;
+            }
+            
+            $banner = self::get_banner($banner_id);
+            error_log('ANMI Banner Preview: Banner found = ' . ($banner ? 'yes' : 'no'));
+            
+            if (!$banner) {
+                error_log('ANMI Banner Preview: Banner not found');
+                wp_send_json_error('Banner not found');
+                return;
+            }
+            
+            // Return banner data
+            error_log('ANMI Banner Preview: Sending success response');
+            wp_send_json_success(array(
+                'id' => $banner->id,
+                'name' => $banner->name,
+                'video_url' => $banner->video_url,
+                'images' => $banner->images,
+                'title' => $banner->title,
+                'subtitle' => $banner->subtitle,
+                'button_text' => $banner->button_text,
+                'button_link' => $banner->button_link,
+                'show_title' => $banner->show_title,
+                'show_subtitle' => $banner->show_subtitle,
+                'show_button' => $banner->show_button,
+                'height' => $banner->height,
+                'transition' => $banner->transition,
+                'slider_speed' => $banner->slider_speed,
+                'slider_effect' => $banner->slider_effect,
+                'autoplay_delay' => $banner->autoplay_delay,
+                'mobile_behavior' => $banner->mobile_behavior
+            ));
+        } catch (Exception $e) {
+            error_log('ANMI Banner Preview: Exception - ' . $e->getMessage());
+            wp_send_json_error('Server error: ' . $e->getMessage());
         }
-        
-        $banner = self::get_banner($banner_id);
-        
-        if (!$banner) {
-            wp_send_json_error('Banner not found');
-        }
-        
-        // Return banner data
-        wp_send_json_success(array(
-            'id' => $banner->id,
-            'name' => $banner->name,
-            'video_url' => $banner->video_url,
-            'images' => $banner->images,
-            'title' => $banner->title,
-            'subtitle' => $banner->subtitle,
-            'button_text' => $banner->button_text,
-            'button_link' => $banner->button_link,
-            'show_title' => $banner->show_title,
-            'show_subtitle' => $banner->show_subtitle,
-            'show_button' => $banner->show_button,
-            'height' => $banner->height,
-            'transition' => $banner->transition,
-            'slider_speed' => $banner->slider_speed,
-            'slider_effect' => $banner->slider_effect,
-            'autoplay_delay' => $banner->autoplay_delay,
-            'mobile_behavior' => $banner->mobile_behavior
-        ));
     }
 }
 

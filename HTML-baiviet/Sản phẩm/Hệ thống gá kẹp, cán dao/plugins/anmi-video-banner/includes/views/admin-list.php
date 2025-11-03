@@ -340,6 +340,10 @@ jQuery(document).ready(function($) {
         console.log('Modal display:', $('#anmi-preview-modal').css('display'));
         
         // Load banner data via AJAX
+        console.log('Sending AJAX request...');
+        console.log('AJAX URL:', anmiBannerAdmin.ajax_url);
+        console.log('Nonce:', anmiBannerAdmin.nonce);
+        
         $.ajax({
             url: anmiBannerAdmin.ajax_url,
             type: 'POST',
@@ -349,14 +353,21 @@ jQuery(document).ready(function($) {
                 nonce: anmiBannerAdmin.nonce
             },
             success: function(response) {
+                console.log('AJAX Success:', response);
                 if (response.success) {
                     renderPreview(response.data);
                 } else {
                     showPreviewError(response.data || 'Không thể tải banner');
                 }
             },
-            error: function() {
-                showPreviewError('Lỗi kết nối. Vui lòng thử lại.');
+            error: function(xhr, status, error) {
+                console.error('AJAX Error:', {
+                    status: xhr.status,
+                    statusText: xhr.statusText,
+                    responseText: xhr.responseText,
+                    error: error
+                });
+                showPreviewError('Lỗi ' + xhr.status + ': ' + xhr.statusText + '. Server có thể đang bận, vui lòng thử lại.');
             }
         });
     }
