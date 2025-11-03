@@ -146,8 +146,17 @@ class AnMi_Video_Banner {
                 return '<p style="color:red;">Error: Banner not found!</p>';
             }
             
+            // Extract video URL from embed code if video_type is 'embed'
+            $video_url = $banner->video_url;
+            if (isset($banner->video_type) && $banner->video_type === 'embed') {
+                // Extract src URL from iframe embed code
+                if (preg_match('/src=["\'](https?:\/\/[^"\']+)["\']/i', $banner->video_url, $match)) {
+                    $video_url = $match[1];
+                }
+            }
+            
             // Override attributes with database values
-            $atts['video_url'] = $banner->video_url;
+            $atts['video_url'] = $video_url;
             $atts['images'] = $banner->images;
             $atts['height'] = $banner->height;
             $atts['title'] = $banner->title;

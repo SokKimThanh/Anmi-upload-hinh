@@ -120,10 +120,10 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                         placeholder='Paste iframe code here...&#10;Example:&#10;<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
                                     ><?php echo $is_edit && $banner->video_type == 'embed' ? esc_textarea($banner->video_url) : ''; ?></textarea>
                                     <p class="description">
-                                        <strong>� Cách lấy mã nhúng:</strong><br>
+                                        <strong>📋 Cách lấy mã nhúng:</strong><br>
                                         • <strong>YouTube:</strong> Vào video → Click "Share" → Click "Embed" → Copy toàn bộ code <code>&lt;iframe...&gt;</code><br>
                                         • <strong>Vimeo:</strong> Vào video → Click biểu tượng "Share" → Copy embed code<br>
-                                        • Plugin sẽ tự động trích xuất URL từ thuộc tính <code>src="..."</code>
+                                        • Plugin sẽ <strong>lưu toàn bộ mã nhúng</strong> và tự động trích xuất URL khi hiển thị
                                     </p>
                                 </td>
                             </tr>
@@ -580,14 +580,9 @@ jQuery(document).ready(function($) {
                 return;
             }
             
-            // Extract src URL from iframe
-            var srcMatch = embedCode.match(/src=["']([^"']+)["']/i);
-            if (srcMatch && srcMatch[1]) {
-                videoUrl = srcMatch[1];
-            } else {
-                alert('Không tìm thấy URL trong mã iframe. Vui lòng kiểm tra lại mã nhúng.');
-                return;
-            }
+            // Lưu toàn bộ embed code thay vì chỉ extract URL
+            // Điều này giúp giữ nguyên code khi Edit lại
+            videoUrl = embedCode;
         } else {
             videoUrl = $('#video_url').val();
             if (!videoUrl) {

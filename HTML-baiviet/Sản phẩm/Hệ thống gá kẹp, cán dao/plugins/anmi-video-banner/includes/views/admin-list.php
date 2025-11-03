@@ -392,13 +392,25 @@ jQuery(document).ready(function($) {
             images = [images];
         }
         
+        // Get video URL - extract from embed code if needed
+        var videoUrl = banner.video_url;
+        
+        // If it looks like iframe code, extract src URL
+        if (videoUrl.indexOf('<iframe') !== -1) {
+            var srcMatch = videoUrl.match(/src=["']([^"']+)["']/i);
+            if (srcMatch && srcMatch[1]) {
+                videoUrl = srcMatch[1];
+                console.log('Extracted URL from embed code:', videoUrl);
+            }
+        }
+        
         // Detect video type
         var videoType = 'direct';
-        var embedUrl = banner.video_url;
+        var embedUrl = videoUrl;
         var videoId = null;
         
         // YouTube detection
-        var youtubeMatch = banner.video_url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i);
+        var youtubeMatch = videoUrl.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i);
         if (youtubeMatch) {
             videoType = 'youtube';
             videoId = youtubeMatch[1];
@@ -406,7 +418,7 @@ jQuery(document).ready(function($) {
         }
         
         // Vimeo detection
-        var vimeoMatch = banner.video_url.match(/vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|)(\d+)(?:$|\/|\?)/i);
+        var vimeoMatch = videoUrl.match(/vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|)(\d+)(?:$|\/|\?)/i);
         if (vimeoMatch) {
             videoType = 'vimeo';
             videoId = vimeoMatch[1];
