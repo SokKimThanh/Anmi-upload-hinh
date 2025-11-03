@@ -76,7 +76,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 </td>
                             </tr>
                             
-                            <tr>
+                            <tr id="video-url-row">
                                 <th><label for="video_url">URL Video <span class="required">*</span></label></th>
                                 <td>
                                     <input type="url" 
@@ -106,6 +106,23 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                             <code>https://any-video-host.com/video-url</code>
                                         </div>
                                     </div>
+                                </td>
+                            </tr>
+                            
+                            <tr id="video-embed-row" style="display: none;">
+                                <th><label for="video_embed_code">Mã Nhúng Iframe <span class="required">*</span></label></th>
+                                <td>
+                                    <textarea 
+                                        id="video_embed_code" 
+                                        name="video_embed_code" 
+                                        class="large-text" 
+                                        rows="6"
+                                        placeholder='<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" ...></iframe>'
+                                    ><?php echo $is_edit && $banner->video_type == 'embed' ? esc_textarea($banner->video_url) : ''; ?></textarea>
+                                    <p class="description">
+                                        <strong>💡 Hướng dẫn:</strong> Dán toàn bộ mã iframe từ YouTube, Vimeo, hoặc bất kỳ video hosting nào.<br>
+                                        <strong>Ví dụ:</strong> <code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" ...&gt;&lt;/iframe&gt;</code>
+                                    </p>
                                 </td>
                             </tr>
                         </table>
@@ -436,12 +453,28 @@ jQuery(document).ready(function($) {
     console.log('Initial imagesArray:', imagesArray);
     console.log('Images JSON field value:', $('#images_json').val());
     
-    // Video type change
+    // Video type change - show/hide appropriate fields
     $('#video_type').on('change', function() {
         var type = $(this).val();
         $('.hint-box').removeClass('active');
         $('.hint-' + type).addClass('active');
+        
+        // Show/hide video URL or embed code fields
+        if (type === 'embed') {
+            $('#video-url-row').hide();
+            $('#video-embed-row').show();
+            $('#video_url').prop('required', false);
+            $('#video_embed_code').prop('required', true);
+        } else {
+            $('#video-url-row').show();
+            $('#video-embed-row').hide();
+            $('#video_url').prop('required', true);
+            $('#video_embed_code').prop('required', false);
+        }
     });
+    
+    // Trigger on page load to set correct initial state
+    $('#video_type').trigger('change');
     
     // Upload images button
     $('#upload_images_button').on('click', function(e) {
@@ -526,9 +559,31 @@ jQuery(document).ready(function($) {
             return;
         }
         
-        if (!$('#video_url').val()) {
-            alert('Vui lòng nhập URL video');
-            return;
+        // Get video URL based on video type
+        var videoType = $('#video_type').val();
+        var videoUrl = '';
+        
+        if (videoType === 'embed') {
+            var embedCode = $('#video_embed_code').val().trim();
+            if (!embedCode) {
+                alert('Vui lòng nhập mã nhúng iframe');
+                return;
+            }
+            
+            // Extract src URL from iframe
+            var srcMatch = embedCode.match(/src=["']([^"']+)["']/i);
+            if (srcMatch && srcMatch[1]) {
+                videoUrl = srcMatch[1];
+            } else {
+                alert('Không tìm thấy URL trong mã iframe. Vui lòng kiểm tra lại mã nhúng.');
+                return;
+            }
+        } else {
+            videoUrl = $('#video_url').val();
+            if (!videoUrl) {
+                alert('Vui lòng nhập URL video');
+                return;
+            }
         }
         
         if (imagesArray.length === 0) {
@@ -546,7 +601,7 @@ jQuery(document).ready(function($) {
                 nonce: anmiBannerAdmin.nonce,
                 banner_id: $('#banner_id').val(),
                 name: $('#banner_name').val(),
-                video_url: $('#video_url').val(),
+                video_url: videoUrl,
                 video_type: $('#video_type').val(),
                 images: $('#images_json').val(),
                 title: $('#title').val(),
@@ -598,7 +653,23 @@ jQuery(document).ready(function($) {
     var previewInstance = null;
     
     function updateLivePreview() {
-        var videoUrl = $('#video_url').val();
+        // Get video URL based on type
+        var videoType = $('#video_type').val();
+        var videoUrl = '';
+        
+        if (videoType === 'embed') {
+            var embedCode = $('#video_embed_code').val().trim();
+            if (embedCode) {
+                // Extract src URL from iframe
+                var srcMatch = embedCode.match(/src=["']([^"']+)["']/i);
+                if (srcMatch && srcMatch[1]) {
+                    videoUrl = srcMatch[1];
+                }
+            }
+        } else {
+            videoUrl = $('#video_url').val();
+        }
+        
         var title = $('#banner_title').val();
         var subtitle = $('#banner_subtitle').val();
         var buttonText = $('#button_text').val();
@@ -732,7 +803,7 @@ jQuery(document).ready(function($) {
     }
     
     // Trigger preview update on field changes
-    $('#video_url, #banner_title, #banner_subtitle, #button_text, #button_link, #transition, #autoplay_delay, #slider_speed, #slider_effect').on('input change', function() {
+    $('#video_url, #video_embed_code, #banner_title, #banner_subtitle, #button_text, #button_link, #transition, #autoplay_delay, #slider_speed, #slider_effect').on('input change', function() {
         updateLivePreview();
     });
     

@@ -373,13 +373,18 @@ jQuery(document).ready(function($) {
     }
     
     function renderPreview(banner) {
+        console.log('renderPreview called with banner:', banner);
+        
         $('.anmi-modal-loading').hide();
+        console.log('Loading hidden');
         
         // Parse images
         var images = [];
         try {
             images = JSON.parse(banner.images);
+            console.log('Parsed images:', images);
         } catch(e) {
+            console.error('Failed to parse images:', e);
             images = [banner.images];
         }
         
@@ -483,14 +488,27 @@ jQuery(document).ready(function($) {
                 '<p><strong>📋 Shortcode:</strong> <code>[anmi_video_banner id="' + banner.id + '"]</code></p>' +
                 '</div>';
         
+        console.log('HTML length:', html.length);
+        console.log('Injecting HTML into #anmi-preview-container...');
+        
         // Inject HTML
         $('#anmi-preview-container').html(html).fadeIn(300);
+        
+        console.log('HTML injected, preview container display:', $('#anmi-preview-container').css('display'));
+        console.log('Preview container children count:', $('#anmi-preview-container').children().length);
         
         // Initialize banner functionality
         setTimeout(function() {
             var $container = $('.' + uniqueId);
+            console.log('Initializing AnMiVideoBanner, container found:', $container.length > 0);
             if ($container.length && typeof AnMiVideoBanner !== 'undefined') {
                 new AnMiVideoBanner($container[0]);
+                console.log('AnMiVideoBanner initialized');
+            } else {
+                console.warn('AnMiVideoBanner not initialized:', {
+                    containerFound: $container.length > 0,
+                    classExists: typeof AnMiVideoBanner !== 'undefined'
+                });
             }
         }, 100);
     }
