@@ -122,6 +122,11 @@ class AnMi_Video_Banner_Admin {
             return;
         }
         
+        // Dequeue problematic webfontloader to prevent JS errors
+        // This script causes "d[b].on is not a function" error in admin
+        wp_dequeue_script('webfontloader');
+        wp_deregister_script('webfontloader');
+        
         // WordPress Media Library
         wp_enqueue_media();
         
