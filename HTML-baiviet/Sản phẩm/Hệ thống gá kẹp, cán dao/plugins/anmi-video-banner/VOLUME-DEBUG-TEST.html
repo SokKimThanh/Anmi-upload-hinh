@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Control Debug Test - An Mi Video Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .test-section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .test-section h2 {
+            color: #2196F3;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .volume-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 20;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.6);
+            border: 2px solid rgba(255,255,255,0.8);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .volume-button:hover {
+            opacity: 1;
+            background: rgba(0,0,0,0.8);
+            transform: scale(1.1);
+        }
+
+        .volume-button svg {
+            fill: white;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #1976D2;
+        }
+
+        button.danger {
+            background: #f44336;
+        }
+
+        button.danger:hover {
+            background: #d32f2f;
+        }
+
+        button.success {
+            background: #4CAF50;
+        }
+
+        button.success:hover {
+            background: #388E3C;
+        }
+
+        .info-box {
+            background: #E3F2FD;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+
+        .info-box p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #1976D2;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .status.muted {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .status.unmuted {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .console-log {
+            background: #263238;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+
+        .console-log div {
+            margin: 5px 0;
+        }
+
+        .error {
+            color: #ff5252;
+        }
+
+        .success {
+            color: #00ff00;
+        }
+
+        .warning {
+            color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔊 Volume Control Debug Test</h1>
+        <p style="margin-bottom: 20px; color: #666;">
+            Test file để debug volume control issue. Kiểm tra từng bước để tìm nguyên nhân video không có âm thanh.
+        </p>
+
+        <!-- Test 1: Basic HTML5 Video -->
+        <div class="test-section">
+            <h2>✅ Test 1: Basic HTML5 Video (Có âm thanh)</h2>
+            <div class="video-container" id="container1">
+                <video id="video1" muted playsinline>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Your browser does not support video tag.
+                </video>
+                <button class="volume-button" id="volumeBtn1" title="Toggle sound">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path class="volume-icon-muted" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                        <path class="volume-icon-unmuted" style="display: none;" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="controls">
+                <button onclick="playVideo(1)" class="success">▶ Play Video</button>
+                <button onclick="pauseVideo(1)">⏸ Pause</button>
+                <button onclick="toggleMute(1)">🔊 Toggle Mute</button>
+                <button onclick="checkVideoState(1)">🔍 Check State</button>
+            </div>
+            <div class="info-box">
+                <p><strong>Status:</strong> <span id="status1">Stopped</span></p>
+                <p><strong>Muted:</strong> <span id="muted1" class="status muted">YES</span></p>
+                <p><strong>Volume:</strong> <span id="volume1">1.0</span></p>
+                <p><strong>Has Audio Track:</strong> <span id="audio1">Checking...</span></p>
+            </div>
+            <div id="console1" class="console-log">
+                <div class="success">✅ Console ready. Click buttons to test...</div>
+            </div>
+        </div>
+
+        <!-- Test 2: Video with Autoplay -->
+        <div class="test-section">
+            <h2>⚡ Test 2: Video with Autoplay (Muted theo policy)</h2>
+            <div class="video-container" id="container2">
+                <video id="video2" muted autoplay playsinline loop>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                </video>
+                <button class="volume-button" id="volumeBtn2" title="Toggle sound">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path class="volume-icon-muted" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                        <path class="volume-icon-unmuted" style="display: none;" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="controls">
+                <button onclick="toggleMute(2)">🔊 Toggle Mute</button>
+                <button onclick="setVolume(2, 0.5)">🔉 Volume 50%</button>
+                <button onclick="setVolume(2, 1)">🔊 Volume 100%</button>
+                <button onclick="checkVideoState(2)">🔍 Check State</button>
+            </div>
+            <div class="info-box">
+                <p><strong>Status:</strong> <span id="status2">Auto-playing</span></p>
+                <p><strong>Muted:</strong> <span id="muted2" class="status muted">YES</span></p>
+                <p><strong>Volume:</strong> <span id="volume2">1.0</span></p>
+            </div>
+            <div id="console2" class="console-log">
+                <div class="success">✅ Autoplay video started...</div>
+            </div>
+        </div>
+
+        <!-- Test 3: Manual Unmute Test -->
+        <div class="test-section">
+            <h2>🎯 Test 3: Force Unmute via Console Commands</h2>
+            <div class="controls">
+                <button onclick="testConsoleUnmute(1)">🔧 Force Unmute Test 1</button>
+                <button onclick="testConsoleUnmute(2)">🔧 Force Unmute Test 2</button>
+                <button onclick="checkAllStates()">📊 Check All Videos</button>
+                <button onclick="resetAll()" class="danger">♻️ Reset All</button>
+            </div>
+            <div id="console3" class="console-log">
+                <div class="warning">⚠️ Test console commands here...</div>
+            </div>
+        </div>
+
+        <!-- Diagnostic Info -->
+        <div class="test-section">
+            <h2>🔬 Browser & System Info</h2>
+            <div id="browserInfo" class="info-box">
+                <p><strong>User Agent:</strong> <span id="userAgent"></span></p>
+                <p><strong>Browser:</strong> <span id="browser"></span></p>
+                <p><strong>Platform:</strong> <span id="platform"></span></p>
+                <p><strong>Screen Size:</strong> <span id="screen"></span></p>
+                <p><strong>Audio Context Support:</strong> <span id="audioSupport"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Logging helper
+        function log(containerId, message, type = 'success') {
+            const console = document.getElementById(containerId);
+            const div = document.createElement('div');
+            div.className = type;
+            div.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            console.appendChild(div);
+            console.scrollTop = console.scrollHeight;
+        }
+
+        // Play video
+        function playVideo(num) {
+            const video = document.getElementById(`video${num}`);
+            const volumeBtn = document.getElementById(`volumeBtn${num}`);
+            
+            log(`console${num}`, '▶ Attempting to play video...', 'warning');
+            
+            video.play()
+                .then(() => {
+                    log(`console${num}`, '✅ Video playing successfully!', 'success');
+                    volumeBtn.style.display = 'flex';
+                    updateStatus(num);
+                })
+                .catch(error => {
+                    log(`console${num}`, `❌ Play failed: ${error.message}`, 'error');
+                });
+        }
+
+        // Pause video
+        function pauseVideo(num) {
+            const video = document.getElementById(`video${num}`);
+            video.pause();
+            log(`console${num}`, '⏸ Video paused', 'warning');
+            updateStatus(num);
+        }
+
+        // Toggle mute
+        function toggleMute(num) {
+            const video = document.getElementById(`video${num}`);
+            const mutedIcon = document.querySelector(`#volumeBtn${num} .volume-icon-muted`);
+            const unmutedIcon = document.querySelector(`#volumeBtn${num} .volume-icon-unmuted`);
+            
+            video.muted = !video.muted;
+            
+            if (video.muted) {
+                mutedIcon.style.display = 'block';
+                unmutedIcon.style.display = 'none';
+                log(`console${num}`, '🔇 Video MUTED', 'warning');
+            } else {
+                mutedIcon.style.display = 'none';
+                unmutedIcon.style.display = 'block';
+                log(`console${num}`, '🔊 Video UNMUTED - Should hear sound!', 'success');
+            }
+            
+            updateStatus(num);
+        }
+
+        // Set volume
+        function setVolume(num, level) {
+            const video = document.getElementById(`video${num}`);
+            video.volume = level;
+            log(`console${num}`, `🔉 Volume set to ${level * 100}%`, 'success');
+            updateStatus(num);
+        }
+
+        // Check video state
+        function checkVideoState(num) {
+            const video = document.getElementById(`video${num}`);
+            
+            log(`console${num}`, '🔍 Checking video state...', 'warning');
+            log(`console${num}`, `  - Playing: ${!video.paused}`, 'success');
+            log(`console${num}`, `  - Muted: ${video.muted}`, video.muted ? 'error' : 'success');
+            log(`console${num}`, `  - Volume: ${video.volume}`, 'success');
+            log(`console${num}`, `  - Duration: ${video.duration}s`, 'success');
+            log(`console${num}`, `  - Current Time: ${video.currentTime.toFixed(2)}s`, 'success');
+            log(`console${num}`, `  - Ready State: ${video.readyState}`, 'success');
+            
+            // Check audio tracks
+            if (video.audioTracks && video.audioTracks.length > 0) {
+                log(`console${num}`, `  - Audio Tracks: ${video.audioTracks.length}`, 'success');
+            } else {
+                log(`console${num}`, `  - Audio Tracks: Not available or 0`, 'warning');
+            }
+            
+            updateStatus(num);
+        }
+
+        // Update status display
+        function updateStatus(num) {
+            const video = document.getElementById(`video${num}`);
+            const statusEl = document.getElementById(`status${num}`);
+            const mutedEl = document.getElementById(`muted${num}`);
+            const volumeEl = document.getElementById(`volume${num}`);
+            
+            if (statusEl) {
+                statusEl.textContent = video.paused ? 'Paused' : 'Playing';
+            }
+            
+            if (mutedEl) {
+                mutedEl.textContent = video.muted ? 'YES' : 'NO';
+                mutedEl.className = video.muted ? 'status muted' : 'status unmuted';
+            }
+            
+            if (volumeEl) {
+                volumeEl.textContent = video.volume.toFixed(2);
+            }
+        }
+
+        // Test console unmute
+        function testConsoleUnmute(num) {
+            const video = document.getElementById(`video${num}`);
+            
+            log('console3', `🔧 Force unmuting video ${num}...`, 'warning');
+            
+            // Force unmute
+            video.muted = false;
+            video.volume = 1.0;
+            
+            log('console3', `  - video.muted = ${video.muted}`, video.muted ? 'error' : 'success');
+            log('console3', `  - video.volume = ${video.volume}`, 'success');
+            
+            // Try to play if not playing
+            if (video.paused) {
+                video.play()
+                    .then(() => {
+                        log('console3', '✅ Video playing with sound!', 'success');
+                    })
+                    .catch(err => {
+                        log('console3', `❌ Play failed: ${err.message}`, 'error');
+                    });
+            } else {
+                log('console3', '✅ Video already playing - sound should work now!', 'success');
+            }
+            
+            updateStatus(num);
+        }
+
+        // Check all states
+        function checkAllStates() {
+            log('console3', '📊 Checking all videos...', 'warning');
+            
+            for (let i = 1; i <= 2; i++) {
+                const video = document.getElementById(`video${i}`);
+                log('console3', `Video ${i}:`, 'warning');
+                log('console3', `  - Muted: ${video.muted}`, video.muted ? 'error' : 'success');
+                log('console3', `  - Volume: ${video.volume}`, 'success');
+                log('console3', `  - Playing: ${!video.paused}`, 'success');
+            }
+        }
+
+        // Reset all
+        function resetAll() {
+            log('console3', '♻️ Resetting all videos...', 'warning');
+            
+            for (let i = 1; i <= 2; i++) {
+                const video = document.getElementById(`video${i}`);
+                video.pause();
+                video.currentTime = 0;
+                video.muted = true;
+                updateStatus(i);
+                
+                const volumeBtn = document.getElementById(`volumeBtn${i}`);
+                volumeBtn.style.display = 'none';
+            }
+            
+            log('console3', '✅ All videos reset', 'success');
+        }
+
+        // Initialize browser info
+        function initBrowserInfo() {
+            document.getElementById('userAgent').textContent = navigator.userAgent;
+            document.getElementById('platform').textContent = navigator.platform;
+            document.getElementById('screen').textContent = `${window.innerWidth}x${window.innerHeight}`;
+            
+            // Detect browser
+            let browser = 'Unknown';
+            if (navigator.userAgent.indexOf('Chrome') > -1) browser = 'Chrome';
+            else if (navigator.userAgent.indexOf('Safari') > -1) browser = 'Safari';
+            else if (navigator.userAgent.indexOf('Firefox') > -1) browser = 'Firefox';
+            else if (navigator.userAgent.indexOf('Edge') > -1) browser = 'Edge';
+            document.getElementById('browser').textContent = browser;
+            
+            // Check audio support
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            document.getElementById('audioSupport').textContent = AudioContext ? 'YES' : 'NO';
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', () => {
+            initBrowserInfo();
+            
+            // Update status for all videos
+            for (let i = 1; i <= 2; i++) {
+                updateStatus(i);
+                
+                // Add event listeners
+                const video = document.getElementById(`video${i}`);
+                video.addEventListener('play', () => {
+                    log(`console${i}`, '▶ Video started playing', 'success');
+                    updateStatus(i);
+                });
+                
+                video.addEventListener('pause', () => {
+                    log(`console${i}`, '⏸ Video paused', 'warning');
+                    updateStatus(i);
+                });
+                
+                video.addEventListener('volumechange', () => {
+                    log(`console${i}`, `🔊 Volume changed: ${video.volume.toFixed(2)} | Muted: ${video.muted}`, 'success');
+                    updateStatus(i);
+                });
+                
+                // Volume button click
+                document.getElementById(`volumeBtn${i}`).addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleMute(i);
+                });
+            }
+            
+            log('console1', '✅ Test page loaded successfully!', 'success');
+            log('console2', '✅ Autoplay may be muted by browser policy', 'warning');
+        });
+    </script>
+</body>
+</html>
