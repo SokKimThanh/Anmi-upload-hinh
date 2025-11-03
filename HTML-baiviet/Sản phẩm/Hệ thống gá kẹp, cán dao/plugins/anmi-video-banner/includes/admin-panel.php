@@ -237,6 +237,10 @@ class AnMi_Video_Banner_Admin {
         
         global $wpdb;
         
+        // DEBUG: Log received data
+        error_log('=== ANMI SAVE BANNER DEBUG ===');
+        error_log('POST data: ' . print_r($_POST, true));
+        
         $banner_id = isset($_POST['banner_id']) ? intval($_POST['banner_id']) : 0;
         $name = sanitize_text_field($_POST['name']);
         $video_url = esc_url_raw($_POST['video_url']);
@@ -303,6 +307,9 @@ class AnMi_Video_Banner_Admin {
         
         if ($banner_id > 0) {
             // Update existing banner
+            error_log('Updating banner ID: ' . $banner_id);
+            error_log('Data to update: ' . print_r($data, true));
+            
             $result = $wpdb->update(
                 $this->table_name,
                 $data,
@@ -311,29 +318,42 @@ class AnMi_Video_Banner_Admin {
                 array('%d')
             );
             
+            error_log('Update result: ' . var_export($result, true));
+            error_log('Last wpdb error: ' . $wpdb->last_error);
+            
             if ($result !== false) {
                 wp_send_json_success(array(
                     'message' => 'Banner updated successfully!',
                     'banner_id' => $banner_id
                 ));
+            } else {
+                wp_send_json_error('Database update failed: ' . $wpdb->last_error);
             }
         } else {
             // Insert new banner
+            error_log('Inserting new banner');
+            error_log('Data to insert: ' . print_r($data, true));
+            
             $result = $wpdb->insert(
                 $this->table_name,
                 $data,
                 array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%d', '%d', '%s', '%s', '%d', '%s', '%d', '%s', '%s', '%d', '%d', '%d', '%d', '%d', '%d')
             );
             
+            error_log('Insert result: ' . var_export($result, true));
+            error_log('Last wpdb error: ' . $wpdb->last_error);
+            
             if ($result) {
                 wp_send_json_success(array(
                     'message' => 'Banner created successfully!',
                     'banner_id' => $wpdb->insert_id
                 ));
+            } else {
+                wp_send_json_error('Database insert failed: ' . $wpdb->last_error);
             }
         }
         
-        wp_send_json_error('Failed to save banner');
+        wp_send_json_error('Failed to save banner - unknown error');
     }
     
     /**
