@@ -1,21 +1,25 @@
 # AN MI VIDEO BANNER PLUGIN
 
-**Version:** 1.0.0  
+**Version:** 1.2.0  
 **Author:** An Mi Tools Technical Team  
 **License:** GPL v2 or later
 
 ## 📖 Mô tả
 
-Plugin tạo video banner với hiệu ứng hover transition chuyên nghiệp - tự động chuyển từ ảnh tĩnh sang video khi người dùng rê chuột vào.
+Plugin WordPress chuyên nghiệp tạo video banner với image slider tự động + Admin CRUD panel để quản lý. Hỗ trợ YouTube, Vimeo, và direct video URLs - không cần upload video!
 
 ### ✨ Tính năng chính:
 
+- ✅ **Image Slider**: Nhiều ảnh tự động chuyển đổi (auto-rotate)
 - ✅ **Hover to Play**: Video tự động phát khi hover, dừng khi rời chuột
+- ✅ **Admin Panel**: CRUD interface để quản lý banner trong WordPress Admin
+- ✅ **Video Sources**: YouTube, Vimeo, Direct MP4 URL (không cần upload!)
 - ✅ **4 Transition Effects**: Fade, Zoom, Blur, Slide
 - ✅ **Responsive Design**: Tự động tối ưu cho mobile, tablet, desktop
-- ✅ **Elementor Widget**: Drag & drop dễ dàng trong Elementor
-- ✅ **Shortcode Support**: Sử dụng ở bất kỳ đâu với shortcode
-- ✅ **Mobile Optimization**: Tùy chọn hiển thị video hoặc ảnh trên mobile
+- ✅ **Elementor Widget**: Chọn banner từ dropdown hoặc manual setup
+- ✅ **Shortcode Support**: `[anmi_video_banner id="1"]` - đơn giản & clean
+- ✅ **Mobile Optimization**: Tùy chọn slider/video/both trên mobile
+- ✅ **Database Management**: Lưu trữ banner trong database, dễ quản lý
 - ✅ **Performance**: Preload video, lazy loading, optimized code
 - ✅ **Customizable**: Tùy chỉnh màu sắc, typography, spacing
 
@@ -29,6 +33,7 @@ Plugin tạo video banner với hiệu ứng hover transition chuyên nghiệp -
 2. Upload vào `/wp-content/plugins/`
 3. Vào **WordPress Admin** → **Plugins** → **Installed Plugins**
 4. Tìm "An Mi Video Banner" và click **Activate**
+5. Database table sẽ tự động tạo khi activate
 
 ### Cách 2: Upload qua Admin
 
@@ -37,16 +42,86 @@ Plugin tạo video banner với hiệu ứng hover transition chuyên nghiệp -
 3. Chọn file `.zip` và click **Install Now**
 4. Click **Activate Plugin**
 
+### Sau khi Activate
+
+Menu mới sẽ xuất hiện: **Video Banners** 🎬 trong WordPress Admin sidebar.
+
+---
+
+## 🎛️ Admin Panel (MỚI v1.2.0)
+
+### Truy cập Dashboard
+
+**WordPress Admin → Video Banners**
+
+### Tạo Banner Mới
+
+1. Click **"Add New"** hoặc **Video Banners → Add New**
+2. Điền thông tin:
+   - **Banner Name**: Tên nội bộ (e.g., "Homepage Hero")
+   - **Video Type**: YouTube / Vimeo / Direct URL / Embed
+   - **Video URL**: Paste link video (không cần upload!)
+     - YouTube: `https://www.youtube.com/watch?v=VIDEO_ID`
+     - Vimeo: `https://vimeo.com/VIDEO_ID`
+     - Direct: `https://yourdomain.com/video.mp4`
+   - **Slider Images**: Upload nhiều ảnh (Media Library)
+   - **Content**: Title, Subtitle, Button (optional)
+   - **Settings**: Height, Transition, Slider Speed, Mobile Behavior
+3. Click **"Create Banner"**
+4. Copy shortcode từ list hoặc use in Elementor
+
+### Quản lý Banner
+
+**Video Banners → All Banners**
+
+- View tất cả banner với thumbnails
+- Edit banner bất kỳ
+- Delete với confirm
+- Copy shortcode (1 click)
+- Stats: Total / Active / Inactive
+
+### Video Sources
+
+**YouTube:**
+```
+https://www.youtube.com/embed/VIDEO_ID
+https://www.youtube.com/watch?v=VIDEO_ID
+https://youtu.be/VIDEO_ID
+```
+
+**Vimeo:**
+```
+https://player.vimeo.com/video/VIDEO_ID
+https://vimeo.com/VIDEO_ID
+```
+
+**Direct MP4:**
+```
+https://anmitools.com/videos/banner.mp4
+```
+
+📚 **Chi tiết:** Xem [ADMIN-PANEL-GUIDE.md](ADMIN-PANEL-GUIDE.md)
+
 ---
 
 ## 🚀 Sử dụng
 
 ### 1️⃣ Sử dụng với Elementor (Khuyến nghị)
 
+#### Phương pháp A: Chọn Banner từ Database (Mới!)
+
 1. Mở trang với **Elementor Editor**
 2. Tìm widget **"An Mi Video Banner"** trong panel (icon camera)
 3. Kéo thả widget vào vị trí mong muốn
-4. Cấu hình trong panel:
+4. **Tab: Select Banner**
+   - Banner Source: Chọn banner từ dropdown
+   - Tất cả settings tự động load!
+5. **Publish** → Xong!
+
+#### Phương pháp B: Manual Setup (như trước)
+
+1. Chọn **"Manual Setup"** từ dropdown
+2. Cấu hình:
 
 #### **Tab Content:**
 
