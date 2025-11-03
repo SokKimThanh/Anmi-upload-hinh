@@ -19,6 +19,7 @@
             this.mobileBehavior = this.$container.data('mobile-behavior') || 'image';
             this.sliderSpeed = parseInt(this.$container.data('slider-speed')) || 3000;
             this.sliderEffect = this.$container.data('slider-effect') || 'fade';
+            this.videoType = this.$container.data('video-type') || 'direct'; // youtube, vimeo, or direct
             
             this.isVideoReady = false;
             this.hoverTimeout = null;
@@ -37,8 +38,15 @@
                 return;
             }
             
-            // Preload video
-            this.preloadVideo();
+            // For YouTube/Vimeo iframe, mark as ready immediately
+            if (this.videoType === 'youtube' || this.videoType === 'vimeo') {
+                this.isVideoReady = true;
+                this.$loader = this.$container.find('.anmi-banner-loader');
+                this.$loader.removeClass('active');
+            } else {
+                // Preload direct video
+                this.preloadVideo();
+            }
             
             // Setup events
             this.setupEvents();
@@ -47,9 +55,6 @@
             if (this.$slides.length > 1) {
                 this.startSlider();
             }
-            
-            // Video ready check
-            this.checkVideoReady();
         }
         
         isMobile() {
@@ -194,6 +199,15 @@
                 return;
             }
             
+            // For YouTube/Vimeo iframe, just show it (autoplay is handled by embed URL)
+            if (this.videoType === 'youtube' || this.videoType === 'vimeo') {
+                this.$video.css('opacity', '1');
+                this.$slider.css('opacity', '0');
+                console.log('Showing iframe video:', this.videoType);
+                return;
+            }
+            
+            // For direct video
             const video = this.$video[0];
             
             if (video) {
@@ -215,6 +229,15 @@
         }
         
         pauseVideo() {
+            // For YouTube/Vimeo iframe, just hide it
+            if (this.videoType === 'youtube' || this.videoType === 'vimeo') {
+                this.$video.css('opacity', '0');
+                this.$slider.css('opacity', '1');
+                console.log('Hiding iframe video');
+                return;
+            }
+            
+            // For direct video
             const video = this.$video[0];
             
             if (video) {

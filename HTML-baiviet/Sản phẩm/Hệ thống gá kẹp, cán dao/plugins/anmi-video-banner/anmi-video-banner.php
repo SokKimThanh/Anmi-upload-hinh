@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Video Banner
  * Plugin URI: https://anmitools.com
  * Description: Video banner với slider tự động + Admin CRUD panel - YouTube/Vimeo/MP4 support + Content Visibility Controls
- * Version: 1.3.2
+ * Version: 1.4.0
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('ANMI_VIDEO_BANNER_VERSION', '1.3.2');
+define('ANMI_VIDEO_BANNER_VERSION', '1.4.0');
 define('ANMI_VIDEO_BANNER_FILE', __FILE__);
 define('ANMI_VIDEO_BANNER_PATH', plugin_dir_path(__FILE__));
 define('ANMI_VIDEO_BANNER_URL', plugin_dir_url(__FILE__));
@@ -66,6 +66,35 @@ class AnMi_Video_Banner {
             '1.0.0',
             true
         );
+    }
+    
+    /**
+     * Detect video type and convert URL to embed format
+     * 
+     * @param string $url Video URL (YouTube, Vimeo, or direct MP4)
+     * @return array ['type' => 'youtube|vimeo|direct', 'embed_url' => '...', 'video_id' => '...']
+     */
+    private function parse_video_url($url) {
+        $result = array(
+            'type' => 'direct',
+            'embed_url' => $url,
+            'video_id' => null
+        );
+        
+        // YouTube detection
+        if (preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i', $url, $match)) {
+            $result['type'] = 'youtube';
+            $result['video_id'] = $match[1];
+            $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?autoplay=1&mute=1&loop=1&playlist=' . $match[1] . '&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+        }
+        // Vimeo detection
+        elseif (preg_match('/vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|)(\d+)(?:$|\/|\?)/i', $url, $match)) {
+            $result['type'] = 'vimeo';
+            $result['video_id'] = $match[1];
+            $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+        }
+        
+        return $result;
     }
     
     /**
@@ -138,6 +167,9 @@ class AnMi_Video_Banner {
             return '<p style="color:red;">Error: Video URL and at least one image are required!</p>';
         }
         
+        // Parse video URL to detect type (YouTube, Vimeo, or Direct)
+        $video_data = $this->parse_video_url($atts['video_url']);
+        
         // Generate unique ID
         $unique_id = 'anmi-vb-' . uniqid();
         
@@ -150,18 +182,28 @@ class AnMi_Video_Banner {
              data-autoplay-delay="<?php echo esc_attr($atts['autoplay_delay']); ?>"
              data-mobile-behavior="<?php echo esc_attr($atts['mobile_behavior']); ?>"
              data-slider-speed="<?php echo esc_attr($atts['slider_speed']); ?>"
-             data-slider-effect="<?php echo esc_attr($atts['slider_effect']); ?>">
+             data-slider-effect="<?php echo esc_attr($atts['slider_effect']); ?>"
+             data-video-type="<?php echo esc_attr($video_data['type']); ?>">
             
             <!-- Video Background -->
-            <video class="anmi-banner-video" 
-                   loop 
-                   muted 
-                   playsinline 
-                   preload="metadata"
-                   poster="<?php echo esc_url($image_urls[0]); ?>">
-                <source src="<?php echo esc_url($atts['video_url']); ?>" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <?php if ($video_data['type'] === 'youtube' || $video_data['type'] === 'vimeo'): ?>
+                <iframe class="anmi-banner-video anmi-banner-iframe" 
+                        src="<?php echo esc_url($video_data['embed_url']); ?>"
+                        frameborder="0" 
+                        allow="autoplay; fullscreen; picture-in-picture" 
+                        allowfullscreen
+                        style="pointer-events: none;"></iframe>
+            <?php else: ?>
+                <video class="anmi-banner-video" 
+                       loop 
+                       muted 
+                       playsinline 
+                       preload="metadata"
+                       poster="<?php echo esc_url($image_urls[0]); ?>">
+                    <source src="<?php echo esc_url($video_data['embed_url']); ?>" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            <?php endif; ?>
             
             <!-- Image Slider Overlay -->
             <div class="anmi-banner-slider">
