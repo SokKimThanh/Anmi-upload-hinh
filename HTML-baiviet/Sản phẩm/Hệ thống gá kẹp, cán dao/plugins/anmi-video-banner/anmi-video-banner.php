@@ -84,6 +84,9 @@ class AnMi_Video_Banner {
             'subtitle' => '',
             'button_text' => '',
             'button_link' => '#',
+            'show_title' => '0',
+            'show_subtitle' => '0',
+            'show_button' => '0',
             'transition' => 'fade', // fade, slide, zoom, blur
             'mobile_behavior' => 'image', // image, video, both
             'autoplay_delay' => '0', // delay in seconds before video plays on hover
@@ -107,6 +110,9 @@ class AnMi_Video_Banner {
             $atts['subtitle'] = $banner->subtitle;
             $atts['button_text'] = $banner->button_text;
             $atts['button_link'] = $banner->button_link;
+            $atts['show_title'] = isset($banner->show_title) ? $banner->show_title : 0;
+            $atts['show_subtitle'] = isset($banner->show_subtitle) ? $banner->show_subtitle : 0;
+            $atts['show_button'] = isset($banner->show_button) ? $banner->show_button : 0;
             $atts['transition'] = $banner->transition;
             $atts['mobile_behavior'] = $banner->mobile_behavior;
             $atts['autoplay_delay'] = $banner->autoplay_delay;
@@ -171,16 +177,19 @@ class AnMi_Video_Banner {
             
             <?php if (!empty($atts['title']) || !empty($atts['subtitle']) || !empty($atts['button_text'])): ?>
             <!-- Content Overlay -->
-            <div class="anmi-banner-content">
-                <?php if (!empty($atts['title'])): ?>
+            <div class="anmi-banner-content"
+                 data-show-title="<?php echo esc_attr($atts['show_title']); ?>"
+                 data-show-subtitle="<?php echo esc_attr($atts['show_subtitle']); ?>"
+                 data-show-button="<?php echo esc_attr($atts['show_button']); ?>">
+                <?php if (!empty($atts['title']) && $atts['show_title']): ?>
                     <h1 class="anmi-banner-title"><?php echo esc_html($atts['title']); ?></h1>
                 <?php endif; ?>
                 
-                <?php if (!empty($atts['subtitle'])): ?>
+                <?php if (!empty($atts['subtitle']) && $atts['show_subtitle']): ?>
                     <p class="anmi-banner-subtitle"><?php echo esc_html($atts['subtitle']); ?></p>
                 <?php endif; ?>
                 
-                <?php if (!empty($atts['button_text'])): ?>
+                <?php if (!empty($atts['button_text']) && $atts['show_button']): ?>
                     <a href="<?php echo esc_url($atts['button_link']); ?>" class="anmi-banner-btn">
                         <?php echo esc_html($atts['button_text']); ?>
                     </a>

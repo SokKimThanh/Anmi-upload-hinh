@@ -362,3 +362,28 @@
         opacity: 1 !important;
     }
 }
+
+/* ============================================ */
+/* CONTENT VISIBILITY CONTROLS */
+/* ============================================ */
+
+/* Hide title when show_title is 0 */
+.anmi-banner-content[data-show-title="0"] .anmi-banner-title {
+    display: none !important;
+}
+
+/* Hide subtitle when show_subtitle is 0 */
+.anmi-banner-content[data-show-subtitle="0"] .anmi-banner-subtitle {
+    display: none !important;
+}
+
+/* Hide button when show_button is 0 */
+.anmi-banner-content[data-show-button="0"] .anmi-banner-btn {
+    display: none !important;
+}
+
+/* Hide entire content overlay if all elements are hidden */
+.anmi-banner-content[data-show-title="0"][data-show-subtitle="0"][data-show-button="0"] {
+    display: none !important;
+}
+
