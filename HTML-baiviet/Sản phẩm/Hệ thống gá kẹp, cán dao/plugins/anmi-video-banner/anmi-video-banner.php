@@ -24,6 +24,18 @@ define('ANMI_VIDEO_BANNER_URL', plugin_dir_url(__FILE__));
 // Include admin panel
 require_once ANMI_VIDEO_BANNER_PATH . 'includes/admin-panel.php';
 
+// Activation hook - Force database migration
+register_activation_hook(__FILE__, 'anmi_video_banner_activate');
+
+function anmi_video_banner_activate() {
+    // Initialize admin panel to create/update database
+    $admin = AnMi_Video_Banner_Admin::get_instance();
+    $admin->create_database_table();
+    
+    // Log activation
+    error_log('An Mi Video Banner v' . ANMI_VIDEO_BANNER_VERSION . ' activated - Database migrated');
+}
+
 class AnMi_Video_Banner {
     
     private static $instance = null;

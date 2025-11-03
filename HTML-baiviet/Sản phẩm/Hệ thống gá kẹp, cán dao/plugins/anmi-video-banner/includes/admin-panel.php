@@ -92,6 +92,47 @@ class AnMi_Video_Banner_Admin {
         
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
         dbDelta($sql);
+        
+        // Force add columns if they don't exist (for existing installations)
+        $this->add_missing_columns();
+    }
+    
+    /**
+     * Add missing columns to existing table (v1.6.13 migration)
+     */
+    private function add_missing_columns() {
+        global $wpdb;
+        
+        // Check and add video settings columns
+        $columns_to_add = array(
+            'video_autoplay' => "ALTER TABLE {$this->table_name} ADD COLUMN video_autoplay tinyint(1) DEFAULT 1 AFTER status",
+            'video_muted' => "ALTER TABLE {$this->table_name} ADD COLUMN video_muted tinyint(1) DEFAULT 1 AFTER video_autoplay",
+            'video_loop' => "ALTER TABLE {$this->table_name} ADD COLUMN video_loop tinyint(1) DEFAULT 1 AFTER video_muted",
+            'video_controls' => "ALTER TABLE {$this->table_name} ADD COLUMN video_controls tinyint(1) DEFAULT 1 AFTER video_loop",
+            'video_modestbranding' => "ALTER TABLE {$this->table_name} ADD COLUMN video_modestbranding tinyint(1) DEFAULT 1 AFTER video_controls",
+            'video_rel' => "ALTER TABLE {$this->table_name} ADD COLUMN video_rel tinyint(1) DEFAULT 0 AFTER video_modestbranding"
+        );
+        
+        foreach ($columns_to_add as $column => $sql) {
+            // Check if column exists
+            $column_exists = $wpdb->get_var(
+                $wpdb->prepare(
+                    "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS 
+                    WHERE TABLE_SCHEMA = %s 
+                    AND TABLE_NAME = %s 
+                    AND COLUMN_NAME = %s",
+                    DB_NAME,
+                    $this->table_name,
+                    $column
+                )
+            );
+            
+            // Add column if it doesn't exist
+            if (!$column_exists) {
+                $wpdb->query($sql);
+                error_log("AnMi Video Banner: Added missing column '{$column}'");
+            }
+        }
     }
     
     /**
