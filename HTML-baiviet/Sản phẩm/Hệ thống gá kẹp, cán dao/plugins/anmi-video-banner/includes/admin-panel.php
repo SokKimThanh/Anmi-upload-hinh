@@ -100,7 +100,11 @@ class AnMi_Video_Banner_Admin {
     /**
      * Add missing columns to existing table (v1.6.13 migration)
      */
-    private function add_missing_columns() {
+    /**
+     * Add missing columns to existing table (v1.6.13 migration)
+     * PUBLIC so it can be called from ajax_save_banner
+     */
+    public function add_missing_columns() {
         global $wpdb;
         
         // Check and add video settings columns
@@ -277,6 +281,9 @@ class AnMi_Video_Banner_Admin {
         }
         
         global $wpdb;
+        
+        // CRITICAL: Ensure columns exist before saving
+        $this->add_missing_columns();
         
         // DEBUG: Log received data
         error_log('=== ANMI SAVE BANNER DEBUG ===');
