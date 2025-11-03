@@ -1,6 +1,6 @@
 /* ============================================ */
 /* AN MI VIDEO BANNER PLUGIN STYLES */
-/* Version: 1.6.7 - Separate Production & Preview */
+/* Version: 1.6.8 - Added Production Demo Preview */
 /* ============================================ */
 
 /* Container */
@@ -85,6 +85,33 @@
 }
 
 /* Clean and simple - fills parent container completely */
+
+/* ============================================ */
+/* PRODUCTION DEMO - Play Overlay */
+/* ============================================ */
+
+/* Play button overlay */
+.anmi-play-overlay {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.anmi-video-banner-container:hover .anmi-play-overlay {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+}
+
+/* Hide play overlay when video is playing */
+.anmi-video-banner-container.video-playing .anmi-play-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Production demo specific styles */
+.anmi-preview-production-demo .anmi-video-banner-container {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
 
 /* ============================================ */
 /* IMAGE SLIDER STYLES */

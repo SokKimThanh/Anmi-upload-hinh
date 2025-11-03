@@ -530,6 +530,102 @@ jQuery(document).ready(function($) {
         
         html += '</div>'; // Close split layout
         
+        // ============================================
+        // NEW ROW: Production Hover Effect Demo
+        // ============================================
+        html += '<div class="anmi-preview-production-demo" style="margin-top: 30px;">';
+        html += '<h3 style="margin-bottom: 15px;">🎯 Production Preview (Hover Effect)</h3>';
+        html += '<p style="margin-bottom: 15px; color: #666;">Đây là cách banner hoạt động trên website thực tế - Hover để xem video phát</p>';
+        
+        // Generate unique ID for production demo
+        var productionId = 'anmi-production-demo-' + Date.now();
+        
+        // Production-style container
+        html += '<div class="anmi-video-banner-container ' + productionId + ' transition-' + banner.transition + '" ' +
+                'style="height: 500px; position: relative; cursor: pointer;" ' +
+                'data-autoplay-delay="' + banner.autoplay_delay + '" ' +
+                'data-mobile-behavior="both" ' +
+                'data-slider-speed="' + banner.slider_speed + '" ' +
+                'data-slider-effect="' + banner.slider_effect + '" ' +
+                'data-video-type="' + videoType + '">';
+        
+        // Image Slider (visible by default)
+        images.forEach(function(imageUrl, index) {
+            html += '<div class="anmi-banner-image ' + (index === 0 ? 'active' : '') + '" ' +
+                    'style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; ' +
+                    'background-image: url(\'' + imageUrl + '\'); background-size: cover; background-position: center; ' +
+                    'opacity: ' + (index === 0 ? '1' : '0') + '; transition: opacity 0.8s ease; z-index: 2;">' +
+                    '</div>';
+        });
+        
+        // Video/Iframe (hidden by default, show on hover) - Use PRODUCTION classes
+        if (videoType === 'youtube' || videoType === 'vimeo') {
+            html += '<iframe class="anmi-banner-video anmi-banner-iframe" ' +
+                    'src="' + embedUrl + '" ' +
+                    'frameborder="0" ' +
+                    'allow="autoplay; fullscreen; picture-in-picture" ' +
+                    'allowfullscreen>' +
+                    '</iframe>';
+        } else {
+            html += '<video class="anmi-banner-video" ' +
+                    'loop muted playsinline preload="metadata" ' +
+                    'poster="' + (images[0] || '') + '">' +
+                    '<source src="' + embedUrl + '" type="video/mp4">' +
+                    '</video>';
+        }
+        
+        // Content Overlay (if exists)
+        if (banner.title || banner.subtitle || banner.button_text) {
+            html += '<div class="anmi-banner-content" ' +
+                    'data-show-title="' + banner.show_title + '" ' +
+                    'data-show-subtitle="' + banner.show_subtitle + '" ' +
+                    'data-show-button="' + banner.show_button + '">';
+            
+            if (banner.title && banner.show_title == '1') {
+                html += '<h1 class="anmi-banner-title">' + banner.title + '</h1>';
+            }
+            if (banner.subtitle && banner.show_subtitle == '1') {
+                html += '<p class="anmi-banner-subtitle">' + banner.subtitle + '</p>';
+            }
+            if (banner.button_text && banner.show_button == '1') {
+                html += '<a href="' + banner.button_link + '" class="anmi-banner-btn" target="_blank">' + banner.button_text + '</a>';
+            }
+            
+            html += '</div>';
+        }
+        
+        // Slider dots
+        if (images.length > 1) {
+            html += '<div class="anmi-banner-dots" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 10;">';
+            images.forEach(function(imageUrl, index) {
+                html += '<span class="anmi-banner-dot ' + (index === 0 ? 'active' : '') + '" data-slide="' + index + '" ' +
+                        'style="width: 12px; height: 12px; border-radius: 50%; background: ' + (index === 0 ? '#fff' : 'rgba(255,255,255,0.5)') + '; ' +
+                        'cursor: pointer; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">' +
+                        '</span>';
+            });
+            html += '</div>';
+        }
+        
+        // Play button overlay
+        html += '<div class="anmi-play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; pointer-events: none;">' +
+                '<div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(255,255,255,0.9); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">' +
+                '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">' +
+                '<polygon points="5 3 19 12 5 21 5 3"></polygon>' +
+                '</svg>' +
+                '</div>' +
+                '</div>';
+        
+        // Loading spinner
+        html += '<div class="anmi-banner-loader"><div class="spinner"></div></div>';
+        
+        html += '</div>'; // Close production container
+        
+        html += '<div style="margin-top: 10px; padding: 10px; background: #f0f0f0; border-radius: 5px;">' +
+                '<p style="margin: 0; font-size: 13px; color: #666;"><strong>⚡ Hover Effect:</strong> Di chuột vào banner → Slider fade out → Video fade in & play</p>' +
+                '</div>';
+        
+        html += '</div>'; // Close production demo section
+        
         // Add info box
         html += '<div class="anmi-preview-info">' +
                 '<p><strong>💡 Tip:</strong> Hover chuột vào banner để xem video phát</p>' +
@@ -547,6 +643,7 @@ jQuery(document).ready(function($) {
         
         // Initialize banner functionality
         setTimeout(function() {
+            // Initialize preview video/iframe (top section)
             var $container = $('.' + uniqueId);
             console.log('Initializing AnMiVideoBanner, container found:', $container.length > 0);
             if ($container.length && typeof AnMiVideoBanner !== 'undefined') {
@@ -561,6 +658,76 @@ jQuery(document).ready(function($) {
             
             // Initialize standalone slider preview
             initPreviewSlider(banner.slider_speed, banner.slider_effect, images.length);
+            
+            // ============================================
+            // Initialize Production Demo (hover effect)
+            // ============================================
+            var $productionContainer = $('.' + productionId);
+            console.log('Initializing Production Demo, container found:', $productionContainer.length > 0);
+            
+            if ($productionContainer.length && typeof AnMiVideoBanner !== 'undefined') {
+                // Initialize full production behavior
+                new AnMiVideoBanner($productionContainer[0]);
+                console.log('Production Demo initialized with AnMiVideoBanner');
+                
+                // Add click handler for play button overlay
+                $productionContainer.on('click', function() {
+                    var $video = $(this).find('.anmi-banner-video');
+                    var $images = $(this).find('.anmi-banner-image');
+                    var $playOverlay = $(this).find('.anmi-play-overlay');
+                    
+                    // Fade out images and play overlay
+                    $images.css('opacity', '0');
+                    $playOverlay.fadeOut(300);
+                    
+                    // Fade in and play video
+                    if ($video.length) {
+                        if ($video.is('video')) {
+                            $video.css('opacity', '1');
+                            $video[0].play();
+                        } else if ($video.is('iframe')) {
+                            $video.css('opacity', '1');
+                        }
+                    }
+                });
+                
+                // Production slider (auto-play)
+                if (images.length > 1) {
+                    var productionCurrentSlide = 0;
+                    var productionSliderInterval = setInterval(function() {
+                        var $slides = $productionContainer.find('.anmi-banner-image');
+                        var $dots = $productionContainer.find('.anmi-banner-dot');
+                        
+                        // Fade out current
+                        $slides.eq(productionCurrentSlide).css('opacity', '0');
+                        $dots.eq(productionCurrentSlide).css('background', 'rgba(255,255,255,0.5)').removeClass('active');
+                        
+                        // Next slide
+                        productionCurrentSlide = (productionCurrentSlide + 1) % images.length;
+                        
+                        // Fade in next
+                        $slides.eq(productionCurrentSlide).css('opacity', '1');
+                        $dots.eq(productionCurrentSlide).css('background', '#fff').addClass('active');
+                    }, banner.slider_speed);
+                    
+                    // Dot click handlers
+                    $productionContainer.find('.anmi-banner-dot').on('click', function() {
+                        clearInterval(productionSliderInterval);
+                        var slideIndex = $(this).data('slide');
+                        
+                        var $slides = $productionContainer.find('.anmi-banner-image');
+                        var $dots = $productionContainer.find('.anmi-banner-dot');
+                        
+                        $slides.css('opacity', '0');
+                        $dots.css('background', 'rgba(255,255,255,0.5)').removeClass('active');
+                        
+                        $slides.eq(slideIndex).css('opacity', '1');
+                        $(this).css('background', '#fff').addClass('active');
+                        
+                        productionCurrentSlide = slideIndex;
+                    });
+                }
+            }
         }, 100);
         
         // Hide loader when iframe/video loads (CRITICAL FIX)

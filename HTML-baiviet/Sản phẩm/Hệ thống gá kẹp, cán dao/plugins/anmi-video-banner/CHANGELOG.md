@@ -1,5 +1,184 @@
 # An Mi Video Banner - Changelog
 
+## Version 1.6.8 (2025-11-03)
+
+### 🎯 NEW FEATURE - Production Demo Preview (Hover Effect)
+
+#### **What's New:**
+Thêm **HÀNG MỚI** trong modal preview để demo **hover effect giống production** (website thực tế).
+
+#### **Layout Structure:**
+
+```
+┌─────────────────────────────────────────────────────┐
+│  Modal Preview                                      │
+├─────────────────────────────────────────────────────┤
+│  ROW 1: Split Layout (Existing - Không thay đổi)   │
+│  ┌──────────────────┬──────────────────┐           │
+│  │ 🎬 Video Preview │ 🖼️ Image Slider │           │
+│  │ (Clean view)     │ (Standalone)     │           │
+│  └──────────────────┴──────────────────┘           │
+├─────────────────────────────────────────────────────┤
+│  ROW 2: Production Demo (NEW!)                     │
+│  ┌─────────────────────────────────────┐           │
+│  │ 🎯 Production Preview (Hover Effect)│           │
+│  │                                     │           │
+│  │  [Slider with Play Button]         │           │
+│  │  Hover → Video plays               │           │
+│  │                                     │           │
+│  └─────────────────────────────────────┘           │
+│  ⚡ Hover Effect: Slider fade out → Video play      │
+└─────────────────────────────────────────────────────┘
+```
+
+---
+
+### **Features Added:**
+
+#### **1. Production Demo Container**
+```javascript
+// New section added below existing preview
+html += '<div class="anmi-preview-production-demo">';
+html += '<h3>🎯 Production Preview (Hover Effect)</h3>';
+html += '<p>Đây là cách banner hoạt động trên website thực tế</p>';
+```
+
+#### **2. Full Production Behavior**
+- ✅ **Image slider** visible by default (auto-play)
+- ✅ **Video hidden** (opacity: 0) until hover
+- ✅ **Play button overlay** centered on banner
+- ✅ **Hover effect:** Slider fade out → Video fade in & play
+- ✅ **Slider dots** with click navigation
+- ✅ **Uses PRODUCTION CSS classes** (.anmi-banner-video, .anmi-banner-iframe)
+
+#### **3. Play Button Overlay**
+```html
+<div class="anmi-play-overlay">
+    <div> <!-- 80px white circle with play icon -->
+        <svg> ... play triangle ... </svg>
+    </div>
+</div>
+```
+
+- Centered overlay với play icon
+- Fade out khi click/hover
+- Pointer-events: none để không block interactions
+
+#### **4. Interactive Features**
+```javascript
+// Click to play
+$productionContainer.on('click', function() {
+    $images.css('opacity', '0');      // Hide slider
+    $playOverlay.fadeOut(300);        // Hide play button
+    $video.css('opacity', '1');       // Show video
+    $video[0].play();                 // Start playback
+});
+
+// Auto-play slider
+setInterval(function() {
+    // Cycle through images
+}, banner.slider_speed);
+
+// Dot navigation
+$('.anmi-banner-dot').on('click', function() {
+    // Jump to specific slide
+});
+```
+
+---
+
+### **CSS Added:**
+
+```css
+/* Play button overlay animations */
+.anmi-play-overlay {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.anmi-video-banner-container:hover .anmi-play-overlay {
+    transform: translate(-50%, -50%) scale(1.1); /* Grow on hover */
+    opacity: 0.8;
+}
+
+/* Hide when video playing */
+.anmi-video-banner-container.video-playing .anmi-play-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Production demo styling */
+.anmi-preview-production-demo .anmi-video-banner-container {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+```
+
+---
+
+### **User Experience:**
+
+#### **Before (v1.6.7):**
+```
+Modal Preview:
+├─ Video Preview (clean, no context)
+└─ Image Slider (standalone)
+
+❌ User không thấy được "hover effect" hoạt động thế nào
+```
+
+#### **After (v1.6.8):**
+```
+Modal Preview:
+├─ Video Preview (clean view)
+├─ Image Slider (standalone)
+└─ 🆕 Production Demo (hover effect)
+    ├─ Shows slider with play button
+    ├─ Hover → Video plays (like real website)
+    └─ Full interactive experience
+
+✅ User thấy CHÍNH XÁC cách banner hoạt động trên website
+```
+
+---
+
+### **Technical Details:**
+
+| Aspect | Implementation |
+|--------|---------------|
+| **HTML** | Separate `<div class="anmi-preview-production-demo">` section |
+| **CSS Classes** | Uses `.anmi-banner-video`, `.anmi-banner-iframe` (production classes) |
+| **JavaScript** | Full `AnMiVideoBanner` initialization + custom slider + click handlers |
+| **Position** | Below existing split layout (Row 2) |
+| **Height** | 500px (larger than preview for better demo) |
+| **Behavior** | Click to play + hover effect + auto-slider |
+
+---
+
+### **Files Modified:**
+- `admin-list.php` - Added production demo HTML section (100+ lines)
+- `admin-list.php` - Added JS initialization for production demo
+- `video-banner.css` - Added play overlay animations
+- Version: 1.6.8
+
+### **Why This Matters:**
+
+**Problem:** Users couldn't see hover effect in preview  
+**Solution:** Added full production demo section  
+**Result:** Complete preview of ALL banner features in one modal!
+
+---
+
+### **Benefits:**
+
+✅ **Complete Preview:** See both clean view AND production behavior  
+✅ **Better UX:** Users understand how banner works on real website  
+✅ **No Conflicts:** Production demo uses separate container  
+✅ **Reuses Code:** Leverages existing CSS and JS (AnMiVideoBanner class)  
+✅ **Clean Separation:** Row 1 = clean previews, Row 2 = production demo  
+
+---
+
 ## Version 1.6.7 (2025-11-03)
 
 ### 🎯 CRITICAL FIX - Separate Production & Preview Classes
