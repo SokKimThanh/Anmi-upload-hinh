@@ -79,6 +79,12 @@ class AnMi_Video_Banner_Admin {
             autoplay_delay int(11) DEFAULT 0,
             mobile_behavior varchar(50) DEFAULT 'video',
             status varchar(20) DEFAULT 'active',
+            video_autoplay tinyint(1) DEFAULT 1,
+            video_muted tinyint(1) DEFAULT 1,
+            video_loop tinyint(1) DEFAULT 1,
+            video_controls tinyint(1) DEFAULT 1,
+            video_modestbranding tinyint(1) DEFAULT 1,
+            video_rel tinyint(1) DEFAULT 0,
             created_at datetime DEFAULT CURRENT_TIMESTAMP,
             updated_at datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
             PRIMARY KEY (id)
@@ -260,6 +266,14 @@ class AnMi_Video_Banner_Admin {
         $mobile_behavior = sanitize_text_field($_POST['mobile_behavior']);
         $status = sanitize_text_field($_POST['status']);
         
+        // Video playback settings (new)
+        $video_autoplay = isset($_POST['video_autoplay']) ? intval($_POST['video_autoplay']) : 1;
+        $video_muted = isset($_POST['video_muted']) ? intval($_POST['video_muted']) : 1;
+        $video_loop = isset($_POST['video_loop']) ? intval($_POST['video_loop']) : 1;
+        $video_controls = isset($_POST['video_controls']) ? intval($_POST['video_controls']) : 1;
+        $video_modestbranding = isset($_POST['video_modestbranding']) ? intval($_POST['video_modestbranding']) : 1;
+        $video_rel = isset($_POST['video_rel']) ? intval($_POST['video_rel']) : 0;
+        
         $data = array(
             'name' => $name,
             'video_url' => $video_url,
@@ -278,7 +292,13 @@ class AnMi_Video_Banner_Admin {
             'slider_effect' => $slider_effect,
             'autoplay_delay' => $autoplay_delay,
             'mobile_behavior' => $mobile_behavior,
-            'status' => $status
+            'status' => $status,
+            'video_autoplay' => $video_autoplay,
+            'video_muted' => $video_muted,
+            'video_loop' => $video_loop,
+            'video_controls' => $video_controls,
+            'video_modestbranding' => $video_modestbranding,
+            'video_rel' => $video_rel
         );
         
         if ($banner_id > 0) {
@@ -287,7 +307,7 @@ class AnMi_Video_Banner_Admin {
                 $this->table_name,
                 $data,
                 array('id' => $banner_id),
-                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%d', '%d', '%s', '%s', '%d', '%s', '%d', '%s', '%s'),
+                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%d', '%d', '%s', '%s', '%d', '%s', '%d', '%s', '%s', '%d', '%d', '%d', '%d', '%d', '%d'),
                 array('%d')
             );
             
@@ -302,7 +322,7 @@ class AnMi_Video_Banner_Admin {
             $result = $wpdb->insert(
                 $this->table_name,
                 $data,
-                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%d', '%d', '%s', '%s', '%d', '%s', '%d', '%s', '%s')
+                array('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%d', '%d', '%s', '%s', '%d', '%s', '%d', '%s', '%s', '%d', '%d', '%d', '%d', '%d', '%d')
             );
             
             if ($result) {

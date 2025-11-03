@@ -73,9 +73,18 @@ class AnMi_Video_Banner {
      * 
      * @param string $url Video URL (YouTube, Vimeo, or direct MP4)
      * @param bool $player_mode Enable player controls (default: false for background mode)
+     * @param object|null $banner Banner object with video settings (optional)
      * @return array ['type' => 'youtube|vimeo|direct', 'embed_url' => '...', 'video_id' => '...']
      */
-    private function parse_video_url($url, $player_mode = false) {
+    private function parse_video_url($url, $player_mode = false, $banner = null) {
+        // Get video settings from banner object or use defaults
+        $autoplay = isset($banner->video_autoplay) ? $banner->video_autoplay : 1;
+        $muted = isset($banner->video_muted) ? $banner->video_muted : 1;
+        $loop = isset($banner->video_loop) ? $banner->video_loop : 1;
+        $controls = isset($banner->video_controls) ? $banner->video_controls : 1;
+        $modestbranding = isset($banner->video_modestbranding) ? $banner->video_modestbranding : 1;
+        $rel = isset($banner->video_rel) ? $banner->video_rel : 0;
+        
         $result = array(
             'type' => 'direct',
             'embed_url' => $url,
@@ -89,11 +98,19 @@ class AnMi_Video_Banner {
             
             if ($player_mode) {
                 // Player mode: Show controls, no autoplay, allow user interaction
-                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?controls=1&rel=0&modestbranding=1&playsinline=1';
+                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?controls=1&rel=' . $rel . '&modestbranding=' . $modestbranding . '&playsinline=1';
             } else {
-                // Background mode: Autoplay, muted, WITH controls (for volume)
-                // Note: controls=1 allows user to unmute via YouTube's built-in volume button
-                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?autoplay=1&mute=1&loop=1&playlist=' . $match[1] . '&controls=1&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+                // Background mode: Use user settings
+                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . 
+                    '?autoplay=' . $autoplay .
+                    '&mute=' . $muted .
+                    '&loop=' . $loop .
+                    '&playlist=' . $match[1] .
+                    '&controls=' . $controls .
+                    '&showinfo=0' .
+                    '&rel=' . $rel .
+                    '&modestbranding=' . $modestbranding .
+                    '&playsinline=1';
             }
         }
         // Vimeo detection
@@ -105,8 +122,13 @@ class AnMi_Video_Banner {
                 // Player mode: Show controls
                 $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?controls=1';
             } else {
-                // Background mode: WITH controls for volume
-                $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?autoplay=1&muted=1&loop=1&background=1&controls=1';
+                // Background mode: Use user settings
+                $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . 
+                    '?autoplay=' . $autoplay .
+                    '&muted=' . $muted .
+                    '&loop=' . $loop .
+                    '&background=' . ($controls ? 0 : 1) .
+                    '&controls=' . $controls;
             }
         }
         
@@ -138,6 +160,9 @@ class AnMi_Video_Banner {
             'slider_speed' => '3000', // milliseconds between slides
             'slider_effect' => 'fade', // fade, slide
         ), $atts, 'anmi_video_banner');
+        
+        // Initialize banner object
+        $banner = null;
         
         // If ID is provided, load banner from database
         if (!empty($atts['id'])) {
@@ -194,7 +219,8 @@ class AnMi_Video_Banner {
         
         // Parse video URL to detect type (YouTube, Vimeo, or Direct)
         // Use player mode (controls visible) for better UX
-        $video_data = $this->parse_video_url($atts['video_url'], true);
+        // Pass $banner object to use video settings
+        $video_data = $this->parse_video_url($atts['video_url'], true, $banner);
         
         // Generate unique ID
         $unique_id = 'anmi-vb-' . uniqid();

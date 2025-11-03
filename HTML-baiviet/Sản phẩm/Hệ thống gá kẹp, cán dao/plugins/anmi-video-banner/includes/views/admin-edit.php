@@ -391,6 +391,122 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                     </div>
                 </div>
                 
+                <!-- Video Playback Settings -->
+                <div class="postbox">
+                    <div class="postbox-header">
+                        <h2>🎛️ Cài Đặt Phát Video (YouTube/Vimeo)</h2>
+                    </div>
+                    <div class="inside">
+                        <div style="background: #f0f0f1; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+                            <p style="margin-top: 0; font-weight: 600; color: #1d2327;">
+                                <span class="dashicons dashicons-controls-play" style="vertical-align: middle;"></span> 
+                                Điều Khiển Thông Số Video
+                            </p>
+                            <p class="description" style="margin-bottom: 0;">
+                                Các cài đặt này chỉ áp dụng cho video YouTube và Vimeo. Video MP4 sẽ luôn tự động phát, lặp lại và tắt tiếng.
+                            </p>
+                        </div>
+                        
+                        <table class="form-table">
+                            <tr>
+                                <th><label for="video_autoplay">🎬 Tự Động Phát</label></th>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" 
+                                               id="video_autoplay" 
+                                               name="video_autoplay" 
+                                               value="1"
+                                               <?php echo ($is_edit && isset($banner->video_autoplay) && $banner->video_autoplay) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">Video tự động phát khi trang tải (mặc định: Bật)</span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_muted">🔇 Tắt Tiếng</label></th>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" 
+                                               id="video_muted" 
+                                               name="video_muted" 
+                                               value="1"
+                                               <?php echo ($is_edit && isset($banner->video_muted) && $banner->video_muted) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">Video bắt đầu ở chế độ tắt tiếng (mặc định: Bật)</span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #d63638;">
+                                        <strong>⚠️ Lưu ý:</strong> Nếu tắt tiếng = TẮT và tự động phát = BẬT, trình duyệt có thể chặn autoplay.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_loop">🔁 Lặp Lại</label></th>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" 
+                                               id="video_loop" 
+                                               name="video_loop" 
+                                               value="1"
+                                               <?php echo ($is_edit && isset($banner->video_loop) && $banner->video_loop) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">Video tự động phát lại khi kết thúc (mặc định: Bật)</span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_controls">🎚️ Hiện Controls</label></th>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" 
+                                               id="video_controls" 
+                                               name="video_controls" 
+                                               value="1"
+                                               <?php echo ($is_edit && isset($banner->video_controls) && $banner->video_controls) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">Hiển thị thanh điều khiển video (play/pause/volume) (mặc định: Bật)</span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
+                                        <strong>💡 Khuyến nghị:</strong> Nên BẬT để người dùng có thể điều chỉnh âm lượng và tạm dừng video.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_modestbranding">📺 Ẩn Logo YouTube</label></th>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" 
+                                               id="video_modestbranding" 
+                                               name="video_modestbranding" 
+                                               value="1"
+                                               <?php echo ($is_edit && isset($banner->video_modestbranding) && $banner->video_modestbranding) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">Ẩn logo YouTube trong player (chỉ YouTube) (mặc định: Bật)</span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_rel">🎥 Gợi Ý Video</label></th>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" 
+                                               id="video_rel" 
+                                               name="video_rel" 
+                                               value="1"
+                                               <?php echo ($is_edit && isset($banner->video_rel) && $banner->video_rel) ? 'checked' : ''; ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">Hiện video gợi ý khi kết thúc (chỉ YouTube) (mặc định: Tắt)</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
                 <!-- Shortcode Info -->
                 <?php if ($is_edit): ?>
                 <div class="postbox">
@@ -625,7 +741,17 @@ jQuery(document).ready(function($) {
                 slider_effect: 'fade',
                 autoplay_delay: $('#autoplay_delay').val(),
                 mobile_behavior: $('#mobile_behavior').val(),
-                status: $('#status').val()
+                status: $('#status').val(),
+                // Video playback settings
+                video_autoplay: $('#video_autoplay').is(':checked') ? 1 : 0,
+                video_muted: $('#video_muted').is(':checked') ? 1 : 0,
+                video_loop: $('#video_loop').is(':checked') ? 1 : 0,
+                video_controls: $('#video_controls').is(':checked') ? 1 : 0,
+                video_modestbranding: $('#video_modestbranding').is(':checked') ? 1 : 0,
+                video_rel: $('#video_rel').is(':checked') ? 1 : 0,
+                show_title: $('#show_title').is(':checked') ? 1 : 0,
+                show_subtitle: $('#show_subtitle').is(':checked') ? 1 : 0,
+                show_button: $('#show_button').is(':checked') ? 1 : 0
             },
             success: function(response) {
                 if (response.success) {
@@ -693,6 +819,14 @@ jQuery(document).ready(function($) {
         var sliderSpeed = $('#slider_speed').val() || '3000';
         var sliderEffect = $('#slider_effect').val();
         
+        // Get video playback settings
+        var videoAutoplay = $('#video_autoplay').is(':checked') ? 1 : 0;
+        var videoMuted = $('#video_muted').is(':checked') ? 1 : 0;
+        var videoLoop = $('#video_loop').is(':checked') ? 1 : 0;
+        var videoControls = $('#video_controls').is(':checked') ? 1 : 0;
+        var videoModestbranding = $('#video_modestbranding').is(':checked') ? 1 : 0;
+        var videoRel = $('#video_rel').is(':checked') ? 1 : 0;
+        
         // Check if we have minimum requirements
         if (!videoUrl || imagesArray.length === 0) {
             $('#live_preview_container').html(
@@ -714,7 +848,17 @@ jQuery(document).ready(function($) {
         if (youtubeMatch) {
             videoType = 'youtube';
             videoId = youtubeMatch[1];
-            embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&mute=1&loop=1&playlist=' + videoId + '&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+            // Build YouTube URL with user settings
+            embedUrl = 'https://www.youtube.com/embed/' + videoId + 
+                '?autoplay=' + videoAutoplay +
+                '&mute=' + videoMuted +
+                '&loop=' + videoLoop +
+                '&playlist=' + videoId +
+                '&controls=' + videoControls +
+                '&showinfo=0' +
+                '&rel=' + videoRel +
+                '&modestbranding=' + videoModestbranding +
+                '&playsinline=1';
         }
         
         // Vimeo detection
@@ -722,7 +866,13 @@ jQuery(document).ready(function($) {
         if (vimeoMatch) {
             videoType = 'vimeo';
             videoId = vimeoMatch[1];
-            embedUrl = 'https://player.vimeo.com/video/' + videoId + '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+            // Build Vimeo URL with user settings
+            embedUrl = 'https://player.vimeo.com/video/' + videoId + 
+                '?autoplay=' + videoAutoplay +
+                '&muted=' + videoMuted +
+                '&loop=' + videoLoop +
+                '&background=' + (videoControls ? 0 : 1) +
+                '&controls=' + videoControls;
         }
         
         // Generate unique ID
@@ -959,7 +1109,7 @@ jQuery(document).ready(function($) {
         updateLivePreview();
     });
     
-    $('#show_title, #show_subtitle, #show_button').on('change', function() {
+    $('#show_title, #show_subtitle, #show_button, #video_autoplay, #video_muted, #video_loop, #video_controls, #video_modestbranding, #video_rel').on('change', function() {
         updateLivePreview();
     });
     
