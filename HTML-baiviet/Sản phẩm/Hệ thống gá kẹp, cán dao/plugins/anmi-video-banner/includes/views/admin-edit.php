@@ -18,7 +18,7 @@ if ($banner && !empty($banner->images)) {
 }
 
 $is_edit = ($banner && $banner->id > 0);
-$page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
+$page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
 ?>
 
 <div class="wrap anmi-banner-admin anmi-banner-edit">
@@ -37,12 +37,12 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                 <!-- Banner Name -->
                 <div class="postbox">
                     <div class="postbox-header">
-                        <h2>Banner Information</h2>
+                        <h2>📋 Thông Tin Banner</h2>
                     </div>
                     <div class="inside">
                         <table class="form-table">
                             <tr>
-                                <th><label for="banner_name">Banner Name <span class="required">*</span></label></th>
+                                <th><label for="banner_name">Tên Banner <span class="required">*</span></label></th>
                                 <td>
                                     <input type="text" 
                                            id="banner_name" 
@@ -50,7 +50,7 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                                            class="regular-text" 
                                            value="<?php echo $is_edit ? esc_attr($banner->name) : ''; ?>" 
                                            required>
-                                    <p class="description">Internal name for identifying this banner (e.g., "Homepage Hero Banner")</p>
+                                    <p class="description">Tên nội bộ để nhận diện banner (vd: "Banner Trang Chủ")</p>
                                 </td>
                             </tr>
                         </table>
@@ -60,24 +60,24 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                 <!-- Video Settings -->
                 <div class="postbox">
                     <div class="postbox-header">
-                        <h2>🎬 Video Settings</h2>
+                        <h2>🎬 Cài Đặt Video</h2>
                     </div>
                     <div class="inside">
                         <table class="form-table">
                             <tr>
-                                <th><label for="video_type">Video Type</label></th>
+                                <th><label for="video_type">Loại Video</label></th>
                                 <td>
                                     <select id="video_type" name="video_type" class="regular-text">
-                                        <option value="url" <?php echo ($is_edit && $banner->video_type == 'url') ? 'selected' : ''; ?>>Direct URL (MP4)</option>
+                                        <option value="url" <?php echo ($is_edit && $banner->video_type == 'url') ? 'selected' : ''; ?>>URL Trực Tiếp (MP4)</option>
                                         <option value="youtube" <?php echo ($is_edit && $banner->video_type == 'youtube') ? 'selected' : ''; ?>>YouTube</option>
                                         <option value="vimeo" <?php echo ($is_edit && $banner->video_type == 'vimeo') ? 'selected' : ''; ?>>Vimeo</option>
-                                        <option value="embed" <?php echo ($is_edit && $banner->video_type == 'embed') ? 'selected' : ''; ?>>Embed URL</option>
+                                        <option value="embed" <?php echo ($is_edit && $banner->video_type == 'embed') ? 'selected' : ''; ?>>Mã Nhúng</option>
                                     </select>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <th><label for="video_url">Video URL <span class="required">*</span></label></th>
+                                <th><label for="video_url">URL Video <span class="required">*</span></label></th>
                                 <td>
                                     <input type="url" 
                                            id="video_url" 
@@ -115,14 +115,14 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                 <!-- Image Slider Settings -->
                 <div class="postbox">
                     <div class="postbox-header">
-                        <h2>🖼️ Image Slider</h2>
+                        <h2>🖼️ Slider Hình Ảnh</h2>
                     </div>
                     <div class="inside">
                         <div class="images-upload-section">
                             <button type="button" class="button button-primary button-large" id="upload_images_button">
-                                <span class="dashicons dashicons-upload"></span> Upload Images
+                                <span class="dashicons dashicons-upload"></span> Tải Lên Hình Ảnh
                             </button>
-                            <p class="description">Upload multiple images for the slider (displayed before hover)</p>
+                            <p class="description">Tải lên nhiều hình ảnh cho slider (hiển thị trước khi hover)</p>
                             
                             <div id="images_preview_container" class="images-preview">
                                 <?php if (!empty($images_array)): ?>
@@ -144,7 +144,7 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                         
                         <table class="form-table" style="margin-top: 20px;">
                             <tr>
-                                <th><label for="slider_speed">Slider Speed</label></th>
+                                <th><label for="slider_speed">Tốc Độ Slider</label></th>
                                 <td>
                                     <input type="number" 
                                            id="slider_speed" 
@@ -154,19 +154,19 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                                            min="1000" 
                                            max="10000" 
                                            step="500">
-                                    <span class="description">milliseconds (1000 = 1 second)</span>
-                                    <p class="description">Time between slide transitions</p>
+                                    <span class="description">mili giây (1000 = 1 giây)</span>
+                                    <p class="description">Thời gian giữa các lần chuyển slide</p>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <th><label for="transition">Transition Effect</label></th>
+                                <th><label for="transition">Hiệu Ứng Chuyển</label></th>
                                 <td>
                                     <select id="transition" name="transition" class="regular-text">
-                                        <option value="fade" <?php echo ($is_edit && $banner->transition == 'fade') ? 'selected' : ''; ?>>Fade</option>
-                                        <option value="zoom" <?php echo ($is_edit && $banner->transition == 'zoom') ? 'selected' : ''; ?>>Zoom</option>
-                                        <option value="blur" <?php echo ($is_edit && $banner->transition == 'blur') ? 'selected' : ''; ?>>Blur</option>
-                                        <option value="slide" <?php echo ($is_edit && $banner->transition == 'slide') ? 'selected' : ''; ?>>Slide</option>
+                                        <option value="fade" <?php echo ($is_edit && $banner->transition == 'fade') ? 'selected' : ''; ?>>Mờ Dần</option>
+                                        <option value="zoom" <?php echo ($is_edit && $banner->transition == 'zoom') ? 'selected' : ''; ?>>Phóng To</option>
+                                        <option value="blur" <?php echo ($is_edit && $banner->transition == 'blur') ? 'selected' : ''; ?>>Làm Mờ</option>
+                                        <option value="slide" <?php echo ($is_edit && $banner->transition == 'slide') ? 'selected' : ''; ?>>Trượt</option>
                                     </select>
                                     <p class="description">Transition effect when switching from slider to video</p>
                                 </td>
@@ -178,22 +178,22 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                 <!-- Content Overlay -->
                 <div class="postbox">
                     <div class="postbox-header">
-                        <h2>📝 Content Overlay (Optional)</h2>
+                        <h2>📝 Nội Dung Hiển Thị (Tùy Chọn)</h2>
                     </div>
                     <div class="inside">
                         <!-- Visibility Toggles -->
                         <div class="visibility-toggles" style="background: #f0f0f1; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
                             <p style="margin-top: 0; font-weight: 600; color: #1d2327;">
                                 <span class="dashicons dashicons-visibility" style="vertical-align: middle;"></span> 
-                                Content Visibility Controls
+                                Điều Khiển Hiển Thị Nội Dung
                             </p>
                             <p class="description" style="margin-bottom: 15px;">
-                                Toggle to show/hide content elements on the banner. By default, all elements are hidden.
+                                Bật/tắt để hiển thị/ẩn các thành phần nội dung trên banner. Mặc định, tất cả đều ẩn.
                             </p>
                             
                             <table class="form-table" style="margin: 0;">
                                 <tr>
-                                    <th style="padding-top: 0;"><label for="show_title">Show Title</label></th>
+                                    <th style="padding-top: 0;"><label for="show_title">Hiển Thị Tiêu Đề</label></th>
                                     <td style="padding-top: 0;">
                                         <label class="switch">
                                             <input type="checkbox" 
@@ -203,12 +203,12 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                                                    <?php echo ($is_edit && !empty($banner->show_title)) ? 'checked' : ''; ?>>
                                             <span class="slider-switch"></span>
                                         </label>
-                                        <span class="description" style="margin-left: 10px;">Display the title text on banner</span>
+                                        <span class="description" style="margin-left: 10px;">Hiển thị tiêu đề trên banner</span>
                                     </td>
                                 </tr>
                                 
                                 <tr>
-                                    <th><label for="show_subtitle">Show Subtitle</label></th>
+                                    <th><label for="show_subtitle">Hiển Thị Phụ Đề</label></th>
                                     <td>
                                         <label class="switch">
                                             <input type="checkbox" 
@@ -218,12 +218,12 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                                                    <?php echo ($is_edit && !empty($banner->show_subtitle)) ? 'checked' : ''; ?>>
                                             <span class="slider-switch"></span>
                                         </label>
-                                        <span class="description" style="margin-left: 10px;">Display the subtitle text on banner</span>
+                                        <span class="description" style="margin-left: 10px;">Hiển thị phụ đề trên banner</span>
                                     </td>
                                 </tr>
                                 
                                 <tr>
-                                    <th><label for="show_button">Show CTA Button</label></th>
+                                    <th><label for="show_button">Hiển Thị Nút CTA</label></th>
                                     <td>
                                         <label class="switch">
                                             <input type="checkbox" 
@@ -233,7 +233,7 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                                                    <?php echo ($is_edit && !empty($banner->show_button)) ? 'checked' : ''; ?>>
                                             <span class="slider-switch"></span>
                                         </label>
-                                        <span class="description" style="margin-left: 10px;">Display the call-to-action button</span>
+                                        <span class="description" style="margin-left: 10px;">Hiển thị nút kêu gọi hành động</span>
                                     </td>
                                 </tr>
                             </table>
@@ -241,7 +241,7 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                         
                         <table class="form-table">
                             <tr>
-                                <th><label for="title">Title</label></th>
+                                <th><label for="title">Tiêu Đề</label></th>
                                 <td>
                                     <input type="text" 
                                            id="title" 
@@ -253,7 +253,7 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                             </tr>
                             
                             <tr>
-                                <th><label for="subtitle">Subtitle</label></th>
+                                <th><label for="subtitle">Phụ Đề</label></th>
                                 <td>
                                     <textarea id="subtitle" 
                                               name="subtitle" 
@@ -264,19 +264,19 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                             </tr>
                             
                             <tr>
-                                <th><label for="button_text">Button Text</label></th>
+                                <th><label for="button_text">Văn Bản Nút</label></th>
                                 <td>
                                     <input type="text" 
                                            id="button_text" 
                                            name="button_text" 
                                            class="regular-text" 
                                            value="<?php echo $is_edit ? esc_attr($banner->button_text) : ''; ?>" 
-                                           placeholder="Learn More">
+                                           placeholder="Tìm Hiểu Thêm">
                                 </td>
                             </tr>
                             
                             <tr>
-                                <th><label for="button_link">Button Link</label></th>
+                                <th><label for="button_link">Liên Kết Nút</label></th>
                                 <td>
                                     <input type="url" 
                                            id="button_link" 
@@ -298,26 +298,26 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                 <!-- Publish Box -->
                 <div class="postbox">
                     <div class="postbox-header">
-                        <h2>Publish</h2>
+                        <h2>Xuất Bản</h2>
                     </div>
                     <div class="inside">
                         <div class="submitbox">
                             <div class="status-section">
-                                <label for="status"><strong>Status:</strong></label>
+                                <label for="status"><strong>Trạng Thái:</strong></label>
                                 <select id="status" name="status" class="regular-text">
-                                    <option value="active" <?php echo ($is_edit && $banner->status == 'active') ? 'selected' : ''; ?>>Active</option>
-                                    <option value="inactive" <?php echo ($is_edit && $banner->status == 'inactive') ? 'selected' : ''; ?>>Inactive</option>
+                                    <option value="active" <?php echo ($is_edit && $banner->status == 'active') ? 'selected' : ''; ?>>Kích Hoạt</option>
+                                    <option value="inactive" <?php echo ($is_edit && $banner->status == 'inactive') ? 'selected' : ''; ?>>Vô Hiệu</option>
                                 </select>
                             </div>
                             
                             <div class="submit-actions">
                                 <button type="submit" class="button button-primary button-large">
                                     <span class="dashicons dashicons-saved"></span> 
-                                    <?php echo $is_edit ? 'Update Banner' : 'Create Banner'; ?>
+                                    <?php echo $is_edit ? 'Cập Nhật Banner' : 'Tạo Banner'; ?>
                                 </button>
                                 
                                 <a href="<?php echo admin_url('admin.php?page=anmi-video-banners'); ?>" class="button button-secondary button-large">
-                                    Cancel
+                                    Hủy Bỏ
                                 </a>
                             </div>
                         </div>
@@ -327,24 +327,24 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                 <!-- Display Settings -->
                 <div class="postbox">
                     <div class="postbox-header">
-                        <h2>⚙️ Display Settings</h2>
+                        <h2>⚙️ Cài Đặt Hiển Thị</h2>
                     </div>
                     <div class="inside">
                         <table class="form-table">
                             <tr>
-                                <th><label for="height">Height</label></th>
+                                <th><label for="height">Chiều Cao</label></th>
                                 <td>
                                     <input type="text" 
                                            id="height" 
                                            name="height" 
                                            class="small-text" 
                                            value="<?php echo $is_edit ? esc_attr($banner->height) : '600px'; ?>">
-                                    <p class="description">px, vh, or %</p>
+                                    <p class="description">px, vh, hoặc %</p>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <th><label for="autoplay_delay">Autoplay Delay</label></th>
+                                <th><label for="autoplay_delay">Độ Trễ Tự Chạy</label></th>
                                 <td>
                                     <input type="number" 
                                            id="autoplay_delay" 
@@ -354,17 +354,17 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                                            min="0" 
                                            max="10" 
                                            step="0.5">
-                                    <span class="description">seconds</span>
+                                    <span class="description">giây</span>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <th><label for="mobile_behavior">Mobile Behavior</label></th>
+                                <th><label for="mobile_behavior">Hành Vi Mobile</label></th>
                                 <td>
                                     <select id="mobile_behavior" name="mobile_behavior">
-                                        <option value="image" <?php echo ($is_edit && $banner->mobile_behavior == 'image') ? 'selected' : ''; ?>>Image Only</option>
-                                        <option value="video" <?php echo ($is_edit && $banner->mobile_behavior == 'video') ? 'selected' : ''; ?>>Video Only</option>
-                                        <option value="both" <?php echo ($is_edit && $banner->mobile_behavior == 'both') ? 'selected' : ''; ?>>Both (Touch to Play)</option>
+                                        <option value="image" <?php echo ($is_edit && $banner->mobile_behavior == 'image') ? 'selected' : ''; ?>>Chỉ Hình Ảnh</option>
+                                        <option value="video" <?php echo ($is_edit && $banner->mobile_behavior == 'video') ? 'selected' : ''; ?>>Chỉ Video</option>
+                                        <option value="both" <?php echo ($is_edit && $banner->mobile_behavior == 'both') ? 'selected' : ''; ?>>Cả Hai (Chạm để Phát)</option>
                                     </select>
                                 </td>
                             </tr>
@@ -376,7 +376,7 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                 <?php if ($is_edit): ?>
                 <div class="postbox">
                     <div class="postbox-header">
-                        <h2>📋 Shortcode</h2>
+                        <h2>📋 Mã Nhúng</h2>
                     </div>
                     <div class="inside">
                         <input type="text" 
@@ -384,7 +384,7 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                                value='[anmi_video_banner id="<?php echo $banner->id; ?>"]' 
                                readonly 
                                onclick="this.select()">
-                        <p class="description">Copy and paste this shortcode into any page, post, or widget.</p>
+                        <p class="description">Sao chép và dán mã nhúng này vào bất kỳ trang, bài viết hoặc widget nào.</p>
                     </div>
                 </div>
                 <?php endif; ?>
@@ -392,14 +392,14 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                 <!-- Help -->
                 <div class="postbox">
                     <div class="postbox-header">
-                        <h2>❓ Help</h2>
+                        <h2>❓ Trợ Giúp</h2>
                     </div>
                     <div class="inside">
                         <ul class="help-list">
-                            <li><strong>Video URL:</strong> Supports YouTube, Vimeo, or direct MP4 links</li>
-                            <li><strong>Images:</strong> Upload multiple images for auto-rotating slider</li>
-                            <li><strong>Hover Effect:</strong> Video plays when user hovers over banner</li>
-                            <li><strong>Mobile:</strong> Choose slider-only, video-only, or touch-to-play</li>
+                            <li><strong>URL Video:</strong> Hỗ trợ YouTube, Vimeo, hoặc link MP4 trực tiếp</li>
+                            <li><strong>Hình Ảnh:</strong> Tải lên nhiều hình ảnh cho slider tự động xoay</li>
+                            <li><strong>Hiệu Ứng Hover:</strong> Video phát khi người dùng rê chuột lên banner</li>
+                            <li><strong>Mobile:</strong> Chọn chỉ slider, chỉ video, hoặc chạm để phát</li>
                         </ul>
                     </div>
                 </div>
@@ -504,21 +504,21 @@ jQuery(document).ready(function($) {
         
         // Validate
         if (!$('#banner_name').val()) {
-            alert('Please enter a banner name');
+            alert('Vui lòng nhập tên banner');
             return;
         }
         
         if (!$('#video_url').val()) {
-            alert('Please enter a video URL');
+            alert('Vui lòng nhập URL video');
             return;
         }
         
         if (imagesArray.length === 0) {
-            alert('Please upload at least one image');
+            alert('Vui lòng tải lên ít nhất một hình ảnh');
             return;
         }
         
-        $submitBtn.prop('disabled', true).html('<span class="dashicons dashicons-update spin"></span> Saving...');
+        $submitBtn.prop('disabled', true).html('<span class="dashicons dashicons-update spin"></span> Đang lưu...');
         
         $.ajax({
             url: anmiBannerAdmin.ajax_url,
@@ -548,12 +548,12 @@ jQuery(document).ready(function($) {
                     // Redirect to list page with success message
                     window.location.href = '<?php echo admin_url("admin.php?page=anmi-video-banners&message=saved"); ?>';
                 } else {
-                    alert('Error: ' + response.data);
+                    alert('Lỗi: ' + response.data);
                     $submitBtn.prop('disabled', false).html(originalText);
                 }
             },
             error: function() {
-                alert('Failed to save banner. Please try again.');
+                alert('Không thể lưu banner. Vui lòng thử lại.');
                 $submitBtn.prop('disabled', false).html(originalText);
             }
         });
