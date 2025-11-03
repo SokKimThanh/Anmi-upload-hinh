@@ -29,30 +29,53 @@
     object-fit: cover;
 }
 
+/* Modal video: Fit properly */
+.anmi-modal-video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+    object-fit: contain !important;
+}
+
 /* YouTube/Vimeo iframe */
 .anmi-banner-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    min-width: 100%;
-    min-height: 100%;
     border: none;
     pointer-events: auto; /* Allow user interaction with controls */
     z-index: 10; /* Above slider to allow clicks */
+    object-fit: cover; /* Ensure proper scaling */
 }
 
-/* Scale iframe to cover like video */
+/* Scale iframe to cover like video (only for non-modal contexts) */
 @media (min-aspect-ratio: 16/9) {
-    .anmi-banner-iframe {
+    .anmi-banner-iframe:not(.anmi-modal-iframe) {
         height: 300%;
         top: -100%;
     }
 }
 
 @media (max-aspect-ratio: 16/9) {
-    .anmi-banner-iframe {
+    .anmi-banner-iframe:not(.anmi-modal-iframe) {
         width: 300%;
         left: -100%;
     }
+}
+
+/* Modal preview: Keep iframe at 100% */
+.anmi-modal-iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain; /* Fit entire video in container */
 }
 
 /* ============================================ */

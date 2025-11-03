@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Video Banner
  * Plugin URI: https://anmitools.com
  * Description: Video banner với slider tự động + Admin CRUD panel - YouTube/Vimeo/MP4 support + Iframe Embed + Modal Preview
- * Version: 1.6.5
+ * Version: 1.6.6
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('ANMI_VIDEO_BANNER_VERSION', '1.6.5');
+define('ANMI_VIDEO_BANNER_VERSION', '1.6.6');
 define('ANMI_VIDEO_BANNER_FILE', __FILE__);
 define('ANMI_VIDEO_BANNER_PATH', plugin_dir_path(__FILE__));
 define('ANMI_VIDEO_BANNER_URL', plugin_dir_url(__FILE__));

@@ -808,6 +808,9 @@
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     pointer-events: auto !important; /* CRITICAL: Allow interaction in modal preview */
+    position: relative; /* Ensure children can position absolute */
+    height: 400px; /* Fixed height for consistent layout */
+    background: #000; /* Black background like video player */
 }
 
 /* Ensure iframe/video can be interacted with in modal */
@@ -815,6 +818,19 @@
 #anmi-preview-container .anmi-banner-video {
     pointer-events: auto !important;
     cursor: pointer;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Override inline styles if needed */
+#anmi-preview-container .anmi-modal-iframe,
+#anmi-preview-container .anmi-modal-video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Fit video properly without stretching */
 }
 
 /* Responsive: Stack on smaller screens */

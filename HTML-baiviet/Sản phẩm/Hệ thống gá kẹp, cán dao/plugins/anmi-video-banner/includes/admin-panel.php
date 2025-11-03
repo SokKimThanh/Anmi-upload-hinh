@@ -1,7 +1,7 @@
 <?php
 /**
  * AN MI VIDEO BANNER - ADMIN PANEL
- * Version: 1.6.5
+ * Version: 1.6.6
  * CRUD Interface for managing video banners
  */
 
@@ -152,7 +152,7 @@ class AnMi_Video_Banner_Admin {
             'anmi-banner-admin-css',
             plugin_dir_url(dirname(__FILE__)) . 'assets/css/admin-style.css',
             array(),
-            '1.6.5'
+            '1.6.6'
         );
         
         // Frontend CSS for preview
@@ -160,7 +160,7 @@ class AnMi_Video_Banner_Admin {
             'anmi-video-banner-style',
             plugin_dir_url(dirname(__FILE__)) . 'assets/css/video-banner.css',
             array(),
-            '1.6.5'
+            '1.6.6'
         );
         
         // Admin JS
@@ -168,7 +168,7 @@ class AnMi_Video_Banner_Admin {
             'anmi-banner-admin-js',
             plugin_dir_url(dirname(__FILE__)) . 'assets/js/admin-script.js',
             array('jquery', 'jquery-ui-sortable'),
-            '1.6.5',
+            '1.6.6',
             true
         );
         
@@ -177,7 +177,7 @@ class AnMi_Video_Banner_Admin {
             'anmi-video-banner-script',
             plugin_dir_url(dirname(__FILE__)) . 'assets/js/video-banner.js',
             array('jquery'),
-            '1.6.5',
+            '1.6.6',
             true
         );
         
