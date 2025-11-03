@@ -21,8 +21,11 @@ class AnMi_Video_Banner_Admin {
         // Admin menu
         add_action('admin_menu', array($this, 'add_admin_menu'));
         
-        // Admin scripts and styles
-        add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_assets'));
+        // Admin scripts and styles (late priority to dequeue webfontloader)
+        add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_assets'), 999);
+        
+        // Dequeue problematic scripts early
+        add_action('admin_init', array($this, 'dequeue_problematic_scripts'), 9999);
         
         // AJAX handlers
         add_action('wp_ajax_anmi_save_banner', array($this, 'ajax_save_banner'));
@@ -32,6 +35,20 @@ class AnMi_Video_Banner_Admin {
         
         // Create database table on activation
         register_activation_hook(ANMI_VIDEO_BANNER_FILE, array($this, 'create_database_table'));
+    }
+    
+    /**
+     * Dequeue problematic scripts early to prevent conflicts
+     */
+    public function dequeue_problematic_scripts() {
+        // Get current screen
+        $screen = get_current_screen();
+        
+        // Only on our pages
+        if ($screen && strpos($screen->id, 'anmi-video-banner') !== false) {
+            wp_dequeue_script('webfontloader');
+            wp_deregister_script('webfontloader');
+        }
     }
     
     /**

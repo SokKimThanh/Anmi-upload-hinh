@@ -1,5 +1,39 @@
 # An Mi Video Banner - Changelog
 
+## Version 1.6.3 (2025-11-03)
+
+### 🐛 Critical Bug Fixes
+- **Fixed YouTube URL Detection:** Updated regex pattern to support `youtu.be` URLs with query parameters (e.g., `?si=...`)
+  - Old pattern: `/youtu\.be\/)([^"&?\/ ]{11})/` ❌ Failed on URLs with `?si=` parameter
+  - New pattern: `/youtu\.be\/)([a-zA-Z0-9_-]{11})(?:[?&]|$)/` ✅ Works with all YouTube share URL formats
+- **Enhanced WebFontLoader Dequeue:** Added early `admin_init` hook with priority 9999 to prevent script conflicts
+  - Prevents "d[b].on is not a function" error more reliably
+  - Added late priority (999) to `admin_enqueue_scripts`
+- **Improved Modal Preview Debugging:** Added comprehensive console logs for video URL parsing:
+  - Original video_url logging
+  - video_type detection logging
+  - Iframe extraction tracking
+  - YouTube/Vimeo detection confirmation
+  - Final embed URL verification
+
+### 🔍 Debug Improvements
+- Console logs now show complete video processing pipeline:
+  ```javascript
+  Original video_url: https://youtu.be/egbA1RHO8MY?si=...
+  video_type: youtube
+  Not an iframe code, using URL directly
+  YouTube detected - Video ID: egbA1RHO8MY
+  Final video detection - Type: youtube, Embed URL: https://www.youtube.com/embed/...
+  Creating iframe for youtube with URL: https://www.youtube.com/embed/...
+  ```
+
+### 📝 Code Quality
+- Updated version to 1.6.3 across all plugin files
+- Enhanced comments in regex patterns explaining query parameter support
+- Added null-safety check for video_url before indexOf operation
+
+---
+
 ## Version 1.6.1 (2025-11-03)
 
 ### 🐛 Bug Fixes

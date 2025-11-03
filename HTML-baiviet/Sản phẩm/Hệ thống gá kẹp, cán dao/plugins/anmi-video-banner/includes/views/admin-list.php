@@ -394,14 +394,18 @@ jQuery(document).ready(function($) {
         
         // Get video URL - extract from embed code if needed
         var videoUrl = banner.video_url;
+        console.log('Original video_url:', videoUrl);
+        console.log('video_type:', banner.video_type);
         
         // If it looks like iframe code, extract src URL
-        if (videoUrl.indexOf('<iframe') !== -1) {
+        if (videoUrl && videoUrl.indexOf('<iframe') !== -1) {
             var srcMatch = videoUrl.match(/src=["']([^"']+)["']/i);
             if (srcMatch && srcMatch[1]) {
                 videoUrl = srcMatch[1];
                 console.log('Extracted URL from embed code:', videoUrl);
             }
+        } else {
+            console.log('Not an iframe code, using URL directly');
         }
         
         // Detect video type
@@ -424,7 +428,10 @@ jQuery(document).ready(function($) {
             videoType = 'vimeo';
             videoId = vimeoMatch[1];
             embedUrl = 'https://player.vimeo.com/video/' + videoId + '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+            console.log('Vimeo detected - Video ID:', videoId, 'Embed URL:', embedUrl);
         }
+        
+        console.log('Final video detection - Type:', videoType, 'Embed URL:', embedUrl);
         
         // Generate unique ID
         var uniqueId = 'anmi-modal-preview-' + Date.now();
@@ -440,6 +447,7 @@ jQuery(document).ready(function($) {
         
         // Video/Iframe
         if (videoType === 'youtube' || videoType === 'vimeo') {
+            console.log('Creating iframe for', videoType, 'with URL:', embedUrl);
             html += '<iframe class="anmi-banner-video anmi-banner-iframe" ' +
                     'src="' + embedUrl + '" ' +
                     'frameborder="0" ' +
@@ -447,6 +455,7 @@ jQuery(document).ready(function($) {
                     'allowfullscreen ' +
                     'style="pointer-events: none;"></iframe>';
         } else {
+            console.log('Creating video element with URL:', embedUrl);
             html += '<video class="anmi-banner-video" loop muted playsinline preload="metadata" ' +
                     'poster="' + (images[0] || '') + '">' +
                     '<source src="' + embedUrl + '" type="video/mp4">' +
