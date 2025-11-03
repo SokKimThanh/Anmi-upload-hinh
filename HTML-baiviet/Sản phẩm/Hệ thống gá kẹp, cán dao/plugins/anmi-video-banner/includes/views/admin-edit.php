@@ -116,12 +116,14 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                         id="video_embed_code" 
                                         name="video_embed_code" 
                                         class="large-text" 
-                                        rows="6"
-                                        placeholder='<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" ...></iframe>'
+                                        rows="8"
+                                        placeholder='Paste iframe code here...&#10;Example:&#10;<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
                                     ><?php echo $is_edit && $banner->video_type == 'embed' ? esc_textarea($banner->video_url) : ''; ?></textarea>
                                     <p class="description">
-                                        <strong>💡 Hướng dẫn:</strong> Dán toàn bộ mã iframe từ YouTube, Vimeo, hoặc bất kỳ video hosting nào.<br>
-                                        <strong>Ví dụ:</strong> <code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" ...&gt;&lt;/iframe&gt;</code>
+                                        <strong>� Cách lấy mã nhúng:</strong><br>
+                                        • <strong>YouTube:</strong> Vào video → Click "Share" → Click "Embed" → Copy toàn bộ code <code>&lt;iframe...&gt;</code><br>
+                                        • <strong>Vimeo:</strong> Vào video → Click biểu tượng "Share" → Copy embed code<br>
+                                        • Plugin sẽ tự động trích xuất URL từ thuộc tính <code>src="..."</code>
                                     </p>
                                 </td>
                             </tr>
@@ -456,24 +458,32 @@ jQuery(document).ready(function($) {
     // Video type change - show/hide appropriate fields
     $('#video_type').on('change', function() {
         var type = $(this).val();
+        console.log('Video type changed to:', type);
+        
         $('.hint-box').removeClass('active');
         $('.hint-' + type).addClass('active');
         
         // Show/hide video URL or embed code fields
         if (type === 'embed') {
+            console.log('Showing embed code textarea, hiding URL field');
             $('#video-url-row').hide();
             $('#video-embed-row').show();
             $('#video_url').prop('required', false);
             $('#video_embed_code').prop('required', true);
         } else {
+            console.log('Showing URL field, hiding embed code textarea');
             $('#video-url-row').show();
             $('#video-embed-row').hide();
             $('#video_url').prop('required', true);
             $('#video_embed_code').prop('required', false);
         }
+        
+        console.log('video-url-row display:', $('#video-url-row').css('display'));
+        console.log('video-embed-row display:', $('#video-embed-row').css('display'));
     });
     
     // Trigger on page load to set correct initial state
+    console.log('Triggering initial video_type change...');
     $('#video_type').trigger('change');
     
     // Upload images button

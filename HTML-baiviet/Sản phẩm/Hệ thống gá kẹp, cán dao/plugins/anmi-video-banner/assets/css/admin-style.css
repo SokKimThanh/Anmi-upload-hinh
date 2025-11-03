@@ -360,6 +360,31 @@
     color: #666;
 }
 
+/* Embed Code Textarea */
+#video_embed_code {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    background: #f9f9f9;
+    border: 2px dashed #0073aa;
+    border-radius: 4px;
+    padding: 12px;
+    line-height: 1.6;
+}
+
+#video_embed_code:focus {
+    background: #fff;
+    border-color: #00a0d2;
+    border-style: solid;
+}
+
+#video-embed-row .description {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 10px 12px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
 /* Images Upload Section */
 .images-upload-section {
     padding: 20px;
