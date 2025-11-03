@@ -134,7 +134,6 @@ $page_title = $is_edit ? 'Edit Banner' : 'Add New Banner';
                                                     <span class="dashicons dashicons-no-alt"></span>
                                                 </button>
                                             </div>
-                                            <input type="hidden" name="images[]" value="<?php echo esc_url($image_url); ?>">
                                         </div>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
@@ -416,6 +415,11 @@ jQuery(document).ready(function($) {
     
     var imagesArray = <?php echo json_encode($images_array); ?>;
     
+    // DEBUG: Log initial state
+    console.log('=== ANMI VIDEO BANNER DEBUG ===');
+    console.log('Initial imagesArray:', imagesArray);
+    console.log('Images JSON field value:', $('#images_json').val());
+    
     // Video type change
     $('#video_type').on('change', function() {
         var type = $(this).val();
@@ -451,7 +455,6 @@ jQuery(document).ready(function($) {
                             '<span class="dashicons dashicons-no-alt"></span>' +
                         '</button>' +
                     '</div>' +
-                    '<input type="hidden" name="images[]" value="' + attachment.url + '">' +
                 '</div>';
                 
                 $('#images_preview_container').append(imageHtml);
@@ -480,7 +483,10 @@ jQuery(document).ready(function($) {
     });
     
     function updateImagesJson() {
-        $('#images_json').val(JSON.stringify(imagesArray));
+        var jsonString = JSON.stringify(imagesArray);
+        $('#images_json').val(jsonString);
+        console.log('Updated images JSON:', jsonString);
+        console.log('imagesArray length:', imagesArray.length);
     }
     
     // Form submission
@@ -490,6 +496,11 @@ jQuery(document).ready(function($) {
         var $form = $(this);
         var $submitBtn = $form.find('button[type="submit"]');
         var originalText = $submitBtn.html();
+        
+        // DEBUG: Log form data before submit
+        console.log('=== FORM SUBMIT DEBUG ===');
+        console.log('imagesArray:', imagesArray);
+        console.log('images_json value:', $('#images_json').val());
         
         // Validate
         if (!$('#banner_name').val()) {

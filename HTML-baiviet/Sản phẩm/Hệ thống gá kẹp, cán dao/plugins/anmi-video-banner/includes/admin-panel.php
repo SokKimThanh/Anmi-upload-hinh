@@ -195,7 +195,16 @@ class AnMi_Video_Banner_Admin {
         $name = sanitize_text_field($_POST['name']);
         $video_url = esc_url_raw($_POST['video_url']);
         $video_type = sanitize_text_field($_POST['video_type']);
-        $images = sanitize_textarea_field($_POST['images']); // JSON array
+        
+        // Validate and sanitize images JSON
+        $images = isset($_POST['images']) ? wp_unslash($_POST['images']) : '[]';
+        // Validate it's proper JSON
+        $images_test = json_decode($images);
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            wp_send_json_error('Invalid images format. Please re-upload images.');
+            return;
+        }
+        
         $title = sanitize_text_field($_POST['title']);
         $subtitle = sanitize_textarea_field($_POST['subtitle']);
         $button_text = sanitize_text_field($_POST['button_text']);
