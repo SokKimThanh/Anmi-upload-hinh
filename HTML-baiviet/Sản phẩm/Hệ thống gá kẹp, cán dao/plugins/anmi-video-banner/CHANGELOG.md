@@ -1,5 +1,198 @@
 # An Mi Video Banner - Changelog
 
+## Version 1.6.9 (2025-11-03)
+
+### 🎯 NEW FEATURE - Applied Hover + Click Logic to Edit Preview
+
+#### **What's New:**
+Áp dụng **hover + click to play behavior** vào **Live Preview** trong trang Add/Edit Banner.
+
+#### **Problem:**
+Trước đây, Live Preview trong admin-edit chỉ dùng `AnMiVideoBanner` class cơ bản:
+- Không có slider auto-play
+- Không có hover effect
+- Không có click to play
+- Không giống với modal preview và production demo
+
+#### **Solution:**
+Implement **SAME LOGIC** như production demo vào `updateLivePreview()`:
+
+```javascript
+// 3-Step Flow in Edit Preview:
+① Slider auto-play (tiếp tục rotating)
+② Hover → Slider stops, video shows
+③ Click → Video plays
+④ Mouse leave → Video stops, slider resumes
+```
+
+---
+
+### **Implementation Details:**
+
+#### **1. HTML Structure Updated**
+```javascript
+// Before: Simple video + slider
+<iframe class="anmi-banner-video">
+<div class="anmi-banner-slider">
+  <div class="anmi-slider-slide">
+
+// After: Production-style with play button
+<div class="anmi-banner-image"> (separate slides)
+<iframe class="anmi-banner-video"> (production classes)
+<div class="anmi-play-overlay"> (play button)
+<div class="anmi-banner-dots"> (slider dots)
+```
+
+#### **2. JavaScript Logic Added**
+```javascript
+var isHovered = false;
+var isVideoPlaying = false;
+var sliderInterval = null;
+
+// Auto-play slider
+sliderInterval = setInterval(...);
+
+// Hover: Stop slider, show video
+$container.on('mouseenter', function() {
+    clearInterval(sliderInterval);
+    $images.css('opacity', '0');
+    $video.css('opacity', '1');
+});
+
+// Mouse leave: Stop video, resume slider
+$container.on('mouseleave', function() {
+    if ($video.is('video')) {
+        $video[0].pause();
+        $video[0].currentTime = 0;
+    }
+    $video.css('opacity', '0');
+    $images.eq(currentSlide).css('opacity', '1');
+    sliderInterval = setInterval(...);
+});
+
+// Click: Play video
+$container.on('click', function() {
+    isVideoPlaying = true;
+    $playOverlay.fadeOut(300);
+    $video[0].play();
+});
+```
+
+#### **3. Auto-Update on Field Changes**
+Preview **automatically updates** khi user thay đổi:
+```javascript
+// Triggers updateLivePreview():
+$('#video_url, #banner_title, #subtitle, ...').on('input change', updateLivePreview);
+$('#show_title, #show_subtitle, ...').on('change', updateLivePreview);
+
+// After add/remove images:
+updateLivePreview(); // Refresh preview
+
+// After reorder images:
+updateLivePreview(); // Refresh preview
+```
+
+---
+
+### **Benefits:**
+
+✅ **Consistent UX:** Edit preview = Modal preview = Production demo  
+✅ **Real-time Testing:** See exact behavior while editing  
+✅ **Auto-refresh:** Preview updates on ANY field change  
+✅ **Full Interaction:** Hover, click, mouse leave all work  
+✅ **Better Workflow:** No need to save → view → edit cycle  
+
+---
+
+### **Comparison:**
+
+| Feature | v1.6.8 (Old Edit) | v1.6.9 (New Edit) |
+|---------|-------------------|-------------------|
+| **Slider auto-play** | ❌ No | ✅ Yes |
+| **Hover effect** | ❌ No | ✅ Yes (stop slider, show video) |
+| **Click to play** | ❌ No | ✅ Yes (manual play) |
+| **Mouse leave** | ❌ N/A | ✅ Yes (stop video, resume slider) |
+| **Play button** | ❌ No | ✅ Yes (visible overlay) |
+| **Slider dots** | ✅ Yes | ✅ Yes (with click navigation) |
+| **Auto-update** | ✅ Yes | ✅ Yes (maintained) |
+| **Production-like** | ❌ No | ✅ Yes (identical behavior) |
+
+---
+
+### **User Experience:**
+
+#### **Before (v1.6.8):**
+```
+Edit Page Live Preview:
+- Static preview
+- No interaction
+- Basic slider
+- Can't test hover effect
+```
+
+#### **After (v1.6.9):**
+```
+Edit Page Live Preview:
+✅ Slider auto-plays
+✅ Hover to see video
+✅ Click to play video
+✅ Mouse leave stops video
+✅ Exact production behavior
+✅ Test everything while editing!
+```
+
+---
+
+### **Auto-Update Triggers:**
+
+Preview refreshes when:
+1. ✅ Video URL changes
+2. ✅ Title/subtitle/button text changes
+3. ✅ Show/hide toggles change
+4. ✅ Transition/speed/effect changes
+5. ✅ Images added via uploader
+6. ✅ Images removed (click X)
+7. ✅ Images reordered (drag & drop)
+
+**Result:** Always see up-to-date preview!
+
+---
+
+### **Files Modified:**
+- `admin-edit.php` - Rewrote `updateLivePreview()` with hover logic (150+ lines)
+- `admin-edit.php` - Updated HTML structure (production-style)
+- `anmi-video-banner.php` - Version bump to 1.6.9
+- `video-banner.css` - Version comment update
+- CHANGELOG.md - Documented new feature
+
+---
+
+### **Technical Notes:**
+
+**Removed:**
+```javascript
+// Old: Simple AnMiVideoBanner initialization
+if (typeof AnMiVideoBanner !== 'undefined') {
+    previewInstance = new AnMiVideoBanner($container[0]);
+}
+```
+
+**Added:**
+```javascript
+// New: Custom hover + click logic (same as production demo)
+var isHovered = false;
+var isVideoPlaying = false;
+var sliderInterval = setInterval(...);
+$container.on('mouseenter/mouseleave/click', ...);
+```
+
+**Why?**
+- More control over preview behavior
+- Consistent with modal preview (admin-list.php)
+- Better for testing real interactions
+
+---
+
 ## Version 1.6.8 (2025-11-03)
 
 ### 🎯 NEW FEATURE - Production Demo Preview (Hover + Click to Play)

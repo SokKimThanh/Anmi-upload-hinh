@@ -722,46 +722,38 @@ jQuery(document).ready(function($) {
         // Generate unique ID
         var uniqueId = 'anmi-preview-' + Date.now();
         
-        // Build HTML
+        // Build HTML with hover + click to play behavior
         var html = '<div class="anmi-video-banner-container ' + uniqueId + ' transition-' + transition + '" ' +
-                   'style="height: 300px;" ' +
+                   'style="height: 300px; position: relative; cursor: pointer;" ' +
                    'data-autoplay-delay="' + autoplayDelay + '" ' +
                    'data-mobile-behavior="both" ' +
                    'data-slider-speed="' + sliderSpeed + '" ' +
                    'data-slider-effect="' + sliderEffect + '" ' +
                    'data-video-type="' + videoType + '">';
         
-        // Video/Iframe
+        // Image Slider (visible by default)
+        imagesArray.forEach(function(imageUrl, index) {
+            html += '<div class="anmi-banner-image ' + (index === 0 ? 'active' : '') + '" ' +
+                    'style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; ' +
+                    'background-image: url(\'' + imageUrl + '\'); background-size: cover; background-position: center; ' +
+                    'opacity: ' + (index === 0 ? '1' : '0') + '; transition: opacity 0.8s ease; z-index: 2;">' +
+                    '</div>';
+        });
+        
+        // Video/Iframe (hidden by default - use PRODUCTION classes)
         if (videoType === 'youtube' || videoType === 'vimeo') {
             html += '<iframe class="anmi-banner-video anmi-banner-iframe" ' +
                     'src="' + embedUrl + '" ' +
                     'frameborder="0" ' +
                     'allow="autoplay; fullscreen; picture-in-picture" ' +
-                    'allowfullscreen ' +
-                    'style="pointer-events: none;"></iframe>';
+                    'allowfullscreen></iframe>';
         } else {
-            html += '<video class="anmi-banner-video" loop muted playsinline preload="metadata" ' +
+            html += '<video class="anmi-banner-video" ' +
+                    'loop muted playsinline preload="metadata" ' +
                     'poster="' + (imagesArray[0] || '') + '">' +
                     '<source src="' + embedUrl + '" type="video/mp4">' +
                     '</video>';
         }
-        
-        // Image Slider
-        html += '<div class="anmi-banner-slider">';
-        imagesArray.forEach(function(imageUrl, index) {
-            html += '<div class="anmi-slider-slide ' + (index === 0 ? 'active' : '') + '" ' +
-                    'style="background-image: url(\'' + imageUrl + '\');"></div>';
-        });
-        
-        // Slider dots (if multiple images)
-        if (imagesArray.length > 1) {
-            html += '<div class="anmi-slider-dots">';
-            imagesArray.forEach(function(imageUrl, index) {
-                html += '<span class="dot ' + (index === 0 ? 'active' : '') + '" data-slide="' + index + '"></span>';
-            });
-            html += '</div>';
-        }
-        html += '</div>'; // Close slider
         
         // Content Overlay
         if (title || subtitle || buttonText) {
@@ -783,6 +775,27 @@ jQuery(document).ready(function($) {
             html += '</div>';
         }
         
+        // Slider dots (if multiple images)
+        if (imagesArray.length > 1) {
+            html += '<div class="anmi-banner-dots" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 10;">';
+            imagesArray.forEach(function(imageUrl, index) {
+                html += '<span class="anmi-banner-dot ' + (index === 0 ? 'active' : '') + '" data-slide="' + index + '" ' +
+                        'style="width: 12px; height: 12px; border-radius: 50%; background: ' + (index === 0 ? '#fff' : 'rgba(255,255,255,0.5)') + '; ' +
+                        'cursor: pointer; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">' +
+                        '</span>';
+            });
+            html += '</div>';
+        }
+        
+        // Play button overlay
+        html += '<div class="anmi-play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; pointer-events: none;">' +
+                '<div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(255,255,255,0.9); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">' +
+                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">' +
+                '<polygon points="5 3 19 12 5 21 5 3"></polygon>' +
+                '</svg>' +
+                '</div>' +
+                '</div>';
+        
         // Loading spinner
         html += '<div class="anmi-banner-loader"><div class="spinner"></div></div>';
         
@@ -798,11 +811,125 @@ jQuery(document).ready(function($) {
             } catch(e) {}
         }
         
-        // Initialize banner functionality
+        // Initialize hover + click to play behavior
         setTimeout(function() {
             var $container = $('.' + uniqueId);
-            if ($container.length && typeof AnMiVideoBanner !== 'undefined') {
-                previewInstance = new AnMiVideoBanner($container[0]);
+            
+            if ($container.length) {
+                var currentSlide = 0;
+                var sliderInterval = null;
+                var isHovered = false;
+                var isVideoPlaying = false;
+                
+                var $video = $container.find('.anmi-banner-video');
+                var $images = $container.find('.anmi-banner-image');
+                var $playOverlay = $container.find('.anmi-play-overlay');
+                var $dots = $container.find('.anmi-banner-dot');
+                
+                // Start auto-play slider
+                if (imagesArray.length > 1) {
+                    sliderInterval = setInterval(function() {
+                        if (!isHovered && !isVideoPlaying) {
+                            // Fade out current
+                            $images.eq(currentSlide).css('opacity', '0');
+                            $dots.eq(currentSlide).css('background', 'rgba(255,255,255,0.5)').removeClass('active');
+                            
+                            // Next slide
+                            currentSlide = (currentSlide + 1) % imagesArray.length;
+                            
+                            // Fade in next
+                            $images.eq(currentSlide).css('opacity', '1');
+                            $dots.eq(currentSlide).css('background', '#fff').addClass('active');
+                        }
+                    }, parseInt(sliderSpeed));
+                }
+                
+                // HOVER: Stop slider, show video
+                $container.on('mouseenter', function() {
+                    isHovered = true;
+                    
+                    if (sliderInterval) {
+                        clearInterval(sliderInterval);
+                    }
+                    
+                    $images.css('opacity', '0');
+                    $video.css('opacity', '1');
+                    $playOverlay.css('opacity', '1');
+                });
+                
+                // MOUSE LEAVE: Stop video, resume slider
+                $container.on('mouseleave', function() {
+                    isHovered = false;
+                    
+                    // Stop video if playing
+                    if (isVideoPlaying) {
+                        if ($video.is('video')) {
+                            $video[0].pause();
+                            $video[0].currentTime = 0;
+                        }
+                        isVideoPlaying = false;
+                    }
+                    
+                    // Hide video
+                    $video.css('opacity', '0');
+                    $playOverlay.css('opacity', '1').show();
+                    
+                    // Show current slide
+                    $images.css('opacity', '0');
+                    $images.eq(currentSlide).css('opacity', '1');
+                    
+                    // Resume slider
+                    if (imagesArray.length > 1) {
+                        if (sliderInterval) {
+                            clearInterval(sliderInterval);
+                        }
+                        
+                        sliderInterval = setInterval(function() {
+                            if (!isHovered && !isVideoPlaying) {
+                                $images.eq(currentSlide).css('opacity', '0');
+                                $dots.eq(currentSlide).css('background', 'rgba(255,255,255,0.5)').removeClass('active');
+                                
+                                currentSlide = (currentSlide + 1) % imagesArray.length;
+                                
+                                $images.eq(currentSlide).css('opacity', '1');
+                                $dots.eq(currentSlide).css('background', '#fff').addClass('active');
+                            }
+                        }, parseInt(sliderSpeed));
+                    }
+                });
+                
+                // CLICK: Play video
+                $container.on('click', function() {
+                    if (!isVideoPlaying) {
+                        isVideoPlaying = true;
+                        $playOverlay.fadeOut(300);
+                        
+                        if ($video.length) {
+                            if ($video.is('video')) {
+                                $video[0].play();
+                            }
+                        }
+                    }
+                });
+                
+                // Dot click handlers
+                $dots.on('click', function(e) {
+                    e.stopPropagation();
+                    
+                    if (sliderInterval) {
+                        clearInterval(sliderInterval);
+                    }
+                    
+                    var slideIndex = $(this).data('slide');
+                    
+                    $images.css('opacity', '0');
+                    $dots.css('background', 'rgba(255,255,255,0.5)').removeClass('active');
+                    
+                    $images.eq(slideIndex).css('opacity', '1');
+                    $(this).css('background', '#fff').addClass('active');
+                    
+                    currentSlide = slideIndex;
+                });
             }
         }, 100);
     }
