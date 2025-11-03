@@ -1,6 +1,6 @@
 /**
  * AN MI VIDEO BANNER PLUGIN JAVASCRIPT
- * Version: 1.6.9 - Hover + Click to Play
+ * Version: 1.6.11 - Mobile Tap-to-Play Fix
  */
 
 (function($) {
@@ -152,95 +152,175 @@
         setupEvents() {
             const self = this;
             
-            // HOVER: Stop slider, show video
-            this.$container.on('mouseenter', function() {
-                self.isHovered = true;
-                
-                if (self.sliderInterval) {
-                    clearInterval(self.sliderInterval);
-                }
-                
-                // Fade out slider images
-                self.$images.css('opacity', '0');
-                
-                // Show video
-                self.$video.css('opacity', '1');
-                
-                // Keep play button visible
-                self.$playOverlay.css('opacity', '1');
-            });
+            // Check if mobile device
+            const isMobileDevice = this.isMobile();
             
-            // MOUSE LEAVE: Stop video, resume slider
-            this.$container.on('mouseleave', function() {
-                self.isHovered = false;
-                
-                // Stop video if playing
-                if (self.isVideoPlaying) {
-                    const video = self.$video[0];
-                    if (video && video.tagName === 'VIDEO') {
-                        video.pause();
-                        video.currentTime = 0;
+            if (isMobileDevice) {
+                // ============================================
+                // MOBILE BEHAVIOR: Tap to play
+                // ============================================
+                this.$container.on('touchstart click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    if (!self.isVideoPlaying) {
+                        // Stop slider
+                        if (self.sliderInterval) {
+                            clearInterval(self.sliderInterval);
+                            self.sliderInterval = null;
+                        }
+                        
+                        // Hide all images
+                        self.$images.css('opacity', '0');
+                        
+                        // Show video
+                        self.$video.css('opacity', '1');
+                        
+                        // Hide play button immediately
+                        self.$playOverlay.css('opacity', '0').hide();
+                        
+                        // Play video
+                        const video = self.$video[0];
+                        if (video) {
+                            if (video.tagName === 'VIDEO') {
+                                // Direct video - play with error handling
+                                const playPromise = video.play();
+                                
+                                if (playPromise !== undefined) {
+                                    playPromise
+                                        .then(() => {
+                                            console.log('Mobile video playing');
+                                            self.isVideoPlaying = true;
+                                        })
+                                        .catch((error) => {
+                                            console.error('Mobile video play failed:', error);
+                                            // Show play button again as fallback
+                                            self.$playOverlay.css('opacity', '1').show();
+                                        });
+                                } else {
+                                    self.isVideoPlaying = true;
+                                }
+                            } else if (video.tagName === 'IFRAME') {
+                                // YouTube/Vimeo - autoplay handled by embed URL
+                                self.isVideoPlaying = true;
+                                console.log('Mobile iframe video shown');
+                            }
+                        }
+                    } else {
+                        // Video is playing - tap again to pause/reset
+                        const video = self.$video[0];
+                        if (video && video.tagName === 'VIDEO') {
+                            video.pause();
+                            video.currentTime = 0;
+                        }
+                        
+                        // Reset to slider
+                        self.$video.css('opacity', '0');
+                        self.$images.css('opacity', '0');
+                        self.$images.eq(self.currentSlide).css('opacity', '1');
+                        self.$playOverlay.css('opacity', '1').show();
+                        self.isVideoPlaying = false;
+                        
+                        // Restart slider
+                        self.startSlider();
                     }
-                    self.isVideoPlaying = false;
-                }
+                });
                 
-                // Hide video
-                self.$video.css('opacity', '0');
+            } else {
+                // ============================================
+                // DESKTOP BEHAVIOR: Hover + Click
+                // ============================================
                 
-                // Show play button again
-                self.$playOverlay.css('opacity', '1').show();
-                
-                // Show current slide
-                self.$images.css('opacity', '0');
-                self.$images.eq(self.currentSlide).css('opacity', '1');
-                
-                // Resume slider
-                if (self.$images.length > 1) {
+                // HOVER: Stop slider, show video (not playing)
+                this.$container.on('mouseenter', function() {
+                    self.isHovered = true;
+                    
                     if (self.sliderInterval) {
                         clearInterval(self.sliderInterval);
                     }
                     
-                    self.sliderInterval = setInterval(function() {
-                        if (!self.isHovered && !self.isVideoPlaying) {
-                            self.$images.eq(self.currentSlide).css('opacity', '0');
-                            self.$dots.eq(self.currentSlide).css('background', 'rgba(255,255,255,0.5)').removeClass('active');
-                            
-                            self.currentSlide = (self.currentSlide + 1) % self.$images.length;
-                            
-                            self.$images.eq(self.currentSlide).css('opacity', '1');
-                            self.$dots.eq(self.currentSlide).css('background', '#fff').addClass('active');
-                        }
-                    }, self.sliderSpeed);
-                }
-            });
-            
-            // CLICK: Play video
-            this.$container.on('click', function() {
-                if (!self.isVideoPlaying) {
-                    self.isVideoPlaying = true;
+                    // Fade out slider images
+                    self.$images.css('opacity', '0');
                     
-                    // Hide play button
-                    self.$playOverlay.fadeOut(300);
+                    // Show video (but don't play yet)
+                    self.$video.css('opacity', '1');
                     
-                    // Play video
-                    const video = self.$video[0];
-                    if (video) {
-                        if (video.tagName === 'VIDEO') {
-                            video.play();
+                    // Show play button
+                    self.$playOverlay.css('opacity', '1').show();
+                });
+                
+                // MOUSE LEAVE: Stop video, resume slider
+                this.$container.on('mouseleave', function() {
+                    self.isHovered = false;
+                    
+                    // Stop video if playing
+                    if (self.isVideoPlaying) {
+                        const video = self.$video[0];
+                        if (video && video.tagName === 'VIDEO') {
+                            video.pause();
+                            video.currentTime = 0;
                         }
-                        // For iframe, autoplay in URL handles it
+                        self.isVideoPlaying = false;
                     }
-                }
-            });
-            
-            // Touch events for mobile
-            if (this.mobileBehavior === 'video' || this.mobileBehavior === 'both') {
-                this.$container.on('touchstart', function() {
-                    if (self.$video.css('opacity') === '0') {
-                        self.isHovered = true;
-                        self.stopSlider();
-                        self.$images.css('opacity', '0');
-                        self.$video.css('opacity', '1');
+                    
+                    // Hide video
+                    self.$video.css('opacity', '0');
+                    
+                    // Reset play button
+                    self.$playOverlay.css('opacity', '0').hide();
+                    
+                    // Show current slide
+                    self.$images.css('opacity', '0');
+                    self.$images.eq(self.currentSlide).css('opacity', '1');
+                    
+                    // Resume slider
+                    if (self.$images.length > 1) {
+                        if (self.sliderInterval) {
+                            clearInterval(self.sliderInterval);
+                        }
+                        
+                        self.sliderInterval = setInterval(function() {
+                            if (!self.isHovered && !self.isVideoPlaying) {
+                                self.$images.eq(self.currentSlide).css('opacity', '0');
+                                self.$dots.eq(self.currentSlide).css('background', 'rgba(255,255,255,0.5)').removeClass('active');
+                                
+                                self.currentSlide = (self.currentSlide + 1) % self.$images.length;
+                                
+                                self.$images.eq(self.currentSlide).css('opacity', '1');
+                                self.$dots.eq(self.currentSlide).css('background', '#fff').addClass('active');
+                            }
+                        }, self.sliderSpeed);
+                    }
+                });
+                
+                // CLICK: Play video
+                this.$container.on('click', function(e) {
+                    if (!self.isVideoPlaying && self.isHovered) {
+                        self.isVideoPlaying = true;
+                        
+                        // Hide play button
+                        self.$playOverlay.fadeOut(300);
+                        
+                        // Play video
+                        const video = self.$video[0];
+                        if (video) {
+                            if (video.tagName === 'VIDEO') {
+                                const playPromise = video.play();
+                                
+                                if (playPromise !== undefined) {
+                                    playPromise
+                                        .then(() => {
+                                            console.log('Desktop video playing');
+                                        })
+                                        .catch((error) => {
+                                            console.error('Desktop video play failed:', error);
+                                            self.$playOverlay.fadeIn(300);
+                                            self.isVideoPlaying = false;
+                                        });
+                                }
+                            }
+                            // For iframe, autoplay in URL handles it
+                        }
                     }
                 });
             }

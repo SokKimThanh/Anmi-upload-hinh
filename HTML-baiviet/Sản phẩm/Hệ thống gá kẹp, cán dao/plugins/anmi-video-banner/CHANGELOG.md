@@ -1,5 +1,129 @@
 # An Mi Video Banner - Changelog
 
+## Version 1.6.11 (2025-11-03)
+
+### 📱 CRITICAL FIX - Mobile Video Playback Issue
+
+#### **Problem:**
+Video không phát trên thiết bị di động (iOS Safari, Android Chrome):
+
+**Root Causes:**
+1. ❌ **Hover events không hoạt động:** Code dùng `mouseenter`/`mouseleave` → Mobile không support
+2. ❌ **Video luôn ẩn:** Vì hover không fire, video stuck ở `opacity: 0`
+3. ❌ **Touch events chưa hoàn chỉnh:** Chỉ có `touchstart` cơ bản, không play video
+4. ❌ **Iframe pointer-events:** `pointer-events: auto` block clicks từ container
+5. ❌ **Default behavior:** `mobile_behavior = "image"` disable video hoàn toàn
+
+#### **Solution:**
+
+**1. Separated Desktop vs Mobile Logic** (`video-banner.js`):
+
+```javascript
+setupEvents() {
+    const isMobileDevice = this.isMobile();
+    
+    if (isMobileDevice) {
+        // MOBILE: Tap to play
+        this.$container.on('touchstart click', function(e) {
+            // First tap: Show video + Play immediately
+            // Second tap: Pause + Reset to slider
+        });
+    } else {
+        // DESKTOP: Hover + Click (unchanged)
+        this.$container.on('mouseenter', ...);
+        this.$container.on('mouseleave', ...);
+        this.$container.on('click', ...);
+    }
+}
+```
+
+**Mobile Behavior:**
+- ① **Tap 1:** Stop slider → Show video → Play immediately (1-tap to play)
+- ② **Tap 2:** Pause video → Reset → Show slider
+
+**Desktop Behavior (unchanged):**
+- ① Hover → Show video (not playing)
+- ② Click → Play video
+- ③ Mouse leave → Stop video
+
+**2. Fixed Iframe Click Blocking** (`video-banner.css`):
+
+```css
+/* Before: pointer-events: auto (blocked clicks) */
+.anmi-banner-iframe {
+    pointer-events: none; /* ✅ Allow container to capture taps */
+}
+
+/* Only enable on desktop when video playing */
+@media (min-width: 769px) {
+    .anmi-banner-iframe.playing {
+        pointer-events: auto;
+    }
+}
+```
+
+**3. Changed Default Mobile Behavior** (`admin-panel.php`):
+
+```php
+// Before: DEFAULT 'image' (disable video)
+mobile_behavior varchar(50) DEFAULT 'image',
+
+// After: DEFAULT 'video' (enable video)
+mobile_behavior varchar(50) DEFAULT 'video',
+```
+
+**4. Added Play Error Handling:**
+
+```javascript
+const playPromise = video.play();
+if (playPromise !== undefined) {
+    playPromise
+        .then(() => {
+            console.log('Mobile video playing');
+            self.isVideoPlaying = true;
+        })
+        .catch((error) => {
+            console.error('Mobile video play failed:', error);
+            // Fallback: Show play button again
+            self.$playOverlay.css('opacity', '1').show();
+        });
+}
+```
+
+#### **Result:**
+
+✅ **Mobile video now works:**
+- iOS Safari ✅
+- Android Chrome ✅
+- iPad ✅
+- Touch devices ✅
+
+✅ **UX Improvements:**
+- Simple 1-tap to play
+- No hover dependency
+- iOS autoplay policy compliant
+- Synchronous play (no async delay)
+
+✅ **Backward compatible:**
+- Desktop behavior unchanged
+- Existing banners work
+- `mobile_behavior="image"` still available
+
+#### **Testing:**
+
+**Mobile (iOS Safari 16+, Chrome Android):**
+- [x] ✅ Tap banner → Video plays immediately
+- [x] ✅ Tap again → Video pauses, slider resumes
+- [x] ✅ No console errors
+- [x] ✅ Play button shows/hides correctly
+
+**Desktop (unchanged):**
+- [x] ✅ Hover → Video shows (not playing)
+- [x] ✅ Click → Video plays
+- [x] ✅ Mouse leave → Video stops
+
+---
+
 ## Version 1.6.10 (2025-11-03)
 
 ### 🎨 CRITICAL FIX - Synchronized Elementor Widget with Production

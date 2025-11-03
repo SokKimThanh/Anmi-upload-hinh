@@ -77,7 +77,7 @@ class AnMi_Video_Banner_Admin {
             slider_speed int(11) DEFAULT 3000,
             slider_effect varchar(50) DEFAULT 'fade',
             autoplay_delay int(11) DEFAULT 0,
-            mobile_behavior varchar(50) DEFAULT 'image',
+            mobile_behavior varchar(50) DEFAULT 'video',
             status varchar(20) DEFAULT 'active',
             created_at datetime DEFAULT CURRENT_TIMESTAMP,
             updated_at datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
