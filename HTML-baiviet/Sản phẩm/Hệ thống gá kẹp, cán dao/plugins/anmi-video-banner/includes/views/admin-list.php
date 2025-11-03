@@ -409,12 +409,13 @@ jQuery(document).ready(function($) {
         var embedUrl = videoUrl;
         var videoId = null;
         
-        // YouTube detection
-        var youtubeMatch = videoUrl.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i);
+        // YouTube detection (supports youtu.be with query parameters)
+        var youtubeMatch = videoUrl.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})(?:[?&]|$)/i);
         if (youtubeMatch) {
             videoType = 'youtube';
             videoId = youtubeMatch[1];
             embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&mute=1&loop=1&playlist=' + videoId + '&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+            console.log('YouTube detected - Video ID:', videoId, 'Embed URL:', embedUrl);
         }
         
         // Vimeo detection

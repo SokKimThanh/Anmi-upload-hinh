@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Video Banner
  * Plugin URI: https://anmitools.com
  * Description: Video banner với slider tự động + Admin CRUD panel - YouTube/Vimeo/MP4 support + Iframe Embed + Modal Preview
- * Version: 1.6.2
+ * Version: 1.6.3
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('ANMI_VIDEO_BANNER_VERSION', '1.6.2');
+define('ANMI_VIDEO_BANNER_VERSION', '1.6.3');
 define('ANMI_VIDEO_BANNER_FILE', __FILE__);
 define('ANMI_VIDEO_BANNER_PATH', plugin_dir_path(__FILE__));
 define('ANMI_VIDEO_BANNER_URL', plugin_dir_url(__FILE__));
@@ -82,8 +82,8 @@ class AnMi_Video_Banner {
             'video_id' => null
         );
         
-        // YouTube detection (supports regular URLs and iframe embed codes)
-        if (preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i', $url, $match)) {
+        // YouTube detection (supports regular URLs, youtu.be with query params, and iframe embed codes)
+        if (preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})(?:[?&]|$)/i', $url, $match)) {
             $result['type'] = 'youtube';
             $result['video_id'] = $match[1];
             
