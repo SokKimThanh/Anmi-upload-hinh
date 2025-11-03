@@ -29,6 +29,14 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
         return ['video', 'banner', 'hover', 'transition', 'anmi'];
     }
     
+    public function get_script_depends() {
+        return ['anmi-video-banner-script'];
+    }
+    
+    public function get_style_depends() {
+        return ['anmi-video-banner-style'];
+    }
+    
     protected function register_controls() {
         
         // ============================================
@@ -467,34 +475,72 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
         }
         
         $unique_id = 'anmi-vb-' . $this->get_id();
+        
+        // Detect video type
+        $video_type = 'direct';
+        $video_embed_url = $video_url;
+        
+        if (strpos($video_url, 'youtube.com') !== false || strpos($video_url, 'youtu.be') !== false) {
+            $video_type = 'youtube';
+            preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i', $video_url, $matches);
+            if (!empty($matches[1])) {
+                $video_embed_url = 'https://www.youtube.com/embed/' . $matches[1] . '?autoplay=1&mute=1&loop=1&playlist=' . $matches[1] . '&controls=0&showinfo=0&rel=0&modestbranding=1';
+            }
+        } elseif (strpos($video_url, 'vimeo.com') !== false) {
+            $video_type = 'vimeo';
+            preg_match('/vimeo\.com\/(\d+)/', $video_url, $matches);
+            if (!empty($matches[1])) {
+                $video_embed_url = 'https://player.vimeo.com/video/' . $matches[1] . '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+            }
+        }
         ?>
         
         <div class="anmi-video-banner-container <?php echo esc_attr($unique_id); ?> transition-<?php echo esc_attr($transition); ?>" 
-             style="height: <?php echo esc_attr($height); ?>;"
+             style="position: relative; overflow: hidden; height: <?php echo esc_attr($height); ?>;"
              data-autoplay-delay="<?php echo esc_attr($autoplay_delay); ?>"
              data-mobile-behavior="<?php echo esc_attr($mobile_behavior); ?>"
              data-slider-speed="<?php echo esc_attr($slider_speed); ?>"
              data-slider-effect="fade">
             
-            <!-- Video Background -->
-            <video class="anmi-banner-video" loop muted playsinline preload="auto">
-                <source src="<?php echo esc_url($video_url); ?>" type="video/mp4">
-            </video>
+            <!-- Image Slider (Individual Images) -->
+            <?php foreach ($images as $index => $image_url): ?>
+                <div class="anmi-banner-image <?php echo $index === 0 ? 'active' : ''; ?>" 
+                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('<?php echo esc_url($image_url); ?>'); background-size: cover; background-position: center; opacity: <?php echo $index === 0 ? '1' : '0'; ?>; transition: opacity 0.8s ease; z-index: 2;"></div>
+            <?php endforeach; ?>
             
-            <!-- Image Slider -->
-            <div class="anmi-banner-slider">
-                <?php foreach ($images as $index => $image_url): ?>
-                    <div class="anmi-slider-slide <?php echo $index === 0 ? 'active' : ''; ?>" 
-                         style="background-image: url('<?php echo esc_url($image_url); ?>');"></div>
-                <?php endforeach; ?>
-                
-                <?php if (count($images) > 1): ?>
-                    <div class="anmi-slider-dots">
-                        <?php foreach ($images as $index => $image_url): ?>
-                            <span class="dot <?php echo $index === 0 ? 'active' : ''; ?>" data-slide="<?php echo $index; ?>"></span>
-                        <?php endforeach; ?>
-                    </div>
-                <?php endif; ?>
+            <!-- Video Background -->
+            <?php if ($video_type === 'youtube' || $video_type === 'vimeo'): ?>
+                <iframe class="anmi-banner-video anmi-banner-iframe" 
+                        src="<?php echo esc_url($video_embed_url); ?>" 
+                        frameborder="0" 
+                        allow="autoplay; fullscreen" 
+                        allowfullscreen
+                        style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.5s ease; z-index: 3; pointer-events: none;"></iframe>
+            <?php else: ?>
+                <video class="anmi-banner-video" 
+                       loop muted playsinline preload="auto"
+                       style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.5s ease; z-index: 3; object-fit: cover;">
+                    <source src="<?php echo esc_url($video_url); ?>" type="video/mp4">
+                </video>
+            <?php endif; ?>
+            
+            <!-- Slider Dots -->
+            <?php if (count($images) > 1): ?>
+                <div class="anmi-banner-dots" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 10;">
+                    <?php foreach ($images as $index => $image_url): ?>
+                        <span class="anmi-banner-dot <?php echo $index === 0 ? 'active' : ''; ?>" 
+                              data-slide="<?php echo $index; ?>"
+                              style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s; <?php echo $index === 0 ? 'background: rgba(255,255,255,1);' : ''; ?>"></span>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+            
+            <!-- Play Overlay Button -->
+            <div class="anmi-play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; opacity: 0; transition: opacity 0.3s; pointer-events: none;">
+                <svg width="80" height="80" viewBox="0 0 80 80" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">
+                    <circle cx="40" cy="40" r="35" fill="rgba(255,255,255,0.9)" stroke="#ff6600" stroke-width="2"/>
+                    <polygon points="32,25 32,55 55,40" fill="#ff6600"/>
+                </svg>
             </div>
             
             <?php if (!empty($title) || !empty($subtitle) || !empty($button_text)): ?>
@@ -524,6 +570,30 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
                 <div class="spinner"></div>
             </div>
         </div>
+        
+        <script>
+        jQuery(document).ready(function($) {
+            // Initialize video banner for this widget
+            if (typeof AnMiVideoBanner !== 'undefined') {
+                var container = $('.<?php echo esc_js($unique_id); ?>');
+                if (container.length && !container.data('anmi-initialized')) {
+                    new AnMiVideoBanner(container[0]);
+                    container.data('anmi-initialized', true);
+                }
+            }
+            
+            // Re-initialize on Elementor preview refresh
+            if (typeof elementorFrontend !== 'undefined') {
+                elementorFrontend.hooks.addAction('frontend/element_ready/anmi_video_banner.default', function($scope) {
+                    var container = $scope.find('.anmi-video-banner-container');
+                    if (container.length && !container.data('anmi-initialized')) {
+                        new AnMiVideoBanner(container[0]);
+                        container.data('anmi-initialized', true);
+                    }
+                });
+            }
+        });
+        </script>
         
         <?php
     }

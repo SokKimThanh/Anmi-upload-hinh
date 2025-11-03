@@ -1,5 +1,60 @@
 # An Mi Video Banner - Changelog
 
+## Version 1.6.10 (2025-11-03)
+
+### 🎨 CRITICAL FIX - Synchronized Elementor Widget with Production
+
+#### **Problem:**
+Elementor widget đang sử dụng **HTML structure CŨ**, không giống với preview và production:
+- ❌ Class cũ: `.anmi-slider-slide`, `.dot`, `.anmi-banner-slider`
+- ❌ Không có `.anmi-play-overlay` (nút play)
+- ❌ Không có `.anmi-banner-image` (ảnh riêng lẻ)
+- ❌ Auto-play behavior cũ (không có hover + click logic)
+- ❌ Không khởi tạo AnMiVideoBanner class
+
+#### **Solution:**
+Đồng bộ **Elementor widget** với production shortcode:
+
+1. **Updated HTML Structure** (`elementor-widget.php` - render method):
+   - ✅ Dùng `.anmi-banner-image` cho từng slide
+   - ✅ Dùng `.anmi-banner-dot` cho slider dots
+   - ✅ Thêm `.anmi-play-overlay` với SVG play button
+   - ✅ Support YouTube/Vimeo iframe với `.anmi-banner-iframe`
+   - ✅ Inline styles cho positioning (giống production)
+
+2. **Added Script Dependencies**:
+   ```php
+   public function get_script_depends() {
+       return ['anmi-video-banner-script'];
+   }
+   
+   public function get_style_depends() {
+       return ['anmi-video-banner-style'];
+   }
+   ```
+
+3. **Added JavaScript Initialization**:
+   ```javascript
+   // Initialize AnMiVideoBanner class after render
+   jQuery(document).ready(function($) {
+       if (typeof AnMiVideoBanner !== 'undefined') {
+           new AnMiVideoBanner(container[0]);
+       }
+   });
+   
+   // Re-initialize on Elementor preview refresh
+   elementorFrontend.hooks.addAction('frontend/element_ready/anmi_video_banner.default', ...);
+   ```
+
+#### **Result:**
+✅ Elementor widget giờ có **SAME BEHAVIOR** với production và preview:
+- ① Slider auto-plays
+- ② Hover stops slider, shows video (not playing)
+- ③ Click plays video
+- ④ Mouse leave stops video, resumes slider
+
+---
+
 ## Version 1.6.9 (2025-11-03)
 
 ### 🎯 NEW FEATURE - Applied Hover + Click Logic to Edit Preview
