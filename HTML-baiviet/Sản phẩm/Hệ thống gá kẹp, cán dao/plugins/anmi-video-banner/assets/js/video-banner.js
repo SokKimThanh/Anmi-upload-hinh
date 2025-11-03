@@ -1,9 +1,6 @@
 /**
  * AN MI VIDEO BANNER PLUGIN JAVASCRIPT
- * Version: 1.6.1 - With Image Slider Support + Global Scope Export
- * Changelog:
- * - v1.6.1: Exposed AnMiVideoBanner to window object for admin modal preview
- * - v1.1.0: Added image slider support
+ * Version: 1.6.2
  */
 
 (function($) {
