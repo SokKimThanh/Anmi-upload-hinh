@@ -148,6 +148,13 @@
     opacity: 0.3 !important; /* Always dim to show video is primary */
 }
 
+/* Admin list modal preview: Same behavior as live preview */
+.anmi-preview-video-column .anmi-banner-iframe,
+.anmi-preview-video-column .anmi-banner-video {
+    z-index: 20 !important; /* Always on top */
+    pointer-events: auto !important; /* Always clickable */
+}
+
 /* ============================================ */
 /* IMAGE SLIDER STYLES */
 /* ============================================ */

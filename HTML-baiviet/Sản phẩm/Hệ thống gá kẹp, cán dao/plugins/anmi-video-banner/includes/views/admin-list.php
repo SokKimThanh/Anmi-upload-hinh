@@ -413,12 +413,39 @@ jQuery(document).ready(function($) {
         var embedUrl = videoUrl;
         var videoId = null;
         
+        // Get video settings (v1.6.13)
+        var videoAutoplay = banner.video_autoplay || 1;
+        var videoMuted = banner.video_muted || 1;
+        var videoLoop = banner.video_loop || 1;
+        var videoControls = banner.video_controls || 1;
+        var videoModestbranding = banner.video_modestbranding || 1;
+        var videoRel = banner.video_rel || 0;
+        
+        console.log('Video settings:', {
+            autoplay: videoAutoplay,
+            muted: videoMuted,
+            loop: videoLoop,
+            controls: videoControls,
+            modestbranding: videoModestbranding,
+            rel: videoRel
+        });
+        
         // YouTube detection (supports youtu.be with query parameters)
         var youtubeMatch = videoUrl.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})(?:[?&]|$)/i);
         if (youtubeMatch) {
             videoType = 'youtube';
             videoId = youtubeMatch[1];
-            embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&mute=1&loop=1&playlist=' + videoId + '&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+            // Build YouTube URL with user settings
+            embedUrl = 'https://www.youtube.com/embed/' + videoId + 
+                '?autoplay=' + videoAutoplay +
+                '&mute=' + videoMuted +
+                '&loop=' + videoLoop +
+                '&playlist=' + videoId +
+                '&controls=' + videoControls +
+                '&showinfo=0' +
+                '&rel=' + videoRel +
+                '&modestbranding=' + videoModestbranding +
+                '&playsinline=1';
             console.log('YouTube detected - Video ID:', videoId, 'Embed URL:', embedUrl);
         }
         
@@ -427,7 +454,13 @@ jQuery(document).ready(function($) {
         if (vimeoMatch) {
             videoType = 'vimeo';
             videoId = vimeoMatch[1];
-            embedUrl = 'https://player.vimeo.com/video/' + videoId + '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+            // Build Vimeo URL with user settings
+            embedUrl = 'https://player.vimeo.com/video/' + videoId + 
+                '?autoplay=' + videoAutoplay +
+                '&muted=' + videoMuted +
+                '&loop=' + videoLoop +
+                '&background=' + (videoControls ? 0 : 1) +
+                '&controls=' + videoControls;
             console.log('Vimeo detected - Video ID:', videoId, 'Embed URL:', embedUrl);
         }
         
@@ -450,10 +483,10 @@ jQuery(document).ready(function($) {
                 'data-slider-effect="' + banner.slider_effect + '" ' +
                 'data-video-type="' + videoType + '">';
         
-        // Video/Iframe - PREVIEW ONLY (separate from production classes)
+        // Video/Iframe - Use PRODUCTION classes for CSS compatibility
         if (videoType === 'youtube' || videoType === 'vimeo') {
             console.log('Creating iframe for', videoType, 'with URL:', embedUrl);
-            html += '<iframe class="anmi-preview-iframe" ' +
+            html += '<iframe class="anmi-banner-video anmi-banner-iframe" ' +
                     'src="' + embedUrl + '" ' +
                     'frameborder="0" ' +
                     'allow="autoplay; fullscreen; picture-in-picture" ' +
@@ -461,7 +494,7 @@ jQuery(document).ready(function($) {
                     '</iframe>';
         } else {
             console.log('Creating video element with URL:', embedUrl);
-            html += '<video class="anmi-preview-video" ' +
+            html += '<video class="anmi-banner-video" ' +
                     'loop muted playsinline preload="metadata" ' +
                     'poster="' + (images[0] || '') + '">' +
                     '<source src="' + embedUrl + '" type="video/mp4">' +
