@@ -411,7 +411,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                             <tr>
                                 <th><label for="video_autoplay">🎬 Tự Động Phát</label></th>
                                 <td>
-                                    <label class="switch">
+                                    <label class="switch" title="Bật/Tắt tự động phát video">
                                         <input type="checkbox" 
                                                id="video_autoplay" 
                                                name="video_autoplay" 
@@ -419,14 +419,16 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                <?php echo ($is_edit && isset($banner->video_autoplay) && $banner->video_autoplay) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
-                                    <span class="description" style="margin-left: 10px;">Video tự động phát khi trang tải (mặc định: Bật)</span>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_autoplay_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Video tự động phát khi trang tải
+                                    </span>
                                 </td>
                             </tr>
                             
                             <tr>
                                 <th><label for="video_muted">🔇 Tắt Tiếng</label></th>
                                 <td>
-                                    <label class="switch">
+                                    <label class="switch" title="Bật/Tắt tiếng video">
                                         <input type="checkbox" 
                                                id="video_muted" 
                                                name="video_muted" 
@@ -446,7 +448,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                             <tr>
                                 <th><label for="video_loop">🔁 Lặp Lại</label></th>
                                 <td>
-                                    <label class="switch">
+                                    <label class="switch" title="Bật/Tắt lặp lại video">
                                         <input type="checkbox" 
                                                id="video_loop" 
                                                name="video_loop" 
@@ -454,14 +456,16 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                <?php echo ($is_edit && isset($banner->video_loop) && $banner->video_loop) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
-                                    <span class="description" style="margin-left: 10px;">Video tự động phát lại khi kết thúc (mặc định: Bật)</span>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_loop_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Video tự động phát lại khi kết thúc
+                                    </span>
                                 </td>
                             </tr>
                             
                             <tr>
                                 <th><label for="video_controls">🎚️ Hiện Controls</label></th>
                                 <td>
-                                    <label class="switch">
+                                    <label class="switch" title="Bật/Tắt thanh điều khiển video">
                                         <input type="checkbox" 
                                                id="video_controls" 
                                                name="video_controls" 
@@ -469,7 +473,9 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                <?php echo ($is_edit && isset($banner->video_controls) && $banner->video_controls) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
-                                    <span class="description" style="margin-left: 10px;">Hiển thị thanh điều khiển video (play/pause/volume) (mặc định: Bật)</span>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_controls_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị thanh điều khiển video (play/pause/volume)
+                                    </span>
                                     <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
                                         <strong>💡 Khuyến nghị:</strong> Nên BẬT để người dùng có thể điều chỉnh âm lượng và tạm dừng video.
                                     </p>
@@ -479,7 +485,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                             <tr>
                                 <th><label for="video_modestbranding">📺 Ẩn Logo YouTube</label></th>
                                 <td>
-                                    <label class="switch">
+                                    <label class="switch" title="Bật/Tắt ẩn logo YouTube">
                                         <input type="checkbox" 
                                                id="video_modestbranding" 
                                                name="video_modestbranding" 
@@ -487,14 +493,16 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                <?php echo ($is_edit && isset($banner->video_modestbranding) && $banner->video_modestbranding) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
-                                    <span class="description" style="margin-left: 10px;">Ẩn logo YouTube trong player (chỉ YouTube) (mặc định: Bật)</span>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_modestbranding_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Ẩn logo YouTube trong player (chỉ YouTube)
+                                    </span>
                                 </td>
                             </tr>
                             
                             <tr>
                                 <th><label for="video_rel">🎥 Gợi Ý Video</label></th>
                                 <td>
-                                    <label class="switch">
+                                    <label class="switch" title="Bật/Tắt gợi ý video liên quan">
                                         <input type="checkbox" 
                                                id="video_rel" 
                                                name="video_rel" 
@@ -502,7 +510,9 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                <?php echo ($is_edit && isset($banner->video_rel) && $banner->video_rel) ? 'checked' : ''; ?>>
                                         <span class="slider-switch"></span>
                                     </label>
-                                    <span class="description" style="margin-left: 10px;">Hiện video gợi ý khi kết thúc (chỉ YouTube) (mặc định: Tắt)</span>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_rel_status" style="color: #d63638;">✗ ĐANG TẮT</strong> - Hiện video gợi ý khi kết thúc (chỉ YouTube)
+                                    </span>
                                 </td>
                             </tr>
                         </table>
@@ -852,10 +862,10 @@ jQuery(document).ready(function($) {
         if (youtubeMatch) {
             videoType = 'youtube';
             videoId = youtubeMatch[1];
-            // Build YouTube URL - PREVIEW uses mute=0 to allow sound testing
+            // Build YouTube URL with user settings
             embedUrl = 'https://www.youtube.com/embed/' + videoId + 
                 '?autoplay=' + videoAutoplay +
-                '&mute=0' +  // Always unmuted in preview for testing
+                '&mute=' + videoMuted +
                 '&loop=' + videoLoop +
                 '&playlist=' + videoId +
                 '&controls=' + videoControls +
@@ -870,7 +880,7 @@ jQuery(document).ready(function($) {
         if (vimeoMatch) {
             videoType = 'vimeo';
             videoId = vimeoMatch[1];
-            // Build Vimeo URL - PREVIEW uses muted=0 to allow sound testing
+            // Build Vimeo URL with user settings
             embedUrl = 'https://player.vimeo.com/video/' + videoId + 
                 '?autoplay=' + videoAutoplay +
                 '&muted=' + videoMuted +
@@ -1094,18 +1104,53 @@ jQuery(document).ready(function($) {
         }, 100);
     }
     
-    // Update status labels for checkboxes
+    // Update status labels for all video settings checkboxes
     function updateCheckboxLabels() {
+        // Video Autoplay
+        if ($('#video_autoplay').is(':checked')) {
+            $('#video_autoplay_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#video_autoplay_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
         // Video Muted
         if ($('#video_muted').is(':checked')) {
             $('#video_muted_status').html('✓ ĐANG BẬT').css('color', '#d63638');
         } else {
             $('#video_muted_status').html('✗ ĐANG TẮT').css('color', '#46b450');
         }
+        
+        // Video Loop
+        if ($('#video_loop').is(':checked')) {
+            $('#video_loop_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#video_loop_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
+        // Video Controls
+        if ($('#video_controls').is(':checked')) {
+            $('#video_controls_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#video_controls_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
+        // Video Modest Branding
+        if ($('#video_modestbranding').is(':checked')) {
+            $('#video_modestbranding_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#video_modestbranding_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
+        // Video Rel
+        if ($('#video_rel').is(':checked')) {
+            $('#video_rel_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#video_rel_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
     }
     
-    // Update labels on change
-    $('#video_muted').on('change', updateCheckboxLabels);
+    // Update labels on change for all checkboxes
+    $('#video_autoplay, #video_muted, #video_loop, #video_controls, #video_modestbranding, #video_rel').on('change', updateCheckboxLabels);
     
     // Initial update
     updateCheckboxLabels();
