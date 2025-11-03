@@ -1,5 +1,42 @@
 # An Mi Video Banner - Changelog
 
+## Version 1.6.4 (2025-11-03)
+
+### ✨ New Features - Split Preview Layout
+- **🎬 Separated Video & Slider Preview:** Modal preview now shows video and slider **side-by-side** in a 2-column layout
+  - **LEFT COLUMN:** Video preview with content overlay (if exists)
+  - **RIGHT COLUMN:** Image slider showcase with auto-play
+- **🖼️ Interactive Slider Preview:** Standalone slider with:
+  - Auto-advance based on `slider_speed` setting
+  - Clickable dots to navigate slides
+  - Effect transitions (fade/slide) matching banner settings
+  - Info badge showing: slide count, speed, and effect type
+- **📱 Responsive Design:** Stacks to single column on smaller screens (<1200px)
+
+### 🎨 UI/UX Improvements
+- **Gradient Headers:** Beautiful purple gradient headings for each preview section
+- **Better Visual Separation:** Each column has its own card-style container
+- **Wider Modal:** Increased from 1200px to 1400px to accommodate split layout
+- **Enhanced Styling:** Clean backgrounds, shadows, and rounded corners
+- **Video Interaction:** Changed iframe `pointer-events` to `auto` for better preview interaction
+
+### 🔧 Technical Changes
+- **New CSS Classes:**
+  - `.anmi-preview-split-layout` - Grid container for 2-column layout
+  - `.anmi-preview-video-column` - Left column wrapper
+  - `.anmi-preview-slider-column` - Right column wrapper
+  - `.anmi-preview-slide` - Individual slider preview slide
+  - `.anmi-preview-dot` - Slider navigation dots
+- **New JavaScript Function:** `initPreviewSlider()` for standalone slider auto-play
+- **Slider Logic:** Independent from main AnMiVideoBanner class for preview-only functionality
+
+### 📝 Code Quality
+- Version updated to 1.6.4 across all files
+- Asset cache busting with new version numbers
+- Clean separation of concerns between video and slider previews
+
+---
+
 ## Version 1.6.3 (2025-11-03)
 
 ### 🐛 Critical Bug Fixes
