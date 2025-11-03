@@ -91,8 +91,9 @@ class AnMi_Video_Banner {
                 // Player mode: Show controls, no autoplay, allow user interaction
                 $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?controls=1&rel=0&modestbranding=1&playsinline=1';
             } else {
-                // Background mode: Autoplay, muted, no controls
-                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?autoplay=1&mute=1&loop=1&playlist=' . $match[1] . '&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1';
+                // Background mode: Autoplay, muted, WITH controls (for volume)
+                // Note: controls=1 allows user to unmute via YouTube's built-in volume button
+                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?autoplay=1&mute=1&loop=1&playlist=' . $match[1] . '&controls=1&showinfo=0&rel=0&modestbranding=1&playsinline=1';
             }
         }
         // Vimeo detection
@@ -104,8 +105,8 @@ class AnMi_Video_Banner {
                 // Player mode: Show controls
                 $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?controls=1';
             } else {
-                // Background mode
-                $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?autoplay=1&muted=1&loop=1&background=1&controls=0';
+                // Background mode: WITH controls for volume
+                $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?autoplay=1&muted=1&loop=1&background=1&controls=1';
             }
         }
         
