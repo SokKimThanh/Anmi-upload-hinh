@@ -542,7 +542,8 @@
 /* TOGGLE SWITCH STYLES */
 /* ============================================ */
 
-.visibility-toggles .switch {
+/* Apply to all toggle switches in the form */
+.switch {
     position: relative;
     display: inline-block;
     width: 50px;
@@ -550,13 +551,13 @@
     vertical-align: middle;
 }
 
-.visibility-toggles .switch input {
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.visibility-toggles .slider-switch {
+.slider-switch {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -568,7 +569,7 @@
     border-radius: 24px;
 }
 
-.visibility-toggles .slider-switch:before {
+.slider-switch:before {
     position: absolute;
     content: "";
     height: 18px;
@@ -580,15 +581,15 @@
     border-radius: 50%;
 }
 
-.visibility-toggles input:checked + .slider-switch {
+input:checked + .slider-switch {
     background-color: #ff6600;
 }
 
-.visibility-toggles input:focus + .slider-switch {
+input:focus + .slider-switch {
     box-shadow: 0 0 1px #ff6600;
 }
 
-.visibility-toggles input:checked + .slider-switch:before {
+input:checked + .slider-switch:before {
     transform: translateX(26px);
 }
 
