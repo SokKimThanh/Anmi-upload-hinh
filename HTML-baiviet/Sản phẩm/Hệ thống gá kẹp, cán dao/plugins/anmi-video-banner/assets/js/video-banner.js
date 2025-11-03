@@ -108,25 +108,41 @@
             const video = this.$video[0];
             
             if (video) {
-                // Show loader
+                // Show loader initially
                 this.$loader.addClass('active');
                 
-                // Load video metadata
-                video.load();
+                // Set timeout to hide loader after 3 seconds (fallback)
+                const loaderTimeout = setTimeout(() => {
+                    this.$loader.removeClass('active');
+                    console.log('Video preload timeout - showing slider');
+                }, 3000);
                 
-                // Video loaded event
+                // Video loaded event - hide loader immediately when ready
                 video.addEventListener('loadeddata', () => {
                     this.isVideoReady = true;
+                    clearTimeout(loaderTimeout);
                     this.$loader.removeClass('active');
                     console.log('Video ready to play');
+                });
+                
+                // Video can play through - optimal state
+                video.addEventListener('canplaythrough', () => {
+                    this.isVideoReady = true;
+                    clearTimeout(loaderTimeout);
+                    this.$loader.removeClass('active');
+                    console.log('Video fully loaded');
                 });
                 
                 // Error handling
                 video.addEventListener('error', (e) => {
                     console.error('Video load error:', e);
+                    clearTimeout(loaderTimeout);
                     this.$loader.removeClass('active');
                     this.disableVideoOnMobile(); // Fallback to image
                 });
+                
+                // Start loading video
+                video.load();
             }
         }
         

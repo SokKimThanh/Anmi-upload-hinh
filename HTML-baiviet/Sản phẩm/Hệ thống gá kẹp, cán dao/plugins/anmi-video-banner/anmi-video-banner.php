@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Video Banner
  * Plugin URI: https://anmitools.com
  * Description: Video banner với slider tự động + Admin CRUD panel - YouTube/Vimeo/MP4 support + Content Visibility Controls
- * Version: 1.3.1
+ * Version: 1.3.2
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('ANMI_VIDEO_BANNER_VERSION', '1.3.1');
+define('ANMI_VIDEO_BANNER_VERSION', '1.3.2');
 define('ANMI_VIDEO_BANNER_FILE', __FILE__);
 define('ANMI_VIDEO_BANNER_PATH', plugin_dir_path(__FILE__));
 define('ANMI_VIDEO_BANNER_URL', plugin_dir_url(__FILE__));
@@ -153,7 +153,12 @@ class AnMi_Video_Banner {
              data-slider-effect="<?php echo esc_attr($atts['slider_effect']); ?>">
             
             <!-- Video Background -->
-            <video class="anmi-banner-video" loop muted playsinline preload="auto">
+            <video class="anmi-banner-video" 
+                   loop 
+                   muted 
+                   playsinline 
+                   preload="metadata"
+                   poster="<?php echo esc_url($image_urls[0]); ?>">
                 <source src="<?php echo esc_url($atts['video_url']); ?>" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
