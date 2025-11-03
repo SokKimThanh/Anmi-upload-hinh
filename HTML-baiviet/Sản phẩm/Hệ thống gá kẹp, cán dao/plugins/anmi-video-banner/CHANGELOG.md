@@ -1,5 +1,98 @@
 # An Mi Video Banner - Changelog
 
+## Version 1.6.6 (2025-11-03)
+
+### 🎯 Critical Fix - Iframe Sizing & Aspect Ratio
+
+#### **Problem:** Iframe không vừa với kích thước container
+**Symptoms:**
+- Video bị scale quá lớn (300% trong media queries)
+- Iframe không fit đúng khung preview
+- Video bị crop hoặc overflow
+
+#### **Root Cause:**
+CSS media queries scale iframe 300% (design cho background video cover) → Không phù hợp với modal preview
+
+#### **Solutions:**
+
+**1. Separate Modal Iframe from Production**
+```css
+/* Modal preview: Keep at 100% */
+.anmi-modal-iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain; /* Fit entire video */
+}
+
+/* Production: Only scale non-modal iframes */
+@media (min-aspect-ratio: 16/9) {
+    .anmi-banner-iframe:not(.anmi-modal-iframe) {
+        height: 300%;
+        top: -100%;
+    }
+}
+```
+
+**2. Fixed Video Element Sizing**
+```css
+.anmi-modal-video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important; /* Override translate(-50%, -50%) */
+    object-fit: contain !important;
+}
+```
+
+**3. Container Constraints**
+```css
+#anmi-preview-container .anmi-video-banner-container {
+    position: relative;
+    height: 400px; /* Fixed height */
+    background: #000;
+}
+
+#anmi-preview-container .anmi-banner-iframe,
+#anmi-preview-container .anmi-banner-video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+```
+
+### 🎨 Visual Improvements
+- ✅ Video/iframe fit đúng trong khung 400px
+- ✅ `object-fit: contain` giữ aspect ratio đúng
+- ✅ Không bị crop hay overflow
+- ✅ Background đen (#000) giống video player thực tế
+
+### 📝 Technical Details
+**Key CSS Properties:**
+- `object-fit: contain` - Fit toàn bộ video trong container (có letterbox nếu cần)
+- `object-fit: cover` - Fill toàn bộ container (có crop nếu cần) - Dùng cho production
+- `:not(.anmi-modal-iframe)` - Selector exclude modal để avoid conflict
+
+**Files Modified:**
+- `video-banner.css` - Added `.anmi-modal-iframe` và `.anmi-modal-video` rules
+- `admin-style.css` - Enhanced container positioning & sizing
+- Version bumped to 1.6.6
+
+### ✅ Testing Checklist
+- [x] Iframe fit đúng khung 400px height
+- [x] Video không bị scale quá lớn
+- [x] Aspect ratio được giữ nguyên (16:9)
+- [x] Letterbox xuất hiện nếu video không đúng tỷ lệ
+- [x] Production (frontend) vẫn hoạt động bình thường
+
+---
+
 ## Version 1.6.5 (2025-11-03)
 
 ### 🐛 Critical Bug Fixes - Video Display & Interaction
