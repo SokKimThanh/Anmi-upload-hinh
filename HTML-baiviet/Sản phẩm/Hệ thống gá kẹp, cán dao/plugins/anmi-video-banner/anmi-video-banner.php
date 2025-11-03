@@ -203,14 +203,24 @@ class AnMi_Video_Banner {
         ?>
         
         <div class="anmi-video-banner-container <?php echo esc_attr($unique_id); ?> transition-<?php echo esc_attr($atts['transition']); ?>" 
-             style="height: <?php echo esc_attr($atts['height']); ?>;"
+             style="height: <?php echo esc_attr($atts['height']); ?>; position: relative; cursor: pointer;"
              data-autoplay-delay="<?php echo esc_attr($atts['autoplay_delay']); ?>"
              data-mobile-behavior="<?php echo esc_attr($atts['mobile_behavior']); ?>"
              data-slider-speed="<?php echo esc_attr($atts['slider_speed']); ?>"
              data-slider-effect="<?php echo esc_attr($atts['slider_effect']); ?>"
              data-video-type="<?php echo esc_attr($video_data['type']); ?>">
             
-            <!-- Video Background -->
+            <!-- Image Slider (visible by default) -->
+            <?php foreach ($image_urls as $index => $image_url): ?>
+                <div class="anmi-banner-image <?php echo $index === 0 ? 'active' : ''; ?>" 
+                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                            background-image: url('<?php echo esc_url($image_url); ?>'); 
+                            background-size: cover; background-position: center; 
+                            opacity: <?php echo $index === 0 ? '1' : '0'; ?>; 
+                            transition: opacity 0.8s ease; z-index: 2;"></div>
+            <?php endforeach; ?>
+            
+            <!-- Video Background (hidden by default) -->
             <?php if ($video_data['type'] === 'youtube' || $video_data['type'] === 'vimeo'): ?>
                 <iframe class="anmi-banner-video anmi-banner-iframe" 
                         src="<?php echo esc_url($video_data['embed_url']); ?>"
@@ -229,22 +239,6 @@ class AnMi_Video_Banner {
                 </video>
             <?php endif; ?>
             
-            <!-- Image Slider Overlay -->
-            <div class="anmi-banner-slider">
-                <?php foreach ($image_urls as $index => $image_url): ?>
-                    <div class="anmi-slider-slide <?php echo $index === 0 ? 'active' : ''; ?>" 
-                         style="background-image: url('<?php echo esc_url($image_url); ?>');"></div>
-                <?php endforeach; ?>
-                
-                <?php if (count($image_urls) > 1): ?>
-                    <!-- Slider Navigation Dots -->
-                    <div class="anmi-slider-dots">
-                        <?php foreach ($image_urls as $index => $image_url): ?>
-                            <span class="dot <?php echo $index === 0 ? 'active' : ''; ?>" data-slide="<?php echo $index; ?>"></span>
-                        <?php endforeach; ?>
-                    </div>
-                <?php endif; ?>
-            </div>
             
             <?php if (!empty($atts['title']) || !empty($atts['subtitle']) || !empty($atts['button_text'])): ?>
             <!-- Content Overlay -->
@@ -267,6 +261,26 @@ class AnMi_Video_Banner {
                 <?php endif; ?>
             </div>
             <?php endif; ?>
+            
+            <?php if (count($image_urls) > 1): ?>
+            <!-- Slider Navigation Dots -->
+            <div class="anmi-banner-dots" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 10;">
+                <?php foreach ($image_urls as $index => $image_url): ?>
+                    <span class="anmi-banner-dot <?php echo $index === 0 ? 'active' : ''; ?>" 
+                          data-slide="<?php echo $index; ?>"
+                          style="width: 12px; height: 12px; border-radius: 50%; background: <?php echo $index === 0 ? '#fff' : 'rgba(255,255,255,0.5)'; ?>; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></span>
+                <?php endforeach; ?>
+            </div>
+            <?php endif; ?>
+            
+            <!-- Play Button Overlay -->
+            <div class="anmi-play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; pointer-events: none;">
+                <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(255,255,255,0.9); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                </div>
+            </div>
             
             <!-- Loading Spinner -->
             <div class="anmi-banner-loader">
