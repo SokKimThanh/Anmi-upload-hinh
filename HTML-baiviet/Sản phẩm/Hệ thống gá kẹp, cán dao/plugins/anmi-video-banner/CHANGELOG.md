@@ -9,24 +9,44 @@
 - Video bị scale quá lớn (300% trong media queries)
 - Iframe không fit đúng khung preview
 - Video bị crop hoặc overflow
+- **Inline styles override CSS classes** (CSS specificity issue)
 
 #### **Root Cause:**
-CSS media queries scale iframe 300% (design cho background video cover) → Không phù hợp với modal preview
+1. CSS media queries scale iframe 300% (design cho background video cover) → Không phù hợp với modal preview
+2. **Inline styles có priority cao hơn CSS classes** → Hardcoded `width: 100%` trong HTML override `.anmi-modal-iframe`
 
 #### **Solutions:**
 
-**1. Separate Modal Iframe from Production**
+**1. Removed Inline Styles from HTML**
+```javascript
+// BEFORE ❌ - Inline styles override CSS
+html += '<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">';
+
+// AFTER ✅ - Let CSS classes handle everything
+html += '<iframe class="anmi-banner-video anmi-banner-iframe anmi-modal-iframe">';
+```
+
+**2. Increased CSS Specificity with Multiple Selectors**
 ```css
-/* Modal preview: Keep at 100% */
-.anmi-modal-iframe {
+/* High specificity to override any inline styles */
+.anmi-modal-iframe,
+iframe.anmi-modal-iframe,
+.anmi-banner-iframe.anmi-modal-iframe {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    object-fit: contain; /* Fit entire video */
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    pointer-events: auto !important;
+    z-index: 2 !important;
 }
+```
 
+**3. Separate Modal Iframe from Production**
+```css
 /* Production: Only scale non-modal iframes */
 @media (min-aspect-ratio: 16/9) {
     .anmi-banner-iframe:not(.anmi-modal-iframe) {
@@ -36,34 +56,16 @@ CSS media queries scale iframe 300% (design cho background video cover) → Khô
 }
 ```
 
-**2. Fixed Video Element Sizing**
+**4. Same Treatment for Video Element**
 ```css
-.anmi-modal-video {
+.anmi-modal-video,
+video.anmi-modal-video,
+.anmi-banner-video.anmi-modal-video {
     position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    transform: none !important; /* Override translate(-50%, -50%) */
     object-fit: contain !important;
-}
-```
-
-**3. Container Constraints**
-```css
-#anmi-preview-container .anmi-video-banner-container {
-    position: relative;
-    height: 400px; /* Fixed height */
-    background: #000;
-}
-
-#anmi-preview-container .anmi-banner-iframe,
-#anmi-preview-container .anmi-banner-video {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
+    opacity: 1 !important;
 }
 ```
 
@@ -72,16 +74,23 @@ CSS media queries scale iframe 300% (design cho background video cover) → Khô
 - ✅ `object-fit: contain` giữ aspect ratio đúng
 - ✅ Không bị crop hay overflow
 - ✅ Background đen (#000) giống video player thực tế
+- ✅ No inline style conflicts
 
 ### 📝 Technical Details
-**Key CSS Properties:**
-- `object-fit: contain` - Fit toàn bộ video trong container (có letterbox nếu cần)
-- `object-fit: cover` - Fill toàn bộ container (có crop nếu cần) - Dùng cho production
-- `:not(.anmi-modal-iframe)` - Selector exclude modal để avoid conflict
+**CSS Specificity Strategy:**
+- Used 3 selector variants: `.class`, `element.class`, `.parent.class`
+- All properties use `!important` to override inline styles
+- `:not(.anmi-modal-iframe)` excludes modal from production scaling
+
+**Priority Order:**
+1. Inline styles (removed ✅)
+2. `!important` in CSS (added ✅)
+3. High specificity selectors (added ✅)
 
 **Files Modified:**
-- `video-banner.css` - Added `.anmi-modal-iframe` và `.anmi-modal-video` rules
-- `admin-style.css` - Enhanced container positioning & sizing
+- `admin-list.php` - Removed ALL inline styles from iframe/video
+- `video-banner.css` - Added triple-selector rules with `!important`
+- `admin-style.css` - Container constraints remain
 - Version bumped to 1.6.6
 
 ### ✅ Testing Checklist
@@ -90,6 +99,8 @@ CSS media queries scale iframe 300% (design cho background video cover) → Khô
 - [x] Aspect ratio được giữ nguyên (16:9)
 - [x] Letterbox xuất hiện nếu video không đúng tỷ lệ
 - [x] Production (frontend) vẫn hoạt động bình thường
+- [x] **No inline style conflicts**
+- [x] CSS classes have full control
 
 ---
 

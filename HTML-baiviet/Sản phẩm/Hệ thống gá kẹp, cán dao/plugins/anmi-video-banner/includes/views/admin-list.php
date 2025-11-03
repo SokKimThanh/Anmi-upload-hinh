@@ -457,13 +457,12 @@ jQuery(document).ready(function($) {
                     'src="' + embedUrl + '" ' +
                     'frameborder="0" ' +
                     'allow="autoplay; fullscreen; picture-in-picture" ' +
-                    'allowfullscreen ' +
-                    'style="pointer-events: auto; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;">' +
+                    'allowfullscreen>' +
                     '</iframe>';
         } else {
             console.log('Creating video element with URL:', embedUrl);
-            html += '<video class="anmi-banner-video anmi-modal-video" loop muted playsinline preload="metadata" ' +
-                    'style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;" ' +
+            html += '<video class="anmi-banner-video anmi-modal-video" ' +
+                    'loop muted playsinline preload="metadata" ' +
                     'poster="' + (images[0] || '') + '">' +
                     '<source src="' + embedUrl + '" type="video/mp4">' +
                     '</video>';

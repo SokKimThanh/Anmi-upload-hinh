@@ -802,35 +802,22 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Modal Preview Container */
 #anmi-preview-container .anmi-video-banner-container {
     margin: 0;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    pointer-events: auto !important; /* CRITICAL: Allow interaction in modal preview */
-    position: relative; /* Ensure children can position absolute */
-    height: 400px; /* Fixed height for consistent layout */
-    background: #000; /* Black background like video player */
-}
-
-/* Ensure iframe/video can be interacted with in modal */
-#anmi-preview-container .anmi-banner-iframe,
-#anmi-preview-container .anmi-banner-video {
+    position: relative;
+    height: 400px;
+    background: #000;
     pointer-events: auto !important;
-    cursor: pointer;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
 }
 
-/* Override inline styles if needed */
+/* Modal Preview - Ensure video/iframe interaction */
 #anmi-preview-container .anmi-modal-iframe,
 #anmi-preview-container .anmi-modal-video {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* Fit video properly without stretching */
+    cursor: pointer;
 }
 
 /* Responsive: Stack on smaller screens */
