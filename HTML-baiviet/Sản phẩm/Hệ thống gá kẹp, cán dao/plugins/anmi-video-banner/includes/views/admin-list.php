@@ -695,9 +695,9 @@ jQuery(document).ready(function($) {
         // Add info box
         html += '<div class="anmi-preview-info">' +
                 '<p><strong>💡 Tip:</strong> Hover chuột vào banner để xem video phát</p>' +
-                '<p><strong>� Volume Control:</strong> Click volume button (bottom-right) để bật/tắt âm thanh khi video đang phát ' +
+                '<p><strong>💡Volume Control:</strong> Click volume button (bottom-right) để bật/tắt âm thanh khi video đang phát ' +
                 '<span style="color: #FF9800;">(⚠️ Chỉ hoạt động với MP4 video, không hỗ trợ YouTube/Vimeo iframe)</span></p>' +
-                '<p><strong>�📋 Shortcode:</strong> <code>[anmi_video_banner id="' + banner.id + '"]</code></p>' +
+                '<p><strong>💡hortcode:</strong> <code>[anmi_video_banner id="' + banner.id + '"]</code></p>' +
                 '</div>';
         
         console.log('HTML length:', html.length);

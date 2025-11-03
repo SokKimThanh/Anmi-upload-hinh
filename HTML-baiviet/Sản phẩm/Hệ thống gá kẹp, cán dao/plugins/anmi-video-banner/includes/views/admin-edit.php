@@ -434,9 +434,11 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                <?php echo ($is_edit && isset($banner->video_muted) && $banner->video_muted) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
-                                    <span class="description" style="margin-left: 10px;">Video bắt đầu ở chế độ tắt tiếng (mặc định: Bật)</span>
-                                    <p class="description" style="margin: 8px 0 0 0; color: #d63638;">
-                                        <strong>⚠️ Lưu ý:</strong> Nếu tắt tiếng = TẮT và tự động phát = BẬT, trình duyệt có thể chặn autoplay.
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_muted_status" style="color: #d63638;">✓ ĐANG BẬT</strong> - Video bắt đầu không có tiếng
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #FF9800;">
+                                        <strong>💡 Khuyến nghị:</strong> Nên BẬT tắt tiếng khi dùng tự động phát để tránh bị trình duyệt chặn.
                                     </p>
                                 </td>
                             </tr>
@@ -850,10 +852,10 @@ jQuery(document).ready(function($) {
         if (youtubeMatch) {
             videoType = 'youtube';
             videoId = youtubeMatch[1];
-            // Build YouTube URL with user settings
+            // Build YouTube URL - PREVIEW uses mute=0 to allow sound testing
             embedUrl = 'https://www.youtube.com/embed/' + videoId + 
                 '?autoplay=' + videoAutoplay +
-                '&mute=' + videoMuted +
+                '&mute=0' +  // Always unmuted in preview for testing
                 '&loop=' + videoLoop +
                 '&playlist=' + videoId +
                 '&controls=' + videoControls +
@@ -868,7 +870,7 @@ jQuery(document).ready(function($) {
         if (vimeoMatch) {
             videoType = 'vimeo';
             videoId = vimeoMatch[1];
-            // Build Vimeo URL with user settings
+            // Build Vimeo URL - PREVIEW uses muted=0 to allow sound testing
             embedUrl = 'https://player.vimeo.com/video/' + videoId + 
                 '?autoplay=' + videoAutoplay +
                 '&muted=' + videoMuted +
@@ -1091,6 +1093,22 @@ jQuery(document).ready(function($) {
             }
         }, 100);
     }
+    
+    // Update status labels for checkboxes
+    function updateCheckboxLabels() {
+        // Video Muted
+        if ($('#video_muted').is(':checked')) {
+            $('#video_muted_status').html('✓ ĐANG BẬT').css('color', '#d63638');
+        } else {
+            $('#video_muted_status').html('✗ ĐANG TẮT').css('color', '#46b450');
+        }
+    }
+    
+    // Update labels on change
+    $('#video_muted').on('change', updateCheckboxLabels);
+    
+    // Initial update
+    updateCheckboxLabels();
     
     // Trigger preview update on field changes
     $('#video_url, #video_embed_code, #banner_title, #banner_subtitle, #button_text, #button_link, #transition, #autoplay_delay, #slider_speed, #slider_effect').on('input change', function() {
