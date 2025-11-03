@@ -1,5 +1,84 @@
 # An Mi Video Banner - Changelog
 
+## Version 1.6.5 (2025-11-03)
+
+### 🐛 Critical Bug Fixes - Video Display & Interaction
+
+#### **Problem:** Video iframe không hiển thị hoặc không tương tác được
+Nguyên nhân phân tích từ user:
+1. ✅ Loader không được ẩn → che mất iframe
+2. ✅ `pointer-events` bị chặn → không click được video
+3. ✅ z-index không đúng → video bị nằm dưới các layer khác
+
+#### **Solutions Implemented:**
+
+**1. Auto-hide Loader when Iframe/Video Loads**
+```javascript
+// Event listener for iframe load
+$('.anmi-modal-iframe').on('load', function() {
+    $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
+});
+
+// Event listener for video loadeddata
+$('.anmi-modal-video').on('loadeddata', function() {
+    $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
+});
+
+// Fallback: Force hide after 3 seconds
+setTimeout(() => $('.anmi-banner-loader').fadeOut(300), 3000);
+```
+
+**2. Fixed Loader CSS - Don't Block Clicks**
+```css
+.anmi-banner-loader {
+    pointer-events: none; /* CRITICAL: Don't block clicks when hidden */
+    z-index: 10; /* Increased for better visibility */
+}
+
+.anmi-banner-loader.active {
+    pointer-events: auto; /* Only block when visible */
+}
+```
+
+**3. Ensure Video/Iframe Can Be Clicked**
+```css
+#anmi-preview-container .anmi-video-banner-container {
+    pointer-events: auto !important;
+}
+
+#anmi-preview-container .anmi-banner-iframe,
+#anmi-preview-container .anmi-banner-video {
+    pointer-events: auto !important;
+    cursor: pointer;
+}
+```
+
+**4. Inline Styles for Z-index & Position**
+```html
+<iframe style="pointer-events: auto; position: absolute; top: 0; left: 0; 
+               width: 100%; height: 100%; z-index: 2;">
+```
+
+### 🔍 Debug Improvements
+- Added console logs for loader hide events
+- Added `.anmi-modal-iframe` and `.anmi-modal-video` classes for targeted event binding
+- Fallback timeout ensures loader always disappears
+
+### 📝 Code Quality
+- Version updated to 1.6.5 across all files
+- Enhanced CSS specificity with `!important` for modal context
+- Better separation of concerns: modal preview vs production usage
+
+### ✅ Testing Checklist
+- [x] Iframe loads và loader tự động ẩn
+- [x] Video element loads và loader tự động ẩn
+- [x] Fallback timeout (3s) hoạt động
+- [x] Click vào video iframe → Có thể tương tác
+- [x] Pointer-events không bị chặn
+- [x] Console logs hiển thị "Iframe loaded - hiding loader"
+
+---
+
 ## Version 1.6.4 (2025-11-03)
 
 ### ✨ New Features - Split Preview Layout

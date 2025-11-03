@@ -807,6 +807,14 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    pointer-events: auto !important; /* CRITICAL: Allow interaction in modal preview */
+}
+
+/* Ensure iframe/video can be interacted with in modal */
+#anmi-preview-container .anmi-banner-iframe,
+#anmi-preview-container .anmi-banner-video {
+    pointer-events: auto !important;
+    cursor: pointer;
 }
 
 /* Responsive: Stack on smaller screens */

@@ -196,12 +196,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 4;
+    z-index: 10; /* Increased to ensure visibility */
     display: none;
+    pointer-events: none; /* CRITICAL: Don't block clicks */
+    transition: opacity 0.3s ease;
 }
 
 .anmi-banner-loader.active {
     display: block;
+    pointer-events: auto; /* Allow interaction when active */
 }
 
 .anmi-banner-loader .spinner {
@@ -211,6 +214,7 @@
     width: 50px;
     height: 50px;
     animation: spin 1s linear infinite;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Better visibility */
 }
 
 /* ============================================ */

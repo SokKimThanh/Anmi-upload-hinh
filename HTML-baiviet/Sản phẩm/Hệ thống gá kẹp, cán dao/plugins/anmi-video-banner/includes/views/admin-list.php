@@ -453,15 +453,17 @@ jQuery(document).ready(function($) {
         // Video/Iframe
         if (videoType === 'youtube' || videoType === 'vimeo') {
             console.log('Creating iframe for', videoType, 'with URL:', embedUrl);
-            html += '<iframe class="anmi-banner-video anmi-banner-iframe" ' +
+            html += '<iframe class="anmi-banner-video anmi-banner-iframe anmi-modal-iframe" ' +
                     'src="' + embedUrl + '" ' +
                     'frameborder="0" ' +
                     'allow="autoplay; fullscreen; picture-in-picture" ' +
                     'allowfullscreen ' +
-                    'style="pointer-events: auto;"></iframe>'; // Changed to 'auto' for modal preview
+                    'style="pointer-events: auto; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;">' +
+                    '</iframe>';
         } else {
             console.log('Creating video element with URL:', embedUrl);
-            html += '<video class="anmi-banner-video" loop muted playsinline preload="metadata" ' +
+            html += '<video class="anmi-banner-video anmi-modal-video" loop muted playsinline preload="metadata" ' +
+                    'style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;" ' +
                     'poster="' + (images[0] || '') + '">' +
                     '<source src="' + embedUrl + '" type="video/mp4">' +
                     '</video>';
@@ -561,6 +563,27 @@ jQuery(document).ready(function($) {
             // Initialize standalone slider preview
             initPreviewSlider(banner.slider_speed, banner.slider_effect, images.length);
         }, 100);
+        
+        // Hide loader when iframe/video loads (CRITICAL FIX)
+        setTimeout(function() {
+            // For iframe (YouTube/Vimeo)
+            $('.anmi-modal-iframe').on('load', function() {
+                console.log('Iframe loaded - hiding loader');
+                $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
+            });
+            
+            // For video element (MP4)
+            $('.anmi-modal-video').on('loadeddata', function() {
+                console.log('Video loaded - hiding loader');
+                $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
+            });
+            
+            // Fallback: Force hide loader after 3 seconds
+            setTimeout(function() {
+                $('.anmi-banner-loader').fadeOut(300);
+                console.log('Loader force-hidden after 3s timeout');
+            }, 3000);
+        }, 200);
     }
     
     // Slider preview auto-play
