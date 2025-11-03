@@ -97,14 +97,19 @@
 /* PRODUCTION DEMO - Play Overlay */
 /* ============================================ */
 
-/* Play button overlay */
+/* Play button overlay - Small button at bottom right */
 .anmi-play-overlay {
     transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
 }
 
 .anmi-video-banner-container:hover .anmi-play-overlay {
-    transform: translate(-50%, -50%) scale(1.1);
-    opacity: 0.8;
+    opacity: 1 !important;
+    transform: scale(1.1);
+}
+
+.anmi-play-overlay:hover {
+    transform: scale(1.2) !important;
 }
 
 /* Hide play overlay when video is playing */
@@ -425,6 +430,17 @@
         font-size: 14px;
     }
     
+    /* Play button smaller on tablet */
+    .anmi-play-overlay {
+        bottom: 70px !important;
+        right: 15px !important;
+    }
+    
+    .anmi-play-overlay svg {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
     /* Mobile: Show only image by default */
     .anmi-video-banner-container[data-mobile-behavior="image"] .anmi-banner-video {
         display: none !important;
@@ -450,6 +466,17 @@
     
     .anmi-banner-content {
         padding: 15px;
+    }
+    
+    /* Play button even smaller on mobile */
+    .anmi-play-overlay {
+        bottom: 60px !important;
+        right: 10px !important;
+    }
+    
+    .anmi-play-overlay svg {
+        width: 40px !important;
+        height: 40px !important;
     }
 }
 

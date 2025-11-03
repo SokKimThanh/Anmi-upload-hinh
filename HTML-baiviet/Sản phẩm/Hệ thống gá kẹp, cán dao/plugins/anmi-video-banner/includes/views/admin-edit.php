@@ -943,10 +943,10 @@ jQuery(document).ready(function($) {
             html += '</div>';
         }
         
-        // Play button overlay
-        html += '<div class="anmi-play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; pointer-events: none;">' +
-                '<div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(255,255,255,0.9); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">' +
-                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">' +
+        // Play button overlay - Small button at bottom right
+        html += '<div class="anmi-play-overlay" style="position: absolute; bottom: 80px; right: 20px; z-index: 15; pointer-events: auto; cursor: pointer;">' +
+                '<div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.95); display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.3); transition: transform 0.3s;">' +
+                '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff6600" stroke-width="2">' +
                 '<polygon points="5 3 19 12 5 21 5 3"></polygon>' +
                 '</svg>' +
                 '</div>' +

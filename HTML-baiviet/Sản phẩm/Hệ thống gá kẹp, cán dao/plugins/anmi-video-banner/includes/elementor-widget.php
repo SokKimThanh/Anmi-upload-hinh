@@ -672,9 +672,9 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             <?php endif; ?>
             
             <!-- Play Overlay Button -->
-            <div class="anmi-play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; opacity: 0; transition: opacity 0.3s; pointer-events: none;">
-                <svg width="80" height="80" viewBox="0 0 80 80" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">
-                    <circle cx="40" cy="40" r="35" fill="rgba(255,255,255,0.9)" stroke="#ff6600" stroke-width="2"/>
+            <div class="anmi-play-overlay" style="position: absolute; bottom: 80px; right: 20px; z-index: 15; opacity: 0; transition: opacity 0.3s, transform 0.3s; pointer-events: auto;">
+                <svg width="50" height="50" viewBox="0 0 80 80" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
+                    <circle cx="40" cy="40" r="35" fill="rgba(255,255,255,0.95)" stroke="#ff6600" stroke-width="2"/>
                     <polygon points="32,25 32,55 55,40" fill="#ff6600"/>
                 </svg>
             </div>
