@@ -25,12 +25,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 1; /* Below slider by default */
     opacity: 0;
     object-fit: cover;
+    transition: opacity 0.8s ease, z-index 0s;
 }
 
-/* YouTube/Vimeo Iframe - Background effect */
+/* When hovering, bring HTML5 video above slider */
+.anmi-video-banner-container:hover .anmi-banner-video {
+    z-index: 20; /* Above slider and content */
+}
+
+/* YouTube/Vimeo Iframe - Default below slider */
 .anmi-banner-iframe {
     position: absolute;
     top: 0;
@@ -38,16 +44,21 @@
     width: 100%;
     height: 100%;
     border: none;
-    pointer-events: none; /* Allow container to capture clicks/taps */
-    z-index: 10;
+    pointer-events: none; /* Don't capture clicks by default */
+    z-index: 1; /* Below slider (z-index: 2) */
     object-fit: cover;
+    transition: z-index 0s; /* Instant z-index change */
 }
 
-/* Enable pointer events when video is playing (desktop only) */
-@media (min-width: 769px) {
-    .anmi-banner-iframe.playing {
-        pointer-events: auto;
-    }
+/* When hovering container, bring iframe above slider for controls access */
+.anmi-video-banner-container:hover .anmi-banner-iframe {
+    z-index: 20; /* Above slider and content */
+    pointer-events: auto; /* Enable clicking on video controls */
+}
+
+/* Keep slider visible but reduce opacity slightly when video is hovered */
+.anmi-video-banner-container:hover .anmi-banner-slider {
+    opacity: 0.3; /* Dim slider to show video is active */
 }
 
 /* Scale iframe to cover entire area (production only) */
@@ -192,12 +203,6 @@
     background: #ff6600;
     width: 30px;
     border-radius: 6px;
-}
-
-/* Hide slider when video is playing (on hover) */
-.anmi-video-banner-container:hover .anmi-banner-slider {
-    opacity: 0;
-    pointer-events: none;
 }
 
 /* ============================================ */
