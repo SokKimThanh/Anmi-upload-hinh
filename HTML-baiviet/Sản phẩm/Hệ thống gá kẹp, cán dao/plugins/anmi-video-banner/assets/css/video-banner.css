@@ -221,6 +221,14 @@
     background-repeat: no-repeat;
     z-index: 2;
     opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Don't block video controls */
+}
+
+/* Dim old-style images when hovering (for preview and backward compatibility) */
+.anmi-video-banner-container:hover .anmi-banner-image {
+    opacity: 0.3 !important; /* Override inline styles */
+    z-index: 2 !important; /* Keep below iframe z-index: 20 */
 }
 
 /* Content Overlay */
