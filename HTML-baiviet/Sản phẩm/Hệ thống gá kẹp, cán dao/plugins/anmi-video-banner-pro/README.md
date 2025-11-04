@@ -1,6 +1,6 @@
-# AN MI VIDEO BANNER PLUGIN
+# ANMI VIDEO BANNER PRO
 
-**Version:** 1.2.0  
+**Version:** 2.0.0  
 **Author:** An Mi Tools Technical Team  
 **License:** GPL v2 or later
 
@@ -32,15 +32,15 @@ Plugin WordPress chuyên nghiệp tạo video banner với image slider tự đ�
 
 ### Cách 1: Upload Plugin
 
-1. Download folder `anmi-video-banner`
+1. Download folder `anmi-video-banner-pro`
 2. Upload vào `/wp-content/plugins/`
 3. Vào **WordPress Admin** → **Plugins** → **Installed Plugins**
-4. Tìm "An Mi Video Banner" và click **Activate**
+4. Tìm "AnMi Video Banner Pro" và click **Activate**
 5. Database table sẽ tự động tạo khi activate
 
-### Cách 2: Upload qua Admin
+### Cách 2: Upload qua Admin (Khuyến nghị)
 
-1. Nén folder `anmi-video-banner` thành file `.zip`
+1. Download file `anmi-video-banner-pro.zip`
 2. Vào **WordPress Admin** → **Plugins** → **Add New** → **Upload Plugin**
 3. Chọn file `.zip` và click **Install Now**
 4. Click **Activate Plugin**
@@ -51,11 +51,11 @@ Menu mới sẽ xuất hiện: **Video Banners** 🎬 trong WordPress Admin side
 
 ---
 
-## 🎛️ Admin Panel (MỚI v1.2.0)
+## 🎛️ Admin Panel
 
 ### Truy cập Dashboard
 
-**WordPress Admin → Video Banners**
+**WordPress Admin → Video Banners** 🎬
 
 ### Tạo Banner Mới
 
@@ -103,7 +103,7 @@ https://vimeo.com/VIDEO_ID
 https://anmitools.com/videos/banner.mp4
 ```
 
-📚 **Chi tiết:** Xem [ADMIN-PANEL-GUIDE.md](ADMIN-PANEL-GUIDE.md)
+📚 **Chi tiết:** Xem [docs/guides/ADMIN-PANEL-GUIDE.md](docs/guides/ADMIN-PANEL-GUIDE.md)
 
 ---
 
@@ -111,10 +111,10 @@ https://anmitools.com/videos/banner.mp4
 
 ### 1️⃣ Sử dụng với Elementor (Khuyến nghị)
 
-#### Phương pháp A: Chọn Banner từ Database (Mới!)
+#### Phương pháp A: Chọn Banner từ Database
 
 1. Mở trang với **Elementor Editor**
-2. Tìm widget **"An Mi Video Banner"** trong panel (icon camera)
+2. Tìm widget **"AnMi Video Banner Pro"** trong panel (icon camera)
 3. Kéo thả widget vào vị trí mong muốn
 4. **Tab: Select Banner**
    - Banner Source: Chọn banner từ dropdown
@@ -427,6 +427,19 @@ add_filter('anmi_video_banner_mobile_breakpoint', function($breakpoint) {
 
 ## 📝 Changelog
 
+### Version 2.0.0 (2025-11-04)
+- ✅ Đổi tên plugin: AnMi Video Banner Pro
+- ✅ Tổ chức lại cấu trúc thư mục
+- ✅ Cập nhật documentation
+- ✅ Fix activation issues
+
+### Version 1.6.13 (2025-11-03)
+- ✅ Admin CRUD panel
+- ✅ Database management
+- ✅ Volume control (MP4 only)
+- ✅ Mobile fixes
+- ✅ YouTube/Vimeo/MP4 support
+
 ### Version 1.0.0 (2025-11-03)
 - ✅ Initial release
 - ✅ 4 transition effects
@@ -434,6 +447,8 @@ add_filter('anmi_video_banner_mobile_breakpoint', function($breakpoint) {
 - ✅ Shortcode support
 - ✅ Mobile optimization
 - ✅ Performance optimized
+
+📚 **Chi tiết đầy đủ:** Xem [docs/archive/CHANGELOG.md](docs/archive/CHANGELOG.md)
 
 ---
 
