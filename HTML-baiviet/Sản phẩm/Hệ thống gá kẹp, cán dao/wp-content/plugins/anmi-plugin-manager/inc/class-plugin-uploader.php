@@ -190,10 +190,15 @@ class Anmi_PM_Plugin_Uploader {
             
             // Auto activate if requested (not recommended)
             if (isset($_POST['auto_activate']) && $_POST['auto_activate'] == '1') {
-                // This will be safe-activate in Batch 3, for now simple activate
-                activate_plugin($plugin_info['plugin_file']);
-                Anmi_PM_Metadata_Manager::update_active_status($plugin_info['plugin_file'], true);
-                $logger->log('auto_activated', ['plugin_file' => $plugin_info['plugin_file']]);
+                $activate_result = Anmi_PM_Plugin_Activator::safe_activate($plugin_info['plugin_file']);
+                if ($activate_result['success']) {
+                    $logger->log('auto_activated_safe', ['plugin_file' => $plugin_info['plugin_file']]);
+                } else {
+                    $logger->log('auto_activate_failed', [
+                        'plugin_file' => $plugin_info['plugin_file'],
+                        'error' => $activate_result['message']
+                    ]);
+                }
             }
             
             // Redirect success

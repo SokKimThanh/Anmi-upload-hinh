@@ -229,52 +229,27 @@ class Anmi_PM_Plugin_List {
                 break;
                 
             case 'activate':
-                // Simple activation (safe-activate sẽ ở Batch 3)
-                $result = activate_plugin($plugin_file);
-                if (is_wp_error($result)) {
-                    $logger->log('activate_failed', [
-                        'plugin_file' => $plugin_file,
-                        'error' => $result->get_error_message()
-                    ]);
-                    $this->redirect_with_message('activate_failed');
-                } else {
-                    Anmi_PM_Metadata_Manager::update_active_status($plugin_file, true);
-                    $logger->log('activate_success', [
-                        'plugin_file' => $plugin_file
-                    ]);
+                // Safe activation
+                $result = Anmi_PM_Plugin_Activator::safe_activate($plugin_file);
+                if ($result['success']) {
                     $this->redirect_with_message('activated');
+                } else {
+                    $this->redirect_with_message('activate_failed', $result['message']);
                 }
                 break;
                 
             case 'deactivate':
-                deactivate_plugins($plugin_file);
-                Anmi_PM_Metadata_Manager::update_active_status($plugin_file, false);
-                $logger->log('deactivate', [
-                    'plugin_file' => $plugin_file
-                ]);
+                $result = Anmi_PM_Plugin_Activator::safe_deactivate($plugin_file);
                 $this->redirect_with_message('deactivated');
                 break;
                 
             case 'delete':
-                // Simple delete (safe-delete sẽ ở Batch 3)
-                if (!function_exists('delete_plugins')) {
-                    require_once ABSPATH . 'wp-admin/includes/file.php';
-                    require_once ABSPATH . 'wp-admin/includes/plugin.php';
-                }
-                
-                $result = delete_plugins([$plugin_file]);
-                if (is_wp_error($result)) {
-                    $logger->log('delete_failed', [
-                        'plugin_file' => $plugin_file,
-                        'error' => $result->get_error_message()
-                    ]);
-                    $this->redirect_with_message('delete_failed');
-                } else {
-                    Anmi_PM_Metadata_Manager::delete_plugin_meta($plugin_file);
-                    $logger->log('delete_success', [
-                        'plugin_file' => $plugin_file
-                    ]);
+                // Safe delete
+                $result = Anmi_PM_Plugin_Activator::safe_delete($plugin_file);
+                if ($result['success']) {
                     $this->redirect_with_message('deleted');
+                } else {
+                    $this->redirect_with_message('delete_failed', $result['message']);
                 }
                 break;
         }
@@ -314,8 +289,12 @@ class Anmi_PM_Plugin_List {
     /**
      * Redirect with message
      */
-    private function redirect_with_message($message) {
-        wp_redirect(add_query_arg('message', $message, admin_url('admin.php?page=anmi-plugins')));
+    private function redirect_with_message($message, $extra = '') {
+        $args = ['page' => 'anmi-plugins', 'message' => $message];
+        if ($extra) {
+            $args['extra'] = urlencode($extra);
+        }
+        wp_redirect(add_query_arg($args, admin_url('admin.php')));
         exit;
     }
     
@@ -340,14 +319,16 @@ class Anmi_PM_Plugin_List {
         }
         
         $message = sanitize_text_field($_GET['message']);
+        $extra = isset($_GET['extra']) ? sanitize_text_field($_GET['extra']) : '';
+        
         $messages = [
             'marked' => ['success', 'Plugin đã được đánh dấu là Managed.'],
             'unmarked' => ['success', 'Plugin đã được bỏ đánh dấu Managed.'],
-            'activated' => ['success', 'Plugin đã được kích hoạt.'],
-            'activate_failed' => ['error', 'Không thể kích hoạt plugin.'],
+            'activated' => ['success', 'Plugin đã được kích hoạt an toàn (safe-activated).'],
+            'activate_failed' => ['error', 'Không thể kích hoạt plugin' . ($extra ? ': ' . $extra : '')],
             'deactivated' => ['success', 'Plugin đã được tắt.'],
-            'deleted' => ['success', 'Plugin đã được xóa.'],
-            'delete_failed' => ['error', 'Không thể xóa plugin.']
+            'deleted' => ['success', 'Plugin đã được xóa. Backup đã được tạo.'],
+            'delete_failed' => ['error', 'Không thể xóa plugin' . ($extra ? ': ' . $extra : '')]
         ];
         
         if (isset($messages[$message])) {
