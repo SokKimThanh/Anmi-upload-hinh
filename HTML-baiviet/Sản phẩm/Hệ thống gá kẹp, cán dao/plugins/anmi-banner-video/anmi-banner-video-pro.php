@@ -3,7 +3,7 @@
  * Plugin Name: AnMi Banner Video Pro
  * Plugin URI: https://anmitools.com
  * Description: Professional video banner system with advanced controls - YouTube/Vimeo/MP4 support + Image Slider + Modal Preview + Full Video Settings
- * Version: 2.1.0
+ * Version: 2.2.0
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('ABVP_VERSION', '2.1.0');
+define('ABVP_VERSION', '2.2.0');
 define('ABVP_PLUGIN_FILE', __FILE__);
 define('ABVP_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('ABVP_PLUGIN_URL', plugin_dir_url(__FILE__));
