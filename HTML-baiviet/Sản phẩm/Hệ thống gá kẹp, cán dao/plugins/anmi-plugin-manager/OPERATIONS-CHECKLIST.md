@@ -28,7 +28,7 @@
 
 ```bash
 # 1. Copy watchdog file
-cp wp-content/mu-plugins/anmi-watchdog.php /path/to/site/wp-content/mu-plugins/
+cp plugins/anmi-watchdog/anmi-watchdog.php /path/to/site/wp-content/mu-plugins/
 
 # 2. Verify file exists
 ls -la /path/to/site/wp-content/mu-plugins/anmi-watchdog.php
@@ -59,7 +59,7 @@ ls -la /path/to/site/wp-content/mu-plugins/anmi-watchdog.php
 
 ```bash
 # 1. Copy plugin folder
-cp -r wp-content/plugins/anmi-plugin-manager /path/to/site/wp-content/plugins/
+cp -r plugins/anmi-plugin-manager /path/to/site/wp-content/plugins/
 
 # 2. Set permissions
 chmod -R 755 /path/to/site/wp-content/plugins/anmi-plugin-manager
@@ -93,7 +93,7 @@ chmod -R 755 /path/to/site/wp-content/plugins/anmi-plugin-manager
 
 ```bash
 # Create test plugin
-cd test-plugins/test-clean-plugin
+cd plugins/test-plugins/test-clean-plugin
 zip -r test-clean-plugin.zip test-clean-plugin.php
 ```
 
@@ -138,7 +138,7 @@ zip -r test-clean-plugin.zip test-clean-plugin.php
 ### Test 4: Security Scan (Dangerous Code)
 
 ```bash
-cd test-plugins/test-dangerous-code
+cd plugins/test-plugins/test-dangerous-code
 zip -r test-dangerous-code.zip test-dangerous-code.php
 ```
 
@@ -153,7 +153,7 @@ zip -r test-dangerous-code.zip test-dangerous-code.php
 ⚠️ **WARNING:** This will crash site temporarily!
 
 ```bash
-cd test-plugins/test-fatal-error
+cd plugins/test-plugins/test-fatal-error
 zip -r test-fatal-error.zip test-fatal-error.php
 ```
 

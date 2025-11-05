@@ -3,8 +3,8 @@
 ## 📋 Tổng Quan Hệ Thống
 
 Hệ thống gồm 2 components chính:
-1. **Mu-Plugin Watchdog** (`wp-content/mu-plugins/anmi-watchdog.php`) - Tự động chạy, bảo vệ fatal errors
-2. **Plugin Manager** (`wp-content/plugins/anmi-plugin-manager/`) - Quản trị plugins với safe operations
+1. **Mu-Plugin Watchdog** (`plugins/anmi-watchdog/anmi-watchdog.php` → deploy vào `wp-content/mu-plugins/anmi-watchdog.php`) - Tự động chạy, bảo vệ fatal errors
+2. **Plugin Manager** (`plugins/anmi-plugin-manager/` → deploy vào `wp-content/plugins/anmi-plugin-manager/`) - Quản trị plugins với safe operations
 
 ---
 
@@ -14,7 +14,7 @@ Hệ thống gồm 2 components chính:
 
 ```bash
 # 1. Copy watchdog vào mu-plugins folder
-cp wp-content/mu-plugins/anmi-watchdog.php [YOUR_SITE]/wp-content/mu-plugins/
+cp plugins/anmi-watchdog/anmi-watchdog.php [YOUR_SITE]/wp-content/mu-plugins/
 
 # 2. Tạo quarantine directory (optional, watchdog sẽ tự tạo)
 mkdir -p wp-content/anmi-quarantine
@@ -40,7 +40,7 @@ wp-admin/admin.php?anmi_watchdog_action=view_logs&_wpnonce=[generate from URL]
 
 ```bash
 # 1. Copy plugin folder
-cp -r wp-content/plugins/anmi-plugin-manager [YOUR_SITE]/wp-content/plugins/
+cp -r plugins/anmi-plugin-manager [YOUR_SITE]/wp-content/plugins/
 
 # 2. Activate plugin trong WordPress Admin
 # WP Admin → Plugins → Activate "Anmi Plugin Manager"
@@ -65,7 +65,7 @@ ls -la wp-content/uploads/anmi-temp
 **Chuẩn bị:**
 ```bash
 # Tạo test plugin zip
-cd test-plugins/test-clean-plugin
+cd plugins/test-plugins/test-clean-plugin
 zip -r test-clean-plugin.zip test-clean-plugin.php
 ```
 
@@ -119,7 +119,7 @@ WP Admin → Anmi Plugins → Watchdog Status → Pending should be empty
 
 **Chuẩn bị:**
 ```bash
-cd test-plugins/test-dangerous-code
+cd plugins/test-plugins/test-dangerous-code
 zip -r test-dangerous-code.zip test-dangerous-code.php
 ```
 
@@ -140,7 +140,7 @@ zip -r test-dangerous-code.zip test-dangerous-code.php
 
 **Chuẩn bị:**
 ```bash
-cd test-plugins/test-fatal-error
+cd plugins/test-plugins/test-fatal-error
 zip -r test-fatal-error.zip test-fatal-error.php
 ```
 

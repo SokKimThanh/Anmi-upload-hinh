@@ -18,39 +18,40 @@
 ## 📂 File Structure
 
 ```
-wp-content/
-├── mu-plugins/
-│   └── anmi-watchdog.php                    # Watchdog protection (auto-run)
+plugins/
+├── anmi-watchdog/
+│   └── anmi-watchdog.php                    # Mu-plugin source (copy vào wp-content/mu-plugins)
 │
-├── plugins/
-│   └── anmi-plugin-manager/
-│       ├── anmi-plugin-manager.php          # Main plugin file
-│       ├── inc/
-│       │   ├── class-metadata-manager.php   # CPT storage
-│       │   ├── class-plugin-list.php        # Admin UI
-│       │   ├── class-plugin-uploader.php    # Upload + scan
-│       │   ├── class-plugin-activator.php   # Safe activate
-│       │   ├── class-logger.php             # Logging
-│       │   └── class-rename-detector.php    # Resync
-│       └── assets/
-│           ├── admin.css                    # Styles
-│           └── admin.js                     # Scripts
+├── anmi-plugin-manager/
+│   ├── anmi-plugin-manager.php              # Main plugin file
+│   ├── inc/
+│   │   ├── class-metadata-manager.php       # CPT storage
+│   │   ├── class-plugin-list.php            # Admin UI
+│   │   ├── class-plugin-uploader.php        # Upload + scan
+│   │   ├── class-plugin-activator.php       # Safe activate
+│   │   ├── class-logger.php                 # Logging
+│   │   └── class-rename-detector.php        # Resync
+│   └── assets/
+│       ├── admin.css                        # Styles
+│       └── admin.js                         # Scripts
 │
-├── anmi-staging-plugins/                    # Staging area
-├── anmi-backups/                            # Auto backups
-├── anmi-quarantine/                         # Failed plugins
-└── uploads/
-    └── anmi-temp/                           # Temp uploads
-
-test-plugins/                                # Test suite
-├── test-clean-plugin/
-├── test-fatal-error/
-└── test-dangerous-code/
+├── test-plugins/                            # Test suite
+│   ├── test-clean-plugin/
+│   ├── test-fatal-error/
+│   └── test-dangerous-code/
 
 Documentation:
 ├── README.md                                # Complete system docs
 ├── DEPLOYMENT-GUIDE.md                      # 7 test cases
 └── OPERATIONS-CHECKLIST.md                  # Production checklist
+
+wp-content/                                  # Deployment targets (placeholder)
+├── mu-plugins/
+├── plugins/
+├── anmi-staging-plugins/
+├── anmi-backups/
+├── anmi-quarantine/
+└── uploads/
 ```
 
 ---

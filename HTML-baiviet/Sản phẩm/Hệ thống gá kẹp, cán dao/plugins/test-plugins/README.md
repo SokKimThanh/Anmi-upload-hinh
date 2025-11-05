@@ -22,7 +22,7 @@
 
 ```bash
 # Clean plugin
-cd test-clean-plugin
+cd plugins/test-plugins/test-clean-plugin
 zip -r ../test-clean-plugin.zip .
 
 # Fatal error plugin

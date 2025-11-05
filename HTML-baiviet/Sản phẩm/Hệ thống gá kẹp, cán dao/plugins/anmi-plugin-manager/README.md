@@ -15,7 +15,7 @@
 ## 🏗️ Kiến Trúc
 
 ### Component 1: Mu-Plugin Watchdog
-**File:** `wp-content/mu-plugins/anmi-watchdog.php`
+**Source:** `plugins/anmi-watchdog/anmi-watchdog.php` → deploy vào `wp-content/mu-plugins/anmi-watchdog.php`
 
 **Chức năng:**
 - Tự động chạy (must-use plugin)
@@ -25,7 +25,7 @@
 - Killswitch protection ngăn loop
 
 ### Component 2: Plugin Manager
-**Folder:** `wp-content/plugins/anmi-plugin-manager/`
+**Source:** `plugins/anmi-plugin-manager/` → deploy vào `wp-content/plugins/anmi-plugin-manager/`
 
 **Structure:**
 ```
@@ -62,10 +62,10 @@ anmi-plugin-manager/
 
 ```bash
 # 1. Deploy Watchdog
-cp wp-content/mu-plugins/anmi-watchdog.php /path/to/wp-content/mu-plugins/
+cp plugins/anmi-watchdog/anmi-watchdog.php /path/to/wp-content/mu-plugins/
 
 # 2. Deploy Plugin Manager
-cp -r wp-content/plugins/anmi-plugin-manager /path/to/wp-content/plugins/
+cp -r plugins/anmi-plugin-manager /path/to/wp-content/plugins/
 
 # 3. Activate Plugin Manager
 # WP Admin → Plugins → Activate "Anmi Plugin Manager"
