@@ -76,17 +76,17 @@ $page_links = paginate_links([
 	<?php endif; ?>
 
 	<?php if ($kill_switch): ?>
-		<div class="anmi-kill-switch-banner">
+		<div class="anmi-alert anmi-alert--warning" role="status">
 			<strong><?php esc_html_e('Kill-switch active', 'anmi-plugin-manager'); ?></strong>
 			<span><?php esc_html_e('Actions that modify plugins are temporarily disabled until the kill-switch is turned off in Settings.', 'anmi-plugin-manager'); ?></span>
 			<?php if (!empty($kill_switch_note)): ?>
-				<p style="margin-top:8px;"><?php echo esc_html($kill_switch_note); ?></p>
+				<p class="anmi-subtle"><?php echo esc_html($kill_switch_note); ?></p>
 			<?php endif; ?>
 		</div>
 	<?php endif; ?>
 
 	<div class="anmi-toolbar">
-		<form method="get">
+		<form method="get" class="anmi-form">
 			<input type="hidden" name="page" value="anmi-plugins">
 
 			<label for="anmi-filter-status" class="screen-reader-text"><?php esc_html_e('Filter by status', 'anmi-plugin-manager'); ?></label>
@@ -109,18 +109,18 @@ $page_links = paginate_links([
 		</div>
 	</div>
 
-	<div class="anmi-pm-stats">
-		<div class="stat-box">
-			<span class="stat-number"><?php echo intval($stats['total']); ?></span>
-			<span class="stat-label"><?php esc_html_e('Total Plugins', 'anmi-plugin-manager'); ?></span>
+	<div class="anmi-stat-grid">
+		<div class="anmi-stat-card">
+			<span class="anmi-stat-value"><?php echo intval($stats['total']); ?></span>
+			<span class="anmi-stat-label"><?php esc_html_e('Total Plugins', 'anmi-plugin-manager'); ?></span>
 		</div>
-		<div class="stat-box">
-			<span class="stat-number"><?php echo intval($stats['active']); ?></span>
-			<span class="stat-label"><?php esc_html_e('Active', 'anmi-plugin-manager'); ?></span>
+		<div class="anmi-stat-card">
+			<span class="anmi-stat-value"><?php echo intval($stats['active']); ?></span>
+			<span class="anmi-stat-label"><?php esc_html_e('Active', 'anmi-plugin-manager'); ?></span>
 		</div>
-		<div class="stat-box">
-			<span class="stat-number"><?php echo intval($stats['managed']); ?></span>
-			<span class="stat-label"><?php esc_html_e('Managed', 'anmi-plugin-manager'); ?></span>
+		<div class="anmi-stat-card">
+			<span class="anmi-stat-value"><?php echo intval($stats['managed']); ?></span>
+			<span class="anmi-stat-label"><?php esc_html_e('Managed', 'anmi-plugin-manager'); ?></span>
 		</div>
 	</div>
 
@@ -129,7 +129,8 @@ $page_links = paginate_links([
 			<p><?php esc_html_e('No Anmi plugins found. Upload a new plugin or mark an existing one as managed.', 'anmi-plugin-manager'); ?></p>
 		</div>
 	<?php else: ?>
-		<table class="wp-list-table widefat fixed striped">
+		<div class="anmi-panel anmi-table-panel">
+		<table class="wp-list-table widefat fixed striped anmi-table">
 			<thead>
 				<tr>
 					<th class="column-name"><?php esc_html_e('Plugin Name', 'anmi-plugin-manager'); ?></th>
@@ -149,28 +150,28 @@ $page_links = paginate_links([
 				<tr>
 					<td class="plugin-title">
 						<strong><?php echo esc_html($plugin['name']); ?></strong>
-						<div class="plugin-file"><?php echo esc_html($plugin_file); ?></div>
+						<div class="anmi-meta-text"><?php echo esc_html($plugin_file); ?></div>
 						<?php if (!empty($plugin['description'])): ?>
-							<div class="description"><?php echo esc_html(wp_trim_words($plugin['description'], 24)); ?></div>
+							<div class="description anmi-subtle"><?php echo esc_html(wp_trim_words($plugin['description'], 24)); ?></div>
 						<?php endif; ?>
 					</td>
 					<td><?php echo esc_html($plugin['version']); ?></td>
 					<td><?php echo esc_html($plugin['author']); ?></td>
 					<td>
 						<?php if ($plugin['is_active']): ?>
-							<span class="badge badge-success"><?php esc_html_e('Active', 'anmi-plugin-manager'); ?></span>
+							<span class="anmi-badge anmi-badge--success"><?php esc_html_e('Active', 'anmi-plugin-manager'); ?></span>
 						<?php else: ?>
-							<span class="badge badge-inactive"><?php esc_html_e('Inactive', 'anmi-plugin-manager'); ?></span>
+							<span class="anmi-badge anmi-badge--neutral"><?php esc_html_e('Inactive', 'anmi-plugin-manager'); ?></span>
 						<?php endif; ?>
 					</td>
 					<td>
 						<?php if ($plugin['managed']): ?>
-							<span class="badge badge-managed">&check; <?php esc_html_e('Managed', 'anmi-plugin-manager'); ?></span>
+							<span class="anmi-badge anmi-badge--info">&check; <?php esc_html_e('Managed', 'anmi-plugin-manager'); ?></span>
 						<?php else: ?>
-							<span class="badge badge-unmanaged"><?php esc_html_e('Not Managed', 'anmi-plugin-manager'); ?></span>
+							<span class="anmi-badge anmi-badge--warning"><?php esc_html_e('Not Managed', 'anmi-plugin-manager'); ?></span>
 						<?php endif; ?>
 					</td>
-					<td class="plugin-actions">
+					<td class="anmi-table__actions">
 						<?php if (!empty($actions['mark'])): ?>
 							<a href="<?php echo esc_url($actions['mark']); ?>" class="button button-small <?php echo $kill_switch ? 'anmi-action-disabled' : 'button-primary'; ?>">
 								<?php esc_html_e('Mark', 'anmi-plugin-manager'); ?>
@@ -213,12 +214,13 @@ $page_links = paginate_links([
 		</table>
 
 		<?php if ($page_links): ?>
-		<div class="tablenav bottom">
+		<div class="anmi-table__footer">
 			<div class="tablenav-pages">
 				<?php echo wp_kses_post($page_links); ?>
 			</div>
 		</div>
 		<?php endif; ?>
+		</div>
 	<?php endif; ?>
 </div>
 
