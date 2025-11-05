@@ -815,16 +815,31 @@ details[open] summary .toggle {
 
 .contact-info {
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr 1fr; /* 2 cột cố định trên desktop */
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     margin: 1.5rem 0;
 }
 
 .office {
     background-color: #FFFFFF;
-    padding: 1.5rem;
+    padding: 1.125rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (min-width: 1280px) {
+    .contact-info {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1600px) {
+    .contact-info {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 
 .contact-image {
