@@ -29,6 +29,10 @@ define('ANMI_PM_TEMP_DIR', WP_CONTENT_DIR . '/uploads/anmi-temp');
 class Anmi_Plugin_Manager {
     
     private static $instance = null;
+    private $plugin_list;
+    private $uploader;
+    private $logger;
+    private $settings;
     
     public static function instance() {
         if (null === self::$instance) {
@@ -38,8 +42,8 @@ class Anmi_Plugin_Manager {
     }
     
     private function __construct() {
-        $this->init_hooks();
         $this->load_dependencies();
+        $this->init_hooks();
     }
     
     /**
@@ -64,6 +68,12 @@ class Anmi_Plugin_Manager {
         require_once ANMI_PM_DIR . 'inc/class-plugin-activator.php';
         require_once ANMI_PM_DIR . 'inc/class-logger.php';
         require_once ANMI_PM_DIR . 'inc/class-rename-detector.php';
+        require_once ANMI_PM_DIR . 'inc/class-settings.php';
+
+        $this->plugin_list = new Anmi_PM_Plugin_List();
+        $this->uploader    = new Anmi_PM_Plugin_Uploader();
+        $this->logger      = new Anmi_PM_Logger();
+        $this->settings    = new Anmi_PM_Settings();
     }
     
     /**
@@ -159,11 +169,11 @@ class Anmi_Plugin_Manager {
         
         add_submenu_page(
             'anmi-plugins',
-            __('Watchdog Status', 'anmi-plugin-manager'),
-            __('Watchdog Status', 'anmi-plugin-manager'),
+            __('Settings', 'anmi-plugin-manager'),
+            __('Settings', 'anmi-plugin-manager'),
             'manage_options',
-            'anmi-plugins-watchdog',
-            [$this, 'render_watchdog_page']
+            'anmi-plugins-settings',
+            [$this, 'render_settings_page']
         );
     }
     
@@ -192,7 +202,11 @@ class Anmi_Plugin_Manager {
         
         wp_localize_script('anmi-pm-admin', 'anmiPM', [
             'ajaxurl' => admin_url('admin-ajax.php'),
-            'nonce' => wp_create_nonce('anmi_pm_ajax')
+            'nonce' => wp_create_nonce('anmi_pm_ajax'),
+            'confirmPhrase' => 'DELETE',
+            'confirmPrompt' => __('Type DELETE to confirm this action.', 'anmi-plugin-manager'),
+            'killSwitchActive' => Anmi_PM_Settings::is_kill_switch_enabled(),
+            'killSwitchNotice' => __('Kill-switch is active. Actions are temporarily disabled.', 'anmi-plugin-manager'),
         ]);
     }
     
@@ -200,53 +214,41 @@ class Anmi_Plugin_Manager {
      * Render main page
      */
     public function render_main_page() {
-        if (!current_user_can('manage_options')) {
-            wp_die(__('Unauthorized', 'anmi-plugin-manager'));
-        }
-        
-        $plugin_list = new Anmi_PM_Plugin_List();
-        $plugin_list->render();
+        $this->assert_manage_options();
+        $this->plugin_list->render();
     }
     
     /**
      * Render upload page
      */
     public function render_upload_page() {
-        if (!current_user_can('manage_options')) {
-            wp_die(__('Unauthorized', 'anmi-plugin-manager'));
-        }
-        
-        $uploader = new Anmi_PM_Plugin_Uploader();
-        $uploader->render();
+        $this->assert_manage_options();
+        $this->uploader->render();
     }
     
     /**
      * Render logs page
      */
     public function render_logs_page() {
-        if (!current_user_can('manage_options')) {
-            wp_die(__('Unauthorized', 'anmi-plugin-manager'));
-        }
-        
-        $logger = new Anmi_PM_Logger();
-        $logger->render_logs_page();
+        $this->assert_manage_options();
+        $this->logger->render_logs_page();
     }
     
     /**
-     * Render watchdog page
+     * Render settings page
      */
-    public function render_watchdog_page() {
+    public function render_settings_page() {
+        $this->assert_manage_options();
+        $this->settings->render_settings_page();
+    }
+    
+    /**
+     * Ensure current user can manage options
+     */
+    private function assert_manage_options() {
         if (!current_user_can('manage_options')) {
             wp_die(__('Unauthorized', 'anmi-plugin-manager'));
         }
-        
-        // Redirect to watchdog's own view
-        $watchdog_url = wp_nonce_url(
-            admin_url('admin.php?anmi_watchdog_action=view_logs'),
-            'anmi_watchdog_view_logs'
-        );
-        wp_redirect($watchdog_url);
-        exit;
     }
 }
 

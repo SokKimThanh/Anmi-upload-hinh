@@ -25,194 +25,241 @@ class Anmi_PM_Plugin_Uploader {
         'assert\s*\('
     ];
     
+    const SCAN_TRANSIENT_PREFIX = 'anmi_pm_scan_';
+    const SCAN_SESSION_TTL      = 1800; // 30 minutes
+    
     public function __construct() {
-        add_action('admin_post_anmi_pm_handle_upload', [$this, 'handle_upload']);
+        add_action('admin_post_anmi_pm_scan_zip', [$this, 'handle_scan_request']);
+        add_action('admin_post_anmi_pm_extract_staging', [$this, 'handle_extract_request']);
+        add_action('admin_post_anmi_pm_discard_scan', [$this, 'handle_discard_request']);
     }
     
     /**
      * Render upload form
      */
     public function render() {
-        ?>
-        <div class="wrap">
-            <h1><?php _e('Upload Plugin', 'anmi-plugin-manager'); ?></h1>
-            
-            <?php $this->display_messages(); ?>
-            
-            <div class="anmi-upload-form">
-                <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" enctype="multipart/form-data">
-                    <?php wp_nonce_field('anmi_pm_upload', 'anmi_pm_upload_nonce'); ?>
-                    <input type="hidden" name="action" value="anmi_pm_handle_upload">
-                    
-                    <div class="form-field">
-                        <label for="plugin_zip">
-                            <?php _e('Select Plugin ZIP File', 'anmi-plugin-manager'); ?>
-                        </label>
-                        <input type="file" name="plugin_zip" id="plugin_zip" accept=".zip" required>
-                        <span class="description">
-                            <?php printf(__('Maximum file size: %s', 'anmi-plugin-manager'), size_format(wp_max_upload_size())); ?>
-                        </span>
-                    </div>
-                    
-                    <div class="form-field">
-                        <label>
-                            <input type="checkbox" name="auto_activate" value="1">
-                            <?php _e('Tự động kích hoạt sau khi upload (không khuyến nghị)', 'anmi-plugin-manager'); ?>
-                        </label>
-                        <span class="description">
-                            <?php _e('Nên kiểm tra và dùng Safe Activate thay vì tự động kích hoạt.', 'anmi-plugin-manager'); ?>
-                        </span>
-                    </div>
-                    
-                    <p>
-                        <button type="submit" class="button button-primary button-large">
-                            <?php _e('Upload & Stage Plugin', 'anmi-plugin-manager'); ?>
-                        </button>
-                        <a href="<?php echo esc_url(admin_url('admin.php?page=anmi-plugins')); ?>" class="button button-large">
-                            <?php _e('Cancel', 'anmi-plugin-manager'); ?>
-                        </a>
-                    </p>
-                </form>
-            </div>
-            
-            <div class="anmi-upload-info">
-                <h3><?php _e('Upload Process', 'anmi-plugin-manager'); ?></h3>
-                <ol>
-                    <li><?php _e('Upload ZIP file → temporary storage', 'anmi-plugin-manager'); ?></li>
-                    <li><?php _e('Security scan → detect dangerous code patterns', 'anmi-plugin-manager'); ?></li>
-                    <li><?php _e('Extract to staging folder → not yet active', 'anmi-plugin-manager'); ?></li>
-                    <li><?php _e('Backup existing plugin (if exists)', 'anmi-plugin-manager'); ?></li>
-                    <li><?php _e('Move from staging to plugins folder', 'anmi-plugin-manager'); ?></li>
-                    <li><?php _e('Save metadata → ready for Safe Activate', 'anmi-plugin-manager'); ?></li>
-                </ol>
-            </div>
-        </div>
-        <?php
+        $scan_token   = isset($_GET['scan_token']) ? sanitize_text_field($_GET['scan_token']) : '';
+        $scan_session = $scan_token ? $this->get_scan_session($scan_token) : null;
+        $messages     = $this->collect_messages();
+        $max_upload   = size_format(wp_max_upload_size());
+
+        $view = [
+            'scan_token'   => $scan_token,
+            'scan_session' => $scan_session,
+            'messages'     => $messages,
+            'max_upload'   => $max_upload,
+        ];
+
+        include ANMI_PM_DIR . 'admin/templates/upload.php';
     }
     
     /**
-     * Handle upload POST
+     * Handle initial scan request
      */
-    public function handle_upload() {
-        // Security checks
+    public function handle_scan_request() {
         if (!current_user_can('manage_options')) {
             wp_die(__('Unauthorized', 'anmi-plugin-manager'));
         }
-        
-        if (!isset($_POST['anmi_pm_upload_nonce']) || !wp_verify_nonce($_POST['anmi_pm_upload_nonce'], 'anmi_pm_upload')) {
-            wp_die(__('Nonce verification failed', 'anmi-plugin-manager'));
-        }
-        
-        // Check file upload
+
+        check_admin_referer('anmi_pm_scan_zip', 'anmi_pm_scan_nonce');
+
         if (!isset($_FILES['plugin_zip']) || $_FILES['plugin_zip']['error'] !== UPLOAD_ERR_OK) {
-            $this->redirect_with_error('upload_failed', 'File upload error');
+            $this->redirect_with_status('error', 'upload_failed', __('File upload error', 'anmi-plugin-manager'));
         }
-        
-        $file = $_FILES['plugin_zip'];
-        
-        // Validate file
-        $validation = $this->validate_upload($file);
+
+        $file        = $_FILES['plugin_zip'];
+        $validation  = $this->validate_upload($file);
+
         if (!$validation['valid']) {
-            $this->redirect_with_error('validation_failed', $validation['message']);
+            $this->redirect_with_status('error', 'validation_failed', $validation['message']);
         }
-        
+
         $logger = new Anmi_PM_Logger();
-        
+
         try {
-            // Step 1: Move to temp directory
             $temp_file = $this->move_to_temp($file);
-            $logger->log('upload_received', ['file' => $file['name'], 'size' => $file['size']]);
-            
-            // Step 2: Security scan
+
+            $logger->log('upload_received', [
+                'file' => $file['name'],
+                'size' => (int) $file['size'],
+            ]);
+
             $scan_result = $this->security_scan($temp_file);
+
             if (!$scan_result['safe']) {
-                @unlink($temp_file);
                 $logger->log('upload_rejected', [
-                    'file' => $file['name'],
-                    'reason' => 'security_scan_failed',
-                    'threats' => $scan_result['threats']
+                    'file'    => $file['name'],
+                    'reason'  => 'security_scan_failed',
+                    'threats' => $scan_result['threats'],
                 ]);
-                $this->redirect_with_error('security_scan_failed', implode(', ', $scan_result['threats']));
-            }
-            
-            // Step 3: Extract to staging
-            $staging_result = $this->extract_to_staging($temp_file);
-            if (!$staging_result['success']) {
+
                 @unlink($temp_file);
-                $logger->log('staging_failed', ['file' => $file['name'], 'error' => $staging_result['error']]);
-                $this->redirect_with_error('staging_failed', $staging_result['error']);
+
+                $this->redirect_with_status('error', 'security_scan_failed', implode(', ', $scan_result['threats']));
             }
-            
+
+            $metadata = $this->inspect_zip_metadata($temp_file);
+
+            $token   = wp_generate_uuid4();
+            $session = [
+                'token'        => $token,
+                'file_name'    => $file['name'],
+                'file_size'    => (int) $file['size'],
+                'temp_path'    => $temp_file,
+                'scan'         => $scan_result,
+                'metadata'     => $metadata,
+                'created_at'   => time(),
+                'auto_activate'=> isset($_POST['auto_activate']) ? '1' : '0',
+                'user_id'      => get_current_user_id(),
+            ];
+
+            $this->persist_scan_session($session);
+
+            $redirect = add_query_arg([
+                'page'        => 'anmi-plugins-upload',
+                'scan_token'  => rawurlencode($token),
+                'notice'      => 'success',
+                'code'        => 'scan_ready',
+            ], admin_url('admin.php'));
+
+            wp_safe_redirect($redirect);
+            exit;
+
+        } catch (Exception $e) {
+            $logger->log('upload_exception', ['error' => $e->getMessage()]);
+            $this->redirect_with_status('error', 'exception', $e->getMessage());
+        }
+    }
+
+    /**
+     * Handle extraction step
+     */
+    public function handle_extract_request() {
+        if (!current_user_can('manage_options')) {
+            wp_die(__('Unauthorized', 'anmi-plugin-manager'));
+        }
+
+        check_admin_referer('anmi_pm_extract', 'anmi_pm_extract_nonce');
+
+        if (Anmi_PM_Settings::is_kill_switch_enabled()) {
+            $this->redirect_with_status('warning', 'kill_switch_active', __('Kill-switch is active. Extraction blocked.', 'anmi-plugin-manager'));
+        }
+
+        $token   = isset($_POST['scan_token']) ? sanitize_text_field($_POST['scan_token']) : '';
+        $session = $this->get_scan_session($token);
+
+        if (!$session) {
+            $this->redirect_with_status('error', 'session_missing', __('Scan session expired or missing.', 'anmi-plugin-manager'));
+        }
+
+        $logger = new Anmi_PM_Logger();
+        $auto_activate = (isset($_POST['auto_activate']) && $_POST['auto_activate'] === '1') || !empty($session['auto_activate']);
+
+        try {
+            $staging_result = $this->extract_to_staging($session['temp_path']);
+
+            if (!$staging_result['success']) {
+                $logger->log('staging_failed', [
+                    'file'  => $session['file_name'],
+                    'error' => $staging_result['error'],
+                ]);
+                $this->redirect_with_status('error', 'staging_failed', $staging_result['error'], ['scan_token' => rawurlencode($token)]);
+            }
+
             $staging_dir = $staging_result['staging_dir'];
             $plugin_info = $staging_result['plugin_info'];
-            
-            // Step 4: Backup existing plugin if exists
+
             $backup_zip = null;
             $existing_path = WP_PLUGIN_DIR . '/' . $plugin_info['plugin_dir'];
             if (is_dir($existing_path)) {
                 $backup_zip = $this->backup_existing_plugin($plugin_info['plugin_dir']);
                 $logger->log('backup_created', [
                     'plugin_dir' => $plugin_info['plugin_dir'],
-                    'backup_zip' => $backup_zip
+                    'backup_zip' => $backup_zip,
                 ]);
             }
-            
-            // Step 5: Move from staging to plugins
+
             $move_result = $this->move_to_plugins($staging_dir, $plugin_info['plugin_dir']);
             if (!$move_result['success']) {
                 $logger->log('move_failed', ['error' => $move_result['error']]);
-                $this->redirect_with_error('move_failed', $move_result['error']);
+                $this->redirect_with_status('error', 'move_failed', $move_result['error'], ['scan_token' => rawurlencode($token)]);
             }
-            
-            // Step 6: Save metadata
+
             $checksum = sha1_file(WP_PLUGIN_DIR . '/' . $plugin_info['plugin_file']);
+
             Anmi_PM_Metadata_Manager::save_plugin_meta([
-                'plugin_file' => $plugin_info['plugin_file'],
-                'plugin_dir' => $plugin_info['plugin_dir'],
-                'name' => $plugin_info['name'],
-                'version' => $plugin_info['version'],
-                'author' => $plugin_info['author'],
-                'checksum' => $checksum,
+                'plugin_file'    => $plugin_info['plugin_file'],
+                'plugin_dir'     => $plugin_info['plugin_dir'],
+                'name'           => $plugin_info['name'],
+                'version'        => $plugin_info['version'],
+                'author'         => $plugin_info['author'],
+                'checksum'       => $checksum,
                 'installed_date' => current_time('mysql'),
-                'active_status' => '0',
-                'managed' => true,
-                'backup_zip' => $backup_zip
+                'active_status'  => '0',
+                'managed'        => true,
+                'backup_zip'     => $backup_zip,
             ]);
-            
+
             $logger->log('upload_success', [
                 'plugin_file' => $plugin_info['plugin_file'],
-                'version' => $plugin_info['version'],
-                'backup_zip' => $backup_zip
+                'version'     => $plugin_info['version'],
+                'backup_zip'  => $backup_zip,
             ]);
-            
-            // Clean up temp file
-            @unlink($temp_file);
-            
-            // Auto activate if requested (not recommended)
-            if (isset($_POST['auto_activate']) && $_POST['auto_activate'] == '1') {
+
+            if ($auto_activate) {
                 $activate_result = Anmi_PM_Plugin_Activator::safe_activate($plugin_info['plugin_file']);
                 if ($activate_result['success']) {
                     $logger->log('auto_activated_safe', ['plugin_file' => $plugin_info['plugin_file']]);
                 } else {
                     $logger->log('auto_activate_failed', [
                         'plugin_file' => $plugin_info['plugin_file'],
-                        'error' => $activate_result['message']
+                        'error'       => $activate_result['message'],
                     ]);
                 }
             }
-            
-            // Redirect success
-            wp_redirect(add_query_arg([
-                'page' => 'anmi-plugins',
+
+            @unlink($session['temp_path']);
+            $this->delete_scan_session($token);
+
+            wp_safe_redirect(add_query_arg([
+                'page'   => 'anmi-plugins',
                 'upload' => 'success',
-                'plugin' => urlencode($plugin_info['plugin_file'])
+                'plugin' => rawurlencode($plugin_info['plugin_file']),
             ], admin_url('admin.php')));
             exit;
-            
+
         } catch (Exception $e) {
             $logger->log('upload_exception', ['error' => $e->getMessage()]);
-            $this->redirect_with_error('exception', $e->getMessage());
+            $this->redirect_with_status('error', 'exception', $e->getMessage(), ['scan_token' => rawurlencode($token)]);
         }
+    }
+
+    /**
+     * Handle discard request
+     */
+    public function handle_discard_request() {
+        if (!current_user_can('manage_options')) {
+            wp_die(__('Unauthorized', 'anmi-plugin-manager'));
+        }
+
+        check_admin_referer('anmi_pm_discard', 'anmi_pm_discard_nonce');
+
+        $token   = isset($_POST['scan_token']) ? sanitize_text_field($_POST['scan_token']) : '';
+        $session = $this->get_scan_session($token);
+
+        if ($session) {
+            @unlink($session['temp_path']);
+            $this->delete_scan_session($token);
+        }
+
+        $redirect = add_query_arg([
+            'page'   => 'anmi-plugins-upload',
+            'notice' => 'success',
+            'code'   => 'discarded',
+        ], admin_url('admin.php'));
+
+        wp_safe_redirect($redirect);
+        exit;
     }
     
     /**
@@ -553,31 +600,159 @@ class Anmi_PM_Plugin_Uploader {
     }
     
     /**
-     * Redirect with error
+     * Persist scan session in transient cache
      */
-    private function redirect_with_error($code, $message) {
-        wp_redirect(add_query_arg([
-            'page' => 'anmi-plugins-upload',
-            'error' => $code,
-            'message' => urlencode($message)
-        ], admin_url('admin.php')));
+    private function persist_scan_session(array $session) {
+        set_transient(self::SCAN_TRANSIENT_PREFIX . $session['token'], $session, self::SCAN_SESSION_TTL);
+    }
+
+    /**
+     * Retrieve scan session
+     */
+    private function get_scan_session($token) {
+        if (empty($token)) {
+            return null;
+        }
+
+        $session = get_transient(self::SCAN_TRANSIENT_PREFIX . $token);
+        if (!$session) {
+            return null;
+        }
+
+        // Extend TTL while active
+        set_transient(self::SCAN_TRANSIENT_PREFIX . $token, $session, self::SCAN_SESSION_TTL);
+
+        return $session;
+    }
+
+    /**
+     * Delete scan session
+     */
+    private function delete_scan_session($token) {
+        if (empty($token)) {
+            return;
+        }
+        delete_transient(self::SCAN_TRANSIENT_PREFIX . $token);
+    }
+
+    /**
+     * Collect UI messages for template
+     */
+    private function collect_messages() {
+        $messages = [];
+
+        if (!isset($_GET['notice'])) {
+            return $messages;
+        }
+
+    $type  = sanitize_text_field($_GET['notice']);
+    $code  = isset($_GET['code']) ? sanitize_text_field($_GET['code']) : '';
+    $detail = isset($_GET['detail']) ? sanitize_text_field(rawurldecode($_GET['detail'])) : '';
+
+        $map = [
+            'scan_ready'          => __('Security scan completed. Review details below.', 'anmi-plugin-manager'),
+            'security_scan_failed'=> __('Security scan failed. Threats detected and upload rejected.', 'anmi-plugin-manager'),
+            'validation_failed'   => __('The uploaded file is not a valid ZIP archive.', 'anmi-plugin-manager'),
+            'upload_failed'       => __('Unable to process the uploaded file.', 'anmi-plugin-manager'),
+            'staging_failed'      => __('Extraction into staging failed. Please review the error and try again.', 'anmi-plugin-manager'),
+            'move_failed'         => __('Failed to move plugin into the plugins directory.', 'anmi-plugin-manager'),
+            'session_missing'     => __('The scan session is no longer available. Please upload the ZIP file again.', 'anmi-plugin-manager'),
+            'discarded'           => __('Scan session discarded.', 'anmi-plugin-manager'),
+            'exception'           => __('An unexpected error occurred during processing.', 'anmi-plugin-manager'),
+            'kill_switch_active'  => __('Kill-switch is active. Extraction blocked until it is disabled.', 'anmi-plugin-manager'),
+        ];
+
+        $text = $map[$code] ?? __('Operation completed.', 'anmi-plugin-manager');
+
+        if (!empty($detail)) {
+            $text .= ' ' . $detail;
+        }
+
+        $messages[] = [
+            'type' => $type,
+            'text' => $text,
+        ];
+
+        return $messages;
+    }
+
+    /**
+     * Redirect helper for upload workflow
+     */
+    private function redirect_with_status($type, $code, $detail = '', $extra = []) {
+        $query = array_merge([
+            'page'  => 'anmi-plugins-upload',
+            'notice'=> $type,
+            'code'  => $code,
+        ], $extra);
+
+        if (!empty($detail)) {
+            $query['detail'] = rawurlencode($detail);
+        }
+
+        wp_safe_redirect(add_query_arg($query, admin_url('admin.php')));
         exit;
     }
-    
+
     /**
-     * Display messages
+     * Inspect zip file to extract metadata without staging
      */
-    private function display_messages() {
-        if (isset($_GET['error'])) {
-            $error_code = sanitize_text_field($_GET['error']);
-            $message = isset($_GET['message']) ? sanitize_text_field($_GET['message']) : '';
-            
-            echo '<div class="notice notice-error is-dismissible"><p>';
-            echo '<strong>Error:</strong> ' . esc_html($error_code);
-            if ($message) {
-                echo ' - ' . esc_html($message);
-            }
-            echo '</p></div>';
+    private function inspect_zip_metadata($zip_file) {
+        if (!class_exists('ZipArchive')) {
+            return [];
         }
+
+        $zip = new ZipArchive();
+        if ($zip->open($zip_file) !== true) {
+            return [];
+        }
+
+        $metadata = [];
+
+        for ($i = 0; $i < $zip->numFiles; $i++) {
+            $stat = $zip->statIndex($i);
+            $filename = $stat['name'];
+
+            if (substr($filename, -4) !== '.php') {
+                continue;
+            }
+
+            if (substr($filename, -1) === '/') {
+                continue;
+            }
+
+            $content = $zip->getFromIndex($i);
+            if ($content === false || stripos($content, 'Plugin Name:') === false) {
+                continue;
+            }
+
+            if (!function_exists('get_plugin_data')) {
+                require_once ABSPATH . 'wp-admin/includes/plugin.php';
+            }
+
+            $temp_file = wp_tempnam($filename);
+            if (!$temp_file) {
+                continue;
+            }
+
+            file_put_contents($temp_file, $content);
+            $plugin_data = get_plugin_data($temp_file, false, false);
+            @unlink($temp_file);
+
+            if (!empty($plugin_data['Name'])) {
+                $metadata = [
+                    'plugin_file' => str_replace('\', '/', $filename),
+                    'name'        => $plugin_data['Name'],
+                    'version'     => $plugin_data['Version'],
+                    'author'      => $plugin_data['Author'],
+                    'description' => $plugin_data['Description'],
+                ];
+                break;
+            }
+        }
+
+        $zip->close();
+
+        return $metadata;
     }
 }

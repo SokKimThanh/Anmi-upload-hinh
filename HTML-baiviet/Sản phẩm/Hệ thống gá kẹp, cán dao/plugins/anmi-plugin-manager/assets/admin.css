@@ -101,6 +101,218 @@
     width: 23%;
 }
 
+.anmi-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.anmi-toolbar form {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.anmi-toolbar select,
+.anmi-toolbar input[type="search"] {
+    min-width: 180px;
+}
+
+.anmi-toolbar input[type="search"] {
+    padding: 4px 8px;
+}
+
+.anmi-kill-switch-banner {
+    border-left: 4px solid #dba617;
+    background: #fff8e5;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+.anmi-kill-switch-banner strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.anmi-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+}
+
+.anmi-modal.is-open {
+    display: block;
+}
+
+.anmi-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.anmi-modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 420px;
+    max-width: 90%;
+    border-radius: 6px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.anmi-modal-header {
+    padding: 16px 20px 0 20px;
+}
+
+.anmi-modal-body {
+    padding: 16px 20px;
+}
+
+.anmi-modal-footer {
+    padding: 16px 20px;
+    background: #f6f7f7;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.anmi-confirm-instructions {
+    margin: 12px 0 16px 0;
+    font-size: 14px;
+    color: #3c434a;
+}
+
+.anmi-confirm-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #c3c4c7;
+    border-radius: 3px;
+    margin-top: 8px;
+}
+
+.anmi-confirm-error {
+    color: #d63638;
+    font-size: 13px;
+    margin-top: 6px;
+    min-height: 18px;
+}
+
+.anmi-json-content {
+    max-height: 420px;
+    overflow: auto;
+    background: #111827;
+    color: #f8fafc;
+    padding: 16px;
+    border-radius: 4px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 12px;
+}
+
+.badge-success {
+    background: #d1f0d1;
+    color: #1a8e28;
+}
+
+.badge-danger {
+    background: #fde7e9;
+    color: #b91c1c;
+}
+
+.badge-warning {
+    background: #fff5d6;
+    color: #d97706;
+}
+
+.badge-info {
+    background: #e0f2ff;
+    color: #1d4ed8;
+}
+
+.badge-neutral {
+    background: #f0f0f1;
+    color: #3c434a;
+}
+
+.anmi-action-disabled {
+    cursor: not-allowed !important;
+    opacity: 0.6;
+}
+
+.anmi-upload-session {
+    margin-top: 30px;
+}
+
+.anmi-upload-session h2 {
+    margin-top: 0;
+}
+
+.anmi-upload-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.anmi-upload-meta .meta-card {
+    background: #fff;
+    border: 1px solid #d7d9dc;
+    border-radius: 4px;
+    padding: 14px;
+}
+
+.anmi-upload-meta .meta-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #646970;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.anmi-upload-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.anmi-json-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.anmi-logs-table td:first-child {
+    white-space: nowrap;
+}
+
+.anmi-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.anmi-empty-state {
+    background: #fff;
+    border: 1px dashed #c3c4c7;
+    padding: 40px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
 /* Upload Form */
 .anmi-upload-form {
     background: #fff;
@@ -199,5 +411,10 @@ details[open] summary {
     
     .plugin-actions .button {
         margin-bottom: 4px;
+    }
+    
+    .anmi-toolbar {
+        flex-direction: column;
+        align-items: stretch;
     }
 }
