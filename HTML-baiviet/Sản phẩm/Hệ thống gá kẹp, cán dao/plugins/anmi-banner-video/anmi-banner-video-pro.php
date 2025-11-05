@@ -27,6 +27,13 @@ define('ABVP_TABLE_NAME', 'anmi_banner_video_pro');
 // Include admin panel
 require_once ABVP_PLUGIN_PATH . 'includes/admin-panel.php';
 
+// Initialize admin features after plugins are loaded
+add_action('plugins_loaded', function() {
+    if (is_admin()) {
+        AnMi_Banner_Video_Pro_Admin::get_instance();
+    }
+});
+
 // Activation hook
 register_activation_hook(__FILE__, 'abvp_plugin_activate');
 

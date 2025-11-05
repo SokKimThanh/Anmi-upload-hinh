@@ -48,7 +48,7 @@ class AnMi_Banner_Video_Pro_Admin {
     public function remove_conflicting_scripts() {
         $screen = get_current_screen();
         
-        if ($screen && strpos($screen->id, 'abvp-banner-video-pro') !== false) {
+        if ($screen && strpos($screen->id, 'anmi-video-banner') !== false) {
             wp_dequeue_script('webfontloader');
             wp_deregister_script('webfontloader');
         }
@@ -107,27 +107,27 @@ class AnMi_Banner_Video_Pro_Admin {
             'An Mi Banner Video Pro',
             'Banner Video Pro',
             'manage_options',
-            'abvp-banner-video-pro',
+            'anmi-video-banner',
             array($this, 'display_admin_list_page'),
             'dashicons-video-alt3',
             31
         );
         
         add_submenu_page(
-            'abvp-banner-video-pro',
+            'anmi-video-banner',
             'All Banners',
             'All Banners',
             'manage_options',
-            'abvp-banner-video-pro',
+            'anmi-video-banner',
             array($this, 'display_admin_list_page')
         );
         
         add_submenu_page(
-            'abvp-banner-video-pro',
+            'anmi-video-banner',
             'Add New Banner',
             'Add New',
             'manage_options',
-            'abvp-banner-video-pro-new',
+            'anmi-video-banner-new',
             array($this, 'display_admin_edit_page')
         );
         
@@ -136,7 +136,7 @@ class AnMi_Banner_Video_Pro_Admin {
             'Edit Banner',
             'Edit Banner',
             'manage_options',
-            'abvp-banner-video-pro-edit',
+            'anmi-video-banner-edit',
             array($this, 'display_admin_edit_page')
         );
     }
@@ -146,7 +146,7 @@ class AnMi_Banner_Video_Pro_Admin {
      */
     public function load_admin_assets($hook) {
         // Only load on our admin pages
-        if (strpos($hook, 'abvp-banner-video-pro') === false) {
+        if (strpos($hook, 'anmi-video-banner') === false) {
             return;
         }
         
@@ -246,8 +246,28 @@ class AnMi_Banner_Video_Pro_Admin {
         
         $banner_id = isset($_POST['banner_id']) ? intval($_POST['banner_id']) : 0;
         $banner_name = sanitize_text_field($_POST['name']);
-        $video_url_value = esc_url_raw($_POST['video_url']);
         $video_input_type = sanitize_text_field($_POST['video_type']);
+
+        if ($video_input_type === 'embed') {
+            $allowed_tags = array(
+                'iframe' => array(
+                    'src' => true,
+                    'width' => true,
+                    'height' => true,
+                    'title' => true,
+                    'frameborder' => true,
+                    'allow' => true,
+                    'allowfullscreen' => true,
+                    'referrerpolicy' => true,
+                    'loading' => true,
+                    'style' => true,
+                    'class' => true,
+                ),
+            );
+            $video_url_value = wp_kses(wp_unslash($_POST['video_url']), $allowed_tags);
+        } else {
+            $video_url_value = esc_url_raw(wp_unslash($_POST['video_url']));
+        }
         
         // Validate and sanitize images JSON
         $image_list = isset($_POST['images']) ? wp_unslash($_POST['images']) : '[]';
@@ -259,11 +279,11 @@ class AnMi_Banner_Video_Pro_Admin {
         
         $banner_title = sanitize_text_field($_POST['title']);
         $banner_subtitle = sanitize_textarea_field($_POST['subtitle']);
-        $cta_button_text = sanitize_text_field($_POST['button_text']);
-        $cta_button_link = esc_url_raw($_POST['button_link']);
-        $display_title = isset($_POST['show_title']) ? 1 : 0;
-        $display_subtitle = isset($_POST['show_subtitle']) ? 1 : 0;
-        $display_button = isset($_POST['show_button']) ? 1 : 0;
+    $cta_button_text = sanitize_text_field($_POST['button_text']);
+    $cta_button_link = esc_url_raw($_POST['button_link']);
+    $display_title = isset($_POST['show_title']) ? 1 : 0;
+    $display_subtitle = isset($_POST['show_subtitle']) ? 1 : 0;
+    $display_button = isset($_POST['show_button']) ? 1 : 0;
         $banner_height = sanitize_text_field($_POST['height']);
         $transition_effect = sanitize_text_field($_POST['transition']);
         $image_slider_speed = intval($_POST['slider_speed']);
@@ -445,26 +465,72 @@ class AnMi_Banner_Video_Pro_Admin {
                 return;
             }
             
-            // Return banner data
-            wp_send_json_success(array(
-                'id' => $banner->banner_id,
-                'name' => $banner->banner_name,
-                'video_url' => $banner->video_url_value,
-                'images' => $banner->image_list,
-                'title' => $banner->banner_title,
-                'subtitle' => $banner->banner_subtitle,
-                'button_text' => $banner->cta_button_text,
-                'button_link' => $banner->cta_button_link,
-                'show_title' => $banner->display_title,
-                'show_subtitle' => $banner->display_subtitle,
-                'show_button' => $banner->display_button,
-                'height' => $banner->banner_height,
-                'transition' => $banner->transition_effect,
-                'slider_speed' => $banner->image_slider_speed,
-                'slider_effect' => $banner->image_slider_effect,
-                'autoplay_delay' => $banner->video_autoplay_delay,
-                'mobile_behavior' => $banner->mobile_display_mode
-            ));
+            $sanitized_video_value = '';
+            if ($banner->video_input_type === 'embed') {
+                $allowed_tags = array(
+                    'iframe' => array(
+                        'src' => true,
+                        'width' => true,
+                        'height' => true,
+                        'title' => true,
+                        'frameborder' => true,
+                        'allow' => true,
+                        'allowfullscreen' => true,
+                        'referrerpolicy' => true,
+                        'loading' => true,
+                        'style' => true,
+                        'class' => true,
+                    ),
+                );
+                $sanitized_video_value = wp_kses($banner->video_url_value, $allowed_tags);
+            } else {
+                $sanitized_video_value = esc_url_raw($banner->video_url_value);
+            }
+
+            $decoded_images = array();
+            if (!empty($banner->image_list)) {
+                $images = json_decode($banner->image_list, true);
+                if (is_array($images)) {
+                    foreach ($images as $image_url) {
+                        $image_url = esc_url_raw($image_url);
+                        if (!empty($image_url)) {
+                            $decoded_images[] = $image_url;
+                        }
+                    }
+                }
+            }
+
+            $preview_payload = array(
+                'banner_id' => (int) $banner->banner_id,
+                'banner_name' => sanitize_text_field($banner->banner_name ?? ''),
+                'banner_title' => sanitize_text_field($banner->banner_title ?? ''),
+                'banner_subtitle' => sanitize_textarea_field($banner->banner_subtitle ?? ''),
+                'banner_status' => sanitize_key($banner->banner_status ?? 'inactive'),
+                'banner_height' => sanitize_text_field($banner->banner_height ?? ''),
+                'video_url_value' => $sanitized_video_value,
+                'video_input_type' => sanitize_text_field($banner->video_input_type ?? ''),
+                'video_autoplay' => isset($banner->enable_autoplay) ? (int) $banner->enable_autoplay : 1,
+                'video_muted' => isset($banner->enable_muted) ? (int) $banner->enable_muted : 1,
+                'video_loop' => isset($banner->enable_loop) ? (int) $banner->enable_loop : 1,
+                'video_controls' => isset($banner->enable_controls) ? (int) $banner->enable_controls : 1,
+                'video_modestbranding' => isset($banner->enable_modestbranding) ? (int) $banner->enable_modestbranding : 1,
+                'video_rel' => isset($banner->enable_rel) ? (int) $banner->enable_rel : 0,
+                'video_autoplay_delay' => isset($banner->video_autoplay_delay) ? (int) $banner->video_autoplay_delay : 3000,
+                'image_list' => wp_json_encode($decoded_images),
+                'image_slider_speed' => isset($banner->image_slider_speed) ? (int) $banner->image_slider_speed : 5000,
+                'image_slider_effect' => sanitize_key($banner->image_slider_effect ?? 'fade'),
+                'transition_effect' => sanitize_key($banner->transition_effect ?? 'fade'),
+                'mobile_display_mode' => sanitize_key($banner->mobile_display_mode ?? 'both'),
+                'cta_button_text' => sanitize_text_field($banner->cta_button_text ?? ''),
+                'cta_button_link' => esc_url_raw($banner->cta_button_link ?? ''),
+                'display_title' => isset($banner->display_title) ? (int) $banner->display_title : 0,
+                'display_subtitle' => isset($banner->display_subtitle) ? (int) $banner->display_subtitle : 0,
+                'display_button' => isset($banner->display_button) ? (int) $banner->display_button : 0,
+                'created_date' => $banner->created_date,
+                'modified_date' => $banner->modified_date,
+            );
+
+            wp_send_json_success($preview_payload);
         } catch (Exception $e) {
             error_log('ABVP Banner Preview: Exception - ' . $e->getMessage());
             wp_send_json_error('Server error: ' . $e->getMessage());

@@ -53,12 +53,12 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
         );
         
         // Get banners from database
-        $banners = AnMi_Video_Banner_Admin::get_all_banners();
+        $banners = AnMi_Banner_Video_Pro_Admin::fetch_all_active_banners();
         $banner_options = ['manual' => __('Manual Setup', 'anmi-video-banner')];
         
         if (!empty($banners)) {
             foreach ($banners as $banner) {
-                $banner_options[$banner->id] = $banner->name;
+                $banner_options[$banner->banner_id] = $banner->banner_name;
             }
         }
         
@@ -525,7 +525,7 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
         if ($settings['banner_source'] !== 'manual') {
             // Load from database
             $banner_id = intval($settings['banner_source']);
-            $banner = AnMi_Video_Banner_Admin::get_banner($banner_id);
+            $banner = AnMi_Banner_Video_Pro_Admin::fetch_banner_by_id($banner_id);
             
             if (!$banner) {
                 echo '<p style="color:red;">Banner not found. Please select a valid banner or use manual setup.</p>';
@@ -533,28 +533,28 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
             }
             
             // Use database values
-            $video_url = $banner->video_url;
-            $images = json_decode($banner->images, true);
-            $title = $banner->title;
-            $subtitle = $banner->subtitle;
-            $button_text = $banner->button_text;
-            $button_link = $banner->button_link;
-            $show_title = isset($banner->show_title) ? $banner->show_title : 0;
-            $show_subtitle = isset($banner->show_subtitle) ? $banner->show_subtitle : 0;
-            $show_button = isset($banner->show_button) ? $banner->show_button : 0;
-            $height = $banner->height;
-            $transition = $banner->transition;
-            $slider_speed = $banner->slider_speed;
-            $autoplay_delay = $banner->autoplay_delay;
-            $mobile_behavior = $banner->mobile_behavior;
+            $video_url = $banner->video_url_value;
+            $images = json_decode($banner->image_list, true);
+            $title = $banner->banner_title;
+            $subtitle = $banner->banner_subtitle;
+            $button_text = $banner->cta_button_text;
+            $button_link = $banner->cta_button_link;
+            $show_title = isset($banner->display_title) ? $banner->display_title : 0;
+            $show_subtitle = isset($banner->display_subtitle) ? $banner->display_subtitle : 0;
+            $show_button = isset($banner->display_button) ? $banner->display_button : 0;
+            $height = $banner->banner_height;
+            $transition = $banner->transition_effect;
+            $slider_speed = $banner->image_slider_speed;
+            $autoplay_delay = $banner->video_autoplay_delay;
+            $mobile_behavior = $banner->mobile_display_mode;
             
             // Video settings (v1.6.13)
-            $video_autoplay = isset($banner->video_autoplay) ? $banner->video_autoplay : 1;
-            $video_muted = isset($banner->video_muted) ? $banner->video_muted : 1;
-            $video_loop = isset($banner->video_loop) ? $banner->video_loop : 1;
-            $video_controls = isset($banner->video_controls) ? $banner->video_controls : 1;
-            $video_modestbranding = isset($banner->video_modestbranding) ? $banner->video_modestbranding : 1;
-            $video_rel = isset($banner->video_rel) ? $banner->video_rel : 0;
+            $video_autoplay = isset($banner->enable_autoplay) ? $banner->enable_autoplay : 1;
+            $video_muted = isset($banner->enable_muted) ? $banner->enable_muted : 1;
+            $video_loop = isset($banner->enable_loop) ? $banner->enable_loop : 1;
+            $video_controls = isset($banner->enable_controls) ? $banner->enable_controls : 1;
+            $video_modestbranding = isset($banner->enable_modestbranding) ? $banner->enable_modestbranding : 1;
+            $video_rel = isset($banner->enable_rel) ? $banner->enable_rel : 0;
         } else {
             // Use manual setup
             $video_url = !empty($settings['video_url']) ? $settings['video_url'] : '';

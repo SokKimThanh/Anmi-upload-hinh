@@ -32,11 +32,11 @@ if (!defined('ABSPATH')) {
             <div class="stat-label">Total Banners</div>
         </div>
         <div class="stat-box">
-            <div class="stat-number"><?php echo count(array_filter($banners, function($b) { return $b->status == 'active'; })); ?></div>
+            <div class="stat-number"><?php echo count(array_filter($banners, function($b) { return $b->banner_status == 'active'; })); ?></div>
             <div class="stat-label">Active</div>
         </div>
         <div class="stat-box">
-            <div class="stat-number"><?php echo count(array_filter($banners, function($b) { return $b->status == 'inactive'; })); ?></div>
+            <div class="stat-number"><?php echo count(array_filter($banners, function($b) { return $b->banner_status == 'inactive'; })); ?></div>
             <div class="stat-label">Inactive</div>
         </div>
     </div>
@@ -78,19 +78,38 @@ if (!defined('ABSPATH')) {
             </thead>
             <tbody>
                 <?php foreach ($banners as $banner): 
-                    $images = json_decode($banner->images, true);
-                    $first_image = !empty($images) && is_array($images) ? $images[0] : '';
-                    $image_count = is_array($images) ? count($images) : 0;
-                    
+                    $images = json_decode($banner->image_list, true);
+                    if (!is_array($images)) {
+                        $images = array();
+                    }
+                    $first_image = !empty($images) ? $images[0] : '';
+                    $image_count = count($images);
+
                     // Determine video type and icon
+                    $video_display_source = $banner->video_url_value;
+                    if ($banner->video_input_type === 'embed' && preg_match('/src=["\']([^"\']+)["\']/', $banner->video_url_value, $matches)) {
+                        $video_display_source = $matches[1];
+                    }
+
                     $video_type = 'Direct URL';
                     $video_icon = '🎥';
-                    if (strpos($banner->video_url, 'youtube.com') !== false || strpos($banner->video_url, 'youtu.be') !== false) {
+                    if ($video_display_source && (strpos($video_display_source, 'youtube.com') !== false || strpos($video_display_source, 'youtu.be') !== false)) {
                         $video_type = 'YouTube';
                         $video_icon = '📺';
-                    } elseif (strpos($banner->video_url, 'vimeo.com') !== false) {
+                    } elseif ($video_display_source && strpos($video_display_source, 'vimeo.com') !== false) {
                         $video_type = 'Vimeo';
                         $video_icon = '🎞️';
+                    }
+
+                    $video_label = '';
+                    if ($video_display_source) {
+                        if (function_exists('mb_strimwidth')) {
+                            $video_label = mb_strimwidth($video_display_source, 0, 40, '...');
+                        } else {
+                            $video_label = strlen($video_display_source) > 40
+                                ? substr($video_display_source, 0, 40) . '...'
+                                : $video_display_source;
+                        }
                     }
                 ?>
                 <tr>
@@ -110,19 +129,19 @@ if (!defined('ABSPATH')) {
                     
                     <td class="column-name">
                         <strong>
-                            <a href="<?php echo admin_url('admin.php?page=anmi-video-banner-edit&id=' . $banner->id); ?>">
-                                <?php echo esc_html($banner->name); ?>
+                            <a href="<?php echo admin_url('admin.php?page=anmi-video-banner-edit&id=' . intval($banner->banner_id)); ?>">
+                                <?php echo esc_html($banner->banner_name); ?>
                             </a>
                         </strong>
-                        <?php if ($banner->title): ?>
-                            <br><small class="banner-subtitle"><?php echo esc_html($banner->title); ?></small>
+                        <?php if (!empty($banner->banner_title)): ?>
+                            <br><small class="banner-subtitle"><?php echo esc_html($banner->banner_title); ?></small>
                         <?php endif; ?>
                     </td>
                     
                     <td class="column-video">
                         <span class="video-type-badge"><?php echo $video_icon; ?> <?php echo $video_type; ?></span>
-                        <br><small class="video-url" title="<?php echo esc_attr($banner->video_url); ?>">
-                            <?php echo esc_html(substr($banner->video_url, 0, 40) . '...'); ?>
+                        <br><small class="video-url" title="<?php echo esc_attr($video_display_source); ?>">
+                            <?php echo $video_display_source ? esc_html($video_label) : '&mdash;'; ?>
                         </small>
                     </td>
                     
@@ -131,22 +150,22 @@ if (!defined('ABSPATH')) {
                             <span class="dashicons dashicons-images-alt2"></span>
                             <?php echo $image_count; ?> images
                         </span>
-                        <br><small>Slider: <?php echo ($banner->slider_speed / 1000); ?>s/slide</small>
+                        <br><small>Slider: <?php echo ($banner->image_slider_speed / 1000); ?>s/slide</small>
                     </td>
                     
                     <td class="column-shortcode">
                         <input type="text" 
                                class="shortcode-input" 
-                               value='[anmi_video_banner id="<?php echo $banner->id; ?>"]' 
+                               value='[anmi_video_banner id="<?php echo intval($banner->banner_id); ?>"]' 
                                readonly 
                                onclick="this.select()">
-                        <button class="button button-small copy-shortcode" data-shortcode='[anmi_video_banner id="<?php echo $banner->id; ?>"]'>
+                        <button class="button button-small copy-shortcode" data-shortcode='[anmi_video_banner id="<?php echo intval($banner->banner_id); ?>"]'>
                             <span class="dashicons dashicons-clipboard"></span> Copy
                         </button>
                     </td>
                     
                     <td class="column-status">
-                        <?php if ($banner->status == 'active'): ?>
+                        <?php if ($banner->banner_status == 'active'): ?>
                             <span class="status-badge status-active">Active</span>
                         <?php else: ?>
                             <span class="status-badge status-inactive">Inactive</span>
@@ -154,23 +173,23 @@ if (!defined('ABSPATH')) {
                     </td>
                     
                     <td class="column-date">
-                        <?php echo date('M j, Y', strtotime($banner->created_at)); ?>
-                        <br><small><?php echo date('g:i A', strtotime($banner->created_at)); ?></small>
+                        <?php echo date('M j, Y', strtotime($banner->created_date)); ?>
+                        <br><small><?php echo date('g:i A', strtotime($banner->created_date)); ?></small>
                     </td>
                     
                     <td class="column-actions">
-                        <a href="<?php echo admin_url('admin.php?page=anmi-video-banner-edit&id=' . $banner->id); ?>" 
+                        <a href="<?php echo admin_url('admin.php?page=anmi-video-banner-edit&id=' . intval($banner->banner_id)); ?>" 
                            class="button button-small">
                             <span class="dashicons dashicons-edit"></span> Edit
                         </a>
                         <button class="button button-small button-link-delete delete-banner" 
-                                data-banner-id="<?php echo $banner->id; ?>"
-                                data-banner-name="<?php echo esc_attr($banner->name); ?>">
+                                data-banner-id="<?php echo intval($banner->banner_id); ?>"
+                                data-banner-name="<?php echo esc_attr($banner->banner_name); ?>">
                             <span class="dashicons dashicons-trash"></span> Delete
                         </button>
                         <br>
                         <a href="#" class="button button-small preview-banner" 
-                           data-banner-id="<?php echo $banner->id; ?>">
+                           data-banner-id="<?php echo intval($banner->banner_id); ?>">
                             <span class="dashicons dashicons-visibility"></span> Preview
                         </a>
                     </td>
@@ -223,6 +242,9 @@ if (!defined('ABSPATH')) {
 
 <script>
 jQuery(document).ready(function($) {
+    var activePreviewIntervals = [];
+    var previewSliderInterval = null;
+
     // Copy shortcode
     $('.copy-shortcode').on('click', function(e) {
         e.preventDefault();
@@ -251,11 +273,11 @@ jQuery(document).ready(function($) {
         }
         
         $.ajax({
-            url: anmiBannerAdmin.ajax_url,
+            url: abvpBannerAdmin.ajax_url,
             type: 'POST',
             data: {
-                action: 'anmi_delete_banner',
-                nonce: anmiBannerAdmin.nonce,
+                action: 'abvp_delete_banner',
+                nonce: abvpBannerAdmin.nonce,
                 banner_id: bannerId
             },
             success: function(response) {
@@ -341,16 +363,16 @@ jQuery(document).ready(function($) {
         
         // Load banner data via AJAX
         console.log('Sending AJAX request...');
-        console.log('AJAX URL:', anmiBannerAdmin.ajax_url);
-        console.log('Nonce:', anmiBannerAdmin.nonce);
+        console.log('AJAX URL:', abvpBannerAdmin.ajax_url);
+        console.log('Nonce:', abvpBannerAdmin.nonce);
         
         $.ajax({
-            url: anmiBannerAdmin.ajax_url,
+            url: abvpBannerAdmin.ajax_url,
             type: 'POST',
             data: {
-                action: 'anmi_get_banner_preview',
+                action: 'abvp_get_banner_preview',
                 banner_id: bannerId,
-                nonce: anmiBannerAdmin.nonce
+                nonce: abvpBannerAdmin.nonce
             },
             success: function(response) {
                 console.log('AJAX Success:', response);
@@ -377,25 +399,68 @@ jQuery(document).ready(function($) {
         
         $('.anmi-modal-loading').hide();
         console.log('Loading hidden');
-        
+
+        // Clear any previous preview timers before rendering a new one
+        activePreviewIntervals.forEach(function(intervalId) {
+            if (intervalId) {
+                clearInterval(intervalId);
+            }
+        });
+        activePreviewIntervals = [];
+        previewSliderInterval = null;
+
+        function ensureNumericFlag(value, fallback) {
+            var parsed = parseInt(value, 10);
+            return isNaN(parsed) ? fallback : parsed;
+        }
+
+        function ensureNonNegativeInt(value, fallback, min) {
+            var parsed = parseInt(value, 10);
+            if (isNaN(parsed)) {
+                return fallback;
+            }
+            if (typeof min === 'number' && parsed < min) {
+                return fallback;
+            }
+            return parsed;
+        }
+
+        function sanitizeEffect(value, fallback) {
+            if (!value) {
+                return fallback;
+            }
+            var sanitized = String(value).trim().toLowerCase();
+            return sanitized === '' ? fallback : sanitized;
+        }
+
         // Parse images
         var images = [];
         try {
-            images = JSON.parse(banner.images);
+            images = JSON.parse(banner.image_list);
             console.log('Parsed images:', images);
-        } catch(e) {
+        } catch (e) {
             console.error('Failed to parse images:', e);
-            images = [banner.images];
+            images = [];
         }
-        
+
         if (!Array.isArray(images)) {
-            images = [images];
+            images = [];
         }
+
+        images = images
+            .filter(function(url) {
+                return typeof url === 'string' && url.trim() !== '';
+            })
+            .map(function(url) {
+                return url.trim();
+            });
+
+        var firstImage = images.length ? images[0] : '';
         
         // Get video URL - extract from embed code if needed
-        var videoUrl = banner.video_url;
+        var videoUrl = (banner.video_url_value || '').toString().trim();
         console.log('Original video_url:', videoUrl);
-        console.log('video_type:', banner.video_type);
+        console.log('video_type:', banner.video_input_type);
         
         // If it looks like iframe code, extract src URL
         if (videoUrl && videoUrl.indexOf('<iframe') !== -1) {
@@ -412,22 +477,47 @@ jQuery(document).ready(function($) {
         var videoType = 'direct';
         var embedUrl = videoUrl;
         var videoId = null;
-        
-        // Get video settings (v1.6.13)
-        var videoAutoplay = banner.video_autoplay || 1;
-        var videoMuted = banner.video_muted || 1;
-        var videoLoop = banner.video_loop || 1;
-        var videoControls = banner.video_controls || 1;
-        var videoModestbranding = banner.video_modestbranding || 1;
-        var videoRel = banner.video_rel || 0;
-        
+
+        var videoAutoplay = ensureNumericFlag(banner.video_autoplay, 1);
+        var videoMuted = ensureNumericFlag(banner.video_muted, 1);
+        var videoLoop = ensureNumericFlag(banner.video_loop, 1);
+        var videoControls = ensureNumericFlag(banner.video_controls, 1);
+        var videoModestbranding = ensureNumericFlag(banner.video_modestbranding, 1);
+        var videoRel = ensureNumericFlag(banner.video_rel, 0);
+
+        var autoplayDelay = ensureNonNegativeInt(banner.video_autoplay_delay, 3000, 0);
+        var sliderSpeed = ensureNonNegativeInt(banner.image_slider_speed, 5000, 1000);
+        var sliderEffect = sanitizeEffect(banner.image_slider_effect, 'fade');
+        var transitionEffect = sanitizeEffect(banner.transition_effect, 'fade');
+        var mobileDisplayMode = sanitizeEffect(banner.mobile_display_mode, 'both');
+
+        var sliderSpeedSeconds = Math.round((sliderSpeed / 1000) * 10) / 10;
+        var showTitle = ensureNumericFlag(banner.display_title, 0);
+        var showSubtitle = ensureNumericFlag(banner.display_subtitle, 0);
+        var showButton = ensureNumericFlag(banner.display_button, 0);
+        var ctaButtonLink = banner.cta_button_link || '#';
+        var ctaButtonText = (banner.cta_button_text || '').trim();
+        var bannerTitle = (banner.banner_title || '').trim();
+        var bannerSubtitle = (banner.banner_subtitle || '').trim();
+        if (!ctaButtonLink) {
+            ctaButtonLink = '#';
+        }
+
         console.log('Video settings:', {
             autoplay: videoAutoplay,
             muted: videoMuted,
             loop: videoLoop,
             controls: videoControls,
             modestbranding: videoModestbranding,
-            rel: videoRel
+            rel: videoRel,
+            autoplayDelay: autoplayDelay,
+            sliderSpeed: sliderSpeed,
+            sliderEffect: sliderEffect,
+            transitionEffect: transitionEffect,
+            mobileDisplayMode: mobileDisplayMode,
+            showTitle: showTitle,
+            showSubtitle: showSubtitle,
+            showButton: showButton
         });
         
         // YouTube detection (supports youtu.be with query parameters)
@@ -475,13 +565,13 @@ jQuery(document).ready(function($) {
         // LEFT COLUMN: Video Preview
         html += '<div class="anmi-preview-video-column">';
         html += '<h3>🎬 Video Preview</h3>';
-        html += '<div class="anmi-video-banner-container ' + uniqueId + ' transition-' + banner.transition + '" ' +
-                'style="height: 400px; position: relative;" ' +
-                'data-autoplay-delay="' + banner.autoplay_delay + '" ' +
-                'data-mobile-behavior="both" ' +
-                'data-slider-speed="' + banner.slider_speed + '" ' +
-                'data-slider-effect="' + banner.slider_effect + '" ' +
-                'data-video-type="' + videoType + '">';
+    html += '<div class="anmi-video-banner-container ' + uniqueId + ' transition-' + transitionEffect + '" ' +
+        'style="height: 400px; position: relative;" ' +
+        'data-autoplay-delay="' + autoplayDelay + '" ' +
+        'data-mobile-behavior="' + mobileDisplayMode + '" ' +
+        'data-slider-speed="' + sliderSpeed + '" ' +
+        'data-slider-effect="' + sliderEffect + '" ' +
+        'data-video-type="' + videoType + '">';
         
         // Video/Iframe - Use PRODUCTION classes for CSS compatibility
         if (videoType === 'youtube' || videoType === 'vimeo') {
@@ -496,26 +586,26 @@ jQuery(document).ready(function($) {
             console.log('Creating video element with URL:', embedUrl);
             html += '<video class="anmi-banner-video" ' +
                     'loop muted playsinline preload="metadata" ' +
-                    'poster="' + (images[0] || '') + '">' +
+                    'poster="' + firstImage + '">' +
                     '<source src="' + embedUrl + '" type="video/mp4">' +
                     '</video>';
         }
         
         // Content Overlay (if exists)
-        if (banner.title || banner.subtitle || banner.button_text) {
+        if (bannerTitle || bannerSubtitle || ctaButtonText) {
             html += '<div class="anmi-banner-content" ' +
-                    'data-show-title="' + banner.show_title + '" ' +
-                    'data-show-subtitle="' + banner.show_subtitle + '" ' +
-                    'data-show-button="' + banner.show_button + '">';
+                    'data-show-title="' + showTitle + '" ' +
+                    'data-show-subtitle="' + showSubtitle + '" ' +
+                    'data-show-button="' + showButton + '">';
             
-            if (banner.title && banner.show_title == '1') {
-                html += '<h1 class="anmi-banner-title">' + banner.title + '</h1>';
+            if (bannerTitle && showTitle === 1) {
+                html += '<h1 class="anmi-banner-title">' + bannerTitle + '</h1>';
             }
-            if (banner.subtitle && banner.show_subtitle == '1') {
-                html += '<p class="anmi-banner-subtitle">' + banner.subtitle + '</p>';
+            if (bannerSubtitle && showSubtitle === 1) {
+                html += '<p class="anmi-banner-subtitle">' + bannerSubtitle + '</p>';
             }
-            if (banner.button_text && banner.show_button == '1') {
-                html += '<a href="' + banner.button_link + '" class="anmi-banner-btn" target="_blank">' + banner.button_text + '</a>';
+            if (ctaButtonText && showButton === 1) {
+                html += '<a href="' + ctaButtonLink + '" class="anmi-banner-btn" target="_blank">' + ctaButtonText + '</a>';
             }
             
             html += '</div>';
@@ -568,7 +658,7 @@ jQuery(document).ready(function($) {
             
             // Add slider info
             html += '<div style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 4px; font-size: 12px;">' +
-                    images.length + ' slides | ' + (banner.slider_speed / 1000) + 's | ' + banner.slider_effect +
+                    images.length + ' slides | ' + sliderSpeedSeconds + 's | ' + sliderEffect +
                     '</div>';
         }
         
@@ -588,13 +678,13 @@ jQuery(document).ready(function($) {
         var productionId = 'anmi-production-demo-' + Date.now();
         
         // Production-style container
-        html += '<div class="anmi-video-banner-container ' + productionId + ' transition-' + banner.transition + '" ' +
-                'style="height: 500px; position: relative; cursor: pointer;" ' +
-                'data-autoplay-delay="' + banner.autoplay_delay + '" ' +
-                'data-mobile-behavior="both" ' +
-                'data-slider-speed="' + banner.slider_speed + '" ' +
-                'data-slider-effect="' + banner.slider_effect + '" ' +
-                'data-video-type="' + videoType + '">';
+    html += '<div class="anmi-video-banner-container ' + productionId + ' transition-' + transitionEffect + '" ' +
+        'style="height: 500px; position: relative; cursor: pointer;" ' +
+        'data-autoplay-delay="' + autoplayDelay + '" ' +
+        'data-mobile-behavior="' + mobileDisplayMode + '" ' +
+        'data-slider-speed="' + sliderSpeed + '" ' +
+        'data-slider-effect="' + sliderEffect + '" ' +
+        'data-video-type="' + videoType + '">';
         
         // Image Slider (visible by default)
         images.forEach(function(imageUrl, index) {
@@ -614,28 +704,28 @@ jQuery(document).ready(function($) {
                     'allowfullscreen>' +
                     '</iframe>';
         } else {
-            html += '<video class="anmi-banner-video" ' +
-                    'loop muted playsinline preload="metadata" ' +
-                    'poster="' + (images[0] || '') + '">' +
-                    '<source src="' + embedUrl + '" type="video/mp4">' +
-                    '</video>';
+        html += '<video class="anmi-banner-video" ' +
+            'loop muted playsinline preload="metadata" ' +
+            'poster="' + firstImage + '">' +
+            '<source src="' + embedUrl + '" type="video/mp4">' +
+            '</video>';
         }
         
         // Content Overlay (if exists)
-        if (banner.title || banner.subtitle || banner.button_text) {
+        if (bannerTitle || bannerSubtitle || ctaButtonText) {
             html += '<div class="anmi-banner-content" ' +
-                    'data-show-title="' + banner.show_title + '" ' +
-                    'data-show-subtitle="' + banner.show_subtitle + '" ' +
-                    'data-show-button="' + banner.show_button + '">';
+                    'data-show-title="' + showTitle + '" ' +
+                    'data-show-subtitle="' + showSubtitle + '" ' +
+                    'data-show-button="' + showButton + '">';
             
-            if (banner.title && banner.show_title == '1') {
-                html += '<h1 class="anmi-banner-title">' + banner.title + '</h1>';
+            if (bannerTitle && showTitle === 1) {
+                html += '<h1 class="anmi-banner-title">' + bannerTitle + '</h1>';
             }
-            if (banner.subtitle && banner.show_subtitle == '1') {
-                html += '<p class="anmi-banner-subtitle">' + banner.subtitle + '</p>';
+            if (bannerSubtitle && showSubtitle === 1) {
+                html += '<p class="anmi-banner-subtitle">' + bannerSubtitle + '</p>';
             }
-            if (banner.button_text && banner.show_button == '1') {
-                html += '<a href="' + banner.button_link + '" class="anmi-banner-btn" target="_blank">' + banner.button_text + '</a>';
+            if (ctaButtonText && showButton === 1) {
+                html += '<a href="' + ctaButtonLink + '" class="anmi-banner-btn" target="_blank">' + ctaButtonText + '</a>';
             }
             
             html += '</div>';
@@ -697,7 +787,7 @@ jQuery(document).ready(function($) {
                 '<p><strong>💡 Tip:</strong> Hover chuột vào banner để xem video phát</p>' +
                 '<p><strong>💡Volume Control:</strong> Click volume button (bottom-right) để bật/tắt âm thanh khi video đang phát ' +
                 '<span style="color: #FF9800;">(⚠️ Chỉ hoạt động với MP4 video, không hỗ trợ YouTube/Vimeo iframe)</span></p>' +
-                '<p><strong>💡hortcode:</strong> <code>[anmi_video_banner id="' + banner.id + '"]</code></p>' +
+                '<p><strong>💡Shortcode:</strong> <code>[anmi_video_banner id="' + banner.banner_id + '"]</code></p>' +
                 '</div>';
         
         console.log('HTML length:', html.length);
@@ -725,7 +815,7 @@ jQuery(document).ready(function($) {
             }
             
             // Initialize standalone slider preview
-            initPreviewSlider(banner.slider_speed, banner.slider_effect, images.length);
+            initPreviewSlider(sliderSpeed, sliderEffect, images.length);
             
             // ============================================
             // Initialize Production Demo (hover effect)
@@ -761,7 +851,8 @@ jQuery(document).ready(function($) {
                             $slides.eq(productionCurrentSlide).css('opacity', '1');
                             $dots.eq(productionCurrentSlide).css('background', '#fff').addClass('active');
                         }
-                    }, banner.slider_speed);
+                    }, sliderSpeed);
+                    activePreviewIntervals.push(productionSliderInterval);
                 }
                 
                 // HOVER: Stop slider, show video/iframe (but don't play yet)
@@ -825,7 +916,8 @@ jQuery(document).ready(function($) {
                                 $slides.eq(productionCurrentSlide).css('opacity', '1');
                                 $dots.eq(productionCurrentSlide).css('background', '#fff').addClass('active');
                             }
-                        }, banner.slider_speed);
+                        }, sliderSpeed);
+                        activePreviewIntervals.push(productionSliderInterval);
                     }
                 });
                 
@@ -874,21 +966,24 @@ jQuery(document).ready(function($) {
         
         // Hide loader when iframe/video loads (CRITICAL FIX)
         setTimeout(function() {
-            // For iframe (YouTube/Vimeo) - Preview only
-            $('.anmi-preview-iframe').on('load', function() {
-                console.log('Preview iframe loaded - hiding loader');
-                $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
-            });
-            
-            // For video element (MP4) - Preview only
-            $('.anmi-preview-video').on('loadeddata', function() {
-                console.log('Preview video loaded - hiding loader');
-                $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
-            });
-            
-            // Fallback: Force hide loader after 3 seconds
+            var $modalContent = $('#anmi-preview-container');
+
+            $modalContent.find('.anmi-banner-iframe')
+                .off('load.preview')
+                .on('load.preview', function() {
+                    console.log('Preview iframe loaded - hiding loader');
+                    $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
+                });
+
+            $modalContent.find('video.anmi-banner-video')
+                .off('loadeddata.preview')
+                .on('loadeddata.preview', function() {
+                    console.log('Preview video loaded - hiding loader');
+                    $(this).closest('.anmi-video-banner-container').find('.anmi-banner-loader').fadeOut(300);
+                });
+
             setTimeout(function() {
-                $('.anmi-banner-loader').fadeOut(300);
+                $modalContent.find('.anmi-banner-loader').fadeOut(300);
                 console.log('Loader force-hidden after 3s timeout');
             }, 3000);
         }, 200);
@@ -896,42 +991,51 @@ jQuery(document).ready(function($) {
     
     // Slider preview auto-play
     function initPreviewSlider(speed, effect, totalSlides) {
-        if (totalSlides <= 1) return;
-        
+        if (totalSlides <= 1) {
+            return;
+        }
+
+        speed = parseInt(speed, 10);
+        if (isNaN(speed) || speed <= 0) {
+            speed = 5000;
+        }
+
+        effect = effect ? String(effect).toLowerCase() : 'fade';
+
         var currentSlide = 0;
         var $slides = $('.anmi-preview-slide');
         var $dots = $('.anmi-preview-dot');
-        
-        // Click dot to change slide
-        $dots.on('click', function() {
+
+        $dots.off('click.preview').on('click.preview', function() {
             var slideIndex = $(this).data('slide');
             showSlide(slideIndex);
             currentSlide = slideIndex;
         });
-        
-        // Auto advance
-        setInterval(function() {
+
+        if (previewSliderInterval) {
+            clearInterval(previewSliderInterval);
+        }
+
+        previewSliderInterval = setInterval(function() {
             currentSlide = (currentSlide + 1) % totalSlides;
             showSlide(currentSlide);
         }, speed);
-        
+
+        activePreviewIntervals.push(previewSliderInterval);
+
         function showSlide(index) {
-            // Fade effect
             if (effect === 'fade') {
                 $slides.css('opacity', '0');
                 $slides.eq(index).css('opacity', '1');
-            } 
-            // Slide effect (horizontal)
-            else if (effect === 'slide') {
+            } else if (effect === 'slide') {
                 $slides.css({
                     'transform': 'translateX(-' + (index * 100) + '%)',
                     'opacity': '1'
                 });
             }
-            
-            // Update dots
-            $dots.css('background', 'rgba(255,255,255,0.5)');
-            $dots.eq(index).css('background', '#fff');
+
+            $dots.css('background', 'rgba(255,255,255,0.5)').removeClass('active');
+            $dots.eq(index).css('background', '#fff').addClass('active');
         }
     }
     
@@ -948,6 +1052,18 @@ jQuery(document).ready(function($) {
     function closePreviewModal() {
         $('#anmi-preview-modal').fadeOut(300);
         $('body').removeClass('anmi-modal-open');
+
+        activePreviewIntervals.forEach(function(intervalId) {
+            if (intervalId) {
+                clearInterval(intervalId);
+            }
+        });
+        activePreviewIntervals = [];
+
+        if (previewSliderInterval) {
+            clearInterval(previewSliderInterval);
+            previewSliderInterval = null;
+        }
         
         // Clear preview content after animation
         setTimeout(function() {

@@ -10,14 +10,14 @@ if (!defined('ABSPATH')) {
 
 // Parse images if editing
 $images_array = array();
-if ($banner && !empty($banner->images)) {
-    $images_array = json_decode($banner->images, true);
+if ($banner && !empty($banner->image_list)) {
+    $images_array = json_decode($banner->image_list, true);
     if (!is_array($images_array)) {
         $images_array = array();
     }
 }
 
-$is_edit = ($banner && $banner->id > 0);
+$is_edit = ($banner && $banner->banner_id > 0);
 $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
 ?>
 
@@ -26,8 +26,8 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
     <hr class="wp-header-end">
     
     <form id="anmi-banner-form" method="post">
-        <?php wp_nonce_field('anmi_banner_nonce', 'anmi_nonce'); ?>
-        <input type="hidden" name="banner_id" id="banner_id" value="<?php echo $is_edit ? $banner->id : '0'; ?>">
+    <?php wp_nonce_field('abvp_banner_nonce', 'abvp_nonce'); ?>
+    <input type="hidden" name="banner_id" id="banner_id" value="<?php echo $is_edit ? $banner->banner_id : '0'; ?>">
         
         <div class="anmi-form-wrapper">
             
@@ -48,7 +48,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                            id="banner_name" 
                                            name="name" 
                                            class="regular-text" 
-                                           value="<?php echo $is_edit ? esc_attr($banner->name) : ''; ?>" 
+                                           value="<?php echo $is_edit ? esc_attr($banner->banner_name) : ''; ?>" 
                                            required>
                                     <p class="description">Tên nội bộ để nhận diện banner (vd: "Banner Trang Chủ")</p>
                                 </td>
@@ -68,10 +68,10 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <th><label for="video_type">Loại Video</label></th>
                                 <td>
                                     <select id="video_type" name="video_type" class="regular-text">
-                                        <option value="url" <?php echo ($is_edit && $banner->video_type == 'url') ? 'selected' : ''; ?>>URL Trực Tiếp (MP4)</option>
-                                        <option value="youtube" <?php echo ($is_edit && $banner->video_type == 'youtube') ? 'selected' : ''; ?>>YouTube</option>
-                                        <option value="vimeo" <?php echo ($is_edit && $banner->video_type == 'vimeo') ? 'selected' : ''; ?>>Vimeo</option>
-                                        <option value="embed" <?php echo ($is_edit && $banner->video_type == 'embed') ? 'selected' : ''; ?>>Mã Nhúng</option>
+                                        <option value="url" <?php echo ($is_edit && $banner->video_input_type == 'url') ? 'selected' : ''; ?>>URL Trực Tiếp (MP4)</option>
+                                        <option value="youtube" <?php echo ($is_edit && $banner->video_input_type == 'youtube') ? 'selected' : ''; ?>>YouTube</option>
+                                        <option value="vimeo" <?php echo ($is_edit && $banner->video_input_type == 'vimeo') ? 'selected' : ''; ?>>Vimeo</option>
+                                        <option value="embed" <?php echo ($is_edit && $banner->video_input_type == 'embed') ? 'selected' : ''; ?>>Mã Nhúng</option>
                                     </select>
                                 </td>
                             </tr>
@@ -83,7 +83,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                            id="video_url" 
                                            name="video_url" 
                                            class="large-text" 
-                                           value="<?php echo $is_edit ? esc_url($banner->video_url) : ''; ?>" 
+                                           value="<?php echo $is_edit ? esc_url($banner->video_url_value) : ''; ?>" 
                                            placeholder="https://example.com/video.mp4" 
                                            required>
                                     
@@ -118,7 +118,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                         class="large-text" 
                                         rows="8"
                                         placeholder='Paste iframe code here...&#10;Example:&#10;<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
-                                    ><?php echo $is_edit && $banner->video_type == 'embed' ? esc_textarea($banner->video_url) : ''; ?></textarea>
+                                    ><?php echo $is_edit && $banner->video_input_type == 'embed' ? esc_textarea($banner->video_url_value) : ''; ?></textarea>
                                     <p class="description">
                                         <strong>📋 Cách lấy mã nhúng:</strong><br>
                                         • <strong>YouTube:</strong> Vào video → Click "Share" → Click "Embed" → Copy toàn bộ code <code>&lt;iframe...&gt;</code><br>
@@ -158,7 +158,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <?php endif; ?>
                             </div>
                             
-                            <input type="hidden" id="images_json" name="images" value="<?php echo $is_edit ? esc_attr($banner->images) : '[]'; ?>">
+                            <input type="hidden" id="images_json" name="images" value="<?php echo $is_edit ? esc_attr($banner->image_list) : '[]'; ?>">
                         </div>
                         
                         <table class="form-table" style="margin-top: 20px;">
@@ -169,7 +169,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                            id="slider_speed" 
                                            name="slider_speed" 
                                            class="small-text" 
-                                           value="<?php echo $is_edit ? $banner->slider_speed : '3000'; ?>" 
+                                           value="<?php echo $is_edit ? $banner->image_slider_speed : '3000'; ?>" 
                                            min="1000" 
                                            max="10000" 
                                            step="500">
@@ -182,10 +182,10 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <th><label for="transition">Hiệu Ứng Chuyển</label></th>
                                 <td>
                                     <select id="transition" name="transition" class="regular-text">
-                                        <option value="fade" <?php echo ($is_edit && $banner->transition == 'fade') ? 'selected' : ''; ?>>Mờ Dần</option>
-                                        <option value="zoom" <?php echo ($is_edit && $banner->transition == 'zoom') ? 'selected' : ''; ?>>Phóng To</option>
-                                        <option value="blur" <?php echo ($is_edit && $banner->transition == 'blur') ? 'selected' : ''; ?>>Làm Mờ</option>
-                                        <option value="slide" <?php echo ($is_edit && $banner->transition == 'slide') ? 'selected' : ''; ?>>Trượt</option>
+                                        <option value="fade" <?php echo ($is_edit && $banner->transition_effect == 'fade') ? 'selected' : ''; ?>>Mờ Dần</option>
+                                        <option value="zoom" <?php echo ($is_edit && $banner->transition_effect == 'zoom') ? 'selected' : ''; ?>>Phóng To</option>
+                                        <option value="blur" <?php echo ($is_edit && $banner->transition_effect == 'blur') ? 'selected' : ''; ?>>Làm Mờ</option>
+                                        <option value="slide" <?php echo ($is_edit && $banner->transition_effect == 'slide') ? 'selected' : ''; ?>>Trượt</option>
                                     </select>
                                     <p class="description">Transition effect when switching from slider to video</p>
                                 </td>
@@ -219,7 +219,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                    id="show_title" 
                                                    name="show_title" 
                                                    value="1"
-                                                   <?php echo ($is_edit && !empty($banner->show_title)) ? 'checked' : ''; ?>>
+                                                   <?php echo ($is_edit && !empty($banner->display_title)) ? 'checked' : ''; ?>>
                                             <span class="slider-switch"></span>
                                         </label>
                                         <span class="description" style="margin-left: 10px;">Hiển thị tiêu đề trên banner</span>
@@ -234,7 +234,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                    id="show_subtitle" 
                                                    name="show_subtitle" 
                                                    value="1"
-                                                   <?php echo ($is_edit && !empty($banner->show_subtitle)) ? 'checked' : ''; ?>>
+                                                   <?php echo ($is_edit && !empty($banner->display_subtitle)) ? 'checked' : ''; ?>>
                                             <span class="slider-switch"></span>
                                         </label>
                                         <span class="description" style="margin-left: 10px;">Hiển thị phụ đề trên banner</span>
@@ -249,7 +249,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                    id="show_button" 
                                                    name="show_button" 
                                                    value="1"
-                                                   <?php echo ($is_edit && !empty($banner->show_button)) ? 'checked' : ''; ?>>
+                                                   <?php echo ($is_edit && !empty($banner->display_button)) ? 'checked' : ''; ?>>
                                             <span class="slider-switch"></span>
                                         </label>
                                         <span class="description" style="margin-left: 10px;">Hiển thị nút kêu gọi hành động</span>
@@ -266,7 +266,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                            id="title" 
                                            name="title" 
                                            class="large-text" 
-                                           value="<?php echo $is_edit ? esc_attr($banner->title) : ''; ?>" 
+                                           value="<?php echo $is_edit ? esc_attr($banner->banner_title) : ''; ?>" 
                                            placeholder="An Mi Tools - CNC Solutions">
                                 </td>
                             </tr>
@@ -278,7 +278,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                               name="subtitle" 
                                               class="large-text" 
                                               rows="3" 
-                                              placeholder="Hơn 20 năm kinh nghiệm trong lĩnh vực công cụ cắt gọt"><?php echo $is_edit ? esc_textarea($banner->subtitle) : ''; ?></textarea>
+                                              placeholder="Hơn 20 năm kinh nghiệm trong lĩnh vực công cụ cắt gọt"><?php echo $is_edit ? esc_textarea($banner->banner_subtitle) : ''; ?></textarea>
                                 </td>
                             </tr>
                             
@@ -289,7 +289,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                            id="button_text" 
                                            name="button_text" 
                                            class="regular-text" 
-                                           value="<?php echo $is_edit ? esc_attr($banner->button_text) : ''; ?>" 
+                                           value="<?php echo $is_edit ? esc_attr($banner->cta_button_text) : ''; ?>" 
                                            placeholder="Tìm Hiểu Thêm">
                                 </td>
                             </tr>
@@ -301,7 +301,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                            id="button_link" 
                                            name="button_link" 
                                            class="large-text" 
-                                           value="<?php echo $is_edit ? esc_url($banner->button_link) : ''; ?>" 
+                                           value="<?php echo $is_edit ? esc_url($banner->cta_button_link) : ''; ?>" 
                                            placeholder="https://anmitools.com">
                                 </td>
                             </tr>
@@ -324,8 +324,8 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                             <div class="status-section">
                                 <label for="status"><strong>Trạng Thái:</strong></label>
                                 <select id="status" name="status" class="regular-text">
-                                    <option value="active" <?php echo ($is_edit && $banner->status == 'active') ? 'selected' : ''; ?>>Kích Hoạt</option>
-                                    <option value="inactive" <?php echo ($is_edit && $banner->status == 'inactive') ? 'selected' : ''; ?>>Vô Hiệu</option>
+                                    <option value="active" <?php echo ($is_edit && $banner->banner_status == 'active') ? 'selected' : ''; ?>>Kích Hoạt</option>
+                                    <option value="inactive" <?php echo ($is_edit && $banner->banner_status == 'inactive') ? 'selected' : ''; ?>>Vô Hiệu</option>
                                 </select>
                             </div>
                             
@@ -335,7 +335,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                     <?php echo $is_edit ? 'Cập Nhật Banner' : 'Tạo Banner'; ?>
                                 </button>
                                 
-                                <a href="<?php echo admin_url('admin.php?page=anmi-video-banners'); ?>" class="button button-secondary button-large">
+                                <a href="<?php echo admin_url('admin.php?page=anmi-video-banner'); ?>" class="button button-secondary button-large">
                                     Hủy Bỏ
                                 </a>
                             </div>
@@ -357,7 +357,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                            id="height" 
                                            name="height" 
                                            class="small-text" 
-                                           value="<?php echo $is_edit ? esc_attr($banner->height) : '600px'; ?>">
+                                           value="<?php echo $is_edit ? esc_attr($banner->banner_height) : '600px'; ?>">
                                     <p class="description">px, vh, hoặc %</p>
                                 </td>
                             </tr>
@@ -369,7 +369,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                            id="autoplay_delay" 
                                            name="autoplay_delay" 
                                            class="small-text" 
-                                           value="<?php echo $is_edit ? $banner->autoplay_delay : '0'; ?>" 
+                                           value="<?php echo $is_edit ? $banner->video_autoplay_delay : '0'; ?>" 
                                            min="0" 
                                            max="10" 
                                            step="0.5">
@@ -381,9 +381,9 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <th><label for="mobile_behavior">Hành Vi Mobile</label></th>
                                 <td>
                                     <select id="mobile_behavior" name="mobile_behavior">
-                                        <option value="image" <?php echo ($is_edit && $banner->mobile_behavior == 'image') ? 'selected' : ''; ?>>Chỉ Hình Ảnh</option>
-                                        <option value="video" <?php echo ($is_edit && $banner->mobile_behavior == 'video') ? 'selected' : ''; ?>>Chỉ Video</option>
-                                        <option value="both" <?php echo ($is_edit && $banner->mobile_behavior == 'both') ? 'selected' : ''; ?>>Cả Hai (Chạm để Phát)</option>
+                                        <option value="image" <?php echo ($is_edit && $banner->mobile_display_mode == 'image') ? 'selected' : ''; ?>>Chỉ Hình Ảnh</option>
+                                        <option value="video" <?php echo ($is_edit && $banner->mobile_display_mode == 'video') ? 'selected' : ''; ?>>Chỉ Video</option>
+                                        <option value="both" <?php echo ($is_edit && $banner->mobile_display_mode == 'both') ? 'selected' : ''; ?>>Cả Hai (Chạm để Phát)</option>
                                     </select>
                                 </td>
                             </tr>
@@ -412,11 +412,11 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <th><label for="video_autoplay">🎬 Tự Động Phát</label></th>
                                 <td>
                                     <label class="switch" title="Bật/Tắt tự động phát video">
-                                        <input type="checkbox" 
-                                               id="video_autoplay" 
-                                               name="video_autoplay" 
-                                               value="1"
-                                               <?php echo ($is_edit && isset($banner->video_autoplay) && $banner->video_autoplay) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                         <input type="checkbox" 
+                             id="video_autoplay" 
+                             name="video_autoplay" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_autoplay) ? 'checked' : '') : 'checked'); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
                                     <span class="description" style="margin-left: 10px;">
@@ -429,11 +429,11 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <th><label for="video_muted">🔇 Tắt Tiếng</label></th>
                                 <td>
                                     <label class="switch" title="Bật/Tắt tiếng video">
-                                        <input type="checkbox" 
-                                               id="video_muted" 
-                                               name="video_muted" 
-                                               value="1"
-                                               <?php echo ($is_edit && isset($banner->video_muted) && $banner->video_muted) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                         <input type="checkbox" 
+                             id="video_muted" 
+                             name="video_muted" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_muted) ? 'checked' : '') : 'checked'); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
                                     <span class="description" style="margin-left: 10px;">
@@ -449,11 +449,11 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <th><label for="video_loop">🔁 Lặp Lại</label></th>
                                 <td>
                                     <label class="switch" title="Bật/Tắt lặp lại video">
-                                        <input type="checkbox" 
-                                               id="video_loop" 
-                                               name="video_loop" 
-                                               value="1"
-                                               <?php echo ($is_edit && isset($banner->video_loop) && $banner->video_loop) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                         <input type="checkbox" 
+                             id="video_loop" 
+                             name="video_loop" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_loop) ? 'checked' : '') : 'checked'); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
                                     <span class="description" style="margin-left: 10px;">
@@ -466,11 +466,11 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <th><label for="video_controls">🎚️ Hiện Controls</label></th>
                                 <td>
                                     <label class="switch" title="Bật/Tắt thanh điều khiển video">
-                                        <input type="checkbox" 
-                                               id="video_controls" 
-                                               name="video_controls" 
-                                               value="1"
-                                               <?php echo ($is_edit && isset($banner->video_controls) && $banner->video_controls) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                         <input type="checkbox" 
+                             id="video_controls" 
+                             name="video_controls" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_controls) ? 'checked' : '') : 'checked'); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
                                     <span class="description" style="margin-left: 10px;">
@@ -486,11 +486,11 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <th><label for="video_modestbranding">📺 Ẩn Logo YouTube</label></th>
                                 <td>
                                     <label class="switch" title="Bật/Tắt ẩn logo YouTube">
-                                        <input type="checkbox" 
-                                               id="video_modestbranding" 
-                                               name="video_modestbranding" 
-                                               value="1"
-                                               <?php echo ($is_edit && isset($banner->video_modestbranding) && $banner->video_modestbranding) ? 'checked' : (!$is_edit ? 'checked' : ''); ?>>
+                         <input type="checkbox" 
+                             id="video_modestbranding" 
+                             name="video_modestbranding" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_modestbranding) ? 'checked' : '') : 'checked'); ?>>
                                         <span class="slider-switch"></span>
                                     </label>
                                     <span class="description" style="margin-left: 10px;">
@@ -503,11 +503,11 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 <th><label for="video_rel">🎥 Gợi Ý Video</label></th>
                                 <td>
                                     <label class="switch" title="Bật/Tắt gợi ý video liên quan">
-                                        <input type="checkbox" 
-                                               id="video_rel" 
-                                               name="video_rel" 
-                                               value="1"
-                                               <?php echo ($is_edit && isset($banner->video_rel) && $banner->video_rel) ? 'checked' : ''; ?>>
+                         <input type="checkbox" 
+                             id="video_rel" 
+                             name="video_rel" 
+                             value="1"
+                             <?php echo ($is_edit && !empty($banner->enable_rel)) ? 'checked' : ''; ?>>
                                         <span class="slider-switch"></span>
                                     </label>
                                     <span class="description" style="margin-left: 10px;">
@@ -526,11 +526,11 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                         <h2>📋 Mã Nhúng</h2>
                     </div>
                     <div class="inside">
-                        <input type="text" 
-                               class="shortcode-display" 
-                               value='[anmi_video_banner id="<?php echo $banner->id; ?>"]' 
-                               readonly 
-                               onclick="this.select()">
+               <input type="text" 
+                   class="shortcode-display" 
+                   value='[anmi_video_banner id="<?php echo esc_attr($banner->banner_id); ?>"]' 
+                   readonly 
+                   onclick="this.select()">
                         <p class="description">Sao chép và dán mã nhúng này vào bất kỳ trang, bài viết hoặc widget nào.</p>
                     </div>
                 </div>
@@ -735,11 +735,11 @@ jQuery(document).ready(function($) {
         $submitBtn.prop('disabled', true).html('<span class="dashicons dashicons-update spin"></span> Đang lưu...');
         
         $.ajax({
-            url: anmiBannerAdmin.ajax_url,
+            url: abvpBannerAdmin.ajax_url,
             type: 'POST',
             data: {
-                action: 'anmi_save_banner',
-                nonce: anmiBannerAdmin.nonce,
+                action: 'abvp_save_banner',
+                nonce: abvpBannerAdmin.nonce,
                 banner_id: $('#banner_id').val(),
                 name: $('#banner_name').val(),
                 video_url: videoUrl,
@@ -770,7 +770,7 @@ jQuery(document).ready(function($) {
             success: function(response) {
                 if (response.success) {
                     // Redirect to list page with success message
-                    window.location.href = '<?php echo admin_url("admin.php?page=anmi-video-banners&message=saved"); ?>';
+                    window.location.href = '<?php echo admin_url("admin.php?page=anmi-video-banner&message=saved"); ?>';
                 } else {
                     alert('Lỗi: ' + response.data);
                     $submitBtn.prop('disabled', false).html(originalText);
@@ -785,11 +785,14 @@ jQuery(document).ready(function($) {
     
     // Make images sortable
     $('#images_preview_container').sortable({
-        update: function(event, ui) {
+        update: function() {
             var newOrder = [];
-            $('.image-preview-item').each(function() {
-                var imageUrl = $(this).find('input[name="images[]"]').val();
-                newOrder.push(imageUrl);
+            $('#images_preview_container .image-preview-item').each(function(index) {
+                var imageUrl = $(this).find('img').attr('src');
+                if (imageUrl) {
+                    newOrder.push(imageUrl);
+                }
+                $(this).attr('data-index', index);
             });
             imagesArray = newOrder;
             updateImagesJson();
@@ -805,10 +808,10 @@ jQuery(document).ready(function($) {
     
     function updateLivePreview() {
         // Get video URL based on type
-        var videoType = $('#video_type').val();
+        var selectedVideoType = $('#video_type').val();
         var videoUrl = '';
         
-        if (videoType === 'embed') {
+        if (selectedVideoType === 'embed') {
             var embedCode = $('#video_embed_code').val().trim();
             if (embedCode) {
                 // Extract src URL from iframe
@@ -821,8 +824,8 @@ jQuery(document).ready(function($) {
             videoUrl = $('#video_url').val();
         }
         
-        var title = $('#banner_title').val();
-        var subtitle = $('#banner_subtitle').val();
+        var title = $('#title').val();
+        var subtitle = $('#subtitle').val();
         var buttonText = $('#button_text').val();
         var buttonLink = $('#button_link').val();
         var showTitle = $('#show_title').is(':checked') ? '1' : '0';
@@ -831,7 +834,7 @@ jQuery(document).ready(function($) {
         var transition = $('#transition').val();
         var autoplayDelay = $('#autoplay_delay').val();
         var sliderSpeed = $('#slider_speed').val() || '3000';
-        var sliderEffect = $('#slider_effect').val();
+        var sliderEffect = 'fade';
         
         // Get video playback settings
         var videoAutoplay = $('#video_autoplay').is(':checked') ? 1 : 0;
@@ -853,14 +856,14 @@ jQuery(document).ready(function($) {
         }
         
         // Detect video type
-        var videoType = 'direct';
+        var derivedVideoType = 'direct';
         var embedUrl = videoUrl;
         var videoId = null;
         
         // YouTube detection
         var youtubeMatch = videoUrl.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i);
         if (youtubeMatch) {
-            videoType = 'youtube';
+            derivedVideoType = 'youtube';
             videoId = youtubeMatch[1];
             // Build YouTube URL with user settings
             embedUrl = 'https://www.youtube.com/embed/' + videoId + 
@@ -878,7 +881,7 @@ jQuery(document).ready(function($) {
         // Vimeo detection
         var vimeoMatch = videoUrl.match(/vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|)(\d+)(?:$|\/|\?)/i);
         if (vimeoMatch) {
-            videoType = 'vimeo';
+            derivedVideoType = 'vimeo';
             videoId = vimeoMatch[1];
             // Build Vimeo URL with user settings
             embedUrl = 'https://player.vimeo.com/video/' + videoId + 
@@ -899,7 +902,7 @@ jQuery(document).ready(function($) {
                    'data-mobile-behavior="both" ' +
                    'data-slider-speed="' + sliderSpeed + '" ' +
                    'data-slider-effect="' + sliderEffect + '" ' +
-                   'data-video-type="' + videoType + '">';
+                   'data-video-type="' + derivedVideoType + '">';
         
         // Image Slider (visible by default)
         imagesArray.forEach(function(imageUrl, index) {
@@ -1156,7 +1159,7 @@ jQuery(document).ready(function($) {
     updateCheckboxLabels();
     
     // Trigger preview update on field changes
-    $('#video_url, #video_embed_code, #banner_title, #banner_subtitle, #button_text, #button_link, #transition, #autoplay_delay, #slider_speed, #slider_effect').on('input change', function() {
+    $('#video_url, #video_embed_code, #title, #subtitle, #button_text, #button_link, #transition, #autoplay_delay, #slider_speed').on('input change', function() {
         updateLivePreview();
     });
     
