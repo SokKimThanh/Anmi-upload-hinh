@@ -132,6 +132,30 @@
     font-size: 13px;
 }
 
+.anmi-upload-info {
+    background: #f0f6fc;
+    border: 1px solid #c3e4ff;
+    border-radius: 4px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.anmi-upload-info h3 {
+    margin-top: 0;
+    color: #0073aa;
+}
+
+.anmi-upload-info ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.anmi-upload-info li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
 /* Progress indicator */
 .anmi-progress {
     background: #f0f0f1;

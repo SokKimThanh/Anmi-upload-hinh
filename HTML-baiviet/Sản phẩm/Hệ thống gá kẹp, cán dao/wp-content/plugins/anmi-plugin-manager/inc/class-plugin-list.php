@@ -323,6 +323,18 @@ class Anmi_PM_Plugin_List {
      * Display messages
      */
     private function display_messages() {
+        if (!isset($_GET['message']) && !isset($_GET['upload'])) {
+            return;
+        }
+        
+        if (isset($_GET['upload']) && $_GET['upload'] === 'success') {
+            $plugin = isset($_GET['plugin']) ? sanitize_text_field($_GET['plugin']) : '';
+            echo '<div class="notice notice-success is-dismissible"><p>';
+            echo '<strong>Success!</strong> Plugin uploaded successfully: ' . esc_html($plugin);
+            echo '</p></div>';
+            return;
+        }
+        
         if (!isset($_GET['message'])) {
             return;
         }
