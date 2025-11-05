@@ -626,6 +626,12 @@
     color: var(--anmi-color-muted);
 }
 
+.status-section select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .submit-actions {
     display: grid;
     gap: var(--anmi-spacing-100);
@@ -637,6 +643,7 @@
     display: inline-flex;
     align-items: center;
     gap: var(--anmi-spacing-050);
+    box-sizing: border-box;
 }
 
 .shortcode-display {
