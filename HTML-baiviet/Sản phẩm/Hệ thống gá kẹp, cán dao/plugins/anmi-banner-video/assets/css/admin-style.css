@@ -402,6 +402,10 @@
     background: var(--anmi-color-danger-bg);
 }
 
+.anmi-banner-table .anmi-column-hidden {
+    display: none !important;
+}
+
 .column-actions .button {
     margin: var(--anmi-spacing-050) 0;
     white-space: nowrap;

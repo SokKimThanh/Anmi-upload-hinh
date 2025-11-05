@@ -74,11 +74,15 @@
             };
 
             var toggleColumn = function(columnClass, isVisible) {
-                var selector = '.anmi-banner-table .' + columnClass;
+                var $cells = $('.anmi-banner-table .' + columnClass);
+                if (!$cells.length) {
+                    return;
+                }
+
                 if (isVisible) {
-                    $(selector).show();
+                    $cells.removeClass('anmi-column-hidden').show().removeAttr('aria-hidden');
                 } else {
-                    $(selector).hide();
+                    $cells.addClass('anmi-column-hidden').hide().attr('aria-hidden', 'true');
                 }
             };
 
