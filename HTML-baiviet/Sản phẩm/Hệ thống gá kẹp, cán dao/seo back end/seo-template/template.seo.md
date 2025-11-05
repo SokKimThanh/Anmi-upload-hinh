@@ -73,6 +73,58 @@ schema_type: "Product"
       </li>
       <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center;">
         <strong style="color: #000000; font-weight: 600;">Clamping range:</strong>
+
+    <div class="contact-cta cta-buttons" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+      <a href="tel:+84915192325" class="btn btn-primary cta-button" style="flex: 1 1 220px; text-align: center; padding: 0.85rem 1.5rem; background-color: #0055AA; color: #FFFFFF; border-radius: 6px; text-decoration: none; font-weight: 600;">📞 Gọi: 091 519 2325</a>
+      <a href="mailto:admsales7@anmitools.com" class="btn btn-secondary cta-button" style="flex: 1 1 220px; text-align: center; padding: 0.85rem 1.5rem; background-color: #FFFFFF; color: #0055AA; border: 2px solid #0055AA; border-radius: 6px; text-decoration: none; font-weight: 600;">✉️ Email: admsales7@anmitools.com</a>
+      <a href="https://anmitools.com/contact-us/" class="btn btn-primary cta-button" style="flex: 1 1 220px; text-align: center; padding: 0.85rem 1.5rem; background-color: #FF8400; color: #FFFFFF; border-radius: 6px; text-decoration: none; font-weight: 600;">💬 Báo Giá [Tên sản phẩm]</a>
+      <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" class="btn btn-primary cta-button" style="flex: 1 1 220px; text-align: center; padding: 0.85rem 1.5rem; background-color: #00875A; color: #FFFFFF; border-radius: 6px; text-decoration: none; font-weight: 600;">📄 Tải Catalog</a>
+    </div>
+
+    <div class="contact-info" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; background-color: #FFFFFF; padding: 1.75rem; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); margin-bottom: 3rem;">
+      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏢 Trụ sở Hà Nội</h3>
+        <p style="margin: 0 0 0.5rem 0; color: #000000;">Địa chỉ: P.409, Cầu thang 5, CT4-ĐN3, Khu đô thị Sông Đà Mỹ Đình, Đường Đỗ Đình Thiện, Phường Từ Liêm, Thành phố Hà Nội.</p>
+        <p style="margin: 0; color: #000000;">☎️ Hotline: <a href="tel:+84915192325" style="color: #0055AA; text-decoration: none;">091 519 2325</a></p>
+      </div>
+      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏢 Chi nhánh TP. Hồ Chí Minh</h3>
+        <p style="margin: 0 0 0.5rem 0; color: #000000;">Địa chỉ: 75 Đỗ Xuân Hợp, Phường Phước Long, Thành phố Hồ Chí Minh</p>
+        <p style="margin: 0; color: #000000;">☎️ Hotline: <a href="tel:+84913152529" style="color: #0055AA; text-decoration: none;">091 315 2529</a></p>
+      </div>
+      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏢 Chi nhánh Hải Phòng</h3>
+        <p style="margin: 0 0 0.5rem 0; color: #000000;">Địa chỉ: P2825 Hoàng Huy Grand Tower, số 2A Sở Dầu, Phường Hồng Bàng, Thành phố Hải Phòng</p>
+        <p style="margin: 0; color: #000000;">☎️ Hotline: <a href="tel:+84335836600" style="color: #0055AA; text-decoration: none;">033 583 6600</a></p>
+      </div>
+      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏢 Chi nhánh Đà Nẵng</h3>
+        <p style="margin: 0 0 0.5rem 0; color: #000000;">Địa chỉ: 85 Hoàng Văn Thái, Phường Hòa Khánh, Thành phố Đà Nẵng</p>
+        <p style="margin: 0; color: #000000;">☎️ Hotline: <a href="tel:+84912041331" style="color: #0055AA; text-decoration: none;">091 204 1331</a></p>
+      </div>
+      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏢 Chi nhánh Vĩnh Phúc</h3>
+        <p style="margin: 0 0 0.5rem 0; color: #000000;">Địa chỉ: 68 Ngõ 17 Tôn Đức Thắng, Phường Vĩnh Phúc, Phú Thọ</p>
+        <p style="margin: 0; color: #000000;">☎️ Hotline: <a href="tel:+84961364497" style="color: #0055AA; text-decoration: none;">096 136 4497</a></p>
+      </div>
+      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏢 Chi nhánh Bắc Ninh</h3>
+        <p style="margin: 0 0 0.5rem 0; color: #000000;">Địa chỉ: 76 Nguyễn Đăng, Phường Kinh Bắc, Bắc Ninh</p>
+        <p style="margin: 0; color: #000000;">☎️ Hotline: <a href="tel:+84981635698" style="color: #0055AA; text-decoration: none;">098 163 5698</a></p>
+      </div>
+      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏭 Nhà máy miền Bắc</h3>
+        <p style="margin: 0; color: #000000;">Địa chỉ: Lô đất L3, KCN Dệt may Phố Nối B, Phường Đường Hào, Tỉnh Hưng Yên</p>
+      </div>
+      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏭 Nhà máy miền Nam</h3>
+        <p style="margin: 0; color: #000000;">Địa chỉ: 75 Đỗ Xuân Hợp, Phường Phước Long, Thành phố Hồ Chí Minh</p>
+      </div>
+      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">✉️ Email kinh doanh</h3>
+        <p style="margin: 0; color: #000000;"><a href="mailto:admsales7@anmitools.com" style="color: #0055AA; text-decoration: none;">admsales7@anmitools.com</a></p>
+      </div>
+    </div>
         <span style="color: #333333;">[Φ1.0~20.0mm]</span>
       </li>
       <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center;">
