@@ -14,11 +14,11 @@ $filter_status = $filters['status'];
 $search_value  = $filters['search'];
 $kill_switch_note = $view['kill_switch_note'];
 
-$notice_classes = [
-	'success' => 'notice-success',
-	'error'   => 'notice-error',
-	'warning' => 'notice-warning',
-	'info'    => 'notice-info',
+$alert_styles = [
+	'success' => 'anmi-alert anmi-alert--success',
+	'error'   => 'anmi-alert anmi-alert--danger',
+	'warning' => 'anmi-alert anmi-alert--warning',
+	'info'    => 'anmi-alert anmi-alert--info',
 ];
 
 $status_options = [
@@ -67,9 +67,9 @@ $page_links = paginate_links([
 
 	<?php if (!empty($messages)): ?>
 		<?php foreach ($messages as $message):
-			$class = isset($notice_classes[$message['type']]) ? $notice_classes[$message['type']] : 'notice-info';
+			$class = $alert_styles[$message['type']] ?? 'anmi-alert anmi-alert--info';
 		?>
-			<div class="notice <?php echo esc_attr($class); ?> is-dismissible">
+			<div class="<?php echo esc_attr($class); ?>" role="status">
 				<p><?php echo esc_html($message['text']); ?></p>
 			</div>
 		<?php endforeach; ?>

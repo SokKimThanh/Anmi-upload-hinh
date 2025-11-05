@@ -39,7 +39,7 @@ $page_links = paginate_links([
 	<h1><?php esc_html_e('Plugin History Logs', 'anmi-plugin-manager'); ?></h1>
 
 	<div class="anmi-toolbar">
-		<form method="get">
+		<form method="get" class="anmi-form">
 			<input type="hidden" name="page" value="anmi-plugins-logs">
 
 			<label for="anmi-filter-action" class="screen-reader-text"><?php esc_html_e('Filter by action', 'anmi-plugin-manager'); ?></label>
@@ -74,7 +74,8 @@ $page_links = paginate_links([
 			<p><?php esc_html_e('No logs found for the selected filters.', 'anmi-plugin-manager'); ?></p>
 		</div>
 	<?php else: ?>
-		<table class="wp-list-table widefat fixed striped anmi-logs-table">
+		<div class="anmi-panel anmi-table-panel">
+		<table class="wp-list-table widefat fixed striped anmi-table anmi-logs-table">
 			<thead>
 				<tr>
 					<th><?php esc_html_e('Timestamp', 'anmi-plugin-manager'); ?></th>
@@ -93,7 +94,7 @@ $page_links = paginate_links([
 						<?php if (!empty($log['plugin_file'])): ?>
 							<code><?php echo esc_html($log['plugin_file']); ?></code>
 						<?php else: ?>
-							<span class="description"><?php esc_html_e('N/A', 'anmi-plugin-manager'); ?></span>
+							<span class="anmi-subtle"><?php esc_html_e('N/A', 'anmi-plugin-manager'); ?></span>
 						<?php endif; ?>
 					</td>
 					<td><?php echo esc_html($log['user']); ?></td>
@@ -108,12 +109,13 @@ $page_links = paginate_links([
 		</table>
 
 		<?php if ($page_links): ?>
-		<div class="tablenav bottom">
+		<div class="anmi-table__footer">
 			<div class="tablenav-pages">
 				<?php echo wp_kses_post($page_links); ?>
 			</div>
 		</div>
 		<?php endif; ?>
+		</div>
 	<?php endif; ?>
 </div>
 
