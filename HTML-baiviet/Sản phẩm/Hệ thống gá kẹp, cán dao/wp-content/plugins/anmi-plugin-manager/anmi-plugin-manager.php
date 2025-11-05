@@ -63,6 +63,7 @@ class Anmi_Plugin_Manager {
         require_once ANMI_PM_DIR . 'inc/class-plugin-uploader.php';
         require_once ANMI_PM_DIR . 'inc/class-plugin-activator.php';
         require_once ANMI_PM_DIR . 'inc/class-logger.php';
+        require_once ANMI_PM_DIR . 'inc/class-rename-detector.php';
     }
     
     /**

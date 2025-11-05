@@ -39,6 +39,10 @@ class Anmi_PM_Plugin_List {
                 <?php _e('Upload New Plugin', 'anmi-plugin-manager'); ?>
             </a>
             
+            <a href="<?php echo esc_url(wp_nonce_url(add_query_arg(['page' => 'anmi-plugins', 'action' => 'resync'], admin_url('admin.php')), 'anmi_pm_resync')); ?>" class="page-title-action">
+                <?php _e('Resync Renamed Plugins', 'anmi-plugin-manager'); ?>
+            </a>
+            
             <hr class="wp-header-end">
             
             <div class="anmi-pm-stats">
@@ -189,11 +193,37 @@ class Anmi_PM_Plugin_List {
      * Handle actions
      */
     private function handle_actions() {
-        if (!isset($_GET['action']) || !isset($_GET['plugin'])) {
+        if (!isset($_GET['action'])) {
             return;
         }
         
         $action = sanitize_text_field($_GET['action']);
+        
+        // Handle resync (no plugin parameter needed)
+        if ($action === 'resync') {
+            $nonce = isset($_GET['_wpnonce']) ? $_GET['_wpnonce'] : '';
+            if (!wp_verify_nonce($nonce, 'anmi_pm_resync')) {
+                wp_die('Nonce verification failed');
+            }
+            
+            if (!current_user_can('manage_options')) {
+                wp_die('Unauthorized');
+            }
+            
+            $result = Anmi_PM_Rename_Detector::resync_all();
+            
+            if ($result['renames_found'] > 0) {
+                $this->redirect_with_message('resync_success', $result['renames_found'] . ' plugins resynced');
+            } else {
+                $this->redirect_with_message('resync_none', 'No renamed plugins found');
+            }
+        }
+        
+        // Other actions require plugin parameter
+        if (!isset($_GET['plugin'])) {
+            return;
+        }
+        
         $plugin_file = sanitize_text_field($_GET['plugin']);
         $nonce = isset($_GET['_wpnonce']) ? $_GET['_wpnonce'] : '';
         
@@ -328,7 +358,9 @@ class Anmi_PM_Plugin_List {
             'activate_failed' => ['error', 'Không thể kích hoạt plugin' . ($extra ? ': ' . $extra : '')],
             'deactivated' => ['success', 'Plugin đã được tắt.'],
             'deleted' => ['success', 'Plugin đã được xóa. Backup đã được tạo.'],
-            'delete_failed' => ['error', 'Không thể xóa plugin' . ($extra ? ': ' . $extra : '')]
+            'delete_failed' => ['error', 'Không thể xóa plugin' . ($extra ? ': ' . $extra : '')],
+            'resync_success' => ['success', 'Resync thành công' . ($extra ? ': ' . $extra : '')],
+            'resync_none' => ['info', 'Không tìm thấy plugin nào bị đổi tên.']
         ];
         
         if (isset($messages[$message])) {
