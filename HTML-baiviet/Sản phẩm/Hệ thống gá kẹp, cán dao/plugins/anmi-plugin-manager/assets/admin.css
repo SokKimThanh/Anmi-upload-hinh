@@ -112,13 +112,36 @@
     gap: var(--anmi-spacing-100);
 }
 
-.anmi-form select,
-.anmi-form input[type="search"],
-.anmi-form input[type="text"],
-.anmi-form input[type="url"],
-.anmi-form input[type="number"],
-.anmi-form input[type="file"],
-.anmi-form textarea {
+.anmi-form--stacked {
+    display: grid;
+    gap: var(--anmi-spacing-200);
+}
+
+.anmi-form__field {
+    display: grid;
+    gap: var(--anmi-spacing-075);
+}
+
+.anmi-form__help {
+    font-size: var(--anmi-font-size-200);
+    color: var(--anmi-color-muted);
+    display: block;
+    line-height: 1.5;
+}
+
+.anmi-form__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--anmi-spacing-100);
+}
+
+:is(.anmi-form, .anmi-form--stacked) select,
+:is(.anmi-form, .anmi-form--stacked) input[type="search"],
+:is(.anmi-form, .anmi-form--stacked) input[type="text"],
+:is(.anmi-form, .anmi-form--stacked) input[type="url"],
+:is(.anmi-form, .anmi-form--stacked) input[type="number"],
+:is(.anmi-form, .anmi-form--stacked) input[type="file"],
+:is(.anmi-form, .anmi-form--stacked) textarea {
     min-height: 40px;
     border-radius: var(--anmi-radius-sm);
     border: 1px solid var(--anmi-color-border);
@@ -129,20 +152,20 @@
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.anmi-form textarea {
+:is(.anmi-form, .anmi-form--stacked) textarea {
     padding: var(--anmi-spacing-100);
 }
 
-.anmi-form select:focus-visible,
-.anmi-form input:focus-visible,
-.anmi-form textarea:focus-visible {
+:is(.anmi-form, .anmi-form--stacked) select:focus-visible,
+:is(.anmi-form, .anmi-form--stacked) input:focus-visible,
+:is(.anmi-form, .anmi-form--stacked) textarea:focus-visible {
     border-color: var(--anmi-color-accent);
     box-shadow: 0 0 0 3px rgba(11, 99, 206, 0.18);
     outline: none;
 }
 
-.anmi-form input::placeholder,
-.anmi-form textarea::placeholder {
+:is(.anmi-form, .anmi-form--stacked) input::placeholder,
+:is(.anmi-form, .anmi-form--stacked) textarea::placeholder {
     color: var(--anmi-color-placeholder);
 }
 
@@ -213,6 +236,11 @@
 .anmi-alert--warning {
     background: var(--anmi-color-warning-bg);
     border-left-color: var(--anmi-color-warning);
+}
+
+.anmi-alert--success {
+    background: var(--anmi-color-success-bg);
+    border-left-color: var(--anmi-color-success);
 }
 
 .anmi-alert--danger {
