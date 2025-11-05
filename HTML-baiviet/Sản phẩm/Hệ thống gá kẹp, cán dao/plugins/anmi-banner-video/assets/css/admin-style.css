@@ -262,6 +262,14 @@
     align-self: start;
 }
 
+.anmi-column-settings__status {
+    font-size: var(--anmi-font-size-200);
+    color: var(--anmi-color-muted);
+    background: var(--anmi-color-subtle);
+    border-radius: var(--anmi-radius-sm);
+    padding: var(--anmi-spacing-075) var(--anmi-spacing-150);
+}
+
 .column-thumbnail { width: 110px; }
 .column-name { width: 200px; }
 .column-video { width: 160px; }

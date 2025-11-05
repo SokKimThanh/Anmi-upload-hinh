@@ -42,12 +42,20 @@
         if (columnToggleInputs.length) {
             var columnResetButton = $('.anmi-column-settings__reset');
             var storageKey = 'anmiBannerColumnVisibility';
+            var statusMessage = $('.anmi-column-settings__status');
+
+            var updateStatus = function(message) {
+                if (statusMessage.length) {
+                    statusMessage.text(message);
+                }
+            };
 
             var readSettings = function() {
                 try {
                     var saved = window.localStorage.getItem(storageKey);
                     return saved ? JSON.parse(saved) : {};
                 } catch (error) {
+                    updateStatus('Trình duyệt đang chặn bộ nhớ cục bộ, cài đặt sẽ không được lưu sau khi tải lại.');
                     return {};
                 }
             };
@@ -60,6 +68,7 @@
                         window.localStorage.setItem(storageKey, JSON.stringify(settings));
                     }
                 } catch (error) {
+                    updateStatus('Không thể lưu cài đặt hiển thị cột. Vui lòng kiểm tra quyền trình duyệt.');
                     /* noop */
                 }
             };
@@ -85,6 +94,7 @@
 
             var storedSettings = readSettings();
             applySettings(storedSettings);
+            updateStatus('Cài đặt hiển thị cột đã được áp dụng.');
 
             columnToggleInputs.on('change', function() {
                 var $input = $(this);
@@ -106,12 +116,14 @@
                 }
 
                 saveSettings(storedSettings);
+                updateStatus('Đã lưu cài đặt hiển thị cột.');
             });
 
             columnResetButton.on('click', function() {
                 storedSettings = {};
                 saveSettings(storedSettings);
                 applySettings(storedSettings);
+                updateStatus('Đã khôi phục hiển thị cột mặc định.');
             });
         }
         

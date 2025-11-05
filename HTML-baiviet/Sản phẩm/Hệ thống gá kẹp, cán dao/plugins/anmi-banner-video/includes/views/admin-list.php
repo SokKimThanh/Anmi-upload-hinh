@@ -100,6 +100,7 @@ if (!defined('ABSPATH')) {
                     <span>Thao tác</span>
                 </label>
             </div>
+            <div class="anmi-column-settings__status" role="status" aria-live="polite">Cài đặt hiển thị cột sẽ được lưu tự động.</div>
             <button type="button" class="button anmi-column-settings__reset">Khôi phục mặc định</button>
         </div>
         
