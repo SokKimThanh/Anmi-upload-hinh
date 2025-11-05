@@ -102,28 +102,6 @@ schema_type: "Product"
         <p style="margin: 0 0 0.5rem 0; color: #000000;">Địa chỉ: 85 Hoàng Văn Thái, Phường Hòa Khánh, Thành phố Đà Nẵng</p>
         <p style="margin: 0; color: #000000;">☎️ Hotline: <a href="tel:+84912041331" style="color: #0055AA; text-decoration: none;">091 204 1331</a></p>
       </div>
-      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
-        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏢 Chi nhánh Vĩnh Phúc</h3>
-        <p style="margin: 0 0 0.5rem 0; color: #000000;">Địa chỉ: 68 Ngõ 17 Tôn Đức Thắng, Phường Vĩnh Phúc, Phú Thọ</p>
-        <p style="margin: 0; color: #000000;">☎️ Hotline: <a href="tel:+84961364497" style="color: #0055AA; text-decoration: none;">096 136 4497</a></p>
-      </div>
-      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
-        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏢 Chi nhánh Bắc Ninh</h3>
-        <p style="margin: 0 0 0.5rem 0; color: #000000;">Địa chỉ: 76 Nguyễn Đăng, Phường Kinh Bắc, Bắc Ninh</p>
-        <p style="margin: 0; color: #000000;">☎️ Hotline: <a href="tel:+84981635698" style="color: #0055AA; text-decoration: none;">098 163 5698</a></p>
-      </div>
-      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
-        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏭 Nhà máy miền Bắc</h3>
-        <p style="margin: 0; color: #000000;">Địa chỉ: Lô đất L3, KCN Dệt may Phố Nối B, Phường Đường Hào, Tỉnh Hưng Yên</p>
-      </div>
-      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
-        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">🏭 Nhà máy miền Nam</h3>
-        <p style="margin: 0; color: #000000;">Địa chỉ: 75 Đỗ Xuân Hợp, Phường Phước Long, Thành phố Hồ Chí Minh</p>
-      </div>
-      <div class="office" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; background-color: #F7FBFF;">
-        <h3 style="font-size: 1.125rem; font-weight: 600; color: #0055AA; margin-bottom: 0.75rem;">✉️ Email kinh doanh</h3>
-        <p style="margin: 0; color: #000000;"><a href="mailto:admsales7@anmitools.com" style="color: #0055AA; text-decoration: none;">admsales7@anmitools.com</a></p>
-      </div>
     </div>
         <span style="color: #333333;">[Φ1.0~20.0mm]</span>
       </li>
