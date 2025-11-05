@@ -63,6 +63,46 @@ if (!defined('ABSPATH')) {
         
     <?php else: ?>
         
+        <div class="anmi-panel anmi-column-settings" aria-label="Column display settings">
+            <div class="anmi-panel__title">Tùy chỉnh cột hiển thị</div>
+            <p class="anmi-column-settings__description">Chọn các cột bạn muốn hiển thị trong danh sách video banner.</p>
+            <div class="anmi-column-toggle-list" role="group" aria-label="Tùy chọn cột">
+                <label class="anmi-column-toggle">
+                    <input type="checkbox" data-column="column-thumbnail" checked>
+                    <span>Xem trước</span>
+                </label>
+                <label class="anmi-column-toggle">
+                    <input type="checkbox" data-column="column-name" checked>
+                    <span>Tên banner</span>
+                </label>
+                <label class="anmi-column-toggle">
+                    <input type="checkbox" data-column="column-video" checked>
+                    <span>Video</span>
+                </label>
+                <label class="anmi-column-toggle">
+                    <input type="checkbox" data-column="column-images" checked>
+                    <span>Hình ảnh</span>
+                </label>
+                <label class="anmi-column-toggle">
+                    <input type="checkbox" data-column="column-shortcode" checked>
+                    <span>Shortcode</span>
+                </label>
+                <label class="anmi-column-toggle">
+                    <input type="checkbox" data-column="column-status" checked>
+                    <span>Trạng thái</span>
+                </label>
+                <label class="anmi-column-toggle">
+                    <input type="checkbox" data-column="column-date" checked>
+                    <span>Ngày tạo</span>
+                </label>
+                <label class="anmi-column-toggle">
+                    <input type="checkbox" data-column="column-actions" checked>
+                    <span>Thao tác</span>
+                </label>
+            </div>
+            <button type="button" class="button anmi-column-settings__reset">Khôi phục mặc định</button>
+        </div>
+        
         <table class="wp-list-table widefat fixed striped anmi-banner-table">
             <thead>
                 <tr>

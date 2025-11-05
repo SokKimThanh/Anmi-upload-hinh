@@ -37,6 +37,83 @@
         setTimeout(function() {
             $('.notice-success').fadeOut();
         }, 5000);
+
+        var columnToggleInputs = $('.anmi-column-toggle-list input[type="checkbox"]');
+        if (columnToggleInputs.length) {
+            var columnResetButton = $('.anmi-column-settings__reset');
+            var storageKey = 'anmiBannerColumnVisibility';
+
+            var readSettings = function() {
+                try {
+                    var saved = window.localStorage.getItem(storageKey);
+                    return saved ? JSON.parse(saved) : {};
+                } catch (error) {
+                    return {};
+                }
+            };
+
+            var saveSettings = function(settings) {
+                try {
+                    if (Object.keys(settings).length === 0) {
+                        window.localStorage.removeItem(storageKey);
+                    } else {
+                        window.localStorage.setItem(storageKey, JSON.stringify(settings));
+                    }
+                } catch (error) {
+                    /* noop */
+                }
+            };
+
+            var toggleColumn = function(columnClass, isVisible) {
+                var selector = '.anmi-banner-table .' + columnClass;
+                if (isVisible) {
+                    $(selector).show();
+                } else {
+                    $(selector).hide();
+                }
+            };
+
+            var applySettings = function(settings) {
+                columnToggleInputs.each(function() {
+                    var $input = $(this);
+                    var columnClass = $input.data('column');
+                    var isVisible = Object.prototype.hasOwnProperty.call(settings, columnClass) ? settings[columnClass] : true;
+                    $input.prop('checked', isVisible);
+                    toggleColumn(columnClass, isVisible);
+                });
+            };
+
+            var storedSettings = readSettings();
+            applySettings(storedSettings);
+
+            columnToggleInputs.on('change', function() {
+                var $input = $(this);
+                var columnClass = $input.data('column');
+                var isVisible = $input.is(':checked');
+
+                if (!isVisible && columnToggleInputs.filter(':checked').length === 0) {
+                    $input.prop('checked', true);
+                    toggleColumn(columnClass, true);
+                    return;
+                }
+
+                toggleColumn(columnClass, isVisible);
+
+                if (isVisible) {
+                    delete storedSettings[columnClass];
+                } else {
+                    storedSettings[columnClass] = false;
+                }
+
+                saveSettings(storedSettings);
+            });
+
+            columnResetButton.on('click', function() {
+                storedSettings = {};
+                saveSettings(storedSettings);
+                applySettings(storedSettings);
+            });
+        }
         
     });
     
