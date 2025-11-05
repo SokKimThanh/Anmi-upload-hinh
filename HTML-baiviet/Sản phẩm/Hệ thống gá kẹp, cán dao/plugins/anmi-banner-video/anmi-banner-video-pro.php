@@ -60,8 +60,17 @@ class AnMi_Banner_Video_Pro {
     }
     
     public function enqueue_assets() {
-        wp_enqueue_style('abvp-banner-style', ABVP_PLUGIN_URL . 'assets/css/video-banner.css', array(), ABVP_VERSION);
-        wp_enqueue_script('abvp-banner-script', ABVP_PLUGIN_URL . 'assets/js/video-banner.js', array('jquery'), ABVP_VERSION, true);
+        $style_url = ABVP_PLUGIN_URL . 'assets/css/video-banner.css';
+        $script_url = ABVP_PLUGIN_URL . 'assets/js/video-banner.js';
+
+        wp_register_style('anmi-video-banner-style', $style_url, array(), ABVP_VERSION);
+        wp_register_style('abvp-banner-style', $style_url, array(), ABVP_VERSION);
+
+        wp_register_script('anmi-video-banner-script', $script_url, array('jquery'), ABVP_VERSION, true);
+        wp_register_script('abvp-banner-script', $script_url, array('jquery'), ABVP_VERSION, true);
+
+        wp_enqueue_style('anmi-video-banner-style');
+        wp_enqueue_script('anmi-video-banner-script');
     }
     
     private function parse_video_url($url, $player_mode = false, $banner = null) {
@@ -163,7 +172,9 @@ class AnMi_Banner_Video_Pro {
     public function register_elementor_widget($widgets_manager) {
         if (!class_exists('Elementor\Widget_Base')) return;
         require_once ABVP_PLUGIN_PATH . 'includes/elementor-widget.php';
-        $widgets_manager->register(new \AnMi_Banner_Video_Pro_Elementor_Widget());
+        if (class_exists('AnMi_Video_Banner_Elementor_Widget')) {
+            $widgets_manager->register(new \AnMi_Video_Banner_Elementor_Widget());
+        }
     }
 }
 

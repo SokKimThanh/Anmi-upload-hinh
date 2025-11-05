@@ -165,13 +165,26 @@ class AnMi_Banner_Video_Pro_Admin {
             ABVP_VERSION
         );
         
+        $shared_style_url = plugin_dir_url(dirname(__FILE__)) . 'assets/css/video-banner.css';
+        $shared_script_url = plugin_dir_url(dirname(__FILE__)) . 'assets/js/video-banner.js';
+
         // Frontend CSS for preview
-        wp_enqueue_style(
-            'abvp-banner-style',
-            plugin_dir_url(dirname(__FILE__)) . 'assets/css/video-banner.css',
+        wp_register_style(
+            'anmi-video-banner-style',
+            $shared_style_url,
             array(),
             ABVP_VERSION
         );
+
+        // Backward compatible alias
+        wp_register_style(
+            'abvp-banner-style',
+            $shared_style_url,
+            array(),
+            ABVP_VERSION
+        );
+
+        wp_enqueue_style('anmi-video-banner-style');
         
         // Admin JS
         wp_enqueue_script(
@@ -183,13 +196,24 @@ class AnMi_Banner_Video_Pro_Admin {
         );
         
         // Frontend JS for preview
-        wp_enqueue_script(
-            'abvp-banner-script',
-            plugin_dir_url(dirname(__FILE__)) . 'assets/js/video-banner.js',
+        wp_register_script(
+            'anmi-video-banner-script',
+            $shared_script_url,
             array('jquery'),
             ABVP_VERSION,
             true
         );
+
+        // Backward compatible alias
+        wp_register_script(
+            'abvp-banner-script',
+            $shared_script_url,
+            array('jquery'),
+            ABVP_VERSION,
+            true
+        );
+
+        wp_enqueue_script('anmi-video-banner-script');
         
         // Localize script
         wp_localize_script('abvp-admin-script', 'abvpBannerAdmin', array(
