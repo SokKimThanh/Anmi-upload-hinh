@@ -4,22 +4,31 @@ slug: "cbs-boring-tool-45-90-angle-boring"
 primary_keyword: "cbs boring tool"
 tags: "CBS boring tool, 45 degree boring, 90 degree boring, angle boring tool, CNC boring"
 category: "Hệ thống gá kẹp, cán dao"
-catalog_page: "36"
+catalog_page: "88"
 seo_title: "CBS Boring Tool 45°/90° – Angle Boring System | An Mi Tools"
 seo_description: "CBS Boring Tool chuyên dụng cho angle boring 45°/90°, insert CCMT, phù hợp mold cavity và deep cavity machining. Tư vấn CBS boring tool tại An Mi Tools 091 519 2325."
-social_image_facebook: ""
-social_image_twitter: ""
+social_image_facebook: "https://anmitools.com/wp-content/uploads/2025/10/35-cbs-45-90-boring-tool-hinh-sp-chitiet.webp"
+social_image_twitter: "https://anmitools.com/wp-content/uploads/2025/10/35-cbs-45-90-boring-tool-hinh-sp-chitiet.webp"
 seo_score_target: ">=70"
 author: "An Mi Tools Technical Team"
 date_published: "2025-10-20"
-date_modified: "2025-10-27"
+date_modified: "2025-11-05"
 schema_type: "Product"
 ---
 
-<section class="cbs-boring-tool">
+![CBS Boring Tool – 45°/90° Angle Boring System chi tiết sản phẩm](https://anmitools.com/wp-content/uploads/2025/10/35-cbs-45-90-boring-tool-hinh-sp-chitiet.webp)
+*CBS Boring Tool – Hệ thống angle boring 45° (CBS-4) và 90° (CBS-9), Φ8-25mm, insert CCMT0602 và CCMT09T3.*
+
+![CBS Boring Tool thông số kỹ thuật](https://anmitools.com/wp-content/uploads/2025/10/35-cbs-45-90-boring-tool-hinh-thong-so-ky-thuat.webp)
+*Thông số kỹ thuật CBS Boring Tool – Bảng specifications đầy đủ cho CBS-4 (45°) và CBS-9 (90°) angle boring system.*
   <figure class="product-image">
-    <img src="https://anmitools.com/wp-content/uploads/2025/09/cbs-angle-boring-tool.webp" alt="CBS Boring Tool – 45°/90° Angle Boring System, CCMT Insert" width="800" height="600" loading="lazy">
-    <figcaption><strong>CBS Boring Tool</strong> – Hệ thống angle boring 45° (CBS-4) và 90° (CBS-9), Φ8-25mm, insert CCMT.</figcaption>
+    <img src="https://anmitools.com/wp-content/uploads/2025/10/35-cbs-45-90-boring-tool-hinh-sp-chitiet.webp" alt="CBS Boring Tool – 45°/90° Angle Boring System chi tiết sản phẩm, CCMT Insert" width="1200" height="800" loading="lazy">
+    <figcaption><strong>CBS Boring Tool</strong> – Hệ thống angle boring 45° (CBS-4) và 90° (CBS-9), Φ8-25mm, insert CCMT0602 và CCMT09T3.</figcaption>
+  </figure>
+
+  <figure class="technical-specs-image">
+    <img src="https://anmitools.com/wp-content/uploads/2025/10/35-cbs-45-90-boring-tool-hinh-thong-so-ky-thuat.webp" alt="CBS Boring Tool thông số kỹ thuật 45° và 90° angle boring" width="1200" height="800" loading="lazy">
+    <figcaption>Thông số kỹ thuật <strong>CBS Boring Tool</strong> – Bảng specifications đầy đủ cho CBS-4 (45°) và CBS-9 (90°) angle boring system.</figcaption>
   </figure>
 
   <h1>CBS Boring Tool – 45° & 90° Angle Boring System for Complex Cavities</h1>
@@ -56,22 +65,38 @@ schema_type: "Product"
 
   <div class="section specifications">
     <h2>Thông Số Kỹ Thuật CBS Boring Tool</h2>
+    
+    <h3>🔧 CBS-4 Series (45° Angle Boring Tool)</h3>
     <table>
       <thead>
-        <tr><th>Thông Số</th><th>CBS-4 (45° Boring Tool)</th><th>CBS-9 (90° Boring Tool)</th></tr>
+        <tr><th>Model</th><th>Shank Ø (d, mm)</th><th>L (mm)</th><th>Angle</th><th>Insert</th><th>Clamp Screw</th><th>Wrench</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Angle</strong></td><td>45° (approach angle)</td><td>90° (perpendicular boring)</td></tr>
-        <tr><td><strong>Shank Diameter</strong></td><td>Φ8, 10, 12, 16, 20, 25mm</td><td>Φ8, 10, 12, 16, 20, 25mm</td></tr>
-        <tr><td><strong>Insert Type</strong></td><td>CCMT0602, CCMT09T3</td><td>CCMT0602, CCMT09T3</td></tr>
-        <tr><td><strong>Cutting Edges</strong></td><td>4 edges/insert</td><td>4 edges/insert</td></tr>
-        <tr><td><strong>Surface Finish</strong></td><td>Ra 1.6-3.2μm</td><td>Ra 1.6-3.2μm</td></tr>
-        <tr><td><strong>L/D Ratio</strong></td><td>>3:1 (rigid design)</td><td>>3:1 (rigid design)</td></tr>
-        <tr><td><strong>Holder Compatibility</strong></td><td colspan="2">BT/HSK/NT/CAT (all standard tapers)</td></tr>
-        <tr><td><strong>Applications</strong></td><td>Undercut, draft angle, 3D pocket</td><td>Perpendicular cavity, die boring</td></tr>
+        <tr><td>CBS-408</td><td>8</td><td>50</td><td>45°</td><td>CCMT0602</td><td>M2.5×6</td><td>T9</td></tr>
+        <tr><td>CBS-410</td><td>10</td><td>60</td><td>45°</td><td>CCMT09T3</td><td>M4×10</td><td>T15</td></tr>
+        <tr><td>CBS-413</td><td>13</td><td>70</td><td>45°</td><td>CCMT09T3</td><td>M4×10</td><td>T15</td></tr>
+        <tr><td>CBS-416</td><td>16</td><td>100</td><td>45°</td><td>CCMT0602</td><td>M4×10</td><td>T15</td></tr>
+        <tr><td>CBS-419</td><td>19</td><td>150</td><td>45°</td><td>CCMT09T3</td><td>M4×10</td><td>T15</td></tr>
+        <tr><td>CBS-425</td><td>25</td><td>150</td><td>45°</td><td>CCMT09T3</td><td>M4×10</td><td>T15</td></tr>
       </tbody>
     </table>
-    <p><strong>Lưu ý:</strong> Chọn CBS-4 (45° boring tool) cho undercut và draft angle cavity. Chọn CBS-9 (90° boring tool) cho perpendicular boring trong die cavity và stamping die applications.</p>
+
+    <h3>⚙️ CBS-9 Series (90° Angle Boring Tool)</h3>
+    <table>
+      <thead>
+        <tr><th>Model</th><th>Shank Ø (d, mm)</th><th>L (mm)</th><th>Angle</th><th>Insert</th><th>Clamp Screw</th><th>Wrench</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CBS-908</td><td>8</td><td>50</td><td>90°</td><td>CCMT0602</td><td>M2.5×6</td><td>T9</td></tr>
+        <tr><td>CBS-910</td><td>10</td><td>60</td><td>90°</td><td>CCMT09T3</td><td>M4×10</td><td>T15</td></tr>
+        <tr><td>CBS-913</td><td>13</td><td>70</td><td>90°</td><td>CCMT09T3</td><td>M4×10</td><td>T15</td></tr>
+        <tr><td>CBS-916</td><td>16</td><td>100</td><td>90°</td><td>CCMT0602</td><td>M4×10</td><td>T15</td></tr>
+        <tr><td>CBS-919</td><td>19</td><td>150</td><td>90°</td><td>CCMT09T3</td><td>M4×10</td><td>T15</td></tr>
+        <tr><td>CBS-925</td><td>25</td><td>150</td><td>90°</td><td>CCMT09T3</td><td>M4×10</td><td>T15</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>Lưu ý:</strong> Chọn CBS-4 (45° boring tool) cho undercut và draft angle cavity. Chọn CBS-9 (90° boring tool) cho perpendicular boring trong die cavity và stamping die applications. Insert CCMT có 4 cutting edges, phù hợp cho production environment với cost-effective per edge.</p>
   </div>
 
   <div class="section applications">
@@ -192,6 +217,8 @@ schema_type: "Product"
     <p><strong>An Mi Tools</strong> cung cấp <strong>CBS boring tool</strong> chính hãng (CBS-4 45° và CBS-9 90° angle boring tool), kèm insert CCMT set, bảo hành 24 tháng. Đội ngũ kỹ sư của chúng tôi sẵn sàng tư vấn lựa chọn CBS-4 hay CBS-9 boring tool phù hợp với cavity geometry, cutting parameters tối ưu cho material, và giải pháp tooling hoàn chỉnh cho mold/die machining.</p>
     
     <div class="contact-cta cta-buttons">
+      <a href="tel:+84915192325" class="btn btn-primary cta-button">📞 Gọi: 091 519 2325</a>
+      <a href="mailto:sales@anmitools.com" class="btn btn-primary cta-button">✉️ Email: sales@anmitools.com</a>
       <a href="https://anmitools.com/contact-us/" class="btn btn-primary cta-button">💬 Báo Giá CBS Boring Tool</a>
       <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" class="btn btn-primary cta-button">📄 Tải Catalog</a>
     </div>
@@ -206,6 +233,16 @@ schema_type: "Product"
         <h3>🏢 TP. Hồ Chí Minh</h3>
         <p>75 Do Xuan Hop, W. Phuoc Long B, Thu Duc</p>
         <p>☎️ Tel: <a href="tel:+842862623959">+84 28 6262 3959</a></p>
+      </div>
+      <div class="office">
+        <h3>🏢 Hải Phòng</h3>
+        <p>An Mi Tools Hải Phòng – Chi nhánh phía Bắc</p>
+        <p>☎️ Tel: <a href="tel:+84915192325">+84 91 519 2325</a></p>
+      </div>
+      <div class="office">
+        <h3>🏢 Đà Nẵng</h3>
+        <p>An Mi Tools Đà Nẵng – Chi nhánh miền Trung</p>
+        <p>☎️ Tel: <a href="tel:+84915192325">+84 91 519 2325</a></p>
       </div>
     </div>
 
@@ -240,8 +277,8 @@ schema_type: "Product"
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://anmitools.com/"},
-      {"@type": "ListItem", "position": 2, "name": "Tool Holders", "item": "https://anmitools.com/tool-holders/"},
+      {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://anmitools.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Hệ thống gá kẹp, cán dao", "item": "https://anmitools.com/he-thong-ga-kep-can-dao/"},
       {"@type": "ListItem", "position": 3, "name": "CBS Boring Tool", "item": "https://anmitools.com/san-pham/cbs-boring-tool-45-90-angle-boring/"}
     ]
   }
