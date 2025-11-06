@@ -1106,40 +1106,21 @@ details[open] summary .toggle {
     color: var(--anmi-color-on-primary);
 }
 
-.btn-secondary {
-    background-color: var(--anmi-color-surface);
-    color: var(--anmi-color-primary-strong);
-    border: 2px solid var(--anmi-color-primary-strong);
-}
-
-.btn-secondary:hover {
-    background-color: var(--anmi-color-primary-strong);
-    color: var(--anmi-color-on-primary);
-    text-shadow: var(--anmi-text-shadow-elevated);
-}
-
-.cta-button.secondary {
-    background-color: var(--anmi-color-surface);
-    color: var(--anmi-color-primary-strong);
-    border: 2px solid var(--anmi-color-primary-strong);
-}
-
-.cta-button.secondary:hover {
-    background-color: var(--anmi-color-primary-strong);
-    color: var(--anmi-color-on-primary);
-    text-shadow: var(--anmi-text-shadow-elevated);
-}
-
+.btn-secondary,
+.cta-button.secondary,
 .secondary {
     background-color: var(--anmi-color-surface);
     color: var(--anmi-color-primary-strong);
     border: 2px solid var(--anmi-color-primary-strong);
 }
 
+.btn-secondary:hover,
+.cta-button.secondary:hover,
 .secondary:hover {
     background-color: var(--anmi-color-primary-strong);
     color: var(--anmi-color-on-primary);
     text-shadow: var(--anmi-text-shadow-elevated);
+    text-decoration: none;
 }
 
 /* Note Boxes */
