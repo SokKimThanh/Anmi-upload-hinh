@@ -123,71 +123,8 @@ class AnMi_Product_Style_Injector {
         // ✅ NEW: Add editor styles for Classic Editor
         add_editor_style($this->css_url . $this->common_css_file);
         
-        // ✅ NEW: Keep wpautop enabled for normal content
-        // JavaScript will only clean up <p> tags INSIDE grid containers
-        add_filter('the_content', array($this, 'disable_wpautop_for_products'), 9);
-        
         // Add admin menu for testing
         add_action('admin_menu', array($this, 'add_admin_menu'));
-    }
-    
-    /**
-     * Smart wpautop control for holder product pages
-     * Disable wpautop ONLY inside grid containers (to prevent breaking CSS Grid layout)
-     * KEEP wpautop for normal paragraph content
-     * 
-     * @param string $content Post content
-     * @return string Modified content with selective wpautop
-     * @since 2.1.6
-     */
-    public function disable_wpautop_for_products($content) {
-        // Only on singular posts/pages
-        if (!is_singular()) {
-            return $content;
-        }
-        
-        global $post;
-        
-        if (empty($post)) {
-            return $content;
-        }
-        
-        // Check if this is a holder product page
-        $is_holder_product = false;
-        
-        // Method 1: Check post content for holder slug patterns
-        foreach ($this->holder_slug_patterns as $pattern) {
-            if (strpos($post->post_content, 'class="' . $pattern) !== false ||
-                strpos($post->post_content, "class='" . $pattern) !== false) {
-                $is_holder_product = true;
-                break;
-            }
-        }
-        
-        // Method 2: Check if has grid classes (sign of product page)
-        if (!$is_holder_product) {
-            $grid_classes = array(
-                'feature-grid', 'application-grid', 'performance-grid',
-                'instruction-grid', 'support-grid', 'contact-info'
-            );
-            
-            foreach ($grid_classes as $class) {
-                if (strpos($post->post_content, $class) !== false) {
-                    $is_holder_product = true;
-                    break;
-                }
-            }
-        }
-        
-        // ✅ CHANGED: Do NOT disable wpautop globally anymore
-        // Let WordPress handle <p> tags normally
-        // JavaScript will only clean up <p> tags INSIDE grid containers
-        
-        if ($is_holder_product && defined('WP_DEBUG') && WP_DEBUG) {
-            error_log("An Mi Product Style Injector: Detected holder product, wpautop remains ENABLED (Post ID: {$post->ID})");
-        }
-        
-        return $content;
     }
     
     /**
@@ -302,15 +239,6 @@ class AnMi_Product_Style_Injector {
                 array(),
                 $version,
                 'all'
-            );
-            
-            // ✅ Enqueue JavaScript to clean up WordPress auto-generated <p> tags
-            wp_enqueue_script(
-                'anmi-grid-cleanup',
-                plugins_url('js/grid-cleanup.js', __FILE__),
-                array(),
-                $version,
-                true // Load in footer
             );
             
             // ✅ Enqueue Image Lightbox JavaScript

@@ -121,6 +121,48 @@
 /* ============================================ */
 /* RESET & BASE */
 /* ============================================ */
+:root {
+    --anmi-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --anmi-line-height-base: 1.8;
+    --anmi-color-text: #000000;
+    --anmi-color-text-secondary: #333333;
+    --anmi-color-text-muted: #666666;
+    --anmi-color-text-soft: #BBBBBB;
+    --anmi-color-text-soft-alt: #CCCCCC;
+    --anmi-color-background: #FCF7EC;
+    --anmi-color-primary: #0055AA;
+    --anmi-color-primary-strong: #0066CC;
+    --anmi-color-primary-hover: #0052A3;
+    --anmi-color-on-primary: #FFFFFF;
+    --anmi-color-on-primary-soft: rgba(255, 255, 255, 0.1);
+    --anmi-color-primary-tint-soft: rgba(0, 85, 170, 0.03);
+    --anmi-color-primary-tint-strong: rgba(0, 85, 170, 0.08);
+    --anmi-color-surface: #FFFFFF;
+    --anmi-color-surface-info: #F0F8FF;
+    --anmi-color-surface-warm: #FFF9E6;
+    --anmi-color-surface-success: #E8F5E9;
+    --anmi-color-accent-warning: #FFA500;
+    --anmi-color-accent-success: #4CAF50;
+    --anmi-color-accent-success-strong: #2E7D32;
+    --anmi-border-color-soft: rgba(0, 0, 0, 0.08);
+    --anmi-border-color-subtle: rgba(0, 0, 0, 0.05);
+    --anmi-border-color-card: #E0E0E0;
+    --anmi-border-color-panel: #CED1DB;
+    --anmi-border-color-strong: rgba(255, 255, 255, 0.2);
+    --anmi-box-shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.08);
+    --anmi-box-shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --anmi-box-shadow-primary: 0 4px 12px rgba(0, 85, 170, 0.2);
+    --anmi-border-radius-lg: 8px;
+    --anmi-border-radius-sm: 4px;
+    --anmi-focus-outline-size: 2px;
+    --anmi-gradient-download-start: #667eea;
+    --anmi-gradient-download-end: #764ba2;
+    --anmi-overlay-backdrop: rgba(0, 0, 0, 0.9);
+    --anmi-section-max-width: 1200px;
+    --anmi-section-padding-y: 1rem;
+    --anmi-section-padding-x: 0.5rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -128,10 +170,10 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.8;
-    color: #000000;
-    background-color: #FCF7EC;
+    font-family: var(--anmi-font-family-base);
+    line-height: var(--anmi-line-height-base);
+    color: var(--anmi-color-text);
+    background-color: var(--anmi-color-background);
 }
 
 /* Vô hiệu hóa thẻ br */
@@ -192,9 +234,9 @@ section[class*="mta"],
 section[class*="tck-"],
 section[class*="tool-holder"],
 .he-thong-ga-kep-can-dao {
-    max-width: 1200px;
+    max-width: var(--anmi-section-max-width);
     margin: 0 auto;
-    padding: 1rem 0.5rem; /* Giảm: 2rem 1rem → 1rem 0.5rem để tràn viền hơn */
+    padding: var(--anmi-section-padding-y) var(--anmi-section-padding-x);
 }
 
 /* ============================================ */
@@ -214,7 +256,7 @@ section[class*="tool-holder"] h1,
     font-size: clamp(1.84rem, 4.2vw, 2.625rem); /* +5%: 1.75→1.84rem, 2.5→2.625rem */
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #000000;
+    color: var(--anmi-color-text);
     line-height: 1.2;
 }
 
@@ -232,8 +274,8 @@ section[class*="tool-holder"] h2,
     font-size: clamp(1.575rem, 3.15vw, 1.97rem); /* +5%: 1.5→1.575rem, 1.875→1.97rem */
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #000000;
-    border-bottom: 3px solid #0055AA;
+    color: var(--anmi-color-text);
+    border-bottom: 3px solid var(--anmi-color-primary);
     padding-bottom: 0.5rem;
     display: inline-block;
 }
@@ -252,7 +294,7 @@ section[class*="tool-holder"] h3,
     font-size: clamp(1.18rem, 2.1vw, 1.31rem); /* +5%: 1.125→1.18rem, 1.25→1.31rem */
     font-weight: 600;
     margin-bottom: 0.75rem;
-    color: #000000;
+    color: var(--anmi-color-text);
 }
 
 section[class*="bt-"] p,
@@ -268,8 +310,8 @@ section[class*="tool-holder"] p,
 .he-thong-ga-kep-can-dao p {
     font-size: clamp(1.05rem, 1.575vw, 1.18rem); /* +5%: 1→1.05rem, 1.125→1.18rem */
     margin-bottom: 1rem;
-    line-height: 1.8;
-    color: #000000;
+    line-height: var(--anmi-line-height-base);
+    color: var(--anmi-color-text);
 }
 
 section[class*="bt-"] a,
@@ -283,7 +325,7 @@ section[class*="mta"] a,
 section[class*="tck-"] a,
 section[class*="tool-holder"] a,
 .he-thong-ga-kep-can-dao a {
-    color: #0055AA;
+    color: var(--anmi-color-primary);
     text-decoration: none;
 }
 
@@ -322,16 +364,16 @@ figure img {
     width: 100%;
     max-width: 1000px;
     height: auto;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
 }
 
 .bordered-img {
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--anmi-border-color-soft);
+    box-shadow: var(--anmi-box-shadow-soft);
 }
 
 figcaption {
-    color: #333333;
+    color: var(--anmi-color-text-secondary);
     font-size: 1rem; /* +5%: 0.95→1rem */
     margin-top: 0.75rem;
     font-style: italic;
@@ -387,7 +429,7 @@ li {
 
 .instruction-list,
 .maintenance-list {
-    color: #333333;
+    color: var(--anmi-color-text-secondary);
     line-height: 1.7;
 }
 
@@ -397,15 +439,15 @@ li {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #FFFFFF;
-    border-radius: 8px;
+    background-color: var(--anmi-color-surface);
+    border-radius: var(--anmi-border-radius-lg);
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--anmi-box-shadow-medium);
 }
 
 thead {
-    background-color: #0055AA;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary);
+    color: var(--anmi-color-surface);
 }
 
 th,
@@ -416,11 +458,11 @@ td {
 
 th {
     font-weight: 600;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid var(--anmi-border-color-strong);
 }
 
 tbody tr {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--anmi-border-color-subtle);
 }
 
 tbody tr:last-child {
@@ -432,7 +474,7 @@ tbody tr:last-child {
 }
 
 .highlight-value {
-    color: #0055AA;
+    color: var(--anmi-color-primary);
     font-weight: 600;
 }
 
@@ -442,7 +484,7 @@ tbody tr:last-child {
 
 .table-note {
     font-size: 1rem; /* +5%: 0.95→1rem */
-    color: #333333;
+    color: var(--anmi-color-text-secondary);
     line-height: 1.7;
     margin-top: 1rem;
     font-style: italic;
@@ -450,7 +492,7 @@ tbody tr:last-child {
 
 .note {
     font-size: 1.05rem; /* +5%: 1→1.05rem */
-    color: #333333;
+    color: var(--anmi-color-text-secondary);
     line-height: 1.7;
     margin-top: 1rem;
 }
@@ -459,10 +501,10 @@ tbody tr:last-child {
 /* CARDS */
 /* ============================================ */
 .card {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1rem; /* Giảm: 1.5rem → 1rem */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
 }
 
 .grid {
@@ -475,18 +517,18 @@ tbody tr:last-child {
 /* CONTACT SECTION */
 /* ============================================ */
 .contact-box {
-    background-color: #0055AA;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary);
+    color: var(--anmi-color-on-primary);
     padding: 1.25rem; /* Giảm: 2rem → 1.25rem */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.2);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-primary);
 }
 
 .contact-title {
     font-size: 1.575rem; /* +5%: 1.5→1.575rem */
     font-weight: 600;
     margin-bottom: 1rem; /* Giảm: 1.5rem → 1rem */
-    color: #FFFFFF;
+    color: var(--anmi-color-on-primary);
     text-align: center;
 }
 
@@ -497,27 +539,27 @@ tbody tr:last-child {
 }
 
 .contact-item {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--anmi-color-on-primary-soft);
     padding: 1rem; /* Giảm: 1.25rem → 1rem */
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
 }
 
 .contact-item h4 {
     font-size: 1.18rem; /* +5%: 1.125→1.18rem */
     font-weight: 600;
     margin-bottom: 0.75rem;
-    color: #FFFFFF;
+    color: var(--anmi-color-on-primary);
 }
 
 .contact-item p {
     font-size: 1rem; /* +5%: 0.95→1rem */
     line-height: 1.7;
-    color: #FFFFFF;
+    color: var(--anmi-color-on-primary);
     margin: 0;
 }
 
 .contact-item a {
-    color: #FFFFFF;
+    color: var(--anmi-color-on-primary);
     text-decoration: underline;
 }
 
@@ -525,12 +567,12 @@ tbody tr:last-child {
     text-align: center;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid var(--anmi-border-color-strong);
 }
 
 .contact-footer p {
     font-size: 1.05rem; /* +5%: 1→1.05rem */
-    color: #FFFFFF;
+    color: var(--anmi-color-on-primary);
     margin: 0;
 }
 
@@ -539,11 +581,11 @@ tbody tr:last-child {
 /* ============================================ */
 .support-card {
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1rem; /* Giảm: 1.5rem → 1rem */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    border: 1px solid #E0E0E0;
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
+    border: 1px solid var(--anmi-border-color-card);
 }
 
 .support-icon {
@@ -570,7 +612,7 @@ summary {
     padding: 1.25rem;
     font-size: 1.125rem;
     font-weight: 600;
-    color: #000000;
+    color: var(--anmi-color-text);
     cursor: pointer;
     list-style: none;
     display: flex;
@@ -587,14 +629,14 @@ details[open] summary .toggle {
 }
 
 .toggle {
-    color: #0055AA;
+    color: var(--anmi-color-primary);
     font-size: 1.5rem;
     transition: transform 0.3s ease;
 }
 
 .faq-content {
     padding: 0 1.25rem 1.25rem 1.25rem;
-    color: #333333;
+    color: var(--anmi-color-text-secondary);
     line-height: 1.7;
 }
 
@@ -625,21 +667,21 @@ details[open] summary .toggle {
     grid-template-columns: 200px 1fr;
     gap: 1rem;
     padding: 0.75rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--anmi-border-color-subtle);
 }
 
 .spec-label {
     font-weight: 600;
-    color: #0055AA;
+    color: var(--anmi-color-primary);
 }
 
 .spec-value {
-    color: #333333;
+    color: var(--anmi-color-text-secondary);
 }
 
 .spec-note {
     font-size: 0.95rem;
-    color: #666666;
+    color: var(--anmi-color-text-muted);
     font-style: italic;
     margin-top: 1rem;
 }
@@ -658,10 +700,10 @@ details[open] summary .toggle {
 }
 
 .feature-item {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1rem; /* Giảm: 1.5rem → 1rem */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
 }
 
 /* Applications */
@@ -674,11 +716,11 @@ details[open] summary .toggle {
 
 .application-card,
 .application-item {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1rem; /* Giảm: 1.5rem → 1rem */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    border: 1px solid #CED1DB;
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
+    border: 1px solid var(--anmi-border-color-panel);
 }
 
 .application-category {
@@ -687,12 +729,12 @@ details[open] summary .toggle {
 
 .application-note {
     font-size: 1rem; /* +5%: 0.95→1rem */
-    color: #666666;
+    color: var(--anmi-color-text-muted);
     font-style: italic;
     margin-top: 1rem;
     padding: 1rem;
-    background-color: #F0F8FF;
-    border-radius: 4px;
+    background-color: var(--anmi-color-surface-info);
+    border-radius: var(--anmi-border-radius-sm);
 }
 
 /* Performance Cards */
@@ -704,10 +746,10 @@ details[open] summary .toggle {
 }
 
 .performance-card {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1rem; /* Giảm: 1.5rem → 1rem */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
     text-align: center;
 }
 
@@ -719,7 +761,7 @@ details[open] summary .toggle {
 .performance-value {
     font-size: 1.575rem; /* +5%: 1.5→1.575rem */
     font-weight: 700;
-    color: #0055AA;
+    color: var(--anmi-color-primary);
     margin: 0.5rem 0;
 }
 
@@ -732,18 +774,18 @@ details[open] summary .toggle {
 .comparison-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #FFFFFF;
-    border-radius: 8px;
+    background-color: var(--anmi-color-surface);
+    border-radius: var(--anmi-border-radius-lg);
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--anmi-box-shadow-medium);
 }
 
 .comparison-note {
-    background-color: #F0F8FF;
+    background-color: var(--anmi-color-surface-info);
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
     margin-top: 1.5rem;
-    border-left: 4px solid #0055AA;
+    border-left: 4px solid var(--anmi-color-primary);
 }
 
 /* Machining Parameters */
@@ -754,19 +796,19 @@ details[open] summary .toggle {
 .params-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #FFFFFF;
-    border-radius: 8px;
+    background-color: var(--anmi-color-surface);
+    border-radius: var(--anmi-border-radius-lg);
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--anmi-box-shadow-medium);
     margin: 1rem 0;
 }
 
 .params-note {
-    background-color: #FFF9E6;
+    background-color: var(--anmi-color-surface-warm);
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
     margin-top: 1.5rem;
-    border-left: 4px solid #FFA500;
+    border-left: 4px solid var(--anmi-color-accent-warning);
 }
 
 /* Guides */
@@ -784,10 +826,10 @@ details[open] summary .toggle {
 }
 
 .issue {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
     margin-bottom: 1.5rem;
 }
 
@@ -799,17 +841,17 @@ details[open] summary .toggle {
 }
 
 .reason {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
 }
 
 /* Contact CTA */
 .contact-cta {
-    background-color: #F0F8FF;
+    background-color: var(--anmi-color-surface-info);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
     margin: 3rem 0;
 }
 
@@ -821,10 +863,10 @@ details[open] summary .toggle {
 }
 
 .office {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1.125rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -857,9 +899,9 @@ details[open] summary .toggle {
 }
 
 .warranty-note {
-    background-color: #FFF9E6;
+    background-color: var(--anmi-color-surface-warm);
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
     text-align: center;
     margin-top: 1.5rem;
     font-weight: 600;
@@ -884,10 +926,10 @@ details[open] summary .toggle {
 }
 
 .instruction-card {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
 }
 
 .installation-steps {
@@ -902,17 +944,17 @@ details[open] summary .toggle {
 .installation-steps li::before {
     content: counter(step) ". ";
     font-weight: 700;
-    color: #0055AA;
+    color: var(--anmi-color-primary);
 }
 
 /* Maintenance */
 .maintenance-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #FFFFFF;
-    border-radius: 8px;
+    background-color: var(--anmi-color-surface);
+    border-radius: var(--anmi-border-radius-lg);
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--anmi-box-shadow-medium);
     margin: 1rem 0;
 }
 
@@ -921,10 +963,10 @@ details[open] summary .toggle {
 .cta-button,
 .btn {
     display: inline-block;
-    background-color: #0066CC;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary-strong);
+    color: var(--anmi-color-on-primary);
     padding: 1rem 2rem;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -935,11 +977,11 @@ details[open] summary .toggle {
 .download-btn:hover,
 .cta-button:hover,
 .btn:hover {
-    background-color: #0052A3;
+    background-color: var(--anmi-color-primary-hover);
     text-decoration: none;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
-    color: #FFFFFF;
+    color: var(--anmi-color-on-primary);
 }
 
 /* ============================================ */
@@ -956,10 +998,10 @@ details[open] summary .toggle {
     align-items: center;
     gap: 10px;
     padding: 14px 28px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #FFFFFF;
+    background: linear-gradient(135deg, var(--anmi-gradient-download-start) 0%, var(--anmi-gradient-download-end) 100%);
+    color: var(--anmi-color-on-primary);
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
     font-weight: 600;
     font-size: 16.8px; /* +5%: 16→16.8px */
     transition: all 0.3s ease;
@@ -972,7 +1014,7 @@ details[open] summary .toggle {
 .catalog-download .download-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    background: linear-gradient(135deg, var(--anmi-gradient-download-end) 0%, var(--anmi-gradient-download-start) 100%);
     text-decoration: none;
 }
 
@@ -1017,98 +1059,98 @@ details[open] summary .toggle {
     display: inline-block;
     padding: 1rem 1.5rem;
     text-align: center;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
     font-weight: 600;
     transition: all 0.3s ease;
     text-decoration: none;
 }
 
 .cta-buttons .btn-primary {
-    background-color: #0066CC;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary-strong);
+    color: var(--anmi-color-on-primary);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .cta-buttons .btn-primary:hover {
-    background-color: #0052A3;
+    background-color: var(--anmi-color-primary-hover);
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--anmi-color-on-primary);
 }
 
 .cta-buttons .btn-secondary {
-    background-color: #FFFFFF;
-    color: #0066CC;
-    border: 2px solid #0066CC;
+    background-color: var(--anmi-color-surface);
+    color: var(--anmi-color-primary-strong);
+    border: 2px solid var(--anmi-color-primary-strong);
 }
 
 .cta-buttons .btn-secondary:hover {
-    background-color: #0066CC;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary-strong);
+    color: var(--anmi-color-on-primary);
     text-decoration: none;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {
-    background-color: #0066CC;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary-strong);
+    color: var(--anmi-color-on-primary);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:hover {
-    background-color: #0052A3;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary-hover);
+    color: var(--anmi-color-on-primary);
 }
 
 .btn-secondary {
-    background-color: #FFFFFF;
-    color: #0066CC;
-    border: 2px solid #0066CC;
+    background-color: var(--anmi-color-surface);
+    color: var(--anmi-color-primary-strong);
+    border: 2px solid var(--anmi-color-primary-strong);
 }
 
 .btn-secondary:hover {
-    background-color: #0066CC;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary-strong);
+    color: var(--anmi-color-on-primary);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button.secondary {
-    background-color: #FFFFFF;
-    color: #0066CC;
-    border: 2px solid #0066CC;
+    background-color: var(--anmi-color-surface);
+    color: var(--anmi-color-primary-strong);
+    border: 2px solid var(--anmi-color-primary-strong);
 }
 
 .cta-button.secondary:hover {
-    background-color: #0066CC;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary-strong);
+    color: var(--anmi-color-on-primary);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .secondary {
-    background-color: #FFFFFF;
-    color: #0066CC;
-    border: 2px solid #0066CC;
+    background-color: var(--anmi-color-surface);
+    color: var(--anmi-color-primary-strong);
+    border: 2px solid var(--anmi-color-primary-strong);
 }
 
 .secondary:hover {
-    background-color: #0066CC;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary-strong);
+    color: var(--anmi-color-on-primary);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Note Boxes */
 .note-box {
-    background-color: #F0F8FF;
+    background-color: var(--anmi-color-surface-info);
     padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #0055AA;
+    border-radius: var(--anmi-border-radius-lg);
+    border-left: 4px solid var(--anmi-color-primary);
     margin: 1.5rem 0;
 }
 
 .tip-box {
-    background-color: #E8F5E9;
+    background-color: var(--anmi-color-surface-success);
     padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #4CAF50;
+    border-radius: var(--anmi-border-radius-lg);
+    border-left: 4px solid var(--anmi-color-accent-success);
     margin: 1.5rem 0;
 }
 
@@ -1122,14 +1164,14 @@ details[open] summary .toggle {
 
 .support-note {
     font-size: 1rem; /* +5%: 0.95→1rem */
-    color: #666666;
+    color: var(--anmi-color-text-muted);
     font-style: italic;
     margin-top: 1rem;
 }
 
 /* FAQ */
 .faq-item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--anmi-border-color-subtle);
     padding: 1rem 0;
 }
 
@@ -1139,17 +1181,17 @@ details[open] summary .toggle {
 
 .faq-question {
     font-weight: 600;
-    color: #000000;
+    color: var(--anmi-color-text);
     margin-bottom: 0.5rem;
 }
 
 .faq-answer {
-    color: #333333;
+    color: var(--anmi-color-text-secondary);
     line-height: 1.7;
 }
 
 .faq-icon {
-    color: #0055AA;
+    color: var(--anmi-color-primary);
     font-size: 1.575rem; /* +5%: 1.5→1.575rem */
     margin-right: 0.5rem;
 }
@@ -1158,12 +1200,12 @@ details[open] summary .toggle {
 .footer-section {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 2px solid rgba(0, 0, 0, 0.08);
+    border-top: 2px solid var(--anmi-border-color-soft);
 }
 
 .footer-description {
     font-size: 1rem; /* +5%: 0.95→1rem */
-    color: #666666;
+    color: var(--anmi-color-text-muted);
     line-height: 1.7;
 }
 
@@ -1177,25 +1219,25 @@ details[open] summary .toggle {
 
 /* Highlights */
 .highlight {
-    background-color: #FFF9E6;
+    background-color: var(--anmi-color-surface-warm);
     padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    border-radius: var(--anmi-border-radius-sm);
     font-weight: 600;
 }
 
 .highlight-green {
-    background-color: #E8F5E9;
+    background-color: var(--anmi-color-surface-success);
     padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    border-radius: var(--anmi-border-radius-sm);
     font-weight: 600;
-    color: #2E7D32;
+    color: var(--anmi-color-accent-success-strong);
 }
 
 /* Download Section */
 .download-section {
-    background-color: #F0F8FF;
+    background-color: var(--anmi-color-surface-info);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
     text-align: center;
     margin: 2rem 0;
 }
@@ -1221,17 +1263,17 @@ details[open] summary .toggle {
 .section.maintenance-guide,
 .section.storage-tips,
 .section.faq {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
 }
 
 .section.support-contact {
-    background-color: #F0F8FF;
+    background-color: var(--anmi-color-surface-info);
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0, 85, 170, 0.12);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-primary);
 }
 
 .section.support-contact p {
@@ -1240,11 +1282,11 @@ details[open] summary .toggle {
 }
 
 .section.support-contact a {
-    color: #0055AA;
+    color: var(--anmi-color-primary);
 }
 
 .section.support-contact a.btn {
-    color: #fff;
+    color: var(--anmi-color-on-primary);
 }
 
 .advantages,
@@ -1267,17 +1309,17 @@ details[open] summary .toggle {
 .maintenance-guide,
 .storage-tips,
 .faq {
-    background-color: #FFFFFF;
+    background-color: var(--anmi-color-surface);
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
 }
 
 .support-contact {
-    background-color: #F0F8FF;
+    background-color: var(--anmi-color-surface-info);
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0, 85, 170, 0.12);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-primary);
 }
 
 .support-contact p {
@@ -1286,7 +1328,7 @@ details[open] summary .toggle {
 }
 
 .support-contact a {
-    color: #0055AA;
+    color: var(--anmi-color-primary);
 }
 
 /* Product Intro */
@@ -1333,17 +1375,17 @@ details[open] summary .toggle {
 .product-category {
     margin: 3rem 0;
     padding: 1.5rem;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    background-color: var(--anmi-color-surface);
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
 }
 
 .product-category h3 {
     font-size: 1.575rem; /* +5%: 1.5→1.575rem */
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #0055AA;
-    border-bottom: 2px solid #0055AA;
+    color: var(--anmi-color-primary);
+    border-bottom: 2px solid var(--anmi-color-primary);
     padding-bottom: 0.75rem;
 }
 
@@ -1351,7 +1393,7 @@ details[open] summary .toggle {
     font-size: 1.31rem; /* +5%: 1.25→1.31rem */
     font-weight: 600;
     margin: 2rem 0 1rem 0;
-    color: #000000;
+    color: var(--anmi-color-text);
 }
 
 .product-category figure {
@@ -1393,13 +1435,13 @@ details[open] summary .toggle {
 .product-images-grid figure img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
 }
 
 .product-images-grid figcaption {
     margin-top: 0.75rem;
     font-size: 1rem;
-    color: #333333;
+    color: var(--anmi-color-text-secondary);
     line-height: 1.6;
 }
 
@@ -1411,16 +1453,16 @@ details[open] summary .toggle {
 }
 
 .comparison-table thead tr {
-    background-color: #0055AA;
-    color: #FFFFFF;
+    background-color: var(--anmi-color-primary);
+    color: var(--anmi-color-on-primary);
 }
 
 .comparison-table tbody tr:nth-child(even) {
-    background-color: rgba(0, 85, 170, 0.03);
+    background-color: var(--anmi-color-primary-tint-soft);
 }
 
 .comparison-table tbody tr:hover {
-    background-color: rgba(0, 85, 170, 0.08);
+    background-color: var(--anmi-color-primary-tint-strong);
 }
 
 /* ============================================ */
@@ -1429,16 +1471,16 @@ details[open] summary .toggle {
 .guide-section {
     margin: 2rem 0;
     padding: 1.5rem;
-    background-color: #F0F8FF;
-    border-radius: 8px;
-    border-left: 4px solid #0055AA;
+    background-color: var(--anmi-color-surface-info);
+    border-radius: var(--anmi-border-radius-lg);
+    border-left: 4px solid var(--anmi-color-primary);
 }
 
 .guide-section h3 {
     font-size: 1.31rem; /* +5%: 1.25→1.31rem */
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #0055AA;
+    color: var(--anmi-color-primary);
 }
 
 .guide-section ul {
@@ -1457,12 +1499,12 @@ details[open] summary .toggle {
     content: "▶";
     position: absolute;
     left: 0.5rem;
-    color: #0055AA;
+    color: var(--anmi-color-primary);
     font-size: 0.875rem;
 }
 
 .guide-section ul li strong {
-    color: #000000;
+    color: var(--anmi-color-text);
     font-weight: 700;
 }
 
@@ -1470,25 +1512,25 @@ details[open] summary .toggle {
 /* UTILITY CLASSES */
 /* ============================================ */
 .highlight-box {
-    background-color: #F0F8FF;
+    background-color: var(--anmi-color-surface-info);
     padding: 1rem; /* Giảm: 1.5rem → 1rem */
-    border-radius: 8px;
-    border-left: 4px solid #0055AA;
+    border-radius: var(--anmi-border-radius-lg);
+    border-left: 4px solid var(--anmi-color-primary);
     margin-bottom: 1rem; /* Giảm: 1.5rem → 1rem */
 }
 
 .warning-box {
-    background-color: #FFF9E6;
+    background-color: var(--anmi-color-surface-warm);
     padding: 1rem; /* Giảm: 1.5rem → 1rem */
-    border-radius: 8px;
-    border-left: 4px solid #FFA500;
+    border-radius: var(--anmi-border-radius-lg);
+    border-left: 4px solid var(--anmi-color-accent-warning);
     margin-bottom: 1rem; /* Giảm: 1.5rem → 1rem */
 }
 
 .info-box {
-    background-color: #F0F8FF;
+    background-color: var(--anmi-color-surface-info);
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: var(--anmi-border-radius-lg);
     margin-top: 1rem; /* Giảm: 1.5rem → 1rem */
 }
 
@@ -1497,7 +1539,7 @@ details[open] summary .toggle {
 }
 
 .checkmark {
-    color: #0055AA;
+    color: var(--anmi-color-primary);
     font-weight: 700;
     font-size: 1.31rem; /* +5%: 1.25→1.31rem */
     margin-right: 0.75rem;
@@ -1509,20 +1551,20 @@ details[open] summary .toggle {
 .footer {
     margin-top: 4rem;
     padding-top: 2rem;
-    border-top: 2px solid rgba(0, 0, 0, 0.08);
+    border-top: 2px solid var(--anmi-border-color-soft);
     text-align: center;
 }
 
 .footer-main {
     font-size: 1rem; /* +5%: 0.95→1rem */
-    color: #333333;
+    color: var(--anmi-color-text-secondary);
     line-height: 1.7;
     margin-bottom: 1rem;
 }
 
 .footer-meta {
     font-size: 0.92rem; /* +5%: 0.875→0.92rem */
-    color: #666666;
+    color: var(--anmi-color-text-muted);
     margin: 0;
 }
 
@@ -1674,7 +1716,7 @@ details[open] summary .toggle {
 /* ACCESSIBILITY */
 /* ============================================ */
 *:focus {
-    outline: 2px solid #0055AA;
+    outline: var(--anmi-focus-outline-size) solid var(--anmi-color-primary);
     outline-offset: 2px;
 }
 
@@ -1696,7 +1738,7 @@ img {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--anmi-overlay-backdrop);
 }
 
 .anmi-lightbox-content {
@@ -1723,7 +1765,7 @@ img {
     position: absolute;
     top: 20px;
     right: 35px;
-    color: #FFFFFF;
+    color: var(--anmi-color-on-primary);
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -1733,7 +1775,7 @@ img {
 
 .anmi-lightbox-close:hover,
 .anmi-lightbox-close:focus {
-    color: #BBBBBB;
+    color: var(--anmi-color-text-soft);
     text-decoration: none;
     cursor: pointer;
 }
@@ -1744,7 +1786,7 @@ img {
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #CCCCCC;
+    color: var(--anmi-color-text-soft-alt);
     padding: 10px 0;
     height: auto;
     font-size: 1rem;
@@ -1785,12 +1827,12 @@ img {
     section[class*="nbj"],
     section[class*="ewn"],
     .he-thong-ga-kep-can-dao {
-        background-color: #FFFFFF;
+        background-color: var(--anmi-color-surface);
     }
 
     .contact-box {
-        background-color: #FFFFFF;
-        color: #000000;
-        border: 1px solid #000000;
+        background-color: var(--anmi-color-surface);
+        color: var(--anmi-color-text);
+        border: 1px solid var(--anmi-color-text);
     }
 }
