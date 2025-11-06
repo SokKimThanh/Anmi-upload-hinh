@@ -870,37 +870,79 @@ details[open] summary .toggle {
 
 .office {
     background-color: var(--anmi-color-surface);
-    padding: 1.125rem;
+    padding: 1.5rem;
     border-radius: var(--anmi-border-radius-lg);
     box-shadow: var(--anmi-box-shadow-medium);
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
 }
 
+/* Office Title */
+.office h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--anmi-color-text);
+    margin: 0 0 0.75rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--anmi-color-primary-tint-strong);
+}
+
+/* Hotline Meta Block */
 .office .contact-meta {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
-    margin-top: 0.25rem;
+    gap: 0.35rem;
+    padding: 0.75rem;
+    background-color: var(--anmi-color-primary-tint-soft);
+    border-radius: var(--anmi-border-radius-sm);
+    border-left: 3px solid var(--anmi-color-primary-strong);
 }
 
 .office .contact-meta-label {
-    font-size: 0.95rem;
-    letter-spacing: 0.08em;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--anmi-color-text-muted);
+    margin: 0;
 }
 
 .office .contact-meta-value {
-    font-size: 1.2rem;
+    font-size: 1.375rem;
     font-weight: 700;
     color: var(--anmi-color-primary-strong);
     text-decoration: none;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
 }
 
 .office .contact-meta-value:hover {
     color: var(--anmi-color-primary-hover);
+    text-decoration: none;
+}
+
+/* Address Block */
+.office .contact-address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.office .contact-address-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--anmi-color-text-muted);
+    margin: 0;
+}
+
+.office .contact-address-value {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--anmi-color-text-secondary);
+    margin: 0;
 }
 
 @media (min-width: 1280px) {
@@ -911,7 +953,7 @@ details[open] summary .toggle {
 
 @media (min-width: 1600px) {
     .contact-info {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -1016,8 +1058,72 @@ details[open] summary .toggle {
 }
 
 /* ============================================ */
-/* CATALOG DOWNLOAD BUTTON - Modern Gradient Style */
+/* CATALOG DOWNLOAD SECTION - Redesigned with Hierarchy */
 /* ============================================ */
+.section.catalog-download {
+    background-color: var(--anmi-color-surface);
+    padding: 2rem;
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-box-shadow-medium);
+    margin: 2rem 0;
+}
+
+.catalog-download h2 {
+    font-size: 1.575rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--anmi-color-text);
+    border-bottom: 2px solid var(--anmi-color-primary);
+    padding-bottom: 0.5rem;
+    display: block;
+}
+
+.catalog-download > p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--anmi-color-text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.catalog-download .cta-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 0;
+}
+
+.catalog-download .cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--anmi-color-primary-strong);
+    color: var(--anmi-color-on-primary);
+    text-decoration: none;
+    border-radius: var(--anmi-border-radius-lg);
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--anmi-box-shadow-primary);
+    text-shadow: var(--anmi-text-shadow-elevated);
+    border: none;
+    cursor: pointer;
+}
+
+.catalog-download .cta-button:hover {
+    background-color: var(--anmi-color-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--anmi-box-shadow-primary-hover);
+    text-decoration: none;
+    color: var(--anmi-color-on-primary);
+}
+
+.catalog-download .cta-button:active {
+    transform: translateY(0);
+}
+
+/* Old catalog-download styles for backward compatibility */
 .catalog-download {
     margin: 20px 0;
     display: flex;
