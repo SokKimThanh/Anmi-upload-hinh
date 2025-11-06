@@ -18,9 +18,8 @@ schema_type: "Product"
 
 <section class="ck-lbk-boring-bar-system">
 
-	<!-- Hero Image CK/LBK System -->
 	<figure class="product-image">
-		<img src="https://anmitools.com/wp-content/uploads/2025/09/ck-lbk-boring-bar.webp"
+		<img src="https://anmitools.com/wp-content/uploads/2025/10/34-ck-lbk-boring-bar-system-ck-lbk-modular-boring-cutter.webp"
 			alt="CK LBK Boring Bar System – Variable CK1-CK7 & Fixed LBK1-LBK6 Length" width="800" height="600"
 			loading="lazy">
 		<figcaption><strong>CK LBK Boring Bar System</strong> – Hệ thống thanh doa modular với CK (điều chỉnh được) và LBK
@@ -44,14 +43,13 @@ schema_type: "Product"
 					<polyline points="7 10 12 15 17 10"></polyline>
 					<line x1="12" y1="15" x2="12" y2="3"></line>
 				</svg>
-				<span>Download Catalog: 9. Tooling Systems.pdf – Trang 35</span>
+				<span>Download Catalog: 9. Tooling Systems.pdf – Trang 78</span>
 			</a>
 		</div>
 	</div>
 
-	<!-- Image CK Variable Length -->
 	<figure class="product-image">
-		<img src="https://anmitools.com/wp-content/uploads/2025/09/ck-variable-boring-bar.webp"
+		<img src="https://anmitools.com/wp-content/uploads/2025/10/34-ck-lbk-boring-bar-system-CK-MODULAR-BORRING-CUTTER.webp"
 			alt="CK Variable Length Boring Bar CK1-CK7 điều chỉnh reach 50-400mm" width="800" height="600"
 			loading="lazy">
 		<figcaption><strong>CK Variable Length Boring Bar</strong> (CK1-CK7) – Điều chỉnh chiều dài linh hoạt 50-400mm cho
@@ -71,9 +69,8 @@ schema_type: "Product"
 		</ol>
 	</div>
 
-	<!-- Image LBK Fixed Length -->
 	<figure class="product-image">
-		<img src="https://anmitools.com/wp-content/uploads/2025/09/lbk-fixed-boring-bar.webp"
+		<img src="https://anmitools.com/wp-content/uploads/2025/10/34-ck-lbk-boring-bar-system-LBK-MODULAR-BORRING-CUTTER.webp"
 			alt="LBK Fixed Length Boring Bar LBK1-LBK6 độ cứng cao heavy cutting" width="800" height="600"
 			loading="lazy">
 		<figcaption><strong>LBK Fixed Length Boring Bar</strong> (LBK1-LBK6) – Độ cứng vững cao, lý tưởng cho heavy cutting và deep hole boring.</figcaption>
@@ -181,6 +178,20 @@ schema_type: "Product"
 			</tbody>
 		</table>
 	</div>
+
+	<figure class="product-image">
+		<img src="https://anmitools.com/wp-content/uploads/2025/10/34-ck-lbk-boring-bar-system-ST-SIMPLY-BORING.webp"
+			alt="ST Simply Boring System - Hệ thống doa đơn giản cho ứng dụng cơ bản" width="800" height="600"
+			loading="lazy">
+		<figcaption><strong>ST Simply Boring</strong> – Hệ thống doa đơn giản, phù hợp cho ứng dụng cơ bản và tiết kiệm chi phí.</figcaption>
+	</figure>
+
+	<figure class="product-image">
+		<img src="https://anmitools.com/wp-content/uploads/2025/10/34-ck-lbk-boring-bar-system-nbj-nbh-SIMPLY-BORING.webp"
+			alt="NBJ NBH Simply Boring - Tương thích với boring head NBJ và NBH" width="800" height="600"
+			loading="lazy">
+		<figcaption><strong>NBJ/NBH Simply Boring</strong> – Tương thích hoàn hảo với boring head NBJ16 và NBH2084, giải pháp linh hoạt cho nhiều ứng dụng.</figcaption>
+	</figure>
 
 	<div class="section faq">
 		<h2>Câu Hỏi Thường Gặp Về CK LBK Boring Bar</h2>
