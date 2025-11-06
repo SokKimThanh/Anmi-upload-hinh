@@ -152,12 +152,17 @@
     --anmi-box-shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.08);
     --anmi-box-shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.06);
     --anmi-box-shadow-primary: 0 4px 12px rgba(0, 85, 170, 0.2);
+    --anmi-box-shadow-primary-hover: 0 4px 12px rgba(0, 102, 204, 0.4);
+    --anmi-box-shadow-download: 0 4px 15px rgba(102, 126, 234, 0.4);
+    --anmi-box-shadow-download-hover: 0 6px 20px rgba(102, 126, 234, 0.6);
+    --anmi-box-shadow-download-active: 0 2px 10px rgba(102, 126, 234, 0.4);
     --anmi-border-radius-lg: 8px;
     --anmi-border-radius-sm: 4px;
     --anmi-focus-outline-size: 2px;
     --anmi-gradient-download-start: #667eea;
     --anmi-gradient-download-end: #764ba2;
     --anmi-overlay-backdrop: rgba(0, 0, 0, 0.9);
+    --anmi-text-shadow-elevated: 0 1px 2px rgba(0, 0, 0, 0.2);
     --anmi-section-max-width: 1200px;
     --anmi-section-padding-y: 1rem;
     --anmi-section-padding-x: 0.5rem;
@@ -401,7 +406,7 @@ li {
 
 .spec-item {
     padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--anmi-border-color-subtle);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -418,7 +423,7 @@ li {
 
 .advantage-item {
     padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--anmi-border-color-subtle);
     display: flex;
     align-items: flex-start;
 }
@@ -601,7 +606,7 @@ tbody tr:last-child {
 }
 
 details {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--anmi-border-color-subtle);
 }
 
 details:last-child {
@@ -971,7 +976,7 @@ details[open] summary .toggle {
     font-weight: 600;
     transition: all 0.3s ease;
     margin: 0.5rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: var(--anmi-text-shadow-elevated);
 }
 
 .download-btn:hover,
@@ -980,7 +985,7 @@ details[open] summary .toggle {
     background-color: var(--anmi-color-primary-hover);
     text-decoration: none;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
+    box-shadow: var(--anmi-box-shadow-primary-hover);
     color: var(--anmi-color-on-primary);
 }
 
@@ -1005,7 +1010,7 @@ details[open] summary .toggle {
     font-weight: 600;
     font-size: 16.8px; /* +5%: 16→16.8px */
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: var(--anmi-box-shadow-download);
     border: none;
     cursor: pointer;
     margin: 0;
@@ -1013,14 +1018,14 @@ details[open] summary .toggle {
 
 .catalog-download .download-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    box-shadow: var(--anmi-box-shadow-download-hover);
     background: linear-gradient(135deg, var(--anmi-gradient-download-end) 0%, var(--anmi-gradient-download-start) 100%);
     text-decoration: none;
 }
 
 .catalog-download .download-btn:active {
     transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4);
+    box-shadow: var(--anmi-box-shadow-download-active);
 }
 
 .download-icon {
@@ -1068,7 +1073,7 @@ details[open] summary .toggle {
 .cta-buttons .btn-primary {
     background-color: var(--anmi-color-primary-strong);
     color: var(--anmi-color-on-primary);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: var(--anmi-text-shadow-elevated);
 }
 
 .cta-buttons .btn-primary:hover {
@@ -1087,13 +1092,13 @@ details[open] summary .toggle {
     background-color: var(--anmi-color-primary-strong);
     color: var(--anmi-color-on-primary);
     text-decoration: none;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: var(--anmi-text-shadow-elevated);
 }
 
 .btn-primary {
     background-color: var(--anmi-color-primary-strong);
     color: var(--anmi-color-on-primary);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: var(--anmi-text-shadow-elevated);
 }
 
 .btn-primary:hover {
@@ -1110,7 +1115,7 @@ details[open] summary .toggle {
 .btn-secondary:hover {
     background-color: var(--anmi-color-primary-strong);
     color: var(--anmi-color-on-primary);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: var(--anmi-text-shadow-elevated);
 }
 
 .cta-button.secondary {
@@ -1122,7 +1127,7 @@ details[open] summary .toggle {
 .cta-button.secondary:hover {
     background-color: var(--anmi-color-primary-strong);
     color: var(--anmi-color-on-primary);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: var(--anmi-text-shadow-elevated);
 }
 
 .secondary {
@@ -1134,7 +1139,7 @@ details[open] summary .toggle {
 .secondary:hover {
     background-color: var(--anmi-color-primary-strong);
     color: var(--anmi-color-on-primary);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: var(--anmi-text-shadow-elevated);
 }
 
 /* Note Boxes */
@@ -1346,7 +1351,7 @@ details[open] summary .toggle {
 
 .product-intro ul li {
     padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--anmi-border-color-subtle);
 }
 
 /* Product Features */
@@ -1357,7 +1362,7 @@ details[open] summary .toggle {
 
 .product-features li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--anmi-border-color-subtle);
 }
 
 /* Specifications Section */
