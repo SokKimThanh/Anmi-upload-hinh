@@ -143,13 +143,7 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
     </div>
     <?php endif; ?>
     
-    <!-- Play Button Overlay -->
-    <div class="abvp-play-icon anmi-play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; pointer-events: none;">
-        <img src="https://anmitools.com/wp-content/uploads/2025/11/play-button.png" 
-             alt="Play Video" 
-             class="abvp-play-button-image"
-             style="display: block; width: 80px; height: 80px; cursor: pointer; transition: transform 0.3s ease;">
-    </div>
+    <!-- Play Button Overlay - REMOVED: Now handled by Elementor overlay in render_wp_core_video() -->
     
     <!-- Loading Spinner -->
     <div class="abvp-loading-spinner anmi-banner-loader">

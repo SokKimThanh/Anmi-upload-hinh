@@ -11,7 +11,8 @@
             this.$container = $(container);
             this.$video = this.$container.find('.anmi-banner-video');
             this.$images = this.$container.find('.anmi-banner-image');
-            this.$playOverlay = this.$container.find('.anmi-play-overlay');
+            // Support both old and new play overlay classes
+            this.$playOverlay = this.$container.find('.anmi-play-overlay, .elementor-custom-embed-play');
             this.$dots = this.$container.find('.anmi-banner-dot');
             this.$loader = this.$container.find('.anmi-banner-loader');
             this.$volumeControl = this.$container.find('.anmi-volume-control');
