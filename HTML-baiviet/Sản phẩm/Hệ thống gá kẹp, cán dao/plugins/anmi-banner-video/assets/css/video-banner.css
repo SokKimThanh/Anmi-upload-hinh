@@ -47,12 +47,17 @@
 .anmi-video-banner-container[data-enable-slider="0"] .anmi-banner-video,
 .anmi-video-banner-container[data-enable-slider="0"] .abvp-video-frame,
 .anmi-video-banner-container[data-enable-slider="0"] .abvp-wp-video-wrapper,
+.anmi-video-banner-container[data-enable-slider="0"] .elementor-fit-aspect-ratio iframe,
+.anmi-video-banner-container[data-enable-slider="0"] .elementor-fit-aspect-ratio video,
 .abvp-banner-wrapper[data-enable-slider="0"] .anmi-banner-video,
 .abvp-banner-wrapper[data-enable-slider="0"] .abvp-video-frame,
-.abvp-banner-wrapper[data-enable-slider="0"] .abvp-wp-video-wrapper {
+.abvp-banner-wrapper[data-enable-slider="0"] .abvp-wp-video-wrapper,
+.abvp-banner-wrapper[data-enable-slider="0"] .elementor-fit-aspect-ratio iframe,
+.abvp-banner-wrapper[data-enable-slider="0"] .elementor-fit-aspect-ratio video {
     position: relative;
     z-index: 1;
-    opacity: 1;
+    opacity: 1 !important;
+    pointer-events: auto;
 }
 
 /* OLD OVERLAY REMOVED - Dedicated overlay handles all modes now */
@@ -105,12 +110,17 @@
     .anmi-video-banner-container[data-enable-slider-desktop="0"] .anmi-banner-video,
     .anmi-video-banner-container[data-enable-slider-desktop="0"] .abvp-video-frame,
     .anmi-video-banner-container[data-enable-slider-desktop="0"] .abvp-wp-video-wrapper,
+    .anmi-video-banner-container[data-enable-slider-desktop="0"] .elementor-fit-aspect-ratio iframe,
+    .anmi-video-banner-container[data-enable-slider-desktop="0"] .elementor-fit-aspect-ratio video,
     .abvp-banner-wrapper[data-enable-slider-desktop="0"] .anmi-banner-video,
     .abvp-banner-wrapper[data-enable-slider-desktop="0"] .abvp-video-frame,
-    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .abvp-wp-video-wrapper {
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .abvp-wp-video-wrapper,
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .elementor-fit-aspect-ratio iframe,
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .elementor-fit-aspect-ratio video {
         position: relative;
         opacity: 1;
         z-index: 1;
+        pointer-events: auto;
     }
 }
 
@@ -134,12 +144,17 @@
     .anmi-video-banner-container[data-enable-slider-mobile="0"] .anmi-banner-video,
     .anmi-video-banner-container[data-enable-slider-mobile="0"] .abvp-video-frame,
     .anmi-video-banner-container[data-enable-slider-mobile="0"] .abvp-wp-video-wrapper,
+    .anmi-video-banner-container[data-enable-slider-mobile="0"] .elementor-fit-aspect-ratio iframe,
+    .anmi-video-banner-container[data-enable-slider-mobile="0"] .elementor-fit-aspect-ratio video,
     .abvp-banner-wrapper[data-enable-slider-mobile="0"] .anmi-banner-video,
     .abvp-banner-wrapper[data-enable-slider-mobile="0"] .abvp-video-frame,
-    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .abvp-wp-video-wrapper {
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .abvp-wp-video-wrapper,
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .elementor-fit-aspect-ratio iframe,
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .elementor-fit-aspect-ratio video {
         position: relative;
-        opacity: 1;
+        opacity: 1 !important;
         z-index: 1;
+        pointer-events: auto;
     }
 }
 
@@ -1017,6 +1032,15 @@
         opacity: 0 !important;
         z-index: 0 !important;
         transition: opacity 0.3s ease, z-index 0s;
+    }
+
+    /* HOVER: Hide slider pagination to match hidden slides */
+    [data-has-slider="1"][data-enable-slider-desktop="1"]:not([data-enable-hover="0"]):not([data-enable-hover-desktop="0"]):hover .abvp-nav-dots,
+    [data-has-slider="1"][data-enable-slider-desktop="1"]:not([data-enable-hover="0"]):not([data-enable-hover-desktop="0"]):hover .anmi-slider-dots {
+        opacity: 0 !important;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
     }
     
     /* Note: [data-enable-slider-desktop="0"] keeps overlay visible on hover */
