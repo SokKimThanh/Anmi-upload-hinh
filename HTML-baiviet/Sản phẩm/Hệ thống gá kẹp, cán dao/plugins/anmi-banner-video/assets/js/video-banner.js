@@ -33,6 +33,9 @@
         }
         
         init() {
+            // Prevent duplicate initialization when re-running scripts
+            this.$container.data('anmi-initialized', true);
+            
             // Check if mobile
             if (this.isMobile() && this.mobileBehavior === 'image') {
                 this.disableVideoOnMobile();
@@ -65,6 +68,7 @@
         disableVideoOnMobile() {
             this.$video.remove();
             this.$playOverlay.remove();
+            this.$volumeControl.remove();
         }
         
         /* ============================================ */

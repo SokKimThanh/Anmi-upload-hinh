@@ -4,7 +4,8 @@
 /* ============================================ */
 
 /* Container */
-.anmi-video-banner-container {
+.anmi-video-banner-container,
+.abvp-banner-wrapper {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -19,7 +20,8 @@
 /* ============================================ */
 
 /* Video Background - Default hidden, show on hover */
-.anmi-banner-video {
+.anmi-banner-video,
+.abvp-video-frame {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,12 +34,14 @@
 }
 
 /* When hovering, bring HTML5 video above slider */
-.anmi-video-banner-container:hover .anmi-banner-video {
+.anmi-video-banner-container:hover .anmi-banner-video,
+.abvp-banner-wrapper:hover .abvp-video-frame {
     z-index: 20; /* Above slider and content */
 }
 
 /* YouTube/Vimeo Iframe - Default below slider */
-.anmi-banner-iframe {
+.anmi-banner-iframe,
+.abvp-video-iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,26 +55,30 @@
 }
 
 /* When hovering container, bring iframe above slider for controls access */
-.anmi-video-banner-container:hover .anmi-banner-iframe {
+.anmi-video-banner-container:hover .anmi-banner-iframe,
+.abvp-banner-wrapper:hover .abvp-video-iframe {
     z-index: 20; /* Above slider and content */
     pointer-events: auto; /* Enable clicking on video controls */
 }
 
 /* Keep slider visible but reduce opacity slightly when video is hovered */
-.anmi-video-banner-container:hover .anmi-banner-slider {
+.anmi-video-banner-container:hover .anmi-banner-slider,
+.abvp-banner-wrapper:hover .abvp-slide-image {
     opacity: 0.3; /* Dim slider to show video is active */
 }
 
 /* Scale iframe to cover entire area (production only) */
 @media (min-aspect-ratio: 16/9) {
-    .anmi-banner-iframe {
+    .anmi-banner-iframe,
+    .abvp-video-iframe {
         height: 300%;
         top: -100%;
     }
 }
 
 @media (max-aspect-ratio: 16/9) {
-    .anmi-banner-iframe {
+    .anmi-banner-iframe,
+    .abvp-video-iframe {
         width: 300%;
         left: -100%;
     }
@@ -109,31 +117,59 @@
 /* ============================================ */
 
 /* Play button overlay - Small button at bottom right */
-.anmi-play-overlay {
+.anmi-play-overlay,
+.abvp-play-icon {
     transition: opacity 0.3s ease, transform 0.3s ease;
     cursor: pointer;
 }
 
-.anmi-video-banner-container:hover .anmi-play-overlay {
+.anmi-video-banner-container:hover .anmi-play-overlay,
+.abvp-banner-wrapper:hover .abvp-play-icon {
     opacity: 1 !important;
     transform: scale(1.1);
 }
 
-.anmi-play-overlay:hover {
+.anmi-play-overlay:hover,
+.abvp-play-icon:hover {
     transform: scale(1.2) !important;
 }
 
 /* Hide play overlay when video is playing */
-.anmi-video-banner-container.video-playing .anmi-play-overlay {
+.anmi-video-banner-container.video-playing .anmi-play-overlay,
+.abvp-banner-wrapper.video-playing .abvp-play-icon {
     opacity: 0;
     pointer-events: none;
 }
 
-/* Production demo specific styles */
 .anmi-preview-production-demo .anmi-video-banner-container {
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     border-radius: 8px;
     overflow: hidden;
+}
+
+/* Volume control button (HTML5 videos) */
+.anmi-volume-control,
+.abvp-audio-toggle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    display: none;
+    z-index: 30;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.anmi-volume-control:hover,
+.abvp-audio-toggle:hover {
+    background: rgba(0, 0, 0, 0.85);
+    transform: scale(1.05);
 }
 
 /* Admin preview: Always allow video controls access (no hover needed) */
@@ -193,7 +229,8 @@
 }
 
 /* Slider Navigation Dots */
-.anmi-slider-dots {
+.anmi-slider-dots,
+.abvp-nav-dots {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -204,7 +241,8 @@
     pointer-events: auto; /* Allow clicking on dots */
 }
 
-.anmi-slider-dots .dot {
+.anmi-slider-dots .dot,
+.abvp-nav-dots .abvp-dot-indicator {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -213,12 +251,14 @@
     transition: all 0.3s ease;
 }
 
-.anmi-slider-dots .dot:hover {
+.anmi-slider-dots .dot:hover,
+.abvp-nav-dots .abvp-dot-indicator:hover {
     background: rgba(255, 255, 255, 0.8);
     transform: scale(1.2);
 }
 
-.anmi-slider-dots .dot.active {
+.anmi-slider-dots .dot.active,
+.abvp-nav-dots .abvp-dot-indicator.active {
     background: #ff6600;
     width: 30px;
     border-radius: 6px;
@@ -229,7 +269,8 @@
 /* ============================================ */
 
 /* Image Overlay (old version compatibility) */
-.anmi-banner-image {
+.anmi-banner-image,
+.abvp-slide-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -245,13 +286,15 @@
 }
 
 /* Dim old-style images when hovering (for preview and backward compatibility) */
-.anmi-video-banner-container:hover .anmi-banner-image {
+.anmi-video-banner-container:hover .anmi-banner-image,
+.abvp-banner-wrapper:hover .abvp-slide-image {
     opacity: 0.3 !important; /* Override inline styles */
     z-index: 2 !important; /* Keep below iframe z-index: 20 */
 }
 
 /* Content Overlay */
-.anmi-banner-content {
+.anmi-banner-content,
+.abvp-content-overlay {
     position: relative;
     z-index: 3;
     text-align: center;
@@ -263,11 +306,13 @@
 }
 
 /* Allow clicking on interactive elements inside content */
-.anmi-banner-content .anmi-banner-btn {
+.anmi-banner-content .anmi-banner-btn,
+.abvp-content-overlay .abvp-cta-button {
     pointer-events: auto;
 }
 
-.anmi-banner-title {
+.anmi-banner-title,
+.abvp-title-text {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -275,14 +320,16 @@
     line-height: 1.2;
 }
 
-.anmi-banner-subtitle {
+.anmi-banner-subtitle,
+.abvp-subtitle-text {
     font-size: 20px;
     margin-bottom: 30px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     line-height: 1.5;
 }
 
-.anmi-banner-btn {
+.anmi-banner-btn,
+.abvp-cta-button {
     display: inline-block;
     padding: 15px 40px;
     background: #ff6600;
@@ -295,14 +342,16 @@
     box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
 }
 
-.anmi-banner-btn:hover {
+.anmi-banner-btn:hover,
+.abvp-cta-button:hover {
     background: #ff8533;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
 }
 
 /* Loading Spinner */
-.anmi-banner-loader {
+.anmi-banner-loader,
+.abvp-loading-spinner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -313,12 +362,14 @@
     transition: opacity 0.3s ease;
 }
 
-.anmi-banner-loader.active {
+.anmi-banner-loader.active,
+.abvp-loading-spinner.active {
     display: block;
     pointer-events: auto; /* Allow interaction when active */
 }
 
-.anmi-banner-loader .spinner {
+.anmi-banner-loader .spinner,
+.abvp-loading-spinner .spinner {
     border: 4px solid rgba(255, 255, 255, 0.3);
     border-top: 4px solid #fff;
     border-radius: 50%;
@@ -334,72 +385,88 @@
 
 /* Fade Transition (Default) */
 .anmi-video-banner-container.transition-fade .anmi-banner-video,
-.anmi-video-banner-container.transition-fade .anmi-banner-image {
+.anmi-video-banner-container.transition-fade .anmi-banner-image,
+.abvp-banner-wrapper.transition-fade .abvp-video-frame,
+.abvp-banner-wrapper.transition-fade .abvp-slide-image {
     transition: opacity 0.8s ease-in-out;
 }
 
-.anmi-video-banner-container.transition-fade:hover .anmi-banner-video {
+.anmi-video-banner-container.transition-fade:hover .anmi-banner-video,
+.abvp-banner-wrapper.transition-fade:hover .abvp-video-frame {
     opacity: 1;
 }
 
-.anmi-video-banner-container.transition-fade:hover .anmi-banner-image {
+.anmi-video-banner-container.transition-fade:hover .anmi-banner-image,
+.abvp-banner-wrapper.transition-fade:hover .abvp-slide-image {
     opacity: 0;
 }
 
 /* Zoom Transition */
-.anmi-video-banner-container.transition-zoom .anmi-banner-image {
+.anmi-video-banner-container.transition-zoom .anmi-banner-image,
+.abvp-banner-wrapper.transition-zoom .abvp-slide-image {
     transform: scale(1);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.anmi-video-banner-container.transition-zoom .anmi-banner-video {
+.anmi-video-banner-container.transition-zoom .anmi-banner-video,
+.abvp-banner-wrapper.transition-zoom .abvp-video-frame {
     transition: opacity 0.8s ease;
 }
 
-.anmi-video-banner-container.transition-zoom:hover .anmi-banner-image {
+.anmi-video-banner-container.transition-zoom:hover .anmi-banner-image,
+.abvp-banner-wrapper.transition-zoom:hover .abvp-slide-image {
     opacity: 0;
     transform: scale(1.1);
 }
 
-.anmi-video-banner-container.transition-zoom:hover .anmi-banner-video {
+.anmi-video-banner-container.transition-zoom:hover .anmi-banner-video,
+.abvp-banner-wrapper.transition-zoom:hover .abvp-video-frame {
     opacity: 1;
 }
 
 /* Blur Transition */
-.anmi-video-banner-container.transition-blur .anmi-banner-image {
+.anmi-video-banner-container.transition-blur .anmi-banner-image,
+.abvp-banner-wrapper.transition-blur .abvp-slide-image {
     filter: blur(0);
     transition: opacity 0.8s ease, filter 0.8s ease;
 }
 
-.anmi-video-banner-container.transition-blur .anmi-banner-video {
+.anmi-video-banner-container.transition-blur .anmi-banner-video,
+.abvp-banner-wrapper.transition-blur .abvp-video-frame {
     transition: opacity 0.8s ease;
 }
 
-.anmi-video-banner-container.transition-blur:hover .anmi-banner-image {
+.anmi-video-banner-container.transition-blur:hover .anmi-banner-image,
+.abvp-banner-wrapper.transition-blur:hover .abvp-slide-image {
     opacity: 0;
     filter: blur(10px);
 }
 
-.anmi-video-banner-container.transition-blur:hover .anmi-banner-video {
+.anmi-video-banner-container.transition-blur:hover .anmi-banner-video,
+.abvp-banner-wrapper.transition-blur:hover .abvp-video-frame {
     opacity: 1;
 }
 
 /* Slide Transition */
-.anmi-video-banner-container.transition-slide .anmi-banner-image {
+.anmi-video-banner-container.transition-slide .anmi-banner-image,
+.abvp-banner-wrapper.transition-slide .abvp-slide-image {
     transform: translateX(0);
     transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
-.anmi-video-banner-container.transition-slide .anmi-banner-video {
+.anmi-video-banner-container.transition-slide .anmi-banner-video,
+.abvp-banner-wrapper.transition-slide .abvp-video-frame {
     transition: opacity 0.8s ease;
 }
 
-.anmi-video-banner-container.transition-slide:hover .anmi-banner-image {
+.anmi-video-banner-container.transition-slide:hover .anmi-banner-image,
+.abvp-banner-wrapper.transition-slide:hover .abvp-slide-image {
     opacity: 0;
     transform: translateX(-100%);
 }
 
-.anmi-video-banner-container.transition-slide:hover .anmi-banner-video {
+.anmi-video-banner-container.transition-slide:hover .anmi-banner-video,
+.abvp-banner-wrapper.transition-slide:hover .abvp-video-frame {
     opacity: 1;
 }
 
@@ -428,15 +495,18 @@
 /* ============================================ */
 
 @media (max-width: 1024px) {
-    .anmi-banner-title {
+    .anmi-banner-title,
+    .abvp-title-text {
         font-size: 36px;
     }
     
-    .anmi-banner-subtitle {
+    .anmi-banner-subtitle,
+    .abvp-subtitle-text {
         font-size: 18px;
     }
     
-    .anmi-banner-btn {
+    .anmi-banner-btn,
+    .abvp-cta-button {
         padding: 12px 30px;
         font-size: 16px;
     }
@@ -447,28 +517,33 @@
         height: 400px !important;
     }
     
-    .anmi-banner-title {
+    .anmi-banner-title,
+    .abvp-title-text {
         font-size: 28px;
         margin-bottom: 15px;
     }
     
-    .anmi-banner-subtitle {
+    .anmi-banner-subtitle,
+    .abvp-subtitle-text {
         font-size: 16px;
         margin-bottom: 20px;
     }
     
-    .anmi-banner-btn {
+    .anmi-banner-btn,
+    .abvp-cta-button {
         padding: 10px 25px;
         font-size: 14px;
     }
     
     /* Play button smaller on tablet */
-    .anmi-play-overlay {
+    .anmi-play-overlay,
+    .abvp-play-icon {
         bottom: 70px !important;
         right: 15px !important;
     }
     
-    .anmi-play-overlay svg {
+    .anmi-play-overlay svg,
+    .abvp-play-icon svg {
         width: 45px !important;
         height: 45px !important;
     }
@@ -488,25 +563,30 @@
         height: 300px !important;
     }
     
-    .anmi-banner-title {
+    .anmi-banner-title,
+    .abvp-title-text {
         font-size: 24px;
     }
     
-    .anmi-banner-subtitle {
+    .anmi-banner-subtitle,
+    .abvp-subtitle-text {
         font-size: 14px;
     }
     
-    .anmi-banner-content {
+    .anmi-banner-content,
+    .abvp-content-overlay {
         padding: 15px;
     }
     
     /* Play button even smaller on mobile */
-    .anmi-play-overlay {
+    .anmi-play-overlay,
+    .abvp-play-icon {
         bottom: 60px !important;
         right: 10px !important;
     }
     
-    .anmi-play-overlay svg {
+    .anmi-play-overlay svg,
+    .abvp-play-icon svg {
         width: 40px !important;
         height: 40px !important;
     }
@@ -517,11 +597,13 @@
 /* ============================================ */
 
 @media print {
-    .anmi-banner-video {
+    .anmi-banner-video,
+    .abvp-video-frame {
         display: none !important;
     }
     
-    .anmi-banner-image {
+    .anmi-banner-image,
+    .abvp-slide-image {
         opacity: 1 !important;
     }
 }
@@ -531,29 +613,32 @@
 /* ============================================ */
 
 /* Hide title when show_title is 0 */
-.anmi-banner-content[data-show-title="0"] .anmi-banner-title {
+.anmi-banner-content[data-show-title="0"] .anmi-banner-title,
+.abvp-content-overlay[data-show-title="0"] .abvp-title-text {
     display: none !important;
 }
 
 /* Hide subtitle when show_subtitle is 0 */
-.anmi-banner-content[data-show-subtitle="0"] .anmi-banner-subtitle {
+.anmi-banner-content[data-show-subtitle="0"] .anmi-banner-subtitle,
+.abvp-content-overlay[data-show-subtitle="0"] .abvp-subtitle-text {
     display: none !important;
 }
 
 /* Hide button when show_button is 0 */
-.anmi-banner-content[data-show-button="0"] .anmi-banner-btn {
+.anmi-banner-content[data-show-button="0"] .anmi-banner-btn,
+.abvp-content-overlay[data-show-button="0"] .abvp-cta-button {
     display: none !important;
 }
 
 /* Hide entire content overlay if all elements are hidden */
-.anmi-banner-content[data-show-title="0"][data-show-subtitle="0"][data-show-button="0"] {
+.anmi-banner-content[data-show-title="0"][data-show-subtitle="0"][data-show-button="0"],
+.abvp-content-overlay[data-show-title="0"][data-show-subtitle="0"][data-show-button="0"] {
     display: none !important;
 }
 
 /* ============================================ */
-/* VOLUME CONTROL - Removed (Use YouTube/Vimeo native controls) */
+/* VOLUME CONTROL NOTES */
 /* ============================================ */
-/* Custom volume control removed for iframe videos (YouTube/Vimeo)
-   Users will use native video controls instead (controls=1 in URL)
-   For HTML5 video, volume control can be added back if needed */
+/* YouTube/Vimeo embeds rely on native controls. The custom mute toggle
+    is displayed only for HTML5 MP4 videos and stays hidden otherwise. */
 
