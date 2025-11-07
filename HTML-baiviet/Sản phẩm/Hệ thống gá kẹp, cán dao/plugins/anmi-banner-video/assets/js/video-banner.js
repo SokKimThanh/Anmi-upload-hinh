@@ -1,6 +1,6 @@
 /**
  * AN MI VIDEO BANNER PLUGIN JAVASCRIPT
- * Version: 2.6.0 - Device-Specific Controls & Mobile Fix
+ * Version: 2.7.0 - Unified Dedicated Overlay System (Old Overlay Removed)
  */
 
 (function($) {
@@ -11,8 +11,7 @@
             this.$container = $(container);
             this.$video = this.$container.find('.anmi-banner-video');
             this.$images = this.$container.find('.anmi-banner-image');
-            // Support both old and new play overlay classes
-            this.$playOverlay = this.$container.find('.anmi-play-overlay, .elementor-custom-embed-play');
+            // Dedicated overlay only (old overlay system removed)
             this.$dedicatedOverlay = this.$container.find('.abvp-dedicated-overlay');
             this.$dots = this.$container.find('.anmi-banner-dot');
             this.$loader = this.$container.find('.anmi-banner-loader');
@@ -735,134 +734,8 @@
             });
         }
 
-        /**
-         * Setup Elementor-style image overlay click handler
-         */
-        setupElementorOverlay() {
-            const $overlay = this.$container.find('.elementor-custom-embed-image-overlay');
-            const $playIcon = this.$container.find('.elementor-custom-embed-play');
-            
-            if ($overlay.length === 0) {
-                return; // No Elementor overlay, use default behavior
-            }
-            
-            // Check overlay settings - if disabled, hide overlay and return
-            const isMobile = this.isMobileDevice;
-            const isDesktop = !isMobile;
-            
-            if (!this.enableOverlay || 
-                (isMobile && !this.enableOverlayMobile) || 
-                (isDesktop && !this.enableOverlayDesktop)) {
-                $overlay.hide();
-                console.log('Overlay disabled in setupElementorOverlay');
-                return;
-            }
-            
-            const handleOverlayClick = (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                
-                const video = this.$video[0];
-                const $iframe = this.$container.find('.abvp-oembed-container iframe, .elementor-fit-aspect-ratio iframe');
-                
-                // Hide overlay
-                $overlay.fadeOut(300);
-                this.$container.addClass('video-is-playing video-playing');
-                
-                // STOP image slider when video plays
-                if (this.hasSlider) {
-                    this.stopSlider();
-                    console.log('Slider stopped - Video is playing');
-                }
-                
-                // Hide images completely
-                this.$images.css('opacity', '0');
-                
-                // Play video or iframe
-                if (video && video.tagName === 'VIDEO') {
-                    $(video).addClass('playing');
-                    const playPromise = video.play();
-                    
-                    if (playPromise !== undefined) {
-                        playPromise
-                            .then(() => {
-                                this.isVideoPlaying = true;
-                            })
-                            .catch((error) => {
-                                console.error('Video play failed:', error);
-                                // Show overlay again and restart slider
-                                $overlay.fadeIn(300);
-                                this.$container.removeClass('video-is-playing video-playing');
-                                if (this.hasSlider) {
-                                    this.startSlider();
-                                }
-                            });
-                    }
-                } else if ($iframe.length > 0) {
-                    // For iframe (YouTube/Vimeo via oEmbed)
-                    $iframe.addClass('playing');
-                    this.isVideoPlaying = true;
-                    
-                    // Try to play iframe if possible
-                    const iframe = $iframe[0];
-                    if (iframe && iframe.contentWindow) {
-                        try {
-                            // Post message to play (works for YouTube/Vimeo)
-                            iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-                        } catch (e) {
-                            // Ignore if postMessage fails
-                        }
-                    }
-                }
-            };
-            
-            // Attach click handlers
-            $overlay.off('click.elementorOverlay').on('click.elementorOverlay', handleOverlayClick);
-            $playIcon.off('click.elementorPlay').on('click.elementorPlay', handleOverlayClick);
-            
-            // Handle video ended event to show overlay and restart slider
-            const video = this.$video[0];
-            if (video && video.tagName === 'VIDEO') {
-                $(video).off('ended.elementorOverlay').on('ended.elementorOverlay', () => {
-                    $overlay.fadeIn(300);
-                    this.$container.removeClass('video-is-playing video-playing');
-                    $(video).removeClass('playing');
-                    this.isVideoPlaying = false;
-                    
-                    // RESTART slider when video ends
-                    if (this.hasSlider) {
-                        this.startSlider();
-                        console.log('Slider restarted - Video ended');
-                    }
-                });
-                
-                // Handle video pause event to restart slider
-                $(video).off('pause.elementorOverlay').on('pause.elementorOverlay', () => {
-                    if (!video.ended) { // Only if not ended (ended event handles that)
-                        this.$container.removeClass('video-is-playing video-playing');
-                        this.isVideoPlaying = false;
-                        
-                        // RESTART slider when video paused
-                        if (this.hasSlider) {
-                            this.startSlider();
-                            console.log('Slider restarted - Video paused');
-                        }
-                    }
-                });
-                
-                // Handle video play event to stop slider
-                $(video).off('play.elementorOverlay').on('play.elementorOverlay', () => {
-                    this.$container.addClass('video-is-playing video-playing');
-                    this.isVideoPlaying = true;
-                    
-                    // STOP slider when video plays
-                    if (this.hasSlider) {
-                        this.stopSlider();
-                        console.log('Slider stopped - Video playing');
-                    }
-                });
-            }
-        }
+        // OLD OVERLAY REMOVED: setupElementorOverlay() has been removed
+        // Now using setupDedicatedOverlay() only (see below)
         
         /**
          * Setup dedicated overlay with custom image and play button
@@ -994,10 +867,7 @@
                 return;
             }
 
-            // Setup Elementor-style overlay click handler
-            this.setupElementorOverlay();
-            
-            // Setup dedicated overlay click handler
+            // Setup dedicated overlay click handler (old Elementor overlay removed)
             this.setupDedicatedOverlay();
 
             if (this.isVideoOnlyMobile) {

@@ -1,5 +1,52 @@
 # Changelog - AnMi Banner Video Pro
 
+## Version 2.7.0 (November 7, 2025) ⚠️ BREAKING CHANGE
+
+### 🚨 Breaking Changes
+- **OLD OVERLAY SYSTEM COMPLETELY REMOVED**
+  - Removed Elementor-style overlay rendering from `render_wp_core_video()`
+  - Removed `.elementor-custom-embed-image-overlay` CSS class (~200 lines)
+  - Removed `.elementor-custom-embed-play` CSS class and styles
+  - Removed `.anmi-play-overlay` CSS class and styles
+  - Removed `setupElementorOverlay()` JavaScript function (125 lines)
+  - Removed `this.$playOverlay` cache variable
+  - **Migration**: All users automatically use dedicated overlay system now
+
+### ✨ What This Means
+- **Single Overlay System**: Only `.abvp-dedicated-overlay` is used now
+- **No More Conflicts**: Fixed overlay_image saving issues caused by dual systems
+- **Better Performance**: Removed ~400 lines of redundant code
+- **Cleaner Codebase**: One overlay system = easier maintenance
+- **Custom Image Upload**: Every banner can now have its own overlay image
+
+### 🎯 Dedicated Overlay System (Retained)
+- **Custom Image Upload**: Upload unique overlay image per banner
+- **Fallback System**: Uses first slider image if no overlay image set
+- **Independent Layer**: z-index 35, separate from slider transitions
+- **No Flicker**: Removed opacity transitions, using will-change for GPU acceleration
+- **Device-Specific**: Works with desktop/mobile visibility controls
+- **Hover Behavior**: Hides on desktop hover, stays visible on mobile
+
+### 📝 Migration Notes
+- **Automatic Migration**: No action needed, plugin handles everything
+- **Existing Banners**: Continue working with dedicated overlay
+- **Custom Overlays**: Use "Upload Overlay Image" section to customize
+- **Old Classes Removed**: If custom CSS targets old classes, update to `.abvp-dedicated-overlay`
+
+### 🔧 Technical Details
+**Files Modified:**
+- `anmi-banner-video-pro.php`: Removed old overlay rendering (lines 219-229)
+- `assets/js/video-banner.js`: Removed setupElementorOverlay(), updated cache
+- `assets/css/video-banner.css`: Removed ~200 lines of old overlay CSS
+- All device-specific rules now only target `.abvp-dedicated-overlay`
+
+**Version Updates:**
+- PHP: `ABVP_VERSION` → 2.7.0
+- JavaScript: Header comment → 2.7.0
+- Plugin description: Added "Dedicated Overlay System"
+
+---
+
 ## Version 2.6.0 (November 7, 2025)
 
 ### 🎯 Major Features

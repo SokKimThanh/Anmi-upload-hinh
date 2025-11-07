@@ -426,75 +426,95 @@ class AnMi_Banner_Video_Pro_Admin {
     private function ensure_columns_exist(): void {
         global $wpdb;
         
+        error_log('ABVP Migration: Starting column check...');
+        
         // Get current columns
         $columns = $wpdb->get_results("SHOW COLUMNS FROM {$this->db_table_name}");
         $column_names = array_column($columns, 'Field');
+        
+        error_log('ABVP Migration: Current columns - ' . implode(', ', $column_names));
+        error_log('ABVP Migration: Checking overlay_image column - ' . (in_array('overlay_image', $column_names) ? 'EXISTS' : 'MISSING'));
         
         $added_columns = [];
         
         // Add enable_slider column if missing
         if (!in_array('enable_slider', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider tinyint(1) DEFAULT 1 AFTER enable_controls");
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider tinyint(1) DEFAULT 1 AFTER enable_controls");
+            error_log('ABVP Migration: ADD enable_slider - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'enable_slider';
         }
         
         // Add enable_slider_desktop column if missing
         if (!in_array('enable_slider_desktop', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider_desktop tinyint(1) DEFAULT 1 AFTER enable_slider");
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider_desktop tinyint(1) DEFAULT 1 AFTER enable_slider");
+            error_log('ABVP Migration: ADD enable_slider_desktop - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'enable_slider_desktop';
         }
         
         // Add enable_slider_mobile column if missing
         if (!in_array('enable_slider_mobile', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider_mobile tinyint(1) DEFAULT 1 AFTER enable_slider_desktop");
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider_mobile tinyint(1) DEFAULT 1 AFTER enable_slider_desktop");
+            error_log('ABVP Migration: ADD enable_slider_mobile - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'enable_slider_mobile';
         }
         
         // Add overlay_image column if missing (for custom overlay image with play button)
         if (!in_array('overlay_image', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN overlay_image varchar(500) DEFAULT '' AFTER enable_slider_mobile");
+            error_log('ABVP Migration: overlay_image MISSING - Running ALTER TABLE...');
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN overlay_image varchar(500) DEFAULT '' AFTER enable_slider_mobile");
+            error_log('ABVP Migration: ADD overlay_image - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'overlay_image';
+        } else {
+            error_log('ABVP Migration: overlay_image EXISTS - Skipping ALTER TABLE');
         }
         
         // Add enable_overlay column if missing
         if (!in_array('enable_overlay', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay tinyint(1) DEFAULT 1 AFTER overlay_image");
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay tinyint(1) DEFAULT 1 AFTER overlay_image");
+            error_log('ABVP Migration: ADD enable_overlay - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'enable_overlay';
         }
         
         // Add enable_overlay_desktop column if missing
         if (!in_array('enable_overlay_desktop', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay_desktop tinyint(1) DEFAULT 1 AFTER enable_overlay");
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay_desktop tinyint(1) DEFAULT 1 AFTER enable_overlay");
+            error_log('ABVP Migration: ADD enable_overlay_desktop - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'enable_overlay_desktop';
         }
         
         // Add enable_overlay_mobile column if missing
         if (!in_array('enable_overlay_mobile', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay_mobile tinyint(1) DEFAULT 1 AFTER enable_overlay_desktop");
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay_mobile tinyint(1) DEFAULT 1 AFTER enable_overlay_desktop");
+            error_log('ABVP Migration: ADD enable_overlay_mobile - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'enable_overlay_mobile';
         }
         
         // Add enable_hover column if missing
         if (!in_array('enable_hover', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_hover tinyint(1) DEFAULT 1 AFTER enable_overlay_mobile");
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_hover tinyint(1) DEFAULT 1 AFTER enable_overlay_mobile");
+            error_log('ABVP Migration: ADD enable_hover - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'enable_hover';
         }
         
         // Add enable_hover_desktop column if missing
         if (!in_array('enable_hover_desktop', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_hover_desktop tinyint(1) DEFAULT 1 AFTER enable_hover");
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_hover_desktop tinyint(1) DEFAULT 1 AFTER enable_hover");
+            error_log('ABVP Migration: ADD enable_hover_desktop - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'enable_hover_desktop';
         }
         
         // Add enable_hover_mobile column if missing
         if (!in_array('enable_hover_mobile', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_hover_mobile tinyint(1) DEFAULT 1 AFTER enable_hover_desktop");
+            $result = $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_hover_mobile tinyint(1) DEFAULT 1 AFTER enable_hover_desktop");
+            error_log('ABVP Migration: ADD enable_hover_mobile - ' . ($result !== false ? 'SUCCESS' : 'FAILED: ' . $wpdb->last_error));
             $added_columns[] = 'enable_hover_mobile';
         }
         
         // Log migration
         if (!empty($added_columns)) {
             error_log('AnMi Banner Video Pro: Emergency migration completed - Added columns: ' . implode(', ', $added_columns));
+        } else {
+            error_log('ABVP Migration: All columns already exist - No changes needed');
         }
     }
 
@@ -598,11 +618,13 @@ class AnMi_Banner_Video_Pro_Admin {
         
         error_log('=== ABVP SAVE BANNER DEBUG ===');
         error_log('POST data: ' . print_r($_POST, true));
+        error_log('POST overlay_image: ' . ($_POST['overlay_image'] ?? 'NOT SET IN POST'));
         
         $banner_id = isset($_POST['banner_id']) ? intval($_POST['banner_id']) : 0;
 
         try {
             $data = $this->sanitize_banner_payload($_POST);
+            error_log('Sanitized data overlay_image: ' . ($data['overlay_image'] ?? 'NOT IN DATA'));
         } catch (\InvalidArgumentException $exception) {
             wp_send_json_error($exception->getMessage());
             return;

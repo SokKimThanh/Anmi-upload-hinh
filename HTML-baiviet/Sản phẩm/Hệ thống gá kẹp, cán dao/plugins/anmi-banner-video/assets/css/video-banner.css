@@ -55,18 +55,7 @@
     opacity: 1;
 }
 
-/* Overlay and play button work on no-slider mode */
-.anmi-video-banner-container[data-enable-slider="0"] .elementor-custom-embed-image-overlay,
-.anmi-video-banner-container[data-enable-slider="0"] .abvp-play-icon,
-.abvp-banner-wrapper[data-enable-slider="0"] .elementor-custom-embed-image-overlay,
-.abvp-banner-wrapper[data-enable-slider="0"] .abvp-play-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-}
+/* OLD OVERLAY REMOVED - Dedicated overlay handles all modes now */
 
 /* When slider is ENABLED - Keep original layout */
 .anmi-video-banner-container[data-enable-slider="1"],
@@ -266,60 +255,8 @@
 /* Clean and simple - fills parent container completely */
 
 /* ============================================ */
-/* PRODUCTION DEMO - Play Overlay */
+/* OLD OVERLAY REMOVED - See .abvp-dedicated-overlay below (line ~1125) */
 /* ============================================ */
-
-/* Play button overlay - Independent from slider transitions */
-.anmi-play-overlay,
-.abvp-play-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 30; /* Higher than slider (z-index: 2) to prevent flickering */
-    cursor: pointer;
-    opacity: 1;
-    transition: transform 0.3s ease; /* Only transform, NO opacity transition */
-    pointer-events: auto;
-    will-change: transform; /* Separate rendering layer from slider */
-}
-
-/* Play button image styling */
-.abvp-play-button-image {
-    display: block;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Only transform, NO opacity */
-    filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
-    will-change: transform; /* Separate rendering layer */
-}
-
-.anmi-video-banner-container:hover .anmi-play-overlay,
-.abvp-banner-wrapper:hover .abvp-play-icon {
-    opacity: 1 !important;
-}
-
-.anmi-video-banner-container:hover .abvp-play-button-image,
-.abvp-banner-wrapper:hover .abvp-play-button-image {
-    transform: scale(1.15);
-}
-
-.anmi-play-overlay:hover .abvp-play-button-image,
-.abvp-play-icon:hover .abvp-play-button-image {
-    transform: scale(1.25) !important;
-}
-
-/* Hide play overlay when video is playing - Use visibility for instant hide */
-.anmi-video-banner-container.video-playing .anmi-play-overlay,
-.abvp-banner-wrapper.video-playing .abvp-play-icon {
-    visibility: hidden;
-    pointer-events: none;
-}
 
 .anmi-preview-production-demo .anmi-video-banner-container {
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
@@ -422,109 +359,7 @@
     transition: opacity 0.8s ease;
 }
 
-/* Elementor-style image overlay */
-.elementor-custom-embed-image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    z-index: 10;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-/* Elementor play icon - Independent from slider transitions */
-.elementor-custom-embed-play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 35; /* Higher than overlay (z-index: 10) and slider (z-index: 2) */
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Only transform, NO opacity */
-    will-change: transform; /* Separate rendering layer from slider */
-}
-
-.elementor-custom-embed-play .abvp-play-button-image {
-    width: 80px;
-    height: 80px;
-    filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
-    transition: transform 0.3s ease; /* Only transform, NO opacity */
-    will-change: transform; /* Separate rendering layer */
-}
-
-/* Show video on hover (Desktop) */
-.anmi-video-banner-container:hover .elementor-fit-aspect-ratio iframe,
-.anmi-video-banner-container:hover .elementor-fit-aspect-ratio video,
-.anmi-video-banner-container:hover .abvp-oembed-container iframe,
-.anmi-video-banner-container:hover .elementor-video video,
-.abvp-banner-wrapper:hover .elementor-fit-aspect-ratio iframe,
-.abvp-banner-wrapper:hover .elementor-fit-aspect-ratio video {
-    opacity: 1;
-    z-index: 20;
-}
-
-/* Hide overlay on hover (Desktop) */
-.anmi-video-banner-container:hover .elementor-custom-embed-image-overlay,
-.abvp-banner-wrapper:hover .elementor-custom-embed-image-overlay {
-    opacity: 0;
-    pointer-events: none;
-}
-
-/* Play button hover effect */
-.elementor-custom-embed-play:hover .abvp-play-button-image {
-    transform: scale(1.15);
-}
-
-/* Mobile specific */
-@media (max-width: 768px) {
-    /* Keep overlay visible on mobile */
-    .elementor-custom-embed-image-overlay {
-        opacity: 1;
-        pointer-events: auto;
-        z-index: 30;
-    }
-    
-    /* Hide video by default on mobile */
-    .elementor-fit-aspect-ratio iframe,
-    .elementor-fit-aspect-ratio video,
-    .abvp-oembed-container iframe,
-    .elementor-video video {
-        opacity: 0;
-    }
-    
-    /* Show video when playing */
-    .elementor-fit-aspect-ratio iframe.playing,
-    .elementor-fit-aspect-ratio video.playing,
-    .abvp-oembed-container iframe.playing,
-    .elementor-video video.playing {
-        opacity: 1;
-        z-index: 31;
-    }
-    
-    /* Hide overlay when video playing */
-    .video-is-playing .elementor-custom-embed-image-overlay {
-        opacity: 0;
-        pointer-events: none;
-    }
-    
-    /* Smaller play button on mobile */
-    .elementor-custom-embed-play .abvp-play-button-image {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-/* Tablet */
-@media (max-width: 768px) and (min-width: 481px) {
-    .elementor-custom-embed-play .abvp-play-button-image {
-        width: 70px;
-        height: 70px;
-    }
-}
+/* OLD ELEMENTOR OVERLAY REMOVED - Using .abvp-dedicated-overlay now (line ~1073) */
 
 /* Volume control button (HTML5 videos) */
 .anmi-volume-control,
@@ -677,26 +512,7 @@
     opacity: 1 !important; /* Keep slider visible when hover disabled */
 }
 
-/* When hover is DISABLED: Hide overlay and show video immediately (no hover needed) */
-.anmi-video-banner-container[data-enable-hover="0"] .elementor-custom-embed-image-overlay,
-.abvp-banner-wrapper[data-enable-hover="0"] .elementor-custom-embed-image-overlay {
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
-
-.anmi-video-banner-container[data-enable-hover="0"] .elementor-fit-aspect-ratio iframe,
-.anmi-video-banner-container[data-enable-hover="0"] .elementor-fit-aspect-ratio video,
-.anmi-video-banner-container[data-enable-hover="0"] .abvp-oembed-container iframe,
-.anmi-video-banner-container[data-enable-hover="0"] .elementor-video video,
-.anmi-video-banner-container[data-enable-hover="0"] .anmi-banner-video,
-.anmi-video-banner-container[data-enable-hover="0"] .abvp-video-frame,
-.abvp-banner-wrapper[data-enable-hover="0"] .elementor-fit-aspect-ratio iframe,
-.abvp-banner-wrapper[data-enable-hover="0"] .elementor-fit-aspect-ratio video,
-.abvp-banner-wrapper[data-enable-hover="0"] .anmi-banner-video,
-.abvp-banner-wrapper[data-enable-hover="0"] .abvp-video-frame {
-    opacity: 1 !important;
-    z-index: 20 !important;
-}
+/* OLD OVERLAY RULES REMOVED - Now using .abvp-dedicated-overlay */
 
 /* Hide slider completely when video is playing */
 .anmi-video-banner-container.video-playing .anmi-banner-image,
@@ -705,12 +521,7 @@
     pointer-events: none !important;
 }
 
-/* OVERLAY CONTROLS */
-/* Hide overlay when overlay is disabled */
-.anmi-video-banner-container[data-enable-overlay="0"] .elementor-custom-embed-image-overlay,
-.abvp-banner-wrapper[data-enable-overlay="0"] .elementor-custom-embed-image-overlay {
-    display: none !important;
-}
+/* OLD OVERLAY CONTROL REMOVED - See .abvp-dedicated-overlay device controls */
 
 /* Content Overlay */
 .anmi-banner-content,
@@ -1048,11 +859,7 @@
 
 /* Desktop-specific (min-width: 769px) */
 @media (min-width: 769px) {
-    /* Hide overlay on desktop when disabled */
-    .anmi-video-banner-container[data-enable-overlay-desktop="0"] .elementor-custom-embed-image-overlay,
-    .abvp-banner-wrapper[data-enable-overlay-desktop="0"] .elementor-custom-embed-image-overlay {
-        display: none !important;
-    }
+    /* OLD DESKTOP OVERLAY RULES REMOVED - See .abvp-dedicated-overlay device controls */
     
     /* Disable hover effect on desktop when disabled */
     .anmi-video-banner-container[data-enable-hover-desktop="0"]:hover .anmi-banner-image,
@@ -1060,35 +867,12 @@
         opacity: 1 !important; /* Keep slider visible */
     }
     
-    /* When hover is DISABLED on desktop: Hide overlay and show video immediately */
-    .anmi-video-banner-container[data-enable-hover-desktop="0"] .elementor-custom-embed-image-overlay,
-    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .elementor-custom-embed-image-overlay {
-        opacity: 0 !important;
-        pointer-events: none !important;
-    }
-    
-    .anmi-video-banner-container[data-enable-hover-desktop="0"] .elementor-fit-aspect-ratio iframe,
-    .anmi-video-banner-container[data-enable-hover-desktop="0"] .elementor-fit-aspect-ratio video,
-    .anmi-video-banner-container[data-enable-hover-desktop="0"] .abvp-oembed-container iframe,
-    .anmi-video-banner-container[data-enable-hover-desktop="0"] .elementor-video video,
-    .anmi-video-banner-container[data-enable-hover-desktop="0"] .anmi-banner-video,
-    .anmi-video-banner-container[data-enable-hover-desktop="0"] .abvp-video-frame,
-    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .elementor-fit-aspect-ratio iframe,
-    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .elementor-fit-aspect-ratio video,
-    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .anmi-banner-video,
-    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .abvp-video-frame {
-        opacity: 1 !important;
-        z-index: 20 !important;
-    }
+    /* OLD DESKTOP OVERLAY RULES REMOVED - See .abvp-dedicated-overlay device controls */
 }
 
 /* Mobile-specific (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Hide overlay on mobile when disabled */
-    .anmi-video-banner-container[data-enable-overlay-mobile="0"] .elementor-custom-embed-image-overlay,
-    .abvp-banner-wrapper[data-enable-overlay-mobile="0"] .elementor-custom-embed-image-overlay {
-        display: none !important;
-    }
+    /* OLD MOBILE OVERLAY RULES REMOVED - See .abvp-dedicated-overlay device controls */
     
     /* Disable hover/tap effect on mobile when disabled */
     .anmi-video-banner-container[data-enable-hover-mobile="0"]:hover .anmi-banner-image,
@@ -1096,27 +880,6 @@
     .abvp-banner-wrapper[data-enable-hover-mobile="0"]:hover .abvp-slide-image,
     .abvp-banner-wrapper[data-enable-hover-mobile="0"]:active .abvp-slide-image {
         opacity: 1 !important; /* Keep slider visible */
-    }
-    
-    /* When hover is DISABLED on mobile: Hide overlay and show video immediately */
-    .anmi-video-banner-container[data-enable-hover-mobile="0"] .elementor-custom-embed-image-overlay,
-    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .elementor-custom-embed-image-overlay {
-        opacity: 0 !important;
-        pointer-events: none !important;
-    }
-    
-    .anmi-video-banner-container[data-enable-hover-mobile="0"] .elementor-fit-aspect-ratio iframe,
-    .anmi-video-banner-container[data-enable-hover-mobile="0"] .elementor-fit-aspect-ratio video,
-    .anmi-video-banner-container[data-enable-hover-mobile="0"] .abvp-oembed-container iframe,
-    .anmi-video-banner-container[data-enable-hover-mobile="0"] .elementor-video video,
-    .anmi-video-banner-container[data-enable-hover-mobile="0"] .anmi-banner-video,
-    .anmi-video-banner-container[data-enable-hover-mobile="0"] .abvp-video-frame,
-    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .elementor-fit-aspect-ratio iframe,
-    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .elementor-fit-aspect-ratio video,
-    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .anmi-banner-video,
-    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .abvp-video-frame {
-        opacity: 1 !important;
-        z-index: 20 !important;
     }
 }
 

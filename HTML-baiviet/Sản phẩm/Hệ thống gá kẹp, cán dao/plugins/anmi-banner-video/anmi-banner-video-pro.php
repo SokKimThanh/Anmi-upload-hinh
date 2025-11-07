@@ -2,8 +2,8 @@
 /**
  * Plugin Name: AnMi Banner Video Pro
  * Plugin URI: https://anmitools.com
- * Description: Professional video banner system with advanced controls - YouTube/Vimeo/MP4 support + Image Slider + Modal Preview + Full Video Settings + Device-Specific Slider Control
- * Version: 2.6.0
+ * Description: Professional video banner system with advanced controls - YouTube/Vimeo/MP4 support + Image Slider + Modal Preview + Full Video Settings + Device-Specific Slider Control + Dedicated Overlay System
+ * Version: 2.7.0
  * Author: An Mi Tools Technical Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('ABVP_VERSION', '2.6.0');
+define('ABVP_VERSION', '2.7.0');
 define('ABVP_PLUGIN_FILE', __FILE__);
 define('ABVP_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('ABVP_PLUGIN_URL', plugin_dir_url(__FILE__));
@@ -211,19 +211,8 @@ class AnMi_Banner_Video_Pro {
             echo $this->render_direct_video($video_url, $settings, $overlay_image, $elementor_args);
         }
 
-        // Add image overlay if enabled
-        if ($show_overlay === 'yes' && !empty($overlay_image)) {
-            echo '<div class="elementor-custom-embed-image-overlay" style="background-image: url(\'' . esc_url($overlay_image) . '\');">';
-            
-            // Add play icon if enabled
-            if ($show_play_icon === 'yes') {
-                echo '<div class="elementor-custom-embed-play" role="button" aria-label="Play Video">';
-                echo '<img src="https://anmitools.com/wp-content/uploads/2025/11/play-button.png" alt="Play" class="abvp-play-button-image">';
-                echo '</div>';
-            }
-            
-            echo '</div>';
-        }
+        // OLD OVERLAY REMOVED - Now using dedicated overlay system in banner-output.php template
+        // See: templates/banner-output.php lines 162-182 (.abvp-dedicated-overlay)
 
         echo '</div>'; // Close wrapper
 
