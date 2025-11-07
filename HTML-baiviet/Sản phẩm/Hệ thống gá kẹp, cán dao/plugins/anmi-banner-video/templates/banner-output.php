@@ -14,15 +14,31 @@
 if (!defined('ABSPATH')) {
     exit;
 }
+
+$enable_autoplay  = isset($banner->enable_autoplay) ? (int) $banner->enable_autoplay : 1;
+$enable_muted     = isset($banner->enable_muted) ? (int) $banner->enable_muted : 1;
+$enable_loop      = isset($banner->enable_loop) ? (int) $banner->enable_loop : 1;
+$enable_controls  = isset($banner->enable_controls) ? (int) $banner->enable_controls : 1;
+$image_count      = count($image_urls);
+$poster_image     = !empty($image_urls) ? $image_urls[0] : '';
+$has_slider       = $image_count > 1 ? 1 : 0;
+$mobile_behavior  = isset($atts['mobile_behavior']) ? $atts['mobile_behavior'] : 'image';
+$autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_delay']) : 0;
 ?>
 
 <div class="abvp-banner-wrapper anmi-video-banner-container transition-<?php echo esc_attr($atts['transition']); ?> <?php echo esc_attr($unique_id); ?> effect-<?php echo esc_attr($atts['transition']); ?>" 
      style="height: <?php echo esc_attr($atts['height']); ?>; position: relative; cursor: pointer;"
-     data-autoplay-delay="<?php echo esc_attr($atts['autoplay_delay']); ?>"
-     data-mobile-behavior="<?php echo esc_attr($atts['mobile_behavior']); ?>"
+    data-autoplay-delay="<?php echo esc_attr($autoplay_delay); ?>"
+    data-mobile-behavior="<?php echo esc_attr($mobile_behavior); ?>"
      data-slider-speed="<?php echo esc_attr($atts['slider_speed']); ?>"
      data-slider-effect="<?php echo esc_attr($atts['slider_effect']); ?>"
-     data-video-type="<?php echo esc_attr($video_data['type']); ?>">
+    data-video-type="<?php echo esc_attr($video_data['type']); ?>"
+    data-enable-autoplay="<?php echo esc_attr($enable_autoplay); ?>"
+    data-enable-muted="<?php echo esc_attr($enable_muted); ?>"
+    data-enable-loop="<?php echo esc_attr($enable_loop); ?>"
+    data-enable-controls="<?php echo esc_attr($enable_controls); ?>"
+    data-image-count="<?php echo esc_attr($image_count); ?>"
+    data-has-slider="<?php echo esc_attr($has_slider); ?>">
     
     <!-- Image Slider (visible by default) -->
     <?php foreach ($image_urls as $index => $image_url): ?>
@@ -37,17 +53,19 @@ if (!defined('ABSPATH')) {
     <!-- Video Background (hidden by default) -->
     <?php if ($video_data['type'] === 'youtube' || $video_data['type'] === 'vimeo'): ?>
     <iframe class="abvp-video-frame abvp-video-iframe anmi-banner-video anmi-banner-iframe" 
-                src="<?php echo esc_url($video_data['embed_url']); ?>" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
+        src="<?php echo esc_url($video_data['embed_url']); ?>" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
     <?php else: ?>
-    <video class="abvp-video-frame anmi-banner-video" 
-               loop 
-               muted 
-               playsinline 
-               preload="metadata"
-               poster="<?php echo esc_url($image_urls[0]); ?>">
+    <video class="abvp-video-frame anmi-banner-video"
+           <?php echo $enable_loop ? ' loop' : ''; ?>
+           <?php echo $enable_muted ? ' muted' : ''; ?>
+           <?php echo $enable_autoplay ? ' autoplay' : ''; ?>
+           <?php echo $enable_controls ? ' controls' : ''; ?>
+           playsinline
+           preload="metadata"
+           <?php if (!empty($poster_image)) : ?>poster="<?php echo esc_url($poster_image); ?>"<?php endif; ?>>
             <source src="<?php echo esc_url($video_data['embed_url']); ?>" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -86,7 +104,7 @@ if (!defined('ABSPATH')) {
     </div>
     <?php endif; ?>
     
-    <?php if (count($image_urls) > 1): ?>
+    <?php if ($image_count > 1): ?>
     <!-- Slider Navigation Dots -->
     <div class="abvp-nav-dots anmi-slider-dots" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 10;">
         <?php foreach ($image_urls as $index => $image_url): ?>

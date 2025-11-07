@@ -15,19 +15,31 @@
             this.$dots = this.$container.find('.anmi-banner-dot');
             this.$loader = this.$container.find('.anmi-banner-loader');
             this.$volumeControl = this.$container.find('.anmi-volume-control');
+            this.$sliderWrapper = this.$container.find('.abvp-slider-wrapper');
+            this.$navDotsWrapper = this.$container.find('.abvp-nav-dots');
             
-            this.autoplayDelay = parseInt(this.$container.data('autoplay-delay')) || 0;
+            this.autoplayDelay = parseInt(this.$container.data('autoplay-delay'), 10) || 0;
             this.mobileBehavior = this.$container.data('mobile-behavior') || 'image';
-            this.sliderSpeed = parseInt(this.$container.data('slider-speed')) || 3000;
+            this.sliderSpeed = parseInt(this.$container.data('slider-speed'), 10) || 3000;
             this.sliderEffect = this.$container.data('slider-effect') || 'fade';
             this.videoType = this.$container.data('video-type') || 'direct';
+            this.enableAutoplay = parseInt(this.$container.data('enable-autoplay'), 10) === 1;
+            this.enableMuted = parseInt(this.$container.data('enable-muted'), 10) !== 0;
+            this.enableLoop = parseInt(this.$container.data('enable-loop'), 10) === 1;
+            this.enableControls = parseInt(this.$container.data('enable-controls'), 10) === 1;
+            const hasSliderData = parseInt(this.$container.data('has-slider'), 10);
+            this.imageCount = parseInt(this.$container.data('image-count'), 10) || this.$images.length;
+            this.hasSlider = (Number.isNaN(hasSliderData) ? this.$images.length > 1 : hasSliderData === 1) && this.imageCount > 1;
+            this.isMobileDevice = this.isMobile();
+            this.isVideoOnlyMobile = this.isMobileDevice && this.mobileBehavior === 'video';
+            this.isIframe = this.$video.length > 0 && this.$video[0].tagName === 'IFRAME';
             
             this.isVideoReady = false;
             this.sliderInterval = null;
             this.currentSlide = 0;
             this.isHovered = false;
             this.isVideoPlaying = false;
-            this.isMuted = true; // Track mute state
+            this.isMuted = this.enableMuted;
             
             this.init();
         }
@@ -35,12 +47,17 @@
         init() {
             // Prevent duplicate initialization when re-running scripts
             this.$container.data('anmi-initialized', true);
+            this.applyVideoPreferences();
             
             // Check if mobile
-            if (this.isMobile() && this.mobileBehavior === 'image') {
+            if (this.isMobileDevice && this.mobileBehavior === 'image') {
                 this.disableVideoOnMobile();
                 this.startSlider();
                 return;
+            }
+
+            if (this.isVideoOnlyMobile) {
+                this.prepareVideoOnlyMobile();
             }
             
             // Mark video as ready
@@ -55,7 +72,7 @@
             this.setupEvents();
             
             // Start image slider
-            if (this.$images.length > 1) {
+            if (this.hasSlider && !this.isVideoOnlyMobile) {
                 this.startSlider();
             }
         }
@@ -66,16 +83,269 @@
         }
         
         disableVideoOnMobile() {
+            this.stopSlider();
             this.$video.remove();
             this.$playOverlay.remove();
             this.$volumeControl.remove();
+            this.$loader.remove();
         }
         
+        applyVideoPreferences() {
+            const video = this.$video[0];
+            if (!video) {
+                return;
+            }
+
+            if (video.tagName === 'VIDEO') {
+                video.loop = this.enableLoop;
+                video.muted = this.enableMuted;
+                video.autoplay = this.enableAutoplay;
+                video.controls = this.enableControls;
+                this.isMuted = video.muted;
+
+                if (this.enableControls) {
+                    this.$volumeControl.remove();
+                } else {
+                    this.updateVolumeIcon();
+                    this.$volumeControl.hide();
+                }
+                this.bindVideoEvents();
+            } else if (this.isIframe) {
+                // Iframe players use their own controls; remove custom volume control
+                this.$volumeControl.remove();
+            }
+        }
+
+        prepareVideoOnlyMobile() {
+            this.stopSlider();
+            this.hasSlider = false;
+
+            if (this.$sliderWrapper.length) {
+                this.$sliderWrapper.hide();
+            }
+
+            if (this.$navDotsWrapper.length) {
+                this.$navDotsWrapper.hide();
+            }
+
+            this.$images.css('opacity', '0');
+            this.$container.addClass('anmi-mobile-video-only');
+            this.$video.css('opacity', '1');
+
+            if (this.enableAutoplay) {
+                this.$playOverlay.hide();
+            } else {
+                this.$playOverlay.css('opacity', '1').show();
+            }
+
+            this.attemptAutoplay();
+        }
+
+        attemptAutoplay() {
+            const video = this.$video[0];
+
+            if (!this.enableAutoplay || !video) {
+                return;
+            }
+
+            if (video.tagName !== 'VIDEO') {
+                // Autoplay handled via iframe query parameters
+                this.isVideoPlaying = true;
+                this.$playOverlay.hide();
+                return;
+            }
+
+            const playPromise = video.play();
+
+            if (playPromise !== undefined) {
+                playPromise
+                    .then(() => {
+                        this.isVideoPlaying = true;
+                        this.$playOverlay.hide();
+                        if (this.$volumeControl.length) {
+                            this.$volumeControl.fadeIn(0);
+                        }
+                    })
+                    .catch(() => {
+                        this.isVideoPlaying = false;
+                        this.$playOverlay.css('opacity', '1').show();
+                    });
+            } else {
+                this.isVideoPlaying = true;
+                this.$playOverlay.hide();
+            }
+        }
+
+        updateVolumeIcon() {
+            if (!this.$volumeControl.length) {
+                return;
+            }
+
+            if (this.isMuted) {
+                this.$volumeControl.find('.volume-icon-muted').show();
+                this.$volumeControl.find('.volume-icon-unmuted').hide();
+                this.$volumeControl.attr('title', 'Unmute video');
+            } else {
+                this.$volumeControl.find('.volume-icon-muted').hide();
+                this.$volumeControl.find('.volume-icon-unmuted').show();
+                this.$volumeControl.attr('title', 'Mute video');
+            }
+        }
+
+        playVideoElement(video) {
+            if (!video) {
+                return;
+            }
+
+            if (video.tagName === 'VIDEO') {
+                const playPromise = video.play();
+
+                if (playPromise !== undefined) {
+                    playPromise
+                        .then(() => {
+                            this.isVideoPlaying = true;
+                            this.$playOverlay.fadeOut(200);
+                            if (this.$volumeControl.length && !this.enableControls) {
+                                this.$volumeControl.fadeIn(300);
+                            }
+                        })
+                        .catch((error) => {
+                            console.error('Video play failed:', error);
+                            this.isVideoPlaying = false;
+                            this.$playOverlay.css('opacity', '1').show();
+                            if (this.$volumeControl.length) {
+                                this.$volumeControl.fadeOut(200);
+                            }
+                        });
+                } else {
+                    this.isVideoPlaying = true;
+                    this.$playOverlay.fadeOut(200);
+                    if (this.$volumeControl.length && !this.enableControls) {
+                        this.$volumeControl.fadeIn(300);
+                    }
+                }
+            } else {
+                this.isVideoPlaying = true;
+                this.$playOverlay.fadeOut(200);
+            }
+        }
+
+        pauseAndResetVideo(video, resetToStart = true, showOverlay = true) {
+            if (!video || video.tagName !== 'VIDEO') {
+                this.isVideoPlaying = false;
+                return;
+            }
+
+            video.pause();
+
+            if (resetToStart) {
+                video.currentTime = 0;
+            }
+
+            if (this.enableMuted) {
+                video.muted = true;
+                this.isMuted = true;
+                this.updateVolumeIcon();
+            }
+
+            if (this.$volumeControl.length) {
+                this.$volumeControl.fadeOut(200);
+            }
+
+            if (showOverlay) {
+                this.$playOverlay.css('opacity', '1').show();
+            }
+            this.isVideoPlaying = false;
+        }
+
+        setupVolumeControl() {
+            const video = this.$video[0];
+
+            if (!video || this.isIframe || this.enableControls || !this.$volumeControl.length) {
+                if (this.$volumeControl.length) {
+                    this.$volumeControl.remove();
+                }
+                return;
+            }
+
+            this.updateVolumeIcon();
+
+            this.$volumeControl.off('click').on('click', (e) => {
+                e.stopPropagation();
+
+                this.isMuted = !this.isMuted;
+                video.muted = this.isMuted;
+                this.updateVolumeIcon();
+            });
+        }
+
+        setupMobileVideoOnlyEvents(video) {
+            if (!video) {
+                return;
+            }
+
+            this.$container.off('touchstart.anmiVideoOnly click.anmiVideoOnly')
+                .on('touchstart.anmiVideoOnly click.anmiVideoOnly', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                if (!this.isVideoPlaying) {
+                    this.playVideoElement(video);
+                } else {
+                    this.pauseAndResetVideo(video);
+                }
+                });
+        }
+
+        bindVideoEvents() {
+            if (!this.$video.length || this.$video[0].tagName !== 'VIDEO') {
+                return;
+            }
+
+            this.$video.off('ended.anmiVideo').on('ended.anmiVideo', () => {
+                if (this.enableLoop) {
+                    return;
+                }
+
+                const video = this.$video[0];
+                const showOverlay = this.isVideoOnlyMobile || !this.hasSlider;
+
+                this.pauseAndResetVideo(video, true, showOverlay);
+
+                if (this.isVideoOnlyMobile) {
+                    this.$video.css('opacity', '1');
+                    return;
+                }
+
+                if (this.isMobileDevice) {
+                    this.$video.css('opacity', '0');
+                    this.$images.css('opacity', '0');
+                    this.$images.eq(this.currentSlide).css('opacity', '1');
+                    this.startSlider();
+                } else {
+                    this.$video.css('opacity', '0');
+                    this.$playOverlay.css('opacity', '0').hide();
+
+                    if (this.hasSlider) {
+                        this.$images.css('opacity', '0');
+                        this.$images.eq(this.currentSlide).css('opacity', '1');
+                        this.startSlider();
+                    }
+                }
+            });
+        }
+
         /* ============================================ */
         /* SLIDER FUNCTIONALITY */
         /* ============================================ */
         
         startSlider() {
+            if (!this.hasSlider || this.$images.length <= 1) {
+                return;
+            }
+
+            this.stopSlider();
+
             const self = this;
             
             // Auto-play slider
@@ -86,7 +356,7 @@
             }, this.sliderSpeed);
             
             // Dot navigation
-            this.$dots.on('click', function(e) {
+            this.$dots.off('click').on('click', function(e) {
                 e.stopPropagation(); // Don't trigger container click
                 
                 if (self.sliderInterval) {
@@ -156,243 +426,78 @@
         }
         
         setupEvents() {
-            const self = this;
-            
-            // Check if mobile device
-            const isMobileDevice = this.isMobile();
-            
-            if (isMobileDevice) {
-                // ============================================
-                // MOBILE BEHAVIOR: Tap to play
-                // ============================================
-                this.$container.on('touchstart click', function(e) {
+            const videoElement = this.$video[0];
+
+            if (!videoElement) {
+                return;
+            }
+
+            if (this.isVideoOnlyMobile) {
+                this.setupMobileVideoOnlyEvents(videoElement);
+                this.setupVolumeControl();
+                return;
+            }
+
+            if (this.isMobileDevice) {
+                this.$container.off('touchstart.anmiVideo click.anmiVideo')
+                    .on('touchstart.anmiVideo click.anmiVideo', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    
-                    if (!self.isVideoPlaying) {
-                        // Stop slider
-                        if (self.sliderInterval) {
-                            clearInterval(self.sliderInterval);
-                            self.sliderInterval = null;
-                        }
-                        
-                        // Hide all images
-                        self.$images.css('opacity', '0');
-                        
-                        // Show video
-                        self.$video.css('opacity', '1');
-                        
-                        // Hide play button immediately
-                        self.$playOverlay.css('opacity', '0').hide();
-                        
-                        // Show volume control
-                        self.$volumeControl.fadeIn(300);
-                        
-                        // Play video
-                        const video = self.$video[0];
-                        if (video) {
-                            if (video.tagName === 'VIDEO') {
-                                // Keep video muted by default (don't auto-unmute)
-                                // User can click volume button to unmute
-                                
-                                // Direct video - play with error handling
-                                const playPromise = video.play();
-                                
-                                if (playPromise !== undefined) {
-                                    playPromise
-                                        .then(() => {
-                                            console.log('Mobile video playing (muted)');
-                                            self.isVideoPlaying = true;
-                                        })
-                                        .catch((error) => {
-                                            console.error('Mobile video play failed:', error);
-                                            // Show play button again as fallback
-                                            self.$playOverlay.css('opacity', '1').show();
-                                            self.$volumeControl.fadeOut(300);
-                                        });
-                                } else {
-                                    self.isVideoPlaying = true;
-                                }
-                            } else if (video.tagName === 'IFRAME') {
-                                // YouTube/Vimeo - autoplay handled by embed URL
-                                self.isVideoPlaying = true;
-                                console.log('Mobile iframe video shown');
-                            }
-                        }
+
+                    if (!this.isVideoPlaying) {
+                        this.stopSlider();
+                        this.$images.css('opacity', '0');
+                        this.$video.css('opacity', '1');
+                        this.playVideoElement(videoElement);
                     } else {
-                        // Video is playing - tap again to pause/reset
-                        const video = self.$video[0];
-                        if (video && video.tagName === 'VIDEO') {
-                            video.pause();
-                            video.currentTime = 0;
-                            video.muted = true; // Reset to muted for next autoplay
-                            self.isMuted = true;
-                        }
-                        
-                        // Hide volume control
-                        self.$volumeControl.fadeOut(300);
-                        
-                        // Reset to slider
-                        self.$video.css('opacity', '0');
-                        self.$images.css('opacity', '0');
-                        self.$images.eq(self.currentSlide).css('opacity', '1');
-                        self.$playOverlay.css('opacity', '1').show();
-                        self.isVideoPlaying = false;
-                        
-                        // Restart slider
-                        self.startSlider();
+                        this.pauseAndResetVideo(videoElement, true, false);
+                        this.$video.css('opacity', '0');
+                        this.$images.css('opacity', '0');
+                        this.$images.eq(this.currentSlide).css('opacity', '1');
+                        this.startSlider();
                     }
                 });
-                
             } else {
-                // ============================================
-                // DESKTOP BEHAVIOR: Hover + Click
-                // ============================================
-                
-                // HOVER: Stop slider, show video (not playing)
-                this.$container.on('mouseenter', function() {
-                    self.isHovered = true;
-                    
-                    if (self.sliderInterval) {
-                        clearInterval(self.sliderInterval);
-                    }
-                    
-                    // Fade out slider images
-                    self.$images.css('opacity', '0');
-                    
-                    // Show video (but don't play yet)
-                    self.$video.css('opacity', '1');
-                    
-                    // Show play button
-                    self.$playOverlay.css('opacity', '1').show();
+                // Desktop hover + click behaviour
+                this.$container.off('mouseenter.anmiVideo mouseleave.anmiVideo click.anmiVideo');
+
+                this.$container.on('mouseenter.anmiVideo', () => {
+                    this.isHovered = true;
+                    this.stopSlider();
+                    this.$images.css('opacity', '0');
+                    this.$video.css('opacity', '1');
+                    this.$playOverlay.css('opacity', '1').show();
                 });
-                
-                // MOUSE LEAVE: Stop video, resume slider
-                this.$container.on('mouseleave', function() {
-                    self.isHovered = false;
-                    
-                    // Stop video if playing
-                    if (self.isVideoPlaying) {
-                        const video = self.$video[0];
-                        if (video && video.tagName === 'VIDEO') {
-                            video.pause();
-                            video.currentTime = 0;
-                            video.muted = true; // Reset to muted for next autoplay
-                            self.isMuted = true;
-                        }
-                        self.isVideoPlaying = false;
+
+                this.$container.on('mouseleave.anmiVideo', () => {
+                    this.isHovered = false;
+
+                    if (this.isVideoPlaying) {
+                        this.pauseAndResetVideo(videoElement, true, false);
                     }
-                    
-                    // Hide volume control
-                    self.$volumeControl.fadeOut(300);
-                    
-                    // Hide video
-                    self.$video.css('opacity', '0');
-                    
-                    // Reset play button
-                    self.$playOverlay.css('opacity', '0').hide();
-                    
-                    // Show current slide
-                    self.$images.css('opacity', '0');
-                    self.$images.eq(self.currentSlide).css('opacity', '1');
-                    
-                    // Resume slider
-                    if (self.$images.length > 1) {
-                        if (self.sliderInterval) {
-                            clearInterval(self.sliderInterval);
-                        }
-                        
-                        self.sliderInterval = setInterval(function() {
-                            if (!self.isHovered && !self.isVideoPlaying) {
-                                self.$images.eq(self.currentSlide).css('opacity', '0');
-                                self.$dots.eq(self.currentSlide).css('background', 'rgba(255,255,255,0.5)').removeClass('active');
-                                
-                                self.currentSlide = (self.currentSlide + 1) % self.$images.length;
-                                
-                                self.$images.eq(self.currentSlide).css('opacity', '1');
-                                self.$dots.eq(self.currentSlide).css('background', '#fff').addClass('active');
-                            }
-                        }, self.sliderSpeed);
+
+                    if (this.$volumeControl.length) {
+                        this.$volumeControl.fadeOut(300);
+                    }
+
+                    this.$video.css('opacity', '0');
+                    this.$playOverlay.css('opacity', '0').hide();
+                    this.$images.css('opacity', '0');
+                    this.$images.eq(this.currentSlide).css('opacity', '1');
+
+                    if (this.hasSlider) {
+                        this.startSlider();
                     }
                 });
-                
-                // CLICK: Play video
-                this.$container.on('click', function(e) {
-                    if (!self.isVideoPlaying && self.isHovered) {
-                        self.isVideoPlaying = true;
-                        
-                        // Hide play button
-                        self.$playOverlay.fadeOut(300);
-                        
-                        // Show volume control
-                        self.$volumeControl.fadeIn(300);
-                        
-                        // Play video
-                        const video = self.$video[0];
-                        if (video) {
-                            if (video.tagName === 'VIDEO') {
-                                // Keep video muted by default (don't auto-unmute)
-                                // User can click volume button to unmute
-                                
-                                const playPromise = video.play();
-                                
-                                if (playPromise !== undefined) {
-                                    playPromise
-                                        .then(() => {
-                                            console.log('Desktop video playing (muted)');
-                                        })
-                                        .catch((error) => {
-                                            console.error('Desktop video play failed:', error);
-                                            self.$playOverlay.fadeIn(300);
-                                            self.$volumeControl.fadeOut(300);
-                                            self.isVideoPlaying = false;
-                                        });
-                                }
-                            }
-                            // For iframe, autoplay in URL handles it
-                        }
+
+                this.$container.on('click.anmiVideo', () => {
+                    if (!this.isVideoPlaying && this.isHovered) {
+                        this.playVideoElement(videoElement);
                     }
                 });
             }
-            
-            // ============================================
-            // VOLUME CONTROL - HTML5 Video Only
-            // ============================================
-            // For YouTube/Vimeo iframe: Use native controls (controls=1 in URL)
-            // For HTML5 video: Custom volume control button
-            const video = this.$video[0];
-            const isIframe = video && video.tagName === 'IFRAME';
-            
-            if (isIframe) {
-                // Remove custom volume control for iframe videos
-                // User will use YouTube/Vimeo native controls
-                this.$volumeControl.remove();
-                console.log('Using native controls for iframe video (YouTube/Vimeo)');
-            } else {
-                // Enable custom volume control for HTML5 video
-                this.$volumeControl.on('click', function(e) {
-                    e.stopPropagation(); // Prevent triggering container click
-                    
-                    if (video && video.tagName === 'VIDEO') {
-                        // Toggle mute
-                        self.isMuted = !self.isMuted;
-                        video.muted = self.isMuted;
-                        
-                        // Update icon
-                        if (self.isMuted) {
-                            self.$volumeControl.find('.volume-icon-muted').show();
-                            self.$volumeControl.find('.volume-icon-unmuted').hide();
-                            self.$volumeControl.attr('title', 'Unmute video');
-                        } else {
-                            self.$volumeControl.find('.volume-icon-muted').hide();
-                            self.$volumeControl.find('.volume-icon-unmuted').show();
-                            self.$volumeControl.attr('title', 'Mute video');
-                        }
-                        
-                        console.log('HTML5 Video ' + (self.isMuted ? 'muted' : 'unmuted'));
-                    }
-                });
-            }
+
+            this.setupVolumeControl();
         }
     }
     

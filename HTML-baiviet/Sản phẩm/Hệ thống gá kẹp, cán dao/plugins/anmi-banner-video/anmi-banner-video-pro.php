@@ -87,24 +87,47 @@ class AnMi_Banner_Video_Pro {
             $result['type'] = 'youtube';
             $result['video_id'] = $match[1];
             
-            if ($player_mode) {
-                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?controls=1&rel=' . $rel . '&modestbranding=' . $modestbranding . '&playsinline=1';
-            } else {
-                $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?autoplay=' . $autoplay . '&mute=' . $muted . '&loop=' . $loop . '&playlist=' . $match[1] . '&controls=' . $controls . '&showinfo=0&rel=' . $rel . '&modestbranding=' . $modestbranding . '&playsinline=1';
-            }
+            $query_args = array(
+                'autoplay' => (int) $autoplay,
+                'mute' => (int) $muted,
+                'loop' => (int) $loop,
+                'controls' => (int) $controls,
+                'showinfo' => 0,
+                'rel' => (int) $rel,
+                'modestbranding' => (int) $modestbranding,
+                'playsinline' => 1,
+                'playlist' => $loop ? $match[1] : null
+            );
+
+            $result['embed_url'] = 'https://www.youtube.com/embed/' . $match[1] . '?' . $this->build_query_string($query_args);
         }
         elseif (preg_match('/vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|)(\d+)(?:$|\/|\?)/i', $url, $match)) {
             $result['type'] = 'vimeo';
             $result['video_id'] = $match[1];
             
-            if ($player_mode) {
-                $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?controls=1';
-            } else {
-                $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?autoplay=' . $autoplay . '&muted=' . $muted . '&loop=' . $loop . '&background=' . ($controls ? 0 : 1) . '&controls=' . $controls;
-            }
+            $query_args = array(
+                'autoplay' => (int) $autoplay,
+                'muted' => (int) $muted,
+                'loop' => (int) $loop,
+                'controls' => (int) $controls,
+                'background' => $controls ? 0 : 1
+            );
+
+            $result['embed_url'] = 'https://player.vimeo.com/video/' . $match[1] . '?' . $this->build_query_string($query_args);
         }
         
         return $result;
+    }
+
+    private function build_query_string($args) {
+        $parts = array();
+        foreach ($args as $key => $value) {
+            if ($value === null) {
+                continue;
+            }
+            $parts[] = rawurlencode($key) . '=' . rawurlencode($value);
+        }
+        return implode('&', $parts);
     }
     
     public function render_video_banner($atts) {
