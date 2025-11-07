@@ -595,11 +595,18 @@
     pointer-events: none; /* Don't block video controls */
 }
 
-/* Dim old-style images when hovering (for preview and backward compatibility) */
+/* Dim slider images when hovering - fully transparent to see video */
 .anmi-video-banner-container:hover .anmi-banner-image,
 .abvp-banner-wrapper:hover .abvp-slide-image {
-    opacity: 0.3 !important; /* Override inline styles */
+    opacity: 0 !important; /* Fully transparent to see video clearly */
     z-index: 2 !important; /* Keep below iframe z-index: 20 */
+}
+
+/* Hide slider completely when video is playing */
+.anmi-video-banner-container.video-playing .anmi-banner-image,
+.abvp-banner-wrapper.video-playing .abvp-slide-image {
+    opacity: 0 !important;
+    pointer-events: none !important;
 }
 
 /* Content Overlay */

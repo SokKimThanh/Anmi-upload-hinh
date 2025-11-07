@@ -703,14 +703,15 @@
                 
                 // Hide overlay
                 $overlay.fadeOut(300);
-                this.$container.addClass('video-is-playing');
+                this.$container.addClass('video-is-playing video-playing');
                 
-                // Stop image slider
+                // STOP image slider when video plays
                 if (this.hasSlider) {
                     this.stopSlider();
+                    console.log('Slider stopped - Video is playing');
                 }
                 
-                // Hide images
+                // Hide images completely
                 this.$images.css('opacity', '0');
                 
                 // Play video or iframe
@@ -725,9 +726,12 @@
                             })
                             .catch((error) => {
                                 console.error('Video play failed:', error);
-                                // Show overlay again
+                                // Show overlay again and restart slider
                                 $overlay.fadeIn(300);
-                                this.$container.removeClass('video-is-playing');
+                                this.$container.removeClass('video-is-playing video-playing');
+                                if (this.hasSlider) {
+                                    this.startSlider();
+                                }
                             });
                     }
                 } else if ($iframe.length > 0) {
@@ -752,18 +756,45 @@
             $overlay.off('click.elementorOverlay').on('click.elementorOverlay', handleOverlayClick);
             $playIcon.off('click.elementorPlay').on('click.elementorPlay', handleOverlayClick);
             
-            // Handle video ended event to show overlay again
+            // Handle video ended event to show overlay and restart slider
             const video = this.$video[0];
             if (video && video.tagName === 'VIDEO') {
                 $(video).off('ended.elementorOverlay').on('ended.elementorOverlay', () => {
                     $overlay.fadeIn(300);
-                    this.$container.removeClass('video-is-playing');
+                    this.$container.removeClass('video-is-playing video-playing');
                     $(video).removeClass('playing');
                     this.isVideoPlaying = false;
                     
-                    // Restart slider if available
+                    // RESTART slider when video ends
                     if (this.hasSlider) {
                         this.startSlider();
+                        console.log('Slider restarted - Video ended');
+                    }
+                });
+                
+                // Handle video pause event to restart slider
+                $(video).off('pause.elementorOverlay').on('pause.elementorOverlay', () => {
+                    if (!video.ended) { // Only if not ended (ended event handles that)
+                        this.$container.removeClass('video-is-playing video-playing');
+                        this.isVideoPlaying = false;
+                        
+                        // RESTART slider when video paused
+                        if (this.hasSlider) {
+                            this.startSlider();
+                            console.log('Slider restarted - Video paused');
+                        }
+                    }
+                });
+                
+                // Handle video play event to stop slider
+                $(video).off('play.elementorOverlay').on('play.elementorOverlay', () => {
+                    this.$container.addClass('video-is-playing video-playing');
+                    this.isVideoPlaying = true;
+                    
+                    // STOP slider when video plays
+                    if (this.hasSlider) {
+                        this.stopSlider();
+                        console.log('Slider stopped - Video playing');
                     }
                 });
             }
