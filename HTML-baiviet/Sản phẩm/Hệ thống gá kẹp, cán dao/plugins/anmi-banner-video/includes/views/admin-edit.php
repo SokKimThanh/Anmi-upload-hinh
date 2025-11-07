@@ -238,48 +238,7 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                         <strong id="enable_slider_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider hình ảnh phía trên video
                                     </span>
                                     <p class="description" style="margin: 8px 0 0 0; color: #666;">
-                                        <strong>💡 Lưu ý:</strong> Nếu TẮT slider, video sẽ hiển thị trực tiếp không có hình ảnh overlay. 
-                                        Thích hợp cho banner chỉ có video background.
-                                    </p>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><label for="enable_slider_desktop">🖥️ Slider trên Desktop</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt slider trên desktop">
-                         <input type="checkbox" 
-                             id="enable_slider_desktop" 
-                             name="enable_slider_desktop" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_slider_desktop) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="enable_slider_desktop_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider trên màn hình desktop
-                                    </span>
-                                    <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
-                                        <strong>💡 Gợi ý:</strong> Tắt để chỉ hiển thị video background trên desktop (hiệu ứng professional hơn).
-                                    </p>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><label for="enable_slider_mobile">📱 Slider trên Mobile</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt slider trên mobile">
-                         <input type="checkbox" 
-                             id="enable_slider_mobile" 
-                             name="enable_slider_mobile" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_slider_mobile) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="enable_slider_mobile_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider trên thiết bị mobile
-                                    </span>
-                                    <p class="description" style="margin: 8px 0 0 0; color: #FF9800;">
-                                        <strong>💡 Khuyến nghị:</strong> Bật slider trên mobile giúp tiết kiệm data và tăng tốc tải trang.
+                                        <strong>💡 Lưu ý:</strong> Master switch để bật/tắt slider. Điều chỉnh theo thiết bị ở phần "⚙️ Thiết Lập Theo Thiết Bị" bên dưới.
                                     </p>
                                 </td>
                             </tr>
@@ -429,6 +388,68 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                                     <span class="abvp-status-badge enabled" id="enable_overlay_mobile_status">
                                                         ✓ BẬT
                                                     </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- SLIDER DEVICE SETTINGS -->
+                                <tr>
+                                    <td data-label="🖥️ Desktop">
+                                        <div class="abvp-setting-row">
+                                            <span class="abvp-setting-icon">🖼️</span>
+                                            <div class="abvp-setting-content">
+                                                <label class="abvp-setting-label" for="enable_slider_desktop">
+                                                    Slider trên Desktop
+                                                </label>
+                                                <div class="abvp-setting-description">
+                                                    Hiển thị slider hình ảnh trên màn hình desktop
+                                                </div>
+                                                <div class="abvp-setting-control">
+                                                    <label class="switch">
+                                                        <input type="checkbox" 
+                                                            id="enable_slider_desktop" 
+                                                            name="enable_slider_desktop" 
+                                                            value="1"
+                                                            <?php echo ($is_edit ? (!empty($banner->enable_slider_desktop) ? 'checked' : '') : 'checked'); ?>>
+                                                        <span class="slider-switch"></span>
+                                                    </label>
+                                                    <span class="abvp-status-badge enabled" id="enable_slider_desktop_status">
+                                                        ✓ BẬT
+                                                    </span>
+                                                </div>
+                                                <div class="abvp-info-box">
+                                                    <strong>💡 Gợi ý:</strong> Tắt để chỉ hiển thị video background trên desktop (hiệu ứng professional hơn)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="📱 Mobile">
+                                        <div class="abvp-setting-row">
+                                            <span class="abvp-setting-icon">🖼️</span>
+                                            <div class="abvp-setting-content">
+                                                <label class="abvp-setting-label" for="enable_slider_mobile">
+                                                    Slider trên Mobile
+                                                </label>
+                                                <div class="abvp-setting-description">
+                                                    Hiển thị slider hình ảnh trên thiết bị di động
+                                                </div>
+                                                <div class="abvp-setting-control">
+                                                    <label class="switch">
+                                                        <input type="checkbox" 
+                                                            id="enable_slider_mobile" 
+                                                            name="enable_slider_mobile" 
+                                                            value="1"
+                                                            <?php echo ($is_edit ? (!empty($banner->enable_slider_mobile) ? 'checked' : '') : 'checked'); ?>>
+                                                        <span class="slider-switch"></span>
+                                                    </label>
+                                                    <span class="abvp-status-badge enabled" id="enable_slider_mobile_status">
+                                                        ✓ BẬT
+                                                    </span>
+                                                </div>
+                                                <div class="abvp-info-box">
+                                                    <strong>💡 Khuyến nghị:</strong> Bật slider trên mobile giúp tiết kiệm data và tăng tốc tải trang
                                                 </div>
                                             </div>
                                         </div>
