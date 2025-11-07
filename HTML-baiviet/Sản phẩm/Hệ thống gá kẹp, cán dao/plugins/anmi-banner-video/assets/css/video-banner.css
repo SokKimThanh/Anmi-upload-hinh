@@ -1007,6 +1007,14 @@
         transition: opacity 0.3s ease;
     }
     
+    /* HOVER: Also hide slider images to see video */
+    [data-has-slider="1"][data-enable-slider-desktop="1"]:not([data-enable-hover="0"]):not([data-enable-hover-desktop="0"]):hover .abvp-slide-image,
+    [data-has-slider="1"][data-enable-slider-desktop="1"]:not([data-enable-hover="0"]):not([data-enable-hover-desktop="0"]):hover .anmi-banner-image {
+        opacity: 0 !important;
+        z-index: 0 !important;
+        transition: opacity 0.3s ease, z-index 0s;
+    }
+    
     /* Note: [data-enable-slider-desktop="0"] keeps overlay visible on hover */
     
     /* Hide overlay completely when hover is disabled (master OR desktop) */

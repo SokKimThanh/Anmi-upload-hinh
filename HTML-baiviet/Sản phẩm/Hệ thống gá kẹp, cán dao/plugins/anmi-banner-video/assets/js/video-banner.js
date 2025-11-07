@@ -774,7 +774,7 @@
                     console.log('Slider stopped - Video playing from dedicated overlay');
                 }
                 
-                // Hide images completely - set opacity AND z-index
+                // Force hide images - ensure slider is hidden (hover already did this via CSS)
                 this.$images.css({
                     'opacity': '0',
                     'z-index': '0'  // Move slider below video
