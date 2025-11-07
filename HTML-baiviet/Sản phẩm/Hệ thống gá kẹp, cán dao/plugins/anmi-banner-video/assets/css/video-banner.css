@@ -916,6 +916,32 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: opacity 0.3s ease;
+}
+
+/* ========================================
+   OVERLAY TRANSPARENCY LOGIC (4 CASES)
+   Using data-has-slider from container + overlay classes
+   ======================================== */
+
+/* CASE 1: Has slider + custom image → Semi-transparent (see slider 70%) */
+[data-has-slider="1"] .abvp-dedicated-overlay.has-custom-image .abvp-overlay-background {
+    opacity: 0.3; /* 30% overlay opacity */
+}
+
+/* CASE 2: Has slider + no custom image → Fully transparent (only button) */
+[data-has-slider="1"] .abvp-dedicated-overlay.no-custom-image .abvp-overlay-background {
+    opacity: 0; /* Fully transparent */
+}
+
+/* CASE 3: No slider + custom image → Opaque background (no need to see through) */
+[data-has-slider="0"] .abvp-dedicated-overlay.has-custom-image .abvp-overlay-background {
+    opacity: 0.9; /* Nearly opaque - no slider to see */
+}
+
+/* CASE 4: No slider + no custom image → Slightly visible background */
+[data-has-slider="0"] .abvp-dedicated-overlay.no-custom-image .abvp-overlay-background {
+    opacity: 0.1; /* Slight background for button contrast */
 }
 
 .abvp-dedicated-overlay .abvp-play-button-wrapper {
@@ -945,15 +971,26 @@
     /* Use visibility instead of opacity to prevent flicker */
 }
 
-/* Desktop: Show overlay by default, hide on hover when hover is enabled */
+/* Desktop: Show overlay by default, hide on hover ONLY IF has slider */
 @media (min-width: 769px) {
-    /* Only hide on hover if hover is enabled (default behavior) */
-    .anmi-video-banner-container:not([data-enable-hover-desktop="0"]):hover .abvp-dedicated-overlay,
-    .abvp-banner-wrapper:not([data-enable-hover-desktop="0"]):hover .abvp-dedicated-overlay {
+    /* TRANSPARENCY: Adjust based on desktop slider setting */
+    /* If slider disabled on desktop, use opaque overlay even if global slider enabled */
+    [data-enable-slider-desktop="0"] .abvp-dedicated-overlay.has-custom-image .abvp-overlay-background {
+        opacity: 0.9 !important; /* Opaque - no slider on desktop */
+    }
+    
+    [data-enable-slider-desktop="0"] .abvp-dedicated-overlay.no-custom-image .abvp-overlay-background {
+        opacity: 0.1 !important; /* Slight background - no slider on desktop */
+    }
+    
+    /* HOVER: Hide on hover only if slider enabled on desktop AND hover enabled */
+    [data-has-slider="1"][data-enable-slider-desktop="1"]:not([data-enable-hover-desktop="0"]):hover .abvp-dedicated-overlay {
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
     }
+    
+    /* Note: [data-enable-slider-desktop="0"] keeps overlay visible on hover */
     
     /* Hide overlay completely when hover is disabled */
     .anmi-video-banner-container[data-enable-hover-desktop="0"] .abvp-dedicated-overlay,
@@ -965,6 +1002,16 @@
 
 /* Mobile: Keep overlay visible, only hide when playing or when hover disabled */
 @media (max-width: 768px) {
+    /* TRANSPARENCY: Adjust based on mobile slider setting */
+    /* If slider disabled on mobile, use opaque overlay */
+    [data-enable-slider-mobile="0"] .abvp-dedicated-overlay.has-custom-image .abvp-overlay-background {
+        opacity: 0.9 !important; /* Opaque - no slider on mobile */
+    }
+    
+    [data-enable-slider-mobile="0"] .abvp-dedicated-overlay.no-custom-image .abvp-overlay-background {
+        opacity: 0.1 !important; /* Slight background - no slider on mobile */
+    }
+    
     /* Hide overlay when hover is disabled on mobile */
     .anmi-video-banner-container[data-enable-hover-mobile="0"] .abvp-dedicated-overlay,
     .abvp-banner-wrapper[data-enable-hover-mobile="0"] .abvp-dedicated-overlay {

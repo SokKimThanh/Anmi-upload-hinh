@@ -35,7 +35,8 @@ $mobile_behavior  = isset($atts['mobile_behavior']) ? $atts['mobile_behavior'] :
 $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_delay']) : 0;
 
 // Dedicated overlay image - use custom uploaded image or fallback to first slider image
-$overlay_image    = isset($banner->overlay_image) && !empty($banner->overlay_image) ? $banner->overlay_image : $poster_image;
+$has_custom_overlay_image = isset($banner->overlay_image) && !empty($banner->overlay_image);
+$overlay_image    = $has_custom_overlay_image ? $banner->overlay_image : $poster_image;
 ?>
 
 <div class="abvp-banner-wrapper anmi-video-banner-container transition-<?php echo esc_attr($atts['transition']); ?> <?php echo esc_attr($unique_id); ?> effect-<?php echo esc_attr($atts['transition']); ?>" 
@@ -168,14 +169,20 @@ $overlay_image    = isset($banner->overlay_image) && !empty($banner->overlay_ima
         $enable_overlay_desktop || 
         $enable_overlay_mobile
     );
+    
+    // Add class based on whether custom overlay image exists
+    // Note: data-has-slider on container already indicates if slider exists
+    $overlay_class = $has_custom_overlay_image ? 'has-custom-image' : 'no-custom-image';
     ?>
     <?php if ($should_render_overlay): ?>
-    <div class="abvp-dedicated-overlay" 
+    <div class="abvp-dedicated-overlay <?php echo $overlay_class; ?>" 
          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 35;">
         <!-- Overlay Background Image -->
         <div class="abvp-overlay-background" 
              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                    <?php if ($has_custom_overlay_image): ?>
                     background-image: url('<?php echo esc_url($overlay_image); ?>'); 
+                    <?php endif; ?>
                     background-size: cover; background-position: center;"></div>
         
         <!-- Play Button Container -->
