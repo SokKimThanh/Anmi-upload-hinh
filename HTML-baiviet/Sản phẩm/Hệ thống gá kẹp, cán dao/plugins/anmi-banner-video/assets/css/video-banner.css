@@ -602,11 +602,24 @@
     z-index: 2 !important; /* Keep below iframe z-index: 20 */
 }
 
+/* Disable hover effect when hover is turned off */
+.anmi-video-banner-container[data-enable-hover="0"]:hover .anmi-banner-image,
+.abvp-banner-wrapper[data-enable-hover="0"]:hover .abvp-slide-image {
+    opacity: 1 !important; /* Keep slider visible when hover disabled */
+}
+
 /* Hide slider completely when video is playing */
 .anmi-video-banner-container.video-playing .anmi-banner-image,
 .abvp-banner-wrapper.video-playing .abvp-slide-image {
     opacity: 0 !important;
     pointer-events: none !important;
+}
+
+/* OVERLAY CONTROLS */
+/* Hide overlay when overlay is disabled */
+.anmi-video-banner-container[data-enable-overlay="0"] .elementor-custom-embed-image-overlay,
+.abvp-banner-wrapper[data-enable-overlay="0"] .elementor-custom-embed-image-overlay {
+    display: none !important;
 }
 
 /* Content Overlay */
@@ -937,6 +950,42 @@
 .anmi-banner-content[data-show-title="0"][data-show-subtitle="0"][data-show-button="0"],
 .abvp-content-overlay[data-show-title="0"][data-show-subtitle="0"][data-show-button="0"] {
     display: none !important;
+}
+
+/* ============================================ */
+/* DEVICE-SPECIFIC OVERLAY & HOVER CONTROLS */
+/* ============================================ */
+
+/* Desktop-specific (min-width: 769px) */
+@media (min-width: 769px) {
+    /* Hide overlay on desktop when disabled */
+    .anmi-video-banner-container[data-enable-overlay-desktop="0"] .elementor-custom-embed-image-overlay,
+    .abvp-banner-wrapper[data-enable-overlay-desktop="0"] .elementor-custom-embed-image-overlay {
+        display: none !important;
+    }
+    
+    /* Disable hover effect on desktop when disabled */
+    .anmi-video-banner-container[data-enable-hover-desktop="0"]:hover .anmi-banner-image,
+    .abvp-banner-wrapper[data-enable-hover-desktop="0"]:hover .abvp-slide-image {
+        opacity: 1 !important; /* Keep slider visible */
+    }
+}
+
+/* Mobile-specific (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Hide overlay on mobile when disabled */
+    .anmi-video-banner-container[data-enable-overlay-mobile="0"] .elementor-custom-embed-image-overlay,
+    .abvp-banner-wrapper[data-enable-overlay-mobile="0"] .elementor-custom-embed-image-overlay {
+        display: none !important;
+    }
+    
+    /* Disable hover/tap effect on mobile when disabled */
+    .anmi-video-banner-container[data-enable-hover-mobile="0"]:hover .anmi-banner-image,
+    .anmi-video-banner-container[data-enable-hover-mobile="0"]:active .anmi-banner-image,
+    .abvp-banner-wrapper[data-enable-hover-mobile="0"]:hover .abvp-slide-image,
+    .abvp-banner-wrapper[data-enable-hover-mobile="0"]:active .abvp-slide-image {
+        opacity: 1 !important; /* Keep slider visible */
+    }
 }
 
 /* ============================================ */

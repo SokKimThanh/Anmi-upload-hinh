@@ -543,6 +543,129 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 </td>
                             </tr>
                             
+                            <!-- OVERLAY SETTINGS -->
+                            <tr>
+                                <th style="padding-top: 20px;"><h3 style="margin: 0;">🎭 Lớp Phủ Video (Overlay)</h3></th>
+                                <td style="padding-top: 20px;"><p class="description">Lớp phủ hiển thị trước khi video phát (poster image + play button)</p></td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_overlay">🎭 Bật Overlay</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt lớp phủ overlay">
+                                        <input type="checkbox" 
+                                            id="enable_overlay" 
+                                            name="enable_overlay" 
+                                            value="1"
+                                            <?php echo ($is_edit ? (!empty($banner->enable_overlay) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_overlay_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị lớp phủ với play button
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
+                                        <strong>💡 Master switch:</strong> Tắt để video tự động phát ngay không cần click.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_overlay_desktop">🖥️ Overlay trên Desktop</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt overlay trên desktop">
+                                        <input type="checkbox" 
+                                            id="enable_overlay_desktop" 
+                                            name="enable_overlay_desktop" 
+                                            value="1"
+                                            <?php echo ($is_edit ? (!empty($banner->enable_overlay_desktop) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_overlay_desktop_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị overlay trên desktop
+                                    </span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_overlay_mobile">📱 Overlay trên Mobile</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt overlay trên mobile">
+                                        <input type="checkbox" 
+                                            id="enable_overlay_mobile" 
+                                            name="enable_overlay_mobile" 
+                                            value="1"
+                                            <?php echo ($is_edit ? (!empty($banner->enable_overlay_mobile) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_overlay_mobile_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị overlay trên mobile
+                                    </span>
+                                </td>
+                            </tr>
+                            
+                            <!-- HOVER EFFECT SETTINGS -->
+                            <tr>
+                                <th style="padding-top: 20px;"><h3 style="margin: 0;">✨ Hiệu Ứng Hover</h3></th>
+                                <td style="padding-top: 20px;"><p class="description">Hiệu ứng khi di chuột vào banner (fade slider, show video)</p></td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_hover">✨ Bật Hover Effect</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt hiệu ứng hover">
+                                        <input type="checkbox" 
+                                            id="enable_hover" 
+                                            name="enable_hover" 
+                                            value="1"
+                                            <?php echo ($is_edit ? (!empty($banner->enable_hover) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_hover_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Slider sẽ mờ đi khi hover
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
+                                        <strong>💡 Master switch:</strong> Tắt để slider không có hiệu ứng khi hover.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_hover_desktop">🖥️ Hover trên Desktop</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt hover effect trên desktop">
+                                        <input type="checkbox" 
+                                            id="enable_hover_desktop" 
+                                            name="enable_hover_desktop" 
+                                            value="1"
+                                            <?php echo ($is_edit ? (!empty($banner->enable_hover_desktop) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_hover_desktop_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiệu ứng hover trên desktop
+                                    </span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_hover_mobile">📱 Hover trên Mobile</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt hover effect trên mobile (touch)">
+                                        <input type="checkbox" 
+                                            id="enable_hover_mobile" 
+                                            name="enable_hover_mobile" 
+                                            value="1"
+                                            <?php echo ($is_edit ? (!empty($banner->enable_hover_mobile) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_hover_mobile_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiệu ứng hover trên mobile (tap)
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #FF9800;">
+                                        <strong>💡 Lưu ý:</strong> Trên mobile, hover = tap (chạm vào banner).
+                                    </p>
+                                </td>
+                            </tr>
+                            
                             <tr>
                                 <th><label for="video_modestbranding">📺 Ẩn Logo YouTube</label></th>
                                 <td>
@@ -825,6 +948,12 @@ jQuery(document).ready(function($) {
                 enable_slider: $('#enable_slider').is(':checked') ? 1 : 0,
                 enable_slider_desktop: $('#enable_slider_desktop').is(':checked') ? 1 : 0,
                 enable_slider_mobile: $('#enable_slider_mobile').is(':checked') ? 1 : 0,
+                enable_overlay: $('#enable_overlay').is(':checked') ? 1 : 0,
+                enable_overlay_desktop: $('#enable_overlay_desktop').is(':checked') ? 1 : 0,
+                enable_overlay_mobile: $('#enable_overlay_mobile').is(':checked') ? 1 : 0,
+                enable_hover: $('#enable_hover').is(':checked') ? 1 : 0,
+                enable_hover_desktop: $('#enable_hover_desktop').is(':checked') ? 1 : 0,
+                enable_hover_mobile: $('#enable_hover_mobile').is(':checked') ? 1 : 0,
                 video_modestbranding: $('#video_modestbranding').is(':checked') ? 1 : 0,
                 video_rel: $('#video_rel').is(':checked') ? 1 : 0,
                 show_title: $('#show_title').is(':checked') ? 1 : 0,
@@ -1235,10 +1364,52 @@ jQuery(document).ready(function($) {
         } else {
             $('#video_rel_status').html('✗ ĐANG TẮT').css('color', '#d63638');
         }
+        
+        // Overlay
+        if ($('#enable_overlay').is(':checked')) {
+            $('#enable_overlay_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#enable_overlay_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
+        // Overlay Desktop
+        if ($('#enable_overlay_desktop').is(':checked')) {
+            $('#enable_overlay_desktop_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#enable_overlay_desktop_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
+        // Overlay Mobile
+        if ($('#enable_overlay_mobile').is(':checked')) {
+            $('#enable_overlay_mobile_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#enable_overlay_mobile_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
+        // Hover
+        if ($('#enable_hover').is(':checked')) {
+            $('#enable_hover_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#enable_hover_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
+        // Hover Desktop
+        if ($('#enable_hover_desktop').is(':checked')) {
+            $('#enable_hover_desktop_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#enable_hover_desktop_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
+        // Hover Mobile
+        if ($('#enable_hover_mobile').is(':checked')) {
+            $('#enable_hover_mobile_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#enable_hover_mobile_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
     }
     
     // Update labels on change for all checkboxes
-    $('#video_autoplay, #video_muted, #video_loop, #video_controls, #enable_slider, #enable_slider_desktop, #enable_slider_mobile, #video_modestbranding, #video_rel').on('change', updateCheckboxLabels);
+    $('#video_autoplay, #video_muted, #video_loop, #video_controls, #enable_slider, #enable_slider_desktop, #enable_slider_mobile, #enable_overlay, #enable_overlay_desktop, #enable_overlay_mobile, #enable_hover, #enable_hover_desktop, #enable_hover_mobile, #video_modestbranding, #video_rel').on('change', updateCheckboxLabels);
     
     // Initial update
     updateCheckboxLabels();

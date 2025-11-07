@@ -28,9 +28,10 @@ class AnMi_Banner_Video_Pro_Admin {
 
     /**
      * Format definitions for banner database columns.
+     * Updated for overlay and hover settings (6 new columns)
      */
     private const DB_DATA_FORMAT = array(
-        '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%d', '%d', '%s', '%s', '%d', '%s', '%d', '%s', '%s', '%d', '%d', '%d', '%d', '%d', '%d'
+        '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%d', '%d', '%s', '%s', '%d', '%s', '%d', '%s', '%s', '%d', '%d', '%d', '%d', '%d', '%d', '%d', '%d', '%d', '%d', '%d', '%d'
     );
 
     public static function get_instance(): self {
@@ -107,6 +108,12 @@ class AnMi_Banner_Video_Pro_Admin {
             enable_slider tinyint(1) DEFAULT 1,
             enable_slider_desktop tinyint(1) DEFAULT 1,
             enable_slider_mobile tinyint(1) DEFAULT 1,
+            enable_overlay tinyint(1) DEFAULT 1,
+            enable_overlay_desktop tinyint(1) DEFAULT 1,
+            enable_overlay_mobile tinyint(1) DEFAULT 1,
+            enable_hover tinyint(1) DEFAULT 1,
+            enable_hover_desktop tinyint(1) DEFAULT 1,
+            enable_hover_mobile tinyint(1) DEFAULT 1,
             enable_modestbranding tinyint(1) DEFAULT 1,
             enable_rel tinyint(1) DEFAULT 0,
             created_date datetime DEFAULT CURRENT_TIMESTAMP,
@@ -302,6 +309,12 @@ class AnMi_Banner_Video_Pro_Admin {
             'enable_slider' => $this->sanitize_checkbox($request, 'enable_slider', 1),
             'enable_slider_desktop' => $this->sanitize_checkbox($request, 'enable_slider_desktop', 1),
             'enable_slider_mobile' => $this->sanitize_checkbox($request, 'enable_slider_mobile', 1),
+            'enable_overlay' => $this->sanitize_checkbox($request, 'enable_overlay', 1),
+            'enable_overlay_desktop' => $this->sanitize_checkbox($request, 'enable_overlay_desktop', 1),
+            'enable_overlay_mobile' => $this->sanitize_checkbox($request, 'enable_overlay_mobile', 1),
+            'enable_hover' => $this->sanitize_checkbox($request, 'enable_hover', 1),
+            'enable_hover_desktop' => $this->sanitize_checkbox($request, 'enable_hover_desktop', 1),
+            'enable_hover_mobile' => $this->sanitize_checkbox($request, 'enable_hover_mobile', 1),
             'enable_modestbranding' => $this->sanitize_checkbox($request, 'video_modestbranding', 1),
             'enable_rel' => $this->sanitize_checkbox($request, 'video_rel', 0),
         );
@@ -420,6 +433,42 @@ class AnMi_Banner_Video_Pro_Admin {
         if (!in_array('enable_slider_mobile', $column_names)) {
             $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider_mobile tinyint(1) DEFAULT 1 AFTER enable_slider_desktop");
             $added_columns[] = 'enable_slider_mobile';
+        }
+        
+        // Add enable_overlay column if missing
+        if (!in_array('enable_overlay', $column_names)) {
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay tinyint(1) DEFAULT 1 AFTER enable_slider_mobile");
+            $added_columns[] = 'enable_overlay';
+        }
+        
+        // Add enable_overlay_desktop column if missing
+        if (!in_array('enable_overlay_desktop', $column_names)) {
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay_desktop tinyint(1) DEFAULT 1 AFTER enable_overlay");
+            $added_columns[] = 'enable_overlay_desktop';
+        }
+        
+        // Add enable_overlay_mobile column if missing
+        if (!in_array('enable_overlay_mobile', $column_names)) {
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay_mobile tinyint(1) DEFAULT 1 AFTER enable_overlay_desktop");
+            $added_columns[] = 'enable_overlay_mobile';
+        }
+        
+        // Add enable_hover column if missing
+        if (!in_array('enable_hover', $column_names)) {
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_hover tinyint(1) DEFAULT 1 AFTER enable_overlay_mobile");
+            $added_columns[] = 'enable_hover';
+        }
+        
+        // Add enable_hover_desktop column if missing
+        if (!in_array('enable_hover_desktop', $column_names)) {
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_hover_desktop tinyint(1) DEFAULT 1 AFTER enable_hover");
+            $added_columns[] = 'enable_hover_desktop';
+        }
+        
+        // Add enable_hover_mobile column if missing
+        if (!in_array('enable_hover_mobile', $column_names)) {
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_hover_mobile tinyint(1) DEFAULT 1 AFTER enable_hover_desktop");
+            $added_columns[] = 'enable_hover_mobile';
         }
         
         // Log migration

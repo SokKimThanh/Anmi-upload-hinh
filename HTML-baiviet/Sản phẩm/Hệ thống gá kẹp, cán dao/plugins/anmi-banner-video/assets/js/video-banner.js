@@ -44,6 +44,12 @@
             this.enableSlider = parseInt(this.$container.data('enable-slider'), 10) !== 0;
             this.enableSliderDesktop = parseInt(this.$container.data('enable-slider-desktop'), 10) !== 0;
             this.enableSliderMobile = parseInt(this.$container.data('enable-slider-mobile'), 10) !== 0;
+            this.enableOverlay = parseInt(this.$container.data('enable-overlay'), 10) !== 0;
+            this.enableOverlayDesktop = parseInt(this.$container.data('enable-overlay-desktop'), 10) !== 0;
+            this.enableOverlayMobile = parseInt(this.$container.data('enable-overlay-mobile'), 10) !== 0;
+            this.enableHover = parseInt(this.$container.data('enable-hover'), 10) !== 0;
+            this.enableHoverDesktop = parseInt(this.$container.data('enable-hover-desktop'), 10) !== 0;
+            this.enableHoverMobile = parseInt(this.$container.data('enable-hover-mobile'), 10) !== 0;
             const hasSliderData = parseInt(this.$container.data('has-slider'), 10);
             this.imageCount = parseInt(this.$container.data('image-count'), 10) || this.$images.length;
             this.hasSlider = this.enableSlider && (Number.isNaN(hasSliderData) ? this.$images.length > 1 : hasSliderData === 1) && this.imageCount > 1;
@@ -68,8 +74,10 @@
             this.$container.data('anmi-initialized', true);
             this.applyVideoPreferences();
             
-            // Apply device-specific slider logic
+            // Apply device-specific logic
             this.applyDeviceSliderLogic();
+            this.applyDeviceOverlayLogic();
+            this.applyDeviceHoverLogic();
             
             // Check if mobile - but allow WP core video widget to handle mobile itself
             if (this.isMobileDevice && this.mobileBehavior === 'image' && !this.isWPCoreVideo) {
@@ -118,6 +126,49 @@
                 this.hasSlider = false;
                 console.log('Slider disabled on desktop');
             }
+        }
+        
+        /**
+         * Apply device-specific overlay visibility logic
+         */
+        applyDeviceOverlayLogic() {
+            const isMobile = this.isMobileDevice;
+            const isDesktop = !isMobile;
+            const $overlay = this.$container.find('.elementor-custom-embed-image-overlay');
+            
+            if (!this.enableOverlay) {
+                $overlay.hide();
+                console.log('Overlay disabled (master switch)');
+                return;
+            }
+            
+            if (isMobile && !this.enableOverlayMobile) {
+                $overlay.hide();
+                console.log('Overlay disabled on mobile');
+            } else if (isDesktop && !this.enableOverlayDesktop) {
+                $overlay.hide();
+                console.log('Overlay disabled on desktop');
+            }
+        }
+        
+        /**
+         * Apply device-specific hover effect logic
+         */
+        applyDeviceHoverLogic() {
+            const isMobile = this.isMobileDevice;
+            const isDesktop = !isMobile;
+            
+            if (!this.enableHover) {
+                console.log('Hover disabled (master switch)');
+                return;
+            }
+            
+            if (isMobile && !this.enableHoverMobile) {
+                console.log('Hover disabled on mobile');
+            } else if (isDesktop && !this.enableHoverDesktop) {
+                console.log('Hover disabled on desktop');
+            }
+            // Note: CSS handles the actual hover behavior via data attributes
         }
         
         /**
@@ -692,6 +743,18 @@
             
             if ($overlay.length === 0) {
                 return; // No Elementor overlay, use default behavior
+            }
+            
+            // Check overlay settings - if disabled, hide overlay and return
+            const isMobile = this.isMobileDevice;
+            const isDesktop = !isMobile;
+            
+            if (!this.enableOverlay || 
+                (isMobile && !this.enableOverlayMobile) || 
+                (isDesktop && !this.enableOverlayDesktop)) {
+                $overlay.hide();
+                console.log('Overlay disabled in setupElementorOverlay');
+                return;
             }
             
             const handleOverlayClick = (e) => {
