@@ -165,6 +165,7 @@
 .anmi-video-banner-container:hover .anmi-banner-video,
 .abvp-banner-wrapper:hover .abvp-video-frame {
     z-index: 20; /* Above slider and content */
+    opacity: 1 !important; /* Show video on hover */
 }
 
 /* When video is playing, bring video above slider and show it */
@@ -194,8 +195,11 @@
 
 /* When hovering container, bring iframe above slider for controls access */
 .anmi-video-banner-container:hover .anmi-banner-iframe,
-.abvp-banner-wrapper:hover .abvp-video-iframe {
+.abvp-banner-wrapper:hover .abvp-video-iframe,
+.anmi-video-banner-container:hover .abvp-oembed-container iframe,
+.abvp-banner-wrapper:hover .abvp-oembed-container iframe {
     z-index: 20; /* Above slider and content */
+    opacity: 1 !important; /* Show iframe on hover */
     pointer-events: auto; /* Enable clicking on video controls */
 }
 
