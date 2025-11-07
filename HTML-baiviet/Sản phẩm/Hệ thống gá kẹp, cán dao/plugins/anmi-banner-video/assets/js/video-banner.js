@@ -624,6 +624,92 @@
                 }
             });
         }
+
+        /**
+         * Setup Elementor-style image overlay click handler
+         */
+        setupElementorOverlay() {
+            const $overlay = this.$container.find('.elementor-custom-embed-image-overlay');
+            const $playIcon = this.$container.find('.elementor-custom-embed-play');
+            
+            if ($overlay.length === 0) {
+                return; // No Elementor overlay, use default behavior
+            }
+            
+            const handleOverlayClick = (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const video = this.$video[0];
+                const $iframe = this.$container.find('.abvp-oembed-container iframe, .elementor-fit-aspect-ratio iframe');
+                
+                // Hide overlay
+                $overlay.fadeOut(300);
+                this.$container.addClass('video-is-playing');
+                
+                // Stop image slider
+                if (this.hasSlider) {
+                    this.stopSlider();
+                }
+                
+                // Hide images
+                this.$images.css('opacity', '0');
+                
+                // Play video or iframe
+                if (video && video.tagName === 'VIDEO') {
+                    $(video).addClass('playing');
+                    const playPromise = video.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise
+                            .then(() => {
+                                this.isVideoPlaying = true;
+                            })
+                            .catch((error) => {
+                                console.error('Video play failed:', error);
+                                // Show overlay again
+                                $overlay.fadeIn(300);
+                                this.$container.removeClass('video-is-playing');
+                            });
+                    }
+                } else if ($iframe.length > 0) {
+                    // For iframe (YouTube/Vimeo via oEmbed)
+                    $iframe.addClass('playing');
+                    this.isVideoPlaying = true;
+                    
+                    // Try to play iframe if possible
+                    const iframe = $iframe[0];
+                    if (iframe && iframe.contentWindow) {
+                        try {
+                            // Post message to play (works for YouTube/Vimeo)
+                            iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+                        } catch (e) {
+                            // Ignore if postMessage fails
+                        }
+                    }
+                }
+            };
+            
+            // Attach click handlers
+            $overlay.off('click.elementorOverlay').on('click.elementorOverlay', handleOverlayClick);
+            $playIcon.off('click.elementorPlay').on('click.elementorPlay', handleOverlayClick);
+            
+            // Handle video ended event to show overlay again
+            const video = this.$video[0];
+            if (video && video.tagName === 'VIDEO') {
+                $(video).off('ended.elementorOverlay').on('ended.elementorOverlay', () => {
+                    $overlay.fadeIn(300);
+                    this.$container.removeClass('video-is-playing');
+                    $(video).removeClass('playing');
+                    this.isVideoPlaying = false;
+                    
+                    // Restart slider if available
+                    if (this.hasSlider) {
+                        this.startSlider();
+                    }
+                });
+            }
+        }
         
         setupEvents() {
             const videoElement = this.$video[0];
@@ -632,6 +718,9 @@
                 return;
             }
 
+            // Setup Elementor-style overlay click handler
+            this.setupElementorOverlay();
+
             if (this.isVideoOnlyMobile) {
                 this.setupMobileVideoOnlyEvents(videoElement);
                 this.setupVolumeControl();
@@ -639,6 +728,7 @@
             }
 
             if (this.isMobileDevice) {
+                // Mobile tap to play
                 this.$container.off('touchstart.anmiVideo click.anmiVideo')
                     .on('touchstart.anmiVideo click.anmiVideo', (e) => {
                     e.preventDefault();

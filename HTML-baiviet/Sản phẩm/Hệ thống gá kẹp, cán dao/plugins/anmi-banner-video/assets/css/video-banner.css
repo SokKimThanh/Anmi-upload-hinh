@@ -162,7 +162,7 @@
 }
 
 /* ============================================ */
-/* WP CORE VIDEO WRAPPER - Mobile Compatibility */
+/* WP CORE VIDEO WRAPPER - Elementor Style */
 /* ============================================ */
 
 /* WordPress core video widget wrapper */
@@ -175,29 +175,8 @@
     z-index: 1;
 }
 
-/* Remove WP default margins/padding from widget video */
-.abvp-wp-video-wrapper .wp-video,
-.abvp-wp-video-wrapper .mejs-container {
-    width: 100% !important;
-    height: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-/* Ensure video element fills container */
-.abvp-wp-video-wrapper video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-
-/* WordPress oEmbed iframe container (YouTube/Vimeo) */
-.abvp-wp-video-wrapper .abvp-oembed-container {
+/* Elementor video container with aspect ratio */
+.elementor-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -205,7 +184,15 @@
     height: 100%;
 }
 
-.abvp-wp-video-wrapper .abvp-oembed-container iframe {
+.elementor-fit-aspect-ratio {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* Default 16:9 */
+    overflow: hidden;
+}
+
+.elementor-fit-aspect-ratio iframe,
+.elementor-fit-aspect-ratio video {
     position: absolute;
     top: 0;
     left: 0;
@@ -216,34 +203,136 @@
     transition: opacity 0.8s ease;
 }
 
-/* Show video on hover */
-.anmi-video-banner-container:hover .abvp-wp-video-wrapper video,
-.abvp-banner-wrapper:hover .abvp-wp-video-wrapper video,
+/* Remove WP default margins/padding */
+.abvp-wp-video-wrapper .wp-video,
+.abvp-wp-video-wrapper .mejs-container,
+.elementor-video .wp-video,
+.elementor-video .mejs-container {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* oEmbed container */
+.abvp-oembed-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.abvp-oembed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+/* Elementor-style image overlay */
+.elementor-custom-embed-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Elementor play icon */
+.elementor-custom-embed-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.elementor-custom-embed-play .abvp-play-button-image {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+
+/* Show video on hover (Desktop) */
+.anmi-video-banner-container:hover .elementor-fit-aspect-ratio iframe,
+.anmi-video-banner-container:hover .elementor-fit-aspect-ratio video,
 .anmi-video-banner-container:hover .abvp-oembed-container iframe,
-.abvp-banner-wrapper:hover .abvp-oembed-container iframe {
+.anmi-video-banner-container:hover .elementor-video video,
+.abvp-banner-wrapper:hover .elementor-fit-aspect-ratio iframe,
+.abvp-banner-wrapper:hover .elementor-fit-aspect-ratio video {
     opacity: 1;
     z-index: 20;
 }
 
-/* Mobile: Enable play overlay interaction */
+/* Hide overlay on hover (Desktop) */
+.anmi-video-banner-container:hover .elementor-custom-embed-image-overlay,
+.abvp-banner-wrapper:hover .elementor-custom-embed-image-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Play button hover effect */
+.elementor-custom-embed-play:hover .abvp-play-button-image {
+    transform: scale(1.15);
+}
+
+/* Mobile specific */
 @media (max-width: 768px) {
-    .abvp-play-icon,
-    .anmi-play-overlay {
-        pointer-events: auto !important;
-        opacity: 1 !important;
+    /* Keep overlay visible on mobile */
+    .elementor-custom-embed-image-overlay {
+        opacity: 1;
+        pointer-events: auto;
         z-index: 30;
     }
     
-    /* Show poster on mobile by default */
-    .abvp-wp-video-wrapper video,
-    .abvp-oembed-container iframe {
+    /* Hide video by default on mobile */
+    .elementor-fit-aspect-ratio iframe,
+    .elementor-fit-aspect-ratio video,
+    .abvp-oembed-container iframe,
+    .elementor-video video {
         opacity: 0;
     }
     
-    /* Only show video when playing */
-    .abvp-wp-video-wrapper video.playing,
-    .abvp-oembed-container iframe.playing {
+    /* Show video when playing */
+    .elementor-fit-aspect-ratio iframe.playing,
+    .elementor-fit-aspect-ratio video.playing,
+    .abvp-oembed-container iframe.playing,
+    .elementor-video video.playing {
         opacity: 1;
+        z-index: 31;
+    }
+    
+    /* Hide overlay when video playing */
+    .video-is-playing .elementor-custom-embed-image-overlay {
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    /* Smaller play button on mobile */
+    .elementor-custom-embed-play .abvp-play-button-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) and (min-width: 481px) {
+    .elementor-custom-embed-play .abvp-play-button-image {
+        width: 70px;
+        height: 70px;
     }
 }
 

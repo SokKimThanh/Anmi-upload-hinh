@@ -144,27 +144,38 @@ class AnMi_Banner_Video_Pro {
 
     /**
      * Render video using WordPress core for better mobile compatibility.
-     * Supports MP4 (via media widget) and YouTube/Vimeo (via oEmbed).
+     * Supports ALL video types via WordPress oEmbed and media widget.
      * 
-     * @param string $video_url Video URL (MP4, YouTube, or Vimeo)
-     * @param string $video_type Video type: 'direct', 'youtube', or 'vimeo'
-     * @param array $settings Video settings (autoplay, muted, loop, controls)
+     * @param string $video_url Video URL (MP4, YouTube, Vimeo, etc.)
+     * @param string $video_type Video type: 'direct', 'youtube', 'vimeo', etc.
+     * @param array $settings Video settings from plugin
      * @param string $poster_url Poster/fallback image URL
+     * @param array $elementor_args Additional Elementor-specific args
      * @return string HTML output with custom wrapper
      */
-    public function render_wp_core_video(string $video_url, string $video_type, array $settings, string $poster_url = ''): string {
+    public function render_wp_core_video(string $video_url, string $video_type, array $settings, string $poster_url = '', array $elementor_args = array()): string {
         if (empty($video_url)) {
             return '';
         }
 
-        // Build custom attributes for mobile interaction
+        // Extract Elementor settings
+        $aspect_ratio = isset($elementor_args['aspect_ratio']) ? $elementor_args['aspect_ratio'] : '16:9';
+        $show_overlay = isset($elementor_args['show_image_overlay']) ? $elementor_args['show_image_overlay'] : 'yes';
+        $overlay_image = isset($elementor_args['image_overlay']) ? $elementor_args['image_overlay'] : $poster_url;
+        $show_play_icon = isset($elementor_args['show_play_icon']) ? $elementor_args['show_play_icon'] : 'yes';
+        $lightbox = isset($elementor_args['lightbox']) ? $elementor_args['lightbox'] : 'no';
+        $lazy_load = isset($elementor_args['lazy_load']) ? $elementor_args['lazy_load'] : 'yes';
+
+        // Build custom attributes
         $custom_attrs = array(
-            'class' => 'abvp-wp-video-wrapper',
+            'class' => 'abvp-wp-video-wrapper elementor-video-wrapper',
             'data-video-type' => esc_attr($video_type),
             'data-enable-autoplay' => !empty($settings['enable_autoplay']) ? '1' : '0',
             'data-enable-muted' => !empty($settings['enable_muted']) ? '1' : '0',
-            'data-poster' => esc_url($poster_url),
+            'data-enable-loop' => !empty($settings['enable_loop']) ? '1' : '0',
+            'data-poster' => esc_url($overlay_image),
             'data-video-url' => esc_url($video_url),
+            'data-aspect-ratio' => esc_attr($aspect_ratio),
         );
 
         // Start output buffering
@@ -174,110 +185,137 @@ class AnMi_Banner_Video_Pro {
         foreach ($custom_attrs as $attr => $value) {
             echo esc_attr($attr) . '="' . esc_attr($value) . '" ';
         }
-        echo '>';
+        echo 'style="position: relative;">';
 
-        // Handle different video types
-        if ($video_type === 'youtube' || $video_type === 'vimeo') {
-            // Use WordPress oEmbed for YouTube/Vimeo
-            $oembed_args = array();
-            
-            // Add autoplay parameter if enabled
-            if (!empty($settings['enable_autoplay'])) {
-                $video_url .= (strpos($video_url, '?') !== false ? '&' : '?');
-                $video_url .= 'autoplay=1';
-                if (!empty($settings['enable_muted'])) {
-                    $video_url .= '&mute=1';
-                }
-            }
-            
-            // Get oEmbed HTML from WordPress
-            $oembed_html = wp_oembed_get($video_url, $oembed_args);
-            
-            if ($oembed_html) {
-                // Wrap oEmbed in our custom container
-                echo '<div class="abvp-oembed-container anmi-banner-video">';
-                echo $oembed_html;
-                echo '</div>';
-            } else {
-                // Fallback to custom iframe if oEmbed fails
-                echo $this->render_custom_iframe($video_url, $video_type, $settings);
-            }
-            
+        // Render video based on type
+        if ($video_type === 'youtube' || $video_type === 'vimeo' || $video_type === 'dailymotion' || $video_type === 'videopress') {
+            // Use WordPress oEmbed for all embed types
+            echo $this->render_oembed_video($video_url, $settings, $elementor_args);
         } else {
             // MP4/Direct video - Use WordPress media widget
-            $attachment_id = attachment_url_to_postid($video_url);
-            
-            $instance = array(
-                'url' => $video_url,
-                'preload' => 'metadata',
-                'loop' => !empty($settings['enable_loop']),
-                'content' => '',
-            );
-
-            if ($attachment_id > 0) {
-                $instance['attachment_id'] = $attachment_id;
-            }
-
-            if (class_exists('WP_Widget_Media_Video')) {
-                the_widget(
-                    'WP_Widget_Media_Video',
-                    $instance,
-                    array(
-                        'before_widget' => '',
-                        'after_widget' => '',
-                        'before_title' => '',
-                        'after_title' => '',
-                    )
-                );
-            } else {
-                // Fallback to standard video tag
-                echo '<video class="abvp-video-frame anmi-banner-video"';
-                if (!empty($settings['enable_loop'])) echo ' loop';
-                if (!empty($settings['enable_muted'])) echo ' muted';
-                if (!empty($settings['enable_autoplay'])) echo ' autoplay';
-                if (!empty($settings['enable_controls'])) echo ' controls';
-                echo ' playsinline preload="metadata"';
-                if (!empty($poster_url)) echo ' poster="' . esc_url($poster_url) . '"';
-                echo '>';
-                echo '<source src="' . esc_url($video_url) . '" type="video/mp4">';
-                echo 'Your browser does not support the video tag.';
-                echo '</video>';
-            }
+            echo $this->render_direct_video($video_url, $settings, $overlay_image, $elementor_args);
         }
 
-        echo '</div>';
+        // Add image overlay if enabled
+        if ($show_overlay === 'yes' && !empty($overlay_image)) {
+            echo '<div class="elementor-custom-embed-image-overlay" style="background-image: url(\'' . esc_url($overlay_image) . '\');">';
+            
+            // Add play icon if enabled
+            if ($show_play_icon === 'yes') {
+                echo '<div class="elementor-custom-embed-play" role="button" aria-label="Play Video">';
+                echo '<img src="https://anmitools.com/wp-content/uploads/2025/11/play-button.png" alt="Play" class="abvp-play-button-image">';
+                echo '</div>';
+            }
+            
+            echo '</div>';
+        }
+
+        echo '</div>'; // Close wrapper
 
         return ob_get_clean();
     }
 
     /**
-     * Fallback: Render custom iframe if WordPress oEmbed fails.
+     * Render oEmbed video (YouTube, Vimeo, etc.)
      */
-    private function render_custom_iframe(string $video_url, string $video_type, array $settings): string {
-        $iframe_src = $video_url;
+    private function render_oembed_video(string $video_url, array $settings, array $elementor_args): string {
+        // Build oEmbed args
+        $oembed_args = array();
         
-        // Add iframe parameters based on settings
+        // Add parameters to URL based on settings
         $params = array();
+        
         if (!empty($settings['enable_autoplay'])) {
             $params['autoplay'] = '1';
         }
         if (!empty($settings['enable_muted'])) {
-            $params['mute'] = '1';
+            $params['muted'] = '1';
         }
         if (!empty($settings['enable_loop'])) {
             $params['loop'] = '1';
         }
-        
-        if (!empty($params)) {
-            $iframe_src .= (strpos($iframe_src, '?') !== false ? '&' : '?');
-            $iframe_src .= http_build_query($params);
+        if (!empty($settings['enable_controls'])) {
+            $params['controls'] = '1';
         }
         
-        return '<iframe class="abvp-video-frame abvp-video-iframe anmi-banner-video anmi-banner-iframe" 
-                src="' . esc_url($iframe_src) . '" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>';
+        // Add params to URL
+        if (!empty($params)) {
+            $separator = (strpos($video_url, '?') !== false) ? '&' : '?';
+            $video_url .= $separator . http_build_query($params);
+        }
+        
+        // Get WordPress oEmbed
+        $oembed_html = wp_oembed_get($video_url, $oembed_args);
+        
+        if ($oembed_html) {
+            // Wrap in container with aspect ratio
+            $aspect_ratio = isset($elementor_args['aspect_ratio']) ? $elementor_args['aspect_ratio'] : '16:9';
+            $padding = '56.25%'; // Default 16:9
+            
+            if ($aspect_ratio === '21:9') $padding = '42.857%';
+            elseif ($aspect_ratio === '4:3') $padding = '75%';
+            elseif ($aspect_ratio === '3:2') $padding = '66.667%';
+            elseif ($aspect_ratio === '9:16') $padding = '177.778%';
+            elseif ($aspect_ratio === '1:1') $padding = '100%';
+            
+            return '<div class="elementor-video elementor-fit-aspect-ratio" style="padding-bottom: ' . $padding . ';">' 
+                   . '<div class="abvp-oembed-container">' . $oembed_html . '</div>'
+                   . '</div>';
+        }
+        
+        return '';
+    }
+
+    /**
+     * Render direct MP4 video via WP media widget
+     */
+    private function render_direct_video(string $video_url, array $settings, string $poster_url, array $elementor_args): string {
+        $attachment_id = attachment_url_to_postid($video_url);
+        
+        $instance = array(
+            'url' => $video_url,
+            'preload' => isset($elementor_args['preload']) ? $elementor_args['preload'] : 'metadata',
+            'loop' => !empty($settings['enable_loop']),
+            'content' => '',
+        );
+
+        if ($attachment_id > 0) {
+            $instance['attachment_id'] = $attachment_id;
+        }
+
+        ob_start();
+        
+        if (class_exists('WP_Widget_Media_Video')) {
+            the_widget(
+                'WP_Widget_Media_Video',
+                $instance,
+                array(
+                    'before_widget' => '<div class="elementor-video">',
+                    'after_widget' => '</div>',
+                    'before_title' => '',
+                    'after_title' => '',
+                )
+            );
+        } else {
+            // Fallback
+            echo '<video class="elementor-video" style="width: 100%;"';
+            if (!empty($settings['enable_loop'])) echo ' loop';
+            if (!empty($settings['enable_muted'])) echo ' muted';
+            if (!empty($settings['enable_controls'])) echo ' controls';
+            echo ' playsinline preload="metadata"';
+            if (!empty($poster_url)) echo ' poster="' . esc_url($poster_url) . '"';
+            echo '><source src="' . esc_url($video_url) . '" type="video/mp4"></video>';
+        }
+
+        return ob_get_clean();
+    }
+
+    /**
+     * Fallback: No longer needed - removed custom iframe
+     */
+    private function render_custom_iframe(string $video_url, string $video_type, array $settings): string {
+        // This method is deprecated - all videos now use WordPress oEmbed
+        return $this->render_oembed_video($video_url, $settings, array());
     }
     
     public function render_video_banner(array $atts = array(), ?string $content = null): string {
