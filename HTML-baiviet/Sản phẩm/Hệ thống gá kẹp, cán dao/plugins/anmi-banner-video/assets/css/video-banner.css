@@ -189,11 +189,14 @@
     pointer-events: auto; /* Enable clicking on video controls */
 }
 
+/* OLD HOVER EFFECT REMOVED - Dedicated overlay handles hover now */
 /* Keep slider visible but reduce opacity slightly when video is hovered */
+/* COMMENTED OUT: This dimmed slider on hover, but dedicated overlay handles this now
 .anmi-video-banner-container:hover .anmi-banner-slider,
 .abvp-banner-wrapper:hover .abvp-slide-image {
-    opacity: 0.3; /* Dim slider to show video is active */
+    opacity: 0.3;
 }
+*/
 
 /* Scale iframe to cover entire area (DESKTOP ONLY - min-width: 769px) */
 @media (min-width: 769px) and (min-aspect-ratio: 16/9) {
@@ -499,12 +502,15 @@
     pointer-events: none; /* Don't block video controls */
 }
 
+/* OLD HOVER EFFECT REMOVED - Dedicated overlay handles hover now */
 /* Dim slider images when hovering - fully transparent to see video */
+/* COMMENTED OUT: This caused black screen when hovering without video playing
 .anmi-video-banner-container:hover .anmi-banner-image,
 .abvp-banner-wrapper:hover .abvp-slide-image {
-    opacity: 0 !important; /* Fully transparent to see video clearly */
-    z-index: 2 !important; /* Keep below iframe z-index: 20 */
+    opacity: 0 !important;
+    z-index: 2 !important;
 }
+*/
 
 /* Disable hover effect when hover is turned off */
 .anmi-video-banner-container[data-enable-hover="0"]:hover .anmi-banner-image,
