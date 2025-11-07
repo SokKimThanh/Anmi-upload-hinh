@@ -50,7 +50,8 @@ register_activation_hook(__FILE__, 'abvp_plugin_activate');
 function abvp_plugin_activate() {
     $admin = AnMi_Banner_Video_Pro_Admin::get_instance();
     $admin->setup_database_table();
-    error_log('AnMi Banner Video Pro v' . ABVP_VERSION . ' activated');
+    update_option('abvp_version', ABVP_VERSION);
+    error_log('AnMi Banner Video Pro v' . ABVP_VERSION . ' activated - Database updated');
 }
 
 class AnMi_Banner_Video_Pro {
