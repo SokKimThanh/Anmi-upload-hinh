@@ -108,6 +108,7 @@ class AnMi_Banner_Video_Pro_Admin {
             enable_slider tinyint(1) DEFAULT 1,
             enable_slider_desktop tinyint(1) DEFAULT 1,
             enable_slider_mobile tinyint(1) DEFAULT 1,
+            overlay_image varchar(500) DEFAULT '',
             enable_overlay tinyint(1) DEFAULT 1,
             enable_overlay_desktop tinyint(1) DEFAULT 1,
             enable_overlay_mobile tinyint(1) DEFAULT 1,
@@ -443,9 +444,15 @@ class AnMi_Banner_Video_Pro_Admin {
             $added_columns[] = 'enable_slider_mobile';
         }
         
+        // Add overlay_image column if missing (for custom overlay image with play button)
+        if (!in_array('overlay_image', $column_names)) {
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN overlay_image varchar(500) DEFAULT '' AFTER enable_slider_mobile");
+            $added_columns[] = 'overlay_image';
+        }
+        
         // Add enable_overlay column if missing
         if (!in_array('enable_overlay', $column_names)) {
-            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay tinyint(1) DEFAULT 1 AFTER enable_slider_mobile");
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_overlay tinyint(1) DEFAULT 1 AFTER overlay_image");
             $added_columns[] = 'enable_overlay';
         }
         

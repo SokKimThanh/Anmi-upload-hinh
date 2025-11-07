@@ -269,11 +269,23 @@
 /* PRODUCTION DEMO - Play Overlay */
 /* ============================================ */
 
-/* Play button overlay - Small button at bottom right */
+/* Play button overlay - Independent from slider transitions */
 .anmi-play-overlay,
 .abvp-play-icon {
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 30; /* Higher than slider (z-index: 2) to prevent flickering */
     cursor: pointer;
+    opacity: 1;
+    transition: transform 0.3s ease; /* Only transform, NO opacity transition */
+    pointer-events: auto;
+    will-change: transform; /* Separate rendering layer from slider */
 }
 
 /* Play button image styling */
@@ -282,8 +294,9 @@
     width: 80px;
     height: 80px;
     cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease; /* Only transform, NO opacity */
     filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+    will-change: transform; /* Separate rendering layer */
 }
 
 .anmi-video-banner-container:hover .anmi-play-overlay,
@@ -301,10 +314,10 @@
     transform: scale(1.25) !important;
 }
 
-/* Hide play overlay when video is playing */
+/* Hide play overlay when video is playing - Use visibility for instant hide */
 .anmi-video-banner-container.video-playing .anmi-play-overlay,
 .abvp-banner-wrapper.video-playing .abvp-play-icon {
-    opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -423,22 +436,24 @@
     transition: opacity 0.3s ease;
 }
 
-/* Elementor play icon */
+/* Elementor play icon - Independent from slider transitions */
 .elementor-custom-embed-play {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 11;
+    z-index: 35; /* Higher than overlay (z-index: 10) and slider (z-index: 2) */
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Only transform, NO opacity */
+    will-change: transform; /* Separate rendering layer from slider */
 }
 
 .elementor-custom-embed-play .abvp-play-button-image {
     width: 80px;
     height: 80px;
     filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Only transform, NO opacity */
+    will-change: transform; /* Separate rendering layer */
 }
 
 /* Show video on hover (Desktop) */
@@ -1110,4 +1125,106 @@
 /* ============================================ */
 /* YouTube/Vimeo embeds rely on native controls. The custom mute toggle
     is displayed only for HTML5 MP4 videos and stays hidden otherwise. */
+
+/* ============================================ */
+/* DEDICATED OVERLAY LAYER (Version 2.6.0) */
+/* ============================================ */
+/* Separate overlay layer with custom image and play button
+   Independent from slider transitions to prevent flickering */
+
+.abvp-dedicated-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 35;
+    will-change: transform;
+    transition: visibility 0.3s ease, transform 0.3s ease;
+    /* NO opacity transition to prevent flicker */
+}
+
+.abvp-dedicated-overlay .abvp-overlay-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.abvp-dedicated-overlay .abvp-play-button-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index: 36;
+    will-change: transform;
+    transition: transform 0.3s ease;
+}
+
+.abvp-dedicated-overlay .abvp-play-button-wrapper:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.abvp-dedicated-overlay .abvp-play-icon {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Hide overlay when video is playing */
+.video-playing .abvp-dedicated-overlay {
+    visibility: hidden;
+    /* Use visibility instead of opacity to prevent flicker */
+}
+
+/* Desktop: Hide overlay when hover is disabled */
+@media (min-width: 769px) {
+    .anmi-video-banner-container[data-enable-hover-desktop="0"] .abvp-dedicated-overlay,
+    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .abvp-dedicated-overlay {
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+/* Mobile: Hide overlay when hover is disabled */
+@media (max-width: 768px) {
+    .anmi-video-banner-container[data-enable-hover-mobile="0"] .abvp-dedicated-overlay,
+    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .abvp-dedicated-overlay {
+        visibility: hidden;
+        pointer-events: none;
+    }
+    
+    /* Scale down play button on mobile */
+    .abvp-dedicated-overlay .abvp-play-button-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .abvp-dedicated-overlay .abvp-play-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Hide overlay when overlay setting is disabled */
+.anmi-video-banner-container[data-enable-overlay="0"] .abvp-dedicated-overlay,
+.abvp-banner-wrapper[data-enable-overlay="0"] .abvp-dedicated-overlay,
+.anmi-video-banner-container[data-enable-overlay-desktop="0"] .abvp-dedicated-overlay,
+.abvp-banner-wrapper[data-enable-overlay-desktop="0"] .abvp-dedicated-overlay {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .anmi-video-banner-container[data-enable-overlay-mobile="0"] .abvp-dedicated-overlay,
+    .abvp-banner-wrapper[data-enable-overlay-mobile="0"] .abvp-dedicated-overlay {
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
 

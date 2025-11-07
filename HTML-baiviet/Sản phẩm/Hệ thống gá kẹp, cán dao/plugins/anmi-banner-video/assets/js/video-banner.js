@@ -13,6 +13,7 @@
             this.$images = this.$container.find('.anmi-banner-image');
             // Support both old and new play overlay classes
             this.$playOverlay = this.$container.find('.anmi-play-overlay, .elementor-custom-embed-play');
+            this.$dedicatedOverlay = this.$container.find('.abvp-dedicated-overlay');
             this.$dots = this.$container.find('.anmi-banner-dot');
             this.$loader = this.$container.find('.anmi-banner-loader');
             this.$volumeControl = this.$container.find('.anmi-volume-control');
@@ -863,6 +864,129 @@
             }
         }
         
+        /**
+         * Setup dedicated overlay with custom image and play button
+         * This overlay is independent from slider transitions
+         */
+        setupDedicatedOverlay() {
+            if (this.$dedicatedOverlay.length === 0) {
+                return; // No dedicated overlay element
+            }
+            
+            // Check overlay settings - if disabled, hide overlay
+            const isMobile = this.isMobileDevice;
+            const isDesktop = !isMobile;
+            
+            if (!this.enableOverlay || 
+                (isMobile && !this.enableOverlayMobile) || 
+                (isDesktop && !this.enableOverlayDesktop)) {
+                this.$dedicatedOverlay.hide();
+                console.log('Dedicated overlay disabled by settings');
+                return;
+            }
+            
+            const handleDedicatedOverlayClick = (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const video = this.$video[0];
+                const $iframe = this.$container.find('.abvp-oembed-container iframe, .elementor-fit-aspect-ratio iframe');
+                
+                // Mark video as playing - CSS will hide overlay via .video-playing class
+                this.$container.addClass('video-is-playing video-playing');
+                
+                // STOP image slider when video plays
+                if (this.hasSlider) {
+                    this.stopSlider();
+                    console.log('Slider stopped - Video playing from dedicated overlay');
+                }
+                
+                // Hide images completely
+                this.$images.css('opacity', '0');
+                
+                // Play video or iframe
+                if (video && video.tagName === 'VIDEO') {
+                    $(video).addClass('playing');
+                    const playPromise = video.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise
+                            .then(() => {
+                                this.isVideoPlaying = true;
+                            })
+                            .catch((error) => {
+                                console.error('Video play failed from dedicated overlay:', error);
+                                // Show overlay again and restart slider
+                                this.$container.removeClass('video-is-playing video-playing');
+                                if (this.hasSlider) {
+                                    this.startSlider();
+                                }
+                            });
+                    }
+                } else if ($iframe.length > 0) {
+                    // For iframe (YouTube/Vimeo via oEmbed)
+                    $iframe.addClass('playing');
+                    this.isVideoPlaying = true;
+                    
+                    // Try to play iframe
+                    const iframe = $iframe[0];
+                    if (iframe && iframe.contentWindow) {
+                        try {
+                            // Post message to play (works for YouTube/Vimeo)
+                            iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+                        } catch (e) {
+                            // Ignore if postMessage fails
+                        }
+                    }
+                }
+            };
+            
+            // Attach click handler to overlay
+            this.$dedicatedOverlay.off('click.dedicatedOverlay').on('click.dedicatedOverlay', handleDedicatedOverlayClick);
+            
+            // Handle video ended event to show overlay and restart slider
+            const video = this.$video[0];
+            if (video && video.tagName === 'VIDEO') {
+                $(video).off('ended.dedicatedOverlay').on('ended.dedicatedOverlay', () => {
+                    this.$container.removeClass('video-is-playing video-playing');
+                    $(video).removeClass('playing');
+                    this.isVideoPlaying = false;
+                    
+                    // RESTART slider when video ends
+                    if (this.hasSlider) {
+                        this.startSlider();
+                        console.log('Slider restarted from dedicated overlay - Video ended');
+                    }
+                });
+                
+                // Handle video pause event
+                $(video).off('pause.dedicatedOverlay').on('pause.dedicatedOverlay', () => {
+                    if (!video.ended) {
+                        this.$container.removeClass('video-is-playing video-playing');
+                        this.isVideoPlaying = false;
+                        
+                        // RESTART slider when video paused
+                        if (this.hasSlider) {
+                            this.startSlider();
+                            console.log('Slider restarted from dedicated overlay - Video paused');
+                        }
+                    }
+                });
+                
+                // Handle video play event
+                $(video).off('play.dedicatedOverlay').on('play.dedicatedOverlay', () => {
+                    this.$container.addClass('video-is-playing video-playing');
+                    this.isVideoPlaying = true;
+                    
+                    // STOP slider when video plays
+                    if (this.hasSlider) {
+                        this.stopSlider();
+                        console.log('Slider stopped from dedicated overlay - Video playing');
+                    }
+                });
+            }
+        }
+        
         setupEvents() {
             const videoElement = this.$video[0];
 
@@ -872,6 +996,9 @@
 
             // Setup Elementor-style overlay click handler
             this.setupElementorOverlay();
+            
+            // Setup dedicated overlay click handler
+            this.setupDedicatedOverlay();
 
             if (this.isVideoOnlyMobile) {
                 this.setupMobileVideoOnlyEvents(videoElement);

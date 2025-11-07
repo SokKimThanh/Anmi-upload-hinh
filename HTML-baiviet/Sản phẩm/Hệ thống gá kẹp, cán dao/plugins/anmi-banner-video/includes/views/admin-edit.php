@@ -281,6 +281,58 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                         <!-- Separator -->
                         <hr style="margin: 30px 0; border: none; border-top: 2px solid #e5e5e5;">
                         
+                        <!-- CUSTOM OVERLAY IMAGE UPLOAD -->
+                        <div class="abvp-overlay-image-upload" style="margin: 20px 0; padding: 20px; background: #f9f9f9; border: 1px solid #e5e5e5; border-radius: 5px;">
+                            <h3 style="margin-top: 0; color: #2271b1; padding: 10px; background: #fff; border-left: 4px solid #2271b1; border-radius: 3px;">
+                                <span class="dashicons dashicons-format-image" style="font-size: 20px; vertical-align: middle;"></span>
+                                🎬 Hình Ảnh Lớp Phủ (Overlay Image)
+                            </h3>
+                            <p style="color: #646970; margin: 15px 0; line-height: 1.6;">
+                                <strong>Chức năng:</strong> Upload hình ảnh riêng cho lớp phủ video (hiển thị trước khi video phát, kèm nút play button ở giữa).<br>
+                                Lớp phủ này <strong>hoàn toàn độc lập</strong> với slider pagination, luôn hiển thị rõ ràng ở z-index cao nhất, không bị nhấp nháy.
+                            </p>
+                            
+                            <div class="overlay-image-preview" style="margin: 15px 0;">
+                                <?php if ($is_edit && !empty($banner->overlay_image)): ?>
+                                    <img src="<?php echo esc_url($banner->overlay_image); ?>" 
+                                         style="max-width: 400px; max-height: 300px; display: block; border: 2px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" 
+                                         id="overlay_image_preview">
+                                <?php else: ?>
+                                    <img src="" 
+                                         style="max-width: 400px; max-height: 300px; display: none; border: 2px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" 
+                                         id="overlay_image_preview">
+                                    <p style="color: #999; font-style: italic;">Chưa có hình overlay (sẽ dùng hình đầu tiên từ slider)</p>
+                                <?php endif; ?>
+                            </div>
+                            
+                            <input type="hidden" 
+                                   id="overlay_image" 
+                                   name="overlay_image" 
+                                   value="<?php echo $is_edit ? esc_attr($banner->overlay_image ?? '') : ''; ?>">
+                            
+                            <button type="button" class="button button-secondary" id="upload_overlay_image_button" style="margin-right: 10px;">
+                                <span class="dashicons dashicons-upload"></span> Upload Hình Overlay
+                            </button>
+                            
+                            <button type="button" class="button" id="remove_overlay_image_button" 
+                                    style="<?php echo ($is_edit && !empty($banner->overlay_image)) ? '' : 'display:none;'; ?>">
+                                <span class="dashicons dashicons-no"></span> Xóa Hình
+                            </button>
+                            
+                            <div style="margin-top: 15px; padding: 12px; background: #fffbf0; border-left: 4px solid #ffb900; border-radius: 3px;">
+                                <strong style="color: #8a6d3b;">💡 Gợi ý:</strong>
+                                <ul style="margin: 10px 0 0 20px; color: #646970; line-height: 1.8;">
+                                    <li>Kích thước khuyến nghị: <strong>1920x1080px</strong> hoặc tỷ lệ 16:9</li>
+                                    <li>Nút play button sẽ <strong>tự động hiển thị ở giữa</strong> hình</li>
+                                    <li>Nếu không upload, sẽ <strong>dùng hình đầu tiên từ slider</strong></li>
+                                    <li>Lớp phủ này <strong>không bị ảnh hưởng</strong> bởi slider pagination transition</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Separator -->
+                        <hr style="margin: 30px 0; border: none; border-top: 2px solid #e5e5e5;">
+                        
                         <!-- Device-Specific Settings (Embedded) -->
                         <h3 style="margin: 20px 0 15px 0; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 4px;">
                             <span class="dashicons dashicons-smartphone" style="vertical-align: middle;"></span> 
@@ -1024,6 +1076,67 @@ jQuery(document).ready(function($) {
         console.log('Updated images JSON:', jsonString);
         console.log('imagesArray length:', imagesArray.length);
     }
+    
+    // ========================================
+    // OVERLAY IMAGE UPLOAD
+    // ========================================
+    
+    // Upload overlay image button
+    $('#upload_overlay_image_button').on('click', function(e) {
+        e.preventDefault();
+        
+        var overlayImageUploader = wp.media({
+            title: 'Chọn Hình Ảnh Lớp Phủ (Overlay)',
+            button: {
+                text: 'Sử Dụng Hình Này'
+            },
+            multiple: false,
+            library: {
+                type: 'image'
+            }
+        });
+        
+        overlayImageUploader.on('select', function() {
+            var attachment = overlayImageUploader.state().get('selection').first().toJSON();
+            
+            // Set hidden input value
+            $('#overlay_image').val(attachment.url);
+            
+            // Show preview image
+            $('#overlay_image_preview')
+                .attr('src', attachment.url)
+                .show();
+            
+            // Show remove button
+            $('#remove_overlay_image_button').show();
+            
+            console.log('Overlay image selected:', attachment.url);
+        });
+        
+        overlayImageUploader.open();
+    });
+    
+    // Remove overlay image button
+    $('#remove_overlay_image_button').on('click', function(e) {
+        e.preventDefault();
+        
+        // Clear hidden input
+        $('#overlay_image').val('');
+        
+        // Hide preview image
+        $('#overlay_image_preview')
+            .attr('src', '')
+            .hide();
+        
+        // Hide remove button
+        $(this).hide();
+        
+        console.log('Overlay image removed');
+    });
+    
+    // ========================================
+    // END OVERLAY IMAGE UPLOAD
+    // ========================================
     
     // Form submission
     $('#anmi-banner-form').on('submit', function(e) {

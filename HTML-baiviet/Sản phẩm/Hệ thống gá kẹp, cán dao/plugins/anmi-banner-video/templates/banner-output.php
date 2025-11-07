@@ -33,6 +33,9 @@ $poster_image     = !empty($image_urls) ? $image_urls[0] : '';
 $has_slider       = ($enable_slider && $image_count > 0) ? 1 : 0;
 $mobile_behavior  = isset($atts['mobile_behavior']) ? $atts['mobile_behavior'] : 'image';
 $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_delay']) : 0;
+
+// Dedicated overlay image - use custom uploaded image or fallback to first slider image
+$overlay_image    = isset($banner->overlay_image) && !empty($banner->overlay_image) ? $banner->overlay_image : $poster_image;
 ?>
 
 <div class="abvp-banner-wrapper anmi-video-banner-container transition-<?php echo esc_attr($atts['transition']); ?> <?php echo esc_attr($unique_id); ?> effect-<?php echo esc_attr($atts['transition']); ?>" 
@@ -152,6 +155,29 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
                   data-slide="<?php echo $index; ?>"
                   style="width: 12px; height: 12px; border-radius: 50%; background: <?php echo $index === 0 ? '#fff' : 'rgba(255,255,255,0.5)'; ?>; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></span>
         <?php endforeach; ?>
+    </div>
+    <?php endif; ?>
+    
+    <!-- Dedicated Overlay Layer with Play Button (independent from slider) -->
+    <?php if (!empty($overlay_image)): ?>
+    <div class="abvp-dedicated-overlay" 
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 35;">
+        <!-- Overlay Background Image -->
+        <div class="abvp-overlay-background" 
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                    background-image: url('<?php echo esc_url($overlay_image); ?>'); 
+                    background-size: cover; background-position: center;"></div>
+        
+        <!-- Play Button Container -->
+        <div class="abvp-play-button-wrapper" 
+             style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                    width: 80px; height: 80px; cursor: pointer; z-index: 36;">
+            <!-- Play Icon SVG -->
+            <svg class="abvp-play-icon" width="80" height="80" viewBox="0 0 80 80" style="filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));">
+                <circle cx="40" cy="40" r="38" fill="rgba(255,255,255,0.9)" stroke="rgba(0,0,0,0.1)" stroke-width="2"/>
+                <polygon points="32,25 32,55 55,40" fill="#333" />
+            </svg>
+        </div>
     </div>
     <?php endif; ?>
     
