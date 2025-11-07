@@ -40,9 +40,10 @@
             this.enableMuted = parseInt(this.$container.data('enable-muted'), 10) !== 0;
             this.enableLoop = parseInt(this.$container.data('enable-loop'), 10) === 1;
             this.enableControls = parseInt(this.$container.data('enable-controls'), 10) === 1;
+            this.enableSlider = parseInt(this.$container.data('enable-slider'), 10) !== 0;
             const hasSliderData = parseInt(this.$container.data('has-slider'), 10);
             this.imageCount = parseInt(this.$container.data('image-count'), 10) || this.$images.length;
-            this.hasSlider = (Number.isNaN(hasSliderData) ? this.$images.length > 1 : hasSliderData === 1) && this.imageCount > 1;
+            this.hasSlider = this.enableSlider && (Number.isNaN(hasSliderData) ? this.$images.length > 1 : hasSliderData === 1) && this.imageCount > 1;
             this.previewDevice = (this.$container.data('preview-device') || '').toString().toLowerCase();
             this.isMobileDevice = this.determineMobileState();
             this.isVideoOnlyMobile = this.isMobileDevice && this.mobileBehavior === 'video';
@@ -467,7 +468,12 @@
         /* ============================================ */
         
         startSlider() {
-            if (!this.hasSlider || this.$images.length <= 1) {
+            if (!this.enableSlider || !this.hasSlider || this.$images.length <= 1) {
+                console.log('Slider disabled or no images:', {
+                    enableSlider: this.enableSlider,
+                    hasSlider: this.hasSlider,
+                    imageCount: this.$images.length
+                });
                 return;
             }
 
@@ -497,6 +503,9 @@
         }
         
         stopSlider() {
+            if (!this.enableSlider) {
+                return;
+            }
             if (this.sliderInterval) {
                 clearInterval(this.sliderInterval);
                 this.sliderInterval = null;

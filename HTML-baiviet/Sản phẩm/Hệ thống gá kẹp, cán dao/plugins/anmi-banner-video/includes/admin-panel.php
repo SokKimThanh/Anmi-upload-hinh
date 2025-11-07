@@ -104,6 +104,7 @@ class AnMi_Banner_Video_Pro_Admin {
             enable_muted tinyint(1) DEFAULT 1,
             enable_loop tinyint(1) DEFAULT 1,
             enable_controls tinyint(1) DEFAULT 1,
+            enable_slider tinyint(1) DEFAULT 1,
             enable_modestbranding tinyint(1) DEFAULT 1,
             enable_rel tinyint(1) DEFAULT 0,
             created_date datetime DEFAULT CURRENT_TIMESTAMP,
@@ -296,6 +297,7 @@ class AnMi_Banner_Video_Pro_Admin {
             'enable_muted' => $this->sanitize_checkbox($request, 'video_muted', 1),
             'enable_loop' => $this->sanitize_checkbox($request, 'video_loop', 1),
             'enable_controls' => $this->sanitize_checkbox($request, 'video_controls', 1),
+            'enable_slider' => $this->sanitize_checkbox($request, 'enable_slider', 1),
             'enable_modestbranding' => $this->sanitize_checkbox($request, 'video_modestbranding', 1),
             'enable_rel' => $this->sanitize_checkbox($request, 'video_rel', 0),
         );

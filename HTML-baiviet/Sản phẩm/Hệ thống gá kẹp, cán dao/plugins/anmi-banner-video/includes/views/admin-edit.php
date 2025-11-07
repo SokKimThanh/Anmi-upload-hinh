@@ -483,6 +483,27 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                             </tr>
                             
                             <tr>
+                                <th><label for="enable_slider">🖼️ Bật Slider Hình Ảnh</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt slider hình ảnh">
+                         <input type="checkbox" 
+                             id="enable_slider" 
+                             name="enable_slider" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_slider) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_slider_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider hình ảnh phía trên video
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #666;">
+                                        <strong>💡 Lưu ý:</strong> Nếu TẮT slider, video sẽ hiển thị trực tiếp không có hình ảnh overlay. 
+                                        Thích hợp cho banner chỉ có video background.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
                                 <th><label for="video_modestbranding">📺 Ẩn Logo YouTube</label></th>
                                 <td>
                                     <label class="switch" title="Bật/Tắt ẩn logo YouTube">
@@ -761,6 +782,7 @@ jQuery(document).ready(function($) {
                 video_muted: $('#video_muted').is(':checked') ? 1 : 0,
                 video_loop: $('#video_loop').is(':checked') ? 1 : 0,
                 video_controls: $('#video_controls').is(':checked') ? 1 : 0,
+                enable_slider: $('#enable_slider').is(':checked') ? 1 : 0,
                 video_modestbranding: $('#video_modestbranding').is(':checked') ? 1 : 0,
                 video_rel: $('#video_rel').is(':checked') ? 1 : 0,
                 show_title: $('#show_title').is(':checked') ? 1 : 0,
@@ -1137,6 +1159,13 @@ jQuery(document).ready(function($) {
             $('#video_controls_status').html('✗ ĐANG TẮT').css('color', '#d63638');
         }
         
+        // Enable Slider
+        if ($('#enable_slider').is(':checked')) {
+            $('#enable_slider_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#enable_slider_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
         // Video Modest Branding
         if ($('#video_modestbranding').is(':checked')) {
             $('#video_modestbranding_status').html('✓ ĐANG BẬT').css('color', '#46b450');
@@ -1153,7 +1182,7 @@ jQuery(document).ready(function($) {
     }
     
     // Update labels on change for all checkboxes
-    $('#video_autoplay, #video_muted, #video_loop, #video_controls, #video_modestbranding, #video_rel').on('change', updateCheckboxLabels);
+    $('#video_autoplay, #video_muted, #video_loop, #video_controls, #enable_slider, #video_modestbranding, #video_rel').on('change', updateCheckboxLabels);
     
     // Initial update
     updateCheckboxLabels();
@@ -1163,7 +1192,7 @@ jQuery(document).ready(function($) {
         updateLivePreview();
     });
     
-    $('#show_title, #show_subtitle, #show_button, #video_autoplay, #video_muted, #video_loop, #video_controls, #video_modestbranding, #video_rel').on('change', function() {
+    $('#show_title, #show_subtitle, #show_button, #video_autoplay, #video_muted, #video_loop, #video_controls, #enable_slider, #video_modestbranding, #video_rel').on('change', function() {
         updateLivePreview();
     });
     

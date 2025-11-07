@@ -19,9 +19,10 @@ $enable_autoplay  = isset($banner->enable_autoplay) ? (int) $banner->enable_auto
 $enable_muted     = isset($banner->enable_muted) ? (int) $banner->enable_muted : 1;
 $enable_loop      = isset($banner->enable_loop) ? (int) $banner->enable_loop : 1;
 $enable_controls  = isset($banner->enable_controls) ? (int) $banner->enable_controls : 1;
+$enable_slider    = isset($banner->enable_slider) ? (int) $banner->enable_slider : 1;
 $image_count      = count($image_urls);
 $poster_image     = !empty($image_urls) ? $image_urls[0] : '';
-$has_slider       = $image_count > 1 ? 1 : 0;
+$has_slider       = ($enable_slider && $image_count > 0) ? 1 : 0;
 $mobile_behavior  = isset($atts['mobile_behavior']) ? $atts['mobile_behavior'] : 'image';
 $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_delay']) : 0;
 ?>
@@ -37,9 +38,11 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
     data-enable-muted="<?php echo esc_attr($enable_muted); ?>"
     data-enable-loop="<?php echo esc_attr($enable_loop); ?>"
     data-enable-controls="<?php echo esc_attr($enable_controls); ?>"
+    data-enable-slider="<?php echo esc_attr($enable_slider); ?>"
     data-image-count="<?php echo esc_attr($image_count); ?>"
     data-has-slider="<?php echo esc_attr($has_slider); ?>">
     
+    <?php if ($has_slider): ?>
     <!-- Image Slider (visible by default) -->
     <?php foreach ($image_urls as $index => $image_url): ?>
         <div class="abvp-slide-image anmi-banner-image <?php echo $index === 0 ? 'active' : ''; ?>" 
@@ -49,6 +52,7 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
                     opacity: <?php echo $index === 0 ? '1' : '0'; ?>; 
                     transition: opacity 0.8s ease; z-index: 2;"></div>
     <?php endforeach; ?>
+    <?php endif; ?>
     
     <!-- Video Background using WordPress Core Widget -->
     <?php 
