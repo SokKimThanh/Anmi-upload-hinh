@@ -866,50 +866,6 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                     </div>
                 </div>
                 
-                <!-- Video Options -->
-                <div class="postbox">
-                    <div class="postbox-header">
-                        <h2>🎛️ Tùy Chọn Video</h2>
-                    </div>
-                    <div class="inside">
-                        <table class="form-table">
-                            <tr>
-                                <th><label for="video_modestbranding">📺 Ẩn Logo YouTube</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt ẩn logo YouTube">
-                         <input type="checkbox" 
-                             id="video_modestbranding" 
-                             name="video_modestbranding" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_modestbranding) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="video_modestbranding_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Ẩn logo YouTube trong player (chỉ YouTube)
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><label for="video_rel">🎥 Gợi Ý Video</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt gợi ý video liên quan">
-                         <input type="checkbox" 
-                             id="video_rel" 
-                             name="video_rel" 
-                             value="1"
-                             <?php echo ($is_edit && !empty($banner->enable_rel)) ? 'checked' : ''; ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="video_rel_status" style="color: #d63638;">✗ ĐANG TẮT</strong> - Hiện video gợi ý khi kết thúc (chỉ YouTube)
-                                    </span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                
                 <!-- Shortcode Info -->
                 <?php if ($is_edit): ?>
                 <div class="postbox">
