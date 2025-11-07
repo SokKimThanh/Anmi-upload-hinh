@@ -18,6 +18,19 @@
             this.$sliderWrapper = this.$container.find('.abvp-slider-wrapper');
             this.$navDotsWrapper = this.$container.find('.abvp-nav-dots');
             
+            // Check if video is wrapped by WP core widget
+            this.$wpVideoWrapper = this.$container.find('.abvp-wp-video-wrapper');
+            if (this.$wpVideoWrapper.length > 0) {
+                // Find actual video element within WP widget wrapper
+                const $wpVideo = this.$wpVideoWrapper.find('video');
+                if ($wpVideo.length > 0) {
+                    this.$video = $wpVideo;
+                    this.isWPCoreVideo = true;
+                }
+            } else {
+                this.isWPCoreVideo = false;
+            }
+            
             this.autoplayDelay = parseInt(this.$container.data('autoplay-delay'), 10) || 0;
             this.mobileBehavior = this.$container.data('mobile-behavior') || 'image';
             this.sliderSpeed = parseInt(this.$container.data('slider-speed'), 10) || 3000;
@@ -171,6 +184,11 @@
                 return;
             }
 
+            // Handle WP core video wrapper - ensure poster is shown
+            if (this.isWPCoreVideo && this.isMobileDevice) {
+                this.setupWPCoreVideoMobileInteraction(video);
+            }
+
             const playPromise = video.play();
 
             if (playPromise !== undefined) {
@@ -183,8 +201,14 @@
                         }
                     })
                     .catch(() => {
+                        // Autoplay blocked - show overlay and poster
                         this.isVideoPlaying = false;
                         this.$playOverlay.css('opacity', '1').show();
+                        
+                        // For WP core video, ensure poster is visible
+                        if (this.isWPCoreVideo) {
+                            this.ensureWPVideoPosterVisible(video);
+                        }
                     });
             } else {
                 this.isVideoPlaying = true;
@@ -526,6 +550,79 @@
                 
                 video.load();
             }
+        }
+
+        /**
+         * Ensure WP core video poster is visible on mobile when autoplay fails.
+         */
+        ensureWPVideoPosterVisible(video) {
+            if (!video || !this.$wpVideoWrapper.length) {
+                return;
+            }
+
+            const posterUrl = this.$wpVideoWrapper.data('poster');
+            
+            if (posterUrl && !video.poster) {
+                video.poster = posterUrl;
+            }
+
+            // Reset video to show poster
+            video.load();
+        }
+
+        /**
+         * Setup mobile interaction for WP core video - handle tap to play.
+         */
+        setupWPCoreVideoMobileInteraction(video) {
+            if (!this.isMobileDevice || !this.$wpVideoWrapper.length) {
+                return;
+            }
+
+            // Add mobile-specific event handler
+            this.$playOverlay.off('click.wpVideoMobile').on('click.wpVideoMobile', (e) => {
+                e.stopPropagation();
+                
+                if (!this.isVideoPlaying) {
+                    // User tapped play - try to start video
+                    const playPromise = video.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise
+                            .then(() => {
+                                this.isVideoPlaying = true;
+                                this.$playOverlay.fadeOut(200);
+                                
+                                // Add playing class to video for CSS styling
+                                $(video).addClass('playing');
+                                
+                                // Stop slider when video plays
+                                if (this.hasSlider) {
+                                    this.stopSlider();
+                                }
+                            })
+                            .catch((error) => {
+                                console.error('Mobile video play failed:', error);
+                                // Keep showing overlay
+                                this.$playOverlay.show();
+                            });
+                    }
+                }
+            });
+
+            // Make overlay pointer-events enabled for mobile
+            this.$playOverlay.css('pointer-events', 'auto');
+            
+            // Listen for video ended event to reset
+            $(video).on('ended', () => {
+                $(video).removeClass('playing');
+                this.$playOverlay.css('opacity', '1').show();
+                this.isVideoPlaying = false;
+                
+                // Restart slider if available
+                if (this.hasSlider) {
+                    this.startSlider();
+                }
+            });
         }
         
         setupEvents() {

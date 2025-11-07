@@ -123,15 +123,29 @@
     cursor: pointer;
 }
 
+/* Play button image styling */
+.abvp-play-button-image {
+    display: block;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+}
+
 .anmi-video-banner-container:hover .anmi-play-overlay,
 .abvp-banner-wrapper:hover .abvp-play-icon {
     opacity: 1 !important;
-    transform: scale(1.1);
 }
 
-.anmi-play-overlay:hover,
-.abvp-play-icon:hover {
-    transform: scale(1.2) !important;
+.anmi-video-banner-container:hover .abvp-play-button-image,
+.abvp-banner-wrapper:hover .abvp-play-button-image {
+    transform: scale(1.15);
+}
+
+.anmi-play-overlay:hover .abvp-play-button-image,
+.abvp-play-icon:hover .abvp-play-button-image {
+    transform: scale(1.25) !important;
 }
 
 /* Hide play overlay when video is playing */
@@ -145,6 +159,68 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     border-radius: 8px;
     overflow: hidden;
+}
+
+/* ============================================ */
+/* WP CORE VIDEO WRAPPER - Mobile Compatibility */
+/* ============================================ */
+
+/* WordPress core video widget wrapper */
+.abvp-wp-video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Remove WP default margins/padding from widget video */
+.abvp-wp-video-wrapper .wp-video,
+.abvp-wp-video-wrapper .mejs-container {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Ensure video element fills container */
+.abvp-wp-video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+/* Show video on hover */
+.anmi-video-banner-container:hover .abvp-wp-video-wrapper video,
+.abvp-banner-wrapper:hover .abvp-wp-video-wrapper video {
+    opacity: 1;
+    z-index: 20;
+}
+
+/* Mobile: Enable play overlay interaction */
+@media (max-width: 768px) {
+    .abvp-play-icon,
+    .anmi-play-overlay {
+        pointer-events: auto !important;
+        opacity: 1 !important;
+        z-index: 30;
+    }
+    
+    /* Show poster on mobile by default */
+    .abvp-wp-video-wrapper video {
+        opacity: 0;
+    }
+    
+    /* Only show video when playing */
+    .abvp-wp-video-wrapper video.playing {
+        opacity: 1;
+    }
 }
 
 /* Volume control button (HTML5 videos) */
@@ -535,17 +611,10 @@
         font-size: 14px;
     }
     
-    /* Play button smaller on tablet */
-    .anmi-play-overlay,
-    .abvp-play-icon {
-        bottom: 70px !important;
-        right: 15px !important;
-    }
-    
-    .anmi-play-overlay svg,
-    .abvp-play-icon svg {
-        width: 45px !important;
-        height: 45px !important;
+    /* Play button image responsive on tablet */
+    .abvp-play-button-image {
+        width: 70px !important;
+        height: 70px !important;
     }
     
     /* Mobile: Show only image by default */
@@ -578,17 +647,10 @@
         padding: 15px;
     }
     
-    /* Play button even smaller on mobile */
-    .anmi-play-overlay,
-    .abvp-play-icon {
-        bottom: 60px !important;
-        right: 10px !important;
-    }
-    
-    .anmi-play-overlay svg,
-    .abvp-play-icon svg {
-        width: 40px !important;
-        height: 40px !important;
+    /* Play button image responsive on mobile */
+    .abvp-play-button-image {
+        width: 60px !important;
+        height: 60px !important;
     }
 }
 

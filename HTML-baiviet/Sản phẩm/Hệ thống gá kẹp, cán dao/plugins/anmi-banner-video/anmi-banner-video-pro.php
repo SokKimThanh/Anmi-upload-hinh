@@ -137,6 +137,85 @@ class AnMi_Banner_Video_Pro {
         }
         return implode('&', $parts);
     }
+
+    /**
+     * Render video using WordPress core media widget for better mobile compatibility.
+     * 
+     * @param string $video_url Direct video URL (MP4)
+     * @param array $settings Video settings (autoplay, muted, loop, controls)
+     * @param string $poster_url Poster/fallback image URL
+     * @return string HTML output with custom wrapper
+     */
+    public function render_wp_core_video(string $video_url, array $settings, string $poster_url = ''): string {
+        // Only use WP core widget for direct MP4 videos (not YouTube/Vimeo)
+        if (empty($video_url) || strpos($video_url, '.mp4') === false) {
+            return '';
+        }
+
+        // Get attachment ID if this is a media library URL
+        $attachment_id = attachment_url_to_postid($video_url);
+        
+        // Prepare widget instance settings
+        $instance = array(
+            'url' => $video_url,
+            'preload' => 'metadata',
+            'loop' => !empty($settings['enable_loop']),
+            'content' => '',
+        );
+
+        if ($attachment_id > 0) {
+            $instance['attachment_id'] = $attachment_id;
+        }
+
+        // Build custom attributes for mobile interaction
+        $custom_attrs = array(
+            'class' => 'abvp-wp-video-wrapper',
+            'data-enable-autoplay' => !empty($settings['enable_autoplay']) ? '1' : '0',
+            'data-enable-muted' => !empty($settings['enable_muted']) ? '1' : '0',
+            'data-poster' => esc_url($poster_url),
+            'data-video-url' => esc_url($video_url),
+        );
+
+        // Start output buffering
+        ob_start();
+        
+        echo '<div ';
+        foreach ($custom_attrs as $attr => $value) {
+            echo esc_attr($attr) . '="' . esc_attr($value) . '" ';
+        }
+        echo '>';
+
+        // Use WordPress core video widget
+        if (class_exists('WP_Widget_Media_Video')) {
+            the_widget(
+                'WP_Widget_Media_Video',
+                $instance,
+                array(
+                    'before_widget' => '',
+                    'after_widget' => '',
+                    'before_title' => '',
+                    'after_title' => '',
+                )
+            );
+        } else {
+            // Fallback if widget not available
+            echo '<video class="abvp-video-frame anmi-banner-video"';
+            if (!empty($settings['enable_loop'])) echo ' loop';
+            if (!empty($settings['enable_muted'])) echo ' muted';
+            if (!empty($settings['enable_autoplay'])) echo ' autoplay';
+            if (!empty($settings['enable_controls'])) echo ' controls';
+            echo ' playsinline preload="metadata"';
+            if (!empty($poster_url)) echo ' poster="' . esc_url($poster_url) . '"';
+            echo '>';
+            echo '<source src="' . esc_url($video_url) . '" type="video/mp4">';
+            echo 'Your browser does not support the video tag.';
+            echo '</video>';
+        }
+
+        echo '</div>';
+
+        return ob_get_clean();
+    }
     
     public function render_video_banner(array $atts = array(), ?string $content = null): string {
         $atts = $this->normalize_shortcode_attributes($atts);

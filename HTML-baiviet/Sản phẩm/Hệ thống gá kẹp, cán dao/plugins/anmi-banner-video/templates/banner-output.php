@@ -58,17 +58,42 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen></iframe>
     <?php else: ?>
-    <video class="abvp-video-frame anmi-banner-video"
-           <?php echo $enable_loop ? ' loop' : ''; ?>
-           <?php echo $enable_muted ? ' muted' : ''; ?>
-           <?php echo $enable_autoplay ? ' autoplay' : ''; ?>
-           <?php echo $enable_controls ? ' controls' : ''; ?>
-           playsinline
-           preload="metadata"
-           <?php if (!empty($poster_image)) : ?>poster="<?php echo esc_url($poster_image); ?>"<?php endif; ?>>
-            <source src="<?php echo esc_url($video_data['embed_url']); ?>" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <!-- Use WordPress core video widget for better mobile compatibility -->
+    <?php 
+    $video_settings = array(
+        'enable_autoplay' => $enable_autoplay,
+        'enable_muted' => $enable_muted,
+        'enable_loop' => $enable_loop,
+        'enable_controls' => $enable_controls,
+    );
+    
+    // Try to use WP core widget wrapper
+    $plugin = AnMi_Banner_Video_Pro::get_instance();
+    $wp_video_html = $plugin->render_wp_core_video(
+        $video_data['embed_url'], 
+        $video_settings, 
+        $poster_image
+    );
+    
+    if (!empty($wp_video_html)) {
+        echo $wp_video_html;
+    } else {
+        // Fallback to standard video tag
+        ?>
+        <video class="abvp-video-frame anmi-banner-video"
+               <?php echo $enable_loop ? ' loop' : ''; ?>
+               <?php echo $enable_muted ? ' muted' : ''; ?>
+               <?php echo $enable_autoplay ? ' autoplay' : ''; ?>
+               <?php echo $enable_controls ? ' controls' : ''; ?>
+               playsinline
+               preload="metadata"
+               <?php if (!empty($poster_image)) : ?>poster="<?php echo esc_url($poster_image); ?>"<?php endif; ?>>
+                <source src="<?php echo esc_url($video_data['embed_url']); ?>" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        <?php
+    }
+    ?>
     <?php endif; ?>
     
     <!-- Volume Control Button (hidden by default, shown by JS when video plays) -->
@@ -117,11 +142,10 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
     
     <!-- Play Button Overlay -->
     <div class="abvp-play-icon anmi-play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; pointer-events: none;">
-        <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(255,255,255,0.9); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-            </svg>
-        </div>
+        <img src="https://anmitools.com/wp-content/uploads/2025/11/play-button.png" 
+             alt="Play Video" 
+             class="abvp-play-button-image"
+             style="display: block; width: 80px; height: 80px; cursor: pointer; transition: transform 0.3s ease;">
     </div>
     
     <!-- Loading Spinner -->
