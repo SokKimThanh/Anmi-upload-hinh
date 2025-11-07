@@ -44,10 +44,15 @@ function abvp_plugin_activate() {
 }
 
 class AnMi_Banner_Video_Pro {
+    /**
+     * Singleton instance holder.
+     *
+     * @var self|null
+     */
     private static $instance = null;
     
-    public static function get_instance() {
-        if (self::$instance == null) {
+    public static function get_instance(): self {
+        if (self::$instance === null) {
             self::$instance = new self();
         }
         return self::$instance;
@@ -58,8 +63,8 @@ class AnMi_Banner_Video_Pro {
         add_shortcode('anmi_banner_video_pro', array($this, 'render_video_banner'));
         add_action('elementor/widgets/register', array($this, 'register_elementor_widget'));
     }
-    
-    public function enqueue_assets() {
+
+    public function enqueue_assets(): void {
         $style_url = ABVP_PLUGIN_URL . 'assets/css/video-banner.css';
         $script_url = ABVP_PLUGIN_URL . 'assets/js/video-banner.js';
 
@@ -73,7 +78,10 @@ class AnMi_Banner_Video_Pro {
         wp_enqueue_script('anmi-video-banner-script');
     }
     
-    private function parse_video_url($url, $player_mode = false, $banner = null) {
+    /**
+     * Prepare embed metadata for supported video providers.
+     */
+    private function parse_video_url(string $url, ?object $banner = null): array {
         $autoplay = isset($banner->enable_autoplay) ? $banner->enable_autoplay : 1;
         $muted = isset($banner->enable_muted) ? $banner->enable_muted : 1;
         $loop = isset($banner->enable_loop) ? $banner->enable_loop : 1;
@@ -119,7 +127,7 @@ class AnMi_Banner_Video_Pro {
         return $result;
     }
 
-    private function build_query_string($args) {
+    private function build_query_string(array $args): string {
         $parts = array();
         foreach ($args as $key => $value) {
             if ($value === null) {
@@ -130,61 +138,28 @@ class AnMi_Banner_Video_Pro {
         return implode('&', $parts);
     }
     
-    public function render_video_banner($atts) {
-        $atts = shortcode_atts(array(
-            'id' => '', 'video_url' => '', 'images' => '', 'image_url' => '', 'height' => '600px',
-            'title' => '', 'subtitle' => '', 'button_text' => '', 'button_link' => '#',
-            'show_title' => '0', 'show_subtitle' => '0', 'show_button' => '0',
-            'transition' => 'fade', 'mobile_behavior' => 'image', 'autoplay_delay' => '0',
-            'slider_speed' => '3000', 'slider_effect' => 'fade',
-        ), $atts, 'anmi_banner_video_pro');
-        
+    public function render_video_banner(array $atts = array(), ?string $content = null): string {
+        $atts = $this->normalize_shortcode_attributes($atts);
+
         $banner = null;
-        
+
         if (!empty($atts['id'])) {
-            $banner = AnMi_Banner_Video_Pro_Admin::fetch_banner_by_id(intval($atts['id']));
-            if (!$banner) return '<p style=\"color:red;\">Error: Banner not found!</p>';
-            
-            $video_url = $banner->video_url_value;
-            if (isset($banner->video_input_type) && $banner->video_input_type === 'embed') {
-                if (preg_match('/src=["\'](https?:\/\/[^"\']+)["\']/i', $banner->video_url_value, $match)) {
-                    $video_url = $match[1];
-                }
+            $banner = $this->load_banner((int) $atts['id']);
+            if ($banner === null) {
+                return '<p style="color:red;">Error: Banner not found!</p>';
             }
-            
-            $atts['video_url'] = $video_url;
-            $atts['images'] = $banner->image_list;
-            $atts['height'] = $banner->banner_height;
-            $atts['title'] = $banner->banner_title;
-            $atts['subtitle'] = $banner->banner_subtitle;
-            $atts['button_text'] = $banner->cta_button_text;
-            $atts['button_link'] = $banner->cta_button_link;
-            $atts['show_title'] = isset($banner->display_title) ? $banner->display_title : 0;
-            $atts['show_subtitle'] = isset($banner->display_subtitle) ? $banner->display_subtitle : 0;
-            $atts['show_button'] = isset($banner->display_button) ? $banner->display_button : 0;
-            $atts['transition'] = $banner->transition_effect;
-            $atts['mobile_behavior'] = $banner->mobile_display_mode;
-            $atts['autoplay_delay'] = $banner->video_autoplay_delay;
-            $atts['slider_speed'] = $banner->image_slider_speed;
-            $atts['slider_effect'] = $banner->image_slider_effect;
         }
-        
-        $image_urls = array();
-        if (!empty($atts['images'])) {
-            if (is_string($atts['images']) && strpos($atts['images'], '[') === 0) {
-                $image_urls = json_decode($atts['images'], true);
-            } else {
-                $image_urls = array_map('trim', explode(',', $atts['images']));
-            }
-        } elseif (!empty($atts['image_url'])) {
-            $image_urls = array($atts['image_url']);
-        }
-        
+
+        $atts = $this->apply_banner_settings($atts, $banner);
+        $image_urls = $this->extract_image_urls($atts);
+
         if (empty($atts['video_url']) || empty($image_urls)) {
             return '<p style="color:red;">Error: Video URL and image are required!</p>';
         }
-        
-        $video_data = $this->parse_video_url($atts['video_url'], true, $banner);
+
+    $banner_settings = $this->resolve_banner_settings($atts, $banner);
+    $video_data = $this->parse_video_url($atts['video_url'], $banner_settings);
+    $banner = $banner_settings;
         $unique_id = 'abvp-banner-' . uniqid();
         
         ob_start();
@@ -192,12 +167,167 @@ class AnMi_Banner_Video_Pro {
         return ob_get_clean();
     }
     
-    public function register_elementor_widget($widgets_manager) {
-        if (!class_exists('Elementor\Widget_Base')) return;
+    /**
+     * Register the Elementor widget when Elementor is available.
+     */
+    public function register_elementor_widget($widgets_manager): void {
+        if (!class_exists('Elementor\Widget_Base') || !is_object($widgets_manager)) {
+            return;
+        }
         require_once ABVP_PLUGIN_PATH . 'includes/elementor-widget.php';
         if (class_exists('AnMi_Video_Banner_Elementor_Widget')) {
             $widgets_manager->register(new \AnMi_Video_Banner_Elementor_Widget());
         }
+    }
+
+    /**
+     * Normalize shortcode attributes with defaults.
+     */
+    private function normalize_shortcode_attributes(array $atts): array {
+        $defaults = array(
+            'id' => '',
+            'video_url' => '',
+            'images' => '',
+            'image_url' => '',
+            'height' => '600px',
+            'title' => '',
+            'subtitle' => '',
+            'button_text' => '',
+            'button_link' => '#',
+            'show_title' => '0',
+            'show_subtitle' => '0',
+            'show_button' => '0',
+            'transition' => 'fade',
+            'mobile_behavior' => 'image',
+            'autoplay_delay' => '0',
+            'slider_speed' => '3000',
+            'slider_effect' => 'fade',
+            'enable_autoplay' => '1',
+            'enable_muted' => '1',
+            'enable_loop' => '1',
+            'enable_controls' => '1',
+            'enable_modestbranding' => '1',
+            'enable_rel' => '0',
+        );
+
+        return shortcode_atts($defaults, $atts, 'anmi_banner_video_pro');
+    }
+
+    /**
+     * Merge saved banner configuration onto shortcode attributes.
+     */
+    private function apply_banner_settings(array $atts, ?object $banner): array {
+        if ($banner === null) {
+            return $atts;
+        }
+
+        $video_url = $banner->video_url_value;
+        if (isset($banner->video_input_type) && $banner->video_input_type === 'embed') {
+            if (preg_match('/src=["\'](https?:\/\/[^"\']+)["\']/i', $banner->video_url_value, $match)) {
+                $video_url = $match[1];
+            }
+        }
+
+        $atts['video_url'] = $video_url;
+        $atts['images'] = $banner->image_list;
+
+        // Map stored values to the attribute keys consumed by the template/JS layer.
+        $mapping = array(
+            'height' => 'banner_height',
+            'title' => 'banner_title',
+            'subtitle' => 'banner_subtitle',
+            'button_text' => 'cta_button_text',
+            'button_link' => 'cta_button_link',
+            'show_title' => 'display_title',
+            'show_subtitle' => 'display_subtitle',
+            'show_button' => 'display_button',
+            'transition' => 'transition_effect',
+            'mobile_behavior' => 'mobile_display_mode',
+            'autoplay_delay' => 'video_autoplay_delay',
+            'slider_speed' => 'image_slider_speed',
+            'slider_effect' => 'image_slider_effect',
+        );
+
+        foreach ($mapping as $attribute_key => $property_name) {
+            if (isset($banner->$property_name)) {
+                $atts[$attribute_key] = $banner->$property_name;
+            }
+        }
+
+        $atts['enable_autoplay'] = isset($banner->enable_autoplay) ? (string) $banner->enable_autoplay : $atts['enable_autoplay'];
+        $atts['enable_muted'] = isset($banner->enable_muted) ? (string) $banner->enable_muted : $atts['enable_muted'];
+        $atts['enable_loop'] = isset($banner->enable_loop) ? (string) $banner->enable_loop : $atts['enable_loop'];
+        $atts['enable_controls'] = isset($banner->enable_controls) ? (string) $banner->enable_controls : $atts['enable_controls'];
+        $atts['enable_modestbranding'] = isset($banner->enable_modestbranding) ? (string) $banner->enable_modestbranding : $atts['enable_modestbranding'];
+        $atts['enable_rel'] = isset($banner->enable_rel) ? (string) $banner->enable_rel : $atts['enable_rel'];
+
+        return $atts;
+    }
+
+    /**
+     * Extract image URLs from shortcode attributes, supporting JSON or CSV input.
+     */
+    private function extract_image_urls(array $atts): array {
+        $trim_value = static function ($value): string {
+            return trim((string) $value);
+        };
+
+        if (!empty($atts['images'])) {
+            if (is_string($atts['images'])) {
+                $images = trim($atts['images']);
+                if (strlen($images) > 0 && $images[0] === '[') {
+                    $decoded = json_decode($images, true);
+                    if (is_array($decoded)) {
+                        return array_map($trim_value, $decoded);
+                    }
+                }
+
+                return array_map($trim_value, explode(',', $images));
+            }
+
+            if (is_array($atts['images'])) {
+                return array_map($trim_value, $atts['images']);
+            }
+        }
+
+        if (!empty($atts['image_url'])) {
+            return array($trim_value($atts['image_url']));
+        }
+
+        return array();
+    }
+
+    /**
+     * Safely load a banner object by ID.
+     */
+    private function load_banner(int $banner_id): ?object {
+        $banner = AnMi_Banner_Video_Pro_Admin::fetch_banner_by_id($banner_id);
+
+        return $banner ?: null;
+    }
+
+    /**
+     * Resolve a banner-like settings object for templates and embeds.
+     */
+    private function resolve_banner_settings(array $atts, ?object $banner): object {
+        if ($banner !== null) {
+            return $banner;
+        }
+
+        $settings = array(
+            'enable_autoplay' => (int) $atts['enable_autoplay'],
+            'enable_muted' => (int) $atts['enable_muted'],
+            'enable_loop' => (int) $atts['enable_loop'],
+            'enable_controls' => (int) $atts['enable_controls'],
+            'enable_modestbranding' => (int) $atts['enable_modestbranding'],
+            'enable_rel' => (int) $atts['enable_rel'],
+            'video_autoplay_delay' => isset($atts['autoplay_delay']) ? (int) $atts['autoplay_delay'] : 0,
+            'image_slider_speed' => isset($atts['slider_speed']) ? (int) $atts['slider_speed'] : 3000,
+            'image_slider_effect' => $atts['slider_effect'] ?? 'fade',
+            'mobile_display_mode' => $atts['mobile_behavior'] ?? 'image',
+        );
+
+        return (object) $settings;
     }
 }
 
