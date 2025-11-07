@@ -128,6 +128,408 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                 </td>
                             </tr>
                         </table>
+                        
+                        <!-- Separator -->
+                        <hr style="margin: 30px 0; border: none; border-top: 2px solid #e5e5e5;">
+                        
+                        <!-- Video Playback Settings (Embedded) -->
+                        <h3 style="margin: 20px 0 15px 0; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 4px;">
+                            <span class="dashicons dashicons-controls-play" style="vertical-align: middle;"></span> 
+                            🎛️ Cài Đặt Phát Video (YouTube/Vimeo)
+                        </h3>
+                        
+                        <div style="background: #f0f0f1; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+                            <p style="margin-top: 0; font-weight: 600; color: #1d2327;">
+                                <span class="dashicons dashicons-info" style="vertical-align: middle;"></span> 
+                                Điều Khiển Thông Số Video
+                            </p>
+                            <p class="description" style="margin-bottom: 0;">
+                                Các cài đặt này chỉ áp dụng cho video YouTube và Vimeo. Video MP4 sẽ luôn tự động phát, lặp lại và tắt tiếng.
+                            </p>
+                        </div>
+                        
+                        <table class="form-table">
+                            <tr>
+                                <th><label for="video_autoplay">🎬 Tự Động Phát</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt tự động phát video">
+                         <input type="checkbox" 
+                             id="video_autoplay" 
+                             name="video_autoplay" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_autoplay) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_autoplay_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Video tự động phát khi trang tải
+                                    </span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_muted">🔇 Tắt Tiếng</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt tiếng video">
+                         <input type="checkbox" 
+                             id="video_muted" 
+                             name="video_muted" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_muted) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_muted_status" style="color: #d63638;">✓ ĐANG BẬT</strong> - Video bắt đầu không có tiếng
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #FF9800;">
+                                        <strong>💡 Khuyến nghị:</strong> Nên BẬT tắt tiếng khi dùng tự động phát để tránh bị trình duyệt chặn.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_loop">🔁 Lặp Lại</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt lặp lại video">
+                         <input type="checkbox" 
+                             id="video_loop" 
+                             name="video_loop" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_loop) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_loop_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Video tự động phát lại khi kết thúc
+                                    </span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_controls">🎚️ Hiện Controls</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt thanh điều khiển video">
+                         <input type="checkbox" 
+                             id="video_controls" 
+                             name="video_controls" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_controls) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_controls_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị thanh điều khiển video (play/pause/volume)
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
+                                        <strong>💡 Khuyến nghị:</strong> Nên BẬT để người dùng có thể điều chỉnh âm lượng và tạm dừng video.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_slider">🖼️ Bật Slider Hình Ảnh</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt slider hình ảnh">
+                         <input type="checkbox" 
+                             id="enable_slider" 
+                             name="enable_slider" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_slider) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_slider_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider hình ảnh phía trên video
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #666;">
+                                        <strong>💡 Lưu ý:</strong> Nếu TẮT slider, video sẽ hiển thị trực tiếp không có hình ảnh overlay. 
+                                        Thích hợp cho banner chỉ có video background.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_slider_desktop">🖥️ Slider trên Desktop</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt slider trên desktop">
+                         <input type="checkbox" 
+                             id="enable_slider_desktop" 
+                             name="enable_slider_desktop" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_slider_desktop) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_slider_desktop_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider trên màn hình desktop
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
+                                        <strong>💡 Gợi ý:</strong> Tắt để chỉ hiển thị video background trên desktop (hiệu ứng professional hơn).
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_slider_mobile">📱 Slider trên Mobile</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt slider trên mobile">
+                         <input type="checkbox" 
+                             id="enable_slider_mobile" 
+                             name="enable_slider_mobile" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_slider_mobile) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_slider_mobile_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider trên thiết bị mobile
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #FF9800;">
+                                        <strong>💡 Khuyến nghị:</strong> Bật slider trên mobile giúp tiết kiệm data và tăng tốc tải trang.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_modestbranding">📺 Ẩn Logo YouTube</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt ẩn logo YouTube">
+                         <input type="checkbox" 
+                             id="video_modestbranding" 
+                             name="video_modestbranding" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_modestbranding) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_modestbranding_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Ẩn logo YouTube trong player (chỉ YouTube)
+                                    </span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="video_rel">🔗 Hiện Video Liên Quan</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt hiển thị video liên quan">
+                         <input type="checkbox" 
+                             id="video_rel" 
+                             name="video_rel" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_rel) ? 'checked' : '') : ''); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="video_rel_status" style="color: #d63638;">✗ ĐANG TẮT</strong> - Không hiển thị video liên quan khi kết thúc (chỉ YouTube)
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <!-- Separator -->
+                        <hr style="margin: 30px 0; border: none; border-top: 2px solid #e5e5e5;">
+                        
+                        <!-- Device-Specific Settings (Embedded) -->
+                        <h3 style="margin: 20px 0 15px 0; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 4px;">
+                            <span class="dashicons dashicons-smartphone" style="vertical-align: middle;"></span> 
+                            ⚙️ Thiết Lập Theo Thiết Bị
+                        </h3>
+                        
+                        <p class="description" style="margin: 0 0 15px 0;">
+                            Tùy chỉnh cách hiển thị overlay và hiệu ứng hover riêng cho Desktop và Mobile
+                        </p>
+                        
+                        <table class="abvp-device-settings-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 50%;">
+                                        <span class="settings-icon">🖥️</span> Desktop (≥769px)
+                                    </th>
+                                    <th style="width: 50%;">
+                                        <span class="settings-icon">📱</span> Mobile (≤768px)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- OVERLAY MASTER SWITCH -->
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="abvp-master-switch">
+                                            <div class="abvp-setting-row">
+                                                <span class="abvp-setting-icon">🎭</span>
+                                                <div class="abvp-setting-content">
+                                                    <label class="abvp-setting-label" for="enable_overlay">
+                                                        Lớp Phủ Video (Overlay)
+                                                    </label>
+                                                    <div class="abvp-setting-description">
+                                                        Master switch - Lớp phủ hiển thị trước khi video phát (poster image + play button)
+                                                    </div>
+                                                    <div class="abvp-setting-control">
+                                                        <label class="switch">
+                                                            <input type="checkbox" 
+                                                                id="enable_overlay" 
+                                                                name="enable_overlay" 
+                                                                value="1"
+                                                                <?php echo ($is_edit ? (!empty($banner->enable_overlay) ? 'checked' : '') : 'checked'); ?>>
+                                                            <span class="slider-switch"></span>
+                                                        </label>
+                                                        <span class="abvp-status-badge enabled" id="enable_overlay_status">
+                                                            ✓ ĐANG BẬT
+                                                        </span>
+                                                    </div>
+                                                    <div class="abvp-info-box">
+                                                        <strong>💡 Khi tắt:</strong> Video sẽ tự động phát ngay, không hiển thị play button
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- OVERLAY DEVICE SETTINGS -->
+                                <tr>
+                                    <td data-label="🖥️ Desktop">
+                                        <div class="abvp-setting-row">
+                                            <span class="abvp-setting-icon">🎭</span>
+                                            <div class="abvp-setting-content">
+                                                <label class="abvp-setting-label" for="enable_overlay_desktop">
+                                                    Overlay trên Desktop
+                                                </label>
+                                                <div class="abvp-setting-description">
+                                                    Hiển thị lớp phủ với play button trên màn hình desktop
+                                                </div>
+                                                <div class="abvp-setting-control">
+                                                    <label class="switch">
+                                                        <input type="checkbox" 
+                                                            id="enable_overlay_desktop" 
+                                                            name="enable_overlay_desktop" 
+                                                            value="1"
+                                                            <?php echo ($is_edit ? (!empty($banner->enable_overlay_desktop) ? 'checked' : '') : 'checked'); ?>>
+                                                        <span class="slider-switch"></span>
+                                                    </label>
+                                                    <span class="abvp-status-badge enabled" id="enable_overlay_desktop_status">
+                                                        ✓ BẬT
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="📱 Mobile">
+                                        <div class="abvp-setting-row">
+                                            <span class="abvp-setting-icon">🎭</span>
+                                            <div class="abvp-setting-content">
+                                                <label class="abvp-setting-label" for="enable_overlay_mobile">
+                                                    Overlay trên Mobile
+                                                </label>
+                                                <div class="abvp-setting-description">
+                                                    Hiển thị lớp phủ với play button trên thiết bị di động
+                                                </div>
+                                                <div class="abvp-setting-control">
+                                                    <label class="switch">
+                                                        <input type="checkbox" 
+                                                            id="enable_overlay_mobile" 
+                                                            name="enable_overlay_mobile" 
+                                                            value="1"
+                                                            <?php echo ($is_edit ? (!empty($banner->enable_overlay_mobile) ? 'checked' : '') : 'checked'); ?>>
+                                                        <span class="slider-switch"></span>
+                                                    </label>
+                                                    <span class="abvp-status-badge enabled" id="enable_overlay_mobile_status">
+                                                        ✓ BẬT
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- HOVER MASTER SWITCH -->
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="abvp-master-switch">
+                                            <div class="abvp-setting-row">
+                                                <span class="abvp-setting-icon">✨</span>
+                                                <div class="abvp-setting-content">
+                                                    <label class="abvp-setting-label" for="enable_hover">
+                                                        Hiệu Ứng Hover
+                                                    </label>
+                                                    <div class="abvp-setting-description">
+                                                        Master switch - Hiệu ứng khi di chuột/chạm vào banner (fade slider, show video)
+                                                    </div>
+                                                    <div class="abvp-setting-control">
+                                                        <label class="switch">
+                                                            <input type="checkbox" 
+                                                                id="enable_hover" 
+                                                                name="enable_hover" 
+                                                                value="1"
+                                                                <?php echo ($is_edit ? (!empty($banner->enable_hover) ? 'checked' : '') : 'checked'); ?>>
+                                                            <span class="slider-switch"></span>
+                                                        </label>
+                                                        <span class="abvp-status-badge enabled" id="enable_hover_status">
+                                                            ✓ ĐANG BẬT
+                                                        </span>
+                                                    </div>
+                                                    <div class="abvp-info-box">
+                                                        <strong>💡 Khi tắt:</strong> Slider sẽ không có hiệu ứng mờ khi hover/tap
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- HOVER DEVICE SETTINGS -->
+                                <tr>
+                                    <td data-label="🖥️ Desktop">
+                                        <div class="abvp-setting-row">
+                                            <span class="abvp-setting-icon">✨</span>
+                                            <div class="abvp-setting-content">
+                                                <label class="abvp-setting-label" for="enable_hover_desktop">
+                                                    Hover trên Desktop
+                                                </label>
+                                                <div class="abvp-setting-description">
+                                                    Slider mờ dần khi di chuột vào banner (mouse hover)
+                                                </div>
+                                                <div class="abvp-setting-control">
+                                                    <label class="switch">
+                                                        <input type="checkbox" 
+                                                            id="enable_hover_desktop" 
+                                                            name="enable_hover_desktop" 
+                                                            value="1"
+                                                            <?php echo ($is_edit ? (!empty($banner->enable_hover_desktop) ? 'checked' : '') : 'checked'); ?>>
+                                                        <span class="slider-switch"></span>
+                                                    </label>
+                                                    <span class="abvp-status-badge enabled" id="enable_hover_desktop_status">
+                                                        ✓ BẬT
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="📱 Mobile">
+                                        <div class="abvp-setting-row">
+                                            <span class="abvp-setting-icon">✨</span>
+                                            <div class="abvp-setting-content">
+                                                <label class="abvp-setting-label" for="enable_hover_mobile">
+                                                    Hover trên Mobile
+                                                </label>
+                                                <div class="abvp-setting-description">
+                                                    Slider mờ dần khi chạm vào banner (touch/tap)
+                                                </div>
+                                                <div class="abvp-setting-control">
+                                                    <label class="switch">
+                                                        <input type="checkbox" 
+                                                            id="enable_hover_mobile" 
+                                                            name="enable_hover_mobile" 
+                                                            value="1"
+                                                            <?php echo ($is_edit ? (!empty($banner->enable_hover_mobile) ? 'checked' : '') : 'checked'); ?>>
+                                                        <span class="slider-switch"></span>
+                                                    </label>
+                                                    <span class="abvp-status-badge enabled" id="enable_hover_mobile_status">
+                                                        ✓ BẬT
+                                                    </span>
+                                                </div>
+                                                <div class="abvp-info-box">
+                                                    <strong>💡 Lưu ý:</strong> Trên mobile, hover = tap (chạm vào banner)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 
@@ -387,372 +789,6 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                                     </select>
                                 </td>
                             </tr>
-                        </table>
-                    </div>
-                </div>
-                
-                <!-- Video Playback Settings -->
-                <div class="postbox">
-                    <div class="postbox-header">
-                        <h2>🎛️ Cài Đặt Phát Video (YouTube/Vimeo)</h2>
-                    </div>
-                    <div class="inside">
-                        <div style="background: #f0f0f1; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-                            <p style="margin-top: 0; font-weight: 600; color: #1d2327;">
-                                <span class="dashicons dashicons-controls-play" style="vertical-align: middle;"></span> 
-                                Điều Khiển Thông Số Video
-                            </p>
-                            <p class="description" style="margin-bottom: 0;">
-                                Các cài đặt này chỉ áp dụng cho video YouTube và Vimeo. Video MP4 sẽ luôn tự động phát, lặp lại và tắt tiếng.
-                            </p>
-                        </div>
-                        
-                        <table class="form-table">
-                            <tr>
-                                <th><label for="video_autoplay">🎬 Tự Động Phát</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt tự động phát video">
-                         <input type="checkbox" 
-                             id="video_autoplay" 
-                             name="video_autoplay" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_autoplay) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="video_autoplay_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Video tự động phát khi trang tải
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><label for="video_muted">🔇 Tắt Tiếng</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt tiếng video">
-                         <input type="checkbox" 
-                             id="video_muted" 
-                             name="video_muted" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_muted) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="video_muted_status" style="color: #d63638;">✓ ĐANG BẬT</strong> - Video bắt đầu không có tiếng
-                                    </span>
-                                    <p class="description" style="margin: 8px 0 0 0; color: #FF9800;">
-                                        <strong>💡 Khuyến nghị:</strong> Nên BẬT tắt tiếng khi dùng tự động phát để tránh bị trình duyệt chặn.
-                                    </p>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><label for="video_loop">🔁 Lặp Lại</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt lặp lại video">
-                         <input type="checkbox" 
-                             id="video_loop" 
-                             name="video_loop" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_loop) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="video_loop_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Video tự động phát lại khi kết thúc
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><label for="video_controls">🎚️ Hiện Controls</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt thanh điều khiển video">
-                         <input type="checkbox" 
-                             id="video_controls" 
-                             name="video_controls" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_controls) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="video_controls_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị thanh điều khiển video (play/pause/volume)
-                                    </span>
-                                    <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
-                                        <strong>💡 Khuyến nghị:</strong> Nên BẬT để người dùng có thể điều chỉnh âm lượng và tạm dừng video.
-                                    </p>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><label for="enable_slider">🖼️ Bật Slider Hình Ảnh</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt slider hình ảnh">
-                         <input type="checkbox" 
-                             id="enable_slider" 
-                             name="enable_slider" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_slider) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="enable_slider_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider hình ảnh phía trên video
-                                    </span>
-                                    <p class="description" style="margin: 8px 0 0 0; color: #666;">
-                                        <strong>💡 Lưu ý:</strong> Nếu TẮT slider, video sẽ hiển thị trực tiếp không có hình ảnh overlay. 
-                                        Thích hợp cho banner chỉ có video background.
-                                    </p>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><label for="enable_slider_desktop">🖥️ Slider trên Desktop</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt slider trên desktop">
-                         <input type="checkbox" 
-                             id="enable_slider_desktop" 
-                             name="enable_slider_desktop" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_slider_desktop) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="enable_slider_desktop_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider trên màn hình desktop
-                                    </span>
-                                    <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
-                                        <strong>💡 Gợi ý:</strong> Tắt để chỉ hiển thị video background trên desktop (hiệu ứng professional hơn).
-                                    </p>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><label for="enable_slider_mobile">📱 Slider trên Mobile</label></th>
-                                <td>
-                                    <label class="switch" title="Bật/Tắt slider trên mobile">
-                         <input type="checkbox" 
-                             id="enable_slider_mobile" 
-                             name="enable_slider_mobile" 
-                             value="1"
-                             <?php echo ($is_edit ? (!empty($banner->enable_slider_mobile) ? 'checked' : '') : 'checked'); ?>>
-                                        <span class="slider-switch"></span>
-                                    </label>
-                                    <span class="description" style="margin-left: 10px;">
-                                        <strong id="enable_slider_mobile_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider trên thiết bị mobile
-                                    </span>
-                                    <p class="description" style="margin: 8px 0 0 0; color: #FF9800;">
-                                        <strong>💡 Khuyến nghị:</strong> Bật slider trên mobile giúp tiết kiệm data và tăng tốc tải trang.
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                
-                <!-- Device-Specific Settings Table -->
-                <div class="postbox">
-                    <div class="postbox-header">
-                        <h2>⚙️ Thiết Lập Theo Thiết Bị</h2>
-                    </div>
-                    <div class="inside">
-                        <p class="description" style="margin: 0 0 15px 0;">
-                            Tùy chỉnh cách hiển thị overlay và hiệu ứng hover riêng cho Desktop và Mobile
-                        </p>
-                        
-                        <table class="abvp-device-settings-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 50%;">
-                                        <span class="settings-icon">🖥️</span> Desktop (≥769px)
-                                    </th>
-                                    <th style="width: 50%;">
-                                        <span class="settings-icon">📱</span> Mobile (≤768px)
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- OVERLAY MASTER SWITCH -->
-                                <tr>
-                                    <td colspan="2">
-                                        <div class="abvp-master-switch">
-                                            <div class="abvp-setting-row">
-                                                <span class="abvp-setting-icon">🎭</span>
-                                                <div class="abvp-setting-content">
-                                                    <label class="abvp-setting-label" for="enable_overlay">
-                                                        Lớp Phủ Video (Overlay)
-                                                    </label>
-                                                    <div class="abvp-setting-description">
-                                                        Master switch - Lớp phủ hiển thị trước khi video phát (poster image + play button)
-                                                    </div>
-                                                    <div class="abvp-setting-control">
-                                                        <label class="switch">
-                                                            <input type="checkbox" 
-                                                                id="enable_overlay" 
-                                                                name="enable_overlay" 
-                                                                value="1"
-                                                                <?php echo ($is_edit ? (!empty($banner->enable_overlay) ? 'checked' : '') : 'checked'); ?>>
-                                                            <span class="slider-switch"></span>
-                                                        </label>
-                                                        <span class="abvp-status-badge enabled" id="enable_overlay_status">
-                                                            ✓ ĐANG BẬT
-                                                        </span>
-                                                    </div>
-                                                    <div class="abvp-info-box">
-                                                        <strong>💡 Khi tắt:</strong> Video sẽ tự động phát ngay, không hiển thị play button
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                
-                                <!-- OVERLAY DEVICE SETTINGS -->
-                                <tr>
-                                    <td data-label="🖥️ Desktop">
-                                        <div class="abvp-setting-row">
-                                            <span class="abvp-setting-icon">🎭</span>
-                                            <div class="abvp-setting-content">
-                                                <label class="abvp-setting-label" for="enable_overlay_desktop">
-                                                    Overlay trên Desktop
-                                                </label>
-                                                <div class="abvp-setting-description">
-                                                    Hiển thị lớp phủ với play button trên màn hình desktop
-                                                </div>
-                                                <div class="abvp-setting-control">
-                                                    <label class="switch">
-                                                        <input type="checkbox" 
-                                                            id="enable_overlay_desktop" 
-                                                            name="enable_overlay_desktop" 
-                                                            value="1"
-                                                            <?php echo ($is_edit ? (!empty($banner->enable_overlay_desktop) ? 'checked' : '') : 'checked'); ?>>
-                                                        <span class="slider-switch"></span>
-                                                    </label>
-                                                    <span class="abvp-status-badge enabled" id="enable_overlay_desktop_status">
-                                                        ✓ BẬT
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-label="📱 Mobile">
-                                        <div class="abvp-setting-row">
-                                            <span class="abvp-setting-icon">🎭</span>
-                                            <div class="abvp-setting-content">
-                                                <label class="abvp-setting-label" for="enable_overlay_mobile">
-                                                    Overlay trên Mobile
-                                                </label>
-                                                <div class="abvp-setting-description">
-                                                    Hiển thị lớp phủ với play button trên thiết bị di động
-                                                </div>
-                                                <div class="abvp-setting-control">
-                                                    <label class="switch">
-                                                        <input type="checkbox" 
-                                                            id="enable_overlay_mobile" 
-                                                            name="enable_overlay_mobile" 
-                                                            value="1"
-                                                            <?php echo ($is_edit ? (!empty($banner->enable_overlay_mobile) ? 'checked' : '') : 'checked'); ?>>
-                                                        <span class="slider-switch"></span>
-                                                    </label>
-                                                    <span class="abvp-status-badge enabled" id="enable_overlay_mobile_status">
-                                                        ✓ BẬT
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                
-                                <!-- HOVER MASTER SWITCH -->
-                                <tr>
-                                    <td colspan="2">
-                                        <div class="abvp-master-switch">
-                                            <div class="abvp-setting-row">
-                                                <span class="abvp-setting-icon">✨</span>
-                                                <div class="abvp-setting-content">
-                                                    <label class="abvp-setting-label" for="enable_hover">
-                                                        Hiệu Ứng Hover
-                                                    </label>
-                                                    <div class="abvp-setting-description">
-                                                        Master switch - Hiệu ứng khi di chuột/chạm vào banner (fade slider, show video)
-                                                    </div>
-                                                    <div class="abvp-setting-control">
-                                                        <label class="switch">
-                                                            <input type="checkbox" 
-                                                                id="enable_hover" 
-                                                                name="enable_hover" 
-                                                                value="1"
-                                                                <?php echo ($is_edit ? (!empty($banner->enable_hover) ? 'checked' : '') : 'checked'); ?>>
-                                                            <span class="slider-switch"></span>
-                                                        </label>
-                                                        <span class="abvp-status-badge enabled" id="enable_hover_status">
-                                                            ✓ ĐANG BẬT
-                                                        </span>
-                                                    </div>
-                                                    <div class="abvp-info-box">
-                                                        <strong>💡 Khi tắt:</strong> Slider sẽ không có hiệu ứng mờ khi hover/tap
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                
-                                <!-- HOVER DEVICE SETTINGS -->
-                                <tr>
-                                    <td data-label="🖥️ Desktop">
-                                        <div class="abvp-setting-row">
-                                            <span class="abvp-setting-icon">✨</span>
-                                            <div class="abvp-setting-content">
-                                                <label class="abvp-setting-label" for="enable_hover_desktop">
-                                                    Hover trên Desktop
-                                                </label>
-                                                <div class="abvp-setting-description">
-                                                    Slider mờ dần khi di chuột vào banner (mouse hover)
-                                                </div>
-                                                <div class="abvp-setting-control">
-                                                    <label class="switch">
-                                                        <input type="checkbox" 
-                                                            id="enable_hover_desktop" 
-                                                            name="enable_hover_desktop" 
-                                                            value="1"
-                                                            <?php echo ($is_edit ? (!empty($banner->enable_hover_desktop) ? 'checked' : '') : 'checked'); ?>>
-                                                        <span class="slider-switch"></span>
-                                                    </label>
-                                                    <span class="abvp-status-badge enabled" id="enable_hover_desktop_status">
-                                                        ✓ BẬT
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-label="📱 Mobile">
-                                        <div class="abvp-setting-row">
-                                            <span class="abvp-setting-icon">✨</span>
-                                            <div class="abvp-setting-content">
-                                                <label class="abvp-setting-label" for="enable_hover_mobile">
-                                                    Hover trên Mobile
-                                                </label>
-                                                <div class="abvp-setting-description">
-                                                    Slider mờ dần khi chạm vào banner (touch/tap)
-                                                </div>
-                                                <div class="abvp-setting-control">
-                                                    <label class="switch">
-                                                        <input type="checkbox" 
-                                                            id="enable_hover_mobile" 
-                                                            name="enable_hover_mobile" 
-                                                            value="1"
-                                                            <?php echo ($is_edit ? (!empty($banner->enable_hover_mobile) ? 'checked' : '') : 'checked'); ?>>
-                                                        <span class="slider-switch"></span>
-                                                    </label>
-                                                    <span class="abvp-status-badge enabled" id="enable_hover_mobile_status">
-                                                        ✓ BẬT
-                                                    </span>
-                                                </div>
-                                                <div class="abvp-info-box">
-                                                    <strong>💡 Lưu ý:</strong> Trên mobile, hover = tap (chạm vào banner)
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
                         </table>
                     </div>
                 </div>
