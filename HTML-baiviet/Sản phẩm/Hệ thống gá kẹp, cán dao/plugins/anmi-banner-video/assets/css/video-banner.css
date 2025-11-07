@@ -984,7 +984,8 @@
     }
     
     /* HOVER: Hide on hover only if slider enabled on desktop AND hover enabled */
-    [data-has-slider="1"][data-enable-slider-desktop="1"]:not([data-enable-hover-desktop="0"]):hover .abvp-dedicated-overlay {
+    /* Check: 1) has-slider=1, 2) slider-desktop=1, 3) hover NOT disabled (master OR desktop) */
+    [data-has-slider="1"][data-enable-slider-desktop="1"]:not([data-enable-hover="0"]):not([data-enable-hover-desktop="0"]):hover .abvp-dedicated-overlay {
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
@@ -992,7 +993,9 @@
     
     /* Note: [data-enable-slider-desktop="0"] keeps overlay visible on hover */
     
-    /* Hide overlay completely when hover is disabled */
+    /* Hide overlay completely when hover is disabled (master OR desktop) */
+    .anmi-video-banner-container[data-enable-hover="0"] .abvp-dedicated-overlay,
+    .abvp-banner-wrapper[data-enable-hover="0"] .abvp-dedicated-overlay,
     .anmi-video-banner-container[data-enable-hover-desktop="0"] .abvp-dedicated-overlay,
     .abvp-banner-wrapper[data-enable-hover-desktop="0"] .abvp-dedicated-overlay {
         visibility: hidden;
@@ -1012,7 +1015,9 @@
         opacity: 0.1 !important; /* Slight background - no slider on mobile */
     }
     
-    /* Hide overlay when hover is disabled on mobile */
+    /* Hide overlay when hover is disabled (master OR mobile) */
+    .anmi-video-banner-container[data-enable-hover="0"] .abvp-dedicated-overlay,
+    .abvp-banner-wrapper[data-enable-hover="0"] .abvp-dedicated-overlay,
     .anmi-video-banner-container[data-enable-hover-mobile="0"] .abvp-dedicated-overlay,
     .abvp-banner-wrapper[data-enable-hover-mobile="0"] .abvp-dedicated-overlay {
         visibility: hidden;
@@ -1031,18 +1036,31 @@
     }
 }
 
-/* Hide overlay when overlay setting is disabled */
+/* ========================================
+   OVERLAY VISIBILITY CONTROLS (HIERARCHY)
+   Master switch overrides device-specific
+   ======================================== */
+
+/* GLOBAL: Hide overlay when master switch disabled */
 .anmi-video-banner-container[data-enable-overlay="0"] .abvp-dedicated-overlay,
-.abvp-banner-wrapper[data-enable-overlay="0"] .abvp-dedicated-overlay,
-.anmi-video-banner-container[data-enable-overlay-desktop="0"] .abvp-dedicated-overlay,
-.abvp-banner-wrapper[data-enable-overlay-desktop="0"] .abvp-dedicated-overlay {
-    visibility: hidden;
-    pointer-events: none;
+.abvp-banner-wrapper[data-enable-overlay="0"] .abvp-dedicated-overlay {
+    visibility: hidden !important; /* !important to override device-specific */
+    pointer-events: none !important;
 }
 
+/* DESKTOP: Hide overlay when desktop-specific disabled (if master not set to 0) */
+@media (min-width: 769px) {
+    .anmi-video-banner-container:not([data-enable-overlay="0"])[data-enable-overlay-desktop="0"] .abvp-dedicated-overlay,
+    .abvp-banner-wrapper:not([data-enable-overlay="0"])[data-enable-overlay-desktop="0"] .abvp-dedicated-overlay {
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+/* MOBILE: Hide overlay when mobile-specific disabled (if master not set to 0) */
 @media (max-width: 768px) {
-    .anmi-video-banner-container[data-enable-overlay-mobile="0"] .abvp-dedicated-overlay,
-    .abvp-banner-wrapper[data-enable-overlay-mobile="0"] .abvp-dedicated-overlay {
+    .anmi-video-banner-container:not([data-enable-overlay="0"])[data-enable-overlay-mobile="0"] .abvp-dedicated-overlay,
+    .abvp-banner-wrapper:not([data-enable-overlay="0"])[data-enable-overlay-mobile="0"] .abvp-dedicated-overlay {
         visibility: hidden;
         pointer-events: none;
     }
