@@ -201,7 +201,11 @@ class AnMi_Banner_Video_Pro {
         // Render video based on type
         if ($video_type === 'youtube' || $video_type === 'vimeo' || $video_type === 'dailymotion' || $video_type === 'videopress') {
             // Use WordPress oEmbed for all embed types
-            echo $this->render_oembed_video($video_url, $settings, $elementor_args);
+            $video_html = $this->render_oembed_video($video_url, $settings, $elementor_args);
+            if (empty($video_html)) {
+                error_log('AnMi Banner Video: render_oembed_video returned empty for: ' . $video_url);
+            }
+            echo $video_html;
         } else {
             // MP4/Direct video - Use WordPress media widget
             echo $this->render_direct_video($video_url, $settings, $overlay_image, $elementor_args);
@@ -228,6 +232,7 @@ class AnMi_Banner_Video_Pro {
 
     /**
      * Render oEmbed video (YouTube, Vimeo, etc.)
+     * Falls back to manual iframe if oEmbed fails
      */
     private function render_oembed_video(string $video_url, array $settings, array $elementor_args): string {
         // Build oEmbed args
@@ -241,6 +246,7 @@ class AnMi_Banner_Video_Pro {
         }
         if (!empty($settings['enable_muted'])) {
             $params['muted'] = '1';
+            $params['mute'] = '1'; // YouTube uses both
         }
         if (!empty($settings['enable_loop'])) {
             $params['loop'] = '1';
@@ -249,31 +255,70 @@ class AnMi_Banner_Video_Pro {
             $params['controls'] = '1';
         }
         
+        // YouTube-specific params
+        $params['showinfo'] = '0';
+        $params['rel'] = '0';
+        $params['modestbranding'] = '1';
+        $params['playsinline'] = '1';
+        
+        // Extract video ID for loop parameter
+        $video_id = $this->extract_video_id($video_url);
+        if (!empty($video_id) && !empty($params['loop'])) {
+            $params['playlist'] = $video_id;
+        }
+        
         // Add params to URL
         if (!empty($params)) {
             $separator = (strpos($video_url, '?') !== false) ? '&' : '?';
             $video_url .= $separator . http_build_query($params);
         }
         
-        // Get WordPress oEmbed
+        error_log('AnMi Banner Video: Attempting to render video URL: ' . $video_url);
+        
+        // Try WordPress oEmbed first
         $oembed_html = wp_oembed_get($video_url, $oembed_args);
         
-        if ($oembed_html) {
-            // Wrap in container with aspect ratio
-            $aspect_ratio = isset($elementor_args['aspect_ratio']) ? $elementor_args['aspect_ratio'] : '16:9';
-            $padding = '56.25%'; // Default 16:9
-            
-            if ($aspect_ratio === '21:9') $padding = '42.857%';
-            elseif ($aspect_ratio === '4:3') $padding = '75%';
-            elseif ($aspect_ratio === '3:2') $padding = '66.667%';
-            elseif ($aspect_ratio === '9:16') $padding = '177.778%';
-            elseif ($aspect_ratio === '1:1') $padding = '100%';
-            
-            return '<div class="elementor-video elementor-fit-aspect-ratio" style="padding-bottom: ' . $padding . ';">' 
-                   . '<div class="abvp-oembed-container">' . $oembed_html . '</div>'
-                   . '</div>';
+        // Fallback: Create iframe manually if oEmbed fails
+        if (empty($oembed_html)) {
+            error_log('AnMi Banner Video: wp_oembed_get failed, creating manual iframe');
+            $oembed_html = '<iframe src="' . esc_url($video_url) . '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>';
+        } else {
+            error_log('AnMi Banner Video: wp_oembed_get success');
         }
         
+        // ALWAYS wrap in container with aspect ratio (even if empty for debugging)
+        $aspect_ratio = isset($elementor_args['aspect_ratio']) ? $elementor_args['aspect_ratio'] : '16:9';
+        $padding = '56.25%'; // Default 16:9
+        
+        if ($aspect_ratio === '21:9') $padding = '42.857%';
+        elseif ($aspect_ratio === '4:3') $padding = '75%';
+        elseif ($aspect_ratio === '3:2') $padding = '66.667%';
+        elseif ($aspect_ratio === '9:16') $padding = '177.778%';
+        elseif ($aspect_ratio === '1:1') $padding = '100%';
+        
+        $output = '<div class="elementor-video elementor-fit-aspect-ratio" style="padding-bottom: ' . $padding . '; position: relative;">' 
+               . '<div class="abvp-oembed-container">' . $oembed_html . '</div>'
+               . '</div>';
+        
+        error_log('AnMi Banner Video: render_oembed_video output length: ' . strlen($output));
+        
+        return $output;
+    }
+    
+    /**
+     * Extract video ID from URL for loop parameter
+     */
+    private function extract_video_id(string $url): string {
+        // YouTube
+        if (preg_match('/[?&]v=([^&]+)/', $url, $matches)) {
+            return $matches[1];
+        }
+        if (preg_match('/youtu\.be\/([^?]+)/', $url, $matches)) {
+            return $matches[1];
+        }
+        if (preg_match('/embed\/([^?]+)/', $url, $matches)) {
+            return $matches[1];
+        }
         return '';
     }
 
