@@ -371,6 +371,9 @@ class AnMi_Banner_Video_Pro_Admin {
      */
     private function insert_banner_record(array $data): void {
         global $wpdb;
+        
+        // Ensure database schema is up to date before insert
+        $this->ensure_columns_exist();
 
         $result = $wpdb->insert(
             $this->db_table_name,
@@ -387,12 +390,46 @@ class AnMi_Banner_Video_Pro_Admin {
 
         wp_send_json_error('Database insert failed: ' . $wpdb->last_error);
     }
+    
+    /**
+     * Ensure required columns exist in database
+     */
+    private function ensure_columns_exist(): void {
+        global $wpdb;
+        
+        // Get current columns
+        $columns = $wpdb->get_results("SHOW COLUMNS FROM {$this->db_table_name}");
+        $column_names = array_column($columns, 'Field');
+        
+        $missing_columns = [];
+        
+        // Check for new columns
+        if (!in_array('enable_slider', $column_names)) {
+            $missing_columns[] = 'enable_slider';
+        }
+        if (!in_array('enable_slider_desktop', $column_names)) {
+            $missing_columns[] = 'enable_slider_desktop';
+        }
+        if (!in_array('enable_slider_mobile', $column_names)) {
+            $missing_columns[] = 'enable_slider_mobile';
+        }
+        
+        // If columns missing, run migration
+        if (!empty($missing_columns)) {
+            error_log('AnMi Banner Video Pro: Missing columns detected: ' . implode(', ', $missing_columns));
+            error_log('AnMi Banner Video Pro: Running emergency migration...');
+            $this->setup_database_table();
+        }
+    }
 
     /**
      * Update an existing banner record.
      */
     private function update_banner_record(int $banner_id, array $data): void {
         global $wpdb;
+        
+        // Ensure database schema is up to date before update
+        $this->ensure_columns_exist();
 
         $result = $wpdb->update(
             $this->db_table_name,
