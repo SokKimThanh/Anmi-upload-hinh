@@ -1,6 +1,6 @@
 /**
  * AN MI VIDEO BANNER PLUGIN JAVASCRIPT
- * Version: 1.6.12 - Video Sound Control
+ * Version: 2.6.0 - Device-Specific Controls & Mobile Fix
  */
 
 (function($) {

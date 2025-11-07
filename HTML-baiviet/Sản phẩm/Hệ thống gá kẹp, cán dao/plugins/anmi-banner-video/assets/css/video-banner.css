@@ -1,6 +1,6 @@
 /* ============================================ */
 /* AN MI VIDEO BANNER PLUGIN STYLES */
-/* Version: 1.6.9 - Applied Hover Logic to Edit Preview */
+/* Version: 2.6.0 - Device-Specific Controls & Mobile Fix */
 /* ============================================ */
 
 /* Container */
@@ -662,6 +662,27 @@
     opacity: 1 !important; /* Keep slider visible when hover disabled */
 }
 
+/* When hover is DISABLED: Hide overlay and show video immediately (no hover needed) */
+.anmi-video-banner-container[data-enable-hover="0"] .elementor-custom-embed-image-overlay,
+.abvp-banner-wrapper[data-enable-hover="0"] .elementor-custom-embed-image-overlay {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.anmi-video-banner-container[data-enable-hover="0"] .elementor-fit-aspect-ratio iframe,
+.anmi-video-banner-container[data-enable-hover="0"] .elementor-fit-aspect-ratio video,
+.anmi-video-banner-container[data-enable-hover="0"] .abvp-oembed-container iframe,
+.anmi-video-banner-container[data-enable-hover="0"] .elementor-video video,
+.anmi-video-banner-container[data-enable-hover="0"] .anmi-banner-video,
+.anmi-video-banner-container[data-enable-hover="0"] .abvp-video-frame,
+.abvp-banner-wrapper[data-enable-hover="0"] .elementor-fit-aspect-ratio iframe,
+.abvp-banner-wrapper[data-enable-hover="0"] .elementor-fit-aspect-ratio video,
+.abvp-banner-wrapper[data-enable-hover="0"] .anmi-banner-video,
+.abvp-banner-wrapper[data-enable-hover="0"] .abvp-video-frame {
+    opacity: 1 !important;
+    z-index: 20 !important;
+}
+
 /* Hide slider completely when video is playing */
 .anmi-video-banner-container.video-playing .anmi-banner-image,
 .abvp-banner-wrapper.video-playing .abvp-slide-image {
@@ -1023,6 +1044,27 @@
     .abvp-banner-wrapper[data-enable-hover-desktop="0"]:hover .abvp-slide-image {
         opacity: 1 !important; /* Keep slider visible */
     }
+    
+    /* When hover is DISABLED on desktop: Hide overlay and show video immediately */
+    .anmi-video-banner-container[data-enable-hover-desktop="0"] .elementor-custom-embed-image-overlay,
+    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .elementor-custom-embed-image-overlay {
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+    
+    .anmi-video-banner-container[data-enable-hover-desktop="0"] .elementor-fit-aspect-ratio iframe,
+    .anmi-video-banner-container[data-enable-hover-desktop="0"] .elementor-fit-aspect-ratio video,
+    .anmi-video-banner-container[data-enable-hover-desktop="0"] .abvp-oembed-container iframe,
+    .anmi-video-banner-container[data-enable-hover-desktop="0"] .elementor-video video,
+    .anmi-video-banner-container[data-enable-hover-desktop="0"] .anmi-banner-video,
+    .anmi-video-banner-container[data-enable-hover-desktop="0"] .abvp-video-frame,
+    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .elementor-fit-aspect-ratio iframe,
+    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .elementor-fit-aspect-ratio video,
+    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .anmi-banner-video,
+    .abvp-banner-wrapper[data-enable-hover-desktop="0"] .abvp-video-frame {
+        opacity: 1 !important;
+        z-index: 20 !important;
+    }
 }
 
 /* Mobile-specific (max-width: 768px) */
@@ -1039,6 +1081,27 @@
     .abvp-banner-wrapper[data-enable-hover-mobile="0"]:hover .abvp-slide-image,
     .abvp-banner-wrapper[data-enable-hover-mobile="0"]:active .abvp-slide-image {
         opacity: 1 !important; /* Keep slider visible */
+    }
+    
+    /* When hover is DISABLED on mobile: Hide overlay and show video immediately */
+    .anmi-video-banner-container[data-enable-hover-mobile="0"] .elementor-custom-embed-image-overlay,
+    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .elementor-custom-embed-image-overlay {
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+    
+    .anmi-video-banner-container[data-enable-hover-mobile="0"] .elementor-fit-aspect-ratio iframe,
+    .anmi-video-banner-container[data-enable-hover-mobile="0"] .elementor-fit-aspect-ratio video,
+    .anmi-video-banner-container[data-enable-hover-mobile="0"] .abvp-oembed-container iframe,
+    .anmi-video-banner-container[data-enable-hover-mobile="0"] .elementor-video video,
+    .anmi-video-banner-container[data-enable-hover-mobile="0"] .anmi-banner-video,
+    .anmi-video-banner-container[data-enable-hover-mobile="0"] .abvp-video-frame,
+    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .elementor-fit-aspect-ratio iframe,
+    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .elementor-fit-aspect-ratio video,
+    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .anmi-banner-video,
+    .abvp-banner-wrapper[data-enable-hover-mobile="0"] .abvp-video-frame {
+        opacity: 1 !important;
+        z-index: 20 !important;
     }
 }
 
