@@ -85,6 +85,52 @@
 }
 
 /* ============================================ */
+/* DEVICE-SPECIFIC SLIDER CONTROL */
+/* ============================================ */
+
+/* Desktop: Hide slider if desktop disabled */
+@media (min-width: 769px) {
+    .anmi-video-banner-container[data-enable-slider-desktop="0"] .abvp-slide-image,
+    .anmi-video-banner-container[data-enable-slider-desktop="0"] .anmi-banner-image,
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .abvp-slide-image,
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .anmi-banner-image {
+        display: none !important;
+    }
+    
+    .anmi-video-banner-container[data-enable-slider-desktop="0"] .anmi-banner-video,
+    .anmi-video-banner-container[data-enable-slider-desktop="0"] .abvp-video-frame,
+    .anmi-video-banner-container[data-enable-slider-desktop="0"] .abvp-wp-video-wrapper,
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .anmi-banner-video,
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .abvp-video-frame,
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .abvp-wp-video-wrapper {
+        position: relative;
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+/* Mobile: Hide slider if mobile disabled */
+@media (max-width: 768px) {
+    .anmi-video-banner-container[data-enable-slider-mobile="0"] .abvp-slide-image,
+    .anmi-video-banner-container[data-enable-slider-mobile="0"] .anmi-banner-image,
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .abvp-slide-image,
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .anmi-banner-image {
+        display: none !important;
+    }
+    
+    .anmi-video-banner-container[data-enable-slider-mobile="0"] .anmi-banner-video,
+    .anmi-video-banner-container[data-enable-slider-mobile="0"] .abvp-video-frame,
+    .anmi-video-banner-container[data-enable-slider-mobile="0"] .abvp-wp-video-wrapper,
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .anmi-banner-video,
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .abvp-video-frame,
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .abvp-wp-video-wrapper {
+        position: relative;
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+/* ============================================ */
 /* PRODUCTION VIDEO/IFRAME (Background Effect) */
 /* ============================================ */
 

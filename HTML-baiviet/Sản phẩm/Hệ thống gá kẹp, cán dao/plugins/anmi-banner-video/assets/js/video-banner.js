@@ -41,6 +41,8 @@
             this.enableLoop = parseInt(this.$container.data('enable-loop'), 10) === 1;
             this.enableControls = parseInt(this.$container.data('enable-controls'), 10) === 1;
             this.enableSlider = parseInt(this.$container.data('enable-slider'), 10) !== 0;
+            this.enableSliderDesktop = parseInt(this.$container.data('enable-slider-desktop'), 10) !== 0;
+            this.enableSliderMobile = parseInt(this.$container.data('enable-slider-mobile'), 10) !== 0;
             const hasSliderData = parseInt(this.$container.data('has-slider'), 10);
             this.imageCount = parseInt(this.$container.data('image-count'), 10) || this.$images.length;
             this.hasSlider = this.enableSlider && (Number.isNaN(hasSliderData) ? this.$images.length > 1 : hasSliderData === 1) && this.imageCount > 1;
@@ -65,6 +67,9 @@
             this.$container.data('anmi-initialized', true);
             this.applyVideoPreferences();
             
+            // Apply device-specific slider logic
+            this.applyDeviceSliderLogic();
+            
             // Check if mobile - but allow WP core video widget to handle mobile itself
             if (this.isMobileDevice && this.mobileBehavior === 'image' && !this.isWPCoreVideo) {
                 this.disableVideoOnMobile();
@@ -87,10 +92,53 @@
             // Setup events
             this.setupEvents();
             
-            // Start image slider
-            if (this.hasSlider && !this.isVideoOnlyMobile) {
+            // Start image slider based on device settings
+            if (this.hasSlider && !this.isVideoOnlyMobile && this.shouldShowSlider()) {
                 this.startSlider();
+            } else if (!this.shouldShowSlider()) {
+                // Hide slider images if disabled for this device
+                this.$images.hide();
+                console.log('Slider hidden for current device');
             }
+        }
+        
+        /**
+         * Apply device-specific slider visibility logic
+         */
+        applyDeviceSliderLogic() {
+            const isMobile = this.isMobileDevice;
+            const isDesktop = !isMobile;
+            
+            // Determine if slider should be shown on current device
+            if (isMobile && !this.enableSliderMobile) {
+                this.hasSlider = false;
+                console.log('Slider disabled on mobile');
+            } else if (isDesktop && !this.enableSliderDesktop) {
+                this.hasSlider = false;
+                console.log('Slider disabled on desktop');
+            }
+        }
+        
+        /**
+         * Check if slider should be visible on current device
+         */
+        shouldShowSlider() {
+            if (!this.enableSlider) {
+                return false; // Master switch off
+            }
+            
+            const isMobile = this.isMobileDevice;
+            const isDesktop = !isMobile;
+            
+            if (isMobile && !this.enableSliderMobile) {
+                return false;
+            }
+            
+            if (isDesktop && !this.enableSliderDesktop) {
+                return false;
+            }
+            
+            return this.hasSlider;
         }
         
         isMobile() {

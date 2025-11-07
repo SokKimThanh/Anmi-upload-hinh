@@ -20,6 +20,8 @@ $enable_muted     = isset($banner->enable_muted) ? (int) $banner->enable_muted :
 $enable_loop      = isset($banner->enable_loop) ? (int) $banner->enable_loop : 1;
 $enable_controls  = isset($banner->enable_controls) ? (int) $banner->enable_controls : 1;
 $enable_slider    = isset($banner->enable_slider) ? (int) $banner->enable_slider : 1;
+$enable_slider_desktop = isset($banner->enable_slider_desktop) ? (int) $banner->enable_slider_desktop : 1;
+$enable_slider_mobile = isset($banner->enable_slider_mobile) ? (int) $banner->enable_slider_mobile : 1;
 $image_count      = count($image_urls);
 $poster_image     = !empty($image_urls) ? $image_urls[0] : '';
 $has_slider       = ($enable_slider && $image_count > 0) ? 1 : 0;
@@ -39,8 +41,10 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
     data-enable-loop="<?php echo esc_attr($enable_loop); ?>"
     data-enable-controls="<?php echo esc_attr($enable_controls); ?>"
     data-enable-slider="<?php echo esc_attr($enable_slider); ?>"
+    data-enable-slider-desktop="<?php echo esc_attr($enable_slider_desktop); ?>"
+    data-enable-slider-mobile="<?php echo esc_attr($enable_slider_mobile); ?>"
     data-image-count="<?php echo esc_attr($image_count); ?>"
-    data-has-slider="<?php echo esc_attr($has_slider); ?>">
+    data-has-slider="<?php echo esc_attr($has_slider); ?>">,
     
     <?php if ($has_slider): ?>
     <!-- Image Slider (visible by default) -->

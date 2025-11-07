@@ -504,6 +504,46 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                             </tr>
                             
                             <tr>
+                                <th><label for="enable_slider_desktop">🖥️ Slider trên Desktop</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt slider trên desktop">
+                         <input type="checkbox" 
+                             id="enable_slider_desktop" 
+                             name="enable_slider_desktop" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_slider_desktop) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_slider_desktop_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider trên màn hình desktop
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #2271b1;">
+                                        <strong>💡 Gợi ý:</strong> Tắt để chỉ hiển thị video background trên desktop (hiệu ứng professional hơn).
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="enable_slider_mobile">📱 Slider trên Mobile</label></th>
+                                <td>
+                                    <label class="switch" title="Bật/Tắt slider trên mobile">
+                         <input type="checkbox" 
+                             id="enable_slider_mobile" 
+                             name="enable_slider_mobile" 
+                             value="1"
+                             <?php echo ($is_edit ? (!empty($banner->enable_slider_mobile) ? 'checked' : '') : 'checked'); ?>>
+                                        <span class="slider-switch"></span>
+                                    </label>
+                                    <span class="description" style="margin-left: 10px;">
+                                        <strong id="enable_slider_mobile_status" style="color: #46b450;">✓ ĐANG BẬT</strong> - Hiển thị slider trên thiết bị mobile
+                                    </span>
+                                    <p class="description" style="margin: 8px 0 0 0; color: #FF9800;">
+                                        <strong>💡 Khuyến nghị:</strong> Bật slider trên mobile giúp tiết kiệm data và tăng tốc tải trang.
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
                                 <th><label for="video_modestbranding">📺 Ẩn Logo YouTube</label></th>
                                 <td>
                                     <label class="switch" title="Bật/Tắt ẩn logo YouTube">
@@ -783,6 +823,8 @@ jQuery(document).ready(function($) {
                 video_loop: $('#video_loop').is(':checked') ? 1 : 0,
                 video_controls: $('#video_controls').is(':checked') ? 1 : 0,
                 enable_slider: $('#enable_slider').is(':checked') ? 1 : 0,
+                enable_slider_desktop: $('#enable_slider_desktop').is(':checked') ? 1 : 0,
+                enable_slider_mobile: $('#enable_slider_mobile').is(':checked') ? 1 : 0,
                 video_modestbranding: $('#video_modestbranding').is(':checked') ? 1 : 0,
                 video_rel: $('#video_rel').is(':checked') ? 1 : 0,
                 show_title: $('#show_title').is(':checked') ? 1 : 0,
@@ -1166,6 +1208,20 @@ jQuery(document).ready(function($) {
             $('#enable_slider_status').html('✗ ĐANG TẮT').css('color', '#d63638');
         }
         
+        // Enable Slider Desktop
+        if ($('#enable_slider_desktop').is(':checked')) {
+            $('#enable_slider_desktop_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#enable_slider_desktop_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
+        // Enable Slider Mobile
+        if ($('#enable_slider_mobile').is(':checked')) {
+            $('#enable_slider_mobile_status').html('✓ ĐANG BẬT').css('color', '#46b450');
+        } else {
+            $('#enable_slider_mobile_status').html('✗ ĐANG TẮT').css('color', '#d63638');
+        }
+        
         // Video Modest Branding
         if ($('#video_modestbranding').is(':checked')) {
             $('#video_modestbranding_status').html('✓ ĐANG BẬT').css('color', '#46b450');
@@ -1182,7 +1238,7 @@ jQuery(document).ready(function($) {
     }
     
     // Update labels on change for all checkboxes
-    $('#video_autoplay, #video_muted, #video_loop, #video_controls, #enable_slider, #video_modestbranding, #video_rel').on('change', updateCheckboxLabels);
+    $('#video_autoplay, #video_muted, #video_loop, #video_controls, #enable_slider, #enable_slider_desktop, #enable_slider_mobile, #video_modestbranding, #video_rel').on('change', updateCheckboxLabels);
     
     // Initial update
     updateCheckboxLabels();
@@ -1192,7 +1248,7 @@ jQuery(document).ready(function($) {
         updateLivePreview();
     });
     
-    $('#show_title, #show_subtitle, #show_button, #video_autoplay, #video_muted, #video_loop, #video_controls, #enable_slider, #video_modestbranding, #video_rel').on('change', function() {
+    $('#show_title, #show_subtitle, #show_button, #video_autoplay, #video_muted, #video_loop, #video_controls, #enable_slider, #enable_slider_desktop, #enable_slider_mobile, #video_modestbranding, #video_rel').on('change', function() {
         updateLivePreview();
     });
     
