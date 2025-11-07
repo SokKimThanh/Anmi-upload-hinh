@@ -33,6 +33,7 @@
             this.isMobileDevice = this.isMobile();
             this.isVideoOnlyMobile = this.isMobileDevice && this.mobileBehavior === 'video';
             this.isIframe = this.$video.length > 0 && this.$video[0].tagName === 'IFRAME';
+            this.iframeBaseSrc = this.isIframe ? this.$video.attr('src') : '';
             
             this.isVideoReady = false;
             this.sliderInterval = null;
@@ -96,6 +97,10 @@
                 return;
             }
 
+            if (this.isMobileDevice && this.enableAutoplay) {
+                this.enableMuted = true;
+            }
+
             if (video.tagName === 'VIDEO') {
                 video.loop = this.enableLoop;
                 video.muted = this.enableMuted;
@@ -132,7 +137,7 @@
             this.$container.addClass('anmi-mobile-video-only');
             this.$video.css('opacity', '1');
 
-            if (this.enableAutoplay) {
+            if (this.enableAutoplay && !this.isIframe) {
                 this.$playOverlay.hide();
             } else {
                 this.$playOverlay.css('opacity', '1').show();
@@ -149,9 +154,7 @@
             }
 
             if (video.tagName !== 'VIDEO') {
-                // Autoplay handled via iframe query parameters
-                this.isVideoPlaying = true;
-                this.$playOverlay.hide();
+                this.playIframeVideo(true, false);
                 return;
             }
 
@@ -225,8 +228,7 @@
                     }
                 }
             } else {
-                this.isVideoPlaying = true;
-                this.$playOverlay.fadeOut(200);
+                this.playIframeVideo(true, true);
             }
         }
 
@@ -285,16 +287,104 @@
             }
 
             this.$container.off('touchstart.anmiVideoOnly click.anmiVideoOnly')
-                .on('touchstart.anmiVideoOnly click.anmiVideoOnly', (e) => {
+                    .on('touchstart.anmiVideoOnly click.anmiVideoOnly', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
 
                 if (!this.isVideoPlaying) {
-                    this.playVideoElement(video);
+                    if (this.isIframe) {
+                                this.playIframeVideo(true, true);
+                    } else {
+                        this.playVideoElement(video);
+                    }
+                } else if (this.isIframe) {
+                    this.resetIframeVideo();
                 } else {
                     this.pauseAndResetVideo(video);
                 }
                 });
+        }
+
+        playIframeVideo(forceAutoplay = false, userInitiated = false) {
+            if (!this.isIframe || !this.$video.length) {
+                return;
+            }
+
+            const autoplay = forceAutoplay || this.enableAutoplay;
+            const mute = this.enableMuted;
+            const baseSrc = this.iframeBaseSrc || this.$video.attr('src');
+            const newSrc = this.buildIframeSrc(baseSrc, autoplay, mute);
+
+            if (newSrc) {
+                this.$video.attr('src', newSrc);
+            }
+
+            this.isVideoPlaying = userInitiated || !this.isMobileDevice;
+
+            if (userInitiated || !this.isMobileDevice) {
+                this.$playOverlay.fadeOut(200);
+            } else {
+                this.$playOverlay.css('opacity', '1').show();
+            }
+            this.$loader.removeClass('active');
+        }
+
+        resetIframeVideo() {
+            if (!this.isIframe || !this.$video.length) {
+                return;
+            }
+
+            const baseSrc = this.iframeBaseSrc || this.$video.attr('src');
+            const newSrc = this.buildIframeSrc(baseSrc, false, true);
+
+            if (newSrc) {
+                this.$video.attr('src', newSrc);
+            }
+
+            this.isVideoPlaying = false;
+            this.$playOverlay.css('opacity', '1').show();
+        }
+
+        buildIframeSrc(src, autoplay, mute) {
+            if (!src) {
+                return src;
+            }
+
+            try {
+                const url = new URL(src, window.location.href);
+                url.searchParams.set('autoplay', autoplay ? '1' : '0');
+                url.searchParams.set('mute', mute ? '1' : '0');
+                url.searchParams.set('muted', mute ? '1' : '0');
+
+                if (this.videoType === 'vimeo') {
+                    url.searchParams.set('loop', this.enableLoop ? '1' : '0');
+                    url.searchParams.set('background', this.enableControls ? '0' : '1');
+                    url.searchParams.set('controls', this.enableControls ? '1' : '0');
+                }
+
+                if (this.videoType === 'youtube' && this.enableLoop) {
+                    const playlist = url.searchParams.get('playlist') || this.extractYouTubeId(url.pathname);
+                    if (playlist) {
+                        url.searchParams.set('playlist', playlist);
+                    }
+                }
+
+                return url.toString();
+            } catch (error) {
+                let newSrc = src.replace(/([?&])(autoplay|mute|muted)=[^&]*/g, '');
+                const separator = newSrc.includes('?') ? '&' : '?';
+                const params = [
+                    `autoplay=${autoplay ? 1 : 0}`,
+                    `mute=${mute ? 1 : 0}`,
+                    `muted=${mute ? 1 : 0}`
+                ];
+                return newSrc + separator + params.join('&');
+            }
+        }
+
+        extractYouTubeId(pathname) {
+            const match = pathname ? pathname.match(/\/embed\/([a-zA-Z0-9_-]{11})/) : null;
+            return match ? match[1] : '';
         }
 
         bindVideoEvents() {
@@ -448,9 +538,17 @@
                         this.stopSlider();
                         this.$images.css('opacity', '0');
                         this.$video.css('opacity', '1');
-                        this.playVideoElement(videoElement);
+                        if (this.isIframe) {
+                           this.playIframeVideo(true, true);
+                        } else {
+                            this.playVideoElement(videoElement);
+                        }
                     } else {
-                        this.pauseAndResetVideo(videoElement, true, false);
+                        if (this.isIframe) {
+                            this.resetIframeVideo();
+                        } else {
+                            this.pauseAndResetVideo(videoElement, true, false);
+                        }
                         this.$video.css('opacity', '0');
                         this.$images.css('opacity', '0');
                         this.$images.eq(this.currentSlide).css('opacity', '1');
@@ -492,7 +590,11 @@
 
                 this.$container.on('click.anmiVideo', () => {
                     if (!this.isVideoPlaying && this.isHovered) {
-                        this.playVideoElement(videoElement);
+                        if (this.isIframe) {
+                           this.playIframeVideo(true, true);
+                        } else {
+                            this.playVideoElement(videoElement);
+                        }
                     }
                 });
             }
