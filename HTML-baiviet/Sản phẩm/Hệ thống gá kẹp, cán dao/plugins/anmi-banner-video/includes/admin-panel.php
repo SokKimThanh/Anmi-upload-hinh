@@ -1,7 +1,7 @@
 <?php
 /**
  * AN MI BANNER VIDEO PRO - ADMIN PANEL
- * Version: 2.2.0
+ * Version: 2.3.0
  * CRUD Interface for managing video banners
  */
 
