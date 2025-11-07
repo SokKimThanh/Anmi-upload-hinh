@@ -193,6 +193,14 @@ class AnMi_Banner_Video_Pro_Admin {
             ABVP_VERSION
         );
         
+        // Admin Device Settings Table CSS
+        wp_enqueue_style(
+            'abvp-admin-device-settings',
+            plugin_dir_url(dirname(__FILE__)) . 'assets/css/admin-device-settings.css',
+            array(),
+            ABVP_VERSION
+        );
+        
         $shared_style_url = plugin_dir_url(dirname(__FILE__)) . 'assets/css/video-banner.css';
         $shared_script_url = plugin_dir_url(dirname(__FILE__)) . 'assets/js/video-banner.js';
 
