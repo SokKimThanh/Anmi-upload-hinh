@@ -326,6 +326,7 @@ class AnMi_Banner_Video_Pro_Admin {
             'enable_hover_mobile' => $this->sanitize_checkbox($request, 'enable_hover_mobile', 1),
             'enable_modestbranding' => $this->sanitize_checkbox($request, 'video_modestbranding', 1),
             'enable_rel' => $this->sanitize_checkbox($request, 'video_rel', 0),
+            'overlay_image' => esc_url_raw(wp_unslash($request['overlay_image'] ?? '')),
         );
     }
 

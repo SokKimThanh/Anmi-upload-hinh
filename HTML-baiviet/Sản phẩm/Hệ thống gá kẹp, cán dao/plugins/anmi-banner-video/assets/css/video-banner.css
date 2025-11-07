@@ -1182,8 +1182,17 @@
     /* Use visibility instead of opacity to prevent flicker */
 }
 
-/* Desktop: Hide overlay when hover is disabled */
+/* Desktop: Show overlay by default, hide on hover when hover is enabled */
 @media (min-width: 769px) {
+    /* Only hide on hover if hover is enabled (default behavior) */
+    .anmi-video-banner-container:not([data-enable-hover-desktop="0"]):hover .abvp-dedicated-overlay,
+    .abvp-banner-wrapper:not([data-enable-hover-desktop="0"]):hover .abvp-dedicated-overlay {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    
+    /* Hide overlay completely when hover is disabled */
     .anmi-video-banner-container[data-enable-hover-desktop="0"] .abvp-dedicated-overlay,
     .abvp-banner-wrapper[data-enable-hover-desktop="0"] .abvp-dedicated-overlay {
         visibility: hidden;
@@ -1191,8 +1200,9 @@
     }
 }
 
-/* Mobile: Hide overlay when hover is disabled */
+/* Mobile: Keep overlay visible, only hide when playing or when hover disabled */
 @media (max-width: 768px) {
+    /* Hide overlay when hover is disabled on mobile */
     .anmi-video-banner-container[data-enable-hover-mobile="0"] .abvp-dedicated-overlay,
     .abvp-banner-wrapper[data-enable-hover-mobile="0"] .abvp-dedicated-overlay {
         visibility: hidden;
