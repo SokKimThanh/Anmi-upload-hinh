@@ -393,6 +393,7 @@ class AnMi_Banner_Video_Pro_Admin {
     
     /**
      * Ensure required columns exist in database
+     * Uses direct ALTER TABLE for reliability
      */
     private function ensure_columns_exist(): void {
         global $wpdb;
@@ -401,24 +402,29 @@ class AnMi_Banner_Video_Pro_Admin {
         $columns = $wpdb->get_results("SHOW COLUMNS FROM {$this->db_table_name}");
         $column_names = array_column($columns, 'Field');
         
-        $missing_columns = [];
+        $added_columns = [];
         
-        // Check for new columns
+        // Add enable_slider column if missing
         if (!in_array('enable_slider', $column_names)) {
-            $missing_columns[] = 'enable_slider';
-        }
-        if (!in_array('enable_slider_desktop', $column_names)) {
-            $missing_columns[] = 'enable_slider_desktop';
-        }
-        if (!in_array('enable_slider_mobile', $column_names)) {
-            $missing_columns[] = 'enable_slider_mobile';
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider tinyint(1) DEFAULT 1 AFTER enable_controls");
+            $added_columns[] = 'enable_slider';
         }
         
-        // If columns missing, run migration
-        if (!empty($missing_columns)) {
-            error_log('AnMi Banner Video Pro: Missing columns detected: ' . implode(', ', $missing_columns));
-            error_log('AnMi Banner Video Pro: Running emergency migration...');
-            $this->setup_database_table();
+        // Add enable_slider_desktop column if missing
+        if (!in_array('enable_slider_desktop', $column_names)) {
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider_desktop tinyint(1) DEFAULT 1 AFTER enable_slider");
+            $added_columns[] = 'enable_slider_desktop';
+        }
+        
+        // Add enable_slider_mobile column if missing
+        if (!in_array('enable_slider_mobile', $column_names)) {
+            $wpdb->query("ALTER TABLE {$this->db_table_name} ADD COLUMN enable_slider_mobile tinyint(1) DEFAULT 1 AFTER enable_slider_desktop");
+            $added_columns[] = 'enable_slider_mobile';
+        }
+        
+        // Log migration
+        if (!empty($added_columns)) {
+            error_log('AnMi Banner Video Pro: Emergency migration completed - Added columns: ' . implode(', ', $added_columns));
         }
     }
 
