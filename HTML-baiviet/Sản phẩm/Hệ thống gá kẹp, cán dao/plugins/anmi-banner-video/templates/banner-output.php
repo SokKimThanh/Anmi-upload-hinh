@@ -159,7 +159,7 @@ $overlay_image    = isset($banner->overlay_image) && !empty($banner->overlay_ima
     <?php endif; ?>
     
     <!-- Dedicated Overlay Layer with Play Button (independent from slider) -->
-    <?php if (!empty($overlay_image)): ?>
+    <?php if (!empty($overlay_image) && $enable_overlay): ?>
     <div class="abvp-dedicated-overlay" 
          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 35;">
         <!-- Overlay Background Image -->
