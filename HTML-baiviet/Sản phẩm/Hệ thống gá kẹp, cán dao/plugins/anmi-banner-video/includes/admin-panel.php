@@ -397,6 +397,9 @@ class AnMi_Banner_Video_Pro_Admin {
         
         // Ensure database schema is up to date before insert
         $this->ensure_columns_exist();
+        
+        // Debug: Log overlay_image before insert
+        error_log('ABVP Insert Debug - overlay_image: ' . ($data['overlay_image'] ?? 'NOT SET'));
 
         $result = $wpdb->insert(
             $this->db_table_name,
@@ -405,12 +408,14 @@ class AnMi_Banner_Video_Pro_Admin {
         );
 
         if ($result) {
+            error_log('ABVP Insert Success - Banner ID: ' . $wpdb->insert_id);
             wp_send_json_success(array(
                 'message' => 'Banner created successfully!',
                 'banner_id' => $wpdb->insert_id,
             ));
         }
 
+        error_log('ABVP Insert Failed - Error: ' . $wpdb->last_error);
         wp_send_json_error('Database insert failed: ' . $wpdb->last_error);
     }
     
@@ -501,6 +506,10 @@ class AnMi_Banner_Video_Pro_Admin {
         
         // Ensure database schema is up to date before update
         $this->ensure_columns_exist();
+        
+        // Debug: Log overlay_image before update
+        error_log('ABVP Update Debug - Banner ID: ' . $banner_id);
+        error_log('ABVP Update Debug - overlay_image: ' . ($data['overlay_image'] ?? 'NOT SET'));
 
         $result = $wpdb->update(
             $this->db_table_name,
@@ -511,12 +520,14 @@ class AnMi_Banner_Video_Pro_Admin {
         );
 
         if ($result !== false) {
+            error_log('ABVP Update Success - Rows affected: ' . $result);
             wp_send_json_success(array(
                 'message' => 'Banner updated successfully!',
                 'banner_id' => $banner_id,
             ));
         }
 
+        error_log('ABVP Update Failed - Error: ' . $wpdb->last_error);
         wp_send_json_error('Database update failed: ' . $wpdb->last_error);
     }
 

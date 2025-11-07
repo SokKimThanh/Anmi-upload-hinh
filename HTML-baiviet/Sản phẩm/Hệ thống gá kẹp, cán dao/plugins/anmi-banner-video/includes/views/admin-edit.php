@@ -293,15 +293,36 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
                             </p>
                             
                             <div class="overlay-image-preview" style="margin: 15px 0;">
+                                <?php 
+                                // Debug: Log overlay_image value
+                                if ($is_edit) {
+                                    error_log('ABVP Debug - Banner ID: ' . $banner->banner_id);
+                                    error_log('ABVP Debug - overlay_image value: ' . ($banner->overlay_image ?? 'NULL'));
+                                    error_log('ABVP Debug - overlay_image empty: ' . (empty($banner->overlay_image) ? 'YES' : 'NO'));
+                                }
+                                ?>
                                 <?php if ($is_edit && !empty($banner->overlay_image)): ?>
                                     <img src="<?php echo esc_url($banner->overlay_image); ?>" 
                                          style="max-width: 400px; max-height: 300px; display: block; border: 2px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" 
                                          id="overlay_image_preview">
+                                    <p style="color: #46b450; margin-top: 10px;">
+                                        <span class="dashicons dashicons-yes-alt"></span> 
+                                        <strong>Đã có hình overlay</strong>
+                                    </p>
                                 <?php else: ?>
                                     <img src="" 
                                          style="max-width: 400px; max-height: 300px; display: none; border: 2px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" 
                                          id="overlay_image_preview">
-                                    <p style="color: #999; font-style: italic;">Chưa có hình overlay (sẽ dùng hình đầu tiên từ slider)</p>
+                                    <p style="color: #999; font-style: italic;">
+                                        <span class="dashicons dashicons-info"></span> 
+                                        Chưa có hình overlay (sẽ dùng hình đầu tiên từ slider)
+                                    </p>
+                                    <?php if ($is_edit): ?>
+                                    <p style="color: #d63638; font-size: 12px;">
+                                        <span class="dashicons dashicons-warning"></span> 
+                                        Debug: overlay_image = "<?php echo esc_attr($banner->overlay_image ?? 'NULL'); ?>"
+                                    </p>
+                                    <?php endif; ?>
                                 <?php endif; ?>
                             </div>
                             
