@@ -159,7 +159,17 @@ $overlay_image    = isset($banner->overlay_image) && !empty($banner->overlay_ima
     <?php endif; ?>
     
     <!-- Dedicated Overlay Layer with Play Button (independent from slider) -->
-    <?php if (!empty($overlay_image) && $enable_overlay): ?>
+    <?php 
+    // Only render overlay if:
+    // 1. Overlay is enabled (master switch OR desktop OR mobile)
+    // 2. Has overlay image (custom or fallback)
+    $should_render_overlay = !empty($overlay_image) && (
+        $enable_overlay || 
+        $enable_overlay_desktop || 
+        $enable_overlay_mobile
+    );
+    ?>
+    <?php if ($should_render_overlay): ?>
     <div class="abvp-dedicated-overlay" 
          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 35;">
         <!-- Overlay Background Image -->
@@ -181,7 +191,7 @@ $overlay_image    = isset($banner->overlay_image) && !empty($banner->overlay_ima
     </div>
     <?php endif; ?>
     
-    <!-- Play Button Overlay - REMOVED: Now handled by Elementor overlay in render_wp_core_video() -->
+    <!-- OLD OVERLAY REMOVED: Now using dedicated overlay system above -->
     
     <!-- Loading Spinner -->
     <div class="abvp-loading-spinner anmi-banner-loader">

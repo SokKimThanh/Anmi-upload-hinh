@@ -1,6 +1,7 @@
 <?php
 /**
  * Admin Edit View - Add/Edit Banner Form
+ * Last Updated: 2025-11-07 19:20 - Fixed videoType bug
  */
 
 // Prevent direct access
@@ -950,12 +951,13 @@ $page_title = $is_edit ? 'Chỉnh Sửa Banner' : 'Thêm Banner Mới';
 </div>
 
 <script>
+/* Version: 2.7.0 - Fixed videoType bug - Updated: 2025-11-07 19:20 */
 jQuery(document).ready(function($) {
     
     var imagesArray = <?php echo json_encode($images_array); ?>;
     
     // DEBUG: Log initial state
-    console.log('=== ANMI VIDEO BANNER DEBUG ===');
+    console.log('=== ANMI VIDEO BANNER DEBUG v2.7.0 ===');
     console.log('Initial imagesArray:', imagesArray);
     console.log('Images JSON field value:', $('#images_json').val());
     
@@ -1352,7 +1354,7 @@ jQuery(document).ready(function($) {
         });
         
         // Video/Iframe (hidden by default - use PRODUCTION classes)
-        if (videoType === 'youtube' || videoType === 'vimeo') {
+        if (derivedVideoType === 'youtube' || derivedVideoType === 'vimeo') {
             html += '<iframe class="anmi-banner-video anmi-banner-iframe" ' +
                     'src="' + embedUrl + '" ' +
                     'frameborder="0" ' +
