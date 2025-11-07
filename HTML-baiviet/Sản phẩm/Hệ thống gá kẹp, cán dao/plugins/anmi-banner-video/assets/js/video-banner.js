@@ -64,8 +64,8 @@
             this.$container.data('anmi-initialized', true);
             this.applyVideoPreferences();
             
-            // Check if mobile
-            if (this.isMobileDevice && this.mobileBehavior === 'image') {
+            // Check if mobile - but allow WP core video widget to handle mobile itself
+            if (this.isMobileDevice && this.mobileBehavior === 'image' && !this.isWPCoreVideo) {
                 this.disableVideoOnMobile();
                 this.startSlider();
                 return;

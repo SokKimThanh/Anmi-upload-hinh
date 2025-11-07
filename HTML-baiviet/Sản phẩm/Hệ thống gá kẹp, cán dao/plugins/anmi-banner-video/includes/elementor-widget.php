@@ -530,7 +530,27 @@ class AnMi_Video_Banner_Elementor_Widget extends \Elementor\Widget_Base {
                 return;
             }
 
-            echo $plugin->render_video_banner(array('id' => (string) $banner_id));
+            // Build attributes array with widget settings override
+            $override_atts = array('id' => (string) $banner_id);
+            
+            // IMPORTANT: Only override if widget explicitly changed from default
+            // Check if mobile_behavior is different from control default
+            $mobile_behavior_control = $this->get_controls('mobile_behavior');
+            $default_mobile = isset($mobile_behavior_control['default']) ? $mobile_behavior_control['default'] : 'image';
+            
+            if (isset($settings['mobile_behavior']) && $settings['mobile_behavior'] !== $default_mobile) {
+                // Widget explicitly changed mobile_behavior → override database
+                $override_atts['mobile_behavior'] = $settings['mobile_behavior'];
+                $override_atts['_widget_override_mobile'] = '1'; // Flag for explicit override
+            }
+            
+            // Override autoplay delay if changed from default (0)
+            if (isset($settings['autoplay_delay']) && $settings['autoplay_delay'] != 0) {
+                $override_atts['autoplay_delay'] = (string) $settings['autoplay_delay'];
+                $override_atts['_widget_override_delay'] = '1';
+            }
+
+            echo $plugin->render_video_banner($override_atts);
             return;
         }
 

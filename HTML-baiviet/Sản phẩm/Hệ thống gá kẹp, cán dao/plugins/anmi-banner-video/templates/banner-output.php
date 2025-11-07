@@ -51,15 +51,8 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
     <?php endforeach; ?>
     
     <!-- Video Background (hidden by default) -->
-    <?php if ($video_data['type'] === 'youtube' || $video_data['type'] === 'vimeo'): ?>
-    <iframe class="abvp-video-frame abvp-video-iframe anmi-banner-video anmi-banner-iframe" 
-        src="<?php echo esc_url($video_data['embed_url']); ?>" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen></iframe>
-    <?php else: ?>
-    <!-- Use WordPress core video widget for better mobile compatibility -->
     <?php 
+    // Use WordPress core for ALL video types (MP4, YouTube, Vimeo)
     $video_settings = array(
         'enable_autoplay' => $enable_autoplay,
         'enable_muted' => $enable_muted,
@@ -67,10 +60,11 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
         'enable_controls' => $enable_controls,
     );
     
-    // Try to use WP core widget wrapper
+    // Get plugin instance and render using WP core
     $plugin = AnMi_Banner_Video_Pro::get_instance();
     $wp_video_html = $plugin->render_wp_core_video(
         $video_data['embed_url'], 
+        $video_data['type'],
         $video_settings, 
         $poster_image
     );
@@ -78,23 +72,32 @@ $autoplay_delay   = isset($atts['autoplay_delay']) ? intval($atts['autoplay_dela
     if (!empty($wp_video_html)) {
         echo $wp_video_html;
     } else {
-        // Fallback to standard video tag
-        ?>
-        <video class="abvp-video-frame anmi-banner-video"
-               <?php echo $enable_loop ? ' loop' : ''; ?>
-               <?php echo $enable_muted ? ' muted' : ''; ?>
-               <?php echo $enable_autoplay ? ' autoplay' : ''; ?>
-               <?php echo $enable_controls ? ' controls' : ''; ?>
-               playsinline
-               preload="metadata"
-               <?php if (!empty($poster_image)) : ?>poster="<?php echo esc_url($poster_image); ?>"<?php endif; ?>>
-                <source src="<?php echo esc_url($video_data['embed_url']); ?>" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        <?php
+        // Ultimate fallback if everything fails
+        if ($video_data['type'] === 'youtube' || $video_data['type'] === 'vimeo') {
+            ?>
+            <iframe class="abvp-video-frame abvp-video-iframe anmi-banner-video anmi-banner-iframe" 
+                src="<?php echo esc_url($video_data['embed_url']); ?>" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            <?php
+        } else {
+            ?>
+            <video class="abvp-video-frame anmi-banner-video"
+                   <?php echo $enable_loop ? ' loop' : ''; ?>
+                   <?php echo $enable_muted ? ' muted' : ''; ?>
+                   <?php echo $enable_autoplay ? ' autoplay' : ''; ?>
+                   <?php echo $enable_controls ? ' controls' : ''; ?>
+                   playsinline
+                   preload="metadata"
+                   <?php if (!empty($poster_image)) : ?>poster="<?php echo esc_url($poster_image); ?>"<?php endif; ?>>
+                    <source src="<?php echo esc_url($video_data['embed_url']); ?>" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            <?php
+        }
     }
     ?>
-    <?php endif; ?>
     
     <!-- Volume Control Button (hidden by default, shown by JS when video plays) -->
     <button class="abvp-audio-toggle anmi-volume-control" title="Unmute video">
