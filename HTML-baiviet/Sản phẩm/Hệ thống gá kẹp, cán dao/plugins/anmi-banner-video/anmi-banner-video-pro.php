@@ -31,6 +31,16 @@ require_once ABVP_PLUGIN_PATH . 'includes/admin-panel.php';
 add_action('plugins_loaded', function() {
     if (is_admin()) {
         AnMi_Banner_Video_Pro_Admin::get_instance();
+        
+        // Auto-update database if version changed
+        $installed_version = get_option('abvp_version', '0.0.0');
+        if (version_compare($installed_version, ABVP_VERSION, '<')) {
+            error_log('AnMi Banner Video Pro: Version changed from ' . $installed_version . ' to ' . ABVP_VERSION . ', updating database...');
+            $admin = AnMi_Banner_Video_Pro_Admin::get_instance();
+            $admin->setup_database_table();
+            update_option('abvp_version', ABVP_VERSION);
+            error_log('AnMi Banner Video Pro: Database updated successfully');
+        }
     }
 });
 
