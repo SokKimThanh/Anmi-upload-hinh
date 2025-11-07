@@ -774,8 +774,11 @@
                     console.log('Slider stopped - Video playing from dedicated overlay');
                 }
                 
-                // Hide images completely
-                this.$images.css('opacity', '0');
+                // Hide images completely - set opacity AND z-index
+                this.$images.css({
+                    'opacity': '0',
+                    'z-index': '0'  // Move slider below video
+                });
                 
                 // Play video or iframe
                 if (video && video.tagName === 'VIDEO') {
@@ -825,6 +828,9 @@
                     $(video).removeClass('playing');
                     this.isVideoPlaying = false;
                     
+                    // Restore slider z-index
+                    this.$images.css('z-index', '2');
+                    
                     // RESTART slider when video ends
                     if (this.hasSlider) {
                         this.startSlider();
@@ -838,6 +844,9 @@
                         this.$container.removeClass('video-is-playing video-playing');
                         this.isVideoPlaying = false;
                         
+                        // Restore slider z-index
+                        this.$images.css('z-index', '2');
+                        
                         // RESTART slider when video paused
                         if (this.hasSlider) {
                             this.startSlider();
@@ -850,6 +859,9 @@
                 $(video).off('play.dedicatedOverlay').on('play.dedicatedOverlay', () => {
                     this.$container.addClass('video-is-playing video-playing');
                     this.isVideoPlaying = true;
+                    
+                    // Hide slider z-index when playing
+                    this.$images.css('z-index', '0');
                     
                     // STOP slider when video plays
                     if (this.hasSlider) {

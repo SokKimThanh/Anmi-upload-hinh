@@ -167,6 +167,16 @@
     z-index: 20; /* Above slider and content */
 }
 
+/* When video is playing, bring video above slider and show it */
+.anmi-video-banner-container.video-playing .anmi-banner-video,
+.abvp-banner-wrapper.video-playing .abvp-video-frame,
+.anmi-video-banner-container.video-playing .anmi-banner-iframe,
+.abvp-banner-wrapper.video-playing .abvp-video-iframe {
+    z-index: 20 !important; /* Above slider */
+    opacity: 1 !important; /* Show video */
+    pointer-events: auto !important; /* Enable video controls */
+}
+
 /* YouTube/Vimeo Iframe - Default below slider */
 .anmi-banner-iframe,
 .abvp-video-iframe {
