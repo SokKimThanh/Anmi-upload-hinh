@@ -35,6 +35,14 @@
     display: none !important;
 }
 
+/* Hide pagination dots when slider disabled */
+.anmi-video-banner-container[data-enable-slider="0"] .abvp-nav-dots,
+.anmi-video-banner-container[data-enable-slider="0"] .anmi-slider-dots,
+.abvp-banner-wrapper[data-enable-slider="0"] .abvp-nav-dots,
+.abvp-banner-wrapper[data-enable-slider="0"] .anmi-slider-dots {
+    display: none !important;
+}
+
 /* Video takes full space when slider disabled */
 .anmi-video-banner-container[data-enable-slider="0"] .anmi-banner-video,
 .anmi-video-banner-container[data-enable-slider="0"] .abvp-video-frame,
@@ -97,6 +105,14 @@
         display: none !important;
     }
     
+    /* Hide pagination dots when slider disabled on desktop */
+    .anmi-video-banner-container[data-enable-slider-desktop="0"] .abvp-nav-dots,
+    .anmi-video-banner-container[data-enable-slider-desktop="0"] .anmi-slider-dots,
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .abvp-nav-dots,
+    .abvp-banner-wrapper[data-enable-slider-desktop="0"] .anmi-slider-dots {
+        display: none !important;
+    }
+    
     .anmi-video-banner-container[data-enable-slider-desktop="0"] .anmi-banner-video,
     .anmi-video-banner-container[data-enable-slider-desktop="0"] .abvp-video-frame,
     .anmi-video-banner-container[data-enable-slider-desktop="0"] .abvp-wp-video-wrapper,
@@ -115,6 +131,14 @@
     .anmi-video-banner-container[data-enable-slider-mobile="0"] .anmi-banner-image,
     .abvp-banner-wrapper[data-enable-slider-mobile="0"] .abvp-slide-image,
     .abvp-banner-wrapper[data-enable-slider-mobile="0"] .anmi-banner-image {
+        display: none !important;
+    }
+    
+    /* Hide pagination dots when slider disabled on mobile */
+    .anmi-video-banner-container[data-enable-slider-mobile="0"] .abvp-nav-dots,
+    .anmi-video-banner-container[data-enable-slider-mobile="0"] .anmi-slider-dots,
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .abvp-nav-dots,
+    .abvp-banner-wrapper[data-enable-slider-mobile="0"] .anmi-slider-dots {
         display: none !important;
     }
     
