@@ -627,6 +627,11 @@ class AnMi_Banner_Video_Pro_Admin {
                 'modified_date' => $banner->modified_date,
             );
 
+            $plugin = AnMi_Banner_Video_Pro::get_instance();
+            $preview_payload['render_html'] = $plugin->render_video_banner(array(
+                'id' => (string) $banner_id,
+            ));
+
             wp_send_json_success($preview_payload);
         } catch (Exception $e) {
             error_log('ABVP Banner Preview: Exception - ' . $e->getMessage());

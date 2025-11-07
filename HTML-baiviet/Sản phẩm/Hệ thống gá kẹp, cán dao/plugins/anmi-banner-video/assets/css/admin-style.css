@@ -1054,6 +1054,115 @@ body.anmi-modal-open {
     }
 }
 
+.abvp-preview-container {
+    display: grid;
+    gap: var(--anmi-spacing-200);
+}
+
+.abvp-preview-toolbar {
+    display: flex;
+    align-items: center;
+    gap: var(--anmi-spacing-100);
+}
+
+.abvp-preview-mode.is-active {
+    background: var(--anmi-color-accent);
+    border-color: var(--anmi-color-accent);
+    color: #fff;
+    box-shadow: 0 0 0 2px rgba(11, 99, 206, 0.18);
+}
+
+.abvp-preview-hint {
+    margin-left: auto;
+    font-size: var(--anmi-font-size-200);
+    color: var(--anmi-color-muted);
+}
+
+.abvp-preview-stage {
+    display: grid;
+    gap: var(--anmi-spacing-150);
+    justify-content: center;
+}
+
+.abvp-preview-device {
+    display: none;
+    justify-content: center;
+}
+
+.abvp-preview-device--desktop .abvp-preview-frame {
+    width: min(960px, 100%);
+}
+
+.abvp-preview-device--mobile {
+    justify-content: center;
+}
+
+.abvp-preview-device--mobile .abvp-preview-frame {
+    width: 360px;
+    border: 12px solid #0f172a;
+    border-radius: 24px;
+    background: #000;
+    overflow: hidden;
+    box-shadow: var(--anmi-shadow-md);
+}
+
+.abvp-preview-stage[data-preview-mode="desktop"] .abvp-preview-device--desktop {
+    display: flex;
+}
+
+.abvp-preview-stage[data-preview-mode="mobile"] .abvp-preview-device--mobile {
+    display: flex;
+}
+
+.abvp-preview-stage[data-preview-mode="mobile"] .abvp-preview-device--desktop {
+    display: none;
+}
+
+.abvp-preview-details {
+    background: var(--anmi-color-subtle);
+    border-radius: var(--anmi-radius-md);
+    border: 1px solid var(--anmi-color-border);
+    padding: var(--anmi-spacing-200);
+    display: grid;
+    gap: var(--anmi-spacing-150);
+}
+
+.abvp-preview-details h3 {
+    margin: 0;
+    font-size: var(--anmi-font-size-300);
+}
+
+.abvp-preview-meta-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--anmi-spacing-075);
+}
+
+.abvp-preview-meta-list li {
+    display: flex;
+    gap: var(--anmi-spacing-100);
+    justify-content: space-between;
+    font-size: var(--anmi-font-size-200);
+    color: var(--anmi-color-muted);
+}
+
+.abvp-preview-meta-label {
+    font-weight: 600;
+    color: var(--anmi-color-text);
+}
+
+.abvp-preview-meta-value {
+    text-align: right;
+}
+
+.abvp-preview-meta-value code {
+    background: var(--anmi-color-neutral-bg);
+    padding: 0 var(--anmi-spacing-050);
+    border-radius: var(--anmi-radius-sm);
+}
+
 @media (max-width: 640px) {
     .anmi-modal-content {
         width: 96%;

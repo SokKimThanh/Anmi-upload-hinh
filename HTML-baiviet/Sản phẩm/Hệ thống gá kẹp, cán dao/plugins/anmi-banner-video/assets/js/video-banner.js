@@ -30,7 +30,8 @@
             const hasSliderData = parseInt(this.$container.data('has-slider'), 10);
             this.imageCount = parseInt(this.$container.data('image-count'), 10) || this.$images.length;
             this.hasSlider = (Number.isNaN(hasSliderData) ? this.$images.length > 1 : hasSliderData === 1) && this.imageCount > 1;
-            this.isMobileDevice = this.isMobile();
+            this.previewDevice = (this.$container.data('preview-device') || '').toString().toLowerCase();
+            this.isMobileDevice = this.determineMobileState();
             this.isVideoOnlyMobile = this.isMobileDevice && this.mobileBehavior === 'video';
             this.isIframe = this.$video.length > 0 && this.$video[0].tagName === 'IFRAME';
             this.iframeBaseSrc = this.isIframe ? this.$video.attr('src') : '';
@@ -81,6 +82,18 @@
         isMobile() {
             return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
                    window.innerWidth <= 768;
+        }
+
+        determineMobileState() {
+            if (this.previewDevice === 'mobile') {
+                return true;
+            }
+
+            if (this.previewDevice === 'desktop') {
+                return false;
+            }
+
+            return this.isMobile();
         }
         
         disableVideoOnMobile() {
