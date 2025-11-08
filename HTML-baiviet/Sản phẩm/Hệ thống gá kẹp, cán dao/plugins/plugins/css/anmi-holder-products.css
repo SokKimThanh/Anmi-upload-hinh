@@ -2,8 +2,8 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.3.2
- * Last Updated: November 1, 2025
+ * Version: 1.3.3
+ * Last Updated: November 8, 2025
  * Author: An Mi Tools Technical Team
  * 
  * File CSS chung duy nhất cho tất cả 40+ sản phẩm holder.
@@ -12,6 +12,14 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, nt-*, cat-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.3.3 (2025-11-08):
+ * - PRODUCT IMAGES ROW: Added .product-images-row and .product-image-col for flexible 2-column image layout
+ * - Purpose: Display RBH product (col 1) + specifications table (col 2) side-by-side
+ * - CSS: Grid 2 columns with 1.5rem gap, align-items: start, object-fit: cover for images
+ * - Responsive: 2 columns desktop → 1 column mobile (≤768px)
+ * - Applied to: TCK/BST boring system pages (RBH and BST product specifications)
+ * - Difference from .product-images-grid: More flexible for mixed content (product photo + spec table)
+ * 
  * v1.3.2 (2025-11-01):
  * - IMAGE LIGHTBOX: Added lightbox functionality for product images
  * - CSS: .anmi-lightbox with full-screen overlay, zoom animation, close button
@@ -1564,6 +1572,35 @@ details[open] summary .toggle {
     line-height: 1.6;
 }
 
+/* PRODUCT IMAGES ROW (Flexible 2-column layout for RBH specs) */
+/* ============================================ */
+.product-images-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    align-items: start;
+}
+
+.product-image-col {
+    margin: 0;
+    text-align: center;
+}
+
+.product-image-col img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--anmi-border-radius-lg);
+    object-fit: cover;
+}
+
+.product-image-col figcaption {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    color: var(--anmi-color-text-secondary);
+    line-height: 1.6;
+}
+
 /* Comparison Table (NT vs BT vs HSK style tables) */
 .comparison-table {
     width: 100%;
@@ -1784,6 +1821,12 @@ details[open] summary .toggle {
 
     /* Product images grid: 2 columns → 1 column on mobile */
     .product-images-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Product images row: 2 columns → 1 column on mobile */
+    .product-images-row {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
