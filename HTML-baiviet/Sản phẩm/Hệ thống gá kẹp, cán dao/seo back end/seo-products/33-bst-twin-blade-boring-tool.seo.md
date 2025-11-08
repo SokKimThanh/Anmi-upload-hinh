@@ -115,6 +115,14 @@ schema_type: "Product"
 
 	<div class="section specifications">
 		<h2>7 Models BST Modular Boring Cutter (CBH Series)</h2>
+		
+		<figure class="product-image">
+			<img src="https://anmitools.com/wp-content/uploads/2025/09/bst-cbh-boring-cutter-system.webp"
+				alt="BST Modular Boring Cutter – CBH Φ200-910mm with DST extension slides"
+				width="800" height="600" loading="lazy" class="bordered-img">
+			<figcaption><strong>BST Modular Boring Cutter (CBH Series)</strong> – 7 models với DST200-DST800 extension slides, TPGH/TCMT inserts, weights 9.7-21.7kg.</figcaption>
+		</figure>
+		
 		<table>
 			<thead>
 				<tr>
