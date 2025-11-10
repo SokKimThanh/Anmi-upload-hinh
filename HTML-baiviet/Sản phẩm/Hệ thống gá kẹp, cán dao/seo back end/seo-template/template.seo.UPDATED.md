@@ -295,24 +295,47 @@ schema_type: "Product"
 		<div class="contact-info">
 			<div class="office">
 				<h3>🏢 Trụ sở Hà Nội</h3>
-				<p>Địa chỉ: P.409, Cầu thang 5, CT4-ĐN3, Khu đô thị Sông Đà Mỹ Đình, Đường Đỗ Đình Thiện, Phường Từ Liêm, Thành
-					phố Hà Nội.</p>
-				<p>☎️ Hotline: <a href="tel:+84915192325">091 519 2325</a></p>
+				<div class="contact-meta">
+					<span class="contact-meta-label">Hotline</span>
+					<a class="contact-meta-value" href="tel:+84915192325">091 519 2325</a>
+				</div>
+				<div class="contact-address">
+					<span class="contact-address-label">Địa chỉ</span>
+					<p class="contact-address-value">P.409, Cầu thang 5, CT4-ĐN3, Khu đô thị Sông Đà Mỹ Đình, Đường Đỗ Đình Thiện, Phường Từ Liêm, Thành phố Hà Nội.</p>
+				</div>
 			</div>
 			<div class="office">
 				<h3>🏢 Chi nhánh TP. Hồ Chí Minh</h3>
-				<p>Địa chỉ: 75 Đỗ Xuân Hợp, Phường Phước Long, Thành phố Hồ Chí Minh</p>
-				<p>☎️ Hotline: <a href="tel:+84913152529">091 315 2529</a></p>
+				<div class="contact-meta">
+					<span class="contact-meta-label">Hotline</span>
+					<a class="contact-meta-value" href="tel:+84913152529">091 315 2529</a>
+				</div>
+				<div class="contact-address">
+					<span class="contact-address-label">Địa chỉ</span>
+					<p class="contact-address-value">75 Đỗ Xuân Hợp, Phường Phước Long, Thành phố Hồ Chí Minh</p>
+				</div>
 			</div>
 			<div class="office">
 				<h3>🏢 Chi nhánh Hải Phòng</h3>
-				<p>Địa chỉ: P2825 Hoàng Huy Grand Tower, số 2A Sở Dầu, Phường Hồng Bàng, Thành phố Hải Phòng</p>
-				<p>☎️ Hotline: <a href="tel:+84335836600">033 583 6600</a></p>
+				<div class="contact-meta">
+					<span class="contact-meta-label">Hotline</span>
+					<a class="contact-meta-value" href="tel:+84335836600">033 583 6600</a>
+				</div>
+				<div class="contact-address">
+					<span class="contact-address-label">Địa chỉ</span>
+					<p class="contact-address-value">P2825 Hoàng Huy Grand Tower, số 2A Sở Dầu, Phường Hồng Bàng, Thành phố Hải Phòng</p>
+				</div>
 			</div>
 			<div class="office">
 				<h3>🏢 Chi nhánh Đà Nẵng</h3>
-				<p>Địa chỉ: 85 Hoàng Văn Thái, Phường Hòa Khánh, Thành phố Đà Nẵng</p>
-				<p>☎️ Hotline: <a href="tel:+84912041331">091 204 1331</a></p>
+				<div class="contact-meta">
+					<span class="contact-meta-label">Hotline</span>
+					<a class="contact-meta-value" href="tel:+84912041331">091 204 1331</a>
+				</div>
+				<div class="contact-address">
+					<span class="contact-address-label">Địa chỉ</span>
+					<p class="contact-address-value">85 Hoàng Văn Thái, Phường Hòa Khánh, Thành phố Đà Nẵng</p>
+				</div>
 			</div>
 		</div>
 
