@@ -907,6 +907,7 @@ details[open] summary .toggle {
     border-left: 3px solid var(--anmi-color-primary-strong);
 }
 
+/* Template CŨ - Giữ lại để tương thích ngược */
 .office .contact-meta-label {
     font-size: 0.875rem;
     font-weight: 600;
@@ -930,6 +931,32 @@ details[open] summary .toggle {
     text-decoration: none;
 }
 
+/* Template MỚI - Classes mới cho semantic HTML */
+.office .contact-meta .label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--anmi-color-text-muted);
+    margin: 0;
+    display: block;
+}
+
+.office .contact-meta .value {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--anmi-color-primary-strong);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    display: block;
+}
+
+.office .contact-meta .value:hover {
+    color: var(--anmi-color-primary-hover);
+    text-decoration: none;
+}
+
 /* Address Block */
 .office .contact-address {
     display: flex;
@@ -937,6 +964,7 @@ details[open] summary .toggle {
     gap: 0.35rem;
 }
 
+/* Template CŨ - Giữ lại để tương thích ngược */
 .office .contact-address-label {
     font-size: 0.875rem;
     font-weight: 600;
@@ -951,6 +979,25 @@ details[open] summary .toggle {
     line-height: 1.6;
     color: var(--anmi-color-text-secondary);
     margin: 0;
+}
+
+/* Template MỚI - Classes mới cho semantic HTML */
+.office .contact-address .label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--anmi-color-text-muted);
+    margin: 0;
+    display: block;
+}
+
+.office .contact-address .value {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--anmi-color-text-secondary);
+    margin: 0;
+    display: block;
 }
 
 @media (min-width: 1280px) {
