@@ -1017,13 +1017,33 @@ details[open] summary .toggle {
     margin: 1.5rem 0;
 }
 
-/* Desktop: Hiển thị ảnh địa chỉ đầy đủ, ẩn ảnh hotline mobile */
+/* Template CŨ - Giữ lại để tương thích ngược */
 .contact-image-desktop {
     display: block;
 }
 
 .contact-image-mobile {
     display: none;
+}
+
+/* Template MỚI - Classes mới */
+.contact-info .contact-image.desktop {
+    display: block;
+}
+
+.contact-info .contact-image.mobile {
+    display: none;
+}
+
+.contact-info .contact-image figure {
+    margin: 0;
+}
+
+.contact-info .contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--anmi-border-radius-md);
+    box-shadow: var(--anmi-box-shadow-light);
 }
 
 .warranty-note {
