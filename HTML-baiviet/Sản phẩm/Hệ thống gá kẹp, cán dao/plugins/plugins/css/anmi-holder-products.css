@@ -1134,11 +1134,14 @@ details[open] summary .toggle {
 
 .installation-steps {
     counter-reset: step;
+    list-style: none; /* Remove default numbering */
+    padding-left: 0;
 }
 
 .installation-steps li {
     counter-increment: step;
     margin-bottom: 1rem;
+    padding-left: 0;
 }
 
 .installation-steps li::before {
@@ -1637,8 +1640,8 @@ details[open] summary .toggle {
 .product-features ol li::before {
     content: counter(feature-counter); /* Hierarchy: Numbered features */
     position: absolute;
-    left: -0.5rem;
-    top: 1.5rem;
+    left: 1rem;
+    top: 2.2rem;
     width: 2.5rem;
     height: 2.5rem;
     background: linear-gradient(135deg, var(--anmi-color-primary) 0%, var(--anmi-color-accent) 100%);
