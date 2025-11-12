@@ -157,6 +157,7 @@
     --anmi-color-surface-info: #F0F8FF;
     --anmi-color-surface-warm: #FFF9E6;
     --anmi-color-surface-success: #E8F5E9;
+    --anmi-color-accent: #FF6B35; /* Accent color for highlights and hover states */
     --anmi-color-accent-warning: #FFA500;
     --anmi-color-accent-success: #4CAF50;
     --anmi-color-accent-success-strong: #2E7D32;
