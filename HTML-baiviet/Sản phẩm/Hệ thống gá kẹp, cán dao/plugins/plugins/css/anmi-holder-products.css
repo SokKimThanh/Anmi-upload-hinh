@@ -688,7 +688,7 @@ summary {
     color: var(--anmi-color-text); /* Contrast: Dark text */
     cursor: pointer;
     list-style: none;
-    display: flex;
+    display: flex !important; /* ghi de class bootstrap*/
     justify-content: space-between;
     align-items: center;
     user-select: none;
@@ -2253,7 +2253,7 @@ details[open] summary .toggle {
 /* ACCESSIBILITY */
 /* ============================================ */
 *:focus {
-    outline: var(--anmi-focus-outline-size) solid var(--anmi-color-primary);
+    /* outline: var(--anmi-focus-outline-size) solid var(--anmi-color-primary); */
     outline-offset: 2px;
 }
 
