@@ -2,8 +2,8 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.3.4
- * Last Updated: November 11, 2025
+ * Version: 1.3.5
+ * Last Updated: November 12, 2025
  * Author: An Mi Tools Technical Team
  * 
  * File CSS chung duy nhất cho tất cả 40+ sản phẩm holder.
@@ -12,6 +12,30 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, nt-*, cat-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.3.5 (2025-11-12):
+ * - PRODUCT FEATURES REDESIGN: Complete redesign of .product-features section (5 Key Features)
+ * - Design Principles: Applied Hierarchy, Consistency, Negative Space, Contrast Ratio
+ * - Number Badge: Gradient circle badges (2.5rem) with counter, positioned left: 1rem, top: 2.2rem
+ * - Card Design: White-to-gray gradient background, 4px blue left border, rounded corners, shadow
+ * - Title Styling: 1.25rem bold with gradient underline separator (3rem width)
+ * - Hover Effects: translateY(-2px), enhanced shadow, border color changes to accent
+ * - Responsive: Mobile optimization with reduced padding, smaller fonts, adjusted number badge
+ * - Added --anmi-color-accent: #FF6B35 to :root for accent color
+ * 
+ * - INSTALLATION STEPS FIX: Fixed duplicate numbering (::marker vs ::before)
+ * - Added list-style: none and padding-left: 0 to .installation-steps
+ * - Removed default <ol> numbering to show only custom ::before counters
+ * 
+ * - FAQ SECTION REDESIGN: Complete redesign with background colors and improved UX
+ * - Design Principles: Hierarchy, Consistency, Negative Space, Contrast Ratio applied
+ * - Question Style: White background, 1.125rem bold, hover turns blue
+ * - Answer Background: Gradient background (#F0F8FF → #FFF9E6) for better readability
+ * - Border Top: 2px separator between question and answer
+ * - Card Design: Border, rounded corners, shadow, hover effects (blue border + shadow)
+ * - Keywords: Blue strong tags in answers for emphasis
+ * - Links: Blue underline, hover removes underline
+ * - Responsive: Mobile optimization with reduced padding and font sizes
+ * 
  * v1.3.4 (2025-11-11):
  * - EMAIL CONTACT SECTION: Added styles for .contact-email-section (general email display)
  * - Purpose: Display company email (admsales7@anmitools.com) after 4 office contacts, before images
@@ -617,54 +641,115 @@ tbody tr:last-child {
 }
 
 /* ============================================ */
-/* FAQ */
+/* FAQ SECTION - Design Principles Applied */
+/* Hierarchy, Consistency, Negative Space, Contrast Ratio */
 /* ============================================ */
+
+.faq {
+    margin: 2rem 0;
+}
+
+.faq h2 {
+    font-size: 1.875rem; /* Hierarchy: Large title */
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--anmi-color-primary);
+    text-align: center;
+    line-height: 1.3;
+}
+
 .faq-container {
     overflow: hidden;
 }
 
 details {
-    border-bottom: 1px solid var(--anmi-border-color-subtle);
+    margin-bottom: 1rem; /* Negative Space: Spacing between items */
+    border: 1px solid var(--anmi-border-color-soft);
+    border-radius: var(--anmi-border-radius-lg);
+    background: var(--anmi-color-surface); /* Consistency: White background */
+    box-shadow: var(--anmi-box-shadow-soft);
+    transition: all 0.3s ease;
+}
+
+details:hover {
+    box-shadow: var(--anmi-box-shadow-primary); /* Contrast: Hover feedback */
+    border-color: var(--anmi-color-primary);
 }
 
 details:last-child {
-    border-bottom: none;
+    margin-bottom: 0;
 }
 
+/* Question (Summary) Styling */
 summary {
-    padding: 1.25rem;
-    font-size: 1.125rem;
+    padding: 1.25rem 1.5rem; /* Negative Space: Comfortable padding */
+    font-size: 1.125rem; /* Hierarchy: Medium size for questions */
     font-weight: 600;
-    color: var(--anmi-color-text);
+    color: var(--anmi-color-text); /* Contrast: Dark text */
     cursor: pointer;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+summary:hover {
+    color: var(--anmi-color-primary); /* Contrast: Blue on hover */
 }
 
 summary::-webkit-details-marker {
     display: none;
 }
 
-details[open] summary .toggle {
-    transform: rotate(45deg);
-}
-
+/* Plus/Minus Toggle Icon */
 .toggle {
-    color: var(--anmi-color-primary);
+    color: var(--anmi-color-primary); /* Contrast: Blue icon */
     font-size: 1.5rem;
+    font-weight: 700;
     transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 1rem;
 }
 
+details[open] summary .toggle {
+    transform: rotate(45deg); /* Visual feedback */
+}
+
+/* Answer (Content) Styling */
 .faq-content {
-    padding: 0 1.25rem 1.25rem 1.25rem;
-    color: var(--anmi-color-text-secondary);
-    line-height: 1.7;
+    padding: 0 1.5rem 1.5rem 1.5rem; /* Negative Space: Consistent padding */
+    background: linear-gradient(135deg, var(--anmi-color-surface-info) 0%, var(--anmi-color-surface-warm) 100%); /* Contrast: Subtle gradient background */
+    border-top: 2px solid var(--anmi-border-color-soft); /* Hierarchy: Visual separator */
+    color: var(--anmi-color-text-secondary); /* Contrast: Readable text */
+    line-height: 1.7; /* Negative Space: Readable line height */
+    font-size: 1.05rem; /* Consistency: Body text size */
+    border-radius: 0 0 var(--anmi-border-radius-lg) var(--anmi-border-radius-lg);
 }
 
 .faq-content p {
     margin: 0;
+    padding-top: 1rem; /* Negative Space: Top spacing */
+}
+
+/* Highlight keywords in answers */
+.faq-content strong {
+    color: var(--anmi-color-primary); /* Contrast: Blue for emphasis */
+    font-weight: 600;
+}
+
+/* Links in FAQ answers */
+.faq-content a {
+    color: var(--anmi-color-primary);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.faq-content a:hover {
+    color: var(--anmi-color-primary-hover);
+    text-decoration: none;
 }
 
 /* ============================================ */
@@ -2095,6 +2180,36 @@ details[open] summary .toggle {
     .product-features ol li {
         font-size: 1rem; /* Standard body text */
         line-height: 1.6;
+    }
+
+    /* FAQ Section - Mobile Optimization */
+    .faq h2 {
+        font-size: 1.5rem; /* Smaller title */
+        margin-bottom: 1.5rem;
+    }
+
+    details {
+        margin-bottom: 0.75rem; /* Reduce spacing */
+    }
+
+    summary {
+        padding: 1rem; /* Reduce padding */
+        font-size: 1rem; /* Smaller question text */
+    }
+
+    .toggle {
+        font-size: 1.25rem; /* Smaller icon */
+        margin-left: 0.75rem;
+    }
+
+    .faq-content {
+        padding: 0 1rem 1rem 1rem; /* Reduce padding */
+        font-size: 1rem; /* Standard text */
+        line-height: 1.6;
+    }
+
+    .faq-content p {
+        padding-top: 0.75rem; /* Less top spacing */
     }
 
     .contact-image-mobile {
