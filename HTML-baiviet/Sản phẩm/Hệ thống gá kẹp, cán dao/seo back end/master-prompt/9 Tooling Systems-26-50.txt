@@ -1,126 +1,127 @@
-PRECISION MILLING HOLDER
-PRECISION MILLING HOLDER
-d1
-d1
-t1
-t1
-D
-D
-C
-L2
-L1
-L
-L2
-L1
-内
-端 口 跳 动μ
-5 以m
-d2
-L
-d2
-d2×4
-FITTING
-d2×4
-ER EXTENSION HOLDER
-ER （ M / U M ）
-ER EXTENSION HOLDER
-ER
-Size
 Specificat
 ion
-C1
-2
-C1
-6
-C20
-C32
-Clamping range
-D
-C
+Nut Collet Spanner
+-ER11-50 -
+ER11-100 -
+ER11-50 -
+ER11-100 -
+ER11-150 -
+ER16-100 -
+ER16-150 -
+ER16-200 -
+ER20-100
+-ER20-150
+-ER11-100 -
+ER11-150 -
+ER11-200 -
+ER16-100 -
+ER16-150 -
+ER16-200 -
+ER20-100
+-ER20-150
+-ER20-200
+-ER25-100
+-ER25-150
+-ER16-100
+-ER16-150
+-ER16-200
+-ER20-100
+-ER20-150
+-ER20-200
+-ER25-100
+-ER25-150
+-ER25-200
+-ER32-100
+-ER32-150
+-ER32-200
+-ER20-150
+-ER20-200
+-ER25-150
+-ER25-200
+-ER32-150
+-ER32-200
+2.0~7
+2.0~7
+3.0~10
+3.0~16
+3.0~10
+3.0~16
+3.0~10
+3.0~13
+3.0~13
+3.0~13
+3.0~20
+3.0~13
+3.0~16
+3.0~20
+28
+28
+28
+34
+34
+34
+19
+19
+42
+42
+50
+34
+42
+50
+20
+20
+20
+25
+25
+25
+16
+16
+25
+32
+32
+32
 12
-2.0~7
-19
 16
-3.0~10
-28
-16
-3.0~13
-34
-16
-2.0~7
-19
-20
-3.0~10
-28
-20
-3.0~13
-34
-20
-3.0~16
-42
-20
-3.0~10
-28
-25
-3.0~13
-34
-25
-3.0~16
-42
-25
-3.0~20
-3.0~13
-50
-34
-25
-32
-3.0~16
-42
-32
-3.0~20
-50
-32
-L1
+24.0
+24.0
+16.6
+16.6
+16.6
+35.0
+35.0
+35.0
+40.0
+40.0
+16.6
+16.6
+16.6
+35.0
+35.0
+35.0
+40.0
+40.0
+40.0
+47.0
+47.0
+35.0
+35.0
+40.0
+40.0
+40.0
+40.0
+47.0
+47.0
+47.0
+50.0
+50.0
+50.0
+40.0
+40.0
+47.0
+47.0
+50.0
+50.0
 L
-24.0
-24.0
-16.6
-16.6
-16.6
-35.0
-35.0
-35.0
-40.0
-40.0
-16.6
-16.6
-16.6
-35.0
-35.0
-35.0
-40.0
-40.0
-40.0
-47.0
-47.0
-35.0
-35.0
-40.0
-40.0
-40.0
-40.0
-47.0
-47.0
-47.0
-50.0
-50.0
-50.0
-40.0
-40.0
-47.0
-47.0
-50.0
-50.0
 50
 100
 50
@@ -160,40 +161,72 @@ L
 200
 150
 200
-Nut
-Spanner
-C1
-0
-ER11A
-ER11
-0.55
-ER16A
-ER16
-1.85
 ER20A
-ER20
-1.2
-ER11A
-ER11
-1.6
-ER16A
-ER16
-1.65
 ER20A
-ER20
-3.15
+ER11A
+ER16A
+ER20A
+ER11A
+ER16A
+ER16A
 ER25UM
+ER25UM
+ER32UM
+ER20A
+ER20
+ER20
 ER25
+ER25
+ER16
+ER20
+ER16
+ER16
+ER32
+ER20
+ER11
+ER11
 3.9
+3.9
+1.6
+3.15
+3.15
+0.55
+1.65
+1.65
+1.65
+3.15
+4.0
+2.95
+1.85
+1.2
+Clamping range D C L1
+C25
 C1
-2
+2 C
+1
+6 C
+32
 C20
-C1
-6
-C2
-5
-C3
-L2
+Specification
+-ER8-100M -ER8-
+150M -ER11-100M -
+ER11-150 -ER16-
+100M -ER16-150M
+-ER16-200M -
+ER16-100M -ER16-
+150M -ER16-200M
+-ER20-100M -
+ER20-150M -
+ER20-200M -
+ER25-100UM -
+ER25-150UM -
+ER25-100UM -
+ER25-150UM -
+ER32-100UM -
+ER32-150UM -
+ER32-200UM
+S i z e
+L
 115.5
 165.5
 124
@@ -233,217 +266,283 @@ L2
 150
 100
 150
-200
-L1
-D
-d1
-Clamping range
-15.5
-12
-10
-0.5~5.0
-24
-16
-12
-1.0~7.0
-16
-35
-1.0~10.0
-22
-20
+200 50
 40
-28
+35
 45
+15.5
+24
+28
+50
+22
+12
+16
 42
-1.0~13.0
+20
+16
 20
 25
-2.0~16.0
 32
-50
-50
+32
+10
+12
+0.5~5.0
+1.0~7.0
 3.0~20.0
-32
-2
-d
-ER16A
-ER16
-3.9
-L2
-a
-L
-ER20A
-ER20
-1.65
-ER25UM
-ER25
-3.15
-ER
+2.0~16.0
+1.0~13.0
+1.0~10.0
+L2 L1 D d1 Clamping range
+C2
+5 C
+3
+C 2
+1
+0 C
+1
+2 C
+1
+C 6
+20
+PAGE 41 PAGE 42
+PRECISION MILLING HOLDER PRECISION MILLING HOLDER
 L1
-ER32UM
-ER20A
-1、Tool body is high precision.
-2、High concentricity, stable run-out accuracy to enhance fine machining surface roughness.
-3、Finish surface with long durability.
-
-ER32
-ER20
-1.65
-3.15
-4.0
-2.95
+30
+30
+S i z e
+a
+19
+19
+24
+19
+29
+19
+19
+24
+-ER16-70A 100A
+-ER20-70A/100A
+-ER20-70A/100A
+-ER11-70A/100A
+-ER11-70A/100A
+-ER16-70M/100M
+-ER20-70M/100M
+-ER20-70M/100M
+L
+100/130
+100/130
+100/130
+100/130
+100/130
+100/130
+100/130
+100/130
+70/13
+0 7
+0/13
+70
+0/130
+70/130
+70/130
+30
+30
+30
+D 28 34
+d
+20
+20
+25
+20
+25
+20
+20
+25
+Specification
+/
+L2
+B
+20
+ER
+ER
+ER（ M / U M ）
+C
+d1
+L2
+L
+t1
+L1
+d2×4
+D d
+2
+FITTING
+a
+d
+L2
+L
 L1
 ER EXTENSION HOLDER
-Specification
-Feature
-PAGE 41
-Collet
--ER8-100M -ER8150M -ER11-100M ER11-150 -ER16100M -ER16-150M
--ER16-200M ER16-100M -ER16150M -ER16-200M
--ER20-100M ER20-150M ER20-200M ER25-100UM ER25-150UM ER25-100UM ER25-150UM ER32-100UM ER32-150UM ER32-200UM
+ER EXTENSION HOLDER
+ER EXTENSION HOLDER
+1、 Tool body is high precision.
+2、 High concentricity, stable run-out accuracy to enhance fine machining surface roughness.
+3、 Finish surface with long durability.
+1、
+3、 、
+F e a t u r e
+F e a t u r e
+Tool body is high precision.
+Finish surface with long durab2ility.High concentricity, stable run-out accuracy to enhance fine machining surface roughness.
+d 1
+L 2
 L
+t 1
+L 1
+d 2 × 4
+d 2
 D
-C25
--ER11-50 ER11-100 ER11-50 ER11-100 ER11-150 ER16-100 ER16-150 ER16-200 ER20-100
--ER20-150
--ER11-100 ER11-150 ER11-200 ER16-100 ER16-150 ER16-200 ER20-100
--ER20-150
--ER20-200
--ER25-100
--ER25-150
--ER16-100
--ER16-150
--ER16-200
--ER20-100
--ER20-150
--ER20-200
--ER25-100
--ER25-150
--ER25-200
--ER32-100
--ER32-150
--ER32-200
--ER20-150
--ER20-200
--ER25-150
--ER25-200
--ER32-150
--ER32-200
-Specification
-B
-L
--ER16-70A /100A
-100/130
--ER20-70A/100A
-100/130
--ER20-70A/100A
-100/130
--ER11-70A/100A
--ER11-70A/100A
-100/130
-100/130
--ER16-70M/100M
-100/130
--ER20-70M/100M
-100/130
--ER20-70M/100M
-100/130
-L2
-70/13
-30
-30
-0
-70/13
-70/130
-0
-70/130
-70/130
-30
-30
-30
+端 ⼝ 跳 动μ5以m内
+D
+SYNCHRONOUS SOLUTION
+ER EXTENSION HOLDER
+ER
+PRECISION MILLING HOLDER
+Specification Clamping range D Cc Li L Nut Collet Spanner
+C12, -ER11-50 42 | 24.0 | 50
+-ER11-100 24.0 | 100
+C16 -ER11-50 2.0-7 19 16.6 50 ER11A ER11 0.55
+-ER11-100 16 | 16.6 | 100
+-ER11-150 16.6 | 150
+-ER16-100 35.0 | 100
+-ER16-150 3.0~10 28 16 35.0 | 150 ERI6A ER16 1.85
+-ER16-200 35.0 | 200
+-ER20-100 40.0 | 100
+-ER20-150 3.0~13 34 16 | goo | 450 ER20A ER20 12
+620] -ER11-100 16.6 | 100
+-ER11-150 2.0~7 19 20 | 16.6 | 150 ER11A ER11 1.6
+-ER11-200 16.6 | 200
+-ER16-100 35.0 | 100
+-ER16-150 3.0~10 28 20 | 35.0 | 150 ER16A ER16 1.65
+-ER16-200 35.0 | 200
+-ER20-100 40.0 | 100
+-ER20-150 3.0~13 34 20 | 40.0 | 150 ER20A ER20 3.15
+-ER20-200 40.0 | 200
+-ER25-100 47.0 | 100
+-ERI5-150 3.0~16 42 20 | 479 | i590 | ER25UM ER25 3.9
+|C25, -ER16-100 35.0 | 100
+-ER16-150 3.0~10 28 25 | 35.0 | 150 ERI6A ER16 3.9
+-ER16-200 40.0 | 200
+-ER20-100 40.0 | 100
+-ER20-150 3.0~13 34 25 | 40.0 | 150 ER20A ER20 1.65
+-ER20-200 40.0 | 200
+-ER25-100 47.0 | 100
+-ER25-150 3.0~16 42 25 | 47.0 | 150 | ER25UM ER?5 3.15
+-ER?25-200 47.0 | 200
+-ER32-100 50.0 | 100
+-ER32-150 3.0~20 50 25 | 50.0 | 150 | ER32UM ER32 1.65
+-ER32-200 50.0 | 200
+C32 -ER20-150 ~ER20-200 3.0-13 34 32 40.0 40.0 || 200 150 ER20A ER20 3.15
+-ER25-150 47.0 | 150
+-ER25-200 3.0~16 42 32 | 479 | 209 | ER25UM ER?25 4.0
+-ER32-150 ~ER32-200 3.0~20 50 32 50.0 500 || 200 150 | ER32UM ER32 2.95
+1, Tool body is high precision.
+2, High concentricity, stable run-out accuracy to enhance fine machining surface roughness.
+3. Finish surface with long durability.
+©®| PAGE 41
+PRECISION MILLING HOLDER
+SYNCHRONOUS SOLUTION
+ER EXTENSION HOLDER
+ER (M/UM)
+Specification L L2 Li D di Clamping range
+C10) Sy 4 -ER8-100M aes see 115.5 5 = 100 AEE 15.5 12 10 0.5~5.0 5
+Sey 0 -ER11-100M -ERII=450 124 ona 100 156 24 16 12 1.0~7.0 _
+C16 -ER16-100M 135 100
+-ER16-150M 185 150 16
+-ER16-200M 235 200 on an ews
+C20 -ER16-100M 135 100 _— “« uo
+-ER16-150M 185 150 20
+-ER16-200M 235 200
+-ER20-100M 140 100
+-ER20-150M 190 150 40 28 20 1.0~13.0
+-ER20-200M 240 200
+C25 -ER25-100UM 145 100 25
+-ER25-150UM 295 150
+32] =ER25-100UM 145 100 45 42 20-1650
+—ER25-150UM 195 150 32
+-ER32-100UM 150 100
+-ER32-150UM 200 150 50 50 32 3.0~20.0
+-ER32-200UM 250 200
+Wa SSSn\ 4
+il
+a | | L2 - | .
+ER EXTENSION HOLDER
+ER
 Size
-a
-D
-d
-19
-28
-20
-19
-34
-20
-24
-25
-19
-20
-29
-25
-19
-20
-19
-20
-24
-25
-Feature
-1、Tool body is high precision.
-3、Finish surface with long durability.
-2、High concentricity, stable run-out accuracy to enhance fine machining surface roughness.
-
-PAGE 42
-8º
-Φd1
-Φd2
-L
-l2
-L
-Φd
-SK HIGH PRECISION COLLET
-0.005MM
-SK
-SK10
-SK13
--1
--2
--3
--4
--5
--6
--2
--2.5
--3
--3.5
--4
--4.5
--5
--5.5
--6
--6.5
--7
--7.5
--8
--8.5
--9
--9.5
--10
--2
--2.5
--3
--3.5
--4
--4.5
--5
--5.5
--6
--6.5
--7
--7.5
--8
--8.5
--9
--9.5
--10
+Specification L L? 1 a D d
+BO -ER16-70A/100A 100/130 70/130 30 19 28 20
+-ER20-70A/100A 100/130 19 34 20
+70/130 30
+-ER20-70A/100A 100/130 24 25
+-ER11-70A/100A 100/130 19 20
+-eR11-70a100a | 100/130 | /°/190 80 29 9 25
+—ER16-70M/100M 100/130 70/130 30 19 22 20
+—-ER20-70M/100M 100/130 70/130 30 19 28 20
+—ER20-70M/100M 100/130 24 25
+1. Tool body is high precision.
+. Finish surface with long durabaityHigh concentricity, stable run-out accuracy to enhance fine machining surface roughness.
+©®| PAGE 42Specificat
+ion
 Specificat
 ion
-Clamping range
+Specificat
+ion
+SK6
+SK10
+SK16
+SK20
+Specificat
+ion
+SK6 3
+SK10
+SK13
+-1 SK16 SK20
+-2
+-3
+-4
+-5
+-6
+-2
+-2.5
+-3
+-3.5
+-4
+-4.5
+-5
+-5.5
+-6
+-6.5
+-7
+-7.5
+-8
+-8.5
+-9
+-9.5
+-10
+-2
+-2.5
+-3
+-3.5
+-4
+-4.5
+-5
+-5.5
+-6
+-6.5
+-7
+-7.5
+-8
+-8.5
+-9
+-9.5
+-10
 0.9~1.0
 1.8~2.0
 2.8~3.0
@@ -484,7 +583,6 @@ Clamping range
 8.5~9.0
 9.0~9.5
 9.5~10.0
-SK16
 -3
 -3.5
 -4
@@ -512,7 +610,48 @@ SK16
 -15
 -15.5
 -16
+d
+10.4
+15.5
+24.6
+29
+d1
+7.5
+12
+18.8
+22.5
 L
+25
+30.5
+45
+54
+-4
+-5
+-6
+-7
+-8
+-9
+-10
+-11
+-12
+-13
+-14
+-15
+-16
+-18
+-19
+-20
+L1
+3.8
+5.0
+8.0
+8.0
+L2
+17.4
+21.3
+32
+46
+Clamping range Clamping range
 2.75~3.0
 3.0~3.5
 3.5~4.0
@@ -540,16 +679,7 @@ L
 14.5~15.0
 15.0~15.5
 15.5~16.0
-Specificat
-ion
-SK6
-SK10
-SK16
-SK20
-ion
-SK20
--3
-2.5~3.0
+- 2.5~3.0
 3.5~4.0
 4.5~5.0
 5.5~6.0
@@ -566,54 +696,34 @@ SK20
 17.5~18.0
 18.5~19.0
 19.5~20.0
--4
--5
--6
--7
--8
--9
--10
--11
--12
--13
--14
--15
--16
--18
--19
--20
+Specificat
+ion
 ER8
-4d
-（MAX.mm）
-0.01
-0.005
-d1
-L
-L1
-L2
-10.4
-15.5
-24.6
-29
-7.5
-12
-18.8
-22.5
-25
-30.5
-45
-54
-3.8
-5.0
-8.0
-8.0
-17.4
-21.3
-32
-46
-0.02
-0.01
+ER11
+ER16
+ER20
+ER25
+ER32
+ER40
+D L R
+8.5 13.5 0.5
 0.5
+1.0
+1.0
+1.0
+1.0
+1.0
+11.5
+17
+18
+27.5
+21 31.5
+26
+33
+34
+40
+41 46
+ER8 0.5 ER11 ER16
 1.0
 1.5
 2.0
@@ -633,31 +743,6 @@ L2
 3.5~4.0
 4.0~4.5
 4.5~5.0
-8.5 13.5
-11.5
-18
-17
-27.5
-21 31.5
-26 34
-33 40
-41 46
-0.5~1.0
-1.0~2.0
-2.0~3.0
-3.0~4.0
-4.0~5.0
-5.0~6.0
-6.0~7.0
-7.0~8.0
-8.0~9.0
-9.0~10.0
-10.0~11.0
-12.0
-13.0
-11.0~12.0
-12.0~13.0
-ER25
 1.0
 2.0
 3.0
@@ -672,7 +757,6 @@ ER25
 4.0~5.0
 5.0~6.0
 6.0~7.0
-ER16
 1.0
 2.0
 3.0
@@ -683,34 +767,7 @@ ER16
 8.0
 9.0
 10.0
-Specification Clampingrange
-Specification Clampingrange
-1.0
-2.0
-3.0
-4.0
-5.0
-6.0
-7.0
-8.0
-9.0
-10.0
-11.0
-ER11
-2.0
-3.0
-4.0
-5.0
-6.0
-7.0
-8.0
-9.0
-10.0
-11.0
-12.0
-13.0
-14.0
-15.0
+0.5~1.0
 1.0~2.0
 2.0~3.0
 3.0~4.0
@@ -720,16 +777,8 @@ ER11
 7.0~8.0
 8.0~9.0
 9.0~10.0
-10.0~11.0
-11.0~12.0
-12.0~13.0
-13.0~14.0
-14.0~15.0
-16.0
-15.0~16.0
-ER32
-Feature
-2.0
+Specification Clampingrange
+ER32 2.0 ER40
 3.0
 4.0
 5.0
@@ -745,6 +794,9 @@ Feature
 15.0
 16.0
 17.0
+18.0
+19.0
+20.0
 1.0~2.0
 2.0~3.0
 3.0~4.0
@@ -761,61 +813,9 @@ Feature
 14.0~15.0
 15.0~16.0
 16.0~17.0
-18.0
-19.0
-20.0
 17.0~18.0
 18.0~19.0
 19.0~20.0
-1、High precision with powerful clamping force.
-2、Stable run-out accuracy to enhance fine machining surface roughness.
-3、Finish surface with long durability.
-
-1、 High precision with powerful clamping force.
-2、 Stable run-out accuracy to enhance fine machining surface roughness.
-3、Finish surface with long durability.
-
-PAGE 43
-L
-R
-0.5
-0.5
-1.0
-1.0
-1.0
-1.0
-1.0
-ER
-ER20
-d
-Feature
-D
-ER HIGH PRECISION COLLET
-Specificat
-Clamping range
-Φd
-SK6
-ER8
-ER11
-ER16
-ER20
-ER25
-ER32
-ER40
-D
-4d
-Specificat
-ion
-Specificat
-ion
-30º
-8º
-l1
-PRECISION MILLING HOLDER
-Φd ΦD
-PRECISION MILLING HOLDER
-PAGE 44
-ER40
 2.0
 3.0
 4.0
@@ -841,6 +841,45 @@ ER40
 24.0
 25.0
 26.0
+PAGE 43 PAGE 44
+PRECISION MILLING HOLDER PRECISION MILLING HOLDER
+1、 High precision with powerful clamping force.
+2、 Stable run-out accuracy to enhance fine machining surface roughness.
+3、 Finish surface with long durability.
+Specification Clampingrange
+L
+4d
+0.005MM
+l1 l2
+L
+8
+4d
+（ MAX.mm）
+0.005
+0.01
+0.02
+0.01
+L
+30º
+º
+8
+D
+º
+SK
+ER
+ER20 1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+7.0
+8.0
+9.0
+10.0
+11.0
+12.0
+13.0
 0.5~1.0
 1.0~2.0
 2.0~3.0
@@ -851,86 +890,225 @@ ER40
 7.0~8.0
 8.0~9.0
 9.0~10.0
-PRECISION MILLING HOLDER
-PRECISION MILLING HOLDER
-30º
-M
-M
-M
-L
-L
-L
-D
-D
-L
-L
-M
-M
-D
-D
-D
-D
-M
-L
-HIGH PRECISION CLAMPING NUT
+10.0~11.0
+11.0~12.0
+12.0~13.0
+2.0
+3.0
+4.0
+5.0
+6.0
+7.0
+8.0
+9.0
+10.0
+11.0
+12.0
+13.0
+14.0
+15.0
+16.0
+1.0~2.0
+2.0~3.0
+3.0~4.0
+4.0~5.0
+5.0~6.0
+6.0~7.0
+7.0~8.0
+8.0~9.0
+9.0~10.0
+10.0~11.0
+11.0~12.0
+12.0~13.0
+13.0~14.0
+14.0~15.0
+15.0~16.0
+Φd1
+Φd2
+ΦdΦD
 Φd
-d1
-D
+SK HIGH PRECISION COLLET
+ER HIGH PRECISION COLLET
+ER25
+1、 High precision with powerful clamping force.
+2、 Stable run-out accuracy to enhance fine machining surface roughness.
+3、 Finish surface with long durability.
+F e a t u r e
+F e a t u r e
+Φd
+SYNCHRONOUS SOLUTION
+e&
+9!4d
+' v4
+Gee 0.005MM
+Specification | Clampingrange
+| SK6 | 1 0.9-1.0
+-2 1.8-2.0
+-3 2.8-3.0
+=4 3.5~4.0
+5 4.5-5.0
+-6 5.5-6.0
+-2 1.75-2.0
+| SK10| -25 | 2.25-25
+-3 2.75-3.0
+-35 | 30-35
+-4 3.5~4.0
+45 | 40-45
+-5 4.5~5.0
+55 | 5.0-55
+6 5.5~6.0
+65 | 60-65
+7 6.5~7.0
+-75 7.0-7.5
+-8 7.5~8.0
+-85 8.0-8.5
+-9 8.5~9.0
+-9.5 9.0~9.5
+-10 9,5~10.0
+-2 1.75-2.0
+ski3| -25 2.25-25
+-3 2.75~3.0
+-3.5 3.0-3.5
+-4 3.5~4.0
+-4.5 4.0~4.5
+-5 4.5~5.0
+55 5.0-5.5
+-6 5.5-6.0
+65 6.0-6.5
+-7 6.5~7.0
+75 7.0-7.5
+-8 7.5-8.0
+-85 8.0-8.5
+-9 8.5~9.0
+-9.5 9,0-9.5
+-10 9.5~10.0
+PRECISION MILLING HOLDER PRECISION MILLING HOLDER
+e&
+SYNCHRONOUS SOLUTION
+1. High precision with powerful clamping force.
+2, Stable run-out accuracy to enhance fine machining surface roughness.
+3. Finish surface with long durability.
+©®| PAGE 43
+a—
+D | L JRANGE
+Specification
+ER8 | 8.5/13.5] 0.5
+ER11 [11.5] 18 | 0.5
+ER16 | 17 |27.5] 1.0
+ER20 | 21 |31.5] 1.0
+SK HIGH PRECISION COLLET ER25 | 26 | 34 1.0
+S K ER32 | 33 | 40 1.0
+ER40 | 41 | 46 1.0
+ER HIGH PRECISION COLLET
+Specification | Clamping range Specification | Clampingrange E R
+-3.5 cies = ease Specification | Clamping range Specification | Clampingrange Specification) Clamping range
+35-4.0 5 45-50 0.5 0.5 ER1] fm Om ER16 MeO 0.5~1.0
+-4.5 40-45 5 5.5-6.0 1.0 0.5~1.0 2.0 1.0~2.0 2.0 1.0~2.0
+45-50 = 65-7.0 4 1.0~1.5 3.0 2.0~3.0 3.0 2.0~3.0
+556.0 ~g 85-90 2.5 2.0-2.5 5.0 4.0-5.0 5.0 4.0~-5.0
+6.5 6.0-6.5 -10 9.5-10.0 3.0 2.5-3.0 6.0 5.0~6.0 6.0 5.0~6.0
+, . : 3.5 3.0-3.5 7.0 6.0-7.0 7.0 6.0~-7.0
+6.5-7.0 “11 10.5-11.0 0.01 40 35-40 3.0 70-80
+75 7.0-7.5 -12 11.5-12.0 3.005 | 0.02 45 40-45 9.0 8.0-9.0
+LeB0 —18 a 0.01 5.0 | 4.5~5.0 10.0 | 9.0~10.0
+8.5 8.0-8.5 -14 13.5-14.0
+8.5-9.0 =15 14.5-15.0
+-95 9.0-9.5 -16 15.5-16.0
+-10 9.5-10.0 -18 17.5-18.0
+-10.5 10.0-10.5 -19 18.5-19.0 :
+-11 10.5-11.0 -20 19.5-20.0 Specification | Clamping range Specification | Clamping range Specification | Clamping range Specification | Clamping range
+115 11.0-11.5 1.0 | 0.5~1.0 2.0 | 1.0-2.0 }ER32| 2.0 | 1.0-2.0 ERGO] 2.0 | 1.0-2.0
+712 11,.5-12.0 }ER2O 2.0 1.0-2.0 ERS) 3.0 2.0~3.0 3.0 2.0~3.0 3.0 2,.0~3.0
+—12.5 12.0-12.5 3.0 2.0~3.0 4.0 3.0-4.0 4.0 3.0-4.0 4.0 3.0-4.0
+-13 12.5-13.0 4.0 3.0~4.0 5.0 4.0~5.0 5.0 4.0~5.0 5.0 4.0~-5,0
+-13.5 13.0-13.5 5.0 4.0-5.0 6.0 5.0~6.0 6.0 5.0-6.0 6.0 5.0~6.0
+-14 13.5-14.0 6.0 5.0~6.0 7.0 6.0~7.0 7.0 6.0-7.0 7.0 6.0-7.0
+-14.5 14.0-14.5 7.0 6.0~7.0 8.0 7.0-8.0 8.0 7.0-8.0 8.0 7.0-8.0
+-15 14.5-15.0 8.0 7.0~8.0 9.0 8.0~9.0 9.0 8.0~9.0 9.0 8.0-9.0
+15.5 15.0-15.5 9.0 8.0~9.0 10.0 9.0~10.0 10.0 9.0~-10.0 10.0 9.0-10.0
+-16 15.5-16.0 10.0 9.0~10.0 11.0 10.0~11.0 11.0 10.0~11.0 11.0 10.0-11.0
+11.0 10.0~11.0 12.0 11.0~12.0 12.0 11.0-12.0 12.0 11.0-12.0
+12.0 11.0-12.0 13.0 12.0~13.0 13.0 12.0~13.0 13.0 12.0-13.0
+ee d L Li L2 13.0 12.0~13.0 14.0 13.0~14.0 14.0 13.0~14.0 14.0 13.0~14.0
+Speciication 15.0 | 14.0~15.0 15.0 | 14.0-15.0 15.0 | 14.0~15.0
+SK6 10.4 25 3.8 7.4 16.0 15.0~16.0 16.0 15.0~16.0 16.0 15.0-16.0
+SK10 15.5 30,5 5.0 21.3 17.0 16.0-17.0 17.0 16.0-17.0
+ale = 45 8.0 32 18.0 | 17.0~-18.0 18.0 | 17.0~18.0
+skz0 28 o4 8.0 46 20.0 19.0 || 18.0~19.0 19.0-20.0 20.0 19.0 || 18.0-19.0 19.0-20.0
+1, High precision with powerful clamping force. 21.0 20.0~21.0
+: . 22.0 21.0-22.0
+2, Stable run-out accuracy to enhance fine machining surface roughness. 33.0 22.0~23.0
+3, Finish surface with long durability. 24.0 23.0-24.0
+25.0 24.0-25.0
+26.0 25.0-26.0Specification S i z e
+, , ,
+, ,
+, ,
+1/4,5/16,3/8,1/2,3 4,5/8,1"
+, ,
 d2
-4d
-Specification
-(MAX.mm）
-l1
+25
+30
+37.5
+37.5
+47
+47
+L1
+49
+56
+67.4
+67.4
+76
+76
+3,4,5,6,8 10 12 16
+6,8,10,12 16 20
+6,8,10,12 16 20 25 15,19,24
+/
+D 20 253232 42 42
 L
-AA
-0.005
-C POWER CHUCK COLLET
-0.01
-ER-A
-ER-
-Specification
-D
+52.5
+59
+65
+65
+80
+80
+6,8,10,12,16,20,25,32,15,19,24
+1/4,5/16,3/8,1/2,5/8,3/4,1"
 C20
 C25
 C32
 C42
-Size
-d2
+PAGE 45 PAGE 46
+PRECISION MILLING HOLDER PRECISION MILLING HOLDER
+Φd
+l1
 L
-L1
-49
-3,4,5,6,8, 10, 12, 16
-20
-25
-52.5
-6,8,10,12, 16, 20
-25
-32
-32
-30
-37.5
-37.5
-59
-56
-65
-67.4
-67.4
-42
-47
-65
-80
-76
-6,8,10,12, 16 , 20, 25, 15,19,24
-/ 4,5/8,1"
-1/4,5/16,3/8,1/2,3
-6,8,10,12,16,20,25,32,15,19,24
-1/4,5/16,3/8,1/2,5/8,3/4,1"
-42
-47
-80
-76
+4d
+30º
+L
 M
-ER-UM
+M
+L
+M
+L
+M
+L
+M
+L
+M
+L
+A A
+( M A X . m m ）
+0 . 0 0 5 0 . 0 1
+D
+D
+D D D D D
+d1
+d2
+1、 High precision with powerful clamping force.
+2、 Stable run-out accuracy to enhance fine machining surface roughness.
+3、 Finish surface with long durability.
+Specification
 ER11A
 ER16A
 ER20A
@@ -943,14 +1121,21 @@ HER25UM
 HER32UM
 ER40UM
 Specification
-GER
 GER16
 GER20
 GER25
 GER32
 Specification
-D
-L
+1、
+2、
+3、
+27 35
+40
+48
+D16
+22
+28
+35
 19
 28
 34
@@ -962,6 +1147,7 @@ L
 42
 50
 63
+D
 11.5
 17
 19.0
@@ -970,31 +1156,39 @@ L
 18
 19.0
 20.
-0
-20.
-0
-23
+02
+0.
+02
+3
 26
-D
-M
 L
-27 35
-40
-48
-Feature
-D
-1、 High precision with powerful clamping force.
-2、Stable run-out accuracy to enhance fine machining surface roughness.
-3、Finish surface with long durability.
-
-28
-35
-Feature
-1、Thermal treatment process improve the clamping precision and stability.
-2、 Finish surface with long durability.
-3、Pre-balanced is G2.5 25000rpm for enhanced run-out accuracy.
-
-PAGE 45
+M14X0.7
+5M
+22X1.5
+M25X1.5
+M10X0.7
+5M
+13X0.7
+5M
+19X1.0
+M24X1.0
+M32X1.0
+M32X1.5
+M40X1.5
+M50X1.5
+TM22X1.5
+TM26X1.5
+TM32X1.5
+TM40X1.5
+M
+GER16
+GER20
+GER25
+GER32
+ER11MS
+ER16MS
+ER20MS
+ER25MS
 ER11A
 ER16A
 ER20A
@@ -1006,116 +1200,80 @@ ER25M
 ER25U M
 ER32UM
 ER40UM
-TM22X1.5
-TM26X1.5
-TM32X1.5
-TM40X1.5
-GER16
-GER20
-GER25
-GER32
-ER11MS
-ER16MS
-ER20MS
-ER25MS
-M
-16 22
-ISO-ER
-M14X0.7
-5
-M22X1.5
-M25X1.5
-M10X0.7
-5
-M13X0.7
-5
-M19X1.0
-M24X1.0
-M32X1.0
-M32X1.5
-M40X1.5
-M
-M50X1.5
-PAGE 46
-PRECISION MILLING HOLDER
-PRECISION MILLING HOLDER
-FITTING
-C/OZ
-ERUM
-GER/GC/GSK
-product name
-Spe
-c
-Z
-ElectroZ-axis Electro- Z O P - 5 0 o p t i c a l
-optical Zero Setter
-A
-A
-Ite
-m
-A
-L
-L
-L
-ERA
+GER
+ER-A
 ERM
-product name
-ISO
-Ite
-m
-Spe
-c
-Z
-Scale with
-Z-axis Scale ZeroZ D I - 5 0 m a g n e t i c
-Setter(magnetic)
-A
-A
-A
-L
-L
-L
-product name
-Ite
-m
-SPANNER
-C
-OZ
-Specificat
-ion
-A
-L
-C20
+C POWER CHUCK COLLET
+HIGH PRECISION CLAMPING NUT
+F e a t u r e
+F e a t u r e
+D L M
+M
+ER-UM
+ISO-ER
+Thermal treatment process improve the clamping precision and stability.
+Finish surface with long durability.
+Pre-balanced is G2.5 25000rpm for enhanced run-out accuracy.
+ANTMI
+PRECISION MILLING HOLDER PRECISION MILLING HOLDER
+; S)
+{ Lee J ® 4d Q
+g ] | S fan}B
+: U___Y (MAX.mm)
+fn |
+L aa | 0.005 | 9.01 C POWER CHUCK COLLET
+Size
+Specification D d? L L1
+3,4,5,6,8,10,12,16 20 25 52.5 49
+6,8,10,12,16,20 25 20 59 56
+| C32 6,8,10,12,16,20,25,15,19,24 32 37.5 65 67.4
+1/4,5/16,3/8, 1/2,3/4,5/8,1" 32 37.5 65 67.4
+| C42, 6,8,10,12,16,20,25,32,15,19,24 42 47 80 76
+1/4,5/16,3/8, 1/2,5/8,3/4,1" 42 47 80 76
+1, High precision with powerful clamping force.
+2, Stable run-out accuracy to enhance fine machining surface roughness.
+3, Finish surface with long durability.
+©®| PAGE 45
+ANMTI
+K<
+[SO-ER
+HIGH PRECISION CLAMPING NUT
+Ae D L M
+ER11A 19 11.5 M14X0.75 ER11A
+ER16A 28 17 M22x%1.5 ER16A
+ER20A 34 19.0 M25X1.5 ER20A
+ER8M 12 10.8 M10X0.75 ER8M
+ER11M 16 12.0 M13X0.75 ER11M
+HER16M 22 18 M19X1.0 ER16M
+ER20M 28 19.0 M24%X1.0 ER20M
+ER25M 35 20.0 M32%1.0 ER25M
+HER2SUM 42 20.0 M32X1.5 ER25U M
+HER32UM 50 23 M40X1.5 ER32UM
+ER40UM 63 26 M50X71.5 ER40UM
+se D L M
+GER16 27 24.7 TM22x1.5 GER16
+GER20 35 25.9 TM26X1.5 GER20
+GER25 40 25.9 TM32%1.5 GER25
+GER32 48 26.6 TM40X1.5 GER32
+Spactical D L M
+ER11MS 16 iiss) M13X0.75 ER11MS
+ERI6MS 22 17 M19X1.0 ER16MS
+ER20MS 28 19 M24xX1.0 ER20MS
+ER25MS 35 23 M30X1.0 ER25Ms
+Feature
+1. Thermal treatment process improve the clamping precision and stability.
+2. Finish surface with long durability.
+3. Pre-balanced is G2.5 25000rpm for enhanced run-out accuracy.
+©®| PAGE 46C20
 C25
 C32
 C42
 OZ25
-50-55
-56-61
-68-73
-8896
-55-60
-245
-270
-290
-340
-250
-A
-120
-140
-160
-75 95
-117
-129
-142
-210
-250
-290
 Specifi
 cation
-A
-M
-UM
+ISO20
+ISO25
+ISO30
 ER11A
 ER16A
 ER20A
@@ -1128,23 +1286,13 @@ ER25UM
 ER32UM
 ER40UM
 Specificatio
-n
-GE
-R
-GER16,GER16MINI
+n G
+ER16,GER16MINI
 GER20,GER20MINI
 GER25,GER25MINI
 GER32 GSK6 GSK10
 GSK16 GSK20
 Specification
-GSK
-ISO
-0.17
-0.2
-0.3
-0.42
-0.24
-L
 17.2
 25.
 2
@@ -1157,15 +1305,6 @@ L
 42
 50
 64
-L
-150
-160
-180
-180
-110
-150
-170
-210
 A
 30,
 27
@@ -1178,15 +1317,60 @@ A
 27
 40
 48
-L
 A
-ISO20
-ISO25
-ISO30
-（KGS）
-Spindle Test
-Bar
-（KGS）
+18.2
+27
+40
+50-55
+56-61
+68-73
+88-
+96
+55-60
+A
+175
+175
+22
+2 0
+45
+270
+290
+340
+250
+L12
+0
+140
+160
+75 95
+117
+129
+142
+210
+250
+290
+L15
+0
+160
+180
+180
+110
+150
+170
+210
+L
+0.24
+0.30
+0.35
+0.70
+0.11
+0.29
+0.39
+0.38
+0.17
+0.2
+0.3
+0.42
+0.24
 0.10
 0.15
 0.19
@@ -1198,736 +1382,895 @@ Bar
 0.15
 0.28
 0.42
-（KGS）
-0.24
-0.30
-0.35
-0.70
-0.11
-0.29
-0.39
-0.38
-（KGS）
-18.2
-27
-40
-175
-175
-22
-0
-Feature
 0.11
 0.12
 0.15
-1、Thermal treatment process improve the clamping precision and stability.
-2、Finish surface with long durability.
-
-PAGE 47
-PAGE 48
+A L
+Specificat
+ion
+A M
+UM
+C OZ ISO
+GE
+R G
+SK
+（KGS）
+（KGS）
+（KGS）
+（KGS）
+product name
+product name
+product name
+Z
+Z-axis Electrooptical Zero Setter
+Z
+Z-axis Scale Zero
+Setter(magnetic)
+Spindle Test
+Bar
+Ite
+m
+B T 3 0
+B T 4 0
+B T 5 0
+Z D I - 5 0
+Ite
+m Item
+Z O P - 5 0
+Spe
+c
+Spe
+c
+E l e c t r o -
+o p t i c a l
+S c a l e w i t h
+m a g n e t i c
+L e n
+g t h
+PAGE 47 PAGE 48
+PRECISION MILLING HOLDER PRECISION MILLING HOLDER
+A
+A
+L
+A
+A
+L
+L
+A A
+L L
+ERA
+C/OZ
+ERM
+ERUM
+ISO
+GER/GC/GSK
+FITTING
+SPANNER
+L
+1、 Thermal treatment process improve the clamping precision and stability.
+2、 Finish surface with long durability.
+F e a t u r e
+SYNCHRONOUS SOLUTION
+FITTING
+C/OZ ERUM
+PRECISION MILLING HOLDER
+GER/GC/GSK
+ERA ERM
+A —S a
+L
+SPANNER
+Specification A L (KGS)
+[a] C20 50-55 245 0.17
+C25 56-61 270 0.2
+C32 68-73 290 0.3
+oz | C42 88-96 340 0.42
+0725 55-60 250 0.24
+Specification A L (KGS)
+Zz ERIIA Tr2 720 0.10
+ERI6A 25.2 140 0.15
+ER20A 30.3 160 0.19
+Mu ER8M 12 75 0.05
+ER11M 16 95 0.04
+ER16M 22 117 0.06
+ER20M 28 129 0.07
+ER25M 35 142 0.09
+| UM | ER25UM 42 210 0.15
+ER32UM 50 250 0.28
+ER40UM 64 290 0.42
+Specification A L (KGS)
+GER GER16,GERT6MINI 30,27 750 0.24
+GER20,GER20MINI 35,30 160 0.30
+GER25,GER25MiINI 40,35 180 0.35
+GSK GER32 48 180 0.70
+GSK6 19.5 110 0.11
+GSK10 27 150 0.29
+GSK16 40 170 0.39
+GSK20 48 210 0.38
+Specification A L (KGS)
+} ISO 1SO20 18.2 115 0.11
+ISO25 27 175 0.12
+ISO30 40 220 0.15
+1. Thermal treatment process improve the clamping precision and stability.
+2, Finish surface with long durability.
+PRECISION MILLING HOLDER
+product name
+Z-axis Electrooptical Zero Setter
+product name
+Z-axis Scale Zero
+Setter(magnetic)
+product name
+Spindle Test Bar
+product name
+Modular Concentricity
+Test Gauge
+product name
+epee optical
+Edge Fi
+product name
+Mechanical E
+Pnder/ani-Mazneti)
+product name
+Ceramic Edge Finder
+Item
+ZOP-50
+Item
+ZDI-50
+Item
 BT30
 BT40
 BT50
-Len
-gth
-PRECISION MILLING HOLDER
-L3
-G
-45
-S
-R1
-º
-L9
-D5
-0.01A
-L5
-RO.5 L8
-G2
-PRECISION MILLING HOLDER
-CO.5
-E2
-C1
-L2
-A
-L7L4
-θ
-PULL STUD
-L1
-BT PULL STUD
-0.01A
-BT
-L2
-W
-BT40/BT50 MAZAK
-L1
-尺 寸 Size
-43
-43
-43
-43
+Item
+BT30
 BT40
-60
-60
-60
-60
-85
 BT50
-85
-85
-90L
-71
-85
-E2
-D6
-12.5 M12 9.5 1.75
-12.5 M12 9.5 1.75
-12.5 M12 9.5 1.75
-12.5 M12 9.5 1.75
-17
-17
-17
-17
-25
-M16 13
-M16 13
-M16 13
-M16 13
-M24 20
-2
-2
-2
-2
-3
-25
-25
-25
-25
-M24
-M24
-M24
-M24
-3
-3
-3
-3
-20
-20
-20
-20
-L4
-L7
-D3
-G1
-L5
-1
-1
-1
-1
-4
-4
-4
-4
-3
-3
-3
-3
-16.5
-16.5
-16.5
-16.5
-2
-2
-2
-2
-5
-5
-5
-5
-1
-1
-1
-1
+ltem
+EOP-20
+ltem
+MOP-10
+ltem
+COP-10
+Spec | Height
+Electrooptical 50
+Spec | Height
+Scale with
+magnetic 50
+.
+200L/250L
+250L/300L/350L
+315L/350/400L
+MCT30
+McCT40
+MCTS0
+a20 160
+e10 160
+a0 160
+Shank Diameter | Length
+Shank Diameter | Length
+SYNCHRONOUS SOLUTION
+Gauge head
+010
+Gauge head
+010
+Gauge head
+a10型 号
+Specification
+尺 ⼨ S i z e
+L1 D4 D5 D6 E2 G2
+1111 1111
 1.5
-5
-5
-5
-5
-8
-4
-4
-4
-4
-5
+1.5
+1.5
+1.5
+1.5
+L4
+4444 55558 8888
+L7
+3333 44445 5555
+D3
+16.5
+16.5
+16.5
+16.5
 23
 23
 23
 23
 38
-3
-3
-3
-3
-5
-6
-6
-6
-6
-10
-1.5
-1.5
-1.5
-1.5
-8
-8
-8
-8
-5
-5
-5
-5
 38
 38
 36
 38
-5
-5
-5
-5
+G1
+2222 33335 5555
+L5
+5555 6666
 10
 10
 10
 10
-0.01 A
-S
-D2
-L2
-L3
-L9
-13
-13
-13
-13
+10
+D1
 11
 11
 11
 11
-7
-7
-7
-7
-23
-23
-23
-23
-18
-18
-18
-18
-2.5
-2.5
-2.5
-2.5
-30
-45
-60
-90
-19
 15
 15
 15
 15
 23
-10
-10
-10
-10
-17
-35
-35
-35
-35
-45
-28
-28
-28
-28
-35
-3
-3
-3
-3
-5
-30
 23
 23
 24
 23
+D2
+7777
+10
+10
+10
+10
+17
 17
 17
 18
 17
-45
-45
-35
-35
-35
-35
-5
-5
-5
-5
-45
-60
-19
-19
-19
-30
-30
-30
-30
-30
-31
-45
-45
-60
-90
-30
-Specification
-BT4
-0
-BT5
-0
-MAZAK
-MAZAK
-L1
 L2
-D1
-D2
-D5
-44.1
-19.1
-25.2
-18.8
-29
-12.45
-20.83
-7
-10
-65.2
-D2
-D1
-G
-D T
-D1
-D3
-D
-PULL STUD
-L
-Specificat
-ion
-Size
-Fig
-L
-G1 RO.5
-B
-B
-54
-74
-26
-34
-57
-74
-60º
-D4
-C1
-T
-0
-DIN69872A/B
-Fig.2
-AA
-A
-M16
-M24
-D4
-L4
-Fig.1
-S
-G
-19
-30
-D3
-L
-R1
-W
-G
-D2
-D4
-L4
-90
-90
-L9
+23
+23
+23
+23
+35
+35
+35
+35
+45
+45
+45
 L3
-L5
-RO.5 L8
-D6
-D5
-E2
-0
-D1
-G2
-CO.5
-尺 寸 Size
-型号
-G2
-D3
-BT30
-D5
-D4
-D1
-L1
-D2
-型号
-Specification
-D3
-D4
-D1
-D1
-D3
-60º
-D2
-D
-6
-D
-4
-D5
-G1RO.5
-D
-L4
-T
-D1
-19
+18
+18
+18
+18
 28
-14
-21
-7.5
-11.5
-26
-19
-14
--
-34
 28
-21
--
-L2
-L 7 L4
-L1
-0.01 A
-D1
-BT PULL STUD WITH COOLANT HOLE
-BT
-型号
-Specification
+28
+28
+35
+35
+35
+35
+35
+L9
+2.5
+2.5
+2.5
+2.5
+33335 5555
 BT30
 BT40
 BT50
+43
+43
+43
+43
+60
+60
+60
+60
+85
+85
+85
+12.5 M12 9.5 1.75
+12.5 M12 9.5 1.75
+12.5 M12 9.5 1.75
+12.5 M12 9.5 1.75
+17 M16 13
+17 M16 13
+17 M16 13
+17 M16 13
+25 M24 20
+25 M24 20
+25 M24 20
+25 M24 20
+25 M24 20
+22223 3333
+S
+13
+13
+13
+13
+19
+19
+19
+19
+30
+30
+30
+30
+30 31
+45
+0
 30
 45
 60
 90
-COOLANT
-COOLANT
-COOLANT
-COOLANT
 30
 45
 60
 90
 30
-COOLANT
-COOLANT
-COOLANT
-COOLANT
-COOLANT
+45
+60
+90
+90L 90
+71
+85
+型 号
+Specification
+30 COOLANT
+45 COOLANT
+60 COOLANT
+90 COOLANT
+30 COOLANT
+45 COOLANT
+60 COOLANT
+90 COOLANT
+30 COOLANT
 45 COOLANT
 60 COOLANT
 90 COOLANT
 90L COOLANT
-D2
-D T
-L1
-D4
-D5
-D6
-E2
-G2
-60
-60
-60
-60
-85
-17
-17
-17
-17
-25
-M16 13 2 1
-M16 13 2 1
-M16 13 2 1
-M16 13 2 1
-M24 20 3 1.5
-85 25 M24 20 3 1.5
-85 25 M24 20 3 1.5
-71 25 M24 20 3 1.5
-85 25 M24 20 3 1.5
-L4
+S i z e
+L1 D4 D5 D6 E2 G2 L4
+4444 55558 8888
 L7
+3333 44445 5555
 D3
-G1
-L5
-4
-4
-4
-4
-3
-3
-3
-3
 16.5
 16.5
 16.5
 16.5
-2
-2
-2
-2
-5
-5
-5
-5
-5
-5
-5
-5
-8
-4
-4
-4
-4
-5
 23
 23
 23
 23
 38
-3
-3
-3
-3
-5
-6
-6
-6
-6
-10
-8
-8
-8
-8
-5
-5
-5
-5
 38
 38
 36
 38
-5
-5
-5
-5
+G1
+2222 33335 5555
+L5
+5555 6666
 10
 10
 10
 10
-Feature
-1、Thermal treatment process improve the clamping precision and stability.
-2、 Finish surface with long durability.
-
-PAGE 49
-S
-D2
-D T
-D3
-Size
-43 12.5 M12 9.5 1.75 1 43
-12.5 M12 9.5 1.75 1 43
-12.5 M12 9.5 1.75 1 43
-12.5 M12 9.5 1.75 1
+10
 D1
-G
-D2
-0
-D1
-D2
-L2
-L3
-L9
-13
-13
-13
-13
 11
 11
 11
 11
-7
-7
-7
-7
-23
-23
-23
-23
-18
-18
-18
-18
-2.5
-2.5
-2.5
-2.5
-30
-45
-60
-90
-19
 15
 15
 15
 15
 23
-10
-10
-10
-10
-17
-35
-35
-35
-35
-45
-28
-28
-28
-28
-35
-3
-3
-3
-3
-5
-30
-Specification
-Fig
-ISO7388/2A-P16D
-ISO7388/2A-P24D
-AA
-L
-D
-B
-ISO7388/2B-P16D
-B
-54
-74
-19
-28
 23
 23
 24
 23
+D2
+7777
+10
+10
+10
+10
+17
 17
 17
 18
 17
+L2
+23
+23
+23
+23
+35
+35
+35
+35
 45
 45
+45
+L3
+18
+18
+18
+18
+28
+28
+28
+28
 35
 35
 35
 35
-5
-5
-5
-5
+35
+L9
+2.5
+2.5
+2.5
+2.5
+33335 5555
+BT30
+BT40
+BT50
+4 3 1 2 . 5 M 1 2 9 . 5 1 . 7 5 1 4 3
+1 2 . 5 M 1 2 9 . 5 1 . 7 5 1 4 3
+1 2 . 5 M 1 2 9 . 5 1 . 7 5 1 4 3
+1 2 . 5 M 1 2 9 . 5 1 . 7 5 1
+60 17 M16 13 2 1
+60 17 M16 13 2 1
+60 17 M16 13 2 1
+60 17 M16 13 2 1
+85 25 M24 20 3 1.5
+85 25 M24 20 3 1.5
+85 25 M24 20 3 1.5
+71 25 M24 20 3 1.5
+85 25 M24 20 3 1.5
+S
+13
+13
+13
+13
+19
+19
+19
+19
+30
+30
+30
+30
+30 31
+45
+0
+30
 45
 60
 90
 30
 45
 60
-44.5
-65.5
-19
-19
-19
+90
 30
-30
-30
-30
-30
-31
 45
-G
+60
 90
 90
-PULL STUD
+型 号
+Specification
+MAZAK
+MAZAK
+尺 ⼨ S i z e
 L1
-L1
-L
-L
-Fig.1
-ISO7388/2B-P16D
-DIN69872A/B
-Fig.2
-Size
-T
-G
-7.5
-11.5
-M16
-M24
-22.5
-7.5
-M16
-36
-11.5
-M24
+44.1
+L2
+19.1
+25.2
 D1
+18.8
+29
 D2
-D3
+12.45
+20.83
+D5
+7
+10
+BT4
+0B
+T5
+0
+65.2
+W 1930
+G
+M16
+M24
+Specificat
+ion
+Fig
+A A
+B B
+S i z e
+L4
+26
+34
+26
+34
+D1
 14
 21
+14
+21
+L
+54
+74
+57
+74
+D
+19
+28
+19
+28
+T
+7.5
+11.5
+- -
+PAGE 49 PAGE 50
+BT
+BT
+DIN69872A/B
+BT40/BT50 MAZAK
+DIN69872A/B
+1、 Thermal treatment process improve the clamping precision and stability.
+2、
+Specification
+ISO7388/2A-P16D
+ISO7388/2A-P24D
+ISO7388/2B-P16D
+ISO7388/2B-P16D
+Fig
+A A
+B B
+1、 Thermal treatment process improve the clamping precision and stability.
+2、
+S i z e
+D1
+14
+21
+12.9
+19.6
+D2
 17
 25
+17
+25
+D3
 23
 36
+22.5
+36
+L
+54
+74
+44.5
+65.5
+D
+19
+28
 18.9
-12.9
-17
 29.1
-19.6
-25
+T
+7.5
+11.5
+7.5
+11.5
+G
+M16
+M24
+M16
+M24
+E 2
+C O . 5
+0 . 0 1 A
+R O . 5
+G 2
+A L4
+L 7
+L 1
+L 5
+L 8
+L 3
+C 1
+L 2
+G 1 R O . 5
+L 9
+R 1
+0 . 0 1 A
+S
+0 T
+D5
+D6
+D4
+D2
+60º
+D1
+D3
+W L 2
+L 1
+G
+4 5 º
+D1
+D4
+D3
+D5
+D T
+D T
+D1
+D1
+L1
+D4
+L4
+L F
+ig.1
+L
+Fig.1
+D2
+D2
+G
+G
+D3
+D3
+D T
+D
+D1
+D1
+L1
+D4
+L4
+L
+Fig.2
+L F
+ig.2
+D2
+D2 G
+D G
+3 D
+2
+E2 CO.5 A
+L7L4
+C1 θ
+L2
+L3 L9
+0.01A L5
+RO.5 L8
+G2
+G1RO.5
+R1
+0.01A
+S
+L 1
+D5
+D6D4 D
+2
+60º
+D1
+D3
+PRECISION MILLING HOLDER PRECISION MILLING HOLDER
+BT PULL STUD
+BT PULL STUD WITH COOLANT HOLE
+PULL STUD
+PULL STUD
+PULL STUD
+F e a t u r e
+F e a t u r e
+Finish surface with long durability.
+Finish surface with long durability.
+SYNCHRONOUS SOLUTION
+BT PULL STUD
+DS
+PRECISION MILLING HOLDER PRECISION MILLING HOLDER
+fi
+io
+~
+Q sh
+i)
+BT
+Specification] L1
+BT30 30 | 43
+45 43
+60 | 43
+90 | 43
+BT. 30 | 60
+aa 45 | 60
+60 | 60
+90 60
+Me 630 «(| 85
+45 | 85
+60 | 85
+90 71
+90L | 85
+M12
+M12
+Mi2
+M12
+M16
+M16
+M16
+M16
+M24
+M24
+M24
+M24
+M24
+Specification
+©
+on
+= 2
+WWwWWwW NMNrN Ll iL)
+DS
+nooo
+ee
+Bho BO RO Ro
+onmnoaonmna amon fRE
+anaonn fbb he Wwww
+monn ww ww hho ho
+=ok
+oan
+G)
+ho
+i
+i ~J
+q@)
+=
+[—
+on
+=
+o
+BT30
+BT40
 Feature
-1、Thermal treatment process improve the clamping precision and stability.
-2、 Finish surface with long durability.
-
-PAGE 50
-TAPPING TOOL HOLDER SERIES
-TAPPING TOOL HOLDER
-TAPPING TOOL HOLDER
-TAPPING TOOL HOLDER
-TAPPING TOOL HOLDER
-M24-M42
+1, Thermal treatment process improve the clamping precision and stability.
+2, Finish surface with long durability.
+30 COOLANT
+45 COOLANT
+60 COOLANT
+90 COOLANT
+30 COOLANT
+45 COOLANT
+60 COOLANT
+90 COOLANT
+30 COOLANT
+45 COOLANT
+60 COOLANT
+90 COOLANT
+90L COOLANT
+M12
+M12
+M12
+M12
+M16
+M16
+M16
+M16
+M24
+M24
+M24
+M24
+M24
+—_ — oh =
+WWWWW MNYMN YY yo!
+agqagan
+—_ ak ak —_—_ | kk
+AHOon aman
+NNNN
+aaan
+ommommam minmon FERRE
+anoann FREE WWWWw
+Amann wWweww NNN
+aOmannn ww wow
+aot
+amnana
+SYNCHRONOUS SOLUTION
+| ; PULL STUD
+7 BT40/BT50 MAZAK
+Size
+Specficaon | 11 | tw | or | v2 | o3 | ow | v5 | wi | ic
+Cjei = MAZAK | 44.4 | 19.1 | 18.8 | 12.45 a 17 7 19 M16
+yeu) ~=MAZAK 65.2 25.2 29 20.83 36 25 10 30 M24
+DI -[— co ~ | D2 G
+oT H-H-4 L, -—-|H D3 pH -}IE rHi-He - ob
+| i ~ a t ra | | TN 4 ||
+Lt pa SS Je D4 PULL STUD
+L4 +#—— 14>
+Fig.l L LFig.2 DIN69872A/B
+size
+Specification | Fo | ct | uw | do | oF | v2 | ws | mo | OT
+DIN69872A-P16D A 54 26 19 14 17 23 20 7.5
+DIN69872A-P24D A 74 34 28 21 25 36 25 11.5
+DIN69872B-P16D B 57 26 19 14 17 23 20 -
+DIN69872B-P16D B 74 34 28 21 25 36 25 -
+DTtl4- Lj
+; : PULL STUD
+Fig.| Fig.2 DIN69872A/B
+Size
+Specification | Fig L po | of | oe | os | tT | G
+1S07388/2A-P16D A 54 19 14 17 23 7.5 M16
+ISO7388/2A-P24D A 74 28 21 25 36 11.5 M24
+ISO7388/2B-P16D B 44.5 | 18.9 | 12.9 17 22.5 7.5 M16
+ISO7388/2B-P16D B 65.5 | 29.1 | 19.6 25 36 11.5 | M24
+1, Thermal treatment process improve the clamping precision and stability.
+2, Finish surface with long durability.
+a—T A P P I N G T O O L H O L D E R S E R I E S
+APPING TOOL HOLDER SERIESPAGE 51 PAGE 52
+B T N T J T
+G 3
+M 3 - M 1 2
+G 1 2
+M 1 2 - M 2 4
+M T
+G 2 4
+M 2 4 - M 4 2
+M T B
+M5
+M6
+M8
+M10
+M12
+M14
+M16
+M20
+2.26
+3.39
+4.52
+11.3
+11.3
+22.6
+28.3
+56.5
+3.39
+4.78
+9.04
+22.6
+22.6
+67.8
+67.8
+113
+4.52
+5.65
+8.48
+20.3
+20.3
+56.5
+72.5
+113
+4.78
+11.3
+17
+28.3
+33.9
+90.4
+123
+170
+0.247
+0.373
+0.373
+0.56
+0.746
+0.93
+0.56
+1.3
+51
+73.4
+2.26
+3.39
+5.65
+12.4
+20.3
+39.5
+51
+73.4
+4.52
+6.78
+11.3
+24.9
+33.9
+73.4
+73.4
+107
+N.m N.m N.m N.m KW N.m N.m N. m
 1 TENSION AND COMPRESSION TAPER HOLDER
 Tension and compression function can prove screw and tap tooth space moving sleekly
 and synchronously with machine.It should be used in the scope of designed tension and
@@ -1947,957 +2290,1013 @@ tapping chuck run up with Zaxis in the state of elongation.
 5 In case of artificial damage or after warranty period,The costfor evaluating and
 remanding
 should be charged.
-
+R e m a r k s
+× 2
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+SYNCHRONOUS SOLUTION SYNCHRONOUS SOLUTION
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+° x
+ae
+Remarks
+1 TENSION AND COMPRESSION TAPER HOLDER
+Tension and compression function can prove screw and tap tooth space moving sleekly
+and synchronously with machine.It should be used in the scope of designed tension and
+compression.
+-Over tension
+The black mark can be seen at this time.Please speed upthe working speed of axis.
+-over compression
+i G24 Reducethe movingspeed of axis.
+aa ERR 2 In case of small hole in taping model,torque protection function makes taps idling.
+Don’t adjust the torqueinsteadof large one.
+3 When blind hole tapping,Z axis programmed with slant depth and under the
+gyroscopic
+force and touch the bottom part,in case of reduce programmed Z axis data instruction.
+4.When Z system tapping chuck in use, in other case of orifice touched,please stop the Z
+point,
+tapping chuck run up with Zaxis in the state of elongation.
+5 In case of artificial damage or after warranty period,The costfor evaluating and
+remanding
+should be charged.
+O®|PAGE 51
+BT NT JT MT MTB
+(— (— (—
+o> o>
+Dy, Dy, N.m N.m Num Nim} KW Num N.m Nm
+M5 2.26 3.39 4.52 4.78 0.247 2.28 2.26 4.52
+( <a ( ao (— M6 3.39 4.78 5.65 11.3 0.373 4.52 3.39 6.78
+D, oy, M8 4.52 9.04 8.48 7 0.373 6.78 5.65 11.3
+M10 des 22.6 20.3 28.3 0.56 14.7 12.4 24.9
+(— M12 11.3 22.6 20.3 33.9 0.746 22.6 20.3 33.9
+7 M14 22.6 67.8 56.5 90.4 0.93 39.5 39.5 73.4
+M16 28.3 67.8 72,5 123 0.56 51 51 73.4
+M20 56.5 113 113 170 1.4) 73.4 73.4 107M3-M12
+M3-M12
 M12-M24
 M3-M12
-G3
-G24
-G12
-Remarks
-BT
-NT
-JT
-MT
-×2
-PAGE 51
-MTB
-N.m N.m
-N.m
-N. m
-0.247
-2.26
-4.52
-KW
-N.m
-N.m
-M5
-2.26
-3.39
-4.52
-4.78
-N.m
-M6
-3.39
-4.78
-5.65
-11.3
-0.373
-3.39
-6.78
-M8
-4.52
-9.04
-8.48
-17
-0.373
-5.65
-11.3
-M10
-11.3
-22.6
-20.3
-28.3
-0.56
-12.4
-24.9
+M12-M24
+M24-M42
+46
+63
+63
+100
+100
+100
+141 87.6
+92.6
+134.6
+97.2
+142.2
+174.2
+20
+25
+25
+35
+35
+35
 M12
-11.3
-22.6
-20.3
-33.9
-0.746
-20.3
-33.9
-M14
-22.6
-67.8
-56.5
-90.4
-0.93
-39.5
-73.4
 M16
-28.3
-67.8
-72.5
-123
-0.56
-51
-51
-73.4
-M20
-56.5
-113
-113
-170
-1.3
-73.4
-73.4
-107
-PAGE 52
-TAPPING TOOL HOLDER
-TAPPING TOOL HOLDER
-L
-L1
-L2
-L1
-d
-D
-MTA MORSE FLOATING TAPPING HOLDER
-BT TENSION AND COMPRESSION TAPPING HOLDER
-L
-BT
+M16
+M24
+M24
+M24
 Specificat
 ion
-Tapping
-range
-d
-D
-MTB.
-
-d
-D
-D1
-BT.
-
-L
-L1
-L2
-T
-141
-87.6
-20
-M12
 BT30
 BT40
-M3-M12
-46
-M3-M12
-63
-92.6
-25
-M16
 BT50
-M12-M24
-63
-134.6
-25
-M16
-M3-M12
-100
-97.2
-35
-M24
-M12-M24
-100
-142.2
-35
-M24
-M24-M42
-100
-174.2
-35
-M24
 Tapping
-range
-Specificat
-ion
-Collet
-MTA3
-MTA4
-MTA
-筒夹
-D
-d
-d1
-19
-M12
-D1
-Collet
-L
-L1
-23.825
-176
-89
-G3
-23.825
-206
-120
-G12
-G0312
-M3-M12
-46
-G1224
-M12-M24
-66
-G0312
-M3-M12
-46
-19
-M16
-31.267
-199
-89
-G3
-G1224
-M12-M24
-66
-30
-M16
-31 . 267
-229
-120
-G12
-30
-M12
-Feature
-1、Overload protection to avoid breakage of taps.
-2、Floating chuck with tension and compression function,
-tools can be changed quickly.
-3、Suitable for drilling machine, lathes. Milling machines.
-4、Tapping range: M3-M42.
-
-Feature
-1、Overload protection to avoid breakage of taps.
-2、Floating chuck with tension and compression function,
-tools can be changed quickly.
-3、Suitable for CNC machine center,drilling machine,
-lathes.
-4、Tapping range: M3-M42.
-L
-L1
-MTB.
-
-MTB MORSE TAPPING HOLDER
-d1
-d
-D
-D1
-D1
-d
-D
-M12
-L
-L1
-MTB
-TENSION AND COMPRESSION TAPPING HOLDER WITH
-STRAIGHT SHANK
+range D d L L1 L2 T Collet
 Specificat
 ion
 C2
-0
-C2
+0 C
+2
+5 C
+3
+2
 Tapping
 range
+50-G0312
+100-G0312
+50-G0312
+100-G0312
+100-G1224
+100-G1224
+M3-M12
+M3-M12
+M3-M12
+M3-M12
+M12-M24
+M12-M24
 D
+46
+46
+46
+46
+66
+66
 d
+19
+19
+19
+19
+30
+30
 L
-L1
-D1
-50-G0312
-100-G0312
-M3-M12
-M3-M12
-46
-46
-19
-19
 149
 189
-89
-89
-20
-20
-50-G0312
-100-G0312
-M3-M12
-M3-M12
-46
-19
 149
-89
-25
-M12-M24
-46
-19
 189
+220
+220
 89
+89
+89
+89
+120
+120
+20
+20
 25
-100-G1224
-100-G1224
-M12-M24
-66
-66
-30
-30
-220
-220
-120
-120
+25
 25
 32
-5 Feature
-1、Overload protection to avoid breakage of taps.
-
-C32、Floating chuck with tension and compression function, tools can be changed quickly.
-2
-3、Suitable for drilling machine, lathes.tapping machines.
-4、Tapping range: M3-M42.
-
-PAGE 53
-Collet
 G3
 G12
+L1 D1 Collet
 Specificat
 ion
 MTB3
 MTB4
 Tapping
-range
-D
-d
-d1
-D1
-L
-L1
-Collet
-19
-M12
-23.825
-176
-89
+range Collet
 G3
-23.825
-206
-120
+G12
+G3
 G12
 G0312
-M3-M12
-46
 G1224
-M12-M24
-66
 G0312
+G1224
 M3-M12
+M12-M24
+M3-M12
+M12-M24
 46
+66
+46
+66
 19
+30
+19
+30
+M12
+M12
 M16
+M16
+23.825
+23.825
 31.267
+.
+176
+206
 199
-89
-G3
-G1224
-M12-M24
-66
-30
-M16
-31 . 267
 229
+89
 120
-G12
-30
-M12
-Feature
+89
+120
+D d d1 D1 L L1
+31 267
+PAGE 53 PAGE 54
 1、 Overload protection to avoid breakage of taps.
-2、Floating chuck with tension and compression function, tools can be changed quickly.
-3、Suitable for drilling machine, lathes. Milling machines.
-4、Tapping range: M3-M42 .
-
-PAGE 54
-TAPPING TOOL HOLDER
-TAPPING TOOL HOLDER
-L
-L1
-18mm
-5mm
-L2
-BT.
-
-D
-d
-L
-BT RIGID TAPPING TOOL HOLDER
-L1
-18mm
-5mm
-BT30
-BT40
-M12
-BT
-TER16
-M2-M12
-46
-TER20
-M2-M16
-46
-TER25
-M2-M22
-TER32
-L2
-T
-14
-20
-M12
-ER16
-9
-20
-M12
-ER20
-46
-151
-20
-M12
-ER25
-M2-M30
-46
-153
-20
-M12
-ER32
-M2-M12
-63
-156
-25
-M16
-ER16
-M2-M16
-63
-161
-25
-M16
-ER20
-TER25
-M2-M22
-63
-163
-25
-M16
-ER25
-TER32
-M2-M30
-25
-M16
-ER32
-TER16
-M2-M12
-35
-M24
-ER16
-TER20
-M2-M16
-35
-M24
-ER20
-TER25
-M2-M22
-35
-M24
-ER25
-TER32
-M2-M30
-35
-M24
-ER32
-TER16
-TER20
-BT50
-Collet
-63
-100
-L
-L1
-165
-168
-100
-100
-100
-D1
-D
-d
-Tapping
-range
-D
+2、 Floating chuck with tension and compression function, tools can be changed quickly.
+3、 Suitable for drilling machine, lathes.tapping machines.
+4、 Tapping range: M3-M42.
+1 、 O v e r l o a d p r o t e c t i o n t o a v o i d b r e a k a g e o f t a p s .
+2 、 F l o a t i n g c h u c k w i t h t e n s i o n a n d c o m p r e s s i o n f u n c t i o n ,
+t o o l s c a n b e c h a n g e d q u i c k l y .
+3 、 S u i t a b l e f o r C N C m a c h i n e c e n t e r , d r i l l i n g m a c h i n e ,
+l a t h e s .
+4 、 T a p p i n g r a n g e : M 3 - M 4 2 .
 Specificat
 ion
-RIGID TAPPING TOOL HOLDER WITH STRAIGHT SHANK
+1、
+2、
+3、
+4、
+.
+1 、 O v e r l o a d p r o t e c t i o n t o a v o i d b r e a k a g e o f t a p s .
+2 、 F l o a t i n g c h u c k w i t h t e n s i o n a n d c o m p r e s s i o n f u n c t i o n ,
+t o o l s c a n b e c h a n g e d q u i c k l y .
+3 、 S u i t a b l e f o r d r i l l i n g m a c h i n e , l a t h e s . M i l l i n g m a c h i n e s .
+4 、 T a p p i n g r a n g e : M 3 - M 4 2 .
+MTA3
+MTA4
+Tapping
+range
+筒 夹
+Collet
+G3
+G12
+G3
+G12
+L 1
+L 1
+L
+L
+L 2
+B T .
+L 1
+L 1
+L L
+M T B .
+D d M T B .
+D d
+M 1 2
+D 1
+D D
+d d
+D 1 D 1
+d 1
+G0312
+G1224
+G0312
+G1224
+M3-M12
+M12-M24
+M3-M12
+M12-M24
+D
+46
+66
+46
+66
+d
+19
+30
+19
+30
+M12
+M12
+M16
+M16
+23.825
+23.825
+31.267
+.
+L
+176
+206
+199
+229
+Overload protection to avoid breakage of taps.
+Floating chuck with tension and compression function, tools can be changed quickly.
+Suitable for drilling machine, lathes. Milling machines.
+Tapping range: M3-M42
+89
+120
+89
+120
+d1 D1 L1
+MTB
+MTA
+31 267
+F e a t u r e
+F e a t u r e
+F e a t u r e
+F e a t u r e
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+BT TENSION AND COMPRESSION TAPPING HOLDER
+TENSION AND COMPRESSION TAPPING HOLDER WITH
+STRAIGHT SHANK
+B T
+MTA MORSE FLOATING TAPPING HOLDER
+MTB MORSE TAPPING HOLDER
+TAPPING TOOL HOLDER
+SYNCHRONOUS SOLUTION
+Ww
+|
+TAPPING TOOL HOLDER
+‘4
+BT TENSION AND COMPRESSION TAPPING HOLDER
+BT
+Specification Tapping range iB) d L i) L2 T Collet
+BT30 cer M3-M12 46 19 | 141 | 87.6 | 20 | mi2 G3
+G0312 M3-M12 63 19 | 153 | 926 | 25 | mi6 G3
+G1224 M12-M24 63 30 | 200 | 134.6] 25 | mie G12
+G0312 M3-M12 100 19 | 199 | 97.2 | 35 | M24 G3
+G1224 M12-M24 100 30 | 246 | 142.2] 35 | maa G12
+G2442 M24-M42 100 45 | 276 | 174.2 | 35 | M24 G24
+1, Overload protection to avoid breakage of taps.
+2, Floating chuck with tension and compression function,
+tools can be changed quickly.
+3, Suitable for CNC machine center,drilling machine,
+lathes.
+4, Tapping range: M3-M42.
+TENSION AND COMPRESSION TAPPING HOLDER WITH
+STRAIGHT SHANK
+SYNCHRONOUS SOLUTION
+Ll
+~w] _
+hi
+a of
+Se MTA MORSE FLOATING TAPPING HOLDER
+Specification | Tapping range D d | d1 | D1 | L | 1 | Collet
+MTA3 G0312 M3-M12 46 19 M12 23.825 176 89 G3
+G1224 M12-M24 66 30 M12 23.825 206 120 G12
+ITAA G0312 M3-M12 46 19 M16 31.267 199 89 G3
+G1224 M12-M24 66 30 M16 31.267 229 120 G12
+1, Overload protection to avoid breakage of taps.
+2, Floating chuck with tension and compression function,
+tools can be changed quickly.
+3, Suitable for drilling machine, lathes. Milling machines.
+4. Tapping range: M3-M42.
+MTB MORSE TAPPING HOLDER
+Specification Tapping range D d L [Li Di Collet
+C20, 50-G0312 M3-M12 46 19 149 89 20 os
+400-G0312 M3-M12 46 19 489 89 20
+25, 50-G0312 M3-M12 46 19 449 89 25 aa
+100-G0312 M3-M12 46 19 189 89 25
+C32, 400-G1224 M12-M24 66 30 220 120 25 ow
+100-G1224 M12-M24 66 30 220 120 32
+MTB
+Specification | Tapping range B 4 | oH | oA - | P | Collet
+MTB3 G0312 M3-M12 46 19 M12 23.825 176 89 G3
+G1224 M12-M24 66 30 M12 23.825 206 120 G12
+MTB4 G0312 M3-M12 46 19 M16 31.267 199 89 G3
+G1224 M12-M24 66 30 M16 31.267 229 120 G12
+1, Overload protection to avoid breakage of taps.
+2, Floating chuck with tension and compression function, tools can be changed quickly.
+3. Suitable for drilling machine, lathes.tapping machines.
+4, Tapping range: M3-M42.
+=
+» Overload protection to avoid breakage of taps.
+2 Floating chuck with tension and compression function, tools can be changed quickly.
+Suitable for drilling machine, lathes. Milling machines.
+» Tapping range: M3-M42.
+Bw
+7TER16
+TER20
+TER25
+TER32
+TER16
+TER20
+TER25
+TER32
+TER16
+TER20
+TER25
+TER32
+M2-M12
+M2-M16
+M2-M22
+M2-M30
+M2-M12
+M2-M16
+M2-M22
+M2-M30
+M2-M12
+M2-M16
+M2-M22
+M2-M30
+46
+46
+46
+46
+63
+63
+63
+63
+100
+100
+100
+100
+14
+9 15
+1
+153
+156
+161
+163
+165
+168
+20
+20
+20
+20
+25
+25
+25
+25
+35
+35
+35
+35
+M12
+M12
+M12
+M12
+M16
+M16
+M16
+M16
+M24
+M24
+M24
+M24
+ER16
+ER20
+ER25
+ER32
+ER16
+ER20
+ER25
+ER32
+ER16
+ER20
+ER25
+ER32
+Specificat
+ion
+BT50
+BT40
+BT30
+Tapping
+range
+Collet
+D L L1 L2 T
+PAGE 55 PAGE 56
+M2-M12
+M2-M16
+M2-M22
+M2-M30
+M2-M12
+M2-M16
+M2-M22
+M2-M30
+D 46 464646 46 46 46 46
+L
+147/197
+149/199
+161/201
+97
+99
+101
+20
+20
+20
+20
+25
+25
+25
+25
+、、、
 Specificatio
 n
+C 、、、
+25
 C20
 Tapping
 range
-D
-L
-L1
-D1
-M2-M12
-46
-147/197
-97
-20
-46
-46
-46
-149/199
-99
-20
-161/201
-101
-20
-164/20
-M2-M16
-M2-M22
-M2-M30
-C25
-M2-M12
-M2-M16
-46
-M2-M22
-46
-M2-M30
-Feature
-0.03-0.05
-1、The rigidity design ensures precision synchronization between spindle rotation and cutting feed.
-2、ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
-3、Do not lock the clamping nut too tight in order to avoid damage.
-
-PAGE 55
-46
-46
-104
-20
-4
-97
-25
-147/197
-99
-25
-11 4
-99
-69
-1 //21 0
-1
-101
-25
-164/204
-104
-25
-Feature
 Coll
 et
-0.03-0.05
-1、The rigidity design ensures precision synchronization between spindle rotation and cutting feed.
-2、 ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
-3、Do not lock the clamping nut too tight in order to avoid damage.
-
-PAGE 56
-TAPPING TOOL HOLDER
-TAPPING TOOL HOLDER
-L
-L
-L1
-L1
-18mm
-5mm
-Specification
-MTA2
-MTA3
-MTA4
-MTA5
-Tapping range
-D
-L
-L1
-D1
-TER16
-M2-M12
-46
-177
-TER20
-M2-M16
-TER205
-M2-M1226
-50
-46
-198
-1 78 91
+L1 D1
+BT
+164/20
+4 14
+7/197
+114691//210991
+164/204
+104
 97
 99
-17.78
-23.825
-17.78
-TER16
-M2-M12
-50
-196
-TER20
-M2-M16
-50
-198
-TER25
-M2-M22
-50
-200
-TER32
-M2-M30
-50
-203
-TER16
-M2-M12
-66
-221
-TER20
-M2-M16
-66
-223
-TER25
-M2-M22
-66
-225
-TER32
-M2-M30
-66
-TER32
-M2-M30
-66
-19 09 1
-23.825
-ER16
-9
-23.825
-ER20
-D1
-d1
-MTB MORSE RIGID TAPPING TOOL HOLDER
-D
-d1
-D1
+101
+104
+L 1
+1 8 m m
+5 m m
 L
-L1
-Collet
+L 2
+B T .
+0 . 0 3 - 0 . 0 5
+L 1
+1 8 m m
+5 m m
+L
+0 . 0 3 - 0 . 0 5
+Dd
+D d
+M 1 2
+D 1
+F e a t u r e
+F e a t u r e
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+BT RIGID TAPPING TOOL HOLDER
+RIGID TAPPING TOOL HOLDER WITH STRAIGHT SHANK
+1 The rigidity design ensures precision synchronization between spindle rotation and cutting feed.
+2 ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
+3 Do not lock the clamping nut too tight in order to avoid damage. 1 The rigidity design ensures precision synchronization between spindle rotation and cutting feed.
+2 ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
+3 Do not lock the clamping nut too tight in order to avoid damage.
+ANMT |
+SYNCHRONOUS SOLUTION
+BT RIGID TAPPING TOOL HOLDER
+TAPPING TOOL HOLDER
+ui
+Smm
+BT
+Specification Tapping range ip) L L1 L2 T Collet
+Elst) TERI6 M2-M12 46 149 100.6 | 20 | m12 ER16
+TER20 M2-M16 46 151 102.6 20 M12 ER20
+TER25 M2-M22 46 153 104.6 20 M12 ER25
+TER32 M2-M30 46 156 107.6 20 M12 ER32
+Eizt) TeR16 M2-M12 63 161 95.6 25 | M16 ER16
+TER20 M2-M16 63 163 97.6 25 M16 ER20
+TER25 M2-M22 63 165 99.6 26 M16 ER25
+TER32 M2-M30 63 168 102.6 25 M16 ER32
+TER16 M2-M12 100 207 105.2 35 M24 ER16
+TER20 M2-M16 100 209 107.2 35 M24 ER20
+TER25 M2-M22 100 211 109.2 35 M24 ER25
+TERS2 M2-M30 100 214 112.2 35 M24 ER32
+Om:
+1. The rigidity design ensures precision synchronization between spindle rotation and cutting feed. a
+2. ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
+3. Do not lock the clamping nut too tight in order to avoid damage.
+TAPPING TOOL HOLDER
+ANMT|
+SYNCHRONOUS SOLUTION
+ul
+gm m
+i =|
+al | lo on Senne
+RIGID TAPPING TOOL HOLDER WITH STRAIGHT SHANK
+Specification Tapping range D L | D1 Collet
+2) 50/100-TER16 M2-M12 46 447/197 97 20 ER16
+50/100-TER20 M2-M16 46 149/199 99 20 ER20
+50/100-TER25 M2-M22 46 161/201 101 20 ER25
+50/100-TER32 M2-M30 46 164/204 104 20 ER32
+C25 | 50/100-TER16 M2-M12 46 447/197 97 25 ER16
+50/100-TER20 M2-M16 46 149/199 99 25 ER20
+50/100-TER25 M2-M22 46 161/201 101 25 ER25
+50/100-TER32 M2-M30 46 164/204 104 25 ER32
+1. The rigidity design ensures precision synchronization between spindle rotation and cutting feed. a
+2. ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
+3. Do not lock the clamping nut too tight in order to avoid damage.Specification
 TER16
-M2-M12
-46
-M12
-23.825
-176
-89
-ER16
 TER20
-M2-M24
-46
-M12
-23.825
-206
-120
-ER20
-TER25
-M2-M22
-46
-M12
-23.825
-176
-89
-ER25
-TER32
-M2-M30
-46
-M12
-23.825
-206
-120
-ER32
+TER205
 TER16
+TER20
+TER25
+TER32
+TER16
+TER20
+TER25
+TER32
+TER32
+Tapping range
 M2-M12
-46
-M16
+M2-M16
+M2-M1226
+M2-M12
+M2-M16
+M2-M22
+M2-M30
+M2-M12
+M2-M16
+M2-M22
+M2-M30
+M2-M30
+L1
+97
+99
+D1
+17.78
+23.825
+17.78
+23.825
+23.825
+23.825
+23.825
 31.267
-199
-89
-ER16
-46
-M16
 31.267
-229
-120
-ER20
-199
-89
-ER25
-229
-120
-ER32
-Specification
+31.267
+31.267
+44.339
 Collet
 ER16
 ER20
 ER205
-MTB.
-
-d
-D
-d
+ER16
+ER20
+ER25
+ER32
+ER16
+ER20
+ER25
+ER32
+ER32
+D 46 5046 50 50 50 50 66 66 66 66 66
+L
+177
+198
+1 78 91
+196
+198
+200
+203
+221
+223
+225
+228
+260
+19 09 1
+MTA2
+MTA3
+MTA4
+MTA5
+9 7 9 9
+101
+104
+97
+99
+101
+104
+104
 MTA MORSE RIGID TAPPING TOOL
 HOLDER
-MTA.
-
-D
-D1
-18mm
-5mm
-MTB3
-MTB4
-Tapping range
-7
-23.825
-ER25
-190 1
-23.825
-ER32
+PAGE 57 PAGE 58
+Specification
+TER16
 TER20
+TER25
+TER32
+TER16
+TER20
+TER25
+TER32
+Tapping range
+M2-M12
 M2-M24
 M2-M22
-46
-M16
-31.267
 M2-M30
-46
-M16
+M2-M12
+M2-M24
+M2-M22
+M2-M30
+d1 D1
+23.825
+23.825
+23.825
+23.825
 31.267
-190 4
 31.267
+31.267
+31.267
+L1
+89
+120
+89
+120
+89
+120
+89
+120
+Collet
 ER16
-TER25
-97
-31.267
 ER20
-TER32
-99
-31.267
 ER25
-228
-101
-31.267
 ER32
-260
-104
-44.339
+ER16
+ER20
+ER25
 ER32
-104
-Feature
-Feature
-0.03-0.05
-1、The rigidity design ensures precision synchronization between spindle rotation and cutting feed.
-2、 ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
-3、 Do not lock the clamping nut too tight in order to avoid damage.
-
-0.03-0.05
-1、The rigidity design ensures precision synchronization between spindle rotation and cutting feed.
-2、 ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
-3、 Do not lock the clamping nut too tight in order to avoid damage.
-
-PAGE 57
-PAGE 58
-TAPPING TOOL HOLDER
-TAPPING TOOL HOLDER
+D 46 46 46 46 46 46 46 46
+M12
+M12
+M12
+M12
+M16
+M16
+M16
+M16
+L
+176
+206
+176
+206
+199
+229
+199
+229
+MTB4
+MTB3
+L 1
+1 8 m m
+5 m m
+L
+M T A .
+0 . 0 3 - 0 . 0 5
+L 1
+1 8 m m
+5 m m
+L
+M T B .
+0 . 0 3 - 0 . 0 5
+Dd
+D 1
+D d
+D 1
+d 1
+F e a t u r e
+F e a t u r e
+1、
+2、
+3、
+1、
+2、
+3、
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+MTB MORSE RIGID TAPPING TOOL HOLDER
+The rigidity design ensures precision synchronization between spindle rotation and cutting feed.
+ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
+Do not lock the clamping nut too tight in order to avoid damage.
+The rigidity design ensures precision synchronization between spindle rotation and cutting feed.
+ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
+Do not lock the clamping nut too tight in order to avoid damage.
+ANMI | ANME |
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+SYNCHRONOUS SOLUTION
+-\— “e+
+tl u
+SYNCHRONOUS SOLUTION
+Simm a aSmm ia
++>]
+7O°
+__]| F
+1
+!
+!
+!
 D
-W
-G24
-w
-G12
-36
+«ty
+Cy)
+© 4
+Cy,
+f
+1
+!
+1
+I
+!
+1
+!
+i
+dl
+MTA MORSE RIGID TAPPING TOOL als MTB MORSE RIGID TAPPING TOOL HOLDER
+HOLDER
+Specification Tapping range D L 1 D1 Collet Specification Tapping range D a1 D1 L u1 Collet
+wunv. TER16 M2-M12 46 177 a7 17.78 ER16 IMTB3 TER16 M2-M12 46 M12 23.825 176 89 ER16
+TER20 M2-M16 50 198 99 23.825 ER20 TER20 M2-M24 46 M12 23.825 206 120 ER20
+TER25 M2-M22 46 181 101 17.78 ER25 TER25 M2-M22 46 M12 23.825 176 89 ER25
+MTA3 TER16 M2-M12 50 196 97 23.825 ER16 — TER32 M2-M30 46 M12 23.825 206 120 ER32
+TER20 M2-M16 50 198 99 23.825 ER20 wiles §=6 TERI6 M2-M12 46 M16 31.267 199 89 ER16
+TER25 M2-M22 50 200 101 23.825 ER25 TER20 M2-M24 46 M16 31.267 229 120 ER20
+TER32 M2-M30 50 203 104 23.825 ER32 TER25 M2-M22 46 M16 31.267 199 89 ER25
+MTA4 TER16 M2-M12 66 221 97 31.267 ER16 TER32 M2-M30 46 M16 31.267 229 120 ER32
+mee Men's ee eS i alia miei er:
+TER2S Men Mee 66 228 to" 31.267 ER 1. The rigidity design ensures precision synchronization between spindle rotation and cutting feed ea
+TER32 M2-M30 66 228 104 31.267 ER32 2 ER collet canbe used for gripping drill bits reaming cutters and milling cutters. ong nee
+IMTA5 TER32 M2-M30 66 260 104 44,339 ER32 3. Do not lock the clamping nut too tight in order to avoid damage.
+Feature ORE
+1. The rigidity design ensures precision synchronization between spindle rotation and cutting feed. [=F
+2. ER collet can be used for gripping drill bits,reaming cutters and milling cutters.
+3. Do not lock the clamping nut too tight in order to avoid damage.
+©@|PAGE 58W
++0.08
+2.5
+3.15
+4 5
+6.3
+Specificat
+ion
+G3 G3
 G3
-19
-55
-G3 TAPPING COLLET
+G3 G3 G3
+M3
+M4
+M5
+M6-8
+M10
+M12
+D
++0.08
+3.15
+4 5
+6.3
+8 9
+F1
+F1
+F1
+F1
+F1
+F1
+Phot
+o
+Specification
+1 7 . 5
+5 5
+3 D
+6
+1 9
+ww w
+PAGE 59 PAGE 60
+G3
 G3
 FITTING
 G
-Specificat
-ion
-Specification
-+0.08
-+0.08
-Phot
-o
-3.15
-F1
-4
-2.5
-M4
-3.15
-F1
-M5
-5
-4
-F1
-M6-8
-6.3
-5
-F1
-M10
-8
-6.3
-F1
-M12
-9
-G3
-G3 G3 G3
-W
-M3
-G3 G3
-QUICK CHANGE PROTECT TAP COLLET G SYSTEM
-D
-F1
-55
-17.5
+G3 G12 G24
 G3 TAPPING COLLET
-w
-36
+G3 TAPPING COLLET
+SAFETY FIXED BOTTO ADJUSTING
 SCREW TAP AND COLLET CONNECTING
-D
-separt
-ion
-w
-w
-connected
-19
-Read to
-connect
-G3
+QUICK CHANGE PROTECT TAP COLLET G SYSTEM
+R e a d t o
+c o n n e c t
+R e a d t o
+c o n n e c t
+A d j u s t a b l e S a f e t y
+F i x e d B o t t o m
+c o n n e c
+t e d
+F a l s e
+O p e r a t i o n
+s e p a r t
+i o n
+C o r r e c t
+O p e r a t i o n
 Specificat
 ion
-Specificatio
-n
 G3 G3
-1/8
 G3
-connec
-ted
-separtion
-D
-W
-+0.08
-+0.05
-4
-3.2
-5/32
-5
-4
-3/16
-5.5
-4.5
-G3
-1/4
-6
-4.5
-G3
-5/16
-6.2
-5
-3/8
-7
-5.5
-7/16
-8
-6
-8.5
-6.5
-9
-7
 G3 G3 G3
-Read to
-connect
-Specification
 G3
-M10
-SAFETY FIXED BOTTO ADJUSTING
-M12
-1/16
-Feature
-Adjustable Safety
-Fixed Bottom
-False
-Operation
-PAGE 59
-Correct
-Operation
+G3
+G3
 1、 Overload protection with high precision and sensitivity， which can promise increased tool life.
 2、 Sensitive response to torque change and adjustable according to different work piece material.
-3、Suitable for various tapping tools and machines.
-
-PAGE 60
-TAPPING TOOL HOLDER
+3、 Suitable for various tapping tools and machines.
+c o n n e c t e d
+s e p a r t i o n
+M10
+M12
+1/16
+1/8
+5/32
+3/16
+1/4
+5/16
+3/8
+7/16
+4 5
+5.5
+6
+3.2
+4
+4.5
+4.5
+5
+5.5
+6
+6.5
+7
+Specificatio
+n
+Specification
+D
++0.08
+W
++0.05
+6.2
+7 8
+8.5
+9
+F e a t u r e
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+3 6
+1 9
+W
+5 5
+w D
+SYNCHRONOUS SOLUTION
+FITTING
+G
+QUICK CHANGE PROTECT TAP COLLET G SYSTEM
+k COT
+4 - RN 73
+Ll
+=>
+Read to
+connect
+SCREW TAP AND COLLET CONNECTING
+Read to
+connect
+SAFETY FIXED BOTTO ADJUSTING
+Adjustable Safety
+Fixed Bottom
+connected
+connec
+ted
+False
+Operation
+Q®|PAGE 59
 TAPPING TOOL HOLDER
-DT52
-Specificat
+5=E
+separt
 ion
-DT24/DT33
-Specificat
-ion
-DT52-MTA5 Holder
-TapperHolder
-Collet
-Radial Drilling and
-Tapping Machine Series
-Tap Sleeve
-Collet
-M20,M22,M24,M27,M30,M33,M36,M39,M42,M45,M48,M52
-W7/8,W1",W1-1/8,W1-1/4,W1-3/8,W1-1/2,W1-1/5,W1-3/4,W17/8,W2"
-DT52-MT2
-DT52-MT3
-DT52-MT4
-DT52-MT5
-Tap Sleeve
-DT24-MT2
-Holder
-DT24DT24 MTA□-10PCDS/SET
+Hi
+separtion
+Correct
+Operation
+TAPPING TOOL HOLDER
+SYNCHRONOUS SOLUTION
+SS
+wt |
+"| 8 WHF2) Barra Ue CS G3 TAPPING COLLET
+=
+G3
+Specification Specification +0.08 +0.08 Phato
+G3 M3 3.15 2.5 FA
+G3 M4 4 3.15 F1
+G3 M5 5 4 F1
+G3 M6-8 6.3 5 Fi
+G3 M10 ts] 6.3 F1
+G3 M12 9 71 FA
+55
+% 2 ~— Ub ny } ( DI CS G3 TAPPING COLLET
+ne G3
+D Ww
+Specification Specification Specification +0.08 +0.05
+G3 M3 1/8 4 3.2
+G3 M4 5/32 5 4
+G3 M5 3/16 5.5 4.5
+G3 M6 1/4 6 4.5
+G3 M8 5/16 6.2 5
+G3 M10 3/8 7 5.5
+G3 7/16 8 6
+G3 M12 8.5 6.5
+G3 1/16 9 7
+1, Overload protection with high precision and sensitivity, which can promise increased tool life.
+2, Sensitive response to torque change and adjustable according to different work piece material.
+3. Suitable for various tapping tools and machines.
+a—DT24-MT2
+Holder DT24-
 MT2 Holder
 DT24-MT2
 Holder
 DT24-MT2
-DT33-MT3 Holder
 Holder
-DT33 MTA□-10PCDS/SET DT33-MT4 Holder
+DT24 MTA□-10PCDS/SET
+DT33-MT3 Holder
+DT33-MT4 Holder
 DT33-MT5 Holder
-DT52
-JIS
-standar
-d
+DT33 MTA□-10PCDS/SET
+Specificat
+ion TapperHolder Collet Tap Sleeve
 Specificat
 ion
-PAGE 61
-DT52
-DT52
-DT52
-DT52
-DT52
-DT52
-DT52
-DT52
-DT52
-DT52
-DT52
-DT52
-OT52
-DT52
-DT52
-DT52
-M20
-M22 W7/8
-M24 M25
-M27 W1 PT5/8
-M30 PT3/4
-M32 W1-14 PT7/8
-M33
-M34 M35 W1-3/8 PT1
-M36 PT1-1/8
-M39 M40 W1-1/2
-M42 W1-5/8
-M45 M46 W1-3/4 PT1-3/8
-M48 W1-7/8 PT1-1/2
-M50 W2
-M52
-W1-1/8
+standar
+d
+DT52-MTA5 Holder M20,M22,M24,M27,M30,M33,M36,M39,M42,M45,M48,M52
+W7/8,W1",W1-1/8,W1-1/4,W1-3/8,W1-1/2,W1-1/5,W1-3/4,W1-
+7/8,W2"
+D T 5 2 - M T 2
+D T 5 2 - M T 3
+D T 5 2 - M T 4
+D T 5 2 - M T 5
+Specificat
+ion
+Collet Tap Sleeve
+PAGE 61 PAGE 62
+DT52 M20
+DT52 M22 W7/8
+DT52 M24 M25
+DT52 M27 W1 PT5/8
+DT52 M30 PT3/4
+DT52 M32 W1-14 PT7/8
+DT52 M33
+DT52 M34 M35 W1-3/8 PT1
+DT52 M36 PT1-1/8
+DT52 M39 M40 W1-1/2
+DT52 M42 W1-5/8
+DT52 M45 M46 W1-3/4 PT1-3/8
+OT52 M48 W1-7/8 PT1-1/2
+DT52 M50 W2
+DT52 M52
+DT52 W1-1/8
 Φd □
 15
 17
@@ -2915,8 +3314,6 @@ W1-1/8
 40
 42
 22
-Φd □
-ISO
 12
 13
 15
@@ -2933,69 +3330,25 @@ ISO
 32
 32
 17
-DT52
-DT52
-DT52
-DT52
-M30
-M33
-M36
-M39
-DT52
-M48
+DT52 M20
+DT52 M22
+DT52 M24
+DT52 M27
+M30 DT52
+M33 DT52
+M36 DT52
+M39 M42
+DT52 M45
+M48 DT52
 M52
-M20
-M22
-M24
-M27
-DT52
-DT52
-DT52
-M42
-M45
-DT52
-DI N 3 7 6
-DT52
-M22
-DT52
-M30
-DT52
-M39
-M45
+DT52 M20 DT52
+M22 M24 W1"
+DT52 M27 DT52
+M30 DT52 M33
+DT52 M36 DT52
+M39 M42 DT52
+M45 M48 DT52
 M52
-PAGE 62
-M20
-M24
-M27
-DT52
-M36
-M42
-M48
-DT52
-W1"
-DT52
-M33
-DT52
-DT52
-DT52
-14
-16
-18
-20
-22.4
-25
-28
-31.5
-35.5
-11.2
-12.5
-14
-16
-18
-20
-22.4
-25
-28
 Φd □
 16
 18
@@ -3015,494 +3368,690 @@ DT52
 24
 29
 32
-TAPPING TOOL HOLDER
-a
-d1
-TAPPING TOOL HOLDER
-d
-82
-30.5
-a
-SPECIFICATIONS
-36
-w
-d
-w
-G12 TAPPING COLLET
-D
-JIS
-M3
-G12
-Specification
-Specification
-d
-w
-+0.10
-+0.15
-6.3
-5
-G12
-M6-8
-G12
-M10
-8
-6.3
-G12
-M12
-9
-7.1
-G12
-M14
-G12
-M16
-12.5
-10
-G12
-M18-20
+Φd □
 14
-11.2
-G12
-M22
 16
-12.5
-G12
-M24
 18
-14
-11.2
-D
-M4/M4.5
-W5/32
-M5/M5.5
-W3/16
-M6
-31
-31
-U1/4
-W1/4
-U5/16
-W5/16
-M8/M7
-31
-31
-9
-W1/8
-31
-M10/M9
-U3/8
-W3/8
-M11
-U7/16
-W7/16
-M12
-31
-U1/2
-31
-M14/M15 U9/16
-31
-M16
-82
-U5/8
-W1/2
-W9/16
-W5/8
-M17
-35.5
-M18
-U3/4
-W3/4
-U7/8
-W7/8
-58
-D
-w
-G12 TAPPING COLLET
-d
-w
-M20
-M22
-M24/M25
-G12
-M25/M26
-d
-W
-D
-+0.10
-+0.15
-6
-4.5
-31
-M8
-6.2
-5
-31
-7
-5.5
-8.5
-6.5
-10.5
-8
-M10
-M12
-M14
-M16
-M18
-31
-31
-31
-12
-9
-31
-31
-W1 1/8
-U1 1/4
-W1 1/4
-M34/M35 U1 3/8
-W1 3/8
-M30
-M36
-M39/M40 U1 1/2
-14
-15
-12
-31
-M42
-M22
-17
-13
-31
-M45
-19
-15
-31
-M48
-*a
-d1
-a*a
-d1
-a*a
-d1
-3.2 4
-3.15
-2.5
-3.5
-2.7
-2.2
-5.5 6
-4.5
-45
-3.15 4
-4.5 6
-3.4
-2.8
-6.1
-4.5
-6.3
-5
-6
-4.9
-3.5
-6.2 7
-5.5 5
-4.9
-4.5
-8 8.5
-5.5 6
-9
-6.5 7
-6.2
-6
-4.
-
-8
-7
-9
-9.52
-5.
-
-11.11
-10.5
-89
-12
-10 10
-12.5
-11 12
-13 14
-13 15
-15 17
-15 15
-19
-17 17
 20
-17 19
-20 21
-19 21
-22
-21 23
-23
-26 26
-24
-29
+11.2
+12.5
+14
+16
+18
+20
+22.4
 25
-26
-2.1
-2.
-7
+28
+22.4
+25
+28
+31.5
+35.5
+J I S
+I N 3 7 6
+Radial Drilling and
+Tapping Machine Series
+DT24/DT33
+DT52
+DT52
+D
+ISO
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+29 ADVdI@O 19 aDvVd|I@O
+cé OF éSW 2510
+6¢ 92 BPN SPIN cSLO
+ve ce cvW6EW S10
+ce 82 9EIN cSLO
+0¢ Ge Ee cS1d
+SL cc OE cS10
+91 0z 722510 Zl ée B/L-LM eS 10
+ze eh ZSW ZS
+oy g ub M 7c cn ao ze OF ZMOSW ZS E1IN-EELO'ZIIN-€E.10 PZW'OZW'OL'ZLWOLW'SW-€210Z/1+9VI0 SACTOHOWIN €€10 | LAS/SCOddl-DviW ee10
+6Z C Zi-lLd S//-LM SPW ZS.LO ZIW-PZLG'LLUN-PZLG'OLW'ZLW OLW'SW'SW'PW-PZLO'Z/L-+9V LPSACIOHOWIN p21 == | JAS/SGOdOL-OVI ZL
+oO pe O/ENIC 92 «SE B/E-LLd PIE-LM OPIN SPN 2S.LO pIepue|s uojeayioads
+oz ze gIS-LM ZPW SLO Se
+€Z OF Z/L-LM OPW 6EW ZSLO
+ee. age zg zs1d izZ 8 8/L- Ld 9EW ZS1C
+cz SLE SPW SPW ZS iz 92 LLd S/E-LM SEW PEW ZSLO
+v7 8 ZPW 6S ZS10 61 Sz eeWzs1d
+oz Gz EW ZS GL bz 8/1d FL-LM ZEW ZS
+BL rez eewzs1d LL &Z rIELd OSWZSLO
+QL Oz OsW ZzWZS1.0 SL Oz BIG 1d LM ZZW2S10
+rl pzWzs1d Sl 6L SZWPZWZS
+SZl QL Z2WzS10 El ZL BILM\Z2W ZS
+ZbL bb OZWzs1d ZL SL OZ ZS.
+0 po Os! 0 Po sir
+Weel ZLLd BELA bILLd'8/LLd JOPICH SIW-EE1L0
+FLEE | nLMBILMPIEMBISMIZ/LMOLIENNBIEMSLSM'PILMOLIEM | J8PIOH PLIN-8€10 |1AS/SCOd0!-OVLW €€L0
+csld oN be | SEWEEWOEWZZNYANZZNOANELNSLNLZLWOLIEN | 48H ELW-£e10
+42H ZLIN-PZL
+48PIOH ZL-PZLG
+J8PI0H ZLIN-PZL
+J8PIOH ZLIN-PZL
+aneais de] JD Japjoy sedde| uoyeoylnads
+ELW-rZL ZL B/ELd Pi lLd'B/lLld
+ZLNN-#ZL | ALANBMIPIEAS/SM2/LIMOL/IZIB/EMNSLISMN PIL LIE
+LIW-r2l PZINECINOZWSLISLN TLIC LINOLIN' SA'S PIA
+138/S09d01-DOVLW réLd
+SIW-zS1G
+vLW-2S.1G | ZM8/2-LM'Pie-LW'S/L—LVZ/L-LM\'8E-LM\P/L-LM BILL MBIM | song :
+eLW-ZS10 ZGIN'SYIN'SPIN'ZPIN CW SEIN'EEIN EWN PeW'ZCW OZ POH SvIN-cald
+ZLW-zSLG So1d/7~Ld
+ansaig de) — | }2)100 | uoqesyioeds
+Salas aulyoe-=: BuiddeLy
+pue 6urjjiid jeipey C747
+> SACIOHTOOLONIiddVL MACIOHIOOLONiddVL >J I S I S O D I N 3 7 1 D I N 3 7 6 d1
+3.18
 3.97
 4.76
 6.35
 7.94
-3.
-8
-6.3
-5
-8
-6.3
+d1
+4 5
+5.5 6
+6.1
+6.2 7
+8 8.5
 9
+10.5
+12
+12.5
+13 14
+15 17
+19
+20
+20 21
+22
+23
+24
+25
+26
+28
+30
+32
+35
+38
+*a
+3.2 4
+4.5
+4.5
+5.5 5
+5.5 6
+6.5 7
+8 9
+10 10
+11 12
+13 15
+15 15
+17 17
+17 19
+19 21
+21 23
+26 26
+29
+d1
+3.15
+4 5
+6.3
+a*a
+2.5
+3.15 4
+5
+d1
+3.5
+4.5 6
+6
+a*a
+2.7
+3.4
+4.9
+4.9
+d1
+2.2
+2.8
+3.5
+4.5
+a*a
+M8/M7
+M10/M9
+M11
+M12
+M3
+M4/M4.5
+M5/M5.5
+M6
+M14/M15
+M16
+U1/4
+U5/16
+U3/8
+U7/16
+U1/2
+U9/16
+U5/8
+M17
+M18
+M20
+M22
+M24/M25
+M25/M26
+M27
+M28
+U3/4
+U7/8
+U1
+U1 1/8
+M30
+M32
+M33
+M34/M35
+M36
+M39/M40
+M42
+M45
+M48
+U1 1/4
+U1 3/8
+U1 1/2
+U1 3/4
+W1
+W7/8
+W3/4
+W3/8
+W7/16
+W1/2
+W9/16
+W5/8
+W1/8
+W5/32
+W3/16
+W1/4
+W5/16
+W1 3/8
+W1 1/8
+W1 1/4
+W1 1/2
+W1 5/8
+W1 3/4
+W1 7/8
+9
+28
+20
+20
+14
+14
+16
+18
+25
+6.3
+8
+22.4
+12.5
+31.5
+11.2 9
+20
+18
+10
+16
+16
+25
+7.1
+5
+6.3
+22.4
+11.2
+11.2
+12.5
+14
+8 6.2
+8
+6 7 9
+20
+11
+14
+16
+18
+18
+22
+12
+7 9 9
+18
+16
+2.1
+2.
+7 3
+.
+44.
+9 5
+.
+5 1
+1
+12
+14.5
+14.5
+25.4
+28.58
+12.7
+14.28
+15.88
+22.22
+9.52
+11.11
+31.75
+34.93
+19.05
+38.1
+41.28
+44.45
+47.63
+Specification
+G12
+G12
+G12
+G12
+G12
+G12
+G12
+G12
+Specification
+M6-8
+M10
+M12
+M14
+M16
+M18-20
+M22
+M24
+D 31 31 31 31 31 31 31 31
+d
++0.10
+6.3
+8 9
+11.2
+12.5
+14
+16
+18
+w
++0.15
+5
+6.3
 7.1
 9
-57
-11.2
-9
-11
-9
-12.5
 10
-12
-9
-14
 11.2
-14
-11
-14
-11.2
-16
-12
-16
 12.5
-18
-14.5
-18
 14
-18
-14.5
-20
-16
-20
-16
+Specification
+M6
+M8
+M10
+M12
+M14
+M16
+M18
+M20
+M22
+M24
+d
++0.10
+6
+W
++0.15
+4.5
+5
+5.5
+6.5
+8 9 11 12 13 15
+6.2
+7
+8.5
+10.5
+12
+14
+15
+17
+19
+31
+31
+31
+31
+31
+31
+31
+31
+31
+31
+PAGE 63 PAGE 64
+G12
+G12
+1、
+2、
+3、
+D
+G12 TAPPING COLLET
+G12 TAPPING COLLET
+SPECIFICATIONS
+8 2
+8 2
+3 5 . 5
+3 0 . 5
+w d w D
+3 6
+d
+d 1
+w d w D 58
+a
+a
+TAPPING TOOL HOLDER TAPPING TOOL HOLDER
+Overload protection with high precision and sensitivity, which can promise increased tool life.
+Sensitive response to torque change and adjustable according to different work piece material.
+Suitable for various tapping tools and machines.
+SYNCHRONOUS SOLUTION
+TAPPING TOOL HOLDER
+82
+L |
+G12 TAPPING COLLET i a ue} sfTO ae; Qy < 8
+G12 |
+d w
+Specification Specification +0,.10 +0.15 v
+G12 M6-8 6.3 5 31
+G12 M10 8 6.3 31
+G12 M12 9 7.1 31
+G12 M14 11.2 9 31
+G12 M16 12.5 10 31
+G12 M18-20 14 11.2 31
+G12 M22 16 12.5 31
+G12 M24 18 14 31
+G12 TAPPING COLLET = |g
+G12
+d Ww "
+Specification Specification +0.10 40.15
+G12 M6 6 4.5 31
+G12 Ms 6.2 5 31
+G12 M10 7 5.5 31
+G12 Mi2 8.5 6.5 eal
+G12 M14 10.5 8 31
+Gi2 M16 12 9 31
+G12 M18 14 11 31
+G12 M20 15 12 31
+G12 M22 17 13 31
+G12 M24 19 15 31
+1. Overload protection with high precision and sensitivity, which can promise increased tool life.
+» Sensitive response to torque change and adjustable according to different work piece material.
+3. Suitable for various tapping tools and machines.
+QO) PAGE 63
+M4iM4.5
+MaM5.5
+Mé
+M10/MS
+M11
+M12
+M14/M15
+M16
+M17
+M18
+M20
+M22
+M24iM25
+M25M26
+M27
+M28
+M30
+M32
+M33
+M34/M35
+M36
+M3gM40
+M42
+M45
+M43
+Lil4
+US16
+U8
+UFNG
+Wife
+USi16
+USS
+U3i4
+UTIs
+ul
+Ld 18
+Ld 1/4
+L138
+U1 12
+U1 a4
+Wii8
+WO5/32
+W3/16
+Wild
+WS/16
+WB
+W2
+W916
+W5/8
+W3i4
+W118
+W141 1/4
+Wi 38
+Wi 1/2
+W1 5/8
+Wi 3/4
+W1 7/8
+TAPPING TOOL HOLDER
+kE ver
+SPECIFICATIONS
+Js ISO DINS?1 DINS?76
+4 3.2 3.15 25 ue 27 22
+5 c] 4 3.15 45 3.4 2.8 2.1
+5.5 45 5 4 6 49 3.5 27
+6 4.5 6.3 5 6 4.9 4.5 34
+6.1 5.9
+62 5 6.3 5 8 6.2 6 49
+7 55 8 6.3 8 7 55
+8 6
+35 6.5 9 ¥.1 9 7
+9 7
+10.5 a 11.2 g 11 eS]
+12 9
+125 10 125 10 12 9
+13 10
+14 11 14 11.2 14 11
+15 12 14 11.2 16 12
+7 13 16 12.5 18 14.5
+19 15 18 14 18 14.5
+20 15
+20 15 20 16 20 16
+21 7
+22 17
+23 7 20 16 22 18
+24 19
+25 19 224 18
+26 21
+28 21 25 20
+30 23
+a2 26 28 22.4
+36 26
+38 29 31.5 25
+O@®|PAGE 64
+SYNCHRONOUS SOLUTION
+3.18
+3.97
+4.76
+6.35
+7.94
+9.52
+11.14
 12.7
 14.28
 15.88
 19.05
 22.22
 25.4
-28
-20
-16
-22
-22.4
-18
-25
-20
-28
-22.4
-31.5
-25
+28.58
+31.75
 34.93
 38.1
 41.28
 44.45
-W1 3/4
-W1 7/8
-18
-31.75
-W1 1/2
-W1 5/8
-U1 3/4
-28.58
-35
-47.63
-1、 Overload protection with high precision and sensitivity, which can promise increased tool life.
-2、 Sensitive response to torque change and adjustable according to different work piece material.
-3、 Suitable for various tapping tools and machines.
-
-PAGE 63
-a*a
-d1
-3.18
-d1
-38
-M33
-M20
-DIN376
-32
-U1 1/8
-M32
-DIN371
-45
-30
-M28
-11
-M24
-W1
-M27
-M6
-Specification
-U1
-ISO
-PAGE 64
-TAPPING TOOL HOLDER
-铣削攻牙夹持具
-PROBLEM AND SOLUTIONS IN TAPPING PROCESS
-1
-2
-BORING TOOL Series
-3
-4
-5
-6
+47.63B O R I N G T O O L S e r i e s
 PAGE 65
-BORING TOOL SYSTEM
-BORING TOOL SYSTEM
+1 2 3 4 5 6
+TAPPING TOOL HOLDER 铣 削 攻 ⽛ 夹 持 具
+PROBLEM AND SOLUTIONS IN TAPPING PROCESS
+SYNCHRONOUS SOLUTION
+PROBLEM AND SOLUTIONS IN TAPPING PROCESS
+BORING TOOL Series
+7—TCK
 BST
 BSTBORING SYSTEM
+TCKBORING SYSTEM
+PAGE 66 PAGE 67
+BORING TOOL SYSTEM BBORING ORING TTOOL OOL SSYSTEM YSTEM
+BST
+BSTBORING SYSTEM
+IE)—
 TCK
 TCKBORING SYSTEM
-PAGE 66
-PAGE 67
-BORING TOOL SYSTEM
-BORING TOOL SYSTEM
-Graduated Ring
-CONTENTS
-Φ84
-Precision Boring Tool Holder
-d1
-NBH2084 Fine boring system / tool kit
-L
-L1
-NBJ16 Fine boring system / tool kit
-MICRO BORING TOOL SYSTEM
-EWN Fine boring head
-RBH Adjustable twin-head boring tool
-CBH Large-diameter f ine boring head
-RBH Adjustable large diameter twin-head boring tool
-B S T Tw i n - b l a d e b o r i n g t o o l
+omic
+qa
+<>) @-2008-32
+-2010-40
+-2012-53
+-2016-68
+-2020-83
+-2025-96
+-2030-115
+-2020-L
+NBH2084
+8~11
+10~13
+12~17
+16~21
+20~130
+25~135
+30~140
+120~280
+20
+20
+20
+20
+20
+20
+20
+20
+Φ8~Φ280
+3280
+4087
+5398
+68 110
+83 123
+96 137
+115 152
+84+BTL1 100
+Φ0.01mm/格
+TBGT0601..L
+TBGT0601..L
+TPGH0902..L
+TPGH0902..L
+TPGH1103..L
+TPGH1103..L
+TPGH1103..L
+TPGH1103..L
+28.0mm
+M2.0×5
+M2.0×5
+M2.5×6
+M2.5×6
+M3.0×7
+M3.0×7
+M3.0×7
+M3.0×7
+T 6 T 6 T 8 T 8 T8 T 8 T8 T 8
+3.0
+0.095
+0.095
+0.12
+0.16
+0.22
+0.34
+0.54
+0.23
 Specificat
 ion
+Specificat
+ion
+Boring
+Range
 Boring
 Range
 Turning
 precision
-Stroke
-NBH2084
-Φ8~Φ280
-Φ0.01mm/格
-28.0mm
-Specificat
-ion
-BT CK type rough boring bar
-SBJ
-BT LBK type boring bar
-CK Modular extension bar / f ixed length extension bar
-Safety boring bar (modular + f ixed shank) / modular boring bar type BE (boring range Ø9–34mm)
-3.0
-Boring
-Range
-d1
--2008-32
-8~11
-20
-3280 TBGT0601..L
-M2.0×5
-T
-0.095
--2010-40
-10~13
-20
-4087 TBGT0601..L
-M2.0×5
-6
-0.095
--2012-53
-12~17
-20
-5398 TPGH0902..L
-M2.5×6
-T
-0.12
-L1
 Clamp
-Applicable inserts screw
-L
+screw
 spann
 er
--2016-68
-16~21
-20
-68 110 TPGH0902..L
-6
-0.16
--2020-83
-20~130
-20
-M3.0×7
-T
-0.22
-M3.0×7
-8
-0.34
-M3.0×7
-M3.0×7
-T
-0.54
-8
-0.23
-DCK2-FBH25P Precision f ine boring system
--2025-96
-25~135
-20
-DCK3-FBH32P Precision f ine boring system
--2030-115
-30~140
-20
-115 152 TPGH1103..L
--2020-L
-120~280
-20
-84+BTL1 100 TPGH1103..L
-T
-8
-DCK5-FBH50P Precision f ine boring system
-Feature
-DCK6-FBH63P Precision f ine boring system
-DCK6-FBH63P Modular f ine boring system
-BSA 45° adjustable angle boring bar
+d1 L1 L
+Applicable inserts
+Stroke Weight(KG)
 Weight(KG)
-M2.5×6
-83 123 TPGH1103..L
-96 137 TPGH1103..L
-D C K4 - F B H 4 0 P P r e c i s i o n f i n e b o r i n g s y s t e m
-Weight(KG)
-T
-1、Precision adjustable boring head with boring range 8-280mm,
-8
-2、8 piece boring bar for free selection of different boring range.
-3、Stable boring .0.01mm for each changing dimension.
-
-T
-8
-T
-BSB 90° right angle boring bar
-8
-BSA 45° adjustable angle tool holder / BSB 90° right angle tool holder
-CBS Three-blade / BSB f ive-blade boring head
-Fixed diameter boring cutter
-B T t a p e r s h a n k s i z e / S K t a p e r s h a n k s i z e / C AT t a p e r s h a n k s i z e / I S O t a p e r s h a n k s i z e
-N C To o l h o l d e r a c c e s s o r i e s
+SBJ
+NBH2084-8P
+NBH2084-8P
+NBH2084-8P
+NBH2084-8P
+NBH2084-8P
+NBH2084-8P
+NBH2084-8P
+08~280
+08~280
+08~280
+08~280
+08~280
+08~280
+08~280
+BT40-NBH-50
+BT50-NBH-55
+NT40-NBH-50
+NT50-NBH-55
+SK40-NBH-50
+SK50-NBH-55
+R8-NBH-50
 NBH2084
-H S K To o l h o l d e r a c c e s s o r i e s
+NBH2084
+NBH2084
+NBH2084
+NBH2084
+NBH2084
+NBH2084
+SBJ-20..
+SBJ-20..
+SBJ-20..
+SBJ-20..
+SBJ-20..
+SBJ-20..
+SBJ-20..
+9.5
+12.0
+9.3
+10.8
+9.5
+12.0
+10.0
+CONTENTS
+PAGE 68 PAGE 69
+NBH2084
+Head
+Spec
 Specificat
 ion
+Spindle
+model
+1、 Precision adjustable boring head with boring range 8-280mm,
+2、 8 piece boring bar for free selection of different boring range.
+3、 Stable boring .0.01mm for each changing dimension.
+Boring
+Boring Range bar Weight(KG)
 BT40
 BT50
 NT40
@@ -3510,299 +4059,200 @@ NT50
 SK40
 SK50
 R8
-PAGE 68
-Boring Range
-Spindle
-model
-Head
-Spec
-Boring
-bar
-Weight(KG)
-BT40-NBH-50
-NBH2084
-SBJ-20..
-
-9.5
-08~280
-BT50-NBH-55
-NBH2084
-SBJ-20..
-
-12.0
-NBH2084-8P
-08~280
-NT40-NBH-50
-NBH2084
-SBJ-20..
-
-9.3
-NBH2084-8P
-08~280
-NT50-NBH-55
-NBH2084
-SBJ-20..
-
-10.8
-NBH2084-8P
-08~280
-SK40-NBH-50
-NBH2084
-SBJ-20..
-
-9.5
-NBH2084-8P
-08~280
-SK50-NBH-55
-NBH2084
-SBJ-20..
-
-12.0
-NBH2084-8P
-08~280
-R8-NBH-50
-NBH2084
-SBJ-20..
-
-10.0
-NBH2084-8P
-08~280
-NBH2084-8P
-PAGE 69
-BORING TOOL SYSTEM
+Φ84 Precision Boring Tool Holder
+Graduated Ring
+d1
+L
+L1
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+MICRO BORING TOOL SYSTEM
+F e a t u r e
+NBH2084 Fine boring system / tool kit
+NBJ16 Fine boring system / tool kit
+EWN Fine boring head
+RBH Adjustable twin-head boring tool
+CBH Large - diameter f ine boring head
+RBH Adjustable large diameter twin-head boring tool
+BST Twin-blade boring tool
+BT CK type rough boring bar
+BT LBK type boring bar
+CK Modular extension bar / f ixed length extension bar
+Safety boring bar (modular + f ixed shank) / modular boring bar type BE (boring range Ø9–34mm)
+DCK2-FBH25P Precision f ine boring system
+DCK3-FBH32P Precision f ine boring system
+DCK4 -FBH40P Precision f ine boring system
+DCK5-FBH50P Precision f ine boring system
+DCK6-FBH63P Precision f ine boring system
+DCK6-FBH63P Modular f ine boring system
+BSA 45° adjustable angle boring bar
+BSB 90° right angle boring bar
+BSA 45° adjustable angle tool holder / BSB 90° right angle tool holder
+CBS Three -blade / BSB f ive -blade boring head
+Fixed diameter boring cutter
+BT taper shank size / SK taper shank size / CAT taper shank size / ISO taper shank size
+NC Tool holder accessories
+HSK Tool holder accessories
+SYNCHRONOUS SOLUTION
+CONTENTS
+NBH2084 Fine boring system / tool kit
+NBIJ16 Fine boring system / tool kit
+EWN Fine boring head
+RBH Adjustable twin-head boring tool
+CBH Large-diameter fine boring head
 BORING TOOL SYSTEM
-50
-Blade
-bearing
-90
-L
-d1
-Specificat
-ion
-Turning
-precision
-BoringRange
-Φ0.01mm/格
-Φ6~Φ51
-SBJ16
-SBJ
-D
-Specificati
-on
-Boring
-Range
--1606-24 *
-6~9 8~11
--1608-32
-10~13
--1610-40
-12~15
--1612-53
-14~17
--1614-60 *
-16~21
--1616-68
-20~26
--1620-83
-25~31
--1625-90
-30~36
--1630-90
-35~41
--1635-90 *
-40~46
--1640-90
-45~51
--1645-90 *
-d1
-L1
-L
-16
-24
-73
-16
-32
-80
-Weight(K
-G)
-6.0mm
-1.2
-Clamp
-Applicable inserts screw
-WBGT0601..L
-TBGT0601..L
-16
-40
-87
-TBGT0601..L
-16
-53
-98
-TPGH0902..L
-16
-60
-103
-TPGH0902..L
-16
-68
-110
-TPGH0902..L
-16
-83
-125
-TPGH1103..L
-16
-90
-128
-TPGH1103..L
-16
-90
-128
-TPGH1103..L
-16
-90
-128
-TPGH1103..L
-16
-90
-128
-90
-128
-16
-L1
-Stroke
-TPGH1103..L
-TPGH1103..L
-M2.0×5
-T6 T6
-0.077
-M2.0×5
-T6
-0.082
-M2.5×6
-T8
-0.095
-M2.5×6
-T8
-0.101
-M2.5×6
-T8
-0.143
-M3.0×7
-M3.0×7
-T8
-0.203
-T8
-0.275
-M3.0×7
-T8 T8
-0.275
-M3.0×7
-M3.0×7
-0.014
-Specificat
-ion
-CK
-LBK
-L
-Range
-2 0-- 2 6
-E W N 2 0 - 3 6 2 9 . 5 3 2 . 5 2 5-- 3 1
-3300--3366
-32-42 E W N 3 2 - 6 0 3 5 4 0 4 1 - 5 14 6 - 5 1
-5 0 - 6 05 0 - 6 0
-0.280
-L2
+RBH Adjustable large diameter twin-head boring tool
+BST Twin-blade boring tool
+BT CK type rough boring bar
+BT LBK type boring bar
+CK Modular extension bar / fixed length extension bar
+Safety boring bar (modular + fixed shank) / modular boring bar type BE (boring range @9-34mm)
+DCK2-FBH25P Precision fine boring system
+DCK3-FBH32P Precision fine boring system
+DCK4-FBH4OP Precision fine boring system
+DCK5-FBHSOP Precision fine boring system
+DCK6-FBH63P Precision fine boring system
+DCK6-FBH63P Modular fine boring system
+BSA 45° adjustable angle boring bar
+BSB 90° right angle boring bar
+BSA 45° adjustable angle tool holder / BSB 90° right angle tool holder
+CBS Three-blade / BSB five-blade boring head
+Fixed diameter boring cutter
+BT taper shank size / SK taper shank size / CAT taper shank size / ISO taper shank size
+NC Tool holder accessories
+HSK Tool holder accessories
+QO) PAGE 68
+BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
+Graduated Ring
+a
+AA
+084 Precision Boring Tool Holder
+| I]
+dl ft , ; ‘> q
+ul
+MICRO BORING TOOL SYSTEM
+sr I—
+Specification | BoringRange | Tumingprecision | Stroke Weight(KG)
+NBH2084 | 8-0280 | ©0.01mm_— | 28.0mm 3.0
+Specification Boring Range a El It Applicable inserts | Clamp screw | spanner | Weight(KG)
+| SBU| -2008-32 8~11 | 20] 32 | 80 |TBGToO6O1..L] m2.0x5 | Te 0.095
+-2010-40 10~13 | 20 40 87 |TBGTO601..L] M2.0x5 | T6 0.095
+-2012-53 12~17, | 20| 53 98 |TPGHO902..L] M2.5x6 | T8 0.12
+-2016-68 16~21 | 20 68 |110]TPGHO902..L]| M2.5x6 | T8 0.16
+-2020-83 20-130 | 20] 83 |123]TPGH1103..L] M3.0x7 | T8 0.22
+-2025-96 25~135 | 20 96 |137|TPGH1103..L] m3.0x7 | TS 0.34
+-2030-115 30-140 | 20 115 |152 |}TPGH1103..L] M3.0*7 T8 0.54
+-2020-L 120~280 20 |844+BTL1] 100 |TPGH1103..L] M3.0x7 T8 0.23
+1, Precision adjustable boring head with boring range 8-280mm,
+2, 8 piece boring bar for free selection of different boring range.
+3, Stable boring .0.0lmm for each changing dimension.
+NBH2084
+Specification Boring Range Spindle mode! Head Spec Boring bar Weight(KG)
+E27) NBH2084-8P 08~280 BT40-NBH-50 NBH2084 SBJ-20.. 9.5
+[yey] © NBH2084-8P 08~280 BT50-NBH-55 NBH2084 SBJ-20.. 12.0
+[iz NBH2084-8P 08~280 NT40-NBH-50 NBH2084 SBJ-20.. 9.3
+[ie §~=NBH2084-sP 08~280 NT50-NBH-55 NBH2084 SBJ-20.. 10.8
+ZT; ~=NBH2084-8P 08~280 SK40-NBH-50 NBH2084 SBJ-20.. 9.5
+Ser NBH2084-8P 08~280 SK50-NBH-55 NBH2084 SBJ-20.. 12.0
+BS NBH2084-8P 08~280 R8-NBH-50 NBH2084 SBJ-20.. 10.0
+a)—EWN
 Insert
-Holder Blade bearing
-L3 Range
 TPGH 080202
-10 10.5 19
-0.211
+M2.2 T6
 Specificat
 ion
-NBJ16 MICRO BORING TOOL SYSTEM
-NBJ16
-EWN
-镗孔范围
-主轴柄规格
-镗头型号
-NBJ16-12P
-6~51
-NBJ16-12P
-6~51
-NBJ16-12P
-6~51
-NBJ16-12P
-6~51
-NBJ16-12P
-6~51
-NBJ16-12P
-6~51
-Drawing of
-shape
-16 10 25
 1-1 1-2
 1-3
-镗刀杆
-SCK1EWN20-36
+2-1
 2-2
 2-3
-Bar keep out
-BT40-CK6-55
-NBJ16
-SBJ-16..
-
-9.1
-BT50-CK6-65
-NBJ16
-SBJ-16..
-
-11.7
-NT40-CK6-55
-NBJ16
-SBJ-16..
-
-8.5
-NT50-CK6-65
-NBJ16
-SBJ-16..
-
-10.3
-SK40-CK6-55
-NBJ16
-SBJ-16..
-
-8.9
-SK50-CK6-65
-NBJ16
-SBJ-16..
-
-10.5
 3-1
 3-2
 3-3
 Specificat
 ion
-0.07
+Drawing of
+shape
+L
+Boring
+head
+B
+Specificat
+ion
+4-1 4-2
+4-3
+5-1
+5-2
+5-3
+6-1
+6-2
+6-3
+Drawing of
+shape
+Boring
+head
+Specificat
+ion
+4-1 4-2
+4-3
+5-1
+5-2
+5-3
+6-1
+6-2
+6-3
+Drawing of
+shape
+Boring
+head
+20-26
+EWN20-36 29.5 32.5 25-31
+30-36
+25-33
+--
+30-36
+-
+36-40
+39-47
+-
+46-51
+50-60
+-
+53-63
+61-74
+53-70
+65-82
+78-95
+80-100
+EWN68-150 67.2 71 94-126 32.5 22 45.2 94-126
+1 0 1 0 . 5 1 9
+EWN25-47 32.5 35.5 32-40 12.511.5 21
+39-47
+32-42
+41-51
+50-60
+41-54
+EWN41-74 43 47 50-63
+61-74
+53-70
+EWN32-60 35 40 16 10 25
+20 14 29
+EWN53-95 53 57 65-82 25.5 19 34
+78-95
+68-100
+118-150
+100-153
+118-150
+112-153
+EWN100-203 67.2 71 126-179 45.5 22 45.2 126-179
+150-203 150-203
+CK1
+LBK1
 CK2
-ENH2-1
-ENH2-2
-ENH2-3
-0.12
-3º
-TPGH08020
-2
-SCK2EWN25-47
-SCK3EWN32-60
-080202 M2.2 T6
-TPGH
+LBK2
+CK3
 LBK3
 CK4
-ENH4-1
-E
-2 NH4-
-TCMT
 LBK4
 CK5
 LBK5
@@ -3810,10 +4260,61 @@ CK6
 LBK6
 CK6
 LBK6
-Drawing of
-shape
-ENH43
-ENH5-1
+TPGH
+080202 M2.2 T6
+TPGH
+080202 M2.2 T6
+TCMT
+110204 M2.5 T8
+TCMT
+110204 M2.5 T8
+TCMT
+110204 M2.5 T8
+TCMT
+110204 M2.5 T8
+2.46
+0.40
+1.10
+0.07
+1.47
+0.12
+0.21
+L1
+TPGH08020
+2
+Range
+SCK1-
+EWN20-36
+SCK2-
+EWN25-47
+SCK3-
+EWN32-60
+L2 L3 Range Holder
+SCK4-
+EWN41-74
+SCK5-
+EWN53-95
+3 º SCK6-
+对应⼑ ⽚
+TCMT110204EWN68-150
+SCK6-
+EWN100-203
+Blade bearing
+ENH1-1
+ENH1-2
+ENH1-3
+ENH2-1
+ENH2-2
+ENH2-3
+ENH3-1
+ENH3-2
+ENH3-3
+ENH4-1
+ENH4-
+2E
+NH4-
+3 E
+NH5-1
 ENH5-2
 ENH5-3
 ENH6-1
@@ -3822,535 +4323,856 @@ ENH6-3
 ENH6-1
 ENH6-2
 ENH6-3
-Boring
-head
-SCK4EWN41-74
-5-1
-5-2
-5-3
-6-1
-6-2
-6-3
-TPGH
-ENH3-1
-ENH3-2
-ENH3-3
-4-1 4-2
-4-3
-2-1
-Head NO
-Boring
-head
-E N H 1 -M
-1 2.2 T6
-ENH1-2
-ENH1-3
-CK3
-100-153
-112-153
-EWN100-203 67.2 71 126-179 45.5 22 45.2 126-179
-150-203
-150-203
-精搪孔刀杆
-CK1
-LBK1
-LBK2
-1 000
-6880- 1- 0
-EWN68-150 67.2 71 94-126 32.5 22 45.2 94-126
-118-150
-118-150
-Boring Range Spinde handle models
-ΦD
-Counterboring
-B
-41-54 E W N 4 1 - 7 4 4 3 4 7 5 0 - 6 35 3 - 6 3 2 0 1 4 2 9
-6 1 - 7 46 1 - 7 4
-5 3 - 7 05 3 - 7 0
-E W N 5 3 - 9 5 5 3 5 7 6 5 - 86252- 8
-5 .25 1 9 3 4
-- 95 5
-7788- 9
-0.280
-刻度环
-型号
-Boring
-L1
-2 5 --3 3
-E W N 2 5 - 4 7 3 2 . 5 3 5 . 5 3326- 4
-- 4001 2 . 5 1 1 . 5 2 1
-3 9 - 4 73 9 - 4 7
-0.01
-Specification
-B
+SCK4-
+EWN41-74
+SCK5-
+EWN53-95
+0 º SCK6-
+对应⼑ ⽚
+TCMT110204EWN68-150
+SCK6-
+EWN100-203
+CK
+LBK
 EWN
-Weight(K
-G)
-M2.0×4
-T8 T8
-Diameter of the smallest
-EWN MICRO BORING HEAD
-spann
-er
-M3.0×7
-110204 M2.5 T8
-TCMT
-110204 M2.5 T8
-TCMT
-110204 M2.5 T8
-TCMT
-110204 M2.5 T8
+3º
+Boring Counterboring
+Specificati
+on
+-1606-24 *
+-1608-32
+-1610-40
+-1612-53
+-1614-60 *
+-1616-68
+-1620-83
+-1625-90
+-1630-90
+-1635-90 *
+-1640-90
+-1645-90 *
 Specificat
 ion
-Drawing of
-shape
-4-1 4-2
-4-3
-SCK5EWN53-95
-SCK6-
-3º
-080202 M2.2 T6
-对应刀片
-TCMT110204EWN68-150
-SCK6EWN100-203
-5-2
-5-3
-6-1
-6-2
-6-3
-0º
-PAGE 70
-PAGE 71
-0.40
-1.10
-1.47
-2.46
 Boring
-head
-SCK5EWN53-95
-SCK6-
-对应刀片
-TCMT110204EWN68-150
-SCK6EWN100-203
-Feature
-1、Precision adjustable boring head with boring range 6-51mm, 0.01mm for each changing dimension.
-2、8 piece boring bar for free selection of different boring range. 3、Stable boring.
-
-0.21
-SCK4EWN41-74
-5-1
-1、 Precision adjustable boring head with boring range 8-280mm，0.01mm for each dial diameter.
+Range
+6~9 8~11
+10~13
+12~15
+14~17
+16~21
+20~26
+25~31
+30~36
+35~41
+40~46
+45~51
+Turning
+precision
+Φ0.01mm/格
+Stroke
+6.0mm
+Clamp
+screw
+M2.0×4
+M2.0×5
+M2.0×5
+M2.5×6
+M2.5×6
+M2.5×6
+M3.0×7
+M3.0×7
+M3.0×7
+M3.0×7
+M3.0×7
+M3.0×7
+spann
+er
+T6 T6
+T6
+T8
+T8
+T8
+T8
+T8
+T8 T8
+T8 T8
+Weight(K
+G)
+1.2
+Weight(K
+G)
+0.014
+0.077
+0.082
+0.095
+0.101
+0.143
+0.203
+0.275
+0.275
+0.280
+0.280
+0.211
+SBJ16
+16
+16
+16
+16
+16
+16
+16
+16
+16
+16
+16
+16
+Φ6~Φ51
+24
+32
+40
+53
+60
+68
+83
+90
+90
+90
+90
+90
+73
+80
+87
+98
+103
+110
+125
+128
+128
+128
+128
+128
+WBGT0601..L
+TBGT0601..L
+TBGT0601..L
+TPGH0902..L
+TPGH0902..L
+TPGH0902..L
+TPGH1103..L
+TPGH1103..L
+TPGH1103..L
+TPGH1103..L
+TPGH1103..L
+TPGH1103..L
+Boring
+d1 L1 L
+Applicable inserts
+Range
+SBJ
+PAGE 70 PAGE 71
+NBJ16
+NBJ16
+1、
+2、
+型 号
+Specification
+NBJ16-12P
+NBJ16-12P
+NBJ16-12P
+NBJ16-12P
+NBJ16-12P
+NBJ16-12P
+镗 孔 范 围
+Boring Range
+6~51
+6~51
+6~51
+6~51
+6~51
+6~51
+主 轴 柄 规 格 镗 头 型 号 镗 ⼑ 杆
+1、 Precision adjustable boring head with boring range 8-280mm， 0.01mm for each dial diameter.
 2、 Internal cooling direct for boring insert, with increased tool life.
 3、 Dynamic balance ensures precision and stable boring.
-
-Feature
-L3
-Bottom dia.of the
-smallest
-L1
+BT40-CK6-55
+BT50-CK6-65
+NT40-CK6-55
+NT50-CK6-65
+SK40-CK6-55
+SK50-CK6-65
 NBJ16
-L2
-E W N. N O .
-
-D
-Machining dia.ΦD
-d1
-36
-L1
+NBJ16
+NBJ16
+NBJ16
+NBJ16
+NBJ16
+SBJ-16..
+SBJ-16..
+SBJ-16..
+SBJ-16..
+SBJ-16..
+SBJ-16..
+9.1
+11.7
+8.5
+10.3
+8.9
+10.5
+Spinde handle models Head NO Bar keep out
+刻度环
+0.01
+精搪孔⼑ 杆
+9 0
+L
+L 1
+L 1
+D D
+3 6
+d
+d 1
+d 1
+刻 度 环
+BORING TOOL SYSTEM
+C K 6 接 ⼝
+BORING TOOL SYSTEM
+5 0
 NBJ16 MICRO BORING TOOL SYSTEM
+NBJ16 MICRO BORING TOOL SYSTEM
+EWN MICRO BORING HEAD
+Precision adjustable boring head with boring range 6-51mm, 0.01mm for each changing dimension.
+8 piece boring bar for free selection of different boring range. 3、 Stable boring.
+F e a t u r e
+F e a t u r e
+.NO.
+L
+L1
 Blade
 bearing
-L
+EWN
+Machining dia.ΦD
+L2
+Diameter of the smallest
+Blade
+bearing
+L3
+B
+ΦD
+Bottom dia.of the
+smallest
 Anti-boting
-d
-刻度环
-CK6接口
-BORING TOOL SYSTEM
-D
-L
 BORING TOOL SYSTEM
-C
-MODULAR BORING CUTTER
-200-910mm
-L
-CBH
-D
-mm
-）Size
-L
-RBH ADJUSTABLE ROUGH BORING HEAD
-RBH
-mm
-）Size
-Specification
-LBK
-Figu
+SYNCHRONOUS SOLUTION
+<=.
+NBJ16 MICRO BORING TOOL—_—
+>
+NBJ16
+Specification | BoringRange | Tumingprecision | Stroke Weight(KG)
+SBJ16 | 6-051 | ©0.01mn 6.0mm 1.2
+, : di Li L ; A ,
+Specification Boring Range Applicable inserts | Clampscrew | spanner | Weight(KG)
+| SB =1606-24* 6~9 16 | 24 | 73 | weGTO6O1..L| M2.0x4 | Té 0.014
+-1608-32 8~11 16 | 32 | 80 | TBGTO6O1..L | M2.0x5 | Té 0.077
+-1610-40 10~13 | 16 | 40 | 87 | TBGTO6O1..L | M2.0x5 | Té 0.082
+-1612-53 12~15 | 16 | 53 | 98 | TPGHO9O2..L| M2.5x6 | TB 0.095
+-1614-60* 14~17 | 16 | 60 | 103 | TPGHO902.L| M2.5x6 | T8 0.101
+-1616-68 16~21 | 16 | 68 | 110 | TPGHO9O2..L | mMa25x6 | TS 0.143
+-1620-83 20~26 16 83 125 |TPGH1103..L | M3.0x7 T8 0.203
+-1625-90 25~31 | 16 | 90 | 128 | TPGH1103..L| M3.0x7 | T8 0.275
+-1630-90 30~36 | 16 | 90 | 128 | TPGH1103..L] M3.0x7 | T8 0.275
+-1635-90* 35~41 | 16 | 90 | 128 | TPGH1103..L] m3.0x7 | T8 0.280
+-1640-90 40~46 | 16 | 90 | 128 | TPGH1103.L] M3.0x7 | T8 0.280
+-1645-90* 45~51 | 16 | 90 | 128 | TPGH1103...] M3.0x7 | Ts 0.211
+©
+itd
+NBJ16 MICRO BORING iS SYSTEM
+NBJ16
+Specification Boring Range Spinde handle models Head NO Bar keep out Weight(KG)
+Ci) = NBJi6-12P 6-51 BT40-CK6-55 NBJ16 SBJ-16.. 9.1
+NBJ16-12P 6~51 BT50-CK6-65 NBJ16 SBJ-16.. 11.7
+(et) NBJ16-12P 6~51 NT40-CK6-55 NBJ16 SBJ-16.. 8.5
+(ey) = NBJ16-12P 6~51 NT50-CK6-65 NBJ16 SBJ-16.. 10.3
+Se) = NBJ16-12P 6~51 SK40-CK6-55 NBJ16 SBJ-16.. 8.9
+Set = NBw16-12P 6~51 SK50-CK6-65 NBJ16 SBJ-16.. 10.5
+1, Precision adjustable boring head with boring range 6-51mm, 0.01mm for each changing dimension.
+2, 8 piece boring bar for free selection of different boring range. 3, Stable boring.
+7—
+BORING TOOL SYSTEM
+EWNNO.
+ul
+Machining dia.®D
+SYNCHRONOUS SOLUTION
+Blade
+bearing Blade
+bearing
+oD
+smallest
+Bottom dia.of the
+Diameter of the smallest
+Anti-botin
+EWN MICRO BORING HEAD
+EWN
+Specification | 14 | Range] B | 12/13 Range | Holder |Blade bearing) Insert [Screw |Wrench] Weight
+20-26 - ENHi-1
+EWN20-36 |29.5/32.5| 25-31 | 10 ho.) 19] - ae ENH1-2 ined M2.2| T6 | 0.07
+30-36 30-36 ENH1-3
+25-33 = CK? ENH2-1 TPGH
+EWN25-47 |32.5/35.5] 32-40 |12.5111.5 21] 36-40 | ays | ENH2-2 | ogo202|M2.2| Té | 0.12
+39-47 39-47 ENH2-3
+32-42 = ENH3-1
+EWN32-60 | 35 | 40 | 41-51 | 16] 10] 25| 46-51 rhea ENH3-2 eA rae. Té | 0.21
+50-60 50-60 ENH3-3
+41-54 = ENH4-1
+EWN41-74 | 43 | 47 | 50-63 | 20| 14] 29] 53-63 ae ENH4-2 |TCMT |m2.5] T8 | 0.40
+61-74 61-74 ENH4-3
+53-70 53-70 ENHS5-1
+EWNs3-95 | 53 | 57 | 65-82 |25.5 19 | 34| 65-82 | Che. | enHs-2 |TOMI Imz.5] 18 | 14.10
+78-95 78-95 ENH5-3
+68-100 80-100] ong | ENHE-1 ons
+EWN68-150|67.2| 71 |94-126 |32.5) 22 |45.4 94-126] PAO. | enne-2 |TCM! Im2.5] Ta | 1.47
+H 18-150 118-150 ENH6-3
+00-153 112-153] Gy | ENH6-1 |
+EWN100-203|67.2] 71 |126-179]45.5| 22 |45.4126-179] ray2g | ENH6-2 | 1 Taya M2.5| T8 | 2.46
+H 50-203 150-203 ENH6-3
+Specification | Orawing of shape Boring head | Specification) Drawing of shape] Boringhead | Specification |Drawing of shape Boning head
+EWN in SCK1- re Aad SCK4-
+1-3 > EWN20-3 | 4_3 4-3 D EWN41-74
+a1 SCK2- a) eae SCK5-
+2-3 EWN? 1 5-3 5-3 o t EWNS3-95
+3-4 EE 6-1 MA SCK6- 6-1 SEA SCK6-
+3-2 TPGHOS80202 SCK3- 6-2 TCMT110204) Eyyne8-150 6-2 TCMT1102041 Pynes—150
+EWN100-203 EWN100-203
+1, Precision adjustable boring head with boring range 8-280mm, 0.01mm for each dial diameter.
+2, Internal cooling direct for boring insert, with increased tool life.
+3, Dynamic balance ensures precision and stable boring.
+a)—Specification Figu
 re
-A
-A
-A
-A
-A
-A
-BST
-B
-B
-A
-C
-L
+A A
+A A A A A B B
 Boring range D
-Modular holder
-Insert
-Screw Wrench Weight
-19
-40
 19-25
-LBK1
-CCMT0602
-M2.5
-T8
-24
-45
 25-33
-LBK2
-CCMT0602
-M2.5
-T8
-31
-55
 32-42
-M2.5
-T8
-65
 40-55
-LBK3
-CCMT0602
-M4
-T15
-75
 52-70
-M4
-T15
+68-92
+90-122
+120-164
+160-204
+Modular holder Insert
+CCMT0602
+CCMT0602
+CCMT0602
+CCMT09T3
+CCMT09T3
+CCMT1204
+CCMT1204
+CCMT1204
+CCMT1204
+C Screw Wrench Weight
+19
+24
+） S i z e
+L
+40
+45
+55
+65
+75
+85
+100
+95
+95
+m m
+31
 39
 50
 64
 64
 95
 95
+LBK1
+LBK2
+LBK3
 LBK4
-CCMT09T3
 LBK5
-CCMT09T3
-85
-68-92
 LBK6
-CCMT1204
-M5
-T20
-100
-90-122
 LBK6
-CCMT1204
-M5
-T20
-95
-120-164
-CCMT1204
-95
-160-204
 BST
-M5
-T20
-M5
-T20
 BST
-CCMT1204
-Specification
-C
-L
-CBH200310
-180
-130
-200-310
-CBH300410
-BST
-280
-130
-300-410
-BST
-CBH400510
-380
-130
-400-510
-CBH500610
-BST
-480
-130
-500-610
-CBH600710
-BST
-580
-130
-600-710
-CBH700810
-680
-130
-700-810
-BST
-CBH800910
-780
-130
-800-910
-Specification
-BT50-BSTSeries
-BST-Fl200
-Feature
-1、Adjustable rough boring head with boring range 19-204mm.
-2、 Simple modular structure, high boring rigidity for universal boring process.
-
-Boring rangeModular holder
-Insert
-TPGH09020
-4
-Wrench
 M2.5
+M2.5
+M2.5
+M4
+M4
+M5
+M5
+M5
+M5
 T8
-TCMT11020
+T8
+T8
+T15
+T15
+T20
+T20
+T20
+T20
+LBK
 BST
+Specification
+CBH200310
+CBH300410
+CBH400510
+CBH500610
+CBH600710
+CBH700810
+CBH800910
+Boring range
+200-310
+300-410
+400-510
+500-610
+600-710
+700-810
+800-910
+C Modular holder Insert Screw Wrench
+180
+280
+380
+480
+580
+680
+780
+） S i z e
+L
+130
+130
+130
+130
+130
+130
+130
+m m
+BST
+BST
+BST
+BST
+BST
+BST
+BST
+TPGH09020
+4 T
+CMT11020
 4
-BST
-Module
-Insert
-Module
-holder
-Flang
-e
-2.7
+M2.5 T8
+PAGE 72 PAGE 73
+RBH
+CBH
+F e a t u r e
+1、 Adjustable rough boring head with boring range 19-204mm.
+2、 Simple modular structure, high boring rigidity for universal boring process.
+Specification Module Insert
+S u i t i n s e r t
+T P G H 0 8 0 2 0 2 / M 2 . 2 / T 7 , T P G H 0 9 0 2 0 4 / M 2 . 5 / T 8 , T C M T 1 1 0 2 0 4 / M 2 . 5 /
+T 8 , T P G H 1 1 0 3 0 4 M / 3 / T 1 5
+CB200
 DST200
-3.4
 DST300
-5.4
 DST400
 DST500
 DST600
-7.4
-Extension
-Slide
-9.4
-11.4
 DST700
-13.4
 DST800
-15.4
 DBN300
-Balance
-Weight
-1.6
-CB200
+BST-Fl200
+BT50-BSTSeries
+Flang
+e
 Finsert
 Head
+Extension
+Slide
+Module
+holder
+Balance
+Weight
+2.7
 1.6
-Suit insert
-TPGH080202/M2.2/T7,TPGH090204/M2.5/T8,TCMT110204/M2.5/
-T8,TPGH110304M/3/T15
-PAGE 72
-Screw
-PAGE 73
-BORING TOOL SYSTEM
+1.6
+3.4
+5.4
+7.4
+9.4
+11.4
+13.4
+15.4
+D
+D
 L
-BORING TOOL SYSTEM
+L
+L
 C
+2 0 0 - 9 1 0 m m
+RBH ADJUSTABLE ROUGH BORING HEAD
 MODULAR BORING CUTTER
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
 RBH
-BST
-mm
-）Size
+BORING TOOL SYSTEM
+©
+BORING TOOL SYSTEM
+©
+SYNCHRONOUS SOLUTION
+Simple modular structure, high boring rigidity for universal boring process.
+©®| PAGE 72
+° —)— fe
+(2)
+[e)
+RBH ADJUSTABLE ROUGH BORING HEAD
+(mm) Sze
+Specification Figure (e L Boring range D| Modular holder Insert Serew |Wrench] Weight
+RBH19-25-c | A | 19 | 40 | 19-25 LBK1_ | CcmTo602 | M2.5| T8 | 0.10
+RBH25-33-C | A | 24 | 45 | 25-33 LBK2 | CCMTO602 | M2.5] TS | 0.15
+RBH32-42-C | A | 31 | 55 | 32-42 LBK3__| CCMTO602 | M2.5| TS | 0.30
+RBH40-55-C | A | 39 | 65 | 40-55 LBK4 | CCMTO9T3 | M4 | 715 | 0.50
+RBH52-70-C | A | 50 | 75 | 52-70 LBK5 | CCMTO9T3 | M4 | T15 | 1.00
+RBH68-92-C | A | 64 | 85 | 68-92 LBK6 | CCMT1204 | M5 | 720 | 2.00
+RBH90-122-C | A | 64 | 100 | 90-122 LBK6 | CCMT1204 | M5 | 720 | 2.90
+EEUd RBH120-164-c| B | 95 | 95 | 120-164 BST CCMT1204 | M5 | 720 | 3.80
+RBH160-204-C| B | 95 | 95 | 160-204 BST CCMT1204 | M5 | 7120 | 4.80
+1, Adjustable rough boring head with boring range 19-204mm.
+Cta
+c
+200-910mm MODULAR BORING CUTTER
+CBH
+(mm) Size
+Specification Cc L Boring range } Modular holder Insert Screw | Wrench | Total weight
+CBH200310} 180 130 200-310 BST 97
+CBH300410 280 130 300-410 BST 11.7
+TCMT110204 ; :
+CBH600710 580 130 600-710 BST 7.7
+CBH700810 680 130 700-810 BST 19.7
+CBH800910) 780 130 800-910 BST 21.7
+Specification Module Insert Total weight
+BT50-BSTmAlSeries | 41, 4 Cet
+BST-FI200 Flange = 2.f
+DST200 3.4
+DST300 5.4
+DST400 7.4
+DST500 Sas f Ss 4 9.4
+Extension Slide
+DST600 “em \ } fe
+DST700 13.4
+DST800 15.4
+DBNS00 Balance Weight HH] 1.6
+Sanit Finsert Head = ie
+Suit insert
+TPGHO80202/M2.2/T7,TPGHO90204/M2.5/T8,TCMT110204/M2.5/
+a)—
+T8,TPGH110304M/3/T15Specification
+RBH200310
+RBH300410
+RBH400510
+RBH500610
+RBH600710
+RBH700810
+RBH800910
+C
+180
+280
+380
+480
+580
+680
+780
+） S i z e
+L
+130
+130
+130
+130
+130
+130
+130
+Module
+Insert
+Screw
+M5
+M5
+M5
+M5
+M5
+M5
+M5
 Total
 weight
-Specification
-C
-L
-RBH200310
-180
-130
-BST
-M5
-T20
-RBH300410
-200-310
-280
-130
-300-410
-BST
-M5
-T20
+9.7 11.7
 13.7
-M5
-M
-M5
-5
-T20
 15.7
-T20
 17.7
-T20
 19.7
-T20
-T20
 21.7
-Boring range Modular holder
-RBH400510
-380
-130
+Boring range Modular holder Insert Wrench
+Total weight
+m m
+Setting and
+applicable insert
+Setting Shim
+BST
+RB200-C12
+RB200-T16
+RB200-T22
+RB200-S12
+RS200
+RS201
+RST200
+RST300
+RST400
+RST500
+RST600
+RST700
+RST800
+BST-BR200
+BT50-BST系列Series
+CCMT1204
+TCMT16T3
+TCMT2204
+SCMT1204
+Flan
+ge
+200-310
+300-410
 400-510
-BST
-RBH500610
-480
-130
 500-610
-BST
-RBH600710
-580
-130
 600-710
-BST
-RBH700810
-680
-130
-BST
-RBH800910
 700-810
-780
-130
 800-910
-BST
+Height
+Clamp
+Base
+⼑ ⽚ 座及适⽤ ⼑ ⽚
 Insert
+Extension
+Slide
+Module
+holder
+BST
+BST
+BST
+BST
+BST
+BST
+BST
 DB200-C12
 DB200-T16
 DB200-T22
 DB200-S12
-Screw
-M5
-M5
-Wrench
-9.7 11.7
-Insert
-BT50-BST系列Series
-BST-BR200
-Module
-holder
-BT4
+T20
+T20
+T20
+T20
+T20
+T20
+T20
 2.7
-Flan
-ge
-3.4
-RST300
-5.4
-RST400
-7.4
-RST600
-Extension
-Slide
-9.4
-13.4
-RST800
-15.4
-RS201
-Clamp
-Base
-CCMT1204
-RB200-T16
-TCMT16T3
-RB200-T22
-TCMT2204
-RB200-S12
-SCMT1204
-L
-BST-70 BST-100
-50
-70
-3.2
-BST-100
-50
-100
-4.0
-BST-150 BST-
-50
-100
-5.10
-200
-50
-150
-6.8
-BST-250
-50
-200
-9.6
-BST-300
-50
-BST-350
-50
-BST-400
-250
-11.5
-300
-14.4
-50
-350
-16.8
-50
-400
-19.3
-0.05
-刀片座及适用刀片
-InsertSetting and
-0.68
-applicable insert
-PAGE 74
-Weig
-ht
-D
 0.98
-Height
-Setting Shim
-RB200-C12
-0
-）Size
-mm
-Specificat
-ion
+0.68
+3.4
+5.4
+7.4
+9.4
 11.4
-RST700
-RS200
-0
-BT5
-RST200
-RST500
-BST
-Total weight
-Module
-PAGE 75
-BORING TOOL SYSTEM
-BORING TOOL SYSTEM
-L
-CK NO
-D
-BT NO
-BT LBK BORING TOOL HOLDER
-L
-NO
-CK NO
-Specificati
-on
-BT30
+13.4
+15.4
+0.05
+PAGE 74 PAGE 75
 MODULAR BORING CUTTER
-BT C K
-L1
+RBH
+BST
 Specificat
 ion
-BT30
-BT40
-BT50
+） S i z e Weig
+ht
+3.2
+4.0
+5.10
+6.8
+9.6
+11.5
+14.4
+16.8
+19.3
+L 7
+0
+100
+100
+150
+200
+250
+300
+350
+400
+m m
+BT4
+0 B
+T5
+0
+BST-70 BST-100
+BST-100
+BST-150 BST-
+200
+BST-250
+BST-300
+BST-350
+BST-400
+D 50 50 50 50 50 50 50 50 50
+C
+L
+ANMI | BBORING ORING TTOOL OOL SSYSTEM YSTEM BBORING ORING TTOOL OOL SSYSTEM YSTEM ANME |
+SYNCHRONOUS SOLUTION SYNCHRONOUS SOLUTION
+O@®|PAGE 74 CO@|PAGE 75
+ei =a
+(0) (O) () | (O) (0) ©) an
+MODULAR BORING CUTTER :
+RBH ob o
+“(mim }Siae
+Specification Cc L Boring range Modular holder Insert Screw | Wrench | Totalweight
+| BST | RBH200310 | 180 430 | 200-310 BST ms | T20 9.7
+RBH300410 | 280 430 | 300-410 BST ms | T20 117
+RBH400510 | 380 130 | 400-510 BST | pecpo-ci2|_ M5 | T20 13.7
+RBH500610 | 480 130 | 500-610 Bst |pB200-T16] m5 | T20 15.7 |
+RBH600710 | 580 1430 | 600-710 BST Sooo S15 MS | T20 17.7 i
+RBH700810 | 680 430 | 700-810 BST ms | T20 19.7 -
+RBHs00910 | 780 430 | 800-910 BST ms | T20 | 217 Di-- rh: ia F
+U BST
+Specification Module Insert Total weight ©
+(mm) Size
+; Specification D L Weight
+BT50=-BST#llSeries Module holder C (20 IBT40 BST-70 50 70 3.2
+BST-100 50 100 4.0
+IBT50 BST-100 50 100 5.10
+BST-BR200 Flange 2.7 BST-150 50 150 6.8
+BST-200 50 200 9.6
+RST200 3.4 BST-250 50 250 11.5
+RST300 5.4 BST-300 50 300 14.4
+RST400 _ 7.4 BST-350 50 350 16.8
+RST500 Exdension Side f — =i 9.4 BST-400 50 400 19.3
+RST6O0 41.4
+RST700 13.4
+RST800 15.4
+SSS)
+RS201 wetesey er 0.05
+RB200-C12 CCMT1204
+RB200-T16 TCMT16T3 Ca
+Insert Setting and V 0.68
+RB200-T22 TCMT2204 | aoniicable inset Sees.
+RB200-$12 SCMT1204Specificat
+ion 70
+80
+80
+60
+60
+75
+115
+85
+120
+95
+145
+85
+135
+105
+165
+65
+115
+165
+90
+115
+145
+110
+140
+135
+175
+125
+185
+140
+210
+95
+150
+230
+105
+185
+250
+Clamp
+screw
+CKM1
+CKM2
+CKM3
+CKM4
+CKM5
+CKM1
+CKM1
+CKM2
+CKM2
+CKM3
+CKM3
+CKM4
+CKM4
+CKM5
+CKM5
+CKM6
+CKM6
+CKM6
+CKM7
+CKM1
+CKM1
+CKM2
+CKM2
+CKM3
+CKM3
+CKM4
+CKM4
+CKM5
+CKM5
+CKM6
+CKM6
+CKM6
+CKM7
+CKM7
+CKM7
+Weight(K
+G)
+0.47
+0.48
+0.48
+0.56
+0.67
+1.06
+1.09
+1.07 1.15
+1.24
+1.41 1.15
+2.03
+1.78
+3.30
+1.37
+2.16
+2.91
+2.66
+3.76
+3.88
+3.81
+4.05
+3.86
+4.14
+4.05
+4.57
+4.16
+5.60
+4.45
+5.69
+6.11
+5.34
+8.89
+10.25
 CK1-70
 CK2-80
 CK3-80
@@ -4421,44 +5243,6 @@ CK6
 CK7
 CK7
 CK7
-70
-80
-80
-60
-60
-75
-115
-85
-120
-95
-145
-85
-135
-105
-165
-65
-115
-165
-90
-115
-145
-110
-140
-135
-175
-125
-185
-140
-210
-95
-150
-230
-105
-185
-250
-Szie
-L1
-D
 45
 55
 55
@@ -4494,155 +5278,51 @@ D
 65
 145
 210
-19
-24
-31
-39
-49
-19
-19
-24
-24
-31
-31
-39
-39
-49
-49
-62
-62
-62
-83
-19
-19
-24
-24
-31
-31
-39
-39
-49
-49
-62
-62
-62
-83
-83
-83
-Clamp
-screw
-CKM1
-CKM2
-CKM3
-CKM4
-CKM5
-CKM1
-CKM1
-CKM2
-CKM2
-CKM3
-CKM3
-CKM4
-CKM4
-CKM5
-CKM5
-CKM6
-CKM6
-CKM6
-CKM7
-CKM1
-CKM1
-CKM2
-CKM2
-CKM3
-CKM3
-CKM4
-CKM4
-CKM5
-CKM5
-CKM6
-CKM6
-CKM6
-CKM7
-CKM7
-CKM7
-Fig.
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-Weight(K
-G)
-0.47
-0.48
-0.48
-0.56
-0.67
-1.06
-1.09
-1.07 1.15
-1.24
-1.41 1.15
-2.03
-1.78
-3.30
-1.37
-2.16
-2.91
-2.66
-3.76
-3.88
-3.81
-4.05
-3.86
-4.14
-4.05
-4.57
-4.16
-5.60
-4.45
-5.69
-6.11
-5.34
-8.89
-10.25
-BT L B K
-L1
 D
-BT NO
+19
+24
+31
+39
+49
+19
+19
+24
+24
+31
+31
+39
+39
+49
+49
+62
+62
+62
+83
+19
+19
+24
+24
+31
+31
+39
+39
+49
+49
+62
+62
+62
+83
+83
+83
+11111111111111111111111111111111111
+L1
+S z i e
+F i g .
+BT30
 BT40
 BT50
+Specificati
+on
 LBK1-70
 LBK2-80
 LBK3-80
@@ -4683,48 +5363,6 @@ LBK6-170
 LBK6-230
 LBK6-290
 LBK6-350
-Szie
-接口型号
-LBK1
-LBK2
-LBK3
-LBK4
-LBK5
-LBK6
-LBK1
-LBK1
-LBK2
-LBK2
-LBK3
-LBK3
-LBK3
-LBK4
-LBK4
-LBK4
-LBK5
-LBK5
-LBK5
-LBK6
-LBK6
-LBK6
-LBK1
-LBK1
-LBK2
-LBK2
-LBK3
-LBK3
-LBK4
-LBK4
-LBK4
-LBK4
-LBK5
-LBK5
-LBK5
-LBK6
-LBK6
-LBK6
-LBK6
-LBK6
 70
 80
 80
@@ -4765,8 +5403,46 @@ LBK6
 230
 290
 350
-L1
-D
+LBK1
+LBK2
+LBK3
+LBK4
+LBK5
+LBK6
+LBK1
+LBK1
+LBK2
+LBK2
+LBK3
+LBK3
+LBK3
+LBK4
+LBK4
+LBK4
+LBK5
+LBK5
+LBK5
+LBK6
+LBK6
+LBK6
+LBK1
+LBK1
+LBK2
+LBK2
+LBK3
+LBK3
+LBK4
+LBK4
+LBK4
+LBK4
+LBK5
+LBK5
+LBK5
+LBK6
+LBK6
+LBK6
+LBK6
+LBK6
 50
 60
 60
@@ -4807,6 +5483,7 @@ D
 195
 255
 315
+D
 19
 24
 31
@@ -4847,57 +5524,19 @@ D
 64
 64
 64
-ig.
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-Weight(KG)
+1111111111111111111111111111111111111111
 0.
-6
-0.
-8
-1.0
+60
+.
+81.
+0
 1.3
-11. .81
-31 .. 3
-01 . 3
+1.8
+3.
+1 0
+.1
+1.3
+1.3
 1.6
 1.5
 1.8
@@ -4919,7 +5558,7 @@ Weight(KG)
 8.1
 4.1
 4.
-24 . 1
+24.1
 4.2
 4.4
 4.5
@@ -4929,278 +5568,292 @@ Weight(KG)
 5.4
 5.5
 6.5
-Feature
-1、Tool body is finish machined for stable run-out accuracy.
-2、Covering interface between tool holder and boring head, precision vibration enhances machining surface
+接⼝ 型号 L1 Weight(KG)
+S z i e
+i g .
+BT30
+BT40
+BT50
+PAGE 76 PAGE 77
+1、 Tool body is finish machined for stable run-out accuracy.
+2、 Covering interface between tool holder and boring head, precision vibration enhances machining surface
 roughness.
-
-PAGE 76
-PAGE 77
-ΦD1
-BORING TOOL SYSTEM
-ΦD
-BORING TOOL SYSTEM
-SIMPLE TYPEBORING
+B T N O
 L
-D2
+L 1
+N O
+C K N O
+B T N O
+L
+L 1
+C K N O
 D
-d1
-d2
+D
+C K
+L B K
+BT
+BT
 MODULAR BORING CUTTER
-160548
-160648
-160848
-NBJ16
-LBK
-Specification
-D
-d1
-d2
-L
-LBK1
+BT LBK BORING TOOL HOLDER
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+F e a t u r e
+SYNCHRONOUS SOLUTION SYNCHRONOUS SOLUTION
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+BT LBK BORING TOOL HOLDER
+| L NO
+BT NO | ck NO f ul BT LBK
+| qoon Specification L Lt D Fig 1q. ight(KG)
+LBK3-80 LBK3 80 60 31 1 1.0
+BT CK nn LBK4-70 LBK4 70 50 39 1 1.3
+LBK5-60 LBKS5 60 40 50 1 1.8
+Sze F LBK6-60 LBK6 60 40 64 1 3.0
+Specification L Li D een 9 Weight(KG) LBK1-75 LBK1 75 50 19 1 14
+B30) CK1-70 CK2-80 Ck2 CKI 70 80 45 55 24 19 CKM1 CKM2 1 1 0.47 0.48 : LBK2-85 LBK1~105 Soeie LBK2 LBK' ie 85 ha ao 8 LL 60 24 oi uk i 1 ; 73 ue 1.3
+CK3-80 CK3 80 55 31 CKM3 1 0.48 95 :
+CkK4-60 Ck4 60 36 39 CKM4 1 0.56 LEK oS LEKS ——- 31 ! 18
+GS-60 ces $o__| $8 _| 48 eke 1 9.67 LBK3-155 LBK3 155 | 130 31 1 2.0
+BT40 CK1-115 - CK1 115 85 19 CKM1 1 1.09 LBK4-130 Ma Ss Bie LBK4 eS 130 | BO 105 30 39 | 1 2.4 LB:
+CK2-120 CK3-95 ck2 Ck3 | 120 95 | 90 65 | 24 31 | ¢xme CKM3 1 115 1.24 LBK5-75 LBK4-175 ete LBK5 Laka | 175 75 or | 50 150 ait | 39 50 iy i 4 ; 2.3 27 _
+CK3=145 Ck3 145 | 115 31 CKM3 1 1.44 CEREAaE es 475-1460 a , aa
+CK4-85 CK4-135 Ck4 CK4 435 85 | 105 50 39 39 CKM4 CKM4 11 2.03 1.15 LBK6- 6-65 LBKi6 6 S 40 64 1 3.3
+CK5-105 CK5 105 75 49 CKM5 1 1.78 LBKE-118 LBKE V3 _|_85., e4 { 4.7
+CK5-165 CK5 165 | 135 49 CKM5 1 3.30 ree oTse Te se 180 og i 75
+Oe CK6-165 oes cue CK6 ee 165 135 33 62 62 ene CKM6 }1 ae 2.91 BT50 LeKe= LBK1-145 =110 LBK2 LBK1 145 Hg 4} | 73 110 24 |19 114 6.8 5.6 =
+CK7-90 CK7 90 63 83 CKM7 1 2.66 ees tea ise —\—o6 a : 23
+| BT50| CK1-115 CK1 115 40 19 CKM1 1 3.76 [ BK3—156 re 155 115 31 84
+CK1-145 CK1 145 70 19 CKM1 1 3.88 ae Lee 32 -T-a0 a5 i <
+CK2-110 Ck2 110 80 24 CKM2 1 3.81 eed tae ae 115 _|_#0- 2 ; a
+CK2-140 Ck2 140 | 110 24 CKM2 1 4.05 tKanize rea 472-1140 ae i 74
+CK3-135 Ck3 135 90 31 CKM3 1 3.86 Lele LB ie ie a8 1 $4
+CK3-175 CK3 175 | 130 31 CKM3 1 4.14 tBKenabe teRS Ta - : 14
+CK4-125 Ck4 125 85 39 CKM4 1 4.05 Beas TERE 483} 45 5 ‘ a
+CK4-185 CK4 185 | 145 39 CKM4 1 4.57 TBRenoaa bene 440 —|—308 2 ; 43
+CK5-140 CKS5 140 100 49 CKM5 1 4.16 Late 24 Lek ug a0 28 4 48
+CK5-210 CK5 210 | 170 49 CKM5 1 5.60 teee=io bERe 1701435 aa : ae
+CK6-170 CK6 150 | 110 62 CKM6 1 5.69 BReSaa rae 50; —}—aRe eA ‘ -
+CK6-230 CK6 230 190 62 CKM6 1 6.11 ee eG a OEE _ 1 =
+CK7-105 CK? 105 65 83 CKM7 1 5.34 :
+CK7-250 CK7 250 | 210 83 CKM7 1 10.25
+1, Tool body is finish machined for stable run-out accuracy.
+2, Covering interface between tool holder and boring head, precision vibration enhances machining surface
+roughness.
+O®|PAGE 76 a) _LBK1
 LBK2
 LBK3
 LBK4
-1-30
-19
-11
-11
-30
-2-30
-24
-14
-14
-30
-0.1
-3-30
-31
-18
-18
-30
-0.15
-4-45
-39
-22
-22
-45
-0.4
-4-60
 LBK5
-39
-22
-22
-60
-0.4
-5-60
-49
-28
-28
-60
-0.8
-49
-28
-28
-90
-1.1
-62
-36
-36
-60
-1.4
-62
-36
-36
-100
-1.8
-5-90
 LBK6
+D
+19
+24
+31
+39
+39
+49
+49
+62
+62
+11
+14
+18
+22
+22
+28
+28
+36
+36
+11
+14
+18
+22
+22
+28
+28
+36
+36
+L
+30
+30
+30
+45
+60
+60
+90
+60
+100
+0.07
+0.1
+0.15
+0.4
+0.4
+0.8
+1.1
+1.4
+1.8
+Specification
+1-30
+2-30
+3-30
+4-45
+4-60
+5-60
+5-90
 6-60
 6-100
-（mm）
-D2
-D1
-（mm）
-Weight
-（mm）
-L
-ST08
-W5-100L
-ST010 W6-140L
-W6-156L
-ST012 W10-186L
-M
-08
-10
-12
-16
-10
-0
-14
-0
-156
-186
-M5
-M6
-M6
-M10
-D2
-D1
-d1
-C059
-0
-C069
-8
-C081
-15
-- 8D
-WB0608
-TB7510- 8D
-TB0912- 8D
-BE09A.BE10.5A
-NBJ16-160848.NBH2084BE12A
-200847
-C2010.C1610
-BE14A.BE16A
-C2012.C1612 C2016
-BE16A
-BE18A BE20A BE22A BE24A
-BE26A BE28A BE30A
-（mm）
-d
+d1 d2 Weight
+S i z e
 CK2
 CK3
 CK4
 CK5
 CK6
-D1
-D2
-d1
-d2
-L1
-L
-1-36
 11
-19
 14
--
-30
-36
-2-37
-14
-24
 18
+22
+22
+22
+28
+28
+19
+24
 31
+39
+39
+39
+50
+50
+14
+18
+22
+28
+36
+36
+36
+36
+- 3
+1
+39
+49
+62
+62
+62
+62
+30
 25
 37
-0.15
-3-50
-18
-31
-22
-39
-37
 50
-0.35
-4-67
-22
-39
-28
-49
+35
+85
+25
+75
+L
+36
+37
 50
 67
-0.7
-4-51
-22
-39
-36
-62
-35
 51
-0.85
-4-101
-22
-39
-36
-62
-85
 101
-1.3
-5-41
-28
-50
-36
-62
-25
 41
-0.85
-5-91
-28
-50
-36
-62
-75
 91
-1.45
-PAGE 78
-Weight
 0.1
+0.15
+0.35
+0.7
+0.85
+1.3
+0.85
+1.45
+Specification
+1-36
+2-37
+3-50
+4-67
+4-51
+4-101
+5-41
+5-91
+D1 D2 d1 d2 L1 Weight
+S i z e
+160548
+160648
+160848
+Specificat
+ion
+16
+16
+16
+568 568
+Specification （mm）
+（mm）
+（mm）
+（mm）
+Applicable
+Applicable
+D 2
+D 2
+D 1
+D 1
+Carbide Tool Holder
+Carbide Tool Holder
+NBJ16
+NBH2084
+ST08
 ST010
 ST012
 ST016
-H
-M
-Φd
-H
-M
-L
-Specification （mm） （mm）（mm）（mm） Insert
-Figure
-L
-ST08
-Size
-Applicable Bushing
-5
+W5-100L
+W6-140L
+W6-156L
+W10-186L
+10
+014015
 6
-8
+186
+08
+10
+12
+16
+M5
+M6
+M6
+M10
+BE09A.BE10.5A
+BE12A
+BE14A.BE16A
+BE16A
+NBJ16-160848.NBH2084-
+200847 C2010.C1610
+C2012.C1612 C2016
+BE18A BE20A BE22A BE24A
+BE26A BE28A BE30A
+D M
+Specification （mm） （mm） （mm） ApplicabClearbide Tool Holder ApplicabBleushing
+WB0608 8D
+TB7510 8D
+TB0912 8D
 90
 98
 115
+568
+Specification
+-
+--
+（mm） Applicable Bushing
+C059
+0C
+069
+8C
+081
+15
+PAGE 78 PAGE 79
 CK
-Bushing
-Applicable
-Carbide Tool Holder
-Applicable
-Specification
-L1
-L
-Specification
-M
-D
-D
-Specification （mm） （mm）（mm）
+LBK
+H M
+ST08
+ST010
+ST012
 ST016
-d2
-Carbide Tool Holder
-Applicable
-5
-6
-8
-NBH2084
-0.07
-Carbide Tool Holder
-Applicable
-5
-6
-8
-16
-16
-16
-Specificat
-ion
-Size
-D1
-（mm）
-Specification
 BE09A
 BE10.5A
 BE12A
@@ -5213,6 +5866,7 @@ BE24A
 BE26A
 BE28A
 BE30A
+L
 18
 18
 23
@@ -5237,7 +5891,6 @@ M10
 M10
 M10
 M10
-PAGE 79
 TB**06**
 TB**06**
 TP**08**
@@ -5250,7 +5903,6 @@ TP**09**
 TP**09**
 TP**09**
 TP**09**
-ClampScrew
 M2.0×5×D2.85
 M2.0×5×D2.85
 M2.2×5×D3.0
@@ -5263,7 +5915,6 @@ M2.5×6×D3.5
 M2.5×6×D3.5
 M2.5×6×D3.5
 M2.5×6×D3.5
-Wrench
 T6
 T6
 T7
@@ -5276,317 +5927,355 @@ T8
 T8
 T8
 T8
-BORING TOOL SYSTEM
-L1
+Figure Specification （mm） （mm） （mm） （mm） Insert Clamp Wrench
+d
+d 2
+L
+d 1
+L
+M
+D
+D
+Screw
+MODULAR BORING CUTTER
+SIMPLE TYPEBORING
+H M
+Φd
+ΦD
+L
+ΦD1
+d 2 d 1
+L 1
+L
+D 1
+D 2
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
 BORING TOOL SYSTEM
-d
-42
-0.002mm
-MODULAR BORING CUTTER
-Adjust the
-lockGraduation
-CK-HBOR25P
-MAX 1mm
-MAX 1mm
-）Size
-mm
-L1
+|
+7 | meee.oo |
+dq. ey poem-©- L|d1 jo
+MODULAR BORING CUTTER 4
+LBK
+Size
+Specification D d1 d2 L Weight
+1-30 19 11 11 30 0.07
+2-30 24 14 14 30 0.1
+3-30 31 18 18 30 0.15
+4-45 39 22 22 45 0.4
+4-60 39 22 22 60 0.4
+LBK5 5-60 49 28 28 60 0.8
+5-90 49 28 28 90 1.1
+LBK6 6-60 62 36 36 60 1.4
+6-100 62 36 36 100 1.8
+— ui |
+L 1
+d d [-> Somemomomomemomomoemomemeaesocs'—— ©- 5
+CK
+Specification D1 D2 di L1 L Weight
+K2 1-36 11 19 14 = 30 36 0.1
+2-37 14 24 18 31 25 37 0.15
+3-50 18 31 pes 39 37 50 0.35
+4-67 22 39 28 49 50 67 0.7
+4-51 22 39 36 62 35 51 0.85
+4-101 22 39 36 62 85 101 1.3
+5-41 28 50 36 62 25 41 0.85
+5-91 28 50 36 62 75 91 1.45
+O®|PAGE 78
+BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
+oD
+D1
+SIMPLE TYPEBORING
+Specification (mm) (mm) Applicable Carbide Tool Holder
+NB.J16 760548 16 5 $105
+: 160648 16 6 ST06
+160848 16 8 S108
+Specification (mm) (mm) Applicable Carbide Tool Holder
+heH2004 200547 20 5 ST05
+200647 20 6 ST06
+200847 20 8 S$T08
+——y jIMMC
+Specification| (mm)| (mm)| (mm) | Applicable Carbide ToolHolder | Applicable Bushing
+i} W5-100L | 100 08 M5 BEO9A.BE10.5A NBJ16-160848.NBH2084-200847
+cypity W6-140L | 140 10 M6 BE12A4 C2010.C1610
+ypiiks W6-156L | 156 12 M6 BE14A.BE16A C2012.C1612
+Suriila Wi0-186L| 186 | 16 M10 BE16A C2016
+BE18A BE20A BE22A BE24A
+BE26A BE28A BE30A
+D
+Specification | | (mm) | Applicable Bushing
+C0590 WBO0608-8D 90 5 NBJ16-160548 NBHO284-200547
+C0698 TB/510-8D 98 6 NBJ16-160648 NBH2084-200647
+C08115) TBO912-8D 115 8 NBJ16-160848 NBH2084-200847
+H L M
+Figure Specification (mm) | (mm) | (mm) | (mm ) Insert Clamp Screw Wrench
+Ng BEOSA 9 i 78 | M5 | 1B**06** | M2.0x5xD2.85 | 16
+STO10 BE10.5A 110.5 | 7 18 | M5 | TB**06** | M2.0x5xD2.85 | T6
+ST012 BE12A 12 8 23 M6 | TP**08** | M2.2x5*D3.0 T7
+STO16 BE14A 14 | 10 | 23 | M6 | TP**08** | M2.2x5~xD3.0 T7
+BE16A 16 10 23 M6 | TP**08** | M2.2x5*D3.0 T7
+BE18A 18 | 14 | 27 | M10| TP**08** | M2.2x5xD3.0 T7
+BE20A 20 14 27 | M10] TP**09** | M2.5x6xD3.5 T8
+BE22A 22 14 27 | M10] TP**09** | M2.5x6xD3.5 T8
+BE24A 24 14 27 | M10] TP**09** | M2.5x6*D3.5 T8
+BE26A 26 14 27 | M10] TP**09** | M2.5x6xD3.5 T8
+BE28A 28 14 27 | M10] TP**09** | M2.5x6xD3.5 T8
+BE30A 30 | 14 | 27 | M10 | TP**09** | M2.5x6xD3.5 T8
+C©@|PAGE 79m m） S i z e
+Specification
 -HBOR25P
+-HBOR25P
+L1
 80
-2-7
-BT30-CK2-80
--HBOR25P
 85
-2-7
-BT40-CK2-85
-L1
-Boring range Modular holder
-Specification
-6
-weig
-ht
-CA0602-09
-9
-0.01
-CA0603-16
-16
-0.01
-CA0604-22
-22
-0.02
-CA0605-27
-27
-0.02
-CA0606-32
-32
-0.02
-d
-0.002mm
-0.002mm
-lock
-Adjust the Graduation
-MAX 1mm
-42
-Cutting bar
-DM
-MODULAR BORING CUTTER
-MAX 1mm
-CK-HBOR40P
-weig
-ht
-Specification
-BT3
-0
-BT4
-0
--HBOR40P
-L1
--HBOR40P
-70
-2-9
-BT30-CK4-70
-1.21
-85
-2-9
-BT40-CK4-85
-1.61
-Boring range Modular holder
-8
-Cutting bar
-L1
-42
-0.002mm
-CK-HBOR32P
-Adjust the Graduation
-MAX 1mm
-MAX 1mm
-mm
-BT30
-BT40
 Boring range
+2-7
+2-7
+Modular holder
+BT30-CK2-80
+BT40-CK2-85
+DM
 9
-0.03
-CA0803-16
-3-4.2
 16
-0.03
-CA0804-22
-4-5.2
 22
-5-6.2
 27
+32
+weig
+ht
+0.01
+0.01
+0.02
+0.02
+0.02
+Cutting bar
+CA0602-09
+CA0603-16
+CA0604-22
+CA0605-27
+CA0606-32
+BT3
+0B
+T4
+0
+Specification
+-HBOR40P
+-HBOR40P
+weig
+ht
+1.21
+1.61
+L1
+70
+85
+Boring range Modular holder
+BT30-CK4-70
+BT40-CK4-85
+2-9
+2-9
+DM
+9
+16
+22
+27
+32
+37
+42
+weig
+ht
 0.03
+0.03
+Cutting bar
+CA0802-09
+CA0803-16
+CA0804-22
 CA0805-27
 CA0806-32
-6-7.2
-32
 CA0807-37
+CA0808-42
+Boring range
+2-3.2
+3-4.2
+4-5.2
+5-6.2
+6-7.2
 7-8.2
-37
 8-9.2
-42
+0.03
+0.04
+BT30
+BT40
+m m
+Specification
+-HBOR32P
+-HBOR32P
 L1
--HBOR32P
 80
-2-9
-BT30-CK3-80
--HBOR32P
 95
+Boring range
 2-9
+2-9
+Modular holder
+BT30-CK3-80
 BT40-CK3-95
+DM
+9 16
+22
+27
+32
+37
+42
+weigh
+t 0
+.03
+0.03
+0.03
+0.04
 Cutting bar
 Boring
 range
-DM
-weigh
-t
-9 16
-0.03
-CA0803-16 4.2 4-5.2
-22
-0.03
-CA0804-22 5-6.2 6-
-27
-0.03
-CA0805-27 7.2 7-8.2
-32
-0.04
-CA0806-32
-37
+2-3.2 3-
+4.2 4-5.2
+5-6.2 6-
+7.2 7-8.2
+8-9.2
 CA0802-9
+CA0803-16
+CA0804-22
+CA0805-27
+CA0806-32
 CA0807-37
 CA0808-42
-2-3.2 3-
-8-9.2
-42
-CA0808-42
-Modular holder
-Specification
-8
 0.04
 0.04
 0.05
-PAGE 80
-PAGE 81
+PAGE 80 PAGE 81
+d
+d
+l o c k
+M A X 1 m m
+6 8
+0 . 0 0 2 m m
+A d j u s t t h e G r a d u a t i o n
+M A X 1 m m M A X 1 m m
+0 . 0 0 2 m m
+A Gdr aj udsuta tt hi oen
+M A X 1 m m
+0 . 0 0 2 m m
+0 . 0 0 2 m m
+l o c k
+A d j u s t t h e G r a d u a t i o n
+M A X 1 m m M A X 1 m m
+d
+4 2 L 1
+4 2 L 1
+4 2 L 1
+CK-HBOR25P
+CK-HBOR32P
+CK-HBOR40P
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+MODULAR BORING CUTTER
+MODULAR BORING CUTTER
+8
+SYNCHRONOUS SOLUTION
+s—
+Ll
+BORING TOOL SYSTEM
+Cito
+ey es | I
+[ 7 J l ot J
+d
+; 8 0) > E23} 002mm
+MODULAR BORING CUTTER 7 LT LU Brock OFabtathen
+CK-H BOR25P MAX imae—»MAX Imm
+(mm )Size
+Specification | L1 | Boring range | Modular holder | weight
+ae] —-HBOR2Z5P 80 2-7 BT30-CK2-80] 0.70
+get) -HBOR25P 85 | 2-7 sao-onnes| 1.30 .
+Cuttingbar | Boringrange} DM_ | weight
+CA0602-09} 2-3.2 9 0.01
+CA0603-16] 3-4.2 16 | 0.01
+CA0604-22| 4-5.2 22 10.02
+CAO0605-27| 5-6.2 27 10.02
+CAO0606-32| 6-7.2 32 | 0.02
+SS SS
+©
+; @0 err
+CK-H BOR32P . Lo 4 ® adjust the Graduation
+MAX Imenp—>MAX 1mm
+(mm )Size
+Specification | L1 | Boringrange| —— Modularholder | weight
+ge] —HBOR32P 80 2-9 BT30-CK3-80 1.02
+—-HBOR32P | 95 | 2-9 BT40-CK3-95 1.61 | 5
+Cuttingbar | Boringrange | DM_ | weight
+CA0802-9 oe 9 0.03
+CA0803-16] 3-4.2 16 | 0.03
+CA0804-22| 4-5.2 22 | 0.03
+CA0805-27| 5-6.2 27 | 0.04
+CA0806-32| 6-7.2 32 | 0.04
+CA0807-37| 7-8.2 37 | 0.04
+CA0808-42| 8-9.2 42 |0.05
+O®|PAGE 80
+BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
+(
+( ~
+[e)
+. loc® ;
+Adjust the Graduatijon
+MAX 1mea—y> MAX 1mm
+We 5
+ro MODULAR BORING CUTTER
+CK-HBOR40P
+(mm )Size
+Specfication | 11 | Boringrange | — Modularholder | weight
+ye] -HBOR40P 70 2-9 BT30-CK4-70 | 1.21
+nye] -HBOR40P 85 2-9 BT40-CK4-85 | 1.61
+Cuttingbar | Boringrange | DM_ | weight
+CA0802-09| 2-3.2 9 | 0.03
+CA0803-16| 3-4.2 16 | 0.03
+CA0804-22| 4-5.2 22 |0.03
+CA0805-27| 5-6.2 27 | 0.04
+CA0806-32] 6-7.2 32 | 0.04
+CA0807-37| 7-8.2 37 | 0.04
+CA0808-42| 8-9.2 42 |0.05
+©O@®|PAGE 81BT3
+0B
+T4
+0B
+T5
+0
+L
+Inse
+rt Screw
+M 2
+M 2
+M 2
+M 2 . 5
+M 2 . 5
+M 2 . 5
+M3
+M3
+M5*15
+M2.5
+M2.5
+M2.5
+M8*2
+0 M3
 weig
 ht
-2-3.2
-CA0802-09
-d
-Boring rangeDM
-0.04
-BORING TOOL SYSTEM
-L1
-BORING TOOL SYSTEM
-L1
-d
-0.002mm
-0.002mm
-42
-CK-HBOR50P
--HBOR50P
-60
-6-90
-75
-6-90
-6-90
-BT30-CK5-60
-BT40-CK5-75
-BT40-CK5-105
 8.2
 10.8
-Cutting bar Boring rangeL
-BR1606-21
-6-9
-BR1608-28
-8-11
-BR1610-35
-10-13
-Screw
-M8*20CAP
-16
-Inse
-rt
-Specification
-L1
--HBOR63P
-60
--HBOR63P
-65
-95
--HBOR63P
 11.3
-BM8
-105
-MAX 2mm
-Wrench weight
-Boring range Modular holder
-BT40-CK6-60
-8.2
-6-150
-BT50-CK6-65
-10.8
-6-150
-BT50-CK6-95
-11.3
-6-150
-L
+m m
 Cutting bar
 BR1606-21
-6-9
-Inse
-rt
-Screw
-21 WBGT0601..L
-M2
-0.0
-4
-0.0
-21 WBGT0601..L
-M2
-T6
-0.04
 BR1608-28
-8-11
-28
-TBGT0601..L
-M2
-28
-TBGT0601..L
-M2
-T6
-0.04
 BR1610-35
-10-13
-35
-TBGT0601..L
-M2
-TBGT0601..L
-M2
-35
-T6
-0.05
-weig
-ht
-16
-BM5
--HBOR50P
-CK-HBOR63P
-MAX 1mm
-M5*12CAP
--HBOR50P
-MODULAR BORING CUTTER
-BM8
-Boring range
-L1
-MAX 1mm
-weig
-ht
-Modular holder
 BR1612-42
-12-15
-42 TPGH0902..L
-M2.5
-4
-0.0
-5
-12-15
-42 TPGH0902..L
 BR1614-50
-14-17
-50 TPGH0902..L
-M2.5
-M2.5
-T8
-0.09
-BR1620-65
-20-24
-65 TPGH1103..L
-M3
-M3
-T8
-0.11
-BR1624-68
-24-28
-68 TPGH1103..L
-M3
-0
-0 .. 0
-11
-6
-0.12
-T8
-0.12
-BM5
-M5*12
-0.0
-25
 BR1616-60
-16-20
-60 TPGH0902..L
 BR1620-65
-20-
-65 TPGH1103..L
 BR1624-68
 BM5
 SRTP2938
@@ -5594,145 +6283,292 @@ SRTP3652
 SRTP4468
 BM8
 SRTP5790
+Specification
+-HBOR50P
+-HBOR50P
+-HBOR50P
+Boring range
+6-9
+L1
+60
+75
+105
+Boring range
+6-90
+6-90
+6-90
+Modular holder
+Wrench weight
+8-11
+10-13
+12-15
+14-17
+16-20
+20-
 24
-2429
-8- 3 8
-2
-M3
-M5*15
-60+SRLTP2938 or SRTP3652 or SRTP4468
-M2.5
+24-
+2298-38
+36-52
+44-
+68
+57-90
+2 1 W B G T 0 6 0 1 . . L
+2 8 T B G T 0 6 0 1 . . L
+3 5 T B G T 0 6 0 1 . . L
+4 2 T P G H 0 9 0 2 . . L
+5 0 T P G H 0 9 0 2 . . L
+6 0 T P G H 0 9 0 2 . . L
+65 TPGH1103..L
 68 TPGH1103..L
+60+SRLTP2938 or SRTP3652 or SRTP4468
++10 TPGH0902..L
++12 TPGH0902..L
++12 TPGH0902..L
++SRTP5790
++ 2 0 T P G H 1 1 0 3 . . L
+T6
+T6
+T6
 T8
-0.06
 T8
-0.07
+T8
+T8
+T8
 L4
-0.25
 T8
+T8
+T8
+L6
+T8
+BT30-CK5-60
+BT40-CK5-75
+BT40-CK5-105
+0.04
+0.04
+0.05
+0.06
+0.07
+0.09
+0.11
+0.12
+0.25
 0.01
 0.02
-+10 TPGH0902..L
-M2.5
-36-52
-+12 TPGH0902..L
-M2.5
-T8
-44-
-+12 TPGH0902..L
 0.03
-68
-M8*2
-0
-T8
-+SRTP5790
-L6
 0.03
-T8
 0.10
-57-90
-+20 TPGH1103..L
-M3
-PAGE 82
-M8*20CAP
-BR1612-42
-M2.5
-BM5
-BT3
-0
-BT4
-0
-BT5
-0
-lock
-Adjust the Graduation
-MAX 2mm
-mm
-Specification
-0.002mm
-lock
-Adjust the Graduation
-42
+PAGE 82 PAGE 83
+l o c k
+A d j u s t t h e G r a d u a t i o n
+M A X 1 m m M A X 1 m m
 d
+M A X 2 m m
+1 6
+0 . 0 0 2 m m
+l o c k
+A d j u s t t h e G r a d u a t i o n
+M A X 2 m m
+0 . 0 0 2 m m
+1 6
+d
+0 . 0 0 2 m m
+4 2 L 1
+B M 5
+B M 8
+B M 8
+B M 5
+4 2 L 1
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+Specification
+-HBOR63P
+-HBOR63P
+-HBOR63P
+L
+Inse
+rt
+weig
+ht
+8.2
+10.8
+11.3
+Cutting bar
+L1
+60
+65
+95
+Boring range
+6-150
+6-150
+6-150
+Screw
+M2
+M2
+M2
+M2. 5
+M2. 5
+M2. 5
+M3
+M3
+M5*12
+M2.5
+M2.5
+M2.5
+M 8 * 2 0
+M 3
+M3
+Modular holder
+BT40-CK6-60
+BT50-CK6-65
+BT50-CK6-95
+CK-HBOR50P
+CK-HBOR63P
+BR1606-21
+BR1608-28
+BR1610-35
+BR1612-42
 BR1614-50
-14-17
-50 TPGH0902..L
-M2.5
 BR1616-60
+BR1620-65
+BR1624-68
+6-9
+8-11
+10-13
+12-15
+14-17
 16-20
-60 TPGH0902..L
-M2.5
-60+SRTP2938 or SRTP3652 or SRTP4468
+20-24
+24-28
+21 WBGT0601. . L
+28 TBGT0601. .L
+35 TBGT0601. .L
+42 TPGH0902. .L
+50 TPGH0902. .L
+60 TPGH0902. .L
+65 TPGH1103.. L
+68 TPGH1103..L
+BM5 60+SRTP2938 or SRTP3652 or SRTP4468
 SRTP2938
 SRTP3652
 SRTP4468
-BM8 +SRTP5790
-SRTP70110
+B M 8
+S R T P 7 0 1 1 0
 SRTP110150 110-150 +20 TPGH1103..L
-PAGE 83
-M2.5
-M2.5
-M2.5
-M8*20
-M3
-M3
-7
++ S R T P 5 7 9 0
+0.0
+4 0
+.0
+4 0
+.0
+5 0
+.0
+6 0
+.0
+7 0
+.0
+0 9
+.11
+0.12
+0.25
 0.01
 0.02
-9
 0.03
 0.03
 0.10
 0.21
-BORING TOOL SYSTEM
+M 8 * 2 0 C A P
+M 5 * 1 2 C A P
+M 8 * 2 0 C A P
+MODULAR BORING CUTTER
+SYNCHRONOUS SOLUTION
 BORING TOOL SYSTEM
-L
-W
-d1
-d2
-L1
-45
-7:24AT3
-°
-BSA45°ROUGHING BORING BAR
-T
-BSA 45
-L1
-Boring
-range
-d
-0.002mm
-62
-CK-HBOR63P
-BT40
-0.002mm
-lock
-MAX 4mm
-Adjust the
-Graduation
-MAX 4mm
-）Size
-mm
-Specification
-BT3
-0
-BT4
-0
-BT5
-0
-Boring range Modular holder
-L1
+L 42
+079,02 mm
+CK-HBORS5OP == ie) = Ke) djupt . the Graduation .
+MAX 2mm 2mm
+(mm )Size
+Specification — | “1 | Boringrange | — Modularholder — | weight
+il) -HBORSOP 60 6-90 BT30-CK5-60 8.2
+El) -HBORS0P 75 6-90 BT40-CK5-75 | 10.8
+el) —-HBORS50P 105 6-90 BT40-CK5-105 | 11.3 .
+=
+16 —
+Cutting bar |Boringrange] L Insert Screw |Wrench| weight |
+BR1606-21 6-9 21|WBGT0601..L M2 T6é | 0.04 -
+BR1608-28] 8-11 | 28] TBGT0601..L M2 Té6 | 0.04 —-~
+BR1610-35) 10-13 | 35] TBGTO601..L M2 Té | 0.05 ——— 2
+BR1612-42| 12-15 |42|TPGHO902..L! M2.5 | T8 | 0.06 ————— P
+BR1614-50) 14-17 | 50] TPGHO902..L) M2.5 T8 | 0.07 ———_——__-
+BR1616-60] 16-20 | 60) TPGHO902..L} M2.5 T8 | 0.09 ——_______..
+BR1620-65| 20-24 |65])]TPGH1103..L} M3 T8 | 0.11 |
+BR1624-68] 24-28 |68|]TPGH1103..L) M3 TS | 0.12-
+BM5 [i0+SRLTP238 or SRTPSEGZOr M5*15 L4 | 0.25
+SRTP2938 | 29-38 |+10] TPGHO902..L] M2.5 Ta | 0.01 r
+SRTP3652 | 36-52 |+12 TPGHO0902..L M2.5 T8 | 0.02
+SRTP4468 | 44-68 |+12] TPGHO902..L) M2.5 T8 | 0.03
+BM8 +SRTP5790 M8*20 L6 | 0.03
+SRTP5790 | 57-90 |+20) TPGH1103..L] M3 T8 | 0.10
+7—
+BORING TOOL SYSTEM
+S&S re
+=>
+>=
+i’
+/
+SYNCHRONOUS SOLUTION
+ea af
+) CLOT
+I if I \ L ]
+[e) oa
+vooanffio) :
+©) Vo . MODULAR BORING CUTTER
+Adjust the qi&@uation Lo
+MAX TnmweeL—eMAX Imm _ 7 CK-HBOR63P
+(mm )Size
+Specification | L1 | Boringrange | Modularhokler | weight
+ie!) -HBOR63P 60 6-150 | BT40-CK6-60| 8.2
+itil] -HBOR63P 65 6-150 | BT50-CK6-65 | 10.8
+ie'] -HBOR63P 95 6-150 | BT50-CK6-95 | 11.3
+S
+q Cuttingbar [Boringrange|_L Insert Screw [Wrench] weight
+BR1606-21| 6-9 |21|WBGTO601..L| M2 T6 | 0.04
+— BR1608-28| 8-11 |28] TBGTO601..L] M2 Té6 | 0.04
+— BR1610-35| 10-13 |35]TBGTO601..L] M2 Té6 |0.05
+— BR1612-42| 12-15|42]TPGHO9O2..L] M2.5 |T8|0.06
+—— BR1614-50| 14-17 |50] TPGHO902..L] M2.5 | T8 | 0.07
+BR1616-60| 16-20 | 60] TPGHO902..L] M2.5 | T8 | 0.09
+BR1620-65| 20-24 |65]TPGH1103..L] M3 T8 | 0.11
+BR1624-68| 24-28 | 68] TPGH1103..L) M3 Ta | 0.12
+BM5 po-srrPacsorsArPseezersarpac] M5*12 | L4 | 0.25
+SRTP2938 | 29-38 |+10| TPGHO902..L]| M2.5 | T8 | 0.01
+SRTP3652| 36-52 |+12| TPGHO902..L]| M2.5 | T8 | 0.02
+SRTP4468| 44-68 |+12| TPGHO9O2..L]| M2.5 | T8 | 0.03
+BM8 +SRTP5790 m8*20 | L6 | 0.03
+SRTP70110| 70-110]+20] TPGH1103..L| M3 T8 | 0.10
+SRTP110150] 110-150]+20| TPGH1103..L] M3 T8 | 0.21） S i z e
+-HBOR63P
+-HBOR63P
 -HBOR63P
 60
-29-150
--HBOR63P
 65
-29-150
--HBOR63P
 95
 29-150
-L
-Cutting bar Boring range
+29-150
+29-150
+BT3
+0B
+T4
+0B
+T5
+0
+Specification L1 Boring range Modular holder
+m m
+L ⼑ ⽚
+Insert Wren
+ch
+L4 T8
+T8 T8
+L6 T8
+T8
 BM5
 SRTP2938
 SRTP3652
@@ -5740,44 +6576,22 @@ SRTP4468
 BM8
 SRTP70110
 SRTP110150
-BT50
-刀片
-Insert
-Screw
-60+SRTP2938 or SRTP3652 or SRTP4468
-M5*12
-2938
+29-
+38
 36-52
-4468
-70-110
+44-
+7608-110
 110-150
-Wren
-ch
-L4 T8
-M2.5
-T8 T8
-L
-M2.5
-L6 T8
-TPGH0902..
-M2.5
-T8
-L or SRTP110150
-+SRTP70110
-M8*20
-TPGH0902..
-M3
-TPGH1103..L
-L
-M3
-TPGH1103..L
 +10
 +12
 +12
-TPGH0902..
-
-PAGE 84
-weight
+M5*12
+M2.5
+M2.5
+M2.5
+M8*20
+M3
+M3
 0.25
 0.01
 0.02
@@ -5785,11 +6599,28 @@ weight
 0.03
 0.10
 0.21
+Cutting bar Boring range Screw weight
+60+SRTP2938 or SRTP3652 or SRTP4468
+TPGH0902..
+L T
+PGH0902..
+L T
+PGH0902..
+T L
+PGH1103..L
+TPGH1103..L
++SRTP70110 or SRTP110150
+d
+M A X 4 m m
+0 . 0 0 2 m m
+l o c k
+Adjust the
+Graduation
+M A X 4 m m
+0 . 0 0 2 m m
+6 2 L 1
+PAGE 84 PAGE 85
 Specification
-d1
-d2
-L1
-L
 BSA25-120
 BSA30-150
 BSA38-165
@@ -5798,78 +6629,6 @@ BSA50-165
 BSA62-180
 BSA72-180
 BSA90-180
-20
-24
-30
-34
-40
-50
-60
-75
-22
-26
-33
-37
-44
-56
--
-35
-40
-50
-50
-65
-80
-95
--
-90
-120
-135
-135
-135
-150
-150
-150
-20
-22
-35
-92
-26
-33
-37
-44
-44
-56
-56
-66
-66
-80
-80
-94
-40
-50
-60
-65
-65
-80
-80
-95
-95
-110
-110
--
-122
-137
-167
-137
-197
-152
-227
-152
-242
-267
-257
-152
-242
 BSA25-135
 BSA30-165
 BSA38-180
@@ -5884,19 +6643,8 @@ BSA90-210
 BSA90-300
 BSA105-195
 BSA105-285
-24
-30
-34
-40
-40
-50
-50
-60
-60
-75
-75
-90
-90
+Boring
+range
 25-38
 30-42
 38-52
@@ -5919,32 +6667,6 @@ BSA105-285
 90-125
 105-160
 105-160
-130
-Feature
-PAGE 85
-W
-8
-8
-10
-10
-13
-16
-19
-19
-8
-8
-10
-10
-13
-13
-16
-16
-19
-19
-19
-19
-25
-25
 weight
 1.3
 1.5
@@ -5968,46 +6690,172 @@ weight
 12.6
 11.0
 15.3
-BORING TOOL SYSTEM
-BORING TOOL SYSTEM
-□
-ΦD
-W
-ΦA
-ΦD1
-45º
-G
-MODULAR BORING CUTTER
-L
-BSA 45
-L
-Specification
-L1
-15
-W
-T
 d1
+20
+24
+30
+34
+40
+50
+60
+75
+20
+24
+30
+34
+40
+40
+50
+50
+60
+60
+75
+75
+90
+90
 d2
-7:24AT3
-BSB90°ROUGHING BORING BAR
-T
 22
+26
 33
+37
 44
 56
--
-35
-55
-70
+-- 2
+2
+26
+33
+37
+44
+44
+56
+56
+66
+66
 80
+80
+-9
+4
+L1
+35
+40
+50
+50
+65
+80
+95
+- 3
+5
+40
+50
+60
+65
+65
+80
+80
+95
+95
+110
+110
 -
+130
+L
 90
 120
 135
+135
+135
 150
 150
-BSB25-135
+150
+92
+122
+137
+167
+137
+197
+152
+227
+152
+242
+267
+257
+152
+242
+W 881010
+13
+16
+19
+19
+8 8
+10
+10
+13
+13
+16
+16
+19
+19
+19
+19
+25
+25
+BT40
 BT50
+L
+L 1
+T
+4 5 °
+W
+d 2
+d 1
+7 : 2 4 A T 3
+F e a t u r e
+BSA45°ROUGHING BORING BAR
+B S A 4 5
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+CK-HBOR63P
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION SYNCHRONOUS SOLUTION
+L1 is
+—— 7:24AT3 oun > >w
+BSA45°ROUGHING BORING BAR CA
+_ BSA 45
+CJL. (Cf
+I \ L ] I l
+5) CE J i j (mm )Size
+5 Spectication dt | a2 | L1 | L | Borngrange W Screw _| _ weight
+(20.0020 BT40 BSA25-120 20 22 35 90 25-38 8 SM6 1.3
+3 @D @..) i BT40 BSA30-150 24 26 40 | 120 30-42 8 SM6 15
+=e Aalustths. BSA38-165 30 33 50 | 135 38-52 10 SM8 1.8
+CK-HBOR63P MAX 4mmet—emax 4mm BSA42-165 34 | 37 | 50 | 135 42-56 10 SM8 21
+BSA50-165 40 44 65 | 135 50-65 13 SM8 2.4
+(mm)Size g BSA62-180 50 56 so | 150 62-90 16 SM10 2.5
+Specification | L1 | Boring range | Modular holder | weight SS aA sha ~ 95 be a He eMo pes
+-HBOR63P 60 29-150 | BT40-CK6-60] 8.2 ; :
+-HBoR63P | «65 29-150 | BTS50-cK6-65| 10.8 : BT50 BSA25-135 20 | 22 | 35 | 92 25-38 8 sm6 | 4.3
+BSA30-165 24 26 40 | 122 30-42 8 SM6 45
+SHEL 8 ES 291 || ilkae eS cai|fTie " BSA38-180 30 | 33 | 50 | 137 38-52 10 SM8 4.9
+BSA42-210 34 37 60 | 167 42-56 10 SM8 5.1
+~|$ BSA50-180 40 44 65 | 137 50-65 13 SM10 5.5
+a BSA50-240 40 44 65 | 197 50-65 13 SM10 5.8
+BSAG2-195 50 56 Bo | 152 62-90 16 SM10 6.3
+BSA62-270 50 56 80 | 227 62-90 16 SM10 7.7
+; ; BSA72-195 60 66 95 | 152 72-110 19 SM10 7.1
+Cuttingbar | Boringrange| L | Insert Screw | Wrench | weight BSA72-285 60 | 66 95 | 242 72-110 19 SM10 9.4
+BMS5 60+SRTP2938 or SRTPSSE2 or SRTPAAGE | [A5*12 1 Ld 0.25 _ & =, BSAS0-210 75 80 110 | 267 90-125 19 SM12 9.5
+SRTP2938 | 29-38 | +10 TPGHO0902..L M25 | T8 | 0.01 id BSA90-300 75 80 | 110 | 257 90-125 19 SM12 12.6
+SRTP3652 36-52 +12 TPGHO0902..L M2.5 T3 0.02 BSA105-195 90 - - 152 105-160 25 SM12 11.0
+SRTP4468 44-68 | +12 TPGHO902..L M2.5 Ts 0.03 BSA105-285 90 94 130 | 242 105-160 25 SM12 15.3
+BM8 +SRTP701100r SRTP110150 | Mg*20| L6 | 0.03
+SRTP70110}] 70-110 “20 TPGH1103..L M3 T8 | 0.10 Feature
+SRTP110150] 110-150 | +20 TPGH1103..L M3 T8 | 0.21
+|— a)—Specification
+BSB25-120
+BSB38-150
+BSB50-165
+BSB62-180
+BSB90-180
+BSB25-135
 BSB38-180
 BSB50-180
 BSB50-240
@@ -6019,53 +6867,8 @@ BSB90-210
 BSB90-300
 BSB105-195
 BSB105-285
-20
-30
-40
-40
-50
-50
-60
-60
-75
-75
-90
-90
-22
-33
-44
-44
-56
-56
-66
-66
-80
-80
-90
-94
-35
-55
-70
-70
-80
-80
-95
-95
-115
-115
-135
-92
-137
-137
-197
-152
-227
-152
-242
-167
-257
-152
-242
+尺 ⼨ （ m m ） S i z e Boring
+range
 25-52
 38-70
 50-90
@@ -6083,24 +6886,6 @@ BSB105-285
 90-150
 105-190
 105-190
-W
-8
-10
-13
-16
-19
-8
-10
-13
-13
-16
-16
-19
-19
-19
-19
-25
-25
 Screw
 SM6
 SM8
@@ -6119,46 +6904,97 @@ SM12
 SM12
 SM12
 SM12
-24
-8
-M6×1.00P
-60
-60
-2.6
-10
-M8×1.25P
-42
-40
-70
-3
-13
-M10×1.50P
-55
-50
-85
-2
-16
-M12×1.75P
-2.4
-19
-M12×1.75P
-24
-Φ52
-31
-BSA50-CK4
-Φ65
-BSA62-CK5
-Φ90
-BSA72-CK6
-Φ110
-63
-60
-98
 weig
 ht
 1.3
 1.8
 2.6
+d1
+20
+30
+40
+50
+75
+20
+30
+40
+40
+50
+50
+60
+60
+75
+75
+90
+90
+d2
+22
+33
+44
+56
+- 2
+2
+33
+44
+44
+56
+56
+66
+66
+80
+80
+90
+94
+L1
+35
+55
+70
+80
+- 3
+5
+55
+70
+70
+80
+80
+95
+95
+115
+115
+-
+135
+L
+90
+120
+135
+150
+150
+92
+137
+137
+197
+152
+227
+152
+242
+167
+257
+152
+242
+W 8101316
+19
+8
+10
+13
+13
+16
+16
+19
+19
+19
+19
+25
+25
 3.7
 6.0
 4.5
@@ -6173,89 +7009,153 @@ ht
 13.1
 11.7
 16.0
-□W
-ΦA
-20
-30
+BT40
+BT50
+Specification
+BSA30-CK2
+BSA38-CK3
+BSA50-CK4
+BSA62-CK5
+BSA72-CK6
+Φ42
+Φ52
+Φ65
+Φ90
+Φ110
+24
+31
+42
+55
+63
+24
+60
 40
 50
-75
-Boring
-range
-G
-ΦD1
-d1
-尺寸（mm）Size
-d2
-L1
-L
-□W
-Φ42
-ΦD
-BT40
-BSB25-120
-BSB38-150
-BSB50-165
-BSB62-180
-BSB90-180
+60
+L 40 60 70 85 98
 E
 1.6
-BSA38-CK3
-BSB 90
-Specification
-L
-40
-BSA30-CK2
-L1
-L
-Feature
-BSB 90
-size
-Range
-PAGE 86
-ΦA min
-ΦA max
-ΦD
-ΦD1
-L
-L1
-□W
-G
-BSB25-CK2
-Φ52
-20
-45
-10
+2.6
+3 2
+2.4
 8
-M6×1.00P
-30
-55
 10
-10
-M8×1.25P
 13
-M10×1.50P
-Specification
-BSB38-CK3
-Φ70
-BSB50-CK4
-Φ90
-40
-60
-10
-BSB62-CK5
-Φ115
-50
-70
 16
-M12×1.75P
-BSB72-CK6
-Φ135
-1
-60
-85
-12
 19
+G
+M6×1.00P
+M8×1.25P
+M10×1.50P
 M12×1.75P
-PAGE 87
-
+M12×1.75P
+Specification
+BSB25-CK2
+BSB38-CK3
+BSB50-CK4
+BSB62-CK5
+BSB72-CK6
+R a n g e
+Φ52
+Φ70
+Φ90
+Φ115
+Φ135
+20
+30
+40
+50
+60
+L 45 55 60 70 85
+10
+10
+10
+1
+12
+8
+10
+13
+16
+19
+G
+M6×1.00P
+M8×1.25P
+M10×1.50P
+M12×1.75P
+M12×1.75P
+PAGE 86 PAGE 87
+L
+L 1
+1 5
+W
+L L
+□ W
+L 1
+G
+4 5 º
+d2
+d1
+T
+7 : 2 4 A T 3
+T
+F e a t u r e
+BSB90°ROUGHING BORING BAR
+B S B 9 0
+ΦA min ΦA max ΦD ΦD1 L1
+□W
+□W
+s i z e
+Φ
+Φ
+ΦA ΦA
+D
+D
+Φ D 1
+Φ D 1
+□ W
+BSB
+BSA45
+90
+MODULAR BORING CUTTER
+BBORING ORING TTOOL OOL SSYSTEM YSTEM BBORING ORING TTOOL OOL SSYSTEM YSTEM
+SYNCHRONOUS SOLUTION SYNCHRONOUS SOLUTION
+MODULAR BORING CUTTER
+BSA45
+Boring Range Size
+Specification ®Amin OA max oD oD1 L E G
+— of BSA30-CK2 30 042 24 24 40 1.6 8 M6 x1.00P
+BSA38-CK3 | 38 52 31 60 60 2.6 10 M8x 1.25P
+BSA50-CK4 | 50 65 42 40 70 3 13 M10x1.50P
+BSB90°ROUGHING BORING BAR BSA62-CK5 | 62 90 55 50 85 2 16 M12x 1.75P
+BSA72-CK6 | 72 110 63 60 98 2.4 19 M12x1.75P
+BSB 90
+(mm )Size
+Specification d1 | a2 | 4 L Boring range Ww Screw weight
+BT40 BSB25-120 20 | 22 | 35 | 90 25-52 8 SM6 1.3
+BSB38-150 30 | 33 | 55 | 120 38-70 10 SMB 1.8
+BSB50-165 40 | 44 | 70 | 135 50-90 13 SM10 2.6
+BSB62-180 50 | 56 | 80 | 150 62-115 16 SM10 27
+BSB90-180 75 | - - | 150 90-150 19 SM12 6.0
+BT50| BSB25-135 20 | 22 | 35 | 92 25-52 8 SM6 4.5
+BSB38-180 30 | 33 | 55 | 137 38-70 10 SM8 5.1
+BSB50-180 40 | 44 | 70 | 137 50-90 13 SM10 5.7 ow
+BSB50-240 40 | 44 | 70 | 197 50-90 13 SM10 6.0 an
+BSB62-195 50 | 56 | 80 | 152 62-115 16 SM10 6.7 @
+BSB62-270 50 56 80 227i 62-115 16 SM10 8.1 ra = y
+BSB72-195 60 | 66 | 95 | 152 72-135 19 SM12 7.6 8
+BSB72-285 60 | 66 | 95 | 242 72-135 19 SM12 9.9
+BSB90-210 75 | so | 115 | 167 90-150 19 SM12 10.0 Mt et
+BSB90-300 75 | 80 | 115 | 257 90-150 19 SM12 13.1
+BSB105-195 90 | 90 - | 152 | 105-190 25 SM12 11.7
+BSB105-285 90 | 94 | 135 | 242 | 105-190 25 SM12 16.0 WW
+L1
+L
+Feature | BSB90
+Boring Range Size
+Specification ®Amin oAmax oD oD L L1 OW G
+BSB25-CK2 | 026 052 24 20 45 10 8 M6 x 1.00P
+BSB38-CK3 }| 38 70 31 30 55 10 10 M8x 1.25P
+BSB50-CK4 | 50 90 42 40 60 10 13 M10x1.50P
+BSB62-CK5 | 62 0115 55 50 70 { 16 M12 1.75P
+BSB72-CK6 | 072 0135 63 60 85 12 19 M12x1.75P
+7— a)—

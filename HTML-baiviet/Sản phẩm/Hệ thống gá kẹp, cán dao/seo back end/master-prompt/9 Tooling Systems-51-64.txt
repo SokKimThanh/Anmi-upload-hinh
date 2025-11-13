@@ -1,1135 +1,1928 @@
-BORING TOOL SYSTEM
-BORING TOOL SYSTEM
-45º
-内径镗孔
-d
-D
-MODULAR BORING CUTTER
-D
-θ
-CBS
-L1
-L
-L
-Size
-Specification
-Specification
-D
-L
-Angle
-Insert
-CBS- 408
-8
-50
-4 5º
-CCMT0602
-M2.5-6.0-3.5-60
-T9
+CBS 408
 CBS-410
-10
-60
-4 5º
-CCMT09T3
-M4-10-5.7-60
-T15
 CBS-413
-13
-70
-4 5º
-CCMT09T3
-M4-10-5.7-60
-T15
 CBS-416
-16
-100
-4 5º
-CCMT0602
-M4-10-5.7-60
-T15
 CBS-419
-19
-150
-4 5º
-CCMT09T3
-M4-10-5.7-60
 CBS-425
-25
-150
-4 5º
-CCMT09T3
-M4-10-5.7-60
 CBS-908
-8
-50
-9 0º
-CCMT0602
 CBS-910
-10
-60
-9 0º
 CBS-913
-13
-70
-9 0º
 CBS-916
-16
-100
-9 0º
-19
-150
-9 0º
-150
-9 0º
 CBS-919
 CBS-925
+D 8
+10
+13
+16
+19
 25
-Clamp Screw
-Wrench
-SB11.7-12-120
-.
-
+8
+10
+13
+16
+19
+25
 L
-L1
-11.7
-16
-120
-30
-D
-No 1of flutes
-d
-SB12.7-13-120
-1
-12.7
-16
-120
-30
-SB13.7-14-120
-1
-13.7
-16
-120
-30
-SB14.7-15-120
-1
-14.7
-16
-130
-30
-SB15.7-16-135
-2
-15.7
-16
-135
+50
+60
 70
-T15
-SB16.7-17-135
-2
-16.7
-16
-135
-70
-T15
-SB17.7-18-135
-17.7
-16
-135
-70
-M2.5-6.0-3.5-60
-T9
-2
-CCMT0602
-SB18.7-19-160
-18.7
-16
-160
-90
-M4-10-5.7-60
-2
-CCMT09T3
-T15
-SB19.7-20-160
-2
-19.7
-20
-160
-90
-M4-10-5.7-60
-CCMT09T3
-T15
-SB21.7-22-160
-20
-160
-90
-CCMT0602
-T15
-2
-20.7
-M4-10-5.7-60
-SB23.7-24-180
-23.7
-20
-180
-M4-10-5.7-60
-2
 100
+150
+150
+50
+60
+70
+100
+150
+150
+45
+45
+45
+45
+45
+45
+90
+90
+90
+90
+90
+90
+CCMT0602
 CCMT09T3
-T15
+CCMT09T3
+CCMT0602
+CCMT09T3
+CCMT09T3
+CCMT0602
+CCMT0602
+CCMT09T3
+CCMT09T3
+CCMT0602
+CCMT09T3
+M2.5-6.0-3.5-60
 M4-10-5.7-60
-SB24.7-25-190
-2
-24.7
-25
-190
+M4-10-5.7-60
+M4-10-5.7-60
+M4-10-5.7-60
+M4-10-5.7-60
+M2.5-6.0-3.5-60
+M4-10-5.7-60
+M4-10-5.7-60
+M4-10-5.7-60
+M4-10-5.7-60
+M4-10-5.7-60
+T9
 T15
-110
+T15
+T15
+T15
+T15
+T9
+T15
+T15
+T15
+T15
+T15
+Specification
+-
+Angle Insert Clamp Screw Wrench
+º º º º º º º º º º º º
+CBS908L
+CBS910L
+CBS913L
+CBS916L
+CBS919L
+D 8
+10
+13
+16
+19
+L
+50
+60
+70
+100
+150
+90
+90
+90
+90
+90
+CCMT0602
+CCMT0602
+CCMT09T3
+CCMT0602
+CCMT09T3
+M2.5-6.0-3.5-60
+M2.5-6.0-3.5-60
+M4-10-5.7-60
+M4-10-5.7-60
+M4-10-5.7-60
+T9
+T9
+T15
+T15
+T15
+Specification Angle Insert Clamp Screw Wrench
+º º º º º
+SB11.7-12-120
+SB12.7-13-120
+SB13.7-14-120
+SB14.7-15-120
+SB15.7-16-135
+SB16.7-17-135
+SB17.7-18-135
+SB18.7-19-160
+SB19.7-20-160
+SB21.7-22-160
+SB23.7-24-180
+SB24.7-25-190
 SB25.7-26-200
-2
-25.7
-25
-200
-120
 SB26.7-27-200
-2
-26.7
-25
-200
-120
 SB27.7-28-200
-2
-27.7
-25
-200
-120
-25
-210
-130
+SB29.7-30-210
 SB31.7-32-210
-2
-2
+SB34.7-35-250
+SB36.7-37-250
+SB39.7-40-270
+SB41.7-42-250
+SB44.7-45-310
+SB46.7-47-260
+SB49.7-50-260
+SB49.7-50-310
+SB51.7-52-260
+SB54.7-55-330
+SB59.7-60-260
+SB59.7-60-350
+.
+No 1of flutes
+1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+D
+11.7
+12.7
+13.7
+14.7
+15.7
+16.7
+17.7
+18.7
+19.7
+20.7
+23.7
+24.7
+25.7
+26.7
+27.7
 29.7
 31.7
-25
-210
-130
-SB34.7-35-250
-2
 34.7
-32
-250
-150
-SB36.7-37-250
-2
 36.7
-32
-250
-150
-SB39.7-40-270
-2
 39.7
-32
-270
-170
-SB41.7-42-250
-2
 41.7
-32
-250
-150
-SB44.7-45-310
-2
 44.7
-32
-310
-210
-SB46.7-47-260
-2
 46.7
-32
-260
-160
-SB49.7-50-260
-2
 49.7
-42
-260
-160
-SB49.7-50-310
-2
 49.7
-42
-310
-210
-SB51.7-52-260
-2
 51.7
-42
-260
-160
-SB54.7-55-330
-2
 54.7
-42
-330
-230
-SB59.7-60-260
-2
 59.7
-42
-260
-160
-SB59.7-60-350
-2
 59.7
-42
-350
-250
-SB29.7-30-210
-90ºL
-内径镗孔
-D
-BSB
-L
-Specification
-D
-L
-Angle
-Insert
-CBS908L
-8
-50
-9 0º
-CCMT0602
-M2.5-6.0-3.5-60
-CBS910L
-10
-60
-9 0º
-CCMT0602
-M2.5-6.0-3.5-60
-T9
-CCMT09T3
-M4-10-5.7-60
-T15
-Clamp Screw
-Wrench
-T9
-CBS913L
-13
-70
-9 0º
-CBS916L
 16
-100
-9 0º
-CCMT0602
-M4-10-5.7-60
-T15
-CBS919L
-19
-150
-9 0º
-CCMT09T3
-M4-10-5.7-60
-T15
-PAGE 88
-Insert
-SB12-SB20
-CCMT060204
-Clamp
-screw
-M2.5×6
-SB22-SB60
-CCMT09T308
-M4×10
-Specification
-PAGE 89
-wrench
-T15
-T8
-BORING TOOL SYSTEM
-11.1
-L1
-8º1 7 ” 5 0” 3 . 2
-M
-H2
-D2
-D3
-H1
-SPECIFICATIONS
-D1
-BORING TOOL SYSTEM
-BT
-15.9
-H2
-BT.NO
-D1
-D2
-D3
-46
-48.4
+16
+16
+16
+16
+16
+16
+16
 20
-L4
-L5
-H1
-2
-8
-16.1
-63
-17
-65.4
+20
+20
 25
-2
-10
-16.1
 25
-101.8
-35
-3
-15
-25.7
-D2
-H3
-H2
-尺 寸S i z e
-GC617. -62 22
-.
-GC617. -62 254
-. -65 -254.
-GC647
-. -70 -254.
-GC697
-.
-GC717. -72 254
-. -75 -254.
-GC747
-. -80 -254
-.
-GC797
-. -85 -254
-.
-GC847
-. -90 -3175
-.
-GC897
-. -95 -3175
-.
-GC947
-. -100 -3175
-.
-GC997
-2
-.
-6355
-SK50
-.
-975
-D
-d
-44.7
-22
-50
-49.7
-22
-50
-54.7
-22
-50
-59.7
-22
-50
-61.7
-22
-50
-2
-61.7
-25.4
-50
-2
-64.7
-25.4
-50
-2
-69.7
-25.4
-50
-2
-71.7
-25.4
-50
-2
-74.7
-25.4
-50
-2
-79.7
-25.4
-50
-2
-84.7
-25.4
-50
-2
-89.7
-31.75
-50
-2
-94.7
-31.75
-50
-2
-99.7
-31.75
-50
-GC45~100
-Clamp screw
+25
+25
+25
+25
+32
+32
+32
+32
+32
+32
+42
+42
+42
+42
+42
+42
+L
+120
+120
+120
+130
+135
+135
+135
+160
+160
+160
+180
+190
+200
+200
+200
+210
+210
+250
+250
+270
+250
+310
+260
+260
+310
+260
+330
+260
+350
+30
+30
+30
+30
+70
+70
+70
+90
+90
+90
+100
+110
+120
+120
+120
+130
+130
+150
+150
+170
+150
+210
+160
+160
+210
+160
+230
+160
+250
+Specification d L 1
+S i z e
+PAGE 88 PAGE 89
+BSB
+CBS
+SB12-SB20
+SB22-SB60
+CCMT060204
 CCMT09T308
+M2.5×6
 M4×10
-PAGE 90
-H1
-H2
+T8
+T15
+Specification
+I n s e r t C l a m p
+s c r e w
+w r e n c h
+MODULAR BORING CUTTER
+4 5 º
+9 0 º L
+D
+D
+L
+L
+内 径 镗 孔
+内 径 镗 孔
+θ
+D
+L 1
+L
+d
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
+MODULAR BORING CUTTER
+BORING TOOL SYSTEM
+G
+We.
+BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
+CBS
+Specification D L Angle Insert Clamp Screw Wrench
+CBS-408 8 50 45° CCMT0602 M2.5-6.0-3.5-60 T9
+CBS-410 10 60 45° CCMTOST3 M4-10-5.7-60 T15
+CBS-413 13 70 45° CCMTO9T3 M4-10-5.7-60 715
+CBS-416 16 100 45° CCMT0602 M4-10-5.7-60 T15
+CBS-419 19 150 45° CCMTO9T3 M4-10-5.7-60 T15
+CBS-425 25 150 45° CCMTO9T3 M4-10-5.7-60 T15
+CBS-908 8 50 90° CCMT0602 M2.5-6.0-3.5-60 T9
+CBS-910 10 60 90° CCMT0602 M4-10-5.7-60 T15
+CBS-913 13 70 90° CCMTO9T3 M4-10-5.7-60 T15
+CBS-916 16 100 90° CCMTO9TS M4-10-5.7-60 T15
+CBS-919 19 150 90° CCMT0602 M4-10-5.7-60 715
+CBS-925 25 150 90° CCMTO9T3 M4-10-5.7-60 T15
+oa
+[Oo|
+BSB _ L |
+Specification D L Angle Insert Clamp Screw Wrench
+CBS908L 8 50 90° CCMT0602 M2.5-6.0-3.5-60 T9
+CBS910L 10 60 90° CCMT0602 M2.5-6.0-3.5-60 T9
+CBS913L 13 70 90° CCMTO9T3 M4-10-5.7-60 T15
+CBS916L 16 100 90° CCMT0602 M4-10-5.7-60 T15
+CBS919L 19 150 90° CCMTO9T3 M4-10-5.7-60 T15
+Size
+Specification No.of flutes D d L li
+$B11.7-12-120 1 11.7 16 120 30
+SB1?.7-13-120 1 12.7 16 120 30
+SB13.7-14-120 1 13.7 16 120 30
+SB14.7-15-1270 1 14.7 16 130 30
+SB15.7-16-135 2 15.7 16 135 70
+$B16.7-17-135 2 16.7 16 135 70
+SB17.7-18-135 2 V7.7 16 135 70
+SB18.7-19-160 2 18.7 16 160 90
+$B19.7-20-160 zZ 13.7 20 160 90
+$B?1.7-22-160 2 20.7 20 160 90
+SB23.7-24-180 Z 23.7 20 180 100
+$B24.7-25-190 2 247 25 190 110
+SB25.7-26-200 2 25.7 25 200 120
+$B26.7-27-200 2 26.7 25 200 120
+SB2/7_.7-28-200 2 277 25 200 120
+$B?29.7-30-210 ? 29.7 25 210 130
+$B31.7-32-210 2 31.7 25 210 130
+$B34,.7-35-250 2 34.7 32 250 150
+SB36.7-37-250 2 36.7 32 250 150
+$B39.7-40-270 2 39.7 32 270 170
+$B41.7-42-250 2 417 32 250 150
+SB44.7-45-310 ? 447 32 310 210
+SB46.7-47-260 2 46.7 32 260 160
+$B49.7-50-260 2 49.7 42 260 160
+SB49.7-50-310 2 Ag7 42 310 210
+$B51.7-52-260 2 51.7 42 260 160
+SB54_7-55-330 2 54.7 42 330 230
+$B59.7-60-260 2 59.7 42 260 160
+SB59.7-60-350 2 59.7 42 350 250
+Specification Insert | Clamp screw wrench
+$B12-SB20 CCMT060204 M2.5*6 T8
+SB22-SB60 CCMTO09T308 | M410 T15
+}|PAGE 89GC447 45 22
+GC49 7 50 22
+GC54 7 55 22
+GC59 7 60 22
+GC617 62 22
+GC617 62 254
+GC647 65 254
+GC697 70 254
+GC717 72 254
+GC747 75 254
+GC797 80 254
+GC847 85 254
+GC897 90 3175
+GC947 95 3175
+GC997 100 3175
+.
+No of flutes
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+CCMT09T308
+D
+44.7
+49.7
+54.7
+59.7
+61.7
+61.7
+64.7
+69.7
+71.7
+74.7
+79.7
+84.7
+89.7
+94.7
+99.7
+M4×10
+d 22 22 22 22 22
+25.4
+25.4
+25.4
+25.4
+25.4
+25.4
+25.4
+31.75
+31.75
+31.75
+T15
+50
+50
+50
+50
+50
+50
+50
+50
+50
+50
+50
+50
+50
+50
+50
+Specification
+GC45~100
+Specification
+. - -
+. - .
+. - -
+. - -
+. - -
+. - - .
+. - - .
+. - - .
+. - - .
+. - - .
+. - - .
+. - - .
+. - - .
+. - - .
+. - - .
+I n s e r t
+尺 ⼨
+C l a m p s c r e w
+L 1
+w r e n c h
+S i z e
+46
+63
+100
+12.5
+17
+25
+48.4
+65.4
+101.8
+20
+25
+35
+2 2 3
+8
+10
+15
+16.1
+16.1
+25.7
+BT.NO D1 D2 D3 L1 L2 L3 L4 L5 H1 H2 M
+SK40
+SK50
+6355
+975
 4445
+.
+6985
 .
 684
-185.
-
-161.
-
-.
-228
-25
-6985
-.
-
-101 .75
+101 75
+185
 30
-.
+161
 257
-.
+228
 355
+25
 37.7
-H3
-M
-wrench
-T15
-14.707
-L1
-15.875
-M
-H1
-H2
-”50”
-8º1 7
-H3
-CAT
-9.195 60 º
-CAT.NO
-D1
-CAT40
+SK.NO D1
 .
-635
-CAT50
-98.43
-D2
+.
+D2 D3 L1
+. .
+L2
+.
 H1
+. .
 H2
+. .
+H3 M
+CAT40
+CAT50
+635
+98.43
 4445
 .
-1628
-.
-226
-5/8"-11UNC
 6985
 .
-
+1628
 305.31
+226
 3531
+.
+5/8"-11UNC
 1"-8UNC
-D3
-L1
+CAT.NO D1
 .
-
-H3
-M
+D2 D3 L1 H1
 .
-
-H3
 H2
-ISO
-”49.7”
-8º1 7
-2
-Insert
-L2
 .
-
-L1
-H1
-1 5º
-Specification
-L1
-D3
-D1
-2
-SK40
-D2
-D2
-GC59. 7- 60- 22
-2
-D1
-D4
-GC54. 7- 55- 22
-2
-SK.NO
-D3
-GC49. 7- 50. 22
-No of flutes
-15.9
-D1
-. - 45 -22
-GC447
-.
-
-D 2D 3
-Specification
-M
-SK
-L2
-D
-H2
-11.1
-L1
-8º1 7 ” 5 0” 3 . 2
-D3
-M
-L2
-L3
-100
-H
-H1
-12.5
-L2
-D1
-d
-L1
-ISO.NO
-D1
-D2
-D3
-D4
-H1
+H3 M
+PAGE 90 PAGE 91
 ISO20
-6
-9
-22.225
-33
-8
-45.3
 ISO25
-7
-10
-25.4
-37
-8
-55.7
 ISO30
+6 7 9
 9
-13
-31.75
-50
-15.9
-71.8
-PAGE 91
-H2
-H3
-HSK32E
-M20 P＝2.5
-2 43 2
-3.2
-锥度：1/10
-锥度：7/24
-35.3
-3
-101.8
-35
-29
-38
-29
-82.8
-16
-20
-30
-3
-锥度：1/10
-15
-2.5
-13
 10
+13
+22.225
+25.4
+31.75
 33
-16
-SPECIFICATIONS
-SPECIFICATIONS
-NC
-HSK
-HSK100A
-MAS BT
-14.6
-30º 10.0
-24
-7/24
-65.4
-3
-7/24
-56.4
-25
-19.6
-27
-19.6
-92.4
-22
-3
-MAX. 85
-7 51 0 0
-29
+37
 50
+8 8
+15.9
+45.3
+55.7
+71.8
+ISO.NO D1 D2 D3 D4 H1 H2 H3
+H
+d D
+SPECIFICATIONS
+ISO
+SK
+BT
+CAT
+H 1
+H 1
+H 1
+H 2
+H 2
+H 2
+H 2
+H 2
+L 2
+H 3
+H 3
+8 1 7
+1 5
+H 3
+L 2
+H 1
+8 1 7
+M
+L 1
+L 1
+8º1 7
+M
+L 1
+8º1 7
+M
+1 1 . 1
+5 0 3 . 2
+1 1 . 1
+5 0 3 . 2
+1 4 . 7 0 7
+1 5 . 9
+1 5 . 9
+9 . 1 9 5 6 0 º
+1 5 . 8 7 5
+º ”49.7”
+º
+º ”50”
+” ”
+” ”
+D 2D 3
+D 1
+D 3 D 3 D 3
+D 4
+D 2 D 2 D 2
+D 1 D 1 D 1
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
+BORING TOOL SYSTEM
+Size
+Specification No.of flutes D d Li
+GC44.7-45-22 2 44.7 22 50
+6C49.7-50.22 2 49.7 22 50
+GC54.7-55-22 2 54.7 22 50
+GC59.7-60-22 2 59.7 22 50
+GC61.7-62-22 2 61.7 22 50
+GC61.7-62-25.4 2 61.7 25.4 50
+GC64.7-65-25.4 2 64.7 25.4 50
+GC69.7-/0-25.4 2 69.7 25.4 50
+GC71.7-72-25.4 2 71.7 25.4 50
+GC74.7-75-25.4 2 74.7 25.4 50
+GC79.7-80-25.4 2 79.7 25.4 50
+GC84.7-85-25.4 2 84.7 25.4 50
+GC89.7-90-31.75 2 89.7 31.75 50
+GC94./-95-31./5 2 94.7 31.75 50
+GC99.7-100-31.75 2 99.7 31.75 50
+Fe Insert | Clamp screw wrench
+GC45~100 | CCMTO9T308 ~— | M4x 10 T15
+©®| PAGE 90
+BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
+LI i,t
+welt 5 21 __
+i |
+Oy = q 9 SPECIFICATIONS
+i BT
+BrNO 7 ODT | 02 y es y tty By By wy] so |] My Hy OM
+BT30 46 31.75 aes 48.4 20 2 13.6 8 16.1 16.3 M12
+BT40 63. 44,45 17 65.4 25 2 16.6 10 16.1 22.6 M16
+BT50 100 69.85 25 101.8 35 3 23.2 15 25.7 35.4 M24
+Ll hid
+—arsa | _
+ryt ili
+sy 3] TS
+t SK
+SK.NO | oD1 | oD2 | OD3 | 1 | 2 | H1 | H2 | H3 | M
+SK40 63.55 44.45 lt 68.4 18.5 16.1 22.8 Zo M16
+SK50 97.5 69.85 25 101.75 30 25.7 35.5 37.7 M24
+u 14.307
+Hii
+sy 3] “1
+81750" ¢ : zo CAT
+CAT.NO oD1 | oD2 | oD3 l L1 | H1 | H2 | H3 l M
+CAT40 63.5 44.45 16.28 68.25 16.28 22.6 25.02 5/8"-11UNC
+CAT50 98.43 69.85 26.38 101.6 305.31 35.31 37.72 1"-8UNC
+H3
+ISO
+ISO.NO | D1 | D2 Ds D4 | H1 | H2 H3
+ISO20 6 9 22.225 Bo 8 12 45.3
+S025 7 10 25.4 37 8 16 55.7
+ISO30 9 13 31.75 50 15.9 24 71.8
+CO@|PAGE 91PAGE 92 PAGE 93
+SPECIFICATIONS SPECIFICATIONS
+3 5 . 3
+1 6 . 3
+2 2 . 5
+3 5 . 3
+3 5 . 3
+1 6 . 3
+3 5 . 3
+2 2 . 5
+M 2 4 P ＝ 3
+M 1 6 P ＝ 3
+M 2 4 P ＝ 3
+M 1 2 P ＝ 1 . 7 5
+7 / 2 4
+1 0 1 . 7 5 3
+1 2 0 . 8 5
+锥 度 ： 7 / 2 4
+3
+1 0 1 . 8
+1 3 9 . 8
+7 / 2 4
+6 5 . 4 3
+9 2 . 4
+7 / 2 4
+4 8 . 4
+3
+7 0 . 4
+3 0 º
+3 0 º
+3 0 º
+3 0 º
+1 6 . 1
+1 6 . 1
+1 5 . 9
+1 9 . 1
+2 5
+2 7
+2 0
+2 2
+3 5
+3 8
+L 11
+. 1
+6 . 5 5
+3 0 º
+L 1
+6 . 6
+1 0 . 0
+3 0 º
+L 13
+. 6
+8 . 0
+3 0 º
+L 2
+3 . 2
+1 5 . 0
+3 0 º
+2 2 . 8
+2 9
+1 9 . 6
+1 9 . 3
+2 2 . 8
+2 9
+1 9 . 3
+1 9 . 6
+M 2 4 P ＝ 3
+M 1 2 P ＝ 1 . 7 5
+M 2 0 P ＝ 2 . 5
+M 1 2 P ＝ 1 . 7 5
+7 / 2 4
+6 8 . 4 3
+8 7 . 5
+7 / 2 4
+5 6 . 5 3
+7 8 . 5
+7 / 2 4
+5 6 . 4
+3
+8 0 . 4
+锥 度 ： 7 / 2 4
+8 2 . 8 3
+1 1 5 . 8
+3 0 º
+3 0 º
+3 0 º
+1 5 . 9
+1 9 . 1
+3 0 º
+1 4 . 1
+1 6 . 1
+2 2
+2 4
+2 0
+2 2
+3 0
+3 3
+L 11
+. 1
+7 . 0 7
+3 0 º
+L 1
+4 . 6
+1 0 . 0
+3 0 º
+L 131
+0 . 0
+3 0 º
+L 2
+1 . 2
+1 5 . 0
+3 0 º
+2 0
+1 0 . 5 4
+1 / 1 0
+锥 度 ： 1 / 1 0
+3 1 . 5
+1 5 . 5
+6 . 3
+3 2
+3 . 2
+1 6
+8 . 9 2
+8
+2 6
+2 0
+6
+1 0 1 2
+1 8 . 1 3
+3 1 . 5 4 4
+4 4
+1 5 . 5 2 1
+2 1
+1 6
+1 5
+1 / 1 0
+2 0
+1 5
+1 0 . 5 4
+4 . 5
+1 0 . 5 4
+7 . 5
+1 2
+2 0
+1 0
+R 6
+R 1 0
+5
+2 5
+R 6
+1 9
+1 9
+1 0
+5 0 2 9
+R 1 0
+2 6
+1 5 2 4
+1 2 . 5 1 6
+2 8 . 5 6
+1 9
+1 0 1 0
+1 4 . 1 3
+1 6
+1 6
+1 4
+1 4
+2 0
+1 2
+1 / 1 0
+锥 度 ： 1 / 1 0
+5
+2 5
+2 . 5
+1 3
+7 . 2 1
+6 2
+6
+1 0
+5
+1 0 1 0
+1 4 . 1 3
+1 6
+1 0
+9 1
+1
+8 . 0 5
+1 2 . 5
+2 0
+2 0
+1 2
+2 0
+1 7
+1 7
+2 6 . 5
+2 6 . 5
+1 / 1 0
+锥 度 ： 1 / 1 0
+1 / 1 0
+8 . 0 5
+6
+1 2 . 5
+1 0
+8 . 0 5
+3 . 5
+7 . 5
+1 2 . 5
+6
+5
+2 5
+4
+2 0
+R 3
+R 8
+6 . 3
+3 2
+R 8
+8
+1 1 . 4 2
+1 0
+1 4 . 1 3
+2 0
+2 6
+7 2 8
+1
+2 6
+4
+2 0 2 0
+R 4 . 5
+1 2
+1 2
+8 8
+1 1 . 4 2
+9 2 1
+1 0 1 2
+1 8 . 1 3
+1 6
+1 5
+1 6
+1 5
+1 8
+1 1
+1 9
+6
+2 5 . 7 + 0 . 2 1
+0
+3 0
+1 6 . 1 + 0 . 1 8
+0
+1 6 . 1 + 0 . 1 8
+0
+6 0 º
+2 5 . 7 + 0 . 2 1
+6 0
+0 º
+6 0 º 6 0 º
+4 0 . 2
+1 7 . 6 3 2 5 . 3 4 0 . 1
+2 5
+1 2 . 5 1 7 2 5 . 0
+6 9 . 8 5 3 1 . 7 5 4 4 . 4 5
+7 0 . 1
+3 8 5 3 8 5
+9 1 . 2 5
+4 6 6 3 1 0 0
+9 7 . 5 0
+1 6 . 1 + 0 . 1 8
+1 0
+8 . 5
+1 6 . 1 + 0 . 1
+0
+1 4 . 1 + 0 . 1
+0
+6 0 º
+6 0 º 6 0 º
+1 9 . 3 + 0 . 2 1
+6 0
+0 º
+2 4 . 5
+1 7 2 1 . 6 2 1 . 6 3 3 . 1
+1 3 1 2 . 5 2 1
+6 9 . 8 5
+3 8 . 1 3 8 . 1
+4 3 4 3 7 3
+5 3 5 3 8 5
+6 3 . 5 5
+6348
+2 43 2
+M A X . 5 2 . 4 M A X . 2 6
+3 85 0 7 51 0 0
+M A X . 8 5 M A X . 8 5
+3 85 0 1 9 2 5
+M A X . 4 1 . 6 M A X . 2 0
+3 04 0 6 3
+3 8
+3 04 0
+M A X . 3 3 . 6 M A X . 5 2 . 4
+M A X . 3 3 . 6 M A X . 5 2 . 4
+NC HSK
+B t 5 0
+B t 4 0
+B t 3 0
+S k 5 0
+B t 3 5
+S k 4 0
+B T 4 5
+M A S B T
+H S K 6 3 E
+H S K 5 0 A
+H S K 3 2 E
+H S K 1 0 0 A
+H S K 5 0 E
+H S K 2 5 E
+H S K 6 3 A
+H S K 4 0 A
+H S K 4 0 E
+H S K 6 3 F
+3 8 . 1
+1 0 08 5
+3 8 . 1
+1506 .08245545. 7
+1 6 . 1 1 6 . 1
+BORING TOOL SYSTEM BORING TOOL SYSTEM
+SYNCHRONOUS SOLUTION
+BORING TOOL SYSTEM
+Bt50 BT45
+Joc, Jo.
+l<—>j23.2 l<—>/21.2
+3dtPlis.o Bol*P|15.0
+N M24 P=3 50° nN M20 P=2.5 %o°
+2° — °: +
+o wb au
+- ° fe) - i a
+© NO |) aa i) Om NS ®
+o/s Sle
+35 | 30;
+101.8 ||\<———> 38 | 82.8 3ll|\<——> 33 |
+139.8 115.8
+Bt40 MAS BT
+ae
+<—>14.6
+BOl*P|10.0
+© M12 P=1.75 30°
+° °
++ +
+_ 7 ° a °
+Oo Oo o fe)
+roo —-O WO
 80.4
-20
-26.5
-26.5
-6.3
-1/10
-R10
-18
-10
-19
-21
-L
-13.6
-30º 8.0
-13
-30º 10.0
-19.3
-19
-9
-3.5
-12
-11.42
-21
-12
-17
-17
-22
-78.5
-4
-5
-26
-25
-11
-16
-7.5
-101.75
-3
-22.8
-120.85
-HSK50E
-3
-19.1
-1/10
-6.3
-32
-26
-8 8
-1/10
-16
-5
-25
-26
-3 04 0
-1/10
-16
-PAGE 93
-MAX. 33.6
-11.42
-MAX. 41.6
-3 85 0
-6
-3
-4
-8
-15.9
-HSK40E
-1010
-14.13
-1012
-18.13
-63.55
-16.1
-8
-15 0
-6 .0
-2455
-45. 7
-38.1
-68.4
-87.5
-PAGE 92
-HSK63E
-30º
-69.85
-17
-24.5
-18.5
-22.8
-11.1
-7.07
-M24 P＝3
-7/24
-15.9
-19.1
-16.1+0.18
-0
-60º
-97.50
-70.1
-8
-1 090
-1 . 255
-38.1
-69.85
-25
-30º
-30º
-7/24
-35.3
-11.1
-6.55
-16.1
-12
-6
-19
-L
-M24 P＝3
-40.2
-30
-25.7+0.21
-0
-60º
-30º
-11
-8.05
-14
-MAX. 52.4
-L
-15
-R4.5
-10.54
-Sk40
-20
-20
-R6
+Bt30O Bt35
+a a
+le—p]13.6 l<—> 13
+8 of*>|8.0 3 Of*P|10.0
+© M12 P=1.75 30° M12 P=1.75 30°
+° °
++ +
+. -_ ° - _ °
+Lo $ Yo S
 Sk50
-8 8
-3 04 0
-8.05
-MAX. 85
-15.5 21
-10.54
-3 85 0
-53
-43
-9
-8.05
-20
-1010
-14.13
-20
-3
-R3
-12
-4.5
-15.5
-56.5
-19.3
-10.54
-14.1
-7/24
-20
-22
-HSK40A
-R6
-30º
-38.1
-13
-21.6
-14.1+0.1
-0
-38
-3
-46
-16.1
-M12 P＝1.75
-60º
-31.75
-12.5
-17.63
-30º
-7/24
-48.4
-16.3
-HSK50A
-L
-M12 P＝1.75
-60º
-16.1+0.18
-0
-Bt35
-70.4
-35.3
-16
-12.5
-14
-15
-26
-32
-16
-R8
-20
-Bt30
-12.5
-10
-1/10
-24
-21
-9
-10 12
-18.13
-44
-22.5
-6
-20
-28.56
-31.5 44
-53
-43
-15
-16
-12.5 16
-20
-16.1
-38.1
-12.5
-21.6
-16.1+0.1
-0
-53
-63
-16.1
-60º
-44.45
-17
-25.3
-M12 P＝1.75
-10
-31.5
-30º
-R8
-7.5
-12.5
-20
-MAX. 52.4
-L
-16.6
-30º 10.0
-30º
-HSK63A
-R10
-12
-20
-L
-M16 P＝3
-60º
-16.1+0.18
-0
-Bt40
-16.3
-26
-25
-115.8
-139.8
-22.5
-5
-锥度：1/10
-10
-MAX. 33.6
-35.3
-锥度：7/24
-10 7
-14.13
-7.21
-85
-73
-30º
-21
-33.1
-85
-100
-60º
-19.3+0.21
-0
-30º
-25.0
-40.1
-M24 P＝3
-6 5
-8 6
-8.92
-MAX. 20
-21.2
-30º 15.0
-HSK63F
-19 25
-L
-23.2
-30º 15.0
-MAX. 26
-L
-HSK25E
-MAX. 52.4
-BT45
-60º
-25.7+0.21
-0
-Bt50
+j25)7+0.21
+60°
+15.3
+101.75 3>|I94
+120.85
+Sk40
+|
+22.8',22.8
+\<$—— >< ——>|
+56.5 sl 22
+78.5
+<1S>} +0.18
+Oo
+60°
 BORING TOOL SYSTEM
-63
-38
-BORING TOOL SYSTEM
-4
-20
-20
-15
-DIGITAL BORING HEAD I
-PAGE 94
-DIGITAL BORING HEAD I
-PAGE 95
-DIGITAL BORING HEAD I
-PAGE 96
-DIGITAL BORING HEAD I
-PAGE 97
-DIGITAL BORING HEAD I
-PAGE 98
-DIGITAL BORING HEAD I
-PAGE 99
-DIGITAL BORING HEAD I
-PAGE 100
-DIGITAL BORING HEAD I
-PAGE 101
-DIGITAL BORING HEAD I
-PAGE 102
-DIGITAL BORING HEAD I
-PAGE 103
-DIGITAL BORING HEAD I
-PAGE 104
-DIGITAL BORING HEAD I
-PAGE 105
-DIGITAL BORING HEAD I
-PAGE 106
-DIGITAL BORING HEAD I
-PAGE 107
-DIGITAL BORING HEAD I
-PAGE 108
-DIGITAL BORING HEAD I
-PAGE 109
-DIGITAL BORING HEAD I
-PAGE 110
-DIGITAL BORING HEAD I
-PAGE 111
-DIGITAL BORING HEAD I
-PAGE 112
-DIGITAL BORING HEAD I
-PAGE 113
-DIGITAL BORING HEAD II
-EWE Digital Boring Head (Finishing Round Bit Type)
+SYNCHRONOUS SOLUTION
+HSK32E HSK25E HSK63F
+063
+3
+SPECIFICATIONS
+HSK
+HSKIOOA HSK63A
+MA. 85
+HSKSOA HSK40A
+9< 20
+<>]
+a : ')
+B10 7
+< 2
+. af ff ef =. Je. a reeee | ee ee eeeee
+HSK63E HSK40E
+06
+©] PAGE 93PAGE 94 PAGE 95
+ANMI | DIGITAL BORING HEAD I DIGITAL BORING HEAD I ANME |
+THE WORLD'S
+SYNCHRONOUS SOLUTION SYNCHRONOUS SOLUTION
+EeSC DIGITALE FEINBOHRWERKZEUGE
+DIGITAL FINE BORING HEADS
++ ein Display fur alle Feinbohrkopfe + one display for all fine boring heads diaSMiA | 1 l=S | @0.3mm-2205.0 mm meter0.3mm-2205mm
++ Anzeige umkehrbar (Links-/Rechtshander) + display reversible (LH/RH)
++ mm/inch umschaltbar + mmi/inch switchable
+d ig ital fine boring head from @ 0.3 mm + Standard AAA Batterie zur Stromversor- + standard AAA battery required
+gung + display unit will docked with magnetic
++ Display wird liber Magnetkraft am Werk- forces at the tool
+zeug gehalten + 0.001 accuracy in diameter
++ Einstellgenauigkeit 0.001mm im Durch- + direct measurement system (no backmesser lash)
++ direktes WegmeBystem (kein Umkehrspiel) » no battery and electronic evaluation
++ keine Batterie und Auswerteelektranik im unit inside the tool
+Werkzeug verbaut + very easy operation
++ sehr einfache Bedienung + for digital and analog use
++ digital und analog einsetzbar
+WELTNEUHEIT ws PSC
+kleinster digitaler Feinbohrkopf ab @ 0.3 mm
+TEC[=|NOLOGY MODULAR BORING SYSTEM@ 9.75 -650.1 mm
+don't think about the interface you already have it
+schwingungsgedampfte Lo6sungen
+damped boring solutions
+SDIfg
+SWISSETOOLSPAGE 96 PAGE 97
+DIGITAL BORING HEAD I DIGITAL BORING HEAD I
+SYNCHRONOUS SOLUTION
+266
+Ay
+DIGITAL BORING HEAD |
+DIGITALE DIGITAL
+Anzeigeeinheit display unit
+ein Display fir alle Feinbohrképfe @ 0.3 .
+mm - 2205.0 mm
+Anzeige umkehrbar (Links-/Rechtshander) -
++ mm/inch umschaltbar
+Standard AAA Batterie zur Stromversorgung
+Display wird tiber Magnetkraft arm Werkzeug gehalten
+Einstellgenauigkeit 0.001mm im Durchmesser
+direktes WegmeBystem (kein Umkehrspiel) «
+« keine Batterie und Auswerteelektronik im
+Werkzeug verbaut *
++ sehr einfache Bedienung .
++ digital und analog einsetzbar
+one display for all fine boring heads diameter 0.3 mm - 2205 mm
+display reversible (LH/RH)
+mm/inch switchable
+standard AAA battery required
+display unit will docked with magnetic
+forces at the tool
+0.001 accuracy in diameter
+direct measurement system (no backlash)
+no battery and electronic evaluation
+unit inside the tool
+very easy operation
+for digital and analog use
+iu
+AY Ersatzteile / Zubehér
+@ 150.0 mm - 2205.0 mm
+Spare parts / Accessories 266
+Fiir Anzeigeeinheit Bestell-Nr. / Bestell-Nr. / Bestell-Nr. /
+For display unit Order number Order number Order number
+Torx-Schraube / QQ) Batterie / @) Torx-Schlissel /
+Torx screw Battery Torx driver
+266.028.077 879.028.077 879.011.045 842.005.000
+@3.0mm- 88.1 mm
+@ 23.9 mm- 203.1 mm
+DIGITAL BORING HEAD |
+Digital einstellbarer
+Feinbohr-Kurzklemmhalter
++ Einfaches Handling
++ Prazise Masskorrektur
++ Direktes Weg-Messsystem
++ Wartungsfrei
+SYNCHRONOUS SOLUTION
+Digital adjustable
+fine boring module KKH
++ Easy handling
++ Precise adjustment
+- No backlash
++ Maintenance-free ow
+KKH.WCA.016.045 16 25
++ Feinverstellung digitale Anzeige
+0.001mm
++ Radialer Verstellweg: min. 0,4 mm
++ Axiale Langenverstellung: 1.5 mm diber
+Keilelerment
++ Drehzahl: max.10.000 U/min
++ Innenktihlung direkt auf die Werkzeugschneide
+Anzeigeeinheit fur
+Feinbohr-Kurzklemmhalter
+45 55 CC... 06 02 ..
++ Fine adjustment digital display
+0.001 mm
++ Radial adjustment: min. 0.4 mm
++ Axial length adjustment: 1.5mm
++ Speed: max.10.000 rpm
++ Internal cooling directly on the tool
+cutting edge
+eo
+Display unit for
+fine boring module GH1
+GH1.DA2.BGK.077
+wt
++ Anzeige umkehrbar (Links-/ Rechtshander) + display reversible (LH/RH)
++ mm/inch umschaltbar
++ Standard AAA Batterie zur Stromversorgung
++ Display wird Uber Magnetkraft am Werkzeug gehalten
++ Einstellgenauigkeit 0.001mm im Durchmesser
++ mm/inch switchable
++ standard AAA battery required
+display unit will docked with magnetic
+forces at the tool
+0,001 accuracy in diameter
++ direct measurement system (no backlash)
++ direktes Wegmefiystem (kein Umkehrspiel) + no battery and electronic evaluation
++ keine Batterie und Auswerteelektronik im
+Werkzeug verbaut
++ sehr einfache Bedienung
++ digital und analog einsetzbar
+unit inside the tool
+* very easy operation
++ for digital and analog usePAGE 98 PAGE 99
+DDIGITAL IGITAL BBORING ORING HHEAD EAD I| DDIGITAL IGITAL BBORING ORING HHEAD EAD I|
+SYNCHRONOUS SOLUTION SYNCHRONOUS SOLUTION
+528 Ausdrehset 09.75-30.1 Fine boring set 09.75-30.1 Ausdrehset 09.75-88.1 Fine boring set 99.75-88.1 527
++ erweiterbar von 03 bis 88.1 + can be upgraded from @3 up to 88.1 + erweiterbar von @3 bis 088.1 + can be upgraded from 63 up to 688.1
+MBM 55 modular
+ba 5
+—_ al
+Feinverstellweg DI I Feinverstellweg
+Fine adjustment F Fine adjustment
+2.7mm cant 2.7mm
+‘
+Inhalt Content
+1 Koffer / Case
+Inhalt __Content = 1 Ausdrehkopf / Fine boring head
+1 Koffer / Case 1 Ausdrehstahl / Boring bar 09.75-15.1 272.010.006
+1 Ausdrehkopf/ Fine boring head 1 Ausdrehstahl / Boring bar 14.75-20.1 272.015.006
+1 Ausdrehstahl/ Boring bar 09.75-15.1 272.010.006 D D 1 Ausdrehstahl / Boring bar 019,75-25.1 272.020.006
+1 Ausdrehstahl/ Boring bar 014.75-20.1 272.015.006 Ee is 1 Ausdrehstahl / Boring bar 024.75-30.1 272.025.006
+1 Ausdrehstahl/ Boring bar @19.75-25.1 272.020.006 ' H 1 Schaft / shank 029,75-48,1 271,030,048
+1 Ausdrehstahl / Boring bar 024.75-30.1 272.025.006 ae L 1 Schaft / shank 047.75-88.1 271.048.088
+Win sescaliitees MilfSncurexay SNE 1 Wendeplattenhalter / Insert holder 029.75-48.1 253,030.006
+1 Torx-Schllissel / Torx driver V7 I H 1 Wendeplattenhalter / Insert holder 047.75-88.1 253.048.0006
+= q — 1 Inbusschltissel /Allen wrench sw4
+f i f H i 1 Inbusschliissel / Allen wrench SW5
+-| te \ FA - -| :\ FA = 1 Torx-Schliissel / Torx driver TW?
+Ausdrehset 09.75-30.1 Fine boring set 09.75-30.1 sett Enecchauen oe me vcme, Ausdrehset 09.75-88.1 Fine boring set 09.75-88.1
+521 DIGITAL DIGITAL 2.7mm _|___ 2.7mm DIGITAL DIGITAL 521
++ erweiterbar von 03 bis 088.1 + can be upgraded from o3 up to 088.1 + erweiterbar von o3 bis 088.1 + can be upgraded from o3 up to 688.1
+MBM 55 modular
+=DIN 69893 HSK 63 A re sa D D
+DIN 69871 AD 40 Ay
+fal | LR a
+Inhalt Content S| pate S| for Inhalt Content
+1 Koffer / Case _ {- >» {- Hf 1 Koffer / Case
+1 Ausdrehkopf/ Fine boring head Ala t af = A = = 1 Ausdrehkopf/ Fine boring head
+1 Ausdrehstahl / Boringbar 09,75-15.1 272.010.006 q (U Fine adjustment 1 Ausdrehstahl / Boring bar 09.75-15.1 272.010.006
+1 Ausdrehstahl/ Boring bar @14.75-20.1 272.015.006 iat 2.7mm 1 Ausdrehstahl / Boring bar 014.75-20.1 272.015.006
+1 Ausdrehstahl/ Boring bar @19.75-25.1 272.020.006 1 Ausdrehstahl / Boring bar @19.75-25.1 272.020.006
+1 Ausdrehstahl/ Boring bar @24.75-30.1 272.025.006 1 Ausdrehstahl / Boring bar 924.75-30.1 272.025.006
+1 Inbusschlissel / Allen wrench SWS 1 Schaft / shank @29,75-48,1 271.030.048
+1 Torx-Schlissel / Torx driver Tir 1 Schaft/ shank @47.75-88.1 271.048.088
+1 Digitale Anzeigeeinheit / dig. display 266.028.077 1 Wendeplattenhalter / Insert holder 029.75-48.1 253.030.006
+1 Wendeplattenhalter / Insert holder (047.75-88.1 | 253.048.006
+1 Inbusschliissel / Allen wrench sw4
+1 Inbusschliissel / Allen wrench SW5
+1 Torx-Schliissel / Torx driver 77
+1 Digitale Anzeigeeinheit / dig. display 266.028.077
+CO@|PAGE 98 CO |PAGE 99PAGE 100 PAGE 101
+DDIGITAL IGITAL BBORING ORING HHEAD EAD I| DDIGITAL IGITAL BBORING ORING HHEAD EAD I|
+SYNCHRONOUS SOLUTION SYNCHRONOUS SOLUTION
+Ay O
+530 S\2 Ausdrehset 99.75-164 Fine boring set 09.75-164 Ausdrehset 09.75-101.1 Fine boring set @9.75-101.1 S\2 525
++ erweiterbar von o3 bis 6320 + can be upgraded from 3 up to 6320 Ba + Zustellgenauigkeit 0.01mm resp. liber + 0.01mm diametrical adjustment resp.
+Nonius 0.002mm im Durchmesser 0.002mm by nonius
+2 + erweiterbar von @3 bis 0152.1 + can be upgraded from o3 up to
+ii 0152.1
+MBM 55 modular
+DIN 69893 HSK 63 A a .
+1,063.16 ; 4 525.550.101 63 50.5 57 9.75. 101.1 267.550.152
+DIN 69871 AD 40 :
+, Feinverstellweg |
+aeadjustment; sig COnIEAE
+MAST 40 Lamm _Inha onten
+rae 1 Koffer / Case
+° ce eee 1 Ausdrehkopf/ Fine boring head MBM 55 267.550.152
+Inhalt Gontent * 1 Ausdrehstahl / Boring Bar 69.75 - 20.1 272.010.006
+1 Koffer / Case 1 Ausdrehstahl / Boring Bar @ 19,75 - 30.1 272,020,006
+ialedfenhophirineiboringiiead 1 Schaft / Shank @ 29.75 - 48.1 271.030.048
+1 Ausdrehstahl/ Boring bar 09.75-15.1 272.010.006 1 Schaft / Shank 9 47.75 - 88.1 271.048.088
+1 Ausdrehstahl / Boring bar 014,75-20.1 272.015.006 1 Wendeplattenhalter / Insert holder @ 29.75 - 48.1 253.030.006
+1 Ausdrehstahl/ Boring bar 019.75-25.1 272,020,006 1 Wendeplattenhalter/ Insert holder 0 47.75 - 88.1 253.048.006
+1 Ausdrehstahl / Boring bar 024,75-30.1 272.025.006 ag eae al Insert holder eee - 101.1 254.261.009
+1 Schaft / shank 29.75-48.1 271.030.048 TT : ' = ren AEH
+1 Schaft / shank 047,75-88.1 271,048,088 Ve arae ae ania ae Saas
+1 Briicke / Bridge 280 886.086.164 SF ONSEN Sona
+1 Wendeplattenhalter / Insert holder @29.75-48.1 253.030.006 Aleineedineecera Ml anneunners SW 2.5/4/5/8
+1 Wendeplattenhalter / Insert holder @47.75-88.1 253.048.006
+1 Inbusschlissel / Allen wrench sw i a a
+1 Inbusschliissel / Allen wrench SWS Feinverstellweg | i || —= _ Zubehor Accesories
+1 Torx-Schliissel / Torx driver 7 Fine sdgisrment| i " : Wendeplattenhalter / Insert holder @ 105.75- 119.0 254,262.09
+: ‘e ‘e\ GCy OST a. (9 132.0)
+@A min-max. Wendeplattenhalter / Insert holder @ 125.75 - 139.0 254.263.009
+@ AL min.-max. cc..097T3.. (@ 152.0)
+Distanzstiick/ Adapter F = 6.5 mm © 114.0/ 0 132.0/ 889.000.006
+“" 01520
+D1
+oon
+551 Ausdrehset @86-302 Fine boring set 986-302
++ erweiterbar bis #402 + can be upgraded up to #402
+__D1
+D
+\ MBM 55 modular
+Inhalt Content
+1 Koffer / Case
+1 Feinbohrkopf/ Fine boring head 256.550.000
+1 Wendeplattenhalter / Insert holder 986-138 190.550.109
+t 1 Wendeplattenhalter / Insert holder 136-220 190.550.209
+cant never 1 Wendeplattenhalter / Insert holder @188-302 190.550.309
+1 Abstiitzung / Support block 885.190.109
+1 Abstiitzung / Support block 885.190.209
+1 Druckplatte/ Clamp plate 884.190.109
+1 Druckplatte / Clamp plate 884.190.209
+10 Wendeplatten / Inserts cc.. 0973 .. 600.200.094
+1 Inbusschliissel / Allen wrench SW5
+1 Torx-Schliissel / Torx driver Tis
+OO) PAGE 100 OO |PAGE 101PAGE 102 PAGE 103
+DIGITAL BORING HEAD I DIGITAL BORING HEAD I
+SYNCHRONOUS SOLUTION
+DIGITAL BORING HEAD |
+Ausdrehkopf @39.9-70.1 Fine boring head 939.9-70.1
+—<_e”
++ Schnittstelle ER25 DIN6499
++ Zustellgenauigkeit 0.01mm im Durchmesser
++ fir Wendeplatten CC ..0602..
++ erweiterbar bis 0100.1
+connection ER25 DIN 6499
+0.01mm diametrical adjustment
+for inserts CC..0602..
+can be upgraded to 0100.1
+Bestell-Nr./ ae es Ausdrehkopf /-
+_Ordernumber min. max. Fine boring head —
+526.001.070 39 255 8 20.5 39.9 70.1 267.040.070 |
+|
+Inhalt Content I zal
+1 Grundkérper / Base unit ER25 216.025.000 = © da 5
+1 Feinbohrkopf/ Fine boring head @39.9-70.1 267.040.070 | mee | |
+4Schraube / Screw M4x25 858.216.025 I
+1 Torxschliissel / Torx wrench ine 842.006.000 | =
+2 Inbusschlusselset / Allen key set SW 2.5/3 rm
+_ Zubehor Accesories
+Erweiterung / Extension @ 69.9 - 100.1 889.070.100
+Fir Feinbohrkopf Bestell-Nr. / Bestell-Nr. / Bestell-Nr. / Bestell-Nr. /
+Order number Order number Order number Order number
+For fine boring head Schraube / Schraube/ Torx-Schraube / Klemmschraube /
+Screw @ Screw @ Torx-Screw © Clamping2screw
+267.040.070 858.216.0100 858.216.025 843.006.0000 881.216.008
+)| PAGE 102
+Ausdrehset @9.75-101.1
+DIGITAL BORING HEAD |
+SYNCHRONOUS SOLUTION
+aoa \O"
+Fine boring set @9.75-101.1
++ Schnittstelle ER40 DING499
++ Zustellgenauigkeit 0.01mm resp. liber
++ connection ER40 DIN 6499
++ 0.01mm diametrical adjustment resp.
+Nonius 0.002mm im Durchmesser 0.002mm by nenius
++ erweiterbar von 03 bis 0152.1 + can be upgraded from @3 up to
+@152.1
+Sas Bestell-Ne/ yp tp PA A AusdrebkopF/
+in 525.001.101 63 50.5 57 9.75 101.1 267,003.152
+U; vu Li
+i i =
+Inhalt Content =—
+| @ S 1 Koffer / Case med
+i) et 1 Ausdrehkopf / Fine boring head ER40 267.003.152 ‘@)
+1 Ausdrehstahl / Boring Bar @ 9.75 - 20.1 272.010.006
+LA 1 Ausdrehstahl / Boring Bar @ 19,75 - 30.1 272.020.006 W
+coe Xi 1 Schaft / Shank @ 29,75 - 48.1 271.030.048 ly
+ou ‘Ameren 1 Schaft / Shank @ 47.75 - 88.1 271.048.088
+OAiminmae| 1 Wendeplattenhalter / Insert holder @ 29.75 - 48.1 253.030.006
+1 Wendeplattenhalter / Insert holder @ 47.75 - 88.1 253.048.006
+1 Wendeplattenhalter / Insert holder @ 87.75- 101.1 254.261.009
+cC..09T3.. (9114.1)
+1 KthImitteleinsatz / Coolant plug 918.000.032
+2 Torx-SchlUssel / Torx driver T7/T15 842.006.000
+842,009.000
+4 Inbusschlusselset / Allen wrench set SW 2.5/4/5/8
+«2 2 7
+Zubehor Accesories
+4 4 Wendeplattenhalter/Inserthalder @ 105.75- 119.0 254.262.009
+‘e) ‘e| GG, OTS. (o 132.0)
+Wendeplattenhalter/ Insert holder @ 125.75 - 139.0 254.263.009
+cc..0973.. (@ 152.0)
+4 Distanzstiick/Adapter F = 6.5mm 9 114.0/ 4 132.0/ 889.000.006
+~~ @ 152.0 a2
+Ausdrehset 09.75-30.1 Fine boring set 09.75-30.1 528
++ erweiterbar von @3 bis 088.1
++ Schnittstelle ER32 DIN6499
+‘Bestell-Nr./ - oA
+5 ‘Order number : min.
+inn _ SMART ER32 —
+Ae
+=,
+A Inhalt
+1 Koffer / Case
+1 Ausdrehkopf / Fine boring head
+1 Ausdrehstahl / Boring bar
+1 Ausdrehstahl / Boring bar
+1 Ausdrehstahl / Boring bar
+1 Ausdrehstahl / Boring bar
+1 Inbusschlussel / Allen wrench
+1 Torx-Schlussel / Torx driver
+Fine adjustment
+27 mm
++ can be upgraded from @3 up to 088.1
+* connection ER32 DIN 6499
+on ;
+max. t
+30.1 60 262.032.060 =
+te]
+Content re)
+262.032.060 UW
+99.75-15.1 272.010.006 li j
+014.75-20.1 272.015.006
+019.75-25.1 272.020.006
+@24.75-30.1 272.025.006
+SW5
+7
+O@|PAGE 103PAGE 104 PAGE 105
+DIGITAL BORING HEAD I DIGITAL BORING HEAD I
+SYNCHRONOUS SOLUTION
+MBM-Spannsystem
+DIGITAL BORING HEAD |
+MBM quick-change coupling system
+Grosse Steifigkeit dank hoher Vorspann- :
+krafte und grosser Auflageflachen. forces and large bearing
+Héchste Drehmomenttbertragung ohne
+Beeintrachtigung der Austauschbarkeit.
+Bohrung fiir KUhImitteldurchganig.
+L1
+aim) 2 A
+| >=
+dl
+Symmetrisch angeordnete Vibrationsarm, da das
+Mitnahmeflachen gewahr- ochnehin kleine Passungsleisten die konzentrische spiel mit dem Spannen der
+Ubertragung von hohen Verbindung aufgehoben
+Drehmomenten. wird.
+Symmetrical distribution of | Minimal operating vibrathe torque forces through _ tions since the small fitting
+uniformly arranged driving Play is-eliminated through
+Maximum rigidity due to high preloading
+Maximum torque transmission without
+loss of interchangeability or ease of maintenance. Bored for spindle coolant supply.
+surfaces. the locking forces.
+Dimensionen Dimensions
+System di L M sw/ Anzugsdrehmoment /
+oD AF Torque
+20 in a 25 2.5Nm
+25 14 14 3 4.5Nm
+32 18 18 4 10Nm
+42 24 24 6
+a 40 40 M16x1.5 8
+94 50 50 M20x1.5 10
+DIGITAL BORING HEAD |
+Aufnahmen DIN 69893 Master shanks to DIN 69893
+SYNCHRONOUS SOLUTION
+102
+HSKA
+102.032.251 32 25
+102.040.4211 40 42
+; 102.063.201 63 20
+Sh ed 102.063.321 63 32
+1 1 =I (102063421 68 42 2 50
+ieee Foeh 102.063.551 63 55
+D
+102.063.721 63 72
+102.080.321 80 32
+102.080.551 80 55
+102.080.941 80 94
+102.100.421 100 42
+102.100.721 100 72
+Aufnahmen DIN 69871 A/D Master shanks to DIN 69871 A/D 102
+102.315.201 30 20
+102.315.321 30 32
+ited 102.315.551 30 55
+“t= 102.415.202 40 20
+a a 102.415.252 40 25
+102.415.322 40 32
+= a] 102.415.422 40 42
+i
+1
+A
+1 =f 102.415.552 40 55
+D 102.415.941 40 94
+102.515.202 50 20
+102.515.252 50 25
+102.515.322 50 32
+102.515.422 50 42
+102.515.552 50 55
+102.515.722 50 72
+102.515.942 50 94
+* Entspricht nicht DIN 69871, keine Frei- * Not according to DIN 69871,
+stellung nach dem Bund without groove
+COO |PAGE 105PAGE 106 PAGE 107
+DIGITAL BORING HEAD I DIGITAL BORING HEAD I
+SYNCHRONOUS SOLUTION
+102
+DIGITAL BORING HEAD |
+Aufnahmen DIN 69871 B Master shanks to DIN 69871 B
+102
++ KihImittelzufuhr Giber den Bund + coolant supply through the tool
+flange
+102.325.201 30 20 20 39.1 M12
+102.325.321 30 32 20 39.1 Mi2
+102.325.551 30 55 20 eieble Mi2
+102.425.202 40 20 40 59,1 M16
+102.425.252 40 25 55 74.1 M16
+102.425.322 40 32 65 84.1 M16
+102.425.422 40 42 80 99.1 M16
+102.425.552 40 55 100 119.1 M16
+102.425.941 40 94 60 79.1* M16
+102,525,202 50 20 40 59.1 M24
+102.525.252 50 25 55 74.) M24
+102.525.322 50 32 65 84.1 M24
+102.525.422 50 42 80 99.1 M24
+102.525.552 50 §5 100 119.1 M24
+102.525.722 50 72 120 139.1 M24
+102.525.9427 50 o4 150 169.1 M24
+* Entspricht nicht DIN 69871, keine Frei- * Not according to DIN 69871,
+stellung nach dem Bund without groove
+Aufnahmen ISO 26623-1 Master shanks to ISO 26623-1
+ted
+102.163.201 63 20 28 50
+102.163.321 63 32 28 50
+102.163.551 63 55 38 60
+102.163.941 63 94 66 90
+C©@|PAGE 106
+DIGITAL BORING HEAD |
+Verlangerungen Extensions
+SYNCHRONOUS SOLUTION
+132
+132.200.001 20 25
+132.250.001 25 30
+132.320.001 32 40
+132.420.001 42 50
+132.550.001 55 70
+132.720.001 72 75
+132.940.001 94 100
+Ersatzteile / Zubehor Spare parts / Accessories 102/122/124/132
+Fiir System @D1 —_Bestell-Nr./
+Forsystem@D1 Order number
+Klemmschraube / Gewinde / sw/
+Clamping screw oO) Thread AF
+20, 800.000.200 MS5x0.5 25
+25 800.000.250 M6x0.75 3
+42 800.000.420 Mi2x1 6
+ak 800.000.550 M12x1 6
+72 800.000.720 M16x1.5 8
+94 800.000.940 M20x1.5 10
+}|PAGE 107PAGE 108 PAGE 109
+DIGITAL BORING HEAD I DIGITAL BORING HEAD I
+SYNCHRONOUS SOLUTION
+262 Micro Ausdrehkdpfe o 0.3-19.1
+DIGITAL BORING HEAD |
+Micro fine boring heads @ 0.3-19.1
+DIGITAL BORING HEAD |
++ Durchmessereinstellung mit geringstem
+Umkehrspiel
++ diametrical adjustment with maximal
+reduced reversal backlash 1
++ Zustellgenauigkeit von 0.002mm tiber + 0,002mm diametrical adjustment by i
+Nonius im Durchmesser nonius |
++ mit Innenkuhlung « with inner coolant supply =
+—— 1
+|
+ANALOG =|
+2620250288 5K id !
+262.032.032 if 16 32 25 32 40
+Feinverstellweg
++ Schneideinsatze miissen separat bestellt + Boring bars must be ordered separately nt Fine adjustment
+werden. —— Amm
+0
+DL
+Micro Ausdrehképfe @ 0.3-19.1 Micro fine boring heads @ 0.3-19.1
+263 DIGITAL DIGITAL
++ Einstellgenauigkeit 0.001mm im Durch- + 0.001 accuracy in diameter
+messer + direct measurement system (no backlash) _ DI
+Werkzeug verbaut
++ sehr einfache Bedienung
++ digital und analog einsetzbar
+DIGITAL
+263.032.032 i
++ Anzeigeeinheit muss separat bestellt
+werden siehe Seite 6 (266.028.077).
++ direktes WegmeBystem (kein Umkehrspiel) «no battery and electronic evaluation unit
++ keine Batterie und Auswerteelektronik im inside the tool
++ very easy operation
++ for digital and analog use
+16 32 25 32 40
+« Display unit must be ordered separately
+see page 6 (266,028.077).
+SYNCHRONOUS SOLUTION
+Reduktionshiilsen Reduction sleeves 265/268
+265,007,004 7 4 (30) -
+268.016.0046 n
+268.016.007 16 HW 90
+am
+| } |
+Schneideinsatze Boring bars 273
+273.004.003 40 12 03 07 - 025 015 O15 110 003 A
+273,004,010 40 40 10 23 005 095 065 O50 110 0.1 B
+273,004,032 40 102 32 43 005 3.00 255 160 110 02 B
+273.007.062 70 203 ©8662 73 005 600 5.25 310 210 O05 B
+Schneidplatten inserts 277
+277.007.06' 69 8.1 0.2 3.45 48 35 1.0 Do7
+277.007.089 89 10.1 0.2 4.45 48 35 1.0 Do7
+277,010,099 99 12.1 0.2 4.95 7 3.9 1.0 D10
+277.010.139 13.9 19.1 0.2 6.95 7 39 1.0 p10
++ Schnittwerte (Start) f 0.02 mm/U + Cutting parameters (Start) f 0.02 mm/rev
+Adapter Adapter
+fiir Schneidplatten for inserts 276
+Ersatzteile / Zubehor Spare parts / Accessories
+Fir Ausdrehkopf Bestell-Nr. / Bestell-Nr. /
+For boring head Order number Order numt
+Klemmschraube/ @) Befestigungsschraube / ®
+Clamping screw F g screw
+262/263.025.025 881.262.250 882.262.250
+262/263.032.032 881.262.320 882.262.320
+CO®|PAGE 108
+‘Stinselte Klemmbalter
+=~ Toolholder face
+276.007.007 7.0 30 48 56 31 M2x7.5 (843.013.000) Ll Do7
+CO |PAGE 109PAGE 110 PAGE 111
+DIGITAL BORING HEAD I DIGITAL BORING HEAD I
+SYNCHRONOUS SOLUTION
+262/269
+DIGITAL BORING HEAD |
+Ausdrehképfe @3-88.1 Fine boring heads @3-88.1
+» Durchmessereinstellung mit geringstem
+Umkehrspiel
++ diametrical adjustment with maximal
+reduced reversal backlash
+DIGITAL BORING HEAD |
+Ausdrehkopf 63-88.1 Fine boring head @3-88.1
+ANMTI
+SYNCHRONOUS SOLUTION
+ECO LINE 262
++ Schnittstelle ER32 DIN6499 + connection ER32 DIN 6499
++ Zustellgenauigkeit von 0.01mm resp. + 0.01mm diametrical adjustment resp. Db
+Uber Nonius 0.002mm im Durchmesser 0.002mm by nenius
++ mit Innenktihlung + with inner coolant supply | \
++ Ausdrehstahle durchschiebbar (L1) + boring bars go through head (L1) U U |
+=i| SMARTRee
+= aa = _ « Werkzeug in einem Spannzangenfutter + Clamp tool in a collet chuck. lu
+el [1 a (Fine adjustment spannen. =
+H 27 mm
+ae g =
+ine adjustment — J
+i 27mm
+@ Amin. ww)
+@Amax. Lu
+269.412.0930 55 16 3 88.1 90 80
++ die Ausdrehdurchmesser @ A min. - + boring diameter o A min. - A max.
+A max. werden mit Ausdrehstahlen der are only available with boring bars
+Serien 271 bis 278 erreicht from series 271 to 278
+Ausdrehképfe 03-88.1 Fine boring heads @3-88.1 Ausdrehkdpfe @3-88.1 Fine boring heads @3-88.1
+266 DIGITAL DIGITAL \ DIGITAL DIGITAL PSC FBHO
+SEs
++ fiir Ausdrehstahle mit Schaftdurchmesser + for boring bars with a shank diameter + fir Ausdrehstahle mit Schaftdurchmesser + for boring bars with a shank diameter
+16mm of 16mm =I lemm ore ; of 16mm —
++ Einstellgenauigkeit 0.001mmim Durch- + 0.001 accuracy in diameter = Dyes + Einstellgenauigkeit 0.001mm im Durch- + 0.001 accuracy in diameter
+messer + direct measurement system (no back- SEES ‘ ee direct measurement system (no back-
++ direktes WegmeBystem (kein Umkehrspiel) lash) = psc + direktes WegmeBystem (kein Umkehrspiel) lash)
++ keine Batterie und Auswerteelektronikim + no battery and electronic evaluation Fei IIweg + keine Batterie und Auswerteelektronik im + no battery and electronic evaluation
+Werkzeug verbaut unit inside the tool Fine adjustment | Werkzeug verbaut unit inside the tool
++ sehr einfache Bedienung + very easy operation 27mm | + sehr einfache Bedienung + very easy operation
++ digital und analog einsetzbar + for digital and analog use | . digital und analog einsetzbar . for digital and analog use
++ mit InnenkGhlung + with inner coolant supply ! + mit Innenkihlung + with inner coolant supply
++ Ausdrehstahle durchschiebbar + boring bars go through head — | —
+IN D 7 irder number
+6 PSCDIGITAL
+B PSC5O-FBHO-DE-1670 PSC50
+le : E [ 690 PS
+ran | + die Ausdrehdurchmesser @ A min. - + boring diameter A min. - A max.
+iT Dep] vel A max. werden mit Ausdrehstahlen der are only available with boring bars
+t —— 1 Serien 271 bis 278 erreicht from series 271 to 278
+, fin =
+DIN 69893 HSK 63 A = {6 7
+ee a =aalbse le Hs
+DIN 69871 AD 40 a16 _ 1 {})_ Feinversteliweg
+= Saar | (C eset + Anzeigeeinheit muss separat bestellt + Display unit must be ordered separately
++ die Ausdrehdurchmesser @ A min. -
+A max. werden mit Ausdrehstahlen der
+Serien 271 bis 278 erreicht
++ Anzeigeeinheit muss separat bestellt
+werden siehe Seite 6 (266.028.077).
++ boring diameter o A min. - A max.
+are only available with boring bars
+from series 271 to 278
++ Display unit must be ordered separately
+see page 6 (266.028.077).
+O®|PAGE 110
+werden siehe Seite 6 (266.028.077). see page 6 (266.028.077).
+OO|PAGE 111PAGE 112 PAGE 113
+ANTMI DIGITAL BORING HEAD I DIGITAL BORING HEAD I
+SYNCHRONOUS SOLUTION
+ECO LINE 267
+DIGITAL BORING HEAD |
+Ausdrehkopf @3-152.1 Fine boring head @3-152.1
+267
++ connection ER40 DIN 6499
++ 0.01mm diametrical adjustment resp.
++ Schnittstelle ER40 DIN6499
++ Zustellgenauigkeit 0.01mm resp. Uber
+Nonius 0.002mm im Durchmesser 0.002mm by nonius
++ erweiterbar von @3 bis 152.1 + can be upgraded from @3 up to
+0152.1
++ boring diameter o A min. - A max.
+are only available with boring bars
++ die Ausdrehdurchmesser @ A min. -
+A max. werden mit Ausdrehstahlen der
+Serien 271 bis 278 erreicht from series 271 to 278
+Zubehor Ace iT
+Wendeplattenhalter / Insert holder @87.75-101.1 254.261.009
+cc ..09T3.. (o 114.1)
+Wendeplattenhalter / Insert holder @ 105.75 - 119.0 254.262.009
+cC..09T3.. (o 132.0)
+Wendeplattenhalter / Insert holder @ 125.75 - 139.0 254,263.009
+cc ..09T3.. (@ 152.0)
+Distanzstuick / Adapter F =6.5 mm @ 114.0/ 132.0/ 889.000.006
+@ 152.0
+iAusdrehkopf @3-152.1 Fine boring head @3-152.1
+\
++ fir Ausdrehstahle mit Schaftdurchmes- + for boring bars with a shank diameser 16mm ter of 16mm
++ Durchmessereinstellung mit geringstem — + diametrical adjustment with maximal 1
+Umkehrspiel reduced reversal backlash
++ 06.01mm diametrical adjustment resp.
+0,002mm by nonius
++ with inner coolant supply
++ boring bars go through head
++ Zustellgenauigkeit von 0.01mm resp.
+diber Nonius 0.002mm im Durchmesser
++ mit Innenkthlung
++ Ausdrehstahle durchschiebbar
+q
+VARIO MBM 55
++ die Ausdrehdurchmesser o A min. - + boring diameter o A min. - A max.
+Amax. werden mit Ausdrehstahlen der are only available with boring bars
+Serien 271 bis 278 erreicht from series 271 to 278
+Zubehér Accesories
+Wendeplattenhalter / Insert holder @ 87.75-101.1 254.261.009
+eos i Elan (@ 114.1)
+Wendeplattenhalter / Insert holder @ 105.75 - 119.0 254.262.009
+cc..09T3.. (@ 132.0)
+Wendeplattenhalter / Insert holder @ 125.75 - 139.0 254.263.009
+cC..09T3.. (@ 152.0)
+Distanzsttick / Adapter F = 6.5 mm @ 114.0/ 0 132.0/ 889.000.006
+@ 152.0
+Ersatzteile / Zubehér Spare parts / Accessories 267
+Fiir Feinbohrkopf Bestell-Nr. / Bestell-Nr. / Bestell-Nr. / Bestell-Nr./
+— Order number Order number Order number Order number
+For fine boring head Klemmschraube / Schraube / Schraube / Schraube /
+Clamping screw ‘o) Screw @ Screw © Screw @
+267,003.152 881.267.012 880.267.025 881.267.018 881.267.014
+CO@|PAGE 112
+DIGITAL BORING HEAD |
+sm1s s
+vB MM
+Ausdrehkopf 93-320
+SYNCHRONOUS SOLUTION
+Fine boring head @3-320 261
++ fiir Ausdrehstahle mit Schaftdurchmesser
+16mm und Feinbohrbriicken
++ Durchmessereinstellung mit geringstem
+Umkehrspiel
+Bi + Zustellgenauigkeit von 0.002mm iiber
+D Nonius im Durchmesser
+4 + mit InnenkGhlung
+tol + Ausdrehstahle durchschiebbar
+Ss a) at Tami
+Feinverstellweg| |
+Fine adjustment |!
+27mm
+@ A min-max.
+@ Al min-max.
++ die Ausdrehdurchmesser @ A min-max.
+werden mit Ausdrehstahlen der Serien
+271 bis 278 erreicht
++ die Ausdrehdurchmesser @ Al min.-max.
+werden mit Feinbohrbriicken der Serie
+886 erreicht
+Feinbohrbriicken 986-320
++ for boring bars with a shank diameter of 16mm and fine boring bridges
++ diametrical adjustment with maximal
+reduced reversal backlash
++ 0.002mm diametrical adjustment by
+nonius
++ with inner coolant supply
++ boring bars go through head
++ boring diameters @ A min.-max. are
+only available with boring bars from
+series 271 to 278
++ boring diameters @ A min.-max. are
+only available with fine boring
+bridges from serie 886
+Fine boring bridges #86-320 886
+Aluminium-Briicken
++ mit Innenkiihlung
+Wendeplattenhalter
++ mit Innenkihlung
+253.048.006
+Gegengewicht
++ zum Feinwuchten auf Wuchtgerat
+886.038.045
+Aluminium bridges
++ with inner coolant supply
+Insert holders
++ with inner coolant supply
+Counter weight
++ to balance with balancing machine
+Ersatzteile / Zubehor Spare parts / Accessories 253/261/262/266
+Fiir Ausdrehkopf Bestell-Nr. / Bestell-Nr. / Bestell-Nr./
+For boring head Order number Order number Order number
+Kh hraube / Befesti hraube / Befestigungsschraube /,
+Clamping screw © Fastening screw @) Fastening screw ®
+261 XXX.XKK 881.261.016 $81.261.020 883.261.016
+262.420.000 881.262.420 882.262.420
+262/266.550.045 881.262.551 882.262.551
+Fur Wp-Halter Bestell-Nr. / Bestell-Nr./
+For insert holder Order number Order number
+Torx-Schraube / ©) Torx-Schlissel /
+Torx screw Torx driver
+253.048.006 843.006.000 $42.006.000
+253.048.009 843.009.000 847.009.000
+OO|PAGE 113Machining diameter
+Manual balance adjustment mechanism
+1.The internal weight can be manually adjusted by turning the balance ring
+2.Vernier precision diameter adjustment mechanism with 5µm/1µm scale
+(EWB2-50 only)
+EWB round bit boring head F Built in manual balance adjustmen or high speed finishing t function
+DIGITAL BORING HEAD II
+PAGE 114
 For
-finishing
-An advanced digital boring head created using ultra-precision technology
-Center through
-Digital display lets you see the adjustment amount at a glance
-Completely waterproof and dustproof(IP69K equivalent)
+finishing Center through
 MAX
-16,000min-1
+16,000min
 (EWE2-32)
 *Please keep the center through coolant
 pressure below 4MPa
-Combination example
-Please select the same CK No
+EWE Digital Boring Head (Finishing Round Bit Type)
+An advanced digital boring head created using ultra-precision technology
+Digital display lets you see the adjustment amount at a glance
+Completely waterproof and dustproof(IP69K equivalent)
 Display resolution
 0.001mm/ø
-Round tool shank
-Round tool head
+Combination example Please select the same CK No
 CK shank
 (BBT BT HSK BIGCAPTO)
 BBT40-CKB5-48
 EWE Digital Head
 (Round Bit Type)
 EWE2-32 CK5
-Model description
-MAX. Machining diameter
-Finishing boring head
-Machining diameter
-Please refer to the following page for information
-on the bite system of each head.
-
-Applicable
-Model
-Mass
-Battery used: 1CR1025 (included)
-1. Round tool is not included.
-2. It has a through hole so it can be used with a center through
-3. Inserts are not included and must be purchased separately
-EWB round bit boring head
-For
-finishing
-For high speed finishing
-Built in manual balance adjustment function
-Manual balance adjustment mechanism
-1. The internal weight can be manually adjusted by turning the balance ring
-2. Vernier precision diameter adjustment mechanism with 5µm/1µm scale
-(EWB2-50 only)
-Combination example
-Center through
-MAX
-16,000min-1
-(EWE2-32)
-Please select the same CK No
 Round tool shank
 Round tool head
+Model description
+Finishing boring head
+MAX. Machining diameter
+Please refer to the following page for information
+on the bite system of each head.
+Model
+Applicable Mass
+Battery used: 1CR1025 (included)
+1.Round tool is not included.
+2.It has a through hole so it can be used with a center through
+3.Inserts are not included and must be purchased separately
+-1
+For
+finishing Center through
+MAX
+16,000min
+(EWE2-32)
+-1
+Combination example Please select the same CK No
 CK shank
 (BBT BT HSK BIGCAPTO)
 BBT40-CKB5-48
 EWB Head
 (Round Bit Type)
 EWE2-32 CK5
+Round tool shank
+Round tool head
 Model description
-MAX. Machining diameter
-Balance ring
 Finishing boring head
+MAX. Machining diameter
 Machining
-diameter
-Model
+diameter Model
 Applicable
-1 division = 1 micron
-Please note
 Mass
+1.Round tool is not included.
+The balance ring setting values are listed in the instruction manual.
+Incorrect setting may result in greater imbalance.
+Please be sure to read the instruction manual carefully before use.
+2.It has a through hole so it can be used with a center through
+Please note
+Balance ring 1 division = 1 micron
 The maximum allowable rotation speed of the EWB head itself depends on the
 protruding length of the bit and the usage
 To obtain the best balance performance , keep the head stroke within a range of 1 mm
 This head is equipped with the original round bit series of the KAISER boring system
-1. Round tool is not included.
-The balance ring setting values are listed in the instruction manual.
-Incorrect setting may result in greater imbalance.
-Please be sure to read the instruction manual carefully before use.
-2. It has a through hole so it can be used with a center through
 Use only the appropriate
-PAGE 114
 PAGE 115
-
+ANMI | ANME |
+DIGITAL BORING HEAD II
+SYNCHRONOUS SOLUTION SYNCHRONOUS SOLUTION
+EWE Digital Boring Head (Finishing Round Bit Type) MAX
+For 1
+An advanced digital boring head created using ultra-precision technology finishing ee teoetalte
+(EWE2-32)
+¢ Digital display lets you see the adjustment amount at a glance
+¢ Completely waterproof and dustproof(IP69K equivalent)
+*Please keep the center through coolant
+pressure below 4MPa
+Combination example Please select the same CK No
+Display resolution
+0.001mm/2
+Round tool shank
+Round tool head
+CK shank EWE Digital Head ieee
+(BBT BT HSK BIGCAPTO) (Round Bit Type) ie
+BBT40-CKB5-48 EWE2-32 CK5
+@ Model description
+MAX. Machining diameter
+Finishing boring head
+EWE2-32CK5- - - A70 1~32 EWE2-32CK5 CKS5 12 50 50 |-0.5~2.0| 0.65
+EWE2-54CK6: : - A714 i~54 EWE2-54CK6 CK6 16 63.5 45 |-0.5~2.5| 1.35
+Battery used: 1CR1025 (included)
+1.Round tool is not included.
+2.It has a through hole so it can be used with a center through
+3.Inserts are not included and must be purchased separately
+MAX
+EWB round bit boring head buittinmanuat Built in manualbalance balance adjustment function finishing JR Center through 16,000miri* (EWE2-32)
+Manual balance adjustment mechanism
+1.The internal weight can be manually adjusted by turning the balance ring
+2.Vernier precision diameter adjustment mechanism with 5um/1um scale
+(EWB2-50 only) Combination example Please select the same CK No
+Round tool shank
+Round tool head
+CK shank EWB Head
+(BBT BT HSK BIGCAPTO) (Round Bit Type)
+BBT40-CKB5-48 EWE2-32 CK5
+Abo=9
+®ar Model description
+MAX. Machining diameter ; f
+Finishing boring head Balance ring _/
+¢D
+~.. 1 division = 1 micron
+-A\ Please mote me me me me ee ee ee
+Applicable
+CK No.| $9} ¢D:) Lb S| mass (kg)
+i= 32 EWB2-32CK5 | CK5 | 12 |50 | 49/35] 0.65
+1~ 50 EWB2-50CK6 | CK6 | 16 |63.5) 62 | 45] 1.32
+Machining
+diameter $ D Model * The maximum allowable rotation speed of the EWB head itself depends on the
+protruding length of the bit and the usage
+* To obtain the best balance performance, keep the head stroke within a range of 1 mm
+* This head is equipped with the original round bit series of the KAISER boring system
+1.Round tool is not included.
+* The balance ring setting values are listed in the instruction manual.
+* Incorrect setting may result in greater imbalance.
+* Please be sure to read the instruction manual carefully before use.
+2.It has a through hole so it can be used with a center through
+Use only the appropriate
+——_——
+——— oo
