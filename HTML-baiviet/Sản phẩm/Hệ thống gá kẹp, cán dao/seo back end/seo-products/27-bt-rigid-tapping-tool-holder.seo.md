@@ -1,11 +1,11 @@
 ---
-title: "BT Rigid Tapping Holder - 8 Sizes TER Type M2-M30, G84 Cycle, 50% Faster Speed"
+title: "BT Rigid Tapping Holder - 4 Sizes TER Type M2-M30, G84 Cycle, 50% Faster Speed"
 slug: "bt-rigid-tapping-tool-holder"
 primary_keyword: "bt rigid tapping holder"
 tags: "BT, rigid tapping, tool holder, CNC, G84"
-category: "BT SIDE LOCK"
-catalog_page: "27"
-seo_title: "BT Rigid Tapping Holder - 8 Sizes TER Type M2-M30, G84 Cycle, 50% Faster | An Mi Tools"
+category: "TAPPING TOOL HOLDER"
+catalog_page: "55"
+seo_title: "BT Rigid Tapping Holder - 4 Sizes TER Type M2-M30, G84 Cycle, 50% Faster | An Mi Tools"
 seo_description: "BT rigid tapping holder TER type (ER collet) M2-M30, spindle-synchronized G84 cycle, 50% faster tapping speed. Warranty 24 months. ☎️ 091 519 2325"
 social_image_facebook: "https://anmitools.com/wp-content/uploads/2025/09/bt-rigid-tapping-holder-fb.jpg"
 social_image_twitter: "https://anmitools.com/wp-content/uploads/2025/09/bt-rigid-tapping-holder-tw.jpg"
@@ -18,147 +18,119 @@ schema_type: "Product"
 
 <section class="bt-rigid-tapping-tool-holder">
 
-![BT Rigid Tapping Holder - TER Type M2-M30 Spindle Synchronized](https://anmitools.com/wp-content/uploads/2025/09/bt-rigid-tapping-holder.webp)
-*BT rigid tapping holder – TER type (ER collet), M2-M30, spindle-synchronized G84 cycle*
+<div class="product-images-grid">
+  <figure>
+    <img src="https://anmitools.com/wp-content/uploads/2025/09/bt-rigid-tapping-holder.webp"
+      alt="BT Rigid Tapping Holder - TER Type M2-M30 Spindle Synchronized" width="800" height="600"
+      loading="lazy" class="bordered-img">
+    <figcaption><strong>BT Rigid Tapping Holder</strong> – TER type (ER collet), M2-M30, spindle-synchronized G84 cycle, 4 sizes TER16/20/25/32. <em>(Click vào ảnh để phóng to xem chi tiết)</em></figcaption>
+  </figure>
+  <figure>
+    <img src="https://anmitools.com/wp-content/uploads/2025/09/bt-rigid-tapping-holder-specifications.webp"
+      alt="BT Rigid Tapping Technical Specifications - TER16/20/25/32 Range Chart" width="800"
+      height="600" loading="lazy" class="bordered-img">
+    <figcaption><strong>BT Rigid Tapping Specifications</strong> – Bảng thông số 4 sizes (TER16: M2-M12, TER20: M2-M16, TER25: M2-M22, TER32: M2-M30), ER collet system. <em>(Click vào ảnh để phóng to xem chi tiết)</em></figcaption>
+  </figure>
+</div>
 
-[Download Catalog: 9. Tooling Systems](https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/)
+<h1>BT Rigid Tapping Holder – Spindle-Synchronized Tapping for CNC Machining Centers</h1>
 
-# BT Rigid Tapping Holder – Spindle-Synchronized Tapping for CNC Machining Centers
+<div class="section product-intro">
+  <h2>BT Rigid Tapping Holder – TER Type, Spindle Synchronization, M2-M30</h2>
+  
+  <p><strong>BT rigid tapping holder</strong> là giải pháp hàng đầu cho <strong>rigid tapping operations</strong> (tapping đồng bộ spindle) trong CNC machining centers hiện đại. Khác với tension-compression holders truyền thống có floating mechanism, <strong>bt rigid tapping holder</strong> sử dụng <strong>spindle synchronization technology</strong> - CNC tự động đồng bộ spindle rotation speed với Z-axis feed rate theo chính xác thread pitch, tạo ren hoàn hảo mà không cần floating chuck compensation.</p>
+  
+  <p>Hệ thống <strong>bt rigid tapping holder TER type</strong> (T = Tapping, ER = ER collet system) bao gồm <strong>4 sizes</strong> cover tapping range từ <strong>M2-M30</strong>: TER16 (M2-M12), TER20 (M2-M16), TER25 (M2-M22), TER32 (M2-M30). Mỗi holder tương thích với <strong>ER collet standard</strong> (ER16, ER20, ER25, ER32), cho phép quick changeover giữa các tap sizes mà không cần thay holder. Đây là lợi thế lớn cho production environments với multiple thread sizes.</p>
+  
+  <p><strong>Ứng dụng chính:</strong> Rigid tapping G84 cycle, high-speed production tapping (2000-3000 RPM), blind hole tapping, aluminum/steel threading, mass production tapping (>1000 holes/day), CNC machining centers with spindle synchronization.</p>
+  
+  <div class="catalog-download">
+    <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" target="_blank" rel="noopener" class="btn btn-primary cta-button">
+      <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      <span>Download Catalog: 9. Tooling Systems.pdf</span>
+    </a>
+  </div>
+</div>
 
-## BT Rigid Tapping Holder – TER Type, Spindle Synchronization, M2-M30
+<div class="section product-features">
 
-**BT rigid tapping holder** là giải pháp hàng đầu cho **rigid tapping operations** (tapping đồng bộ spindle) trong CNC machining centers hiện đại. Khác với tension-compression holders truyền thống có floating mechanism, **bt rigid tapping holder** sử dụng **spindle synchronization technology** - CNC tự động đồng bộ spindle rotation speed với Z-axis feed rate theo chính xác thread pitch, tạo ren hoàn hảo mà không cần floating chuck compensation.
+<div class="section product-features">
+  <h2>5 Tính Năng Vượt Trội Của BT Rigid Tapping Holder</h2>
+  
+  <ol>
+    <li><strong>Spindle Synchronization Technology – Perfect Thread Every Time:</strong> <strong>BT rigid tapping holder</strong> hoạt động dựa trên spindle-feed synchronization - công nghệ CNC controller tự động calculate và synchronize spindle RPM với Z-axis feed rate theo công thức: Feed rate (mm/min) = Spindle RPM × Thread pitch (mm). Synchronization accuracy <0.01mm/revolution đảm bảo thread pitch tolerance ±0.02mm (class 6H/6g standard). Rigid connection trực tiếp từ tap → collet → holder → spindle → thread quality cao hơn, đặc biệt cho precision threads.</li>
+    
+    <li><strong>TER Type (ER Collet System) – 4 Sizes Cover M2-M30:</strong> <strong>BT rigid tapping holder TER type</strong> sử dụng ER collet clamping system với 4 holder sizes: TER16-BT30/40 (ER16, M2-M12), TER20-BT30/40 (ER20, M2-M16), TER25-BT40/50 (ER25, M2-M22), TER32-BT40/50 (ER32, M2-M30). Mỗi holder cover 10-15 tap sizes, giảm tool inventory 60% so với fixed tapping holders.</li>
+    
+    <li><strong>50% Faster Tapping Speed – No Floating Delay:</strong> <strong>BT rigid tapping holder</strong> với rigid design (no floating mechanism) cho phép tapping speed cao hơn 50% so với tension-compression holders. Tension-compression: max 800-1200 RPM. BT rigid: max 1500-3000 RPM. Production rate tăng gấp đôi, đặc biệt quan trọng cho mass production với thousands holes per shift.</li>
+    
+    <li><strong>G84 Rigid Tapping Cycle Compatible:</strong> <strong>BT rigid tapping holder</strong> được thiết kế đặc biệt cho G84 rigid tapping cycle - CNC canned cycle tự động thực hiện positioning, approach, synchronized tapping, dwell, spindle reverse + retract. G84 cycle loại bỏ manual programming, giảm programming time 80%, đặc biệt cho parts với multiple holes (10-50 holes).</li>
+    
+    <li><strong>Run-out 0.03-0.05mm – Acceptable for Tapping:</strong> <strong>BT rigid tapping holder</strong> có run-out spec 0.03-0.05mm - relaxed tolerance so với milling holders nhưng acceptable cho tapping operations vì thread tolerance class 6H/6g có pitch diameter tolerance ±0.125mm (M8). Run-out 0.05mm chỉ chiếm 27-40% tolerance budget. Spiral flute taps tự động compensate radial run-out through cutting action.</li>
+  </ol>
+</div>
 
-Hệ thống **bt rigid tapping holder TER type** (T = Tapping, ER = ER collet system) bao gồm **8 sizes** cover tapping range từ **M2-M30**: TER16 (M2-M10), TER20 (M3-M12), TER25 (M4-M16), TER32 (M5-M20), TER40 (M6-M24), TER50 (M8-M30). Mỗi holder tương thích với **ER collet standard** (ER16, ER20, ER25, ER32), cho phép quick changeover giữa các tap sizes mà không cần thay holder. Đây là lợi thế lớn cho production environments với multiple thread sizes.
+<div class="section specifications">
+  <h2>Thông Số Kỹ Thuật BT Rigid Tapping Holder</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Thông Số</th>
+        <th>Giá Trị</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Taper Standard</strong></td><td>JIS B6339 (BT30, BT40, BT50) - Japanese precision standard</td></tr>
+      <tr><td><strong>Type</strong></td><td>TER (Tapping + ER collet system)</td></tr>
+      <tr><td><strong>Tapping Range</strong></td><td>M2 – M30 (4 sizes: TER16/20/25/32)</td></tr>
+      <tr><td><strong>TER16</strong></td><td>M2-M12, ER16 collet, BT30/BT40</td></tr>
+      <tr><td><strong>TER20</strong></td><td>M2-M16, ER20 collet, BT30/BT40</td></tr>
+      <tr><td><strong>TER25</strong></td><td>M2-M22, ER25 collet, BT40/BT50</td></tr>
+      <tr><td><strong>TER32</strong></td><td>M2-M30, ER32 collet, BT40/BT50</td></tr>
+      <tr><td><strong>Collet Compatibility</strong></td><td>ER16, ER20, ER25, ER32 (DIN 6499)</td></tr>
+      <tr><td><strong>Run-out Accuracy</strong></td><td>0.03~0.05mm at collet nose (2×D overhang)</td></tr>
+      <tr><td><strong>Max Tapping Speed</strong></td><td>1500-3000 RPM (depend on tap material và workpiece)</td></tr>
+      <tr><td><strong>Thread Tolerance</strong></td><td>Class 6H/6g (±0.02mm pitch accuracy with G84 cycle)</td></tr>
+      <tr><td><strong>CNC Requirement</strong></td><td>G84 rigid tapping cycle support (Fanuc/Siemens/Mitsubishi)</td></tr>
+      <tr><td><strong>Compatible Taps</strong></td><td>Spiral flute, spiral point, straight flute (all standard tap shanks)</td></tr>
+      <tr><td><strong>Material</strong></td><td>Alloy steel body + hardened steel collet nut</td></tr>
+      <tr><td><strong>Balance</strong></td><td>G6.3@15000 RPM (medium-speed balance for tapping operations)</td></tr>
+      <tr><td><strong>Coolant</strong></td><td>Through-spindle coolant compatible (if CNC equipped)</td></tr>
+      <tr><td><strong>Applications</strong></td><td>Rigid tapping G84, high-speed tapping, blind/through hole threading</td></tr>
+    </tbody>
+  </table>
+  
+  <p class="note"><strong>Note:</strong> <strong>BT rigid tapping holder</strong> yêu cầu CNC machining center có G84 rigid tapping cycle support. Để check CNC compatibility, test program: G84 X0 Y0 Z-20 R2 F1250 S1000 (M8×1.25 tapping test). Nếu CNC không support G84 → dùng tension-compression tapping holder thay thế.</p>
+</div>
 
-**Ứng dụng chính:** Rigid tapping G84 cycle, high-speed production tapping (2000-3000 RPM), blind hole tapping, aluminum/steel threading, mass production tapping (>1000 holes/day), CNC machining centers with spindle synchronization.
-
-## 5 Tính Năng Vượt Trội Của BT Rigid Tapping Holder
-
-### 1. Spindle Synchronization Technology – Perfect Thread Every Time
-
-**BT rigid tapping holder** hoạt động dựa trên **spindle-feed synchronization** - công nghệ CNC controller tự động calculate và synchronize spindle RPM với Z-axis feed rate theo công thức: `Feed rate (mm/min) = Spindle RPM × Thread pitch (mm)`. Ví dụ: tapping M8×1.25 pitch tại 1000 RPM → CNC tự động set feed = 1000 × 1.25 = 1250 mm/min. Synchronization accuracy <0.01mm/revolution đảm bảo thread pitch tolerance ±0.02mm (class 6H/6g standard).
-
-Với **bt rigid tapping holder**, không cần floating chuck (tension-compression mechanism) để compensate synchronization errors. Rigid connection trực tiếp từ tap → collet → holder → spindle → thread quality cao hơn, đặc biệt cho precision threads (class 5H/5g) và deep blind holes (depth >3×diameter).
-
-### 2. TER Type (ER Collet System) – 8 Sizes Cover M2-M30
-
-**BT rigid tapping holder TER type** sử dụng **ER collet clamping system** - industrial standard với accuracy ER collet run-out <0.005mm at collet nose. Hệ thống bao gồm **8 holder sizes**:
-
-- **TER16-BT30/40**: ER16 collet (Φ1-10mm), tapping M2-M10, compact size cho small threads
-- **TER20-BT30/40**: ER20 collet (Φ1-13mm), tapping M3-M12, most popular size
-- **TER25-BT40/50**: ER25 collet (Φ2-16mm), tapping M4-M16, medium threads
-- **TER32-BT40/50**: ER32 collet (Φ2-20mm), tapping M5-M20, heavy-duty
-- **TER40-BT50**: ER40 collet (Φ3-26mm), tapping M6-M24, large threads
-- **TER50-BT50**: ER50 collet (Φ6-34mm), tapping M8-M30, extra-large capacity
-
-Mỗi **bt rigid tapping holder** size tương thích với full set ER collets → 1 holder cover 10-15 tap sizes, giảm tool inventory **60%** so với fixed tapping holders.
-
-### 3. 50% Faster Tapping Speed – No Floating Delay
-
-**BT rigid tapping holder** với rigid design (no floating mechanism) cho phép tapping speed cao hơn **50%** so với tension-compression holders:
-
-- **Tension-compression holder**: Max speed 800-1200 RPM (limited by floating chuck response time)
-- **BT rigid tapping holder**: Max speed 1500-3000 RPM (limited only by tap cutting speed)
-
-Ví dụ: tapping M8×1.25 trong aluminum A6061:
-- Tension-compression: 800 RPM × 1.25mm pitch = 1000 mm/min, cycle time **12 seconds** (depth 20mm + approach + retract)
-- **BT rigid tapping holder**: 2000 RPM × 1.25mm = 2500 mm/min, cycle time **6 seconds** → **50% faster**, production rate tăng gấp đôi
-
-High-speed capability đặc biệt quan trọng cho mass production với thousands of tapped holes per shift.
-
-### 4. G84 Rigid Tapping Cycle Compatible
-
-**BT rigid tapping holder** được thiết kế đặc biệt cho **G84 rigid tapping cycle** - CNC canned cycle tự động thực hiện:
-
-1. **Positioning**: Rapid move (G00) đến hole position
-2. **Approach**: Feed move (G01) đến start point (2-3mm above hole)
-3. **Tapping**: Synchronized spindle + Z-feed → tap vào hole với perfect pitch
-4. **Dwell**: Optional dwell at bottom (0.1-0.2 sec) cho chip clearance
-5. **Retract**: **Spindle reverse** + synchronized Z-retract → tap rút ra không bị kẹt thread
-6. **Return**: Rapid move về initial position
-
-G84 cycle loại bỏ manual programming cho từng tapping operation, giảm programming time **80%**, đặc biệt cho parts với multiple holes (10-50 holes). **BT rigid tapping holder** rigid connection đảm bảo synchronization accuracy through entire cycle.
-
-### 5. Run-out 0.03-0.05mm – Acceptable for Tapping Operations
-
-**BT rigid tapping holder** có run-out spec **0.03-0.05mm** - relaxed tolerance so với milling holders (run-out <0.01mm) nhưng acceptable cho tapping operations vì:
-
-- **Thread tolerance**: Class 6H/6g threads có pitch diameter tolerance ±0.125mm (M8), ±0.180mm (M12) → run-out 0.05mm chỉ chiếm **27-40%** tolerance budget
-- **Tap flute compensation**: Spiral flute taps (35° helix) tự động compensate radial run-out through cutting action
-- **Aluminum tapping**: Soft materials (aluminum, brass) less sensitive to run-out, accept up to 0.08mm
-
-Nếu cần higher accuracy (class 5H threads, stainless steel tapping), recommend **bt rigid tapping holder** kết hợp với precision ER collets (run-out grade <0.003mm) → total system run-out <0.01mm.
-
-## Thông Số Kỹ Thuật BT Rigid Tapping Holder
-
-| Thông Số | Giá Trị |
-|----------|---------|
-| **Taper Standard** | JIS B6339 (BT30, BT40, BT50) - Japanese precision standard |
-| **Type** | TER (Tapping + ER collet system) |
-| **Tapping Range** | M2 – M30 (8 sizes: TER16/20/25/32/40/50) |
-| **Collet Compatibility** | ER16, ER20, ER25, ER32, ER40, ER50 (DIN 6499) |
-| **Run-out Accuracy** | 0.03~0.05mm at collet nose (2×D overhang) |
-| **Max Tapping Speed** | 1500-3000 RPM (depend on tap material và workpiece) |
-| **Thread Tolerance** | Class 6H/6g (±0.02mm pitch accuracy with G84 cycle) |
-| **CNC Requirement** | G84 rigid tapping cycle support (Fanuc/Siemens/Mitsubishi) |
-| **Compatible Taps** | Spiral flute, spiral point, straight flute (all standard tap shanks) |
-| **Material** | Alloy steel body + hardened steel collet nut |
-| **Balance** | G6.3@15000 RPM (medium-speed balance for tapping operations) |
-| **Coolant** | Through-spindle coolant compatible (if CNC equipped) |
-| **Applications** | Rigid tapping G84, high-speed tapping, blind/through hole threading |
-
-**Note:** **BT rigid tapping holder** yêu cầu CNC machining center có G84 rigid tapping cycle support. Để check CNC compatibility, test program: `G84 X0 Y0 Z-20 R2 F1250 S1000` (M8×1.25 tapping test). Nếu CNC không support G84 → dùng tension-compression tapping holder thay thế.
-
-## Ứng Dụng Thực Tế BT Rigid Tapping Holder
-
-### 1. High-Speed Production Tapping (2000-3000 RPM)
-
-**BT rigid tapping holder** là lựa chọn hàng đầu cho **mass production tapping** với volume >1000 holes/shift. Ví dụ: tapping M6×1.0 threads trong automotive bracket (aluminum A6061-T6):
-
-**Workflow**: Load bracket → CNC run G84 cycle (30 holes M6×1.0) → tapping với **bt rigid tapping holder TER20-BT40** + ER20-6mm collet + M6 spiral flute tap → spindle 2500 RPM, feed 2500 mm/min → cycle time **45 seconds** (including load/unload) → production rate **80 parts/hour**.
-
-Compare với tension-compression holder (1000 RPM max): cycle time **90 seconds**, production rate **40 parts/hour** → **bt rigid tapping holder** tăng productivity **100%**. Cost savings: labor $15/hour → save $7.5/hour × 2000 hours/year = **$15,000 annual savings**.
-
-### 2. Blind Hole Rigid Tapping (Depth >3×Diameter)
-
-**BT rigid tapping holder** với G84 cycle xử lý tốt **blind hole tapping** - operation khó khăn vì tap phải reverse ra khỏi hole without backing out manually. Ví dụ: tapping M12×1.75 blind hole depth 40mm (3.3×D) trong mold base (NAK80 steel, 40 HRC):
-
-**Setup**: **BT rigid tapping holder TER25-BT50** + ER25-12mm collet + M12 spiral flute tap (35° helix, TiAlN coated) → G84 cycle program:
-```
-G84 X50 Y50 Z-40 R5 Q5 F1400 S800
-(Z-40: tapping depth, R5: start point 5mm above, Q5: peck 5mm increments, F1400: 800 RPM × 1.75 pitch, S800: spindle speed)
-```
-
-G84 peck cycle: tap 5mm → retract 1mm (chip break) → tap 5mm → retract... → reach Z-40 → dwell 0.2 sec → **spindle reverse CCW** → synchronized retract → tap exit cleanly. **BT rigid tapping holder** rigid connection đảm bảo synchronization accuracy during reverse, không bị thread damage.
-
-### 3. Aluminum High-Speed Tapping (Up to 3000 RPM)
-
-**BT rigid tapping holder** ideal cho **aluminum tapping** vì aluminum's soft material cho phép very high cutting speeds. Ví dụ: tapping M8×1.25 through holes trong aerospace bracket (7075-T6 aluminum):
-
-**Parameters**: **BT rigid tapping holder TER20-BT40** + ER20-8mm collet + M8 spiral point tap (118° point, uncoated HSS) → spindle **3000 RPM** (cutting speed 75 m/min), feed **3750 mm/min** (3000 × 1.25), through-spindle coolant 70 bar → tap life **5000 holes** per regrind.
-
-High-speed tapping aluminum: thread surface finish Ra 1.6μm, no burrs at exit (spiral point pushes chips forward), cycle time **3 seconds** per hole (depth 25mm). Production rate: **1200 holes/hour**, ideal cho mass production.
-
-### 4. Steel Rigid Tapping with Peck Cycle
-
-**BT rigid tapping holder** kết hợp G84 peck cycle hiệu quả cho **steel tapping** (carbon steel, alloy steel, stainless steel) - materials có stringy chips cần chip breaking. Ví dụ: tapping M10×1.5 blind hole 30mm trong S45C steel block:
-
-**Setup**: **BT rigid tapping holder TER25-BT40** + ER25-10mm collet + M10 spiral flute tap (35° helix, TiCN coated) → G84 peck cycle:
-```
-G84 X0 Y0 Z-30 R3 Q3 F900 S600
-(Q3: peck 3mm increments = 2×pitch, break chips every 3mm)
-```
-
-Peck cycle: tap 3mm → retract 0.5mm (chip break) → tap 3mm... → complete 30mm depth → 10 pecks total → tap life **800 holes** (vs 200 holes without pecking). **BT rigid tapping holder** maintains synchronization accuracy through all pecks.
-
-### 5. Multi-Thread Production with Quick Collet Change
-
-**BT rigid tapping holder TER type** với ER collet system cho phép **quick changeover** giữa multiple tap sizes. Ví dụ: production part có 4 thread sizes (M6, M8, M10, M12):
-
-**Setup**: 1× **BT rigid tapping holder TER25-BT40** + 4× ER collets (ER25-6/8/10/12mm) + 4× taps (M6/8/10/12 spiral flute) → CNC program call G84 cycle cho mỗi thread size → operator manual change collet+tap between sizes → changeover time **30 seconds** per size.
-
-Compare với fixed tapping holders: cần 4× dedicated holders (M6/8/10/12) → ATC tool magazine positions **4 slots** (vs 1 slot for TER holder) → save **3 tool positions** valuable cho other operations. Cost: fixed holders $300×4 = $1200, TER holder $400 + collets $20×4 = $480 → save **$720**.
+<div class="section applications">
+  <h2>Ứng Dụng Thực Tế BT Rigid Tapping Holder</h2>
+  
+  <div class="application-item">
+    <h3>1. High-Speed Production Tapping (2000-3000 RPM)</h3>
+    <p><strong>BT rigid tapping holder</strong> là lựa chọn hàng đầu cho mass production tapping với volume >1000 holes/shift. Ví dụ: tapping M6×1.0 threads trong automotive bracket (aluminum A6061-T6). Workflow: Load bracket → CNC run G84 cycle (30 holes M6×1.0) → tapping với <strong>bt rigid tapping holder TER20-BT40</strong> + ER20-6mm collet + M6 spiral flute tap → spindle 2500 RPM, feed 2500 mm/min → cycle time 45 seconds (including load/unload) → production rate 80 parts/hour. Compare với tension-compression holder (1000 RPM max): cycle time 90 seconds, production rate 40 parts/hour → <strong>bt rigid tapping holder</strong> tăng productivity 100%.</p>
+  </div>
+  
+  <div class="application-item">
+    <h3>2. Blind Hole Rigid Tapping (Depth >3×Diameter)</h3>
+    <p><strong>BT rigid tapping holder</strong> với G84 cycle xử lý tốt blind hole tapping - operation khó khăn vì tap phải reverse ra khỏi hole without backing out manually. Ví dụ: tapping M12×1.75 blind hole depth 40mm (3.3×D) trong mold base (NAK80 steel, 40 HRC). Setup: <strong>BT rigid tapping holder TER25-BT50</strong> + ER25-12mm collet + M12 spiral flute tap (35° helix, TiAlN coated) → G84 peck cycle: tap 5mm → retract 1mm (chip break) → tap 5mm → reach Z-40 → dwell 0.2 sec → spindle reverse CCW → synchronized retract → tap exit cleanly. Rigid connection đảm bảo synchronization accuracy during reverse, không bị thread damage.</p>
+  </div>
+  
+  <div class="application-item">
+    <h3>3. Aluminum High-Speed Tapping (Up to 3000 RPM)</h3>
+    <p><strong>BT rigid tapping holder</strong> ideal cho aluminum tapping vì aluminum's soft material cho phép very high cutting speeds. Ví dụ: tapping M8×1.25 through holes trong aerospace bracket (7075-T6 aluminum). Parameters: <strong>BT rigid tapping holder TER20-BT40</strong> + ER20-8mm collet + M8 spiral point tap (118° point, uncoated HSS) → spindle 3000 RPM (cutting speed 75 m/min), feed 3750 mm/min (3000 × 1.25), through-spindle coolant 70 bar → tap life 5000 holes per regrind. High-speed tapping aluminum: thread surface finish Ra 1.6μm, no burrs at exit (spiral point pushes chips forward), cycle time 3 seconds per hole (depth 25mm). Production rate: 1200 holes/hour.</p>
+  </div>
+  
+  <div class="application-item">
+    <h3>4. Steel Rigid Tapping with Peck Cycle</h3>
+    <p><strong>BT rigid tapping holder</strong> kết hợp G84 peck cycle hiệu quả cho steel tapping (carbon steel, alloy steel, stainless steel) - materials có stringy chips cần chip breaking. Ví dụ: tapping M10×1.5 blind hole 30mm trong S45C steel block. Setup: <strong>BT rigid tapping holder TER25-BT40</strong> + ER25-10mm collet + M10 spiral flute tap (35° helix, TiCN coated) → G84 peck cycle: tap 3mm → retract 0.5mm (chip break) → tap 3mm → complete 30mm depth → 10 pecks total → tap life 800 holes (vs 200 holes without pecking). Maintains synchronization accuracy through all pecks.</p>
+  </div>
+</div>
 
 ## Hướng Dẫn Sử Dụng BT Rigid Tapping Holder
 
@@ -289,21 +261,76 @@ Nếu cần class 5H threads, upgrade lên precision ER collets (grade <0.003mm)
 
 ## 📞 Liên Hệ Tư Vấn & Đặt Hàng BT Rigid Tapping Holder
 
-**An Mi Tools** cung cấp **bt rigid tapping holder** chính hãng từ Nhật Bản, bao gồm complete set: **TER holders (8 sizes BT30/40/50)**, full range ER collets (ER16/20/25/32/40/50), precision tap sets (M2-M30 HSS/carbide), collet wrenches, storage cases, bảo hành **24 tháng**. Đội ngũ kỹ thuật hỗ trợ verify CNC compatibility (G84 cycle support), recommend TER size phù hợp với production requirements, training G84 programming và troubleshooting.
-
-**Related Products**: Nếu CNC không support G84 rigid tapping, tham khảo [BT tension-compression tapping holder](https://anmitools.com/san-pham/bt-tension-compression-holder/) (floating mechanism, không cần G84). Cho precision reaming operations, recommend [BT ER collet holder precision](https://anmitools.com/san-pham/bt-er-collet-holder/) (run-out <0.005mm). Cho large diameter boring alternatives, xem [RBH rough boring head](https://anmitools.com/san-pham/rbh-rough-boring-head/) và [EWN micro boring head](https://anmitools.com/san-pham/ewn-micro-boring-head/).
-
-[💬 Báo Giá BT Rigid Tapping](https://anmitools.com/contact-us/) | [📄 Tải Catalog](https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/)
-
-### 🏢 Văn Phòng Hà Nội
-Suite 409, CT4 Building, Song Da Urban Area, Me Tri Street, Nam Tu Liem District  
-☎️ Tel: [+84 24 3556 2635](tel:+842435562635)
-
-### 🏢 Văn Phòng TP. Hồ Chí Minh
-75 Do Xuan Hop, W. Phuoc Long B, Thu Duc  
-☎️ Tel: [+84 28 6262 3959](tel:+842862623959)
-
-![An Mi Tools Contact](https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp)
+<div class="section contact-section">
+  <div class="contact-content">
+    <p><strong>An Mi Tools</strong> cung cấp <strong>bt rigid tapping holder</strong> chính hãng từ Nhật Bản, bao gồm complete set: TER holders (4 sizes BT30/40/50), full range ER collets (ER16/20/25/32), precision tap sets (M2-M30 HSS/carbide), collet wrenches, storage cases, bảo hành 24 tháng. Đội ngũ kỹ thuật hỗ trợ verify CNC compatibility (G84 cycle support), recommend TER size phù hợp với production requirements, training G84 programming và troubleshooting.</p>
+    
+    <p><strong>Related Products:</strong> Nếu CNC không support G84 rigid tapping, tham khảo <a href="https://anmitools.com/san-pham/bt-tension-compression-holder/">BT tension-compression tapping holder</a> (floating mechanism, không cần G84). Cho precision reaming operations, recommend <a href="https://anmitools.com/san-pham/bt-er-collet-holder/">BT ER collet holder precision</a> (run-out <0.005mm). Cho large diameter boring alternatives, xem <a href="https://anmitools.com/san-pham/rbh-rough-boring-head/">RBH rough boring head</a> và <a href="https://anmitools.com/san-pham/ewn-micro-boring-head/">EWN micro boring head</a>.</p>
+    
+    <div class="cta-buttons">
+      <a href="https://anmitools.com/contact-us/" class="btn btn-primary cta-button">� Báo Giá BT Rigid Tapping</a>
+      <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" class="btn btn-secondary cta-button">📄 Tải Catalog</a>
+    </div>
+    
+    <div class="office-info">
+      <div class="office">
+        <h3>🏢 Văn Phòng Hà Nội</h3>
+        <p>Suite 409, CT4 Building, Song Da Urban Area, Me Tri Street, Nam Tu Liem District</p>
+        <p>☎️ Tel: <a href="tel:+842435562635">+84 24 3556 2635</a></p>
+      </div>
+      
+      <div class="office">
+        <h3>🏢 Văn Phòng TP. Hồ Chí Minh</h3>
+        <p>75 Do Xuan Hop, W. Phuoc Long B, Thu Duc</p>
+        <p>☎️ Tel: <a href="tel:+842862623959">+84 28 6262 3959</a></p>
+      </div>
+      
+      <div class="office">
+        <h3>🏢 Văn Phòng Hải Phòng</h3>
+        <p>P2825 Hoang Huy Grand Tower 2A, Hong Bang District, Hai Phong</p>
+      </div>
+      
+      <div class="office">
+        <h3>🏢 Văn Phòng Đà Nẵng</h3>
+        <p>85 Hoang Van Thai, Lien Chieu, Da Nang</p>
+      </div>
+      
+      <div class="office">
+        <h3>🏢 Văn Phòng Vĩnh Phúc</h3>
+        <p>17 Ton Duc Thang, Vinh Yen, Vinh Phuc</p>
+      </div>
+      
+      <div class="office">
+        <h3>🏢 Văn Phòng Bắc Ninh</h3>
+        <p>76 Nguyen Dang, Suoi Hoa, Bac Ninh</p>
+      </div>
+      
+      <div class="office">
+        <h3>🏭 Nhà Máy Phía Bắc</h3>
+        <p>L3, Pho Noi Textile Garment Industrial Park, My Hao District, Hung Yen</p>
+      </div>
+      
+      <div class="office">
+        <h3>🏭 Nhà Máy Phía Nam</h3>
+        <p>75 Do Xuan Hop, W. Phuoc Long B, Thu Duc, HCM</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="contact-images">
+    <figure class="contact-image-desktop">
+      <img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp"
+        alt="An Mi Tools Office Locations - Desktop View" width="1200" height="800" loading="lazy">
+      <figcaption>An Mi Tools - 8 văn phòng & nhà máy toàn quốc (Desktop view)</figcaption>
+    </figure>
+    
+    <figure class="contact-image-mobile">
+      <img src="https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-mobile-editbyAI.webp"
+        alt="An Mi Tools Office Locations - Mobile View" width="800" height="1200" loading="lazy">
+      <figcaption>An Mi Tools - Liên hệ & địa chỉ (Mobile view)</figcaption>
+    </figure>
+  </div>
+</div>
 
 ---
 
