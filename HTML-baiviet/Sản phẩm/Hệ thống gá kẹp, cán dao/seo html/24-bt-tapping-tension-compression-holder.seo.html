@@ -82,66 +82,152 @@
     <p class="note"><strong>Note:</strong> <strong>BT tension compression tapping holder</strong> không yêu cầu CNC có G84 rigid tapping function. Floating chuck tự động compensate feed mismatch trong traditional tapping mode theo <a href="https://www.sandvik.coromant.com" target="_blank" rel="noopener">Sandvik tapping guidelines</a>. Nếu CNC có G84 → dùng rigid mode for faster cycle time + floating chuck provides extra safety margin.</p>
   </div>
 
-  <div class="section applications">
+  <div class="section use-cases">
     <h2>4 Ứng Dụng Thực Tế Của BT Tension Compression Tapping Holder</h2>
     
-    <div class="application-item">
-      <h3>1. Taro Lỗ Mù – Bảo Vệ Mũi Taro Không Bị Gãy</h3>
-      <p><strong>Vấn đề:</strong> Khi taro lỗ mù (blind hole), mũi taro dễ chạm đáy lỗ ở tốc độ cao → mô-men xoắn tăng đột ngột → taro gãy ngay lập tức.</p>
-      <p><strong>Ví dụ thực tế:</strong> Gia công ren M10×1.5 sâu 25mm trong khuôn thép NAK80 (độ cứng 40 HRC). Nếu dùng holder thường, taro gãy 40% số lỗ vì chạm đáy.</p>
-      <p><strong>Giải pháp với <a href="https://www.osg-usa.com/tapping" target="_blank" rel="noopener">BT tension compression tapping holder</a>:</strong></p>
-      <ul>
-        <li>Sử dụng collet G12 với ngưỡng mô-men 40 N.m</li>
-        <li>Khi taro chạm đáy → mô-men vượt 40 N.m → ly hợp trượt tự động → taro ngừng quay nhưng trục chính vẫn chạy → không gãy</li>
-        <li>Floating chuck hấp thụ thêm 0.3mm hành trình dư → an toàn tuyệt đối</li>
-      </ul>
-      <p><strong>Kết quả:</strong> Tỷ lệ taro sống sót 95% (so với 60% holder thường). Sản xuất được 500 lỗ/ca không cần thay taro.</p>
-    </div>
-    
-    <div class="application-item">
-      <h3>2. Taro Gang – Lỗ Đúc Lệch Vị Trí</h3>
-      <p><strong>Vấn đề:</strong> Lỗ đúc cát (sand casting) thường lệch vị trí ±0.3-0.5mm so với thiết kế. Khi taro, mũi taro vào lệch → chịu lực ngang → gãy sau 50 lỗ.</p>
-      <p><strong>Ví dụ thực tế:</strong> Taro M8×1.25 xuyên suốt trên thân máy gang FC250. Lỗ đúc lệch 0.4mm, taro holder cứng gãy liên tục.</p>
-      <p><strong>Giải pháp với BT tension compression tapping holder:</strong></p>
-      <ul>
-        <li>Collet G3 với khả năng nổi ±0.3mm theo phương ngang</li>
-        <li>Taro tự động căn giữa vào miệng lỗ → giảm 80% lực ngang → tuổi thọ taro tăng từ 50 lên 800 lỗ</li>
-        <li>Bù thêm góc nghiêng 1-3° (thường có ở lỗ đúc) → taro chạy theo đường lỗ tự nhiên</li>
-      </ul>
-      <p><strong>Thông số gia công:</strong> 600 vòng/phút, tốc độ tiến 750 mm/phút, làm mát qua trục chính → thời gian 8 giây/lỗ.</p>
-    </div>
-    
-    <div class="application-item">
-      <h3>3. Taro Nhôm Cao Tốc – Máy CNC Cũ Không Có Chức Năng Rigid Tapping</h3>
-      <p><strong>Vấn đề:</strong> Máy CNC cũ (như Fanuc 0M) không có chức năng G84 (đồng bộ trục chính với tiến dao). Taro thủ công chỉ chạy được 300 vòng/phút → mất 20 giây/lỗ → năng suất thấp.</p>
-      <p><strong>Ví dụ thực tế:</strong> Taro M6×1.0 xuyên suốt trên giá đỡ máy bay hợp kim nhôm 7075-T6, máy Fanuc 0M không có G84.</p>
-      <p><strong>Giải pháp với <a href="https://www.emuge.com" target="_blank" rel="noopener">BT tension compression tapping holder</a>:</strong></p>
-      <ul>
-        <li>Floating chuck tự động bù sai lệch tiến dao → chạy an toàn ở 1500 vòng/phút (tăng 5 lần)</li>
-        <li>Thời gian gia công chỉ còn 5 giây/lỗ → năng suất tăng 4 lần</li>
-        <li>Setup đơn giản: Collet G3 + taro spiral point M6 + chương trình taro truyền thống (không cần đồng bộ)</li>
-        <li>Bảo vệ mô-men tránh taro gãy khi phôi dính</li>
-      </ul>
-      <p><strong>Kết quả:</strong> Máy cũ chạy nhanh như máy mới có G84, tiết kiệm chi phí nâng cấp.</p>
-    </div>
-    
-    <div class="application-item">
-      <h3>4. Sửa Ren Hỏng – Taro Lại Lỗ Ren Mòn</h3>
-      <p><strong>Vấn đề:</strong> Ren bị lỗi sau nhiều lần lắp/tháo (vít mòn ren). Ren không đều, có độ đảo → holder cứng làm taro bị kẹt và gãy.</p>
-      <p><strong>Ví dụ thực tế:</strong> Sửa ren M12×1.75 bị hỏng trên thân van thủy lực nhôm 6061, ren mòn sau 5000 chu kỳ lắp ráp.</p>
-      <p><strong>Giải pháp với BT tension compression tapping holder:</strong></p>
-      <ul>
-        <li>Collet G12 với cơ chế nổi cho phép taro đi theo đường ren cũ (dù không đều)</li>
-        <li>Bảo vệ mô-men tránh taro gãy ở chỗ ren chật</li>
-        <li><strong>Quy trình:</strong>
-          <ul>
-            <li>Bước 1: Vặn taro bằng tay 2-3 vòng để bắt ren</li>
-            <li>Bước 2: Gắn vào holder nổi và chạy tốc độ thấp 200 vòng/phút</li>
-            <li>Bước 3: Taro tự động đi theo rãnh ren cũ → cắt ren mới sạch sẽ</li>
-          </ul>
-        </li>
-      </ul>
-      <p><strong>Kết quả:</strong> Tỷ lệ sửa thành công 90% (so với 40% khi dùng holder cứng). Tiết kiệm chi phí thay chi tiết mới.</p>
+    <div class="application-grid">
+      <div class="application-item">
+        <div class="application-header">
+          <span class="application-number">01</span>
+          <h3>Taro Lỗ Mù – Bảo Vệ Mũi Taro Không Bị Gãy</h3>
+        </div>
+        
+        <div class="application-content">
+          <div class="problem-box">
+            <strong class="label">Vấn đề:</strong>
+            <p>Khi taro lỗ mù (blind hole), mũi taro dễ chạm đáy lỗ ở tốc độ cao → mô-men xoắn tăng đột ngột → taro gãy ngay lập tức.</p>
+          </div>
+          
+          <div class="example-box">
+            <strong class="label">Ví dụ thực tế:</strong>
+            <p>Gia công ren M10×1.5 sâu 25mm trong khuôn thép NAK80 (độ cứng 40 HRC). Nếu dùng holder thường, taro gãy 40% số lỗ vì chạm đáy.</p>
+          </div>
+          
+          <div class="solution-box">
+            <strong class="label">Giải pháp với <a href="https://www.osg-usa.com/tapping" target="_blank" rel="noopener">BT tension compression tapping holder</a>:</strong>
+            <ul class="solution-steps">
+              <li>Sử dụng collet G12 với ngưỡng mô-men 40 N.m</li>
+              <li>Khi taro chạm đáy → mô-men vượt 40 N.m → ly hợp trượt tự động</li>
+              <li>Taro ngừng quay nhưng trục chính vẫn chạy → không gãy</li>
+              <li>Floating chuck hấp thụ thêm 0.3mm hành trình dư → an toàn tuyệt đối</li>
+            </ul>
+          </div>
+          
+          <div class="result-box">
+            <strong class="label">Kết quả:</strong>
+            <p>Tỷ lệ taro sống sót <strong class="highlight-success">95%</strong> (so với 60% holder thường). Sản xuất được <strong>500 lỗ/ca</strong> không cần thay taro.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="application-item">
+        <div class="application-header">
+          <span class="application-number">02</span>
+          <h3>Taro Gang – Lỗ Đúc Lệch Vị Trí</h3>
+        </div>
+        
+        <div class="application-content">
+          <div class="problem-box">
+            <strong class="label">Vấn đề:</strong>
+            <p>Lỗ đúc cát (sand casting) thường lệch vị trí ±0.3-0.5mm so với thiết kế. Khi taro, mũi taro vào lệch → chịu lực ngang → gãy sau 50 lỗ.</p>
+          </div>
+          
+          <div class="example-box">
+            <strong class="label">Ví dụ thực tế:</strong>
+            <p>Taro M8×1.25 xuyên suốt trên thân máy gang FC250. Lỗ đúc lệch 0.4mm, taro holder cứng gãy liên tục.</p>
+          </div>
+          
+          <div class="solution-box">
+            <strong class="label">Giải pháp với BT tension compression tapping holder:</strong>
+            <ul class="solution-steps">
+              <li>Collet G3 với khả năng nổi ±0.3mm theo phương ngang</li>
+              <li>Taro tự động căn giữa vào miệng lỗ → giảm 80% lực ngang</li>
+              <li>Tuổi thọ taro tăng từ 50 lên <strong>800 lỗ</strong></li>
+              <li>Bù thêm góc nghiêng 1-3° (thường có ở lỗ đúc) → taro chạy theo đường lỗ tự nhiên</li>
+            </ul>
+          </div>
+          
+          <div class="result-box">
+            <strong class="label">Thông số gia công:</strong>
+            <p>600 vòng/phút, tốc độ tiến 750 mm/phút, làm mát qua trục chính → thời gian <strong>8 giây/lỗ</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="application-item">
+        <div class="application-header">
+          <span class="application-number">03</span>
+          <h3>Taro Nhôm Cao Tốc – Máy CNC Cũ Không Có G84</h3>
+        </div>
+        
+        <div class="application-content">
+          <div class="problem-box">
+            <strong class="label">Vấn đề:</strong>
+            <p>Máy CNC cũ (như Fanuc 0M) không có chức năng G84 (đồng bộ trục chính với tiến dao). Taro thủ công chỉ chạy được 300 vòng/phút → mất 20 giây/lỗ → năng suất thấp.</p>
+          </div>
+          
+          <div class="example-box">
+            <strong class="label">Ví dụ thực tế:</strong>
+            <p>Taro M6×1.0 xuyên suốt trên giá đỡ máy bay hợp kim nhôm 7075-T6, máy Fanuc 0M không có G84.</p>
+          </div>
+          
+          <div class="solution-box">
+            <strong class="label">Giải pháp với <a href="https://www.emuge.com" target="_blank" rel="noopener">BT tension compression tapping holder</a>:</strong>
+            <ul class="solution-steps">
+              <li>Floating chuck tự động bù sai lệch tiến dao → chạy an toàn ở <strong>1500 vòng/phút</strong> (tăng 5 lần)</li>
+              <li>Thời gian gia công chỉ còn <strong>5 giây/lỗ</strong> → năng suất tăng 4 lần</li>
+              <li>Setup đơn giản: Collet G3 + taro spiral point M6 + chương trình taro truyền thống</li>
+              <li>Bảo vệ mô-men tránh taro gãy khi phôi dính</li>
+            </ul>
+          </div>
+          
+          <div class="result-box">
+            <strong class="label">Kết quả:</strong>
+            <p>Máy cũ chạy nhanh như máy mới có G84, <strong class="highlight-success">tiết kiệm chi phí nâng cấp</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="application-item">
+        <div class="application-header">
+          <span class="application-number">04</span>
+          <h3>Sửa Ren Hỏng – Taro Lại Lỗ Ren Mòn</h3>
+        </div>
+        
+        <div class="application-content">
+          <div class="problem-box">
+            <strong class="label">Vấn đề:</strong>
+            <p>Ren bị lỗi sau nhiều lần lắp/tháo (vít mòn ren). Ren không đều, có độ đảo → holder cứng làm taro bị kẹt và gãy.</p>
+          </div>
+          
+          <div class="example-box">
+            <strong class="label">Ví dụ thực tế:</strong>
+            <p>Sửa ren M12×1.75 bị hỏng trên thân van thủy lực nhôm 6061, ren mòn sau 5000 chu kỳ lắp ráp.</p>
+          </div>
+          
+          <div class="solution-box">
+            <strong class="label">Giải pháp với BT tension compression tapping holder:</strong>
+            <ul class="solution-steps">
+              <li>Collet G12 với cơ chế nổi cho phép taro đi theo đường ren cũ (dù không đều)</li>
+              <li>Bảo vệ mô-men tránh taro gãy ở chỗ ren chật</li>
+            </ul>
+            
+            <div class="process-steps">
+              <strong class="label">Quy trình 3 bước:</strong>
+              <ol class="numbered-steps">
+                <li><strong>Bước 1:</strong> Vặn taro bằng tay 2-3 vòng để bắt ren</li>
+                <li><strong>Bước 2:</strong> Gắn vào holder nổi và chạy tốc độ thấp 200 vòng/phút</li>
+                <li><strong>Bước 3:</strong> Taro tự động đi theo rãnh ren cũ → cắt ren mới sạch sẽ</li>
+              </ol>
+            </div>
+          </div>
+          
+          <div class="result-box">
+            <strong class="label">Kết quả:</strong>
+            <p>Tỷ lệ sửa thành công <strong class="highlight-success">90%</strong> (so với 40% khi dùng holder cứng). <strong>Tiết kiệm chi phí</strong> thay chi tiết mới.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
