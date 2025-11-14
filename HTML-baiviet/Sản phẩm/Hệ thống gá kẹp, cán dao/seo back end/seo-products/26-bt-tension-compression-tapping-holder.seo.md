@@ -91,32 +91,25 @@ Hệ thống **bt tension compression tapping holder** bao gồm 3 collet sizes:
 
 **Related Products:** Nếu CNC có G84 rigid tapping function và cần tapping speed cao hơn, tham khảo [BT rigid tapping holder](https://anmitools.com/san-pham/bt-rigid-tapping-holder/) (no floating, faster speed). Cho precision drilling operations, recommend [BT APU drill chuck holder](https://anmitools.com/san-pham/bt-apu-drill-chuck/) (run-out <0.01mm). Cho large diameter thread boring alternatives, xem [CBH fine boring head](https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/). **BT tension compression tapping** system ideal cho majority tapping operations.
 
-### Văn Phòng & Nhà Máy
+### Văn Phòng & Chi Nhánh
 
-**🏢 Văn Phòng Hà Nội**
-Suite 409, CT4 Building, Song Da Urban Area, Me Tri Street, Nam Tu Liem District
-☎️ Tel: +84 24 3556 2635
+**🏢 Trụ Sở Hà Nội**  
+P.409, Cầu thang 5, CT4-ĐN3, Khu đô thị Sông Đà Mỹ Đình, Đường Đỗ Đình Thiện, Phường Từ Liêm, Thành phố Hà Nội  
+☎️ Hotline: 091 519 2325
 
-**🏢 Văn Phòng TP. Hồ Chí Minh**
-75 Do Xuan Hop, W. Phuoc Long B, Thu Duc
-☎️ Tel: +84 28 6262 3959
+**🏢 Chi Nhánh TP. Hồ Chí Minh**  
+75 Đỗ Xuân Hợp, Phường Phước Long, Thành phố Hồ Chí Minh  
+☎️ Hotline: 091 315 2529
 
-**🏢 Văn Phòng Hải Phòng**
-P2825 Hoang Huy Grand Tower 2A, Hong Bang District, Hai Phong
+**🏢 Chi Nhánh Hải Phòng**  
+P2825 Hoàng Huy Grand Tower, số 2A Sở Dầu, Phường Hồng Bàng, Thành phố Hải Phòng  
+☎️ Hotline: 033 583 6600
 
-**🏢 Văn Phòng Đà Nẵng**
-85 Hoang Van Thai, Lien Chieu, Da Nang
+**🏢 Chi Nhánh Đà Nẵng**  
+85 Hoàng Văn Thái, Phường Hòa Khánh, Thành phố Đà Nẵng  
+☎️ Hotline: 091 204 1331
 
-**🏢 Văn Phòng Vĩnh Phúc**
-17 Ton Duc Thang, Vinh Yen, Vinh Phuc
+📧 **Email:** admsales7@anmitools.com
 
-**🏢 Văn Phòng Bắc Ninh**
-76 Nguyen Dang, Suoi Hoa, Bac Ninh
-
-**🏭 Nhà Máy Phía Bắc**
-L3, Pho Noi Textile Garment Industrial Park, My Hao District, Hung Yen
-
-**🏭 Nhà Máy Phía Nam**
-75 Do Xuan Hop, W. Phuoc Long B, Thu Duc, HCM
 
 
