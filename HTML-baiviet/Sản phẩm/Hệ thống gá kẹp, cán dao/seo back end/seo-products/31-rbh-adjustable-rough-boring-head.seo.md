@@ -234,7 +234,7 @@ Quick insert change giúp tăng machine utilization rate từ 65% lên 85%.
 
 ### 1. RBH Rough Boring Head có phù hợp cho finishing boring không?
 
-**Trả lời:** Không. **RBH rough boring head** chuyên dụng cho **rough boring** (gia công thô) với depth of cut 5-10mm/pass, surface finish Ra 6.3-12.5 µm. Để finishing boring (Ra 0.4-1.6 µm, IT6-IT7), cần sử dụng <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">fine boring head</a> hoặc <a href="https://anmitools.com/san-pham/adjustable-boring-head/" target="_blank" rel="noopener">adjustable boring head</a> với micro-adjustment.
+**Trả lời:** Không. **RBH rough boring head** chuyên dụng cho **rough boring** (gia công thô) với depth of cut 5-10mm/pass, surface finish Ra 6.3-12.5 µm. Để finishing boring (Ra 0.4-1.6 µm, IT6-IT7), cần sử dụng <a href="https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/" target="_blank" rel="noopener">CBH fine boring head</a> hoặc <a href="https://anmitools.com/san-pham/ewe-digital-boring-head/" target="_blank" rel="noopener">EWE digital boring head</a> với micro-adjustment.
 
 </div>
 </details>
@@ -294,6 +294,6 @@ Không phù hợp cho máy phay nhỏ VMC (vertical machining center) do RBH wei
 **Xem thêm các sản phẩm liên quan:**
 - <a href="https://anmitools.com/san-pham/bst-twin-blade-boring-tool/" target="_blank" rel="noopener">BST Twin-Blade Boring Tool</a> – Module holder cho RBH
 - <a href="https://anmitools.com/san-pham/cbs-boring-tool/" target="_blank" rel="noopener">CBS Boring Tool</a> – Cartridge boring system
-- <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">Fine Boring Head</a> – Finishing boring high precision
+- <a href="https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/" target="_blank" rel="noopener">CBH Fine Boring Head</a> – Finishing boring high precision
 
 </section>

@@ -453,8 +453,8 @@ schema_type: "Product"
 		<h2>Tài Nguyên Tham Khảo Thêm</h2>
 		<ul>
 			<li><a href="https://anmitools.com/san-pham/rbh-rough-boring-head/" target="_blank" rel="noopener">RBH Adjustable Rough Boring Head Φ19-204mm</a></li>
-			<li><a href="https://anmitools.com/san-pham/cbh-fine-boring-head/" target="_blank" rel="noopener">CBH Large-Diameter Fine Boring Head</a></li>
-			<li><a href="https://anmitools.com/san-pham/lbk-boring-bar/" target="_blank" rel="noopener">LBK Modular Boring Bar System</a></li>
+			<li><a href="https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/" target="_blank" rel="noopener">CBH Large-Diameter Fine Boring Head</a></li>
+			<li><a href="https://anmitools.com/san-pham/ck-lbk-boring-bar-system/" target="_blank" rel="noopener">LBK Modular Boring Bar System</a></li>
 		</ul>
 	</div>
 

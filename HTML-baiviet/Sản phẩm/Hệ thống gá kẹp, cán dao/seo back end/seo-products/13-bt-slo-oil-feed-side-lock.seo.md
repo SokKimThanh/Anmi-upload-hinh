@@ -101,7 +101,7 @@ Hệ thống **bt-slo oil-feed side lock holder** sử dụng **side lock clampi
 
 **BT-SLO oil-feed side lock holder có cần máy CNC đặc biệt không?**
 
-Có. **BT-SLO oil-feed side lock holder** yêu cầu CNC machining center có **through-spindle coolant (TSC) system** - coolant supply integrated trong spindle với pump capacity 2-4 MPa. Check CNC specs cho: "TSC", "High-Pressure Coolant Option", "Internal Coolant System". Major CNC brands: Mazak (Matrix TSC standard on most Vertical Centers), DMG Mori (CELOS coolant package), Haas (High-Pressure Through-Spindle Coolant option ~$3000), Okuma (Oscar coolant system with rotary union). Nếu CNC không có TSC → không thể dùng **bt-slo holder** → consider [BT side lock holder standard](https://anmitools.com/san-pham/bt-side-lock-holder/) (no coolant) thay thế.
+Có. **BT-SLO oil-feed side lock holder** yêu cầu CNC machining center có **through-spindle coolant (TSC) system** - coolant supply integrated trong spindle với pump capacity 2-4 MPa. Check CNC specs cho: "TSC", "High-Pressure Coolant Option", "Internal Coolant System". Major CNC brands: Mazak (Matrix TSC standard on most Vertical Centers), DMG Mori (CELOS coolant package), Haas (High-Pressure Through-Spindle Coolant option ~$3000), Okuma (Oscar coolant system with rotary union). Nếu CNC không có TSC → không thể dùng **bt-slo holder** → consider [BT side lock holder standard](https://anmitools.com/san-pham/bt-sla-weldon-tool-holder/) (no coolant) thay thế.
 
 **Side lock clamping có bị loose trong high-speed operations không?**
 
@@ -109,7 +109,7 @@ Không, nếu tightening đúng. **BT-SLO oil-feed side lock holder** set screw 
 
 **BT-SLO holder run-out 0.02mm có ảnh hưởng hole quality không?**
 
-Depends on operation tolerance: **Drilling** - hole tolerance H7 (±0.015mm for Φ12) → run-out 0.02mm = 133% tolerance → **marginal**. Solution: drill undersized Φ11.8 → ream to Φ12 H7 với precision ER collet holder (run-out <0.005mm). **Milling** - surface finish Ra 1.6μm → run-out 0.02mm acceptable (milling không sensitive bằng drilling). **Deep hole drilling** (L/D >5) → run-out 0.02mm causes hole drift 0.1-0.2mm at exit → acceptable cho clearance holes (không critical dimensions). Nếu cần precision holes H6 → dùng [BT-ER collet holder precision](https://anmitools.com/san-pham/bt-er-collet-holder/) thay thế.
+Depends on operation tolerance: **Drilling** - hole tolerance H7 (±0.015mm for Φ12) → run-out 0.02mm = 133% tolerance → **marginal**. Solution: drill undersized Φ11.8 → ream to Φ12 H7 với precision ER collet holder (run-out <0.005mm). **Milling** - surface finish Ra 1.6μm → run-out 0.02mm acceptable (milling không sensitive bằng drilling). **Deep hole drilling** (L/D >5) → run-out 0.02mm causes hole drift 0.1-0.2mm at exit → acceptable cho clearance holes (không critical dimensions). Nếu cần precision holes H6 → dùng [BT-ER collet holder precision](https://anmitools.com/san-pham/bt-er-collet-chuck-standard/) thay thế.
 
 **Coolant pressure 4 MPa có làm hỏng tool shank coolant holes không?**
 
@@ -123,7 +123,7 @@ Có, nhưng mất internal coolant advantage. Nếu CNC không có through-spind
 
 **An Mi Tools** cung cấp **bt-slo oil-feed side lock holder** chính hãng từ Nhật Bản, bao gồm complete set: SLO holders (7 sizes Φ6-Φ32, BT40/BT50), coolant-fed drills (HSS/carbide with internal coolant holes), coolant-fed end mills (2-4 flutes), set screw replacement kits, O-ring seal kits, hex key wrenches, storage cases, bảo hành **24 tháng**. Đội ngũ kỹ thuật hỗ trợ verify CNC TSC compatibility, recommend holder size cho drilling/milling applications, training coolant system setup và troubleshooting.
 
-**Related Products:** Cho precision drilling/milling operations, recommend [BT-ERO oil-feed ER collet holder](https://anmitools.com/san-pham/bt-ero-oil-feed-er-collet/) (run-out <0.005mm, ER collet clamping). Nếu CNC không có TSC, xem [BT side lock holder standard](https://anmitools.com/san-pham/bt-side-lock-holder/) (no coolant, external nozzles). Cho large diameter boring với coolant, tham khảo [CBH large diameter fine boring head](https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/) và [RBH rough boring head](https://anmitools.com/san-pham/rbh-rough-boring-head/).
+**Related Products:** Cho precision drilling/milling operations, recommend [BT-ERO oil-feed ER collet holder](https://anmitools.com/san-pham/bt-ero-oil-feed-er-collet-holder/) (run-out <0.005mm, ER collet clamping). Nếu CNC không có TSC, xem [BT side lock holder standard](https://anmitools.com/san-pham/bt-sla-weldon-tool-holder/) (no coolant, external nozzles). Cho large diameter boring với coolant, tham khảo [CBH large diameter fine boring head](https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/) và [RBH rough boring head](https://anmitools.com/san-pham/rbh-rough-boring-head/).
 
 <div class="cta-buttons">
   <a href="https://anmitools.com/contact-us/" class="btn btn-primary">💬 Báo Giá BT-SLO</a>

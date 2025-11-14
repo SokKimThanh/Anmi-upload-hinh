@@ -89,7 +89,7 @@ Hệ thống **bt tension compression tapping holder** bao gồm 3 collet sizes:
 
 **An Mi Tools** cung cấp **bt tension compression tapping holder** chính hãng từ Nhật Bản, bao gồm complete set: BT30/40/50 holders, full G3/G12/G24 collet range (M3-M42), collet wrenches, torque adjustment tools, storage cases, bảo hành 24 tháng. Đội ngũ kỹ thuật hỗ trợ recommend collet size phù hợp với **bt tension compression tapping** applications, training torque protection adjustment, troubleshooting floating chuck issues.
 
-**Related Products:** Nếu CNC có G84 rigid tapping function và cần tapping speed cao hơn, tham khảo [BT rigid tapping holder](https://anmitools.com/san-pham/bt-rigid-tapping-holder/) (no floating, faster speed). Cho precision drilling operations, recommend [BT APU drill chuck holder](https://anmitools.com/san-pham/bt-apu-drill-chuck/) (run-out <0.01mm). Cho large diameter thread boring alternatives, xem [CBH fine boring head](https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/). **BT tension compression tapping** system ideal cho majority tapping operations.
+**Related Products:** Nếu CNC có G84 rigid tapping function và cần tapping speed cao hơn, tham khảo [BT rigid tapping holder](https://anmitools.com/san-pham/bt-rigid-tapping-tool-holder/) (no floating, faster speed). Cho precision drilling operations, recommend [BT APU drill chuck holder](https://anmitools.com/san-pham/bt-apu-drill-chuck-holder/) (run-out <0.01mm). Cho large diameter thread boring alternatives, xem [CBH fine boring head](https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/). **BT tension compression tapping** system ideal cho majority tapping operations.
 
 ### Văn Phòng & Chi Nhánh
 

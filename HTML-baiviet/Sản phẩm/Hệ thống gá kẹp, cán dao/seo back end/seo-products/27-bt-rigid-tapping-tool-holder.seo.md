@@ -219,7 +219,7 @@ Có. **BT rigid tapping holder** yêu cầu CNC machining center có **G84 rigid
 - Mitsubishi: M700/M800 series (G84)
 - Haas: All current models (G84 standard)
 
-Nếu CNC không có G84 → không thể dùng **bt rigid tapping holder** → dùng [tension-compression tapping holder](https://anmitools.com/san-pham/bt-tension-compression-holder/) có floating chuck thay thế.
+Nếu CNC không có G84 → không thể dùng **bt rigid tapping holder** → dùng [tension-compression tapping holder](https://anmitools.com/san-pham/bt-tension-compression-tapping-holder/) có floating chuck thay thế.
 
 **Q2: Làm thế nào biết CNC có hỗ trợ G84 rigid tapping?**
 
@@ -235,7 +235,7 @@ M05
 
 **Q3: BT rigid tapping holder có thể dùng cho reaming không?**
 
-Không recommend. **BT rigid tapping holder** được thiết kế cho tapping với run-out tolerance 0.03-0.05mm. Reaming yêu cầu run-out <0.01mm để achieve hole tolerance H7 và surface finish Ra 0.8μm. Dùng **bt rigid tapping holder** cho reaming → hole oversized 0.03-0.05mm, poor surface finish. Recommend dùng [BT ER collet holder precision ground](https://anmitools.com/san-pham/bt-er-collet-holder/) (run-out <0.005mm) cho reaming operations.
+Không recommend. **BT rigid tapping holder** được thiết kế cho tapping với run-out tolerance 0.03-0.05mm. Reaming yêu cầu run-out <0.01mm để achieve hole tolerance H7 và surface finish Ra 0.8μm. Dùng **bt rigid tapping holder** cho reaming → hole oversized 0.03-0.05mm, poor surface finish. Recommend dùng [BT ER collet holder precision ground](https://anmitools.com/san-pham/bt-er-collet-chuck-standard/) (run-out <0.005mm) cho reaming operations.
 
 **Q4: Tapping bị thread pitch sai số ±0.05mm, nguyên nhân?**
 
@@ -246,7 +246,7 @@ Thread pitch errors với **bt rigid tapping holder** thường do:
 4. **Workpiece movement**: Weak clamping → workpiece vibrates during tapping → inconsistent pitch
 5. **Spindle orientation error**: Spindle stop position inaccurate → synchronization start point varies
 
-Solution: Re-calibrate CNC synchronization parameters, replace worn taps, improve workpiece clamping. Tham khảo [fine boring head](https://anmitools.com/san-pham/fine-boring-head/) cho alternative precision operations.
+Solution: Re-calibrate CNC synchronization parameters, replace worn taps, improve workpiece clamping.
 
 **Q5: BT rigid tapping holder run-out 0.05mm có ảnh hưởng thread quality không?**
 
@@ -265,7 +265,7 @@ Nếu cần class 5H threads, upgrade lên precision ER collets (grade <0.003mm)
   <div class="contact-content">
     <p><strong>An Mi Tools</strong> cung cấp <strong>bt rigid tapping holder</strong> chính hãng từ Nhật Bản, bao gồm complete set: TER holders (4 sizes BT30/40/50), full range ER collets (ER16/20/25/32), precision tap sets (M2-M30 HSS/carbide), collet wrenches, storage cases, bảo hành 24 tháng. Đội ngũ kỹ thuật hỗ trợ verify CNC compatibility (G84 cycle support), recommend TER size phù hợp với production requirements, training G84 programming và troubleshooting.</p>
     
-    <p><strong>Related Products:</strong> Nếu CNC không support G84 rigid tapping, tham khảo <a href="https://anmitools.com/san-pham/bt-tension-compression-holder/">BT tension-compression tapping holder</a> (floating mechanism, không cần G84). Cho precision reaming operations, recommend <a href="https://anmitools.com/san-pham/bt-er-collet-holder/">BT ER collet holder precision</a> (run-out <0.005mm). Cho large diameter boring alternatives, xem <a href="https://anmitools.com/san-pham/rbh-rough-boring-head/">RBH rough boring head</a> và <a href="https://anmitools.com/san-pham/ewn-micro-boring-head/">EWN micro boring head</a>.</p>
+    <p><strong>Related Products:</strong> Nếu CNC không support G84 rigid tapping, tham khảo <a href="https://anmitools.com/san-pham/bt-tension-compression-tapping-holder/">BT tension-compression tapping holder</a> (floating mechanism, không cần G84). Cho precision reaming operations, recommend <a href="https://anmitools.com/san-pham/bt-er-collet-chuck-standard/">BT ER collet holder precision</a> (run-out <0.005mm). Cho large diameter boring alternatives, xem <a href="https://anmitools.com/san-pham/rbh-adjustable-rough-boring-head/">RBH rough boring head</a> và <a href="https://anmitools.com/san-pham/ewn-micro-boring-head/">EWN micro boring head</a>.</p>
     
     <div class="cta-buttons">
       <a href="https://anmitools.com/contact-us/" class="btn btn-primary cta-button">� Báo Giá BT Rigid Tapping</a>

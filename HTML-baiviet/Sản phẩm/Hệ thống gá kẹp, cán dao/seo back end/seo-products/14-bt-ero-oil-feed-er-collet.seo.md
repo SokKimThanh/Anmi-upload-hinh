@@ -103,7 +103,7 @@ Hệ thống **bt-ero oil-feed er collet holder** bao gồm **6 holder sizes** c
 
 **BT-ERO oil-feed ER collet holder có cần máy CNC đặc biệt không?**
 
-Có. **BT-ERO oil-feed ER collet holder** yêu cầu CNC machining center có **through-spindle coolant (TSC) system** với pump capacity 2-4 MPa (same as BT-SLO). Additionally, CNC spindle cần **high-speed capability** (12,000-25,000 RPM) để tận dụng ER collet precision cho high-speed operations. Recommended CNC: Mazak VTC-800 (TSC + 20,000 RPM), DMG Mori NVX5100 (TSC + 18,000 RPM), Haas VF-4SS (High-Pressure Coolant option + 12,000 RPM). Nếu CNC không có TSC → dùng [BT-ER collet holder standard](https://anmitools.com/san-pham/bt-er-collet-holder/) (no coolant) + external nozzles thay thế.
+Có. **BT-ERO oil-feed ER collet holder** yêu cầu CNC machining center có **through-spindle coolant (TSC) system** với pump capacity 2-4 MPa (same as BT-SLO). Additionally, CNC spindle cần **high-speed capability** (12,000-25,000 RPM) để tận dụng ER collet precision cho high-speed operations. Recommended CNC: Mazak VTC-800 (TSC + 20,000 RPM), DMG Mori NVX5100 (TSC + 18,000 RPM), Haas VF-4SS (High-Pressure Coolant option + 12,000 RPM). Nếu CNC không có TSC → dùng [BT-ER collet holder standard](https://anmitools.com/san-pham/bt-er-collet-chuck-standard/) (no coolant) + external nozzles thay thế.
 
 **ER collet nut cần tighten bao nhiêu torque?**
 
@@ -125,7 +125,7 @@ Có, nhưng mất coolant advantage. **BT-ERO oil-feed ER collet holder** có th
 
 **An Mi Tools** cung cấp **bt-ero oil-feed er collet holder** chính hãng từ Nhật Bản, bao gồm complete set: ERO holders (6 sizes ER8-ER40, BT30/40/50), full ER collet sets (ER8-ER40, precision grade <0.005mm), coolant-fed drills/end mills (HSS/carbide with internal coolant), ER collet nut wrenches, torque wrenches (60-150 Nm range), O-ring seal kits, storage cases, bảo hành **24 tháng**. Đội ngũ kỹ thuật hỗ trợ verify CNC TSC compatibility, recommend ER size cho tool range, training ER collet proper tightening techniques và coolant system setup.
 
-**Related Products:** Nếu không cần precision (<0.005mm run-out), consider [BT-SLO oil-feed side lock holder](https://anmitools.com/san-pham/bt-slo-oil-feed-side-lock-holder/) (faster changeover, no torque wrench needed). Cho operations không cần coolant, xem [BT-ER collet holder standard](https://anmitools.com/san-pham/bt-er-collet-holder/) (precision <0.005mm, no internal coolant). Cho large diameter boring với coolant, tham khảo [CBH large diameter fine boring head](https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/) và [fine boring head precision](https://anmitools.com/san-pham/fine-boring-head/).
+**Related Products:** Nếu không cần precision (<0.005mm run-out), consider [BT-SLO oil-feed side lock holder](https://anmitools.com/san-pham/bt-slo-oil-feed-side-lock-holder/) (faster changeover, no torque wrench needed). Cho operations không cần coolant, xem [BT-ER collet holder standard](https://anmitools.com/san-pham/bt-er-collet-chuck-standard/) (precision <0.005mm, no internal coolant). Cho large diameter boring với coolant, tham khảo [CBH large diameter fine boring head](https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/).
 
 <div class="cta-buttons">
   <a href="https://anmitools.com/contact-us/" class="btn btn-primary">💬 Báo Giá BT-ERO</a>

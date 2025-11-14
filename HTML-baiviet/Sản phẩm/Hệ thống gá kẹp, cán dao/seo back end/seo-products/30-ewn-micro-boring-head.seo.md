@@ -297,7 +297,7 @@ Với 6 sizes này, **EWN micro boring head** thay thế 100+ boring bar cố đ
 
 ### 1. EWN Micro Boring Head có đạt IT6 mà không cần grinding không?
 
-**Trả lời:** Có. **EWN micro boring head** với precision 0.002mm/graduation đạt IT6 (±0.008mm) trực tiếp, surface finish Ra 0.4-0.6μm, không cần grinding post-process. Điều kiện: máy CNC rigid (no vibration), spindle runout <0.005mm, insert sharp (VB <0.1mm). Nếu máy cũ hoặc vibration cao, có thể chỉ đạt IT7, cần <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">fine boring head</a> hoặc light grinding.
+**Trả lời:** Có. **EWN micro boring head** với precision 0.002mm/graduation đạt IT6 (±0.008mm) trực tiếp, surface finish Ra 0.4-0.6μm, không cần grinding post-process. Điều kiện: máy CNC rigid (no vibration), spindle runout <0.005mm, insert sharp (VB <0.1mm). Nếu máy cũ hoặc vibration cao, có thể chỉ đạt IT7, cần <a href="https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/" target="_blank" rel="noopener">CBH fine boring head</a> hoặc light grinding.
 
 </div>
 </details>
@@ -347,7 +347,7 @@ Với 6 sizes này, **EWN micro boring head** thay thế 100+ boring bar cố đ
 
 **Xem thêm các sản phẩm liên quan:**
 - <a href="https://anmitools.com/san-pham/nbh2084-boring-head/" target="_blank" rel="noopener">NBH2084 Boring Head</a> – Precision boring head 0.01mm, Φ6-290mm
-- <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">Fine Boring Head</a> – Ultra-precision boring head for IT5-IT6
-- <a href="https://anmitools.com/san-pham/adjustable-boring-head/" target="_blank" rel="noopener">Adjustable Boring Head</a> – General boring head Φ10-300mm
+- <a href="https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/" target="_blank" rel="noopener">CBH Fine Boring Head</a> – Ultra-precision boring head for IT5-IT6
+- <a href="https://anmitools.com/san-pham/ewe-digital-boring-head/" target="_blank" rel="noopener">EWE Digital Boring Head</a> – Digital boring head Φ10-300mm
 
 </section>

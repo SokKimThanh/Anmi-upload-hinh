@@ -439,7 +439,7 @@ schema_type: "Product"
 
 **Lưu ý:** Holder CK6 length 55mm (BT40/NT40/SK40) hoặc 65mm (BT50) → đảm bảo rigidity cho boring operation.
 
-**Xem thêm:** <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">Fine Boring Head</a> – ultra-precision boring head cho IT5-IT6 tolerance.
+**Xem thêm:** <a href="https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/" target="_blank" rel="noopener">CBH Fine Boring Head</a> – ultra-precision boring head cho IT5-IT6 tolerance.
 
 </div>
 </details>
@@ -503,4 +503,4 @@ Suite 409, CT4 Building, Song Da Urban Area, Me Tri Street, Nam Tu Liem District
 
 - <a href="https://anmitools.com/san-pham/nbh2084-boring-head/" target="_blank" rel="noopener">NBH2084 Boring Head</a> – Precision boring head 0.01mm, Φ8-280mm
 - <a href="https://anmitools.com/san-pham/ewn-micro-boring-head/" target="_blank" rel="noopener">EWN Micro Boring Head</a> – Ultra-precision boring head 0.002mm, IT6 tolerance
-- <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">Fine Boring Head</a> – Fine boring head cho IT5-IT6 tolerance
+- <a href="https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/" target="_blank" rel="noopener">CBH Fine Boring Head</a> – Fine boring head cho IT5-IT6 tolerance

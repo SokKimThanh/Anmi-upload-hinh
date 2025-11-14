@@ -276,7 +276,7 @@ schema_type: "Product"
   <details>
     <summary>NBH2084 micro boring system có thể boring lỗ sâu bao nhiêu? <span class="toggle">+</span></summary>
     <div class="faq-content">
-      <p><strong>NBH2084 micro boring system</strong> với anti-vibration damping xử lý tốt deep boring up to <strong>L/D ratio 4.5:1</strong>. Ví dụ: boring Φ50mm có thể đạt depth <strong>225mm</strong> mà vẫn maintain IT7 tolerance và surface finish Ra 0.8μm. For even deeper holes (L/D >5:1), recommend sử dụng <strong>nbh2084</strong> kết hợp với <a href="https://anmitools.com/san-pham/fine-boring-head/" target="_blank" rel="noopener">fine boring head</a> system có extended reach capabilities.</p>
+      <p><strong>NBH2084 micro boring system</strong> với anti-vibration damping xử lý tốt deep boring up to <strong>L/D ratio 4.5:1</strong>. Ví dụ: boring Φ50mm có thể đạt depth <strong>225mm</strong> mà vẫn maintain IT7 tolerance và surface finish Ra 0.8μm. For even deeper holes (L/D >5:1), recommend sử dụng <strong>nbh2084</strong> kết hợp với <a href="https://anmitools.com/san-pham/cbh-large-diameter-fine-boring-head/" target="_blank" rel="noopener">CBH fine boring head</a> system có extended reach capabilities.</p>
     </div>
   </details>
   
