@@ -144,14 +144,130 @@ schema_type: "Product"
 	<!-- ỨNG DỤNG THỰC TẾ -->
 	<!-- ============================================ -->
 	<div class="section use-cases">
-		<h2>[Số] Ứng Dụng Thực Tế [Tên Sản Phẩm] Từ Khách Hàng An Mi Tools</h2>
-		<ul>
-			<li><strong>[Ứng dụng 1]:</strong> [Mô tả chi tiết case study thực tế, kết quả đạt được, lợi ích cụ thể].</li>
-			<li><strong>[Ứng dụng 2]:</strong> [Mô tả chi tiết].</li>
-			<li><strong>[Ứng dụng 3]:</strong> [Mô tả chi tiết].</li>
-			<li><strong>[Ứng dụng 4]:</strong> [Mô tả chi tiết].</li>
-			<li><strong>[Ứng dụng 5]:</strong> [Mô tả chi tiết].</li>
-		</ul>
+		<h2>4 Ứng Dụng Thực Tế [Tên Sản Phẩm]</h2>
+		<div class="application-grid">
+			
+			<!-- Application 01 -->
+			<div class="application-item">
+				<div class="application-header">
+					<span class="application-number">01</span>
+					<h3>[Tiêu đề ứng dụng 1 - Ví dụ: Taro Lỗ Mù – Bảo Vệ Mũi Taro Không Bị Gãy]</h3>
+				</div>
+				<div class="application-content">
+					<div class="problem-box">
+						<strong class="label">Vấn đề:</strong>
+						<p>[Mô tả vấn đề kỹ thuật cụ thể mà khách hàng gặp phải. 2-3 câu ngắn gọn, có thuật ngữ chuyên môn.]</p>
+					</div>
+					<div class="example-box">
+						<strong class="label">Ví dụ thực tế:</strong>
+						<p>[Case study cụ thể từ khách hàng: tên nhà máy, loại máy, vật liệu, vấn đề trước khi dùng sản phẩm.]</p>
+					</div>
+					<div class="solution-box">
+						<strong class="label">Giải pháp:</strong>
+						<ul class="solution-steps">
+							<li>[Bước 1 - Hành động cụ thể với sản phẩm]</li>
+							<li>[Bước 2 - Thiết lập thông số]</li>
+							<li>[Bước 3 - Điều chỉnh process nếu cần]</li>
+						</ul>
+					</div>
+					<div class="result-box">
+						<strong class="label">Kết quả:</strong>
+						<p>[Kết quả đo lường cụ thể: % giảm breakage, tiết kiệm chi phí, tăng uptime. Dùng <span class="highlight-success">giảm XX%</span> cho metrics.]</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Application 02 -->
+			<div class="application-item">
+				<div class="application-header">
+					<span class="application-number">02</span>
+					<h3>[Tiêu đề ứng dụng 2]</h3>
+				</div>
+				<div class="application-content">
+					<div class="problem-box">
+						<strong class="label">Vấn đề:</strong>
+						<p>[Vấn đề kỹ thuật 2]</p>
+					</div>
+					<div class="example-box">
+						<strong class="label">Ví dụ thực tế:</strong>
+						<p>[Case study 2]</p>
+					</div>
+					<div class="solution-box">
+						<strong class="label">Giải pháp:</strong>
+						<ul class="solution-steps">
+							<li>[Solution step 1]</li>
+							<li>[Solution step 2]</li>
+							<li>[Solution step 3]</li>
+						</ul>
+					</div>
+					<div class="result-box">
+						<strong class="label">Kết quả:</strong>
+						<p>[Measurable results with <span class="highlight-success">metrics</span>]</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Application 03 -->
+			<div class="application-item">
+				<div class="application-header">
+					<span class="application-number">03</span>
+					<h3>[Tiêu đề ứng dụng 3]</h3>
+				</div>
+				<div class="application-content">
+					<div class="problem-box">
+						<strong class="label">Vấn đề:</strong>
+						<p>[Vấn đề kỹ thuật 3]</p>
+					</div>
+					<div class="example-box">
+						<strong class="label">Ví dụ thực tế:</strong>
+						<p>[Case study 3]</p>
+					</div>
+					<div class="solution-box">
+						<strong class="label">Giải pháp:</strong>
+						<ul class="solution-steps">
+							<li>[Solution step 1]</li>
+							<li>[Solution step 2]</li>
+							<li>[Solution step 3]</li>
+						</ul>
+					</div>
+					<div class="result-box">
+						<strong class="label">Kết quả:</strong>
+						<p>[Measurable results with <span class="highlight-success">metrics</span>]</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Application 04 -->
+			<div class="application-item">
+				<div class="application-header">
+					<span class="application-number">04</span>
+					<h3>[Tiêu đề ứng dụng 4]</h3>
+				</div>
+				<div class="application-content">
+					<div class="problem-box">
+						<strong class="label">Vấn đề:</strong>
+						<p>[Vấn đề kỹ thuật 4]</p>
+					</div>
+					<div class="example-box">
+						<strong class="label">Ví dụ thực tế:</strong>
+						<p>[Case study 4]</p>
+					</div>
+					<div class="solution-box">
+						<strong class="label">Giải pháp:</strong>
+						<ul class="solution-steps">
+							<li>[Solution step 1]</li>
+							<li>[Solution step 2]</li>
+							<li>[Solution step 3]</li>
+						</ul>
+					</div>
+					<div class="result-box">
+						<strong class="label">Kết quả:</strong>
+						<p>[Measurable results with <span class="highlight-success">metrics</span>]</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 	<!-- ============================================ -->

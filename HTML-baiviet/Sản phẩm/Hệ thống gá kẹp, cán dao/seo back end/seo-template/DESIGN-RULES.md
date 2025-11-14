@@ -678,6 +678,7 @@ Default styles apply
 5. **Readability**: Line-height 1.7 body text, 2-3 sentences/paragraph, bold keywords
 6. **Responsive**: Mobile stack grids, touch targets 44px, font-size minimum 16px
 
+
 ### Design Philosophy:
 > **"Less is more. Clear hierarchy, consistent spacing, high contrast, ample whitespace."**
 
@@ -689,7 +690,277 @@ Default styles apply
 
 ---
 
+## XI. APPLICATIONS SECTION STRUCTURE (Cấu trúc ứng dụng thực tế)
+
+### 1. HTML STRUCTURE (Cấu trúc HTML)
+
+```html
+<div class="section use-cases">
+  <h2>4 Ứng Dụng Thực Tế</h2>
+  <div class="application-grid">
+    <div class="application-item">
+      <div class="application-header">
+        <span class="application-number">01</span>
+        <h3>[Tiêu đề ứng dụng]</h3>
+      </div>
+      <div class="application-content">
+        <div class="problem-box">
+          <strong class="label">Vấn đề:</strong>
+          <p>[Mô tả vấn đề kỹ thuật]</p>
+        </div>
+        <div class="example-box">
+          <strong class="label">Ví dụ thực tế:</strong>
+          <p>[Case study cụ thể]</p>
+        </div>
+        <div class="solution-box">
+          <strong class="label">Giải pháp:</strong>
+          <ul class="solution-steps">
+            <li>[Bước 1]</li>
+            <li>[Bước 2]</li>
+            <li>[Bước 3]</li>
+          </ul>
+        </div>
+        <div class="result-box">
+          <strong class="label">Kết quả:</strong>
+          <p>[Kết quả đo lường được - số liệu cụ thể]</p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat for applications 02, 03, 04 -->
+  </div>
+</div>
+```
+
+### 2. DESIGN PRINCIPLES APPLIED
+
+**Hierarchy (Phân cấp):**
+- ✅ **Number badges (01-04)**: Circular 2.5rem, white overlay, clear visual order
+- ✅ **H3 headings**: Bold, clear application title
+- ✅ **4-box structure**: Problem → Example → Solution → Result (logical flow)
+- ✅ **Bold labels**: Strong emphasis for box types (font-size: 1.05rem)
+
+**Color-Coded Boxes (Contrast & Consistency):**
+- ✅ **Problem box**: Orange tint (#FFF3E0), warning border-left 4px
+- ✅ **Example box**: Purple tint (#F3E5F5), purple border-left 4px (#9C27B0)
+- ✅ **Solution box**: Blue tint (#E3F2FD), primary border-left 4px
+- ✅ **Result box**: Green tint (#E8F5E9), success border-left 4px
+
+**Negative Space:**
+- ✅ **Grid gap**: 1rem between application items
+- ✅ **Content padding**: 1.5rem inside each application-content
+- ✅ **Box spacing**: 1rem gap between problem/example/solution/result boxes
+- ✅ **Card breathing room**: Margin-bottom 2rem for section
+
+**Responsive:**
+- ✅ **Desktop**: 2-column grid `repeat(auto-fit, minmax(320px, 1fr))`
+- ✅ **Mobile (<768px)**: 1-column stack
+- ✅ **Reduced padding**: 1.5rem → 1.25rem on mobile
+- ✅ **Smaller fonts**: 1.05rem → 1rem labels on mobile
+- ✅ **Number badges**: 2.5rem → 2.25rem on mobile
+
+### 3. CSS CLASSES REFERENCE
+
+```css
+/* Section wrapper */
+.use-cases {
+  margin-bottom: 2rem;
+}
+
+/* Responsive grid */
+.application-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+/* Application card */
+.application-item {
+  background: var(--anmi-color-surface);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--anmi-border-color-soft);
+  transition: all 0.3s ease;
+}
+.application-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--anmi-color-primary);
+}
+
+/* Header with gradient */
+.application-header {
+  background: linear-gradient(135deg, 
+    var(--anmi-color-primary), 
+    var(--anmi-color-primary-strong));
+  color: white;
+  padding: 1.25rem;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Circular number badge */
+.application-number {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.3rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Content area */
+.application-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+/* Color-coded boxes */
+.problem-box {
+  background: var(--anmi-color-problem-bg);  /* #FFF3E0 */
+  border-left: 4px solid var(--anmi-color-warning);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.example-box {
+  background: var(--anmi-color-example-bg);  /* #F3E5F5 */
+  border-left: 4px solid #9C27B0;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.solution-box {
+  background: var(--anmi-color-solution-bg);  /* #E3F2FD */
+  border-left: 4px solid var(--anmi-color-primary);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.result-box {
+  background: var(--anmi-color-result-bg);  /* #E8F5E9 */
+  border-left: 4px solid var(--anmi-color-success);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* Labels */
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.problem-box .label { color: var(--anmi-color-warning); }
+.example-box .label { color: #9C27B0; }
+.solution-box .label { color: var(--anmi-color-primary); }
+.result-box .label { color: var(--anmi-color-success); }
+
+/* Solution steps list */
+.solution-steps {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+}
+
+/* Numbered steps (alternative) */
+.numbered-steps {
+  list-style: none;
+  counter-reset: step-counter;
+  padding-left: 0;
+}
+.numbered-steps li {
+  counter-increment: step-counter;
+  margin-bottom: 0.75rem;
+  padding-left: 2.5rem;
+  position: relative;
+}
+.numbered-steps li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--anmi-color-primary);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.75rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Highlight success metrics */
+.highlight-success {
+  color: var(--anmi-color-success);
+  font-weight: 700;
+}
+```
+
+### 4. CONTENT WRITING GUIDELINES
+
+**Problem Box:**
+- Mô tả vấn đề kỹ thuật cụ thể mà khách hàng gặp phải
+- Sử dụng thuật ngữ chuyên môn nhưng giải thích rõ ràng
+- 2-3 câu ngắn gọn
+
+**Example Box:**
+- Case study thực tế từ khách hàng (ví dụ: "Nhà máy ô tô X tại Bắc Ninh")
+- Điều kiện cụ thể: loại máy, vật liệu, yêu cầu
+- Vấn đề trước khi dùng sản phẩm
+
+**Solution Box:**
+- Liệt kê các bước giải pháp rõ ràng
+- Dùng bullet list hoặc numbered steps
+- Nhấn mạnh tính năng sản phẩm giải quyết vấn đề như thế nào
+
+**Result Box:**
+- Kết quả đo lường được: số liệu cụ thể
+- Lợi ích: tiết kiệm chi phí, tăng năng suất, giảm downtime
+- Dùng `.highlight-success` cho metrics (ví dụ: <span class="highlight-success">giảm 40% breakage</span>)
+
+### 5. EXAMPLE IMPLEMENTATION
+
+```html
+<div class="application-item">
+  <div class="application-header">
+    <span class="application-number">01</span>
+    <h3>Taro Lỗ Mù – Bảo Vệ Mũi Taro Không Bị Gãy</h3>
+  </div>
+  <div class="application-content">
+    <div class="problem-box">
+      <strong class="label">Vấn đề:</strong>
+      <p>Khi taro lỗ mù (blind hole), mũi taro dễ va chạm đáy lỗ nếu độ sâu không chính xác. Điều này gây gãy taro, đặc biệt với vật liệu cứng như thép hợp kim hoặc inox 304.</p>
+    </div>
+    <div class="example-box">
+      <strong class="label">Ví dụ thực tế:</strong>
+      <p>Nhà máy cơ khí Hà Nội taro M16×2.0 sâu 35mm trên block động cơ gang xám GG25. Sử dụng rigid holder → gãy taro 3-4 cây/tuần, mất 1.2 triệu/tháng chi phí tool.</p>
+    </div>
+    <div class="solution-box">
+      <strong class="label">Giải pháp:</strong>
+      <ul class="solution-steps">
+        <li>Thay rigid holder bằng <strong>BT40 Tension-Compression Tapping Holder</strong></li>
+        <li>Thiết lập floating ±0.3mm để taro tự động "nhả" khi chạm đáy</li>
+        <li>Giảm torque CNC xuống 70% (từ 50Nm → 35Nm) vì holder có torque protection</li>
+      </ul>
+    </div>
+    <div class="result-box">
+      <strong class="label">Kết quả:</strong>
+      <p>Sau 3 tháng sử dụng: <span class="highlight-success">giảm 90% tỷ lệ gãy taro</span> (từ 3-4 cây/tuần → 0-1 cây/tháng), tiết kiệm 900k/tháng chi phí tool, tăng uptime máy 15%.</p>
+    </div>
+  </div>
+</div>
+```
+
+---
+
 **Version History:**
+- v1.1.0 (2025-11-14): Added Applications Section Structure (Section XI)
 - v1.0.0 (2025-11-11): Initial design rules documentation
 
 **References:**
@@ -697,3 +968,4 @@ Default styles apply
 - Material Design: https://material.io/design
 - Apple Human Interface Guidelines: https://developer.apple.com/design/human-interface-guidelines/
 - Refactoring UI: https://www.refactoringui.com/
+
