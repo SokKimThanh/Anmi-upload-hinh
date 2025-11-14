@@ -554,14 +554,28 @@ schema_type: "Product"
 <!-- HƯỚNG DẪN SỬ DỤNG TEMPLATE -->
 <!-- ============================================ -->
 <!--
-TEMPLATE CẬP NHẬT THEO CSS v1.3.2 (November 7, 2025)
+TEMPLATE CẬP NHẬT THEO CSS v1.3.6 (November 14, 2025)
 
 ✅ ĐÃ LOẠI BỎ:
 - Tất cả inline styles (đã thay bằng class)
 - Ảnh ứng dụng (không cần thiết theo yêu cầu)
 - Thẻ <br> (CSS đã vô hiệu hóa)
+- Simple list-based use cases (thay bằng structured application grid)
 
-✅ ĐÃ BỔ SUNG:
+✅ ĐÃ BỔ SUNG v1.3.6:
+- **Applications Section Structure** (Problem → Example → Solution → Result)
+  - .application-grid: 2-column responsive grid
+  - .application-item: Card with hover effects
+  - .application-header: Gradient background with number badges (01-04)
+  - .application-content: 4 color-coded boxes
+  - .problem-box: Orange tint (#FFF3E0) - Vấn đề kỹ thuật
+  - .example-box: Purple tint (#F3E5F5) - Case study thực tế
+  - .solution-box: Blue tint (#E3F2FD) - Giải pháp từng bước
+  - .result-box: Green tint (#E8F5E9) - Kết quả đo lường
+  - .highlight-success: Green bold text cho metrics
+- **Design Principles**: Hierarchy, consistency, negative space, contrast (18.96:1), readability, responsive
+
+✅ ĐÃ BỔ SUNG v1.3.2:
 - Class structure theo CSS mới nhất
 - Product images grid (2-column layout)
 - Comparison table styles
@@ -570,6 +584,47 @@ TEMPLATE CẬP NHẬT THEO CSS v1.3.2 (November 7, 2025)
 - Contact image responsive (desktop/mobile)
 - Lightbox ready (bordered-img class)
 
+✅ APPLICATIONS SECTION STRUCTURE (MỚI v1.3.6):
+<div class="section use-cases">
+  <h2>4 Ứng Dụng Thực Tế</h2>
+  <div class="application-grid">
+    <div class="application-item">
+      <div class="application-header">
+        <span class="application-number">01</span>
+        <h3>[Tiêu đề ứng dụng]</h3>
+      </div>
+      <div class="application-content">
+        <div class="problem-box">
+          <strong class="label">Vấn đề:</strong>
+          <p>[Vấn đề kỹ thuật]</p>
+        </div>
+        <div class="example-box">
+          <strong class="label">Ví dụ thực tế:</strong>
+          <p>[Case study cụ thể]</p>
+        </div>
+        <div class="solution-box">
+          <strong class="label">Giải pháp:</strong>
+          <ul class="solution-steps">
+            <li>[Bước 1]</li>
+            <li>[Bước 2]</li>
+          </ul>
+        </div>
+        <div class="result-box">
+          <strong class="label">Kết quả:</strong>
+          <p>[Metrics: <span class="highlight-success">giảm XX%</span>]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+✅ CONTENT WRITING GUIDELINES (Applications):
+- **Problem Box**: Vấn đề kỹ thuật cụ thể (2-3 câu ngắn gọn)
+- **Example Box**: Case study thực tế (nhà máy, máy, vật liệu, vấn đề cũ)
+- **Solution Box**: Giải pháp từng bước (bullet list hoặc numbered steps)
+- **Result Box**: Kết quả đo lường (% giảm breakage, tiết kiệm chi phí, tăng uptime)
+  - Dùng <span class="highlight-success">XX%</span> cho metrics
+  
 ✅ RESPONSIVE IMAGES:
 - Desktop: Hiển thị .contact-image-desktop (2 ảnh: hotline + địa chỉ)
 - Mobile: Hiển thị .contact-image-mobile (1 ảnh hotline to rõ)
@@ -578,6 +633,7 @@ TEMPLATE CẬP NHẬT THEO CSS v1.3.2 (November 7, 2025)
 <section class="[slug]">
   <figure class="product-image"> + <img class="bordered-img">
   <div class="section product-intro|specifications|use-cases|...">
+  <div class="application-grid"> (v1.3.6 - responsive 2-column)
   <table class="comparison-table">
   <div class="product-images-grid">
   <div class="guide-section">
@@ -596,29 +652,53 @@ TEMPLATE CẬP NHẬT THEO CSS v1.3.2 (November 7, 2025)
 6. Tables PHẢI có thead/tbody structure
 7. Schema markup BẮT BUỘC ở cuối
 8. Contact images PHẢI có cả desktop & mobile variants
+9. Applications PHẢI dùng 4-box structure (problem, example, solution, result)
+10. Metrics PHẢI dùng .highlight-success class
 
 ✅ CHECKLIST KHI TẠO BÀI MỚI:
 □ Frontmatter đầy đủ (title, slug, keywords, catalog_page, v.v.)
 □ H1 có cấu trúc: [Tên SP] – [Số] [Đặc điểm] Cho [Ứng dụng]
 □ Product intro có download button
 □ Specifications table đầy đủ
-□ Use cases có 5+ examples thực tế
+□ Use cases có 4 applications với 4-box structure (v1.3.6)
+□ Applications có metrics cụ thể với .highlight-success
 □ FAQ có 4+ câu hỏi phổ biến
 □ Contact section có đủ 4 offices
 □ Contact images có cả desktop & mobile
 □ Schema markup đầy đủ (Product, Breadcrumb, FAQ)
 
 ✅ PLUGIN CSS AUTO-INJECT:
-Plugin sẽ tự động inject anmi-holder-products.css khi:
+Plugin sẽ tự động inject anmi-holder-products.css v1.3.6 khi:
 - Detect slug parent: he-thong-ga-kep-can-dao
 - Detect class: bt-*, hsk-*, nbh*, nbj*, ewn*, rbh*, cbh*, ck-*, v.v.
 - Apply styles toàn bộ section
 - Apply lightbox cho .bordered-img
 - Apply responsive breakpoints
+- Apply applications section structure (v1.3.6)
 
 ✅ ACCESSIBILITY:
 - Contrast ratio: ≥18.96:1 (#000000 trên #FCF7EC)
 - Focus visible: 2px outline #0055AA
 - Alt text: Mô tả chi tiết, có keywords
 - Schema markup: Rich snippets
+- Color-coded boxes: Border-left 4px cho accessibility
+
+✅ DESIGN PRINCIPLES (DESIGN-RULES.md):
+- **Hierarchy**: Number badges → H3 → 4-box structure → Labels
+- **Consistency**: 1rem gaps, color-coded boxes, uniform padding
+- **Negative Space**: 1.5rem content padding, 1rem box spacing
+- **Contrast**: Orange/Purple/Blue/Green tints, 4px borders
+- **Readability**: 1.05rem labels, 1.7 line-height, clear structure
+- **Responsive**: 2-column desktop → 1-column mobile
+
+✅ VERSION HISTORY:
+- v1.3.6 (2025-11-14): Added Applications Section Structure
+- v1.3.2 (2025-11-07): Updated class structure, responsive images
+- v1.0.0 (2025-10-XX): Initial template
+
+✅ REFERENCES:
+- DESIGN-RULES.md: Section XI (Applications Section Structure)
+- anmi-holder-products.css: v1.3.6 (USE CASES section)
+- Example: 24-bt-tapping-tension-compression-holder.seo.html
 -->
+
