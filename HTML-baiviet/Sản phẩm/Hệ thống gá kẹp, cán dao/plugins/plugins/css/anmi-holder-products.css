@@ -2,7 +2,7 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.3.6
+ * Version: 1.3.7
  * Last Updated: November 14, 2025
  * Author: An Mi Tools Technical Team
  * 
@@ -12,6 +12,13 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, nt-*, cat-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.3.7 (2025-11-14):
+ * - FIX: Application header h3 specificity issue
+ * - Changed selector from `.application-header h3` to `.application-item .application-header h3`
+ * - Added !important to font-weight, margin, and color to override general h3 styles (line 350)
+ * - Changed color from var(--anmi-color-on-primary) to white !important for better clarity
+ * - Fixes issue where general section h3 styles (clamp(1.18rem, 2.1vw, 1.31rem)) were overriding application header
+ * 
  * v1.3.6 (2025-11-14):
  * - USE CASES SECTION REDESIGN: Complete redesign of applications section with design principles
  * - Design Principles: Applied Hierarchy, Consistency, Negative Space, Contrast Ratio, Readability, Responsive
@@ -897,12 +904,13 @@ details[open] summary .toggle {
     vertical-align: middle;
 }
 
-.application-header h3 {
+/* Override general h3 styles for application header */
+.application-item .application-header h3 {
     display: inline;
     font-size: clamp(1.125rem, 2vw, 1.25rem);
-    font-weight: 600;
-    margin: 0;
-    color: var(--anmi-color-on-primary);
+    font-weight: 600 !important;
+    margin: 0 !important;
+    color: white !important;
     line-height: 1.3;
 }
 
