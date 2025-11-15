@@ -1,0 +1,8 @@
+*.bak
+# Editor folders
+.vscode/
+# Python cache
+__pycache__/
+# OS files
+.DS_Store
+Thumbs.db
