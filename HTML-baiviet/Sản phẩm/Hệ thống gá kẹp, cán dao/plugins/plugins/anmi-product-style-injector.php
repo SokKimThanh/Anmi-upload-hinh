@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Tools - Product Style Injector
  * Plugin URI: https://anmitools.com/plugins/product-style-injector
  * Description: Automatically inject common CSS for all An Mi Tools holder products. Detects product section and loads unified stylesheet.
- * Version: 2.1.6
+ * Version: 2.1.8
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: An Mi Tools Vietnam
@@ -16,10 +16,12 @@
  * Update URI: false
  * 
  * @package AnMiProductStyleInjector
- * @version 2.1.6
+ * @version 2.1.8
  * @since 1.0.0
  * 
  * Changelog:
+ * 2.1.8 - Added contact-slider.js enqueue for mobile contact slider with swipe support
+ * 2.1.7 - Added tab-navigation.js enqueue for product tab switching functionality
  * 2.1.6 - CRITICAL FIX: Keep wpautop enabled, JS only removes <p> INSIDE grid containers with comments
  * 2.1.5 - CSS v1.3.2: Added image lightbox functionality for click-to-zoom product images
  * 2.1.4 - CSS v1.3.1: Added .product-images-grid for 2-column image layout (NT-CK NBJ16)
@@ -48,7 +50,7 @@ class AnMi_Product_Style_Injector {
      * 
      * @var string
      */
-    private $version = '2.1.6';
+    private $version = '2.1.7';
     
     /**
      * CSS directory path (relative to plugin)
@@ -245,6 +247,24 @@ class AnMi_Product_Style_Injector {
             wp_enqueue_script(
                 'anmi-image-lightbox',
                 plugins_url('js/image-lightbox.js', __FILE__),
+                array(),
+                $version,
+                true // Load in footer
+            );
+            
+            // ✅ Enqueue Tab Navigation JavaScript
+            wp_enqueue_script(
+                'anmi-tab-navigation',
+                plugins_url('js/tab-navigation.js', __FILE__),
+                array(),
+                $version,
+                true // Load in footer
+            );
+            
+            // ✅ Enqueue Contact Slider JavaScript (mobile swipe support)
+            wp_enqueue_script(
+                'anmi-contact-slider',
+                plugins_url('js/contact-slider.js', __FILE__),
                 array(),
                 $version,
                 true // Load in footer
