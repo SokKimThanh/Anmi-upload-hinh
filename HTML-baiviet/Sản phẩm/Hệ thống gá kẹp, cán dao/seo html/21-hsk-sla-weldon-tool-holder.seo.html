@@ -498,7 +498,7 @@
   </script>
 
   <style>
-    /* Tab Navigation Styles */
+    /* Tab Navigation Styles - Uses existing :root variables from anmi-holder-products.css */
     .product-tabs {
       margin: 30px 0;
     }
@@ -506,7 +506,7 @@
     .tab-buttons {
       display: flex;
       gap: 10px;
-      border-bottom: 2px solid #e0e0e0;
+      border-bottom: 2px solid var(--anmi-border-color-card, #e0e0e0);
       margin-bottom: 20px;
       flex-wrap: wrap;
     }
@@ -519,20 +519,20 @@
       cursor: pointer;
       font-size: 16px;
       font-weight: 500;
-      color: #666;
+      color: var(--anmi-color-text-muted, #666);
       transition: all 0.3s ease;
       position: relative;
       bottom: -2px;
     }
 
     .tab-btn:hover {
-      color: #1a73e8;
-      background: #f0f7ff;
+      color: var(--anmi-color-primary, #0055AA);
+      background: var(--anmi-color-surface-info, #f0f7ff);
     }
 
     .tab-btn.active {
-      color: #1a73e8;
-      border-bottom-color: #1a73e8;
+      color: var(--anmi-color-primary, #0055AA);
+      border-bottom-color: var(--anmi-color-primary, #0055AA);
       font-weight: 600;
     }
 
