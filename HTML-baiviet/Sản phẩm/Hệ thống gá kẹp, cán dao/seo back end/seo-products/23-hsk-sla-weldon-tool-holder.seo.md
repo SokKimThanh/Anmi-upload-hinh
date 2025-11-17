@@ -1,6 +1,6 @@
 ---
 title: "HSK-SLA Weldon Holder – 8 Models Side Lock cho HSK 50A (Φ6-32mm)"
-slug: "hsk-sla-weldon-tool-holder"
+slug: "hsk-sla-weldon-holder"
 primary_keyword: "hsk-sla weldon holder"
 tags: "HSK-SLA, weldon holder, side lock, tool holder, CNC, HSK 50A"
 category: "HSK"
