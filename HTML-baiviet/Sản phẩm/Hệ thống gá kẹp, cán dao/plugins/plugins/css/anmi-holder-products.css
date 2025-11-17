@@ -2,8 +2,8 @@
  * An Mi Holder Products - Universal Styles
  * Slug Parent: he-thong-ga-kep-can-dao
  * Áp dụng cho: Tất cả sản phẩm trong danh mục "Hệ thống gá kẹp, cán dao"
- * Version: 1.3.8
- * Last Updated: November 14, 2025
+ * Version: 1.3.9
+ * Last Updated: November 17, 2025
  * Author: An Mi Tools Technical Team
  * 
  * File CSS chung duy nhất cho tất cả 40+ sản phẩm holder.
@@ -12,6 +12,22 @@
  * - Slug con: bt-sk-*, bt-ger-*, hsk-*, nbh2084-*, nt-*, cat-*, v.v.
  * 
  * === CHANGELOG ===
+ * v1.3.9 (2025-11-17):
+ * - TAB NAVIGATION: Added comprehensive tab navigation system for content organization
+ * - Purpose: Reduce content overwhelm, improve UX by organizing sections into tabs
+ * - Structure: .product-tabs → .tab-buttons → .tab-btn, .tab-contents → .tab-content
+ * - Features: 
+ *   • Clean button-based navigation with icons support (📋, ⭐, 📊, 🔧, 📞)
+ *   • Active state with bottom border (3px solid primary color)
+ *   • Smooth fade-in animation (0.4s) when switching tabs
+ *   • Hover effects: primary color text + info surface background
+ *   • localStorage persistence: remembers last viewed tab
+ *   • Auto-scroll to tabs when switching for better UX
+ * - Responsive: Horizontal scroll on mobile, nowrap buttons, touch-friendly
+ * - CSS Variables Used: --anmi-color-primary, --anmi-color-text-muted, --anmi-color-surface-info, --anmi-border-color-card
+ * - JavaScript Required: Tab switching logic with localStorage (inline in HTML)
+ * - Use Cases: Multi-section product pages (overview, features, specs, applications, contact)
+ * 
  * v1.3.8 (2025-11-14):
  * - CRITICAL FIX: Mobile contact image responsive behavior
  * - Added .contact-image-mobile { display: block !important; } in @media (max-width: 768px)
@@ -2801,6 +2817,93 @@ img {
         width: 90%;
         font-size: 0.92rem;
     }
+}
+
+/* ============================================ */
+/* TAB NAVIGATION STYLES */
+/* ============================================ */
+/* Added: November 17, 2025
+ * Purpose: Tab-based content organization for better UX
+ * Applied to: Product pages with multiple content sections
+ * Features: Smooth transitions, localStorage persistence, responsive design
+ */
+
+.product-tabs {
+    margin: 30px 0;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid var(--anmi-border-color-card);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--anmi-color-text-muted);
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: -2px;
+}
+
+.tab-btn:hover {
+    color: var(--anmi-color-primary);
+    background: var(--anmi-color-surface-info);
+}
+
+.tab-btn.active {
+    color: var(--anmi-color-primary);
+    border-bottom-color: var(--anmi-color-primary);
+    font-weight: 600;
+}
+
+.tab-content {
+    display: none;
+    animation: tabFadeIn 0.4s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes tabFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive tabs for mobile */
+@media (max-width: 768px) {
+    .tab-buttons {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    .tab-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
+/* Tab content sections spacing */
+.tab-content .section {
+    margin-bottom: 0;
 }
 
 /* ============================================ */
