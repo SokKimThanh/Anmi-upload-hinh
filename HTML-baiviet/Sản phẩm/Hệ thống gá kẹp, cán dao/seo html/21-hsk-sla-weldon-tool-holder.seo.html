@@ -19,6 +19,21 @@
 
   <h1>HSK-SLA Weldon Tool Holder – Side Lock System for Flat Shank End Mills (HSK 50A)</h1>
 
+  <!-- Tab Navigation -->
+  <div class="product-tabs">
+    <div class="tab-buttons">
+      <button class="tab-btn active" data-tab="overview">📋 Tổng Quan</button>
+      <button class="tab-btn" data-tab="features">⭐ Tính Năng</button>
+      <button class="tab-btn" data-tab="specifications">📊 Thông Số</button>
+      <button class="tab-btn" data-tab="applications">🔧 Ứng Dụng</button>
+      <button class="tab-btn" data-tab="contact">📞 Liên Hệ</button>
+    </div>
+
+    <!-- Tab Content Container -->
+    <div class="tab-contents">
+
+      <!-- TAB 1: Tổng Quan -->
+      <div class="tab-content active" id="overview">
   <div class="section product-intro">
     <h2>HSK-SLA Weldon Tool Holder – 8 Models Side Lock cho HSK 50A Spindle</h2>
     <p><strong>HSK-SLA weldon tool holder</strong> sử dụng side lock screw để kẹp chặt tool có flat shank (mặt phẳng
@@ -46,7 +61,11 @@
       </a>
     </div>
   </div>
+      </div>
+      <!-- END TAB 1: Tổng Quan -->
 
+      <!-- TAB 2: Tính Năng -->
+      <div class="tab-content" id="features">
   <div class="section product-features">
     <h2>7 Tính Năng Vượt Trội Của HSK-SLA Weldon Tool Holder</h2>
     <ol>
@@ -68,7 +87,11 @@
         interchangeability chuẩn DIN.</li>
     </ol>
   </div>
+      </div>
+      <!-- END TAB 2: Tính Năng -->
 
+      <!-- TAB 3: Thông Số -->
+      <div class="tab-content" id="specifications">
   <div class="section specifications">
     <h2>Thông Số Kỹ Thuật HSK-SLA Weldon Tool Holder</h2>
     <table>
@@ -219,7 +242,11 @@
       theo catalog page 38. D = tool shank diameter, L = holder length, C = clamping depth, h = flat depth, H/H1 =
       holder height dimensions. Lock screw size tăng theo shank diameter để đảm bảo lực kẹp đủ mạnh.</p>
   </div>
+      </div>
+      <!-- END TAB 3: Thông Số -->
 
+      <!-- TAB 4: Ứng Dụng -->
+      <div class="tab-content" id="applications">
   <div class="section applications">
     <h2>4 Ứng Dụng Thực Tế [HSK-SLA Weldon Tool Holder]</h2>
     <div class="application-grid">
@@ -337,7 +364,11 @@
       </div>
     </div>
   </div>
+      </div>
+      <!-- END TAB 4: Ứng Dụng -->
 
+      <!-- TAB 5: Liên Hệ -->
+      <div class="tab-content" id="contact">
   <div class="section support-contact">
     <h2>📞 Liên Hệ Tư Vấn & Đặt Hàng</h2>
     <p><strong>An Mi Tools</strong> cung cấp HSK-SLA weldon tool holder chính hãng cho HSK 50A spindle, bảo hành 24
@@ -424,6 +455,13 @@
       <figcaption>Gọi ngay 091 519 2325 để được tư vấn sản phẩm</figcaption>
     </figure>
   </div>
+      </div>
+      <!-- END TAB 5: Liên Hệ -->
+
+    </div>
+    <!-- END Tab Contents -->
+  </div>
+  <!-- END Product Tabs -->
 
 
   <script type="application/ld+json">
@@ -457,5 +495,127 @@
       {"@type": "ListItem", "position": 3, "name": "HSK-SLA Weldon Tool Holder (HSK 50A)", "item": "https://anmitools.com/san-pham/hsk-sla-weldon-tool-holder/"}
     ]
   }
+  </script>
+
+  <style>
+    /* Tab Navigation Styles */
+    .product-tabs {
+      margin: 30px 0;
+    }
+
+    .tab-buttons {
+      display: flex;
+      gap: 10px;
+      border-bottom: 2px solid #e0e0e0;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 12px 24px;
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      color: #666;
+      transition: all 0.3s ease;
+      position: relative;
+      bottom: -2px;
+    }
+
+    .tab-btn:hover {
+      color: #1a73e8;
+      background: #f0f7ff;
+    }
+
+    .tab-btn.active {
+      color: #1a73e8;
+      border-bottom-color: #1a73e8;
+      font-weight: 600;
+    }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive tabs for mobile */
+    @media (max-width: 768px) {
+      .tab-buttons {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+      }
+
+      .tab-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+
+    /* Tab content sections spacing */
+    .tab-content .section {
+      margin-bottom: 0;
+    }
+  </style>
+
+  <script>
+    // Tab Navigation Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const targetTab = this.getAttribute('data-tab');
+
+          // Remove active class from all buttons and contents
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+
+          // Add active class to clicked button and corresponding content
+          this.classList.add('active');
+          document.getElementById(targetTab).classList.add('active');
+
+          // Save active tab to localStorage
+          localStorage.setItem('activeTab', targetTab);
+
+          // Scroll to top of tab content smoothly
+          document.querySelector('.product-tabs').scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+          });
+        });
+      });
+
+      // Restore last active tab from localStorage
+      const savedTab = localStorage.getItem('activeTab');
+      if (savedTab && document.getElementById(savedTab)) {
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        document.querySelector(`[data-tab="${savedTab}"]`).classList.add('active');
+        document.getElementById(savedTab).classList.add('active');
+      }
+    });
   </script>
 </section>
