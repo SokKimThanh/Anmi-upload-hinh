@@ -4,6 +4,9 @@
  * Author: AnMi Tools Team - Technical Content Writing
  */
 
+/* Import Google Fonts - Tối ưu cho tiếng Việt và mobile */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap');
+
 /* ===================================
    ROOT VARIABLES - CSS CUSTOM PROPERTIES
    =================================== */
@@ -35,8 +38,8 @@
     --anmi-info: #17a2b8;
     
     /* Typography - Tối ưu hierarchy */
-    --anmi-font-family-base: 'Roboto', 'Segoe UI', -apple-system, sans-serif;
-    --anmi-font-family-heading: 'Inter', 'Segoe UI', 'Arial', sans-serif; /* Font hỗ trợ tiếng Việt tốt */
+    --anmi-font-family-base: 'Noto Sans', -apple-system, 'Segoe UI', sans-serif; /* Rõ nét trên mobile */
+    --anmi-font-family-heading: 'Lexend', 'Noto Sans', 'Arial', sans-serif; /* Dễ đọc, hỗ trợ tiếng Việt xuất sắc */
     --anmi-font-size-base: 18px; /* Tăng kích thước cho dễ đọc */
     --anmi-line-height-base: 1.8; /* Tăng line-height */
     
