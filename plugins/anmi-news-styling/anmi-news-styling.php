@@ -4,7 +4,7 @@
  * Plugin URI: https://anmitools.com
  * Description: Tự động inject CSS và JS cho các trang tin tức (Truyền thông, Tin nội bộ, Báo chí)
  * Version: 1.0.0
- * Author: Thanh - Content Marketing / Nội dung Kỹ thuật
+ * Author: AnMi Tools Team
  * Author URI: https://anmitools.com
  * License: GPL v2 or later
  * Text Domain: anmi-news-styling
