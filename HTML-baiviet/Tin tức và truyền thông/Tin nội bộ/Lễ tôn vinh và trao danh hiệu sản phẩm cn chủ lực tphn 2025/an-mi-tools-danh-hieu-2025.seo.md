@@ -1,24 +1,24 @@
 ---
 title: "An Mi Tools Vinh Dự Nhận Danh Hiệu Sản Phẩm Công Nghiệp Chủ Lực Hà Nội 2025"
 slug: "an-mi-tools-danh-hieu-2025"
-category: "Tin tức nội bộ"
+category: "Tin truyền thông"
 primary_keyword: "An Mi Tools danh hiệu 2025"
 secondary_keywords:
   - "danh hiệu sản phẩm công nghiệp chủ lực"
   - "Hà Nội 2025"
   - "dụng cụ hợp kim cứng carbide"
   - "An Mi Tools"
-description: "An Mi Tools được Chính phủ Hà Nội công nhận danh hiệu Sản phẩm Công nghiệp Chủ Lực 2025 cho dụng cụ hợp kim cứng (Carbide). Minh chứng cho chất lượng vượt trội, năng lực cạnh tranh và đóng góp thiết thực vào ngành cơ khí Việt Nam."
+description: "An Mi Tools được Chính phủ Hà Nội công nhận danh hiệu Sản phẩm Công nghiệp Chủ Lực 2025 cho dụng cụ hợp kim cứng (Carbide). Minh chứng cho chất lượng vượt trội, năng lực cạnh tranh, đổi mới công nghệ và đóng góp thiết thực vào phát triển bền vững ngành cơ khí Việt Nam."
 seo_score_target: ">= 70"
 focus_keyphrase: "An Mi Tools danh hiệu 2025"
 readability_score: "Fluent (green)"
-author: "Thanh - Content Marketing"
+author: "Thanh - Content Marketing / Nội dung Kỹ thuật"
 date_published: "2025-11-15"
 date_modified: "2025-11-18"
 og_title: "An Mi Tools Nhận Danh Hiệu Sản Phẩm Công Nghiệp Chủ Lực Hà Nội 2025"
 og_description: "An Mi Tools vinh dự nhận danh hiệu sản phẩm công nghiệp chủ lực do Hà Nội công nhận năm 2025"
-og_image: "z7232300814661_57dca5326a5a0258dec9c89fdf650e6f.jpg"
-canonical_url: "https://anmitools.com/tin-tuc-noi-bo/an-mi-tools-danh-hieu-2025/"
+og_image: "1.jpg"
+canonical_url: "https://anmitools.com/an-mi-tools-danh-hieu-2025/truyen-thong/"
 ---
 
 <section class="an-mi-tools-danh-hieu-2025">
@@ -41,6 +41,12 @@ Trong bối cảnh **sản phẩm công nghiệp chủ lực** đang trở thàn
 
 Tổng doanh thu của 35 sản phẩm được công nhận đạt gần **42 nghìn tỷ đồng**, trong đó doanh thu xuất khẩu đạt khoảng **190 triệu USD**. Con số này không chỉ phản ánh quy mô và tầm ảnh hưởng của các **danh hiệu sản phẩm công nghiệp** được tôn vinh mà còn cho thấy tiềm năng phát triển mạnh mẽ của ngành công nghiệp chế tạo **Hà Nội 2025**.
 
+### Thông tin chính thức về chứng nhận
+
+Danh hiệu **Sản phẩm Công nghiệp Chủ lực Thành phố Hà Nội năm 2025** (tiếng Anh: **Hanoi Major Industrial Products 2025**) được trao cho **Công ty TNHH Dụng cụ An Mi** theo **Quyết định số 5537/QĐ-UBND** do Ủy ban Nhân dân Thành phố Hà Nội ban hành ngày **13 tháng 11 năm 2025**. Quyết định được phê duyệt bởi **Ông Nguyễn Mạnh Quyền - Phó Chủ tịch Ủy ban Nhân dân Thành phố Hà Nội**.
+
+Chứng nhận có giá trị trong **36 tháng** kể từ ngày cấp, khẳng định sự công nhận lâu dài của chính quyền Thủ đô đối với năng lực sản xuất, chất lượng sản phẩm và đóng góp của An Mi Tools cho nền công nghiệp Hà Nội và Việt Nam.
+
 ### Tiêu chí xét chọn nghiêm ngặt
 
 Để đạt được danh hiệu này, các sản phẩm phải vượt qua nhiều **tiêu chí xét chọn** khắt khe. Trong đó, các yếu tố then chốt bao gồm:
@@ -59,7 +65,7 @@ Việc **An Mi Tools** được công nhận trong số 28 doanh nghiệp tiêu 
 
 ### Hành trình xây dựng thương hiệu
 
-**An Mi Tools** được thành lập vào năm **2009** dưới sự lãnh đạo của **CEO Nguyễn Hồng Phong** với tầm nhìn xây dựng một doanh nghiệp dẫn đầu Việt Nam trong lĩnh vực chế tạo dụng cụ cắt gọt và cơ khí chính xác. Khởi đầu từ một xưởng sản xuất nhỏ, sau hơn 16 năm phát triển, công ty đã trở thành đối tác tin cậy của nhiều tập đoàn lớn trong và ngoài nước.
+**Công ty TNHH Dụng cụ An Mi (An Mi Tools)** được thành lập vào năm **2009** dưới sự lãnh đạo của **CEO Nguyễn Hồng Phong** với tầm nhìn xây dựng một doanh nghiệp dẫn đầu Việt Nam trong lĩnh vực chế tạo dụng cụ cắt gọt và cơ khí chính xác. Với slogan **"SYNCHRONOUS SOLUTION"** (Giải pháp đồng bộ), công ty cam kết mang đến các giải pháp toàn diện cho khách hàng. Khởi đầu từ một xưởng sản xuất nhỏ, sau hơn 16 năm phát triển, công ty đã trở thành đối tác tin cậy của nhiều tập đoàn lớn trong và ngoài nước.
 
 **Lịch sử An Mi Tools** ghi dấu bằng những bước tiến vững chắc. Công ty chuyên sâu vào các lĩnh vực: **chế tạo dụng cụ cắt gọt**, **mài chính xác**, **chế tạo chi tiết cơ khí chính xác** và **dịch vụ tráng phủ PVD**. Danh sách khách hàng của **An Mi Tools** bao gồm các tên tuổi lớn như **Samsung**, **Honda**, **Toyota**, cùng nhiều doanh nghiệp uy tín từ Đức và các đối tác trong ngành ô tô, xe máy, hàng không, dầu khí, y tế và điện tử.
 
@@ -71,7 +77,7 @@ Lực lượng lao động của công ty đã tăng trưởng lên hơn **300 n
 
 ### Tăng trưởng doanh thu ấn tượng
 
-Con số **doanh thu** của **An Mi Tools** là minh chứng rõ nét cho quỹ đạo **phát triển doanh nghiệp** vượt bậc. Từ mức **235 tỷ đồng** vào năm **2022**, công ty đặt mục tiêu đạt doanh thu **800-1.000 tỷ đồng** vào năm **2025** và hướng tới con số **2.000 tỷ đồng** vào năm **2030**. Tốc độ tăng trưởng này không chỉ đến từ việc mở rộng quy mô sản xuất mà còn nhờ vào chiến lược đầu tư vào nghiên cứu phát triển (R&D), ứng dụng công nghệ tiên tiến và xây dựng mối quan hệ bền vững với khách hàng.
+Con số **doanh thu** của **An Mi Tools** là minh chứng rõ nét cho quỹ đạo **phát triển doanh nghiệp** vượt bậc. Từ mức **220 tỷ đồng** vào năm **2021**, tăng lên **235 tỷ đồng** năm **2022**, và đạt **260 tỷ đồng** năm **2023**, công ty đặt mục tiêu đạt doanh thu **800-1.000 tỷ đồng** vào năm **2025** và hướng tới con số **2.000 tỷ đồng** vào năm **2030**. Tốc độ tăng trưởng này không chỉ đến từ việc mở rộng quy mô sản xuất mà còn nhờ vào chiến lược đầu tư vào nghiên cứu phát triển (R&D), ứng dụng công nghệ tiên tiến và xây dựng mối quan hệ bền vững với khách hàng.
 
 ### Sứ mệnh và khát vọng
 
@@ -87,14 +93,14 @@ Con số **doanh thu** của **An Mi Tools** là minh chứng rõ nét cho quỹ
     <a href="1.jpg" data-lightbox="anmi-danh-hieu-2025" data-title="Lễ tôn vinh An Mi Tools">
       <img src="1.jpg" alt="Lãnh đạo Sở Công Thương trao danh hiệu sản phẩm công nghiệp chủ lực cho An Mi Tools" />
     </a>
-    <figcaption>Lãnh đạo Sở Công Thương Hà Nội trao danh hiệu Sản phẩm Công nghiệp Chủ lực cho đại diện An Mi Tools trong lễ tôn vinh ngày 15/11/2025</figcaption>
+    <figcaption>Lãnh đạo Sở Công Thương Hà Nội trao danh hiệu Sản phẩm Công nghiệp Chủ lực cho đại diện Công ty TNHH Dụng cụ An Mi trong lễ tôn vinh ngày 15/11/2025. Quyết định 5537/QĐ-UBND được phê duyệt bởi Ông Nguyễn Mạnh Quyền - Phó Chủ tịch UBND Thành phố Hà Nội, ghi nhận đóng góp xuất sắc của An Mi Tools cho ngành công nghiệp Thủ đô.</figcaption>
   </figure>
 
   <figure class="image-wrapper">
     <a href="z7232300798533_7a8a9687a33b492869a871958597148f.jpg" data-lightbox="anmi-danh-hieu-2025" data-title="Chứng chỉ danh hiệu">
       <img src="z7232300798533_7a8a9687a33b492869a871958597148f.jpg" alt="Chứng chỉ Sản phẩm Công nghiệp Chủ lực Hà Nội 2025 của An Mi Tools" />
     </a>
-    <figcaption>Chứng chỉ Sản phẩm Công nghiệp Chủ lực Thành phố Hà Nội 2025 do Ủy ban Nhân dân Hà Nội cấp cho An Mi Tools, công nhận dụng cụ hợp kim cứng (Carbide) đạt tiêu chuẩn quốc tế</figcaption>
+    <figcaption>Chứng chỉ Sản phẩm Công nghiệp Chủ lực Thành phố Hà Nội 2025 (Hanoi Major Industrial Products 2025) do Ủy ban Nhân dân Hà Nội cấp cho Công ty TNHH Dụng cụ An Mi, công nhận dụng cụ hợp kim cứng (Carbide) đạt tiêu chuẩn quốc tế. Chứng chỉ có giá trị 36 tháng, hiệu lực từ ngày 13/11/2025.</figcaption>
   </figure>
 </div>
 
@@ -124,14 +130,14 @@ An Mi Tools tự hào sở hữu năng lực sản xuất các loại dao đặc
     <a href="z7232300798423_02b06b49d1defde09f9c5f4109d5dd48.jpg" data-lightbox="anmi-danh-hieu-2025" data-title="Lãnh đạo An Mi Tools">
       <img src="z7232300798423_02b06b49d1defde09f9c5f4109d5dd48.jpg" alt="Lãnh đạo An Mi Tools tại lễ tôn vinh sản phẩm công nghiệp chủ lực 2025" />
     </a>
-    <figcaption>Đại diện An Mi Tools tự hào tại lễ tôn vinh sản phẩm công nghiệp chủ lực Hà Nội 2025, khẳng định vị thế doanh nghiệp hàng đầu Việt Nam</figcaption>
+    <figcaption>Đại diện Công ty TNHH Dụng cụ An Mi tự hào với danh hiệu Sản phẩm Công nghiệp Chủ lực Hà Nội 2025 tại lễ tôn vinh. Với slogan "SYNCHRONOUS SOLUTION" (Giải pháp đồng bộ), An Mi Tools khẳng định vị thế doanh nghiệp hàng đầu Việt Nam trong lĩnh vực chế tạo dụng cụ cắt gọt và cơ khí chính xác.</figcaption>
   </figure>
 
   <figure class="image-wrapper">
     <a href="z7232300798531_45d8c2e0f8ced5cbccc4cba74e2db610.jpg" data-lightbox="anmi-danh-hieu-2025" data-title="Toàn cảnh lễ tôn vinh">
       <img src="z7232300798531_45d8c2e0f8ced5cbccc4cba74e2db610.jpg" alt="Các doanh nghiệp nhận danh hiệu sản phẩm công nghiệp chủ lực Hà Nội 2025" />
     </a>
-    <figcaption>Các doanh nghiệp tiêu biểu nhận danh hiệu trong lễ tôn vinh sản phẩm công nghiệp chủ lực Hà Nội 2025, khẳng định sự đóng góp của doanh nghiệp Thủ đô cho phát triển kinh tế</figcaption>
+    <figcaption>Đoàn 11 đại diện của các doanh nghiệp tiêu biểu nhận danh hiệu Sản phẩm Công nghiệp Chủ lực Hà Nội 2025, trong đó có Công ty TNHH Dụng cụ An Mi. Tổng cộng 35 sản phẩm của 28 doanh nghiệp được vinh danh với tổng doanh thu gần 42 nghìn tỷ đồng, khẳng định sự đóng góp to lớn cho phát triển kinh tế Thủ đô.</figcaption>
   </figure>
 </div>
 
@@ -161,7 +167,7 @@ Tiên phong trong **đổi mới công nghệ**, An Mi Tools đã áp dụng t�
 
 ### 6. Cam kết phát triển bền vững
 
-**Phát triển bền vững** là một trong những giá trị cốt lõi của An Mi Tools. Công ty sử dụng năng lượng xanh từ hệ thống pin mặt trời, bảo vệ môi trường thông qua các biện pháp xử lý chất thải đúng chuẩn, và đặc biệt duy trì hoạt động tái chế 40-50 sản phẩm mỗi tháng - góp phần giảm thiểu lãng phí và bảo vệ tài nguyên.
+**Phát triển bền vững** là một trong những giá trị cốt lõi của An Mi Tools. Công ty đầu tư hệ thống pin mặt trời diện tích **5,200 m²** với công suất **729.6 kWh**, cung cấp năng lượng xanh cho toàn bộ nhà máy. Không gian xanh chiếm **44% tổng diện tích** khuôn viên, tạo môi trường làm việc trong lành và thân thiện. Công ty bảo vệ môi trường thông qua các biện pháp xử lý chất thải đúng chuẩn, và đặc biệt duy trì hoạt động tái chế **40-50 sản phẩm mỗi tháng** - góp phần giảm thiểu lãng phí và bảo vệ tài nguyên.
 
 ### 7. Xây dựng đội ngũ nhân lực chất lượng cao
 
@@ -175,7 +181,7 @@ An Mi Tools hiểu rằng công nghệ tiên tiến chỉ phát huy hiệu quả
     <a href="z7232300814766_58f2c3abd60d239d7be93de7cdef9f40.jpg" data-lightbox="anmi-danh-hieu-2025" data-title="An Mi Tools với nhà máy hiện đại">
       <img src="z7232300814766_58f2c3abd60d239d7be93de7cdef9f40.jpg" alt="Lãnh đạo An Mi Tools nhận danh hiệu sản phẩm công nghiệp chủ lực 2025" />
     </a>
-    <figcaption>Đại diện An Mi Tools với chứng chỉ danh hiệu, khẳng định sự nỗ lực không ngừng trong nâng cao chất lượng sản phẩm hợp kim cứng (Carbide) và ứng dụng công nghệ tiên tiến trong sản xuất, tạo nên sức mạnh cạnh tranh trên thị trường quốc tế</figcaption>
+    <figcaption>Đại diện Công ty TNHH Dụng cụ An Mi với chứng chỉ danh hiệu, trên nền nhà máy hiện đại tại Hưng Yên với hệ thống pin mặt trời 5,200 m² công suất 729.6 kWh. Hình ảnh khẳng định sự nỗ lực không ngừng trong nâng cao chất lượng sản phẩm hợp kim cứng (Carbide), ứng dụng công nghệ tiên tiến và cam kết phát triển bền vững với 44% không gian xanh, tạo nên sức mạnh cạnh tranh trên thị trường quốc tế.</figcaption>
   </figure>
 </div>
 
@@ -189,7 +195,7 @@ Với danh hiệu Sản phẩm Công nghiệp Chủ lực Hà Nội 2025, An Mi 
 
 ### Chinh phục mục tiêu doanh thu đầy tham vọng
 
-Từ con số 235 tỷ đồng năm 2022, An Mi Tools đặt ra **mục tiêu doanh thu** đạt 800-1.000 tỷ đồng vào năm 2025 và 2.000 tỷ đồng vào năm 2030. Đây không chỉ là con số về tài chính mà còn là minh chứng cho sự tăng trưởng bền vững, mở rộng thị phần và khẳng định vị thế của **An Mi Tools** trong ngành công nghiệp cơ khí Việt Nam.
+Với quỹ đạo tăng trưởng ấn tượng từ 220 tỷ đồng (2021), 235 tỷ đồng (2022), 260 tỷ đồng (2023), An Mi Tools đặt ra **mục tiêu doanh thu** đạt 800-1.000 tỷ đồng vào năm 2025 và 2.000 tỷ đồng vào năm 2030. Đây không chỉ là con số về tài chính mà còn là minh chứng cho sự tăng trưởng bền vững, mở rộng thị phần và khẳng định vị thế của **An Mi Tools** trong ngành công nghiệp cơ khí Việt Nam.
 
 ### Khát vọng dẫn đầu và vươn tầm thế giới
 
@@ -237,7 +243,7 @@ Với niềm tin vào sự phát triển **bền vững**, An Mi Tools hướng 
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Danh hiệu Sản phẩm Công nghiệp Chủ lực Hà Nội 2025 - Dụng cụ hợp kim cứng",
-  "description": "An Mi Tools được công nhận danh hiệu Sản phẩm Công nghiệp Chủ lực do Hà Nội tôn vinh năm 2025 cho sản phẩm dụng cụ hợp kim cứng (Carbide)",
+  "description": "Công ty TNHH Dụng cụ An Mi được công nhận danh hiệu Sản phẩm Công nghiệp Chủ lực (Hanoi Major Industrial Products 2025) theo Quyết định 5537/QĐ-UBND ngày 13/11/2025 cho sản phẩm dụng cụ hợp kim cứng (Carbide). Chứng chỉ có giá trị 36 tháng.",
   "brand": {
     "@type": "Brand",
     "name": "An Mi Tools"
@@ -245,11 +251,14 @@ Với niềm tin vào sự phát triển **bền vững**, An Mi Tools hướng 
   "manufacturer": {
     "@type": "Organization",
     "name": "Công ty TNHH Dụng cụ An Mi",
-    "url": "https://anmitools.com"
+    "url": "https://anmitools.com",
+    "slogan": "SYNCHRONOUS SOLUTION"
   },
   "award": "Danh hiệu Sản phẩm Công nghiệp Chủ lực Thành phố Hà Nội năm 2025",
   "awardGiver": "Ủy ban Nhân dân Thành phố Hà Nội",
-  "dateAwarded": "2025-11-15"
+  "dateAwarded": "2025-11-15",
+  "awardValidity": "36 tháng",
+  "decisionNumber": "5537/QĐ-UBND"
 }
 </script>
 
@@ -268,14 +277,14 @@ Với niềm tin vào sự phát triển **bền vững**, An Mi Tools hướng 
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Tin tức nội bộ",
-      "item": "https://anmitools.com/tin-tuc-noi-bo/"
+      "name": "Truyền thông",
+      "item": "https://anmitools.com/category/truyen-thong/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "An Mi Tools Danh hiệu 2025",
-      "item": "https://anmitools.com/tin-tuc-noi-bo/an-mi-tools-danh-hieu-2025/"
+      "item": "https://anmitools.com/an-mi-tools-danh-hieu-2025/truyen-thong/"
     }
   ]
 }
