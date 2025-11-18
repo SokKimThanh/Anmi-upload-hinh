@@ -1,7 +1,7 @@
 /**
  * AnMi News Styling - CSS cho các trang tin tức
  * Version: 1.0.0
- * Author: Thanh - Content Marketing / Nội dung Kỹ thuật
+ * Author: AnMi Tools Team - Technical Content Writing
  */
 
 /* ===================================
@@ -80,9 +80,7 @@
 /* ===================================
    GLOBAL ARTICLE STYLES
    =================================== */
-.anmi-news-page {
-    background-color: var(--anmi-gray-lightest);
-}
+/* .anmi-news-page - Không ghi đè background-color để giữ màu #FCF7EC của website */
 
 article.an-mi-tools-danh-hieu-2025,
 article[class*="anmi-article"] {
@@ -96,6 +94,12 @@ article[class*="anmi-article"] {
     font-size: var(--anmi-font-size-base);
     line-height: var(--anmi-line-height-base);
     color: var(--anmi-gray-dark);
+}
+
+/* Ngăn WordPress tự động thêm <br> - Ẩn tất cả thẻ br trong bài viết */
+article.an-mi-tools-danh-hieu-2025 br,
+article[class*="anmi-article"] br {
+    display: none !important;
 }
 
 /* ===================================
