@@ -45,8 +45,6 @@ Tổng doanh thu của 35 sản phẩm được công nhận đạt gần **42 n
 
 Danh hiệu **Sản phẩm Công nghiệp Chủ lực Thành phố Hà Nội năm 2025** (tiếng Anh: **Hanoi Major Industrial Products 2025**) được trao cho **Công ty TNHH Dụng cụ An Mi** theo **Quyết định số 5537/QĐ-UBND** do Ủy ban Nhân dân Thành phố Hà Nội ban hành ngày **13 tháng 11 năm 2025**. Quyết định được phê duyệt bởi **Ông Nguyễn Mạnh Quyền - Phó Chủ tịch Ủy ban Nhân dân Thành phố Hà Nội**.
 
-Chứng nhận có giá trị trong **36 tháng** kể từ ngày cấp, khẳng định sự công nhận lâu dài của chính quyền Thủ đô đối với năng lực sản xuất, chất lượng sản phẩm và đóng góp của An Mi Tools cho nền công nghiệp Hà Nội và Việt Nam.
-
 ### Tiêu chí xét chọn nghiêm ngặt
 
 Để đạt được danh hiệu này, các sản phẩm phải vượt qua nhiều **tiêu chí xét chọn** khắt khe. Trong đó, các yếu tố then chốt bao gồm:
@@ -100,7 +98,7 @@ Con số **doanh thu** của **An Mi Tools** là minh chứng rõ nét cho quỹ
     <a href="z7232300798533_7a8a9687a33b492869a871958597148f.jpg" data-lightbox="anmi-danh-hieu-2025" data-title="Chứng chỉ danh hiệu">
       <img src="z7232300798533_7a8a9687a33b492869a871958597148f.jpg" alt="Chứng chỉ Sản phẩm Công nghiệp Chủ lực Hà Nội 2025 của An Mi Tools" />
     </a>
-    <figcaption>Chứng chỉ Sản phẩm Công nghiệp Chủ lực Thành phố Hà Nội 2025 (Hanoi Major Industrial Products 2025) do Ủy ban Nhân dân Hà Nội cấp cho Công ty TNHH Dụng cụ An Mi, công nhận dụng cụ hợp kim cứng (Carbide) đạt tiêu chuẩn quốc tế. Chứng chỉ có giá trị 36 tháng, hiệu lực từ ngày 13/11/2025.</figcaption>
+    <figcaption>Chứng chỉ Sản phẩm Công nghiệp Chủ lực Thành phố Hà Nội 2025 (Hanoi Major Industrial Products 2025) do Ủy ban Nhân dân Hà Nội cấp cho Công ty TNHH Dụng cụ An Mi, công nhận dụng cụ hợp kim cứng (Carbide) đạt tiêu chuẩn quốc tế.</figcaption>
   </figure>
 </div>
 
@@ -243,7 +241,7 @@ Với niềm tin vào sự phát triển **bền vững**, An Mi Tools hướng 
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Danh hiệu Sản phẩm Công nghiệp Chủ lực Hà Nội 2025 - Dụng cụ hợp kim cứng",
-  "description": "Công ty TNHH Dụng cụ An Mi được công nhận danh hiệu Sản phẩm Công nghiệp Chủ lực (Hanoi Major Industrial Products 2025) theo Quyết định 5537/QĐ-UBND ngày 13/11/2025 cho sản phẩm dụng cụ hợp kim cứng (Carbide). Chứng chỉ có giá trị 36 tháng.",
+  "description": "Công ty TNHH Dụng cụ An Mi được công nhận danh hiệu Sản phẩm Công nghiệp Chủ lực (Hanoi Major Industrial Products 2025) theo Quyết định 5537/QĐ-UBND ngày 13/11/2025 cho sản phẩm dụng cụ hợp kim cứng (Carbide).",
   "brand": {
     "@type": "Brand",
     "name": "An Mi Tools"
@@ -257,7 +255,6 @@ Với niềm tin vào sự phát triển **bền vững**, An Mi Tools hướng 
   "award": "Danh hiệu Sản phẩm Công nghiệp Chủ lực Thành phố Hà Nội năm 2025",
   "awardGiver": "Ủy ban Nhân dân Thành phố Hà Nội",
   "dateAwarded": "2025-11-15",
-  "awardValidity": "36 tháng",
   "decisionNumber": "5537/QĐ-UBND"
 }
 </script>

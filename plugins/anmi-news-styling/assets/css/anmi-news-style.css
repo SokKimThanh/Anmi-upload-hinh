@@ -1,0 +1,492 @@
+/**
+ * AnMi News Styling - CSS cho các trang tin tức
+ * Version: 1.0.0
+ * Author: Thanh - Content Marketing / Nội dung Kỹ thuật
+ */
+
+/* ===================================
+   ROOT VARIABLES - CSS CUSTOM PROPERTIES
+   =================================== */
+:root {
+    /* Primary Colors */
+    --anmi-primary-color: #003087;
+    --anmi-primary-dark: #002566;
+    --anmi-primary-light: #0047b3;
+    
+    /* Secondary Colors */
+    --anmi-secondary-color: #e31e24;
+    --anmi-secondary-dark: #b8171c;
+    --anmi-secondary-light: #ff4146;
+    
+    /* Neutral Colors */
+    --anmi-white: #ffffff;
+    --anmi-black: #000000;
+    --anmi-gray-dark: #333333;
+    --anmi-gray-medium: #666666;
+    --anmi-gray-light: #999999;
+    --anmi-gray-lighter: #cccccc;
+    --anmi-gray-lightest: #f5f5f5;
+    
+    /* Accent Colors */
+    --anmi-success: #28a745;
+    --anmi-warning: #ffc107;
+    --anmi-danger: #dc3545;
+    --anmi-info: #17a2b8;
+    
+    /* Typography */
+    --anmi-font-family-base: 'Roboto', 'Segoe UI', -apple-system, sans-serif;
+    --anmi-font-family-heading: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+    --anmi-font-size-base: 16px;
+    --anmi-line-height-base: 1.75;
+    
+    /* Spacing */
+    --anmi-spacing-xs: 0.5rem;
+    --anmi-spacing-sm: 1rem;
+    --anmi-spacing-md: 1.5rem;
+    --anmi-spacing-lg: 2rem;
+    --anmi-spacing-xl: 3rem;
+    --anmi-spacing-xxl: 4rem;
+    
+    /* Border Radius */
+    --anmi-border-radius-sm: 4px;
+    --anmi-border-radius-md: 8px;
+    --anmi-border-radius-lg: 12px;
+    
+    /* Shadows */
+    --anmi-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --anmi-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --anmi-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+    /* Transitions */
+    --anmi-transition-fast: 0.2s ease;
+    --anmi-transition-normal: 0.3s ease;
+    --anmi-transition-slow: 0.5s ease;
+    
+    /* Breakpoints */
+    --anmi-breakpoint-mobile: 768px;
+    --anmi-breakpoint-tablet: 1024px;
+    --anmi-breakpoint-desktop: 1280px;
+    
+    /* Z-index layers */
+    --anmi-z-index-dropdown: 1000;
+    --anmi-z-index-sticky: 1020;
+    --anmi-z-index-fixed: 1030;
+    --anmi-z-index-modal-backdrop: 1040;
+    --anmi-z-index-modal: 1050;
+    --anmi-z-index-popover: 1060;
+    --anmi-z-index-tooltip: 1070;
+}
+
+/* ===================================
+   GLOBAL ARTICLE STYLES
+   =================================== */
+.anmi-news-page {
+    background-color: var(--anmi-gray-lightest);
+}
+
+article.an-mi-tools-danh-hieu-2025,
+article[class*="anmi-article"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--anmi-spacing-lg);
+    background-color: var(--anmi-white);
+    box-shadow: var(--anmi-shadow-md);
+    border-radius: var(--anmi-border-radius-md);
+    font-family: var(--anmi-font-family-base);
+    font-size: var(--anmi-font-size-base);
+    line-height: var(--anmi-line-height-base);
+    color: var(--anmi-gray-dark);
+}
+
+/* ===================================
+   ARTICLE HEADER / META
+   =================================== */
+.article-introduction {
+    margin-bottom: var(--anmi-spacing-xl);
+    padding-bottom: var(--anmi-spacing-lg);
+    border-bottom: 2px solid var(--anmi-primary-color);
+}
+
+.article-introduction h1 {
+    font-family: var(--anmi-font-family-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--anmi-primary-color);
+    margin-bottom: var(--anmi-spacing-md);
+    text-transform: uppercase;
+}
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--anmi-spacing-md);
+    font-size: 0.9rem;
+    color: var(--anmi-gray-medium);
+}
+
+.article-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.article-meta span::before {
+    content: "•";
+    margin: 0 var(--anmi-spacing-xs);
+    color: var(--anmi-gray-light);
+}
+
+.article-meta span:first-child::before {
+    content: none;
+}
+
+/* ===================================
+   CONTENT SECTIONS
+   =================================== */
+.content-section {
+    margin-bottom: var(--anmi-spacing-xxl);
+}
+
+.content-section h2 {
+    font-family: var(--anmi-font-family-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--anmi-primary-color);
+    margin-bottom: var(--anmi-spacing-lg);
+    padding-bottom: var(--anmi-spacing-sm);
+    border-bottom: 3px solid var(--anmi-secondary-color);
+    text-transform: uppercase;
+}
+
+.content-section h3 {
+    font-family: var(--anmi-font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--anmi-primary-dark);
+    margin-top: var(--anmi-spacing-lg);
+    margin-bottom: var(--anmi-spacing-md);
+}
+
+.content-section p {
+    margin-bottom: var(--anmi-spacing-md);
+    text-align: justify;
+}
+
+.content-section strong {
+    color: var(--anmi-primary-color);
+    font-weight: 600;
+}
+
+.content-section ul {
+    margin: var(--anmi-spacing-md) 0;
+    padding-left: var(--anmi-spacing-xl);
+}
+
+.content-section ul li {
+    margin-bottom: var(--anmi-spacing-sm);
+    line-height: 1.8;
+}
+
+.content-section ul li strong {
+    color: var(--anmi-secondary-color);
+}
+
+/* ===================================
+   IMAGE GALLERY - 2 COLUMNS
+   =================================== */
+.image-gallery-section {
+    margin: var(--anmi-spacing-xxl) 0;
+    padding: var(--anmi-spacing-lg) 0;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--anmi-spacing-lg);
+    margin: var(--anmi-spacing-lg) 0;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--anmi-border-radius-md);
+    box-shadow: var(--anmi-shadow-md);
+    background-color: var(--anmi-white);
+    transition: transform var(--anmi-transition-normal), box-shadow var(--anmi-transition-normal);
+}
+
+.image-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--anmi-shadow-lg);
+}
+
+.image-wrapper a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--anmi-transition-slow);
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.image-wrapper figcaption {
+    padding: var(--anmi-spacing-md);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--anmi-gray-medium);
+    text-align: justify;
+    background-color: var(--anmi-gray-lightest);
+}
+
+/* ===================================
+   IMAGE GALLERY - FULL WIDTH (1 COLUMN)
+   =================================== */
+.image-gallery-full {
+    margin: var(--anmi-spacing-xxl) 0;
+}
+
+.image-wrapper-full {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--anmi-border-radius-lg);
+    box-shadow: var(--anmi-shadow-lg);
+    background-color: var(--anmi-white);
+}
+
+.image-wrapper-full a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper-full img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--anmi-transition-slow);
+}
+
+.image-wrapper-full:hover img {
+    transform: scale(1.02);
+}
+
+.image-wrapper-full figcaption {
+    padding: var(--anmi-spacing-lg);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--anmi-gray-dark);
+    text-align: justify;
+    background: linear-gradient(to bottom, var(--anmi-white), var(--anmi-gray-lightest));
+}
+
+/* ===================================
+   ARTICLE FOOTER
+   =================================== */
+.article-footer {
+    margin-top: var(--anmi-spacing-xxl);
+    padding-top: var(--anmi-spacing-lg);
+    border-top: 2px solid var(--anmi-primary-color);
+    text-align: center;
+}
+
+.article-footer .tagline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--anmi-primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===================================
+   RESPONSIVE - TABLET (≤1024px)
+   =================================== */
+@media screen and (max-width: 1024px) {
+    article.an-mi-tools-danh-hieu-2025,
+    article[class*="anmi-article"] {
+        padding: var(--anmi-spacing-md);
+    }
+    
+    .article-introduction h1 {
+        font-size: 2rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ===================================
+   RESPONSIVE - MOBILE (≤768px)
+   =================================== */
+@media screen and (max-width: 768px) {
+    article.an-mi-tools-danh-hieu-2025,
+    article[class*="anmi-article"] {
+        padding: var(--anmi-spacing-sm);
+        border-radius: 0;
+    }
+    
+    .article-introduction h1 {
+        font-size: 1.6rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Stack gallery images vertically on mobile */
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: var(--anmi-spacing-md);
+    }
+    
+    .article-meta {
+        flex-direction: column;
+        gap: var(--anmi-spacing-xs);
+    }
+    
+    .article-meta span::before {
+        content: none;
+    }
+    
+    .content-section ul {
+        padding-left: var(--anmi-spacing-lg);
+    }
+}
+
+/* ===================================
+   ACCESSIBILITY - HIGH CONTRAST
+   =================================== */
+@media (prefers-contrast: high) {
+    :root {
+        --anmi-primary-color: #001a4d;
+        --anmi-gray-medium: #444444;
+        --anmi-gray-dark: #1a1a1a;
+    }
+    
+    .content-section h2,
+    .content-section h3 {
+        text-decoration: underline;
+    }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+@media print {
+    article.an-mi-tools-danh-hieu-2025,
+    article[class*="anmi-article"] {
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .image-wrapper,
+    .image-wrapper-full {
+        page-break-inside: avoid;
+    }
+    
+    .content-section {
+        page-break-inside: avoid;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: var(--anmi-gray-medium);
+    }
+}
+
+/* ===================================
+   LIGHTBOX CUSTOM STYLES
+   =================================== */
+.lb-data .lb-caption {
+    font-family: var(--anmi-font-family-base);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding: var(--anmi-spacing-md);
+}
+
+.lb-data .lb-number {
+    font-family: var(--anmi-font-family-heading);
+    font-weight: 600;
+    color: var(--anmi-primary-color);
+}
+
+/* ===================================
+   LOADING ANIMATION
+   =================================== */
+.anmi-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--anmi-gray-lighter);
+    border-top-color: var(--anmi-primary-color);
+    border-radius: 50%;
+    animation: anmi-spin 0.8s linear infinite;
+}
+
+@keyframes anmi-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===================================
+   UTILITY CLASSES
+   =================================== */
+.anmi-text-center {
+    text-align: center !important;
+}
+
+.anmi-text-right {
+    text-align: right !important;
+}
+
+.anmi-text-primary {
+    color: var(--anmi-primary-color) !important;
+}
+
+.anmi-text-secondary {
+    color: var(--anmi-secondary-color) !important;
+}
+
+.anmi-bg-primary {
+    background-color: var(--anmi-primary-color) !important;
+    color: var(--anmi-white) !important;
+}
+
+.anmi-bg-secondary {
+    background-color: var(--anmi-secondary-color) !important;
+    color: var(--anmi-white) !important;
+}
+
+.anmi-mt-sm { margin-top: var(--anmi-spacing-sm) !important; }
+.anmi-mt-md { margin-top: var(--anmi-spacing-md) !important; }
+.anmi-mt-lg { margin-top: var(--anmi-spacing-lg) !important; }
+.anmi-mt-xl { margin-top: var(--anmi-spacing-xl) !important; }
+
+.anmi-mb-sm { margin-bottom: var(--anmi-spacing-sm) !important; }
+.anmi-mb-md { margin-bottom: var(--anmi-spacing-md) !important; }
+.anmi-mb-lg { margin-bottom: var(--anmi-spacing-lg) !important; }
+.anmi-mb-xl { margin-bottom: var(--anmi-spacing-xl) !important; }
+
+.anmi-p-sm { padding: var(--anmi-spacing-sm) !important; }
+.anmi-p-md { padding: var(--anmi-spacing-md) !important; }
+.anmi-p-lg { padding: var(--anmi-spacing-lg) !important; }
+.anmi-p-xl { padding: var(--anmi-spacing-xl) !important; }
