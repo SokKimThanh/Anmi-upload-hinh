@@ -1552,6 +1552,7 @@ details[open] summary .toggle {
 .instruction-card {
     background-color: var(--anmi-color-surface);
     padding: 1.5rem;
+    margin-top: 1.5rem;
     border-radius: var(--anmi-border-radius-lg);
     box-shadow: var(--anmi-box-shadow-medium);
 }
