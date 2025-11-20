@@ -227,15 +227,21 @@
     --anmi-color-surface-info: #F0F8FF;
     --anmi-color-surface-warm: #FFF9E6;
     --anmi-color-surface-success: #E8F5E9;
-    --anmi-color-accent: #FF6B35; /* Accent color for highlights and hover states */
+    --anmi-color-accent: #FF6B35;
+    /* Accent color for highlights and hover states */
     --anmi-color-accent-warning: #FFA500;
     --anmi-color-accent-success: #4CAF50;
     --anmi-color-accent-success-strong: #2E7D32;
-    --anmi-color-success-bg: #E8F5E9; /* Success box background */
-    --anmi-color-problem-bg: #FFF3E0; /* Problem box background (warm orange tint) */
-    --anmi-color-example-bg: #F3E5F5; /* Example box background (light purple tint) */
-    --anmi-color-solution-bg: #E3F2FD; /* Solution box background (light blue tint) */
-    --anmi-color-result-bg: #E8F5E9; /* Result box background (green tint) */
+    --anmi-color-success-bg: #E8F5E9;
+    /* Success box background */
+    --anmi-color-problem-bg: #FFF3E0;
+    /* Problem box background (warm orange tint) */
+    --anmi-color-example-bg: #F3E5F5;
+    /* Example box background (light purple tint) */
+    --anmi-color-solution-bg: #E3F2FD;
+    /* Solution box background (light blue tint) */
+    --anmi-color-result-bg: #E8F5E9;
+    /* Result box background (green tint) */
     --anmi-border-color-soft: rgba(0, 0, 0, 0.08);
     --anmi-border-color-subtle: rgba(0, 0, 0, 0.05);
     --anmi-border-color-card: #E0E0E0;
@@ -290,14 +296,14 @@ br {
    Solution: Chỉ ẩn <p> rỗng hoặc chứa comment, KHÔNG ẩn <p> có text content */
 
 /* Ẩn thẻ <p> rỗng (không có nội dung gì) */
-.feature-grid > p:empty,
-.application-grid > p:empty,
-.performance-grid > p:empty,
-.instruction-grid > p:empty,
-.support-grid > p:empty,
-.contact-info > p:empty,
-.spec-grid > p:empty,
-.grid > p:empty {
+.feature-grid>p:empty,
+.application-grid>p:empty,
+.performance-grid>p:empty,
+.instruction-grid>p:empty,
+.support-grid>p:empty,
+.contact-info>p:empty,
+.spec-grid>p:empty,
+.grid>p:empty {
     display: none !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -351,7 +357,8 @@ section[class*="mta"] h1,
 section[class*="tck-"] h1,
 section[class*="tool-holder"] h1,
 .he-thong-ga-kep-can-dao h1 {
-    font-size: clamp(1.84rem, 4.2vw, 2.625rem); /* +5%: 1.75→1.84rem, 2.5→2.625rem */
+    font-size: clamp(1.84rem, 4.2vw, 2.625rem);
+    /* +5%: 1.75→1.84rem, 2.5→2.625rem */
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--anmi-color-text);
@@ -369,7 +376,8 @@ section[class*="mta"] h2,
 section[class*="tck-"] h2,
 section[class*="tool-holder"] h2,
 .he-thong-ga-kep-can-dao h2 {
-    font-size: clamp(1.575rem, 3.15vw, 1.97rem); /* +5%: 1.5→1.575rem, 1.875→1.97rem */
+    font-size: clamp(1.575rem, 3.15vw, 1.97rem);
+    /* +5%: 1.5→1.575rem, 1.875→1.97rem */
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--anmi-color-text);
@@ -389,7 +397,8 @@ section[class*="mta"] h3,
 section[class*="tck-"] h3,
 section[class*="tool-holder"] h3,
 .he-thong-ga-kep-can-dao h3 {
-    font-size: clamp(1.18rem, 2.1vw, 1.31rem); /* +5%: 1.125→1.18rem, 1.25→1.31rem */
+    font-size: clamp(1.18rem, 2.1vw, 1.31rem);
+    /* +5%: 1.125→1.18rem, 1.25→1.31rem */
     font-weight: 600;
     margin-bottom: 0.75rem;
     color: var(--anmi-color-text);
@@ -406,7 +415,8 @@ section[class*="mta"] p,
 section[class*="tck-"] p,
 section[class*="tool-holder"] p,
 .he-thong-ga-kep-can-dao p {
-    font-size: clamp(1.05rem, 1.575vw, 1.18rem); /* +5%: 1→1.05rem, 1.125→1.18rem */
+    font-size: clamp(1.05rem, 1.575vw, 1.18rem);
+    /* +5%: 1→1.05rem, 1.125→1.18rem */
     margin-bottom: 1rem;
     line-height: var(--anmi-line-height-base);
     color: var(--anmi-color-text);
@@ -445,7 +455,8 @@ section[class*="tool-holder"] a:hover,
 /* SECTIONS */
 /* ============================================ */
 .section {
-    margin-bottom: 1.5rem; /* Giảm: 3rem → 1.5rem */
+    margin-bottom: 1.5rem;
+    /* Giảm: 3rem → 1.5rem */
 }
 
 /* ============================================ */
@@ -454,7 +465,8 @@ section[class*="tool-holder"] a:hover,
 figure {
     width: 100%;
     max-width: 1000px;
-    margin: 1.5rem auto; /* Giảm: 3rem → 1.5rem */
+    margin: 1.5rem auto;
+    /* Giảm: 3rem → 1.5rem */
     text-align: center;
 }
 
@@ -472,7 +484,8 @@ figure img {
 
 figcaption {
     color: var(--anmi-color-text-secondary);
-    font-size: 1rem; /* +5%: 0.95→1rem */
+    font-size: 1rem;
+    /* +5%: 0.95→1rem */
     margin-top: 0.75rem;
     font-style: italic;
     line-height: 1.6;
@@ -581,7 +594,8 @@ tbody tr:last-child {
 }
 
 .table-note {
-    font-size: 1rem; /* +5%: 0.95→1rem */
+    font-size: 1rem;
+    /* +5%: 0.95→1rem */
     color: var(--anmi-color-text-secondary);
     line-height: 1.7;
     margin-top: 1rem;
@@ -589,7 +603,8 @@ tbody tr:last-child {
 }
 
 .note {
-    font-size: 1.05rem; /* +5%: 1→1.05rem */
+    font-size: 1.05rem;
+    /* +5%: 1→1.05rem */
     color: var(--anmi-color-text-secondary);
     line-height: 1.7;
     margin-top: 1rem;
@@ -600,14 +615,16 @@ tbody tr:last-child {
 /* ============================================ */
 .card {
     background-color: var(--anmi-color-surface);
-    padding: 1rem; /* Giảm: 1.5rem → 1rem */
+    padding: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     border-radius: var(--anmi-border-radius-lg);
     box-shadow: var(--anmi-box-shadow-medium);
 }
 
 .grid {
     display: grid;
-    gap: 1rem; /* Giảm: 1.5rem → 1rem */
+    gap: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
@@ -617,40 +634,47 @@ tbody tr:last-child {
 .contact-box {
     background-color: var(--anmi-color-primary);
     color: var(--anmi-color-on-primary);
-    padding: 1.25rem; /* Giảm: 2rem → 1.25rem */
+    padding: 1.25rem;
+    /* Giảm: 2rem → 1.25rem */
     border-radius: var(--anmi-border-radius-lg);
     box-shadow: var(--anmi-box-shadow-primary);
 }
 
 .contact-title {
-    font-size: 1.575rem; /* +5%: 1.5→1.575rem */
+    font-size: 1.575rem;
+    /* +5%: 1.5→1.575rem */
     font-weight: 600;
-    margin-bottom: 1rem; /* Giảm: 1.5rem → 1rem */
+    margin-bottom: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     color: var(--anmi-color-on-primary);
     text-align: center;
 }
 
 .contact-grid {
     display: grid;
-    gap: 1rem; /* Giảm: 1.5rem → 1rem */
+    gap: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .contact-item {
     background-color: var(--anmi-color-on-primary-soft);
-    padding: 1rem; /* Giảm: 1.25rem → 1rem */
+    padding: 1rem;
+    /* Giảm: 1.25rem → 1rem */
     border-radius: var(--anmi-border-radius-lg);
 }
 
 .contact-item h4 {
-    font-size: 1.18rem; /* +5%: 1.125→1.18rem */
+    font-size: 1.18rem;
+    /* +5%: 1.125→1.18rem */
     font-weight: 600;
     margin-bottom: 0.75rem;
     color: var(--anmi-color-on-primary);
 }
 
 .contact-item p {
-    font-size: 1rem; /* +5%: 0.95→1rem */
+    font-size: 1rem;
+    /* +5%: 0.95→1rem */
     line-height: 1.7;
     color: var(--anmi-color-on-primary);
     margin: 0;
@@ -669,7 +693,8 @@ tbody tr:last-child {
 }
 
 .contact-footer p {
-    font-size: 1.05rem; /* +5%: 1→1.05rem */
+    font-size: 1.05rem;
+    /* +5%: 1→1.05rem */
     color: var(--anmi-color-on-primary);
     margin: 0;
 }
@@ -680,14 +705,16 @@ tbody tr:last-child {
 .support-card {
     text-align: center;
     background-color: var(--anmi-color-surface);
-    padding: 1rem; /* Giảm: 1.5rem → 1rem */
+    padding: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     border-radius: var(--anmi-border-radius-lg);
     box-shadow: var(--anmi-box-shadow-medium);
     border: 1px solid var(--anmi-border-color-card);
 }
 
 .support-icon {
-    font-size: 2.625rem; /* +5%: 2.5→2.625rem */
+    font-size: 2.625rem;
+    /* +5%: 2.5→2.625rem */
     margin-bottom: 0.5rem;
 }
 
@@ -701,7 +728,8 @@ tbody tr:last-child {
 }
 
 .faq h2 {
-    font-size: 1.875rem; /* Hierarchy: Large title */
+    font-size: 1.875rem;
+    /* Hierarchy: Large title */
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--anmi-color-primary);
@@ -714,16 +742,19 @@ tbody tr:last-child {
 }
 
 details {
-    margin-bottom: 1rem; /* Negative Space: Spacing between items */
+    margin-bottom: 1rem;
+    /* Negative Space: Spacing between items */
     border: 1px solid var(--anmi-border-color-soft);
     border-radius: var(--anmi-border-radius-lg);
-    background: var(--anmi-color-surface); /* Consistency: White background */
+    background: var(--anmi-color-surface);
+    /* Consistency: White background */
     box-shadow: var(--anmi-box-shadow-soft);
     transition: all 0.3s ease;
 }
 
 details:hover {
-    box-shadow: var(--anmi-box-shadow-primary); /* Contrast: Hover feedback */
+    box-shadow: var(--anmi-box-shadow-primary);
+    /* Contrast: Hover feedback */
     border-color: var(--anmi-color-primary);
 }
 
@@ -733,13 +764,17 @@ details:last-child {
 
 /* Question (Summary) Styling */
 summary {
-    padding: 1.25rem 1.5rem; /* Negative Space: Comfortable padding */
-    font-size: 1.125rem; /* Hierarchy: Medium size for questions */
+    padding: 1.25rem 1.5rem;
+    /* Negative Space: Comfortable padding */
+    font-size: 1.125rem;
+    /* Hierarchy: Medium size for questions */
     font-weight: 600;
-    color: var(--anmi-color-text); /* Contrast: Dark text */
+    color: var(--anmi-color-text);
+    /* Contrast: Dark text */
     cursor: pointer;
     list-style: none;
-    display: flex !important; /* ghi de class bootstrap*/
+    display: flex !important;
+    /* ghi de class bootstrap*/
     justify-content: space-between;
     align-items: center;
     user-select: none;
@@ -747,7 +782,8 @@ summary {
 }
 
 summary:hover {
-    color: var(--anmi-color-primary); /* Contrast: Blue on hover */
+    color: var(--anmi-color-primary);
+    /* Contrast: Blue on hover */
 }
 
 summary::-webkit-details-marker {
@@ -756,7 +792,8 @@ summary::-webkit-details-marker {
 
 /* Plus/Minus Toggle Icon */
 .toggle {
-    color: var(--anmi-color-primary); /* Contrast: Blue icon */
+    color: var(--anmi-color-primary);
+    /* Contrast: Blue icon */
     font-size: 1.5rem;
     font-weight: 700;
     transition: transform 0.3s ease;
@@ -765,28 +802,37 @@ summary::-webkit-details-marker {
 }
 
 details[open] summary .toggle {
-    transform: rotate(45deg); /* Visual feedback */
+    transform: rotate(45deg);
+    /* Visual feedback */
 }
 
 /* Answer (Content) Styling */
 .faq-content {
-    padding: 0 1.5rem 1.5rem 1.5rem; /* Negative Space: Consistent padding */
-    background: linear-gradient(135deg, var(--anmi-color-surface-info) 0%, var(--anmi-color-surface-warm) 100%); /* Contrast: Subtle gradient background */
-    border-top: 2px solid var(--anmi-border-color-soft); /* Hierarchy: Visual separator */
-    color: var(--anmi-color-text-secondary); /* Contrast: Readable text */
-    line-height: 1.7; /* Negative Space: Readable line height */
-    font-size: 1.05rem; /* Consistency: Body text size */
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    /* Negative Space: Consistent padding */
+    background: linear-gradient(135deg, var(--anmi-color-surface-info) 0%, var(--anmi-color-surface-warm) 100%);
+    /* Contrast: Subtle gradient background */
+    border-top: 2px solid var(--anmi-border-color-soft);
+    /* Hierarchy: Visual separator */
+    color: var(--anmi-color-text-secondary);
+    /* Contrast: Readable text */
+    line-height: 1.7;
+    /* Negative Space: Readable line height */
+    font-size: 1.05rem;
+    /* Consistency: Body text size */
     border-radius: 0 0 var(--anmi-border-radius-lg) var(--anmi-border-radius-lg);
 }
 
 .faq-content p {
     margin: 0;
-    padding-top: 1rem; /* Negative Space: Top spacing */
+    padding-top: 1rem;
+    /* Negative Space: Top spacing */
 }
 
 /* Highlight keywords in answers */
 .faq-content strong {
-    color: var(--anmi-color-primary); /* Contrast: Blue for emphasis */
+    color: var(--anmi-color-primary);
+    /* Contrast: Blue for emphasis */
     font-weight: 600;
 }
 
@@ -853,14 +899,17 @@ details[open] summary .toggle {
 /* Features */
 .feature-grid {
     display: grid;
-    gap: 1rem; /* Giảm: 1.5rem → 1rem */
+    gap: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin: 1rem 0; /* Giảm: 1.5rem → 1rem */
+    margin: 1rem 0;
+    /* Giảm: 1.5rem → 1rem */
 }
 
 .feature-item {
     background-color: var(--anmi-color-surface);
-    padding: 1rem; /* Giảm: 1.5rem → 1rem */
+    padding: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     border-radius: var(--anmi-border-radius-lg);
     box-shadow: var(--anmi-box-shadow-medium);
 }
@@ -1164,26 +1213,31 @@ details[open] summary .toggle {
 /* Performance Cards */
 .performance-grid {
     display: grid;
-    gap: 1rem; /* Giảm: 1.5rem → 1rem */
+    gap: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin: 1rem 0; /* Giảm: 1.5rem → 1rem */
+    margin: 1rem 0;
+    /* Giảm: 1.5rem → 1rem */
 }
 
 .performance-card {
     background-color: var(--anmi-color-surface);
-    padding: 1rem; /* Giảm: 1.5rem → 1rem */
+    padding: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     border-radius: var(--anmi-border-radius-lg);
     box-shadow: var(--anmi-box-shadow-medium);
     text-align: center;
 }
 
 .performance-icon {
-    font-size: 2.625rem; /* +5%: 2.5→2.625rem */
+    font-size: 2.625rem;
+    /* +5%: 2.5→2.625rem */
     margin-bottom: 1rem;
 }
 
 .performance-value {
-    font-size: 1.575rem; /* +5%: 1.5→1.575rem */
+    font-size: 1.575rem;
+    /* +5%: 1.5→1.575rem */
     font-weight: 700;
     color: var(--anmi-color-primary);
     margin: 0.5rem 0;
@@ -1192,7 +1246,8 @@ details[open] summary .toggle {
 /* Comparison Tables */
 .comparison-table-wrapper {
     overflow-x: auto;
-    margin: 1rem 0; /* Giảm: 1.5rem → 1rem */
+    margin: 1rem 0;
+    /* Giảm: 1.5rem → 1rem */
 }
 
 .comparison-table {
@@ -1522,7 +1577,8 @@ details[open] summary .toggle {
 .instruction-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(2, 1fr); /* Cố định 2 cột */
+    grid-template-columns: repeat(2, 1fr);
+    /* Cố định 2 cột */
     margin: 1.5rem 0;
 }
 
@@ -1568,18 +1624,22 @@ details[open] summary .toggle {
 .installation-steps li {
     counter-increment: step;
     position: relative;
-    padding: 1.5rem 1.5rem 1.5rem 4rem; /* Large left padding for number badge */
-    margin-bottom: 1.5rem; /* More spacing between steps */
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    /* Large left padding for number badge */
+    margin-bottom: 1.5rem;
+    /* More spacing between steps */
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     border-left: 3px solid var(--anmi-color-primary);
     border-radius: var(--anmi-border-radius-lg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
-    line-height: 1.7; /* Better readability */
+    line-height: 1.7;
+    /* Better readability */
 }
 
 .installation-steps li:hover {
-    transform: translateX(4px); /* Subtle slide effect */
+    transform: translateX(4px);
+    /* Subtle slide effect */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-left-color: var(--anmi-color-accent);
 }
@@ -1704,7 +1764,7 @@ details[open] summary .toggle {
     display: block;
 }
 
-.catalog-download > p {
+.catalog-download>p {
     font-size: 1.05rem;
     line-height: 1.8;
     color: var(--anmi-color-text-secondary);
@@ -1767,7 +1827,8 @@ details[open] summary .toggle {
     text-decoration: none;
     border-radius: var(--anmi-border-radius-lg);
     font-weight: 600;
-    font-size: 16.8px; /* +5%: 16→16.8px */
+    font-size: 16.8px;
+    /* +5%: 16→16.8px */
     transition: all 0.3s ease;
     box-shadow: var(--anmi-box-shadow-download);
     border: none;
@@ -1902,13 +1963,16 @@ details[open] summary .toggle {
 /* Support Cards */
 .support-grid {
     display: grid;
-    gap: 1rem; /* Giảm: 1.5rem → 1rem */
+    gap: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin: 1rem 0; /* Giảm: 1.5rem → 1rem */
+    margin: 1rem 0;
+    /* Giảm: 1.5rem → 1rem */
 }
 
 .support-note {
-    font-size: 1rem; /* +5%: 0.95→1rem */
+    font-size: 1rem;
+    /* +5%: 0.95→1rem */
     color: var(--anmi-color-text-muted);
     font-style: italic;
     margin-top: 1rem;
@@ -1937,7 +2001,8 @@ details[open] summary .toggle {
 
 .faq-icon {
     color: var(--anmi-color-primary);
-    font-size: 1.575rem; /* +5%: 1.5→1.575rem */
+    font-size: 1.575rem;
+    /* +5%: 1.5→1.575rem */
     margin-right: 0.5rem;
 }
 
@@ -1949,7 +2014,8 @@ details[open] summary .toggle {
 }
 
 .footer-description {
-    font-size: 1rem; /* +5%: 0.95→1rem */
+    font-size: 1rem;
+    /* +5%: 0.95→1rem */
     color: var(--anmi-color-text-muted);
     line-height: 1.7;
 }
@@ -1996,7 +2062,8 @@ details[open] summary .toggle {
 .section.maintenance-guide,
 .section.storage-tips,
 .section.faq,
-.section.support-contact {
+.section.support-contact,
+.section.overview {
     margin: 2rem 0;
 }
 
@@ -2076,10 +2143,48 @@ details[open] summary .toggle {
     color: var(--anmi-color-primary);
 }
 
-/* Product Intro */
+
+/* -------------------------------------------- */
+/* Product Intro - reuse contact section styling */
+/* Apply the same visual treatment as contact cards */
 .product-intro {
-    font-size: 1.155rem; /* +5%: 1.1→1.155rem */
-    line-height: 1.8;
+    background: var(--card-bg, #ffffff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(22, 28, 37, 0.06);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.product-intro .catalog-download {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.product-intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.product-intro .intro-text {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .product-intro {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .product-intro .catalog-download {
+        justify-content: flex-start;
+    }
 }
 
 /* Product Intro list styling */
@@ -2100,11 +2205,13 @@ details[open] summary .toggle {
 /* ============================================ */
 
 .product-features h2 {
-    font-size: 1.875rem; /* Hierarchy: Larger heading */
+    font-size: 1.875rem;
+    /* Hierarchy: Larger heading */
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--anmi-color-primary);
-    text-align: center; /* Consistency: Centered title */
+    text-align: center;
+    /* Consistency: Centered title */
     line-height: 1.3;
 }
 
@@ -2118,23 +2225,29 @@ details[open] summary .toggle {
 .product-features ol li {
     counter-increment: feature-counter;
     position: relative;
-    padding: 2rem; /* Negative Space: Generous padding */
-    margin-bottom: 1.5rem; /* Negative Space: Spacing between items */
+    padding: 2rem;
+    /* Negative Space: Generous padding */
+    margin-bottom: 1.5rem;
+    /* Negative Space: Spacing between items */
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-    border-left: 4px solid var(--anmi-color-primary); /* Contrast: Bold accent */
+    border-left: 4px solid var(--anmi-color-primary);
+    /* Contrast: Bold accent */
     border-radius: var(--anmi-border-radius-lg);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Subtle depth */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    /* Subtle depth */
     transition: all 0.3s ease;
 }
 
 .product-features ol li:hover {
-    transform: translateY(-2px); /* Interaction feedback */
+    transform: translateY(-2px);
+    /* Interaction feedback */
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     border-left-color: var(--anmi-color-accent);
 }
 
 .product-features ol li::before {
-    content: counter(feature-counter); /* Hierarchy: Numbered features */
+    content: counter(feature-counter);
+    /* Hierarchy: Numbered features */
     position: absolute;
     left: 1rem;
     top: 2.2rem;
@@ -2148,17 +2261,21 @@ details[open] summary .toggle {
     justify-content: center;
     font-size: 1.25rem;
     font-weight: 700;
-    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.3); /* Contrast: Number badge */
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.3);
+    /* Contrast: Number badge */
     z-index: 1;
 }
 
 .product-features ol li strong {
-    display: block; /* Hierarchy: Separate title */
+    display: block;
+    /* Hierarchy: Separate title */
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--anmi-color-text);
-    margin-bottom: 0.75rem; /* Negative Space: Title spacing */
-    padding-left: 2rem; /* Align with number badge */
+    margin-bottom: 0.75rem;
+    /* Negative Space: Title spacing */
+    padding-left: 2rem;
+    /* Align with number badge */
     line-height: 1.4;
 }
 
@@ -2168,19 +2285,23 @@ details[open] summary .toggle {
     width: 3rem;
     height: 3px;
     background: linear-gradient(90deg, var(--anmi-color-primary) 0%, transparent 100%);
-    margin-top: 0.5rem; /* Contrast: Visual separator */
+    margin-top: 0.5rem;
+    /* Contrast: Visual separator */
 }
 
 /* Description text styling */
 .product-features ol li {
-    font-size: 1.05rem; /* Consistency: Body text size */
-    line-height: 1.7; /* Negative Space: Readable line height */
+    font-size: 1.05rem;
+    /* Consistency: Body text size */
+    line-height: 1.7;
+    /* Negative Space: Readable line height */
     color: var(--anmi-color-text-secondary);
 }
 
 /* Highlight keywords in description */
 .product-features ol li strong:not(:first-of-type) {
-    display: inline; /* Keep inline for keywords */
+    display: inline;
+    /* Keep inline for keywords */
     font-size: inherit;
     font-weight: 600;
     color: var(--anmi-color-primary);
@@ -2191,7 +2312,8 @@ details[open] summary .toggle {
 }
 
 .product-features ol li strong:not(:first-of-type)::after {
-    display: none; /* Remove underline from keywords */
+    display: none;
+    /* Remove underline from keywords */
 }
 
 /* Specifications Section */
@@ -2215,7 +2337,8 @@ details[open] summary .toggle {
 }
 
 .product-category h3 {
-    font-size: 1.575rem; /* +5%: 1.5→1.575rem */
+    font-size: 1.575rem;
+    /* +5%: 1.5→1.575rem */
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--anmi-color-primary);
@@ -2224,7 +2347,8 @@ details[open] summary .toggle {
 }
 
 .product-category h4 {
-    font-size: 1.31rem; /* +5%: 1.25→1.31rem */
+    font-size: 1.31rem;
+    /* +5%: 1.25→1.31rem */
     font-weight: 600;
     margin: 2rem 0 1rem 0;
     color: var(--anmi-color-text);
@@ -2340,7 +2464,8 @@ details[open] summary .toggle {
 }
 
 .guide-section h3 {
-    font-size: 1.31rem; /* +5%: 1.25→1.31rem */
+    font-size: 1.31rem;
+    /* +5%: 1.25→1.31rem */
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--anmi-color-primary);
@@ -2376,25 +2501,30 @@ details[open] summary .toggle {
 /* ============================================ */
 .highlight-box {
     background-color: var(--anmi-color-surface-info);
-    padding: 1rem; /* Giảm: 1.5rem → 1rem */
+    padding: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     border-radius: var(--anmi-border-radius-lg);
     border-left: var(--anmi-border-accent-width) solid var(--anmi-color-primary);
-    margin-bottom: 1rem; /* Giảm: 1.5rem → 1rem */
+    margin-bottom: 1rem;
+    /* Giảm: 1.5rem → 1rem */
 }
 
 .warning-box {
     background-color: var(--anmi-color-surface-warm);
-    padding: 1rem; /* Giảm: 1.5rem → 1rem */
+    padding: 1rem;
+    /* Giảm: 1.5rem → 1rem */
     border-radius: var(--anmi-border-radius-lg);
     border-left: var(--anmi-border-accent-width) solid var(--anmi-color-accent-warning);
-    margin-bottom: 1rem; /* Giảm: 1.5rem → 1rem */
+    margin-bottom: 1rem;
+    /* Giảm: 1.5rem → 1rem */
 }
 
 .info-box {
     background-color: var(--anmi-color-surface-info);
     padding: 1rem;
     border-radius: var(--anmi-border-radius-lg);
-    margin-top: 1rem; /* Giảm: 1.5rem → 1rem */
+    margin-top: 1rem;
+    /* Giảm: 1.5rem → 1rem */
 }
 
 .info-box p {
@@ -2404,7 +2534,8 @@ details[open] summary .toggle {
 .checkmark {
     color: var(--anmi-color-primary);
     font-weight: 700;
-    font-size: 1.31rem; /* +5%: 1.25→1.31rem */
+    font-size: 1.31rem;
+    /* +5%: 1.25→1.31rem */
     margin-right: 0.75rem;
 }
 
@@ -2419,14 +2550,16 @@ details[open] summary .toggle {
 }
 
 .footer-main {
-    font-size: 1rem; /* +5%: 0.95→1rem */
+    font-size: 1rem;
+    /* +5%: 0.95→1rem */
     color: var(--anmi-color-text-secondary);
     line-height: 1.7;
     margin-bottom: 1rem;
 }
 
 .footer-meta {
-    font-size: 0.92rem; /* +5%: 0.875→0.92rem */
+    font-size: 0.92rem;
+    /* +5%: 0.875→0.92rem */
     color: var(--anmi-color-text-muted);
     margin: 0;
 }
@@ -2449,6 +2582,7 @@ details[open] summary .toggle {
 
 /* WordPress Content Area Padding - Mobile Only */
 @media (max-width: 767px) {
+
     .pbmit-sidebar-no #content,
     .pbmit-sidebar-exists #content {
         padding: 1rem;
@@ -2461,6 +2595,7 @@ details[open] summary .toggle {
 
 /* Tablet (481-768px): Giữ 2 cột cho application và instruction */
 @media (min-width: 481px) and (max-width: 768px) {
+
     .application-grid,
     .instruction-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -2478,21 +2613,25 @@ details[open] summary .toggle {
     section[class*="nbj"],
     section[class*="ewn"],
     .he-thong-ga-kep-can-dao {
-        padding: 0.5rem 0.15rem; /* Giảm thêm: 0.75rem 0.25rem → 0.5rem 0.15rem */
+        padding: 0.5rem 0.15rem;
+        /* Giảm thêm: 0.75rem 0.25rem → 0.5rem 0.15rem */
     }
 
     /* Figure margin giảm để sát mép hơn */
     figure {
-        margin: 1rem 0; /* Giảm: 1.5rem 0 → 1rem 0 */
+        margin: 1rem 0;
+        /* Giảm: 1.5rem 0 → 1rem 0 */
     }
 
     /* Section margin giảm */
     .section {
-        margin-bottom: 1rem; /* Giảm: 2rem → 1rem */
+        margin-bottom: 1rem;
+        /* Giảm: 2rem → 1rem */
     }
 
     table {
-        font-size: 0.92rem; /* +5%: 0.875→0.92rem */
+        font-size: 0.92rem;
+        /* +5%: 0.875→0.92rem */
     }
 
     th,
@@ -2550,7 +2689,8 @@ details[open] summary .toggle {
     /* Catalog download responsive */
     .catalog-download .download-btn {
         padding: 12px 20px;
-        font-size: 14.7px; /* +5%: 14→14.7px */
+        font-size: 14.7px;
+        /* +5%: 14→14.7px */
         width: 100%;
         justify-content: center;
     }
@@ -2575,12 +2715,14 @@ details[open] summary .toggle {
 
     /* Product Features - Mobile Optimization */
     .product-features h2 {
-        font-size: 1.5rem; /* Smaller on mobile */
+        font-size: 1.5rem;
+        /* Smaller on mobile */
         margin-bottom: 1.5rem;
     }
 
     .product-features ol li {
-        padding: 1.5rem 1rem 1.5rem 2.5rem; /* Reduce padding, keep space for number */
+        padding: 1.5rem 1rem 1.5rem 2.5rem;
+        /* Reduce padding, keep space for number */
         margin-bottom: 1rem;
     }
 
@@ -2593,47 +2735,59 @@ details[open] summary .toggle {
     }
 
     .product-features ol li strong {
-        font-size: 1.1rem; /* Slightly smaller title */
-        padding-left: 0.5rem; /* Less indent on mobile */
+        font-size: 1.1rem;
+        /* Slightly smaller title */
+        padding-left: 0.5rem;
+        /* Less indent on mobile */
     }
 
     .product-features ol li strong::after {
-        width: 2rem; /* Shorter underline */
+        width: 2rem;
+        /* Shorter underline */
     }
 
     .product-features ol li {
-        font-size: 1rem; /* Standard body text */
+        font-size: 1rem;
+        /* Standard body text */
         line-height: 1.6;
     }
 
     /* FAQ Section - Mobile Optimization */
     .faq h2 {
-        font-size: 1.5rem; /* Smaller title */
+        font-size: 1.5rem;
+        /* Smaller title */
         margin-bottom: 1.5rem;
     }
 
     details {
-        margin-bottom: 0.75rem; /* Reduce spacing */
+        margin-bottom: 0.75rem;
+        /* Reduce spacing */
     }
 
     summary {
-        padding: 1rem; /* Reduce padding */
-        font-size: 1rem; /* Smaller question text */
+        padding: 1rem;
+        /* Reduce padding */
+        font-size: 1rem;
+        /* Smaller question text */
     }
 
     .toggle {
-        font-size: 1.25rem; /* Smaller icon */
+        font-size: 1.25rem;
+        /* Smaller icon */
         margin-left: 0.75rem;
     }
 
     .faq-content {
-        padding: 0 1rem 1rem 1rem; /* Reduce padding */
-        font-size: 1rem; /* Standard text */
+        padding: 0 1rem 1rem 1rem;
+        /* Reduce padding */
+        font-size: 1rem;
+        /* Standard text */
         line-height: 1.6;
     }
 
     .faq-content p {
-        padding-top: 0.75rem; /* Less top spacing */
+        padding-top: 0.75rem;
+        /* Less top spacing */
     }
 
     /* Installation Guide - Mobile Optimization */
@@ -2650,7 +2804,8 @@ details[open] summary .toggle {
     }
 
     .installation-steps li {
-        padding: 1.25rem 1rem 1.25rem 3.5rem; /* Reduce padding */
+        padding: 1.25rem 1rem 1.25rem 3.5rem;
+        /* Reduce padding */
         margin-bottom: 1rem;
         font-size: 1rem;
         line-height: 1.6;
@@ -2665,7 +2820,8 @@ details[open] summary .toggle {
     }
 
     .installation-steps li strong:first-of-type {
-        font-size: 1.05rem; /* Slightly smaller */
+        font-size: 1.05rem;
+        /* Slightly smaller */
         margin-bottom: 0.4rem;
     }
 
@@ -2700,12 +2856,14 @@ details[open] summary .toggle {
     }
 
     .catalog-download .download-btn span {
-        font-size: 14.7px; /* +5%: 14→14.7px */
+        font-size: 14.7px;
+        /* +5%: 14→14.7px */
     }
 }
 
 /* Mobile nhỏ (≤480px): Ép tất cả về 1 cột */
 @media (max-width: 480px) {
+
     .feature-grid,
     .application-grid,
     .performance-grid,
@@ -2759,6 +2917,7 @@ img {
         transform: scale(0.8);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -2802,18 +2961,18 @@ img {
     .anmi-lightbox {
         padding-top: 30px;
     }
-    
+
     .anmi-lightbox-content {
         max-width: 95%;
         max-height: 70vh;
     }
-    
+
     .anmi-lightbox-close {
         top: 10px;
         right: 15px;
         font-size: 35px;
     }
-    
+
     .anmi-lightbox-caption {
         width: 90%;
         font-size: 0.92rem;
@@ -2880,6 +3039,7 @@ img {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -2918,7 +3078,8 @@ img {
 }
 
 .contact-slider-dots {
-    display: none; /* Hidden on desktop */
+    display: none;
+    /* Hidden on desktop */
 }
 
 /* Mobile: Enable slider */
@@ -2930,34 +3091,42 @@ img {
         margin-left: -15px;
         margin-right: -15px;
     }
-    
+
     .contact-info {
         display: flex;
         transition: transform 0.3s ease-out;
         gap: 0;
     }
-    
+
     .contact-info .office {
         flex: 0 0 100%;
         min-width: 100%;
-        padding: 1rem 15px; /* Giảm padding dọc từ 1.5rem → 1rem */
+        padding: 1rem 15px;
+        /* Giảm padding dọc từ 1.5rem → 1rem */
         scroll-snap-align: start;
-        box-shadow: none; /* Bỏ shadow để gọn hơn */
-        border-radius: 0; /* Bỏ border-radius để chiếm hết chiều rộng */
+        box-shadow: none;
+        /* Bỏ shadow để gọn hơn */
+        border-radius: 0;
+        /* Bỏ border-radius để chiếm hết chiều rộng */
     }
-    
+
     /* Giảm gap trong office content */
     .contact-info .office h3 {
-        font-size: 1rem; /* Giảm từ 1.125rem */
-        margin-bottom: 0.5rem; /* Giảm từ 0.75rem */
-        padding-bottom: 0.35rem; /* Giảm từ 0.5rem */
+        font-size: 1rem;
+        /* Giảm từ 1.125rem */
+        margin-bottom: 0.5rem;
+        /* Giảm từ 0.75rem */
+        padding-bottom: 0.35rem;
+        /* Giảm từ 0.5rem */
     }
-    
+
     .contact-info .office .contact-meta {
-        padding: 0.5rem 0.75rem; /* Giảm từ 0.75rem */
-        gap: 0.25rem; /* Giảm từ 0.35rem */
+        padding: 0.5rem 0.75rem;
+        /* Giảm từ 0.75rem */
+        gap: 0.25rem;
+        /* Giảm từ 0.35rem */
     }
-    
+
     /* Slider navigation dots */
     .contact-slider-dots {
         display: flex;
@@ -2966,7 +3135,7 @@ img {
         margin-top: 15px;
         padding: 8px 0;
     }
-    
+
     .slider-dot {
         width: 10px;
         height: 10px;
@@ -2976,25 +3145,27 @@ img {
         transition: all 0.3s ease;
         opacity: 0.5;
     }
-    
+
     .slider-dot.active {
         background: var(--anmi-color-primary, #0055AA);
         opacity: 1;
         transform: scale(1.2);
     }
-    
+
     .slider-dot:hover {
         opacity: 0.8;
     }
-    
+
     /* Swipe indicator */
     .contact-info-wrapper::after {
         content: "← Vuốt để xem chi nhánh khác →";
         display: block;
         text-align: center;
-        font-size: 11px; /* Giảm từ 12px */
+        font-size: 11px;
+        /* Giảm từ 12px */
         color: var(--anmi-color-text-muted, #999);
-        margin-top: 8px; /* Giảm từ 10px */
+        margin-top: 8px;
+        /* Giảm từ 10px */
         padding: 0 15px;
         font-style: italic;
     }
