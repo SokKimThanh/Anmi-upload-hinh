@@ -89,7 +89,7 @@
             saveActiveTab(targetTab);
 
             // Scroll to top of tab content smoothly
-            scrollToTabs();
+            // scrollToTabs();
         } else {
             console.warn('Tab content not found for:', targetTab);
         }
