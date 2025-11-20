@@ -622,6 +622,62 @@ tbody tr:last-child {
     box-shadow: var(--anmi-box-shadow-primary);
 }
 
+/* -------------------------------------------- */
+/* Product Intro - reuse contact section styling */
+/* Apply the same visual treatment as contact cards */
+.product-intro {
+    background: var(--card-bg, #ffffff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(22, 28, 37, 0.06);
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 20px;
+    align-items: start;
+    font-size: 1.155rem; /* merged from later block */
+    line-height: 1.8; /* merged from later block */
+}
+
+.product-intro .catalog-download {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.product-intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.product-intro .intro-text {
+    line-height: 1.6;
+}
+
+/* Product Intro list styling (merged) */
+.product-intro ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.product-intro ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--anmi-border-color-subtle);
+}
+
+@media (max-width: 768px) {
+    .product-intro {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+    .product-intro .catalog-download {
+        justify-content: flex-start;
+    }
+}
+
 .contact-title {
     font-size: 1.575rem; /* +5%: 1.5→1.575rem */
     font-weight: 600;
