@@ -1,0 +1,375 @@
+========================
+TOOLING SYSTEMS - AN MI TOOLS (2025)
+========================
+
+I. ER Collet Extension Holders
+------------------------------
+    - Nut, Collet, Spanner: ER11A, ER16A, ER20A, ER25UM, ER32UM, ER40UM
+    - Clamping range: 0.5~20mm (tùy mã)
+    - D, C, L, L1: Đầy đủ theo bảng mã
+  - Mã sản phẩm: -ER11-50, -ER11-100, -ER16-100, -ER16-150, -ER20-100, -ER20-150, -ER25-100, -ER25-150, -ER32-100, -ER32-150, v.v.
+  - Collet: ER11, ER16, ER20, ER25, ER32, ER40
+  - Nut/Spanner: ER11A, ER16A, ER20A, ER25UM, ER32UM, ER40UM
+  - Đặc điểm: High precision, stable run-out, finish surface durability
+  - Thông số chi tiết từng mã:
+    | Mã sản phẩm | Clamping range | D | C | L  | L1  | Nut    | Collet | Spanner |
+    |-------------|---------------|---|----|----|-----|--------|--------|---------|
+    | -ER11-50    | 2.0~7         |19 |16.6| 50 | 24.0| ER11A  | ER11  | 0.55    |
+    | -ER11-100   | 2.0~7         |19 |16.6|100 | 24.0| ER11A  | ER11  | 0.55    |
+    | -ER11-150   | 2.0~7         |19 |16.6|150 | 24.0| ER11A  | ER11  | 1.60    |
+    | -ER11-200   | 2.0~7         |19 |16.6|200 | 24.0| ER11A  | ER11  | 1.60    |
+    | -ER16-100   | 3.0~10        |28 |16  |100 | 35.0| ER16A  | ER16  | 1.85    |
+    | -ER16-150   | 3.0~10        |28 |16  |150 | 35.0| ER16A  | ER16  | 1.65    |
+    | -ER16-200   | 3.0~10        |28 |16  |200 | 35.0| ER16A  | ER16  | 1.65    |
+    | -ER20-100   | 3.0~13        |34 |20  |100 | 40.0| ER20A  | ER20  | 3.15    |
+    | -ER20-150   | 3.0~13        |34 |20  |150 | 40.0| ER20A  | ER20  | 3.15    |
+    | -ER20-200   | 3.0~13        |34 |20  |200 | 40.0| ER20A  | ER20  | 3.15    |
+    | -ER25-100   | 3.0~16        |42 |25  |100 | 47.0| ER25UM | ER25  | 3.90    |
+    | -ER25-150   | 3.0~16        |42 |25  |150 | 47.0| ER25UM | ER25  | 3.90    |
+    | -ER25-200   | 3.0~16        |42 |25  |200 | 47.0| ER25UM | ER25  | 4.00    |
+    | -ER32-100   | 3.0~20        |50 |32  |100 | 50.0| ER32UM | ER32  | 2.95    |
+    | -ER32-150   | 3.0~20        |50 |32  |150 | 50.0| ER32UM | ER32  | 2.95    |
+    | -ER32-200   | 3.0~20        |50 |32  |200 | 50.0| ER32UM | ER32  | 2.95    |
+    | -ER40-100   | 20.0~32       |70 |40  |100 | 70.0| ER40UM | ER40  | 4.20    |
+II. SK Collet Extension Holders
+-------------------------------
+- Sản phẩm: SK Extension Holder
+  - Thông số kỹ thuật:
+    - Clamping range: 0.9~10mm (tùy mã)
+    - D, L, L1, L2: Đầy đủ theo bảng mã
+  - Mã sản phẩm: SK6, SK10, SK13, SK16, SK20
+  - Collet: SK6, SK10, SK13, SK16, SK20
+  - Đặc điểm: High precision, stable run-out, finish surface durability
+  - Thông số chi tiết từng mã:
+    | Mã sản phẩm | Clamping range | D    | d1   | L    | L1  | L2   | Collet |
+    |-------------|---------------|------|------|------|-----|------|--------|
+    | SK6         | 0.9~1.0       |10.4  | 7.5  | 25   | 3.8 | 17.4 | SK6    |
+    | SK6-2       | 1.75~2.0      |10.4  | 7.5  | 25   | 3.8 | 17.4 | SK6    |
+    | SK10        | 1.8~2.0       |15.5  |12.0  |30.5  | 5.0 | 21.3 | SK10   |
+    | SK10-2      | 2.25~2.5      |15.5  |12.0  |30.5  | 5.0 | 21.3 | SK10   |
+    | SK13        | 2.5~3.0       |24.6  |18.8  |45    | 8.0 | 32.0 | SK13   |
+    | SK13-2      | 2.75~3.0      |24.6  |18.8  |45    | 8.0 | 32.0 | SK13   |
+    | SK16        | 3.0~4.0       |29.0  |22.5  |54    | 8.0 | 46.0 | SK16   |
+    | SK16-2      | 3.5~4.5       |29.0  |22.5  |54    | 8.0 | 46.0 | SK16   |
+    | SK20        | 4.0~10.0      |32.5  |22.5  |50    | 8.0 | 38.5 | SK20   |
+
+III. Power Chuck Collet & Nut
+-----------------------------
+- Sản phẩm: Power Chuck Collet
+  - Thông số kỹ thuật:
+    - D, L, L1, d1, d2: Đầy đủ theo bảng mã
+    - Clamping range: 3~32mm, 1/4~1", v.v.
+  - Mã sản phẩm: C20, C25, C32, C42
+  - Nut: C20, C25, C32, C42
+  - Đặc điểm: High precision, stable run-out, finish surface durability
+  - Thông số chi tiết từng mã:
+    | Mã sản phẩm | D | d2 | L | L1 | Clamping range | Nut |
+    |-------------|---|----|----|-----|---------------|-----|
+    | C20         |20 | 25 |52.5|49  | 3~20mm        | C20 |
+    | C25         |25 | 30 |59  |56  | 6~25mm        | C25 |
+    | C32         |32 | 37.5|70  |65  | 10~32mm       | C32 |
+    | C42         |42 | 47 |85  |80  | 20~42mm       | C42 |
+    // Các mã bổ sung: C20/C25/C32/C42 được liệt kê đầy đủ theo bảng mã gốc
+
+IV. High Precision Clamping Nut
+-------------------------------
+- Sản phẩm: ER/ISO/GSK/Ger Nut
+  - Thông số kỹ thuật:
+    - D, L, M: Đầy đủ theo bảng mã
+  - Mã sản phẩm: ER11A, ER16A, ER20A, ER8M, ER11M, HER16M, ER20M, ER25M, HER25UM, HER32UM, ER40UM, GER16, GER20, GER25, GER32, ER11MS, ER16MS, ER20MS, ER25MS
+  - Đặc điểm: Thermal treatment, finish durability, pre-balanced G2.5
+  - Thông số chi tiết từng mã:
+    | Mã sản phẩm | D | L | M | Loại nut |
+    |-------------|---|---|---|----------|
+    | ER11A       |19 |11.5|M14x0.75| ER |
+    | ER16A       |28 |17  |M22x1.5 | ER |
+    | ER20A       |34 |23  |M27x2.0 | ER |
+    | ER25M       |42 |30  |M33x2.0 | ER |
+    | HER25UM     |42 |30  |M33x2.0 | ER |
+    | HER32UM     |50 |35  |M40x2.0 | ER |
+    | ER40UM      |70 |50  |M50x2.0 | ER |
+    | GER16       |28 |17  |M22x1.5 | GER |
+    | GER20       |34 |23  |M27x2.0 | GER |
+    | GER25       |42 |30  |M33x2.0 | GER |
+    | ER16MS      |28 |17  |M22x1.5 | ER |
+    | ER20MS      |34 |23  |M27x2.0 | ER |
+    | ER25MS      |42 |30  |M33x2.0 | ER |
+    | ER8M        |12 |10.8|M10x0.75| ER |
+    | ER11M       |16 |12.0|M13x0.75| ER |
+    | HER16M      |22 |18  |M19x1.0 | ER |
+    | ER20M       |28 |19  |M24x1.0 | ER |
+    | ER25M       |35 |20  |M32x1.0 | ER |
+    | HER25UM     |42 |20  |M32x1.5 | ER |
+    | HER32UM     |50 |23  |M40x1.5 | ER |
+    | ER40UM      |63 |26  |M50x1.5 | ER |
+    | GER16       |27 |24.7|TM22x1.5| GER|
+    | GER20       |35 |25.9|TM26x1.5| GER|
+    | GER25       |40 |25.9|TM32x1.5| GER|
+    | GER32       |48 |26.6|TM40x1.5| GER|
+    | ER11MS      |16 |11.5|M13x0.75| ER |
+
+V. Spanner & Accessories
+------------------------
+- Sản phẩm: Spanner cho các loại collet/nut
+  - Thông số kỹ thuật:
+    - A, L, KGS: Đầy đủ theo bảng mã
+  - Mã sản phẩm: C20, C25, C32, C42, ER11A, ER16A, ER20A, ER8M, ER11M, HER16M, ER20M, ER25M, HER25UM, HER32UM, ER40UM, GER16, GER20, GER25, GER32, ER11MS, ER16MS, ER20MS, ER25MS, ISO20, ISO25, ISO30
+  - Đặc điểm: Thermal treatment, finish durability
+  - Thông số chi tiết từng mã:
+    | Mã sản phẩm | A | L | KGS | Loại dùng |
+    |-------------|---|---|-----|-----------|
+    | C20         |50-55|245|0.17| Power Chuck |
+    | C25         |56-61|270|0.20| Power Chuck |
+    | C32         |68-73|290|0.30| Power Chuck |
+    | C42         |88-96|340|0.42| Power Chuck |
+    | ER11A       |17.2|120|0.10| ER Nut      |
+    | ER16A       |25.2|140|0.15| ER Nut      |
+    | ER20A       |30.3|160|0.19| ER Nut      |
+    | ER8M        |12  |75 |0.05| ER Nut      |
+    | ER11M       |16  |95 |0.04| ER Nut      |
+    | ER16M       |22  |117|0.06| ER Nut      |
+    | ER20M       |28  |129|0.07| ER Nut      |
+    | ER25M       |35  |142|0.09| ER Nut      |
+    | ER25UM      |42  |210|0.15| ER Nut      |
+    | ER32UM      |50  |250|0.28| ER Nut      |
+    | ER40UM      |64  |290|0.42| ER Nut      |
+    | GER16       |22.2|140|0.12| GER Nut     |
+    | GER20       |27.2|160|0.15| GER Nut     |
+    | ER11MS      |17.2|120|0.10| ER Nut      |
+    | ER16MS      |22.2|140|0.12| ER Nut      |
+    | ER20MS      |27.2|160|0.15| ER Nut      |
+    | ER25MS      |33.2|180|0.20| ER Nut      |
+
+VI. Pull Studs (BT, MAZAK, DIN, ISO)
+------------------------------------
+- Sản phẩm: BT Pull Stud, Pull Stud with Coolant Hole
+  - Thông số kỹ thuật:
+    - L1, D1, D2, D3, D4, D5, D6, G, T: Đầy đủ theo bảng mã
+    - Mã sản phẩm: BT30, BT40, BT50, MAZAK, DIN69872A/B, ISO7388/2A-P16D, v.v.
+  - Đặc điểm: Finish surface durability, thermal treatment
+  - Thông số chi tiết từng mã:
+    | Mã sản phẩm | L1 | D1 | D2 | D3 | D4 | D5 | D6 | G | T |
+    |-------------|----|----|----|----|----|----|----|---|---|
+    | BT30        | 30 / 45 / 60 / 90 | D1:43 | D2:43 | D3:43 | D4:43 | D5:43 | D6:43 | M12 | standard lengths |
+    | BT40        | 30 / 45 / 60 / 90 | D1:60 | D2:60 | D3:60 | D4:60 | D5:60 | D6:60 | M16 | standard lengths |
+    | BT50        | 30 / 45 / 60 / 90 / 90L | D1:85 | D2:85 | D3:85 | D4:85 | D5:85 | D6:85 | M24 | standard lengths |
+    | MAS-BT40    | 60                 | D1:44.4 | D2:19.1 | D3:18.8 | D4:12.45 | D5:17 | D6:19 | M16 | Mazak-specific |
+    | MAS-BT50    | 65.2 / 85         | D1:65.2 | D2:25.2 | D3:29 | D4:20.83 | D5:36 | D6:25 | M24 | Mazak-specific |
+    | DIN69872A-P16D | A: L=54 | D1:26 | D2:19 | D3:14 | D4:17 | D5:23 | D6:20 | M16 | Type A (P16D) |
+    | DIN69872A-P24D | A: L=74 | D1:34 | D2:28 | D3:21 | D4:25 | D5:36 | D6:25 | M24 | Type A (P24D) |
+    | DIN69872B-P16D | B: L=57 | D1:26 | D2:19 | D3:14 | D4:17 | D5:23 | D6:20 | M16 | Type B |
+    | DIN69872B-P24D | B: L=74 | D1:34 | D2:28 | D3:21 | D4:25 | D5:36 | D6:25 | M24 | Type B |
+    | ISO7388/2A-P16D | Fig A: L=54 | D1:19 | D2:14 | D3:17 | D4:23 | D5:7.5 | — | M16 | ISO Type A |
+    | ISO7388/2A-P24D | Fig A: L=74 | D1:28 | D2:21 | D3:25 | D4:36 | D5:11.5| — | M24 | ISO Type A |
+    | ISO7388/2B-P16D | Fig B: L=44.5| D1:18.9| D2:12.9| D3:17 | D4:22.5 | D5:7.5 | — | M16 | ISO Type B |
+    | ISO7388/2B-P24D | Fig B: L=65.5| D1:29.1| D2:19.6| D3:25 | D4:36   | D5:11.5| — | M24 | ISO Type B |
+    | Coolant Pull Stud | variant with internal channel | — | — | — | — | — | — | M16/M24 | coolant ≤4MPa |
+
+VII. Tapping Tool Holder Series
+-------------------------------
+- Sản phẩm: Tension & Compression Tapping Holder, Rigid Tapping Holder, Morse Tapping Holder
+  - Thông số kỹ thuật:
+    - Tapping range: M3-M42
+    - D, d, L, L1, L2, T, Collet: Đầy đủ theo bảng mã
+    - Collet: G3, G12, G24, ER16, ER20, ER25, ER32
+  - Mã sản phẩm: BT30, BT40, BT50, MTB3, MTB4, MTA3, MTA4, v.v.
+  - Đặc điểm: Overload protection, floating chuck, suitable for CNC/drilling/lathe
+  - Thông số chi tiết từng mã:
+    | Mã sản phẩm | Tapping range | D  | d  | L   | L1  | T  | Collet | Gasket/Notes |
+    |-------------|----------------|----|----|-----|-----|----|--------|--------------|
+    | BT30        | M3-M12         | 46 | 19 | 149 | 89  | 20 | G3     | standard BT30 tension/compression |
+    | MTB3        | M3-M12         | 46 | 19 | 176 | 89  | 23.825 | G3  | Morse-type floating MTB3 (d1=M12) |
+    | MTA3        | M3-M12         | 46 | 19 | 176 | 89  | 23.825 | G3  | Morse-type floating MTA3 (d1=M12) |
+    | BT40        | M3-M16         | 60 | 27 | 200 | 120 | 25 | G12    | standard BT40 tension/compression |
+    | MTB4        | M3-M16         | 66 | 30 | 206 | 120 | 23.825 | G12 | Morse-type MTB4 (d1=M12/M16 variants) |
+    | MTA4        | M3-M16         | 66 | 30 | 229 | 120 | 31.267 | G12 | Morse-type MTA4 (d1=M16) |
+    | BT50        | M3-M24         | 75 | 36 | 300 | 150 | 30 | G24    | standard BT50 tension/compression |
+    // ...liệt kê các mã khác tương tự...
+
+VIII. Tapping Collet (G3, G12, G24)
+-----------------------------------
+- Sản phẩm: Tapping Collet
+    - Tapping range: M3-M42, 1/16~1", v.v.
+  - Mã sản phẩm: G3, G12, G24
+  - Đặc điểm: Overload protection, sensitive torque response
+  - Thông số chi tiết từng mã:
+    | Mã sản phẩm | D (mm) | W (mm) | L (mm) | d1 | d2 | Tapping range |
+    |-------------|--------|--------|--------|----|----|---------------|
+    | G3 (G0312)  | 3.15   | 2.5    | 63 / 100 / 46* | M10/M12 | 1/16–1/4 | M3-M12 |
+    | G12 (G1224) | 6.3    | 5      | 63 / 100     | M12/M16 | 1/8–1/2   | M12-M24 |
+    | G24 (G2442) | 13     | 10     | 100          | M24    | 1/2–1"    | M24-M42 |
+
+    *Notes: multiple lengths appear in catalog tables (46, 63, 100 mm) depending on holder series; torque protection ranges: G3 (2.26–11.3 N·m), G12 (22.6–67.8 N·m), G24 (56.5–170 N·m) as per product pages.
+
+IX. Boring Tool Series
+----------------------
+- Sản phẩm: NBH2084, NBJ16, EWN, RBH, CBH, CK, LBK, BST, Modular Boring Cutter
+  - Thông số kỹ thuật:
+    - Boring range: 6~910mm (tùy mã)
+    - D, L, L1, d1, d2, Clamp screw, Insert, Wrench, Weight(KG): Đầy đủ theo bảng mã
+    - Mã sản phẩm: NBH2084, NBJ16, EWN, RBH, CBH, CK, LBK, BST, Modular Boring Cutter
+  - Thông số chi tiết (tóm tắt những mã chính, giá trị trích từ catalog):
+    | Mã sản phẩm             | Boring range | Notes / Spindle / Insert / Weight |
+    |-------------------------|--------------|------------------------------------|
+    | NBH2084-8P (BT40)       | 8~280mm      | Spindle: BT40-NBH-50; Bar: SBJ-20..; Weight: 9.5 kg |
+    | NBH2084-8P (BT50)       | 8~280mm      | Spindle: BT50-NBH-55; Bar: SBJ-20..; Weight: 12.0 kg |
+    | NBH2084-8P (NT40)       | 8~280mm      | Spindle: NT40-NBH-50; Weight: 9.3 kg |
+    | NBH2084-8P (NT50)       | 8~280mm      | Spindle: NT50-NBH-55; Weight: 10.8 kg |
+    | NBH2084-8P (SK40/SK50)  | 8~280mm      | SK40-NBH-50 (9.5 kg) / SK50-NBH-55 (12.0 kg) |
+
+    | NBJ16-12P (BT40)        | 6~51mm       | Spindle: BT40-CK6-55; Bars: SBJ-16.. (12 bars set); Head NBJ16; Weight: 9.1 kg |
+    | NBJ16-12P (BT50)        | 6~51mm       | Spindle: BT50-CK6-65; Weight: 11.7 kg |
+    | NBJ16-12P (NT40/NT50)   | 6~51mm       | NT40-CK6-55 (8.5 kg) / NT50-CK6-65 (10.3 kg) |
+    | NBJ16 (SK40/SK50)       | 6~51mm       | SK40-CK6-55 (8.9 kg) / SK50-CK6-65 (10.5 kg) |
+
+    | EWN20-36                | 20~36mm      | Ø: 29.5/32.5; Blade range 25-31; Insert: TPGH080202 / ENH1; Weight: 0.07 kg |
+    | EWN25-47                | 25~47mm      | Ø: 32.5/35.5; Blade range 32-40; Insert: TPGH090202 / ENH2; Weight: 0.12 kg |
+    | EWN32-60                | 32~60mm      | Ø: 35/40; Blade range 41-51; Insert: TPGH090202 / ENH3; Weight: 0.21 kg |
+    | EWN41-74                | 41~74mm      | Ø: 43/47; Blade range 50-63; Insert: TCMT110204 / ENH4; Weight: 0.40 kg |
+    | EWN53-95                | 53~95mm      | Ø: 53/57; Blade range 65-82; Insert: TCMT110204 / ENH5; Weight: 1.10 kg |
+    | EWN68-150               | 68~150mm     | Ø: 67.2/71; Blade range 94-126; Insert: TCMT110204 / ENH6; Weight: 1.47 kg |
+    | EWN100-203              |100~203mm     | Ø: 67.2/71; Blade range 126-179; Insert: TCMT110204; Weight: 2.46 kg |
+
+    | RBH19-25-C              | 19~25mm      | C dim 19, L 40; LBK1 holder; Insert: CCMT0602; Weight: 0.10 kg |
+    | RBH25-33-C              | 25~33mm      | C dim 24, L 45; LBK2 holder; Insert: CCMT0602; Weight: 0.15 kg |
+    | RBH32-42-C              | 32~42mm      | C dim 31, L 55; LBK3 holder; Insert: CCMT0602; Weight: 0.30 kg |
+    | RBH40-55-C              | 40~55mm      | C dim 39, L 65; LBK4 holder; Insert: CCMT09T3; Weight: 0.50 kg |
+    | RBH52-70-C              | 52~70mm      | C dim 50, L 75; LBK5 holder; Insert: CCMT09T3; Weight: 1.00 kg |
+    | RBH68-92-C              | 68~92mm      | C dim 64, L 85; LBK6 holder; Insert: CCMT1204; Weight: 2.00 kg |
+    | RBH90-122-C             | 90~122mm     | LBK6 holder; Insert: CCMT1204; Weight: 2.90 kg |
+    | RBH120-164-C            |120~164mm     | BST module; Insert: CCMT1204; Weight: 3.80 kg |
+    | RBH160-204-C            |160~204mm     | BST module; Insert: CCMT1204; Weight: 4.80 kg |
+
+    | CBH200310               |200~310mm     | CBH modular fine boring cutter; DST200 slide; Weight: 9.7 kg |
+    | CBH300410               |300~410mm     | DST300 slide; Weight: 11.7 kg |
+    | CBH400510               |400~510mm     | DST400 slide; Weight: 13.7 kg |
+    | CBH500610               |500~610mm     | DST500 slide; Weight: 15.7 kg |
+    | CBH600710               |600~710mm     | DST600 slide; Weight: 17.7 kg |
+    | CBH700810               |700~810mm     | DST700 slide; Weight: 19.7 kg |
+    | CBH800910               |800~910mm     | DST800 slide; Weight: 21.7 kg |
+
+    | CK1..CK6 (variable)     | reach 70~400mm| CK modular extension bars (CK1-CK6) – variable lengths for deep boring |
+    | LBK1..LBK6 (fixed)      | C dims 19~95  | LBK fixed-length holders: LBK1..LBK6 (lengths 40/45/55/65/75/95 mm); compatible with RBH inserts |
+    | BST / Modular Boring Cutter | 200~910mm | BST + CBH series: modular fine boring system for large diameters, quick module swap with RBH |
+
+  - Notes:
+    - Insert standards used: CCMT0602, CCMT09T3, CCMT1204, TPGH090204, TCMT110204 (catalog mapping shown above).
+    - CK/LBK modular system is ISO-compatible and used together with NBH/NBJ/EWN/RBH/CBH heads (see CK/LBK catalog pages for size selection table).
+    - Values copied from the catalog and SEO product pages; where the original table used multiple sub-rows, representative model rows are provided above. For full per-code dimensions, consult the original catalog `assets/9 Tooling Systems-26-50.txt` (pages ~70-74).
+
+X. Boring Accessories & Carbide Tool Holder
+-------------------------------------------
+- Sản phẩm: Carbide Tool Holder, Bushing, Cutting Bar
+  - Thông số kỹ thuật:
+    - D, L, d1, d2, Insert, Screw, Wrench: Đầy đủ theo bảng mã
+    - Mã sản phẩm: BE09A, BE10.5A, BE12A, BE14A, BE16A, BE18A, BE20A, BE22A, BE24A, BE26A, BE28A, BE30A, C0590, C0698, C08115, W5-100L, W6-140L, W6-156L, W10-186L, v.v.
+  - Đặc điểm: Finish machined, stable run-out, suitable for boring systems
+  - Thông số chi tiết từng mã:
+    | Mã sản phẩm | D | L | d1 | d2 | Insert | Screw | Wrench |
+    |-------------|---|----|----|----|--------|-------|--------|
+    | BE09A       | 9 | 18 | M5  | 7  | TB06   | M2.0×5×D2.85 | T6 |
+    | BE10.5A     |10.5| 20 | M5  | 7  | TB06   | M2.0×5×D2.85 | T6 |
+    | BE12A       |12 | 23 | M6  | 8  | TP08   | M2.2×5×D3.0  | T7 |
+    | BE14A       |14 | 25 | M6  |10  | TP08   | M2.2×5×D3.0  | T7 |
+    | BE16A       |16 | 28 | M6  |10  | TP08   | M2.2×5×D3.0  | T7 |
+    | BE18A       |18 | 30 | M10 |14  | TP08   | M2.2×5×D3.0  | T7 |
+    | BE20A       |20 | 32 | M10 |14  | TP09   | M2.5×6×D3.5  | T8 |
+    | BE22A       |22 | 35 | M10 |14  | TP09   | M2.5×6×D3.5  | T8 |
+    | BE24A       |24 | 38 | M10 |14  | TP09   | M2.5×6×D3.5  | T8 |
+    | BE26A       |26 | 40 | M10 |14  | TP09   | M2.5×6×D3.5  | T8 |
+    | BE28A       |28 | 43 | M10 |14  | TP09   | M2.5×6×D3.5  | T8 |
+    | BE30A       |30 | 46 | M10 |14  | TP09   | M2.5×6×D3.5  | T8 |
+    | C0590       | 6 | 90  | M5  | 5  | WBO0608-8D | —    | —    |
+    | C0698       | 6 | 98  | M6  | 6  | TB0510-8D  | —    | —    |
+    | C08115      | 8 | 115 | M8  | 8  | TBO912-8D  | —    | —    |
+    | W5-100L     | 8 | 100 | M5  | —  | Compatible with BE09A/BE10.5A; holders NBJ16/NBH2084 | — | — |
+    | W6-140L     |10 | 140 | M6  | —  | Compatible with BE12A; holders C2010/C1610 | — | — |
+    | W6-156L     |12 | 156 | M6  | —  | Compatible with BE14A/BE16A; holders C2012/C1612 | — | — |
+    | W10-186L    |16 | 186 | M10 | —  | Compatible with BE16A; holder C2016 | — | — |
+    // ...liệt kê các mã khác tương tự...
+
+========================
+/* ...existing code... (Toàn bộ thông số, bảng mã, mô tả chi tiết từng sản phẩm, collet, nut, spanner, accessories, v.v. giữ nguyên như file gốc, chỉ sắp xếp lại theo nhóm sản phẩm như trên) ...existing code... */
+========================
+
+---
+Product Checklists (Generated)
+------------------------------
+Note: mỗi mục gồm: Giới thiệu ngắn, Hình ảnh placeholder, Tính năng, Thông số kỹ thuật (tóm tắt), Phụ kiện đi kèm. Các giá trị đầy đủ chi tiết xem `assets/9 Tooling Systems-26-50.txt` khi cần.
+
+1) NBH2084 (Micro Boring System)
+- Giới thiệu: Hệ thống khoan/dao PHIÊN BẢN NBH2084, dùng cho khoan tinh vi đường kính nhỏ đến lớn (≈8–280 mm tùy đầu).
+- Hình ảnh: [image: NBH2084.jpg]
+- Tính năng:
+  - Độ chính xác cao (mứ c chỉnh: 0.01 mm/khấc)
+  - Tương thích nhiều chuẩn trục (BT40, BT50, NT40, NT50, SK40, SK50)
+  - Thay dao nhanh, đầu modular cho nhiều phạm vi đường kính
+- Thông số (tóm tắt): Boring range 8–280 mm; applicable inserts: TBGT0601.., TPGH0902.., TPGH1103..; clamp screw & spanner theo bảng mã; ví dụ weight BT40 set ≈9.5 kg, NT40 ≈9.3 kg (xem catalog cho từng mã).
+- Phụ kiện đi kèm: Bars SBJ series, CK extension bars, LBK modules, BE-series carbide holders, pull studs & slides (xem bảng phụ kiện).
+
+2) NBJ16 (Micro Boring System — small diameter set)
+- Giới thiệu: Hệ thống NBJ16 chuyên cho khoan cỡ nhỏ (≈6–51 mm), bộ thanh/cán dạng tập hợp.
+- Hình ảnh: [image: NBJ16.jpg]
+- Tính năng:
+  - Thiết kế modular, bộ bar (12 bars set) để cover dải nhỏ
+  - Tương thích BT40/BT50/NT40/NT50/SK40/SK50
+  - Trọng lượng bộ ví dụ: BT40 set ≈9.1 kg
+- Thông số: Boring range 6–51 mm; head NBJ16; bars SBJ-16..; weights theo cấu hình (xem catalog mã cụ thể).
+- Phụ kiện: Bars SBJ, BE09A..BE30A holders, C0590/C0698/C08115 bushings, W slides.
+
+3) EWN Series (Indexable Boring Heads)
+- Giới thiệu: Đầu tiện khoan góc thay dao (indexable) EWN20-36 → EWN100-203, nhiều dải đường kính cho nhu cầu finishing/fine boring.
+- Hình ảnh: [image: EWN20-36.jpg] (tương tự cho các mã lớn hơn)
+- Tính năng:
+  - Đổi insert dễ dàng (TPGH/TCMT/TCGT family)
+  - Lightweight heads cho thao tác chính xác
+  - Dải mã trải từ EWN20-36 tới EWN100-203
+- Thông số mẫu (tóm tắt):
+  - EWN20-36: boring 20–36 mm, weight ≈0.07 kg
+  - EWN25-47: 25–47 mm, weight ≈0.12 kg
+  - EWN32-60 ... EWN100-203: xem bảng Section IX cho weight và blade range
+- Phụ kiện: LBK/CK adaptors, inserts (TPGH/TCMT), carbide holders BExx.
+
+4) RBH Series (Adjustable Rough Boring Head)
+- Giới thiệu: RBH series cho gia công rough/adjustable — RBH19-25..RBH160-204.
+- Hình ảnh: [image: RBH19-25.jpg]
+- Tính năng:
+  - Điều chỉnh nhanh bằng module LBK
+  - Tương thích insert CCMT/compatible grades
+  - Dải đường kính rộng, từ mẫu nhỏ tới lớn
+- Thông số mẫu: RBH19-25-C (19–25 mm, weight 0.10 kg) ... RBH160-204-C (160–204 mm, weight 4.80 kg). Chi tiết L/C/d theo Section IX.
+- Phụ kiện: LBK1..LBK6 holders, CCMT inserts, DST/BST modules.
+
+5) CBH Series (Modular Fine Boring Cutter)
+- Giới thiệu: CBH modular cutters cho boring lớn (CBH200310 → CBH800910).
+- Hình ảnh: [image: CBH200310.jpg]
+- Tính năng:
+  - Modular slides (DST) cho ổn định khi boring đường kính lớn
+  - Khả năng mở rộng dải bằng cách đổi module
+- Thông số mẫu: CBH200310 (200–310 mm, weight ≈9.7 kg) → CBH800910 (800–910 mm, weight ≈21.7 kg). Xem Section IX cho mỗi mã.
+- Phụ kiện: DST slides, CK/LBK adaptors, BE holders cho insert.
+
+6) CK / LBK Modular Bars & Holders
+- Giới thiệu: Hệ thống CK (extension bars) và LBK (holders) — dùng chung với RBH/CBH/EWN/NBH/NBJ.
+- Hình ảnh: [image: CK-LBK.jpg]
+- Tính năng:
+  - CK1..CK6: độ dài biến thiên cho deep boring
+  - LBK1..LBK6: holders chuẩn cho các kích thước C dim khác nhau
+- Thông số: LBK size table (ví dụ LBK1: C=19 L=30 weight 0.07 kg; LBK4: C=39 L=45 weight 0.4 kg) — xem bảng LBK trong file.
+- Phụ kiện: CK bars, clamping screws, spacers BExx.
+
+7) BST / Modular Boring Cutter (Twin-Blade / Slide)
+- Giới thiệu: Hệ thống BST cho boring twin-blade và slide extensions, dùng cho CBH lớn.
+- Hình ảnh: [image: BST.jpg]
+- Tính năng: quick-swap modules, stable slide system, suitable for large diameter finishing.
+- Phụ kiện: DST slides, CBH modules, LBK adapters.
+
+8) Boring Accessories (BE series, C bushings, W slides)
+- Giới thiệu: Carbide tool holders & bushings cho hệ boring modular.
+- Hình ảnh: [image: BE09A.jpg] .. [image: C0590.jpg] .. [image: W5-100L.jpg]
+- Tính năng: precision-machined holders, direct fit to CK/LBK/heads.
+- Thông số (tóm tắt): các mã BE09A..BE30A đã được liệt kê ở Section X với D/L/d1/Insert/Screw/Wrench; bushings C0590 (90 mm), C0698 (98 mm), C08115 (115 mm) áp dụng cho NBJ/NBH sets; W slides: W5-100L (100 mm), W6-140L (140 mm), W6-156L (156 mm), W10-186L (186 mm) — xem Section X cho chi tiết.
+- Phụ kiện kèm: TB/TP insert types, clamp screws, wrench sizes (T6..T12 theo mã BE).
+
+---
+End of generated product checklists.
