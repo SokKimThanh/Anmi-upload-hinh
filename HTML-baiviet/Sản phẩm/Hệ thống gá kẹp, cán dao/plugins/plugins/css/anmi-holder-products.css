@@ -699,6 +699,36 @@ tbody tr:last-child {
     margin: 0;
 }
 
+/* Responsive table wrapper: allows horizontal scrolling on small viewports
+   Wrap raw <table> blocks with <div class="table-responsive"> to enable this. */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+.table-responsive th,
+.table-responsive td {
+    white-space: nowrap;
+}
+
+@media (min-width: 769px) {
+    .table-responsive table {
+        table-layout: fixed;
+    }
+
+    .table-responsive th,
+    .table-responsive td {
+        white-space: normal;
+    }
+}
+
 /* ============================================ */
 /* SUPPORT CARDS */
 /* ============================================ */
@@ -2188,16 +2218,20 @@ details[open] summary .toggle {
 }
 
 /* --- Intro copy helpers for semantic blocks added in product pages --- */
-.intro-copy {
+.intro-copy,
+.intro {
     display: block;
     margin: 0;
     padding: 0;
 }
-.intro-copy h2 {
+
+.intro-copy h2,
+.intro h2 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: clamp(1.05rem, 1.6vw, 1.15rem);
 }
+
 .intro-features,
 .intro-resources,
 .intro-impacts,
@@ -2205,6 +2239,7 @@ details[open] summary .toggle {
     margin: 0 0 0.75rem 0;
     padding-left: 1.25rem;
 }
+
 .intro-features li,
 .intro-resources li,
 .intro-impacts li,
@@ -2212,10 +2247,12 @@ details[open] summary .toggle {
     margin: 0.5rem 0;
     line-height: 1.5;
 }
+
 .intro-features li strong,
 .process-optimization li strong {
     color: var(--anmi-color-primary);
 }
+
 .intro-contact {
     margin-top: 0.75rem;
     font-weight: 600;
@@ -2223,10 +2260,7 @@ details[open] summary .toggle {
 
 @media (min-width: 769px) {
     .product-intro {
-        grid-template-columns: 1fr;
-    }
-    .intro-copy {
-        max-width: 78%;
+        grid-template-columns: minmax(0, 1fr);
     }
 }
 
@@ -2433,20 +2467,24 @@ details[open] summary .toggle {
 /* ============================================ */
 .product-images-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
     margin: 1.5rem 0;
 }
 
+.product-images-grid>figure,
 .product-images-grid figure {
     margin: 0;
     text-align: center;
+    min-width: 0;
 }
 
-.product-images-grid figure img {
+.product-images-grid img {
     width: 100%;
     height: auto;
     border-radius: var(--anmi-border-radius-lg);
+    display: block;
+    max-width: 100%;
 }
 
 .product-images-grid figcaption {
@@ -2459,7 +2497,7 @@ details[open] summary .toggle {
 /* PRODUCT IMAGES ROW (Flexible 2-column layout for RBH specs) */
 /* ============================================ */
 .product-images-row {
-    display: flex;
+    display: grid;
     gap: 1.5rem;
     margin: 1.5rem 0;
     align-items: start;
@@ -2482,6 +2520,15 @@ details[open] summary .toggle {
     font-size: 1rem;
     color: var(--anmi-color-text-secondary);
     line-height: 1.6;
+}
+
+/* product-specs and table rules are defined elsewhere; duplicates removed. */
+
+.intro-copy,
+.intro,
+.product-intro {
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 /* Comparison Table (NT vs BT vs HSK style tables) */
