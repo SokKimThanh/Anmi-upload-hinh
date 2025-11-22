@@ -3101,17 +3101,19 @@ img {
 }
 
 .tab-btn {
-    padding: 12px 24px;
+    /* Single canonical .tab-btn definition. Sizes use CSS variables so media query can override without duplicating selector. */
+    padding: var(--anmi-tab-btn-padding, 12px 24px);
     background: transparent;
     border: none;
     border-bottom: 3px solid transparent;
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--anmi-tab-btn-font-size, 16px);
     font-weight: 500;
     color: var(--anmi-color-text-muted);
-    transition: all 0.3s ease;
+    transition: box-shadow 120ms ease, outline 120ms ease, color 0.3s ease;
     position: relative;
     bottom: -2px;
+    white-space: nowrap;
 }
 
 .tab-btn:hover {
@@ -3155,11 +3157,19 @@ img {
         scrollbar-width: thin;
     }
 
-    .tab-btn {
-        padding: 10px 16px;
-        font-size: 14px;
-        white-space: nowrap;
+    /* Adjust tab button sizing via CSS variables (no duplicate .tab-btn block) */
+    .product-tabs {
+        --anmi-tab-btn-padding: 10px 16px;
+        --anmi-tab-btn-font-size: 14px;
     }
+}
+
+/* Accessibility: visible focus styles for keyboard users (tab buttons) */
+.tab-btn:focus,
+.tab-btn:focus-visible {
+    outline: 3px solid rgba(11,116,222,0.9);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(11,116,222,0.12);
 }
 
 /* Tab content sections spacing */

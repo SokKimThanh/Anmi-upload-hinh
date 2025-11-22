@@ -50,7 +50,7 @@ class AnMi_Product_Style_Injector {
      * 
      * @var string
      */
-    private $version = '2.1.7';
+    private $version = '2.1.8';
     
     /**
      * CSS directory path (relative to plugin)
@@ -252,14 +252,19 @@ class AnMi_Product_Style_Injector {
                 true // Load in footer
             );
             
-            // ✅ Enqueue Tab Navigation JavaScript
-            wp_enqueue_script(
-                'anmi-tab-navigation',
-                plugins_url('js/tab-navigation.js', __FILE__),
-                array(),
-                $version,
-                true // Load in footer
-            );
+            // ✅ Enqueue Tab Navigation JavaScript only when needed (page contains tabs or detected slug)
+            $detected_slugs = $this->detect_product_slugs($post->post_content);
+            $has_tabs = (strpos($post->post_content, 'product-tabs') !== false) || (in_array('product-tabs', $detected_slugs));
+            $tab_js_path = dirname(__FILE__) . '/js/tab-navigation.js';
+            if ($has_tabs && file_exists($tab_js_path)) {
+                wp_enqueue_script(
+                    'anmi-tab-navigation',
+                    plugins_url('js/tab-navigation.js', __FILE__),
+                    array(),
+                    $version,
+                    true // Load in footer
+                );
+            }
             
             // ✅ Enqueue Contact Slider JavaScript (mobile swipe support)
             wp_enqueue_script(

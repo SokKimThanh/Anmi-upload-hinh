@@ -10,7 +10,7 @@
  * 
  * Features:
  * - Click-to-switch tabs with active state management
- * - localStorage persistence (remembers last viewed tab)
+ * - sessionStorage persistence (remembers last viewed tab per browser tab/session)
  * - Smooth scroll to tab content when switching
  * - Fade-in animation via CSS class toggle
  * - Keyboard navigation support (future enhancement)
@@ -31,26 +31,58 @@
      * Initialize tab navigation system
      */
     function initTabNavigation() {
-        const tabButtons = document.querySelectorAll('.tab-btn');
-        const tabContents = document.querySelectorAll('.tab-content');
+        // Use the ARIA-based tablist if present (matches inline page script)
+        const tabs = Array.from(document.querySelectorAll('.tab-buttons [role="tab"]'));
+        const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
 
-        // Exit if no tabs found on page
-        if (tabButtons.length === 0 || tabContents.length === 0) {
+        // If no ARIA tabs present, fallback to legacy selectors
+        if (tabs.length === 0 || panels.length === 0) {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            if (tabButtons.length === 0 || tabContents.length === 0) return;
+            // Attach simple handlers (legacy behavior)
+            tabButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    handleTabClick(this, tabButtons, tabContents);
+                });
+            });
+            restoreLastActiveTab(tabButtons, tabContents);
+            addKeyboardNavigation(tabButtons, tabContents);
             return;
         }
 
-        // Attach click event to each tab button
-        tabButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                handleTabClick(this, tabButtons, tabContents);
+        // Attach click + keyboard handlers to ARIA tabs
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                activateTab(tab, true);
+            });
+
+            tab.addEventListener('keydown', function(e) {
+                const idx = tabs.indexOf(tab);
+                let newIdx = null;
+
+                switch (e.key) {
+                    case 'ArrowLeft': newIdx = (idx - 1 + tabs.length) % tabs.length; break;
+                    case 'ArrowRight': newIdx = (idx + 1) % tabs.length; break;
+                    case 'Home': newIdx = 0; break;
+                    case 'End': newIdx = tabs.length - 1; break;
+                    case 'Enter':
+                    case ' ':
+                    case 'Spacebar': // legacy
+                        activateTab(tab, true);
+                        e.preventDefault();
+                        return;
+                }
+
+                if (newIdx !== null) {
+                    tabs[newIdx].focus();
+                    e.preventDefault();
+                }
             });
         });
 
-        // Restore last active tab from localStorage
-        restoreLastActiveTab(tabButtons, tabContents);
-
-        // Add keyboard navigation
-        addKeyboardNavigation(tabButtons, tabContents);
+        // Restore persisted tab (if available) or keep existing active state
+        restoreLastActiveTabARIA(tabs, panels);
     }
 
     /**
@@ -101,7 +133,8 @@
      */
     function saveActiveTab(tabId) {
         try {
-            localStorage.setItem('anmi_activeTab', tabId);
+            // Use sessionStorage so the tab selection is not stored long-term
+            sessionStorage.setItem('anmi_activeTab', tabId);
         } catch (e) {
             // localStorage might be disabled or full
             console.warn('Could not save tab state to localStorage:', e);
@@ -115,7 +148,7 @@
      */
     function restoreLastActiveTab(tabButtons, tabContents) {
         try {
-            const savedTab = localStorage.getItem('anmi_activeTab');
+            const savedTab = sessionStorage.getItem('anmi_activeTab');
 
             if (savedTab && document.getElementById(savedTab)) {
                 // Remove active class from all
@@ -140,6 +173,32 @@
             }
         } catch (e) {
             console.warn('Could not restore tab state from localStorage:', e);
+        }
+    }
+
+    /**
+     * Restore active tab for ARIA-based tabs
+     */
+    function restoreLastActiveTabARIA(tabs, panels) {
+        try {
+            const saved = sessionStorage.getItem('anmi_activeTab');
+            if (saved) {
+                // Look for tab whose aria-controls matches saved
+                const savedTab = tabs.find(t => t.getAttribute('aria-controls') === saved || t.dataset.tab === saved);
+                if (savedTab) {
+                    activateTab(savedTab, false);
+                    return;
+                }
+            }
+        } catch (e) {
+            // ignore
+        }
+
+        // If no saved tab, ensure the DOM's default active tab/panel state is respected.
+        // If none marked active, activate first tab.
+        const alreadyActive = tabs.some(t => t.classList.contains('active') || t.getAttribute('aria-selected') === 'true');
+        if (!alreadyActive && tabs.length) {
+            activateTab(tabs[0], false);
         }
     }
 
