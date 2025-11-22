@@ -129,6 +129,20 @@
             }
         });
 
+        // Ensure tab list stays visible (defensive: some CSS or other scripts may set hidden)
+        try {
+            const productRoot = tab.closest && tab.closest('.product-tabs');
+            if (productRoot) {
+                const tabButtonsContainer = productRoot.querySelector('.tab-buttons');
+                if (tabButtonsContainer) {
+                    tabButtonsContainer.removeAttribute('hidden');
+                    tabButtonsContainer.setAttribute('aria-hidden', 'false');
+                }
+            }
+        } catch (e) {
+            // ignore
+        }
+
         // Persist session (store panel id)
         try {
             const panelId = tab.getAttribute('aria-controls') || tab.dataset.tab;
@@ -175,6 +189,17 @@
 
             // Scroll to top of tab content smoothly
             // scrollToTabs();
+            // Defensive: ensure tab-buttons are visible
+            try {
+                const productRoot = clickedButton.closest && clickedButton.closest('.product-tabs');
+                if (productRoot) {
+                    const tabButtonsContainer = productRoot.querySelector('.tab-buttons');
+                    if (tabButtonsContainer) {
+                        tabButtonsContainer.removeAttribute('hidden');
+                        tabButtonsContainer.setAttribute('aria-hidden', 'false');
+                    }
+                }
+            } catch (e) {}
         } else {
             console.warn('Tab content not found for:', targetTab);
         }
