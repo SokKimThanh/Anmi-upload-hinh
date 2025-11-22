@@ -3241,25 +3241,35 @@ img {
     .contact-slider-dots {
         display: flex;
         justify-content: center;
-        gap: 8px;
-        margin-top: 15px;
-        padding: 8px 0;
+        gap: 0.5rem; /* spacing between dots */
+        margin-top: 0.9rem;
+        padding: 0.5rem 0;
     }
 
     .slider-dot {
-        width: 10px;
-        height: 10px;
+        /* Force true circular dots and use rem units for responsive sizing */
+        display: inline-block;
+        box-sizing: border-box;
+        width: 0.625rem; /* 10px @16px root */
+        height: 0.625rem;
+        min-width: 0.625rem;
+        min-height: 0.625rem;
+        padding: 0;
+        line-height: 0;
+        border: 0;
         border-radius: 50%;
+        aspect-ratio: 1/1;
         background: var(--anmi-color-text-muted, #999);
         cursor: pointer;
-        transition: all 0.3s ease;
-        opacity: 0.5;
+        transition: transform 0.18s ease, opacity 0.18s ease, background-color 0.18s ease;
+        opacity: 0.6;
+        vertical-align: middle;
     }
 
     .slider-dot.active {
         background: var(--anmi-color-primary, #0055AA);
         opacity: 1;
-        transform: scale(1.2);
+        transform: scale(1.25);
     }
 
     .slider-dot:hover {
