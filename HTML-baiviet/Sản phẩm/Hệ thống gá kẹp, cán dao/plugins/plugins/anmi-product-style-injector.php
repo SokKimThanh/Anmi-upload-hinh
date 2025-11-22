@@ -2,7 +2,7 @@
 /**
  * Plugin Name: An Mi Tools - Product Style Injector
  * Plugin URI: https://anmitools.com/plugins/product-style-injector
- * Description: Automatically inject common CSS for all An Mi Tools holder products. Detects product section and loads unified stylesheet.
+ * Description: Injects common CSS/JS for holder product pages and conditionally enqueues helper scripts (image lightbox, tabs, contact slider).
  * Version: 2.1.8
  * Requires at least: 5.8
  * Requires PHP: 7.4
@@ -14,296 +14,217 @@
  * Domain Path: /languages
  * Network: false
  * Update URI: false
- * 
+ *
  * @package AnMiProductStyleInjector
  * @version 2.1.8
- * @since 1.0.0
- * 
- * Changelog:
- * 2.1.8 - Added contact-slider.js enqueue for mobile contact slider with swipe support
- * 2.1.7 - Added tab-navigation.js enqueue for product tab switching functionality
- * 2.1.6 - CRITICAL FIX: Keep wpautop enabled, JS only removes <p> INSIDE grid containers with comments
- * 2.1.5 - CSS v1.3.2: Added image lightbox functionality for click-to-zoom product images
- * 2.1.4 - CSS v1.3.1: Added .product-images-grid for 2-column image layout (NT-CK NBJ16)
- * 2.1.3 - Fixed: PRESERVE <p> tags with actual content, ONLY remove <p> with comments or empty
- * 2.1.2 - Added JavaScript cleanup to remove <p> tags wrapping HTML comments in grid layouts
- * 2.1.1 - Added wpautop filter to prevent WordPress from auto-generating <p> tags in grid layouts
- * 2.1.0 - Added CSS support for WordPress Editor (Gutenberg & Classic Editor)
- * 2.0.0 - Changed to use single common CSS file instead of individual files
- * 1.0.0 - Initial release with individual CSS files per product
  */
 
-// Exit if accessed directly
+// Exit early if loaded outside of WordPress
 if (!defined('ABSPATH')) {
     exit;
 }
 
 /**
- * An Mi Product Style Injector Main Class
- * 
- * @since 1.0.0
+ * Main plugin class: responsible for enqueueing the shared CSS/JS
  */
 class AnMi_Product_Style_Injector {
-    
-    /**
-     * Plugin version
-     * 
-     * @var string
-     */
+
+    /** @var string Plugin semantic version (also used as fallback cache-bust) */
     private $version = '2.1.8';
-    
-    /**
-     * CSS directory path (relative to plugin)
-     * 
-     * @var string
-     */
+
+    /** @var string Absolute path to plugin css directory */
     private $css_dir;
-    
-    /**
-     * CSS directory URL
-     * 
-     * @var string
-     */
+
+    /** @var string URL to plugin css directory */
     private $css_url;
-    
-    /**
-     * Parent category slug for holder products
-     * 
-     * @var string
-     */
+
+    /** @var string Parent category slug used to detect holder products */
     private $parent_slug = 'he-thong-ga-kep-can-dao';
-    
-    /**
-     * Common CSS file for all holder products
-     * 
-     * @var string
-     */
+
+    /** @var string Common CSS filename used for holder products */
     private $common_css_file = 'anmi-holder-products.css';
-    
-    /**
-     * Holder product slug patterns
-     * 
-     * @var array
-     */
+
+    /** @var array Prefixes/patterns used to detect holder product slugs */
     private $holder_slug_patterns = array(
-        'bt-', 'hsk-', 'nbh', 'nbj', 'ewn', 'rbh', 'cbh', 'bst', 
+        'bt-', 'hsk-', 'nbh', 'nbj', 'ewn', 'rbh', 'cbh', 'bst',
         'ck-', 'lbk', 'cbs', 'sb-', 'gc-', 'er-', 'sk-', 'nt-'
     );
-    
+
     /**
      * Constructor
      */
     public function __construct() {
-        // Define CSS paths - CSS folder directly in plugin directory
-        // Expected structure on WordPress:
-        // wp-content/plugins/anmi-product-style-injector/
-        //   ├── anmi-product-style-injector.php
-        //   ├── css/
-        //   │   └── anmi-holder-products.css
-        //   └── js/
-        //       ├── grid-cleanup.js
-        //       └── image-lightbox.js
         $this->css_dir = dirname(__FILE__) . '/css/';
         $this->css_url = plugins_url('css/', __FILE__);
-        
-        // Initialize hooks
+
         $this->init_hooks();
     }
-    
+
     /**
-     * Initialize WordPress hooks
-     * 
-     * @since 1.0.0
+     * Attach WordPress hooks
      */
     private function init_hooks() {
-        // Enqueue styles based on post/page content
+        // Enqueue front-end assets (conditionally)
         add_action('wp_enqueue_scripts', array($this, 'enqueue_product_styles'), 20);
-        
-        // ✅ NEW: Enqueue styles in WordPress Editor (Gutenberg)
+
+        // Enqueue styles inside the block editor for convenience
         add_action('enqueue_block_editor_assets', array($this, 'enqueue_editor_styles'));
-        
-        // ✅ NEW: Add editor styles for Classic Editor
+
+        // Register Classic Editor support
         add_editor_style($this->css_url . $this->common_css_file);
-        
-        // Add admin menu for testing
+
+        // Add a lightweight admin page for debugging/file info
         add_action('admin_menu', array($this, 'add_admin_menu'));
     }
-    
+
+    /* ---------------------------------------------------------------------
+     * Helpers: detection + file checks
+     * ------------------------------------------------------------------ */
+
     /**
-     * Detect product slug from post content
-     * 
-     * @param string $content Post content
-     * @return array Array of detected slugs
-     * @since 1.0.0
+     * Parse post content and return any section class names that map to CSS files
+     *
+     * @param string $content
+     * @return array
      */
     private function detect_product_slugs($content) {
         $slugs = array();
-        
-        // Pattern to match: <section class="slug-name">
+
+        if (empty($content)) {
+            return $slugs;
+        }
+
+        // Find <section class="..."> occurrences and split class lists
         preg_match_all('/<section\s+class=["\']([^"\']+)["\']/', $content, $matches);
-        
         if (!empty($matches[1])) {
-            foreach ($matches[1] as $class) {
-                // Extract individual classes
-                $classes = explode(' ', $class);
-                foreach ($classes as $single_class) {
-                    $single_class = trim($single_class);
-                    // Check if corresponding CSS file exists
-                    if ($this->css_file_exists($single_class)) {
-                        $slugs[] = $single_class;
+            foreach ($matches[1] as $classList) {
+                $classes = preg_split('/\s+/', trim($classList));
+                foreach ($classes as $single) {
+                    $single = trim($single);
+                    if ($single && $this->css_file_exists($single)) {
+                        $slugs[] = $single;
                     }
                 }
             }
         }
-        
+
         return array_unique($slugs);
     }
-    
+
     /**
-     * Check if CSS file exists for given slug
-     * 
-     * @param string $slug Product slug
-     * @return bool True if file exists
-     * @since 1.0.0
+     * Check for the existence of a CSS file for a given slug
+     * @param string $slug
+     * @return bool
      */
     private function css_file_exists($slug) {
-        $file_path = $this->css_dir . $slug . '.css';
-        return file_exists($file_path);
+        return file_exists($this->css_dir . $slug . '.css');
     }
-    
+
+    /* ---------------------------------------------------------------------
+     * Front-end enqueue logic
+     * ------------------------------------------------------------------ */
+
     /**
-     * Enqueue product styles based on content
-     * 
-     * @since 1.0.0
-     * @updated 2.0.0 - Changed to use common CSS file for holder products
+     * Conditionally enqueue common CSS and helper scripts for holder product pages
      */
     public function enqueue_product_styles() {
-        // Only on singular posts/pages
         if (!is_singular()) {
             return;
         }
-        
+
         global $post;
-        
-        if (empty($post->post_content)) {
+        if (empty($post) || empty($post->post_content)) {
             return;
         }
-        
-        // Check if this is a holder product page
-        $is_holder_product = false;
-        
-        // Method 1: Check post content for holder slug patterns
-        foreach ($this->holder_slug_patterns as $pattern) {
-            if (strpos($post->post_content, 'class="' . $pattern) !== false ||
-                strpos($post->post_content, "class='" . $pattern) !== false) {
-                $is_holder_product = true;
-                break;
-            }
-        }
-        
-        // Method 2: Check if current page is in holder category
+
+        // Determine whether this post should be treated as a holder product
+        $is_holder_product = $this->is_holder_product($post);
         if (!$is_holder_product) {
-            $categories = get_the_category($post->ID);
-            if ($categories) {
-                foreach ($categories as $category) {
-                    if ($category->slug === $this->parent_slug || 
-                        strpos($category->slug, 'bt-') === 0 ||
-                        strpos($category->slug, 'hsk-') === 0) {
-                        $is_holder_product = true;
-                        break;
-                    }
-                }
-            }
+            return;
         }
-        
-        // Method 3: Check post slug
-        if (!$is_holder_product && isset($post->post_name)) {
-            foreach ($this->holder_slug_patterns as $pattern) {
-                if (strpos($post->post_name, $pattern) === 0) {
-                    $is_holder_product = true;
-                    break;
-                }
-            }
+
+        // Prepare common CSS
+        $css_path = $this->css_dir . $this->common_css_file;
+        $css_url = $this->css_url . $this->common_css_file;
+        $version = file_exists($css_path) ? filemtime($css_path) : $this->version;
+
+        wp_enqueue_style('anmi-holder-products', $css_url, array(), $version, 'all');
+
+        // Enqueue shared helper scripts (image lightbox always for holder pages)
+        wp_enqueue_script('anmi-image-lightbox', plugins_url('js/image-lightbox.js', __FILE__), array(), $version, true);
+
+        // Tab navigation: enqueue only when page contains tabs or a detected slug indicates it
+        $detected_slugs = $this->detect_product_slugs($post->post_content);
+        $has_tabs = (strpos($post->post_content, 'product-tabs') !== false) || in_array('product-tabs', $detected_slugs, true);
+        $tab_js_path = dirname(__FILE__) . '/js/tab-navigation.js';
+        if ($has_tabs && file_exists($tab_js_path)) {
+            wp_enqueue_script('anmi-tab-navigation', plugins_url('js/tab-navigation.js', __FILE__), array(), $version, true);
         }
-        
-        // Enqueue common CSS if this is a holder product
-        if ($is_holder_product) {
-            $handle = 'anmi-holder-products';
-            $css_url = $this->css_url . $this->common_css_file;
-            $css_path = $this->css_dir . $this->common_css_file;
-            
-            // Get file modification time for cache busting
-            $version = file_exists($css_path) ? filemtime($css_path) : $this->version;
-            
-            wp_enqueue_style(
-                $handle,
-                $css_url,
-                array(),
-                $version,
-                'all'
-            );
-            
-            // ✅ Enqueue Image Lightbox JavaScript
-            wp_enqueue_script(
-                'anmi-image-lightbox',
-                plugins_url('js/image-lightbox.js', __FILE__),
-                array(),
-                $version,
-                true // Load in footer
-            );
-            
-            // ✅ Enqueue Tab Navigation JavaScript only when needed (page contains tabs or detected slug)
-            $detected_slugs = $this->detect_product_slugs($post->post_content);
-            $has_tabs = (strpos($post->post_content, 'product-tabs') !== false) || (in_array('product-tabs', $detected_slugs));
-            $tab_js_path = dirname(__FILE__) . '/js/tab-navigation.js';
-            if ($has_tabs && file_exists($tab_js_path)) {
-                wp_enqueue_script(
-                    'anmi-tab-navigation',
-                    plugins_url('js/tab-navigation.js', __FILE__),
-                    array(),
-                    $version,
-                    true // Load in footer
-                );
-            }
-            
-            // ✅ Enqueue Contact Slider JavaScript (mobile swipe support)
-            wp_enqueue_script(
-                'anmi-contact-slider',
-                plugins_url('js/contact-slider.js', __FILE__),
-                array(),
-                $version,
-                true // Load in footer
-            );
-            
-            // Debug log (only in WP_DEBUG mode)
-            if (defined('WP_DEBUG') && WP_DEBUG) {
-                error_log("An Mi Product Style Injector: Enqueued common CSS for holder product (Post ID: {$post->ID})");
-            }
+
+        // Contact slider (mobile swipe) - keep enqueued for holder pages
+        wp_enqueue_script('anmi-contact-slider', plugins_url('js/contact-slider.js', __FILE__), array(), $version, true);
+
+        // Optional debug logging when WP_DEBUG is enabled
+        if (defined('WP_DEBUG') && WP_DEBUG) {
+            error_log("An Mi Product Style Injector: assets enqueued for post {$post->ID}");
         }
     }
-    
+
     /**
-     * Enqueue styles in WordPress Editor (Gutenberg)
-     * 
-     * @since 2.0.1
+     * Decide if a post should be treated as a holder product
+     * @param WP_Post $post
+     * @return bool
+     */
+    private function is_holder_product($post) {
+        // 1) Quick heuristic: search for class patterns in the content
+        foreach ($this->holder_slug_patterns as $pattern) {
+            if (strpos($post->post_content, 'class="' . $pattern) !== false || strpos($post->post_content, "class='{$pattern}") !== false) {
+                return true;
+            }
+        }
+
+        // 2) Category-based detection
+        $categories = get_the_category($post->ID);
+        if ($categories) {
+            foreach ($categories as $category) {
+                if ($category->slug === $this->parent_slug || strpos($category->slug, 'bt-') === 0 || strpos($category->slug, 'hsk-') === 0) {
+                    return true;
+                }
+            }
+        }
+
+        // 3) Post slug prefix check
+        if (!empty($post->post_name)) {
+            foreach ($this->holder_slug_patterns as $pattern) {
+                if (strpos($post->post_name, $pattern) === 0) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    /* ---------------------------------------------------------------------
+     * Editor (Gutenberg/Classic) support
+     * ------------------------------------------------------------------ */
+
+    /**
+     * Enqueue styles used inside the block editor for improved WYSIWYG editing
      */
     public function enqueue_editor_styles() {
         global $post;
-        
-        // Check if we're editing a product or holder-related post
         if (!$post) {
             return;
         }
-        
+
         $should_load = false;
-        
-        // Check if it's a WooCommerce product
+
         if ($post->post_type === 'product') {
             $should_load = true;
         }
-        
-        // Check post slug patterns
-        if (!$should_load && isset($post->post_name)) {
+
+        if (!$should_load && !empty($post->post_name)) {
             foreach ($this->holder_slug_patterns as $pattern) {
                 if (strpos($post->post_name, $pattern) === 0) {
                     $should_load = true;
@@ -311,91 +232,57 @@ class AnMi_Product_Style_Injector {
                 }
             }
         }
-        
-        // Check if post has holder category
+
         if (!$should_load) {
             $categories = get_the_terms($post->ID, 'category');
             if ($categories) {
                 foreach ($categories as $category) {
-                    if ($category->slug === $this->parent_slug || 
-                        strpos($category->slug, 'holder') !== false ||
-                        strpos($category->slug, 'ga-kep') !== false) {
+                    if ($category->slug === $this->parent_slug || strpos($category->slug, 'holder') !== false || strpos($category->slug, 'ga-kep') !== false) {
                         $should_load = true;
                         break;
                     }
                 }
             }
-            
-            // Check WooCommerce product categories
+
             $product_cats = get_the_terms($post->ID, 'product_cat');
             if ($product_cats) {
                 foreach ($product_cats as $category) {
-                    if ($category->slug === $this->parent_slug || 
-                        strpos($category->slug, 'holder') !== false ||
-                        strpos($category->slug, 'ga-kep') !== false) {
+                    if ($category->slug === $this->parent_slug || strpos($category->slug, 'holder') !== false || strpos($category->slug, 'ga-kep') !== false) {
                         $should_load = true;
                         break;
                     }
                 }
             }
         }
-        
-        // Load CSS in editor if needed
+
         if ($should_load) {
             $css_url = $this->css_url . $this->common_css_file;
             $css_path = $this->css_dir . $this->common_css_file;
             $version = file_exists($css_path) ? filemtime($css_path) : $this->version;
-            
-            wp_enqueue_style(
-                'anmi-holder-products-editor',
-                $css_url,
-                array('wp-edit-blocks'),
-                $version,
-                'all'
-            );
-            
-            // Add custom CSS to wrap editor content
-            $custom_css = "
-                .editor-styles-wrapper {
-                    background-color: #FCF7EC;
-                    padding: 20px;
-                }
-            ";
+
+            wp_enqueue_style('anmi-holder-products-editor', $css_url, array('wp-edit-blocks'), $version, 'all');
+            $custom_css = ".editor-styles-wrapper { background-color: #FCF7EC; padding: 20px; }";
             wp_add_inline_style('anmi-holder-products-editor', $custom_css);
-            
             if (defined('WP_DEBUG') && WP_DEBUG) {
-                error_log("An Mi Product Style Injector: Loaded CSS in editor for post ID: {$post->ID}");
+                error_log("An Mi Product Style Injector: loaded editor CSS for post {$post->ID}");
             }
         }
     }
-    
-    /**
-     * Add admin menu for plugin settings
-     * 
-     * @since 1.0.0
-     */
+
+    /* ---------------------------------------------------------------------
+     * Admin UI (debug/info)
+     * ------------------------------------------------------------------ */
+
     public function add_admin_menu() {
-        add_options_page(
-            'An Mi Product Styles',
-            'An Mi Product Styles',
-            'manage_options',
-            'anmi-product-styles',
-            array($this, 'admin_page')
-        );
+        add_options_page('An Mi Product Styles', 'An Mi Product Styles', 'manage_options', 'anmi-product-styles', array($this, 'admin_page'));
     }
-    
-    /**
-     * Render admin page
-     * 
-     * @since 1.0.0
-     * @updated 2.0.0 - Show common CSS file info
-     */
+
     public function admin_page() {
         ?>
         <div class="wrap">
-            <h1>An Mi Product Style Injector v2.0</h1>
+            <h1>An Mi Product Style Injector v<?php echo esc_html($this->version); ?></h1>
             <p>Plugin này tự động load <strong>một file CSS chung</strong> cho tất cả sản phẩm khi phát hiện có section product trong nội dung.</p>
-            
+
             <h2>File CSS chung:</h2>
             <table class="widefat">
                 <thead>
@@ -430,59 +317,17 @@ class AnMi_Product_Style_Injector {
                     ?>
                 </tbody>
             </table>
-            
+
             <h2>Hướng dẫn sử dụng:</h2>
             <ol>
-                <li>Đặt file <code>anmi-products-common.css</code> vào thư mục: <code><?php echo $this->css_dir; ?></code></li>
+                <li>Đặt file <code>anmi-products-common.css</code> vào thư mục: <code><?php echo esc_html($this->css_dir); ?></code></li>
                 <li>Trong nội dung bài viết, sử dụng: <code>&lt;section class="ten-san-pham"&gt;...&lt;/section&gt;</code></li>
                 <li>Plugin sẽ tự động load CSS chung khi phát hiện có section product</li>
-                <li>Tất cả sản phẩm dùng chung một file CSS → tối ưu performance</li>
             </ol>
-            
-            <h2>Ưu điểm của CSS chung:</h2>
-            <ul>
-                <li>✓ <strong>Performance tốt hơn:</strong> Chỉ load 1 file CSS thay vì nhiều file</li>
-                <li>✓ <strong>Cache hiệu quả:</strong> Browser cache 1 lần, dùng cho tất cả trang</li>
-                <li>✓ <strong>Dễ bảo trì:</strong> Chỉnh sửa 1 file duy nhất</li>
-                <li>✓ <strong>Giảm HTTP requests:</strong> Tăng tốc độ tải trang</li>
-                <li>✓ <strong>Consistent design:</strong> Đồng nhất style giữa các sản phẩm</li>
-            </ul>
-            
-            <h2>Quy tắc CSS:</h2>
-            <ul>
-                <li>Sử dụng attribute selector: <code>[class*="-holder"]</code>, <code>[class*="-chuck"]</code>...</li>
-                <li>Áp dụng cho tất cả sản phẩm có pattern tương tự</li>
-                <li>Màu sắc chuẩn An Mi: #FCF7EC (nền), #000000 (chữ), #0055AA (link)</li>
-            </ul>
-            
-            <h2>Danh sách sản phẩm áp dụng:</h2>
+
+            <h2>Danh sách sản phẩm áp dụng (tóm tắt):</h2>
             <div style="background: #f5f5f5; padding: 15px; border-radius: 5px; max-height: 300px; overflow-y: auto;">
-                <p>File CSS chung áp dụng cho tất cả 40 sản phẩm:</p>
-                <ul style="column-count: 2; column-gap: 20px;">
-                    <li>BT-SK High Speed Tool Holder</li>
-                    <li>BT-GER High Speed ER Collet Chuck</li>
-                    <li>BT-HGER High Speed ER Collet Chuck</li>
-                    <li>BT-ER Collet Chuck Standard</li>
-                    <li>BT-C Power Chuck Tool Holder</li>
-                    <li>BT-OZ Heavy Duty Tool Holder</li>
-                    <li>BT-APU Drill Chuck Holder</li>
-                    <li>BT-FMA/FMB Face Milling Arbor</li>
-                    <li>BT-SLA Weldon Tool Holder</li>
-                    <li>BT-MTA/MTB Morse Taper</li>
-                    <li>BT-SLO/ERO Oil-Feed Tool Holder</li>
-                    <li>BT-SDC High Precision Tool Holder</li>
-                    <li>BT-SR Shrink Fit Chuck</li>
-                    <li>BT-HS Hydraulic Chuck</li>
-                    <li>HSK-SR/ER/GSK/HS/FMB/SLA/APU/C</li>
-                    <li>BT Tension-Compression Tapping</li>
-                    <li>BT Rigid Tapping Tool Holder</li>
-                    <li>NBH2084/NBJ16 Micro Boring System</li>
-                    <li>EWN Micro Boring Head</li>
-                    <li>RBH/CBH/BST/CK/LBK/CBS/SB/GC</li>
-                    <li>ER/SK High Precision Collet</li>
-                    <li>NT Tool Holder System</li>
-                    <li>...và tất cả sản phẩm khác</li>
-                </ul>
+                <p>File CSS chung áp dụng cho nhiều sản phẩm holder (ví dụ: BT, HSK, NBJ,...)</p>
             </div>
         </div>
         <?php
@@ -490,9 +335,7 @@ class AnMi_Product_Style_Injector {
 }
 
 /**
- * Initialize the plugin
- * 
- * @since 1.0.0
+ * Plugin bootstrap
  */
 function anmi_product_style_injector_init() {
     new AnMi_Product_Style_Injector();

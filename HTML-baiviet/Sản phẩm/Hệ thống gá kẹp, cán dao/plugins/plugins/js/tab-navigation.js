@@ -86,6 +86,59 @@
     }
 
     /**
+     * Activate a given ARIA tab element: toggle classes/attributes and show/hide panels
+     * @param {HTMLElement} tab - tab element (with role="tab" or .tab-btn)
+     * @param {boolean} setFocus - whether to focus the shown panel
+     */
+    function activateTab(tab, setFocus = true) {
+        // Collect current tabs and panels (live) to be robust
+        const tabs = Array.from(document.querySelectorAll('.tab-buttons [role="tab"]'));
+        const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+
+        // If no ARIA tabs found, try legacy selectors and delegate to handleTabClick
+        if (tabs.length === 0 || panels.length === 0) {
+            // legacy: tab may be a button with data-tab
+            const dataTab = tab && (tab.getAttribute('data-tab') || tab.dataset.tab);
+            if (dataTab) {
+                // find the matching button and content
+                try {
+                    saveActiveTab(dataTab);
+                } catch (e) {}
+            }
+            return;
+        }
+
+        tabs.forEach(t => {
+            const selected = (t === tab);
+            t.classList.toggle('active', selected);
+            t.setAttribute('aria-selected', selected ? 'true' : 'false');
+            t.tabIndex = selected ? 0 : -1;
+        });
+
+        panels.forEach(p => {
+            const matches = p.id === tab.getAttribute('aria-controls') || p.id === tab.dataset.tab;
+            if (matches) {
+                p.removeAttribute('hidden');
+                p.setAttribute('aria-hidden', 'false');
+                p.classList.add('active');
+                if (setFocus) p.focus();
+            } else {
+                p.setAttribute('hidden', '');
+                p.setAttribute('aria-hidden', 'true');
+                p.classList.remove('active');
+            }
+        });
+
+        // Persist session (store panel id)
+        try {
+            const panelId = tab.getAttribute('aria-controls') || tab.dataset.tab;
+            if (panelId) saveActiveTab(panelId);
+        } catch (e) {
+            // ignore
+        }
+    }
+
+    /**
      * Handle tab button click
      * @param {HTMLElement} clickedButton - The clicked tab button
      * @param {NodeList} allButtons - All tab buttons
