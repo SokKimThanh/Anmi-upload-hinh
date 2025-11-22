@@ -75,7 +75,15 @@
                 }
 
                 if (newIdx !== null) {
-                    tabs[newIdx].focus();
+                    // Focus target tab without scrolling when possible
+                    try {
+                        tabs[newIdx].focus({ preventScroll: true });
+                    } catch (err) {
+                        const sx = window.pageXOffset || document.documentElement.scrollLeft || 0;
+                        const sy = window.pageYOffset || document.documentElement.scrollTop || 0;
+                        tabs[newIdx].focus();
+                        window.scrollTo(sx, sy);
+                    }
                     e.preventDefault();
                 }
             });
@@ -121,7 +129,19 @@
                 p.removeAttribute('hidden');
                 p.setAttribute('aria-hidden', 'false');
                 p.classList.add('active');
-                if (setFocus) p.focus();
+                if (setFocus) {
+                    // Try to focus the panel without scrolling. Modern browsers support preventScroll.
+                    try {
+                        p.focus({ preventScroll: true });
+                    } catch (err) {
+                        // Fallback for older browsers (IE11): save/restore scroll position
+                        const scrollX = window.pageXOffset || document.documentElement.scrollLeft || 0;
+                        const scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+                        p.focus();
+                        // restore scroll position synchronously
+                        window.scrollTo(scrollX, scrollY);
+                    }
+                }
             } else {
                 p.setAttribute('hidden', '');
                 p.setAttribute('aria-hidden', 'true');
@@ -335,7 +355,14 @@
 
                 // Activate target tab if valid
                 if (targetIndex >= 0) {
-                    buttonsArray[targetIndex].focus();
+                    try {
+                        buttonsArray[targetIndex].focus({ preventScroll: true });
+                    } catch (err) {
+                        const sx2 = window.pageXOffset || document.documentElement.scrollLeft || 0;
+                        const sy2 = window.pageYOffset || document.documentElement.scrollTop || 0;
+                        buttonsArray[targetIndex].focus();
+                        window.scrollTo(sx2, sy2);
+                    }
                     buttonsArray[targetIndex].click();
                 }
             });
