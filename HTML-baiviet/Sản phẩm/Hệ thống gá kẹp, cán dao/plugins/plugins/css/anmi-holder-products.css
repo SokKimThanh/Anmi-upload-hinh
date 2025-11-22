@@ -3070,7 +3070,7 @@ img {
     .anmi-lightbox-close {
         top: 10px;
         right: 15px;
-        font-size: 2rem 32px;
+        font-size: 2rem;
         color: black;
         border: 0.2rem solid rgba(255, 0, 0, 0.8);
         border-radius: 50%;
