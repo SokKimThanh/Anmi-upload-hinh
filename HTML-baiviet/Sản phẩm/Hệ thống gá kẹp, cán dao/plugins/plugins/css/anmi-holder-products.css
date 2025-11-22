@@ -3070,7 +3070,16 @@ img {
     .anmi-lightbox-close {
         top: 10px;
         right: 15px;
-        font-size: 35px;
+        font-size: 2rem 32px;
+        color: black;
+        border: 0.2rem solid rgba(255, 0, 0, 0.8);
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.8);
+        justify-content: center;
     }
 
     .anmi-lightbox-caption {
