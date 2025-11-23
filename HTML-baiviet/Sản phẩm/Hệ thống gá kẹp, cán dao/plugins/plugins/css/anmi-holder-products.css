@@ -3088,9 +3088,16 @@ img {
     }
 }
 
+
 /* ============================================ */
-/* TAB NAVIGATION STYLES */
+/* TAB NAVIGATION STYLES - MOBILE FIX */
 /* ============================================ */
+/* FIXED v1.4.0 (2025-11-23):
+ * - CRITICAL FIX: Removed height: 8.5rem causing tabs to disappear
+ * - CRITICAL FIX: Changed flex-direction: column to row for horizontal layout
+ * - CRITICAL FIX: Changed overflow-y: auto to overflow-x: auto
+ * - Result: All 5 tabs now visible and scrollable horizontally on mobile
+ */
 /* Added: November 17, 2025
  * Purpose: Tab-based content organization for better UX
  * Applied to: Product pages with multiple content sections
@@ -3160,54 +3167,52 @@ img {
 /* Responsive tabs for mobile */
 @media (max-width: 768px) {
 
-    /* Mobile: horizontal pill-style tab buttons with good hierarchy and spacing */
+    /* ✅ FIXED: Horizontal scroll layout, no fixed height */
     .tab-buttons {
         display: flex;
         gap: 0.5rem;
-        padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+        padding: 0.5rem;
         flex-wrap: nowrap;
+        /* Keep tabs in single row */
+        flex-direction: row;
+        /* ✅ FIXED: Horizontal layout */
+        overflow-x: auto;
+        /* ✅ FIXED: Horizontal scroll */
+        overflow-y: hidden;
+        /* ✅ FIXED: No vertical scroll */
+        /* ❌ REMOVED: height: 8.5rem - was causing tabs to disappear */
+        /* ❌ REMOVED: flex-direction: column - was stacking tabs vertically */
         -webkit-overflow-scrolling: touch;
         scrollbar-width: thin;
         scroll-snap-type: x mandatory;
         align-items: center;
         background: transparent;
         margin-bottom: 0.75rem;
-        flex-direction: column;
-        /* hiển thị cuộn dọc 2 tab 1 lần  */
-        overflow-y: auto;
-        height: 8.5rem;
-
     }
 
     .tab-buttons::-webkit-scrollbar {
         height: 8px;
     }
 
-    /* Adjust tab button sizing via CSS variables (no duplicate .tab-btn block) */
+    /* Adjust tab button sizing via CSS variables */
     .product-tabs {
         --anmi-tab-btn-padding: 0.625rem 1rem;
-        /* 10px 16px */
         --anmi-tab-btn-font-size: 0.875rem;
-        /* 14px */
     }
 
     .tab-btn {
         flex: 0 0 auto;
-
+        /* Don't shrink, don't grow */
         scroll-snap-align: start;
         padding: var(--anmi-tab-btn-padding);
         font-size: var(--anmi-tab-btn-font-size);
         border-radius: 1rem;
-        /* pill */
         background: var(--anmi-surface-muted, #f5f7fa);
         color: var(--anmi-color-text, #21303b);
-        border: 1px solid transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         box-shadow: none;
         transition: background-color 180ms ease, color 180ms ease, transform 120ms ease;
         white-space: nowrap;
-        /* chỉ kéo dài trục ngang - co lại theo nội dung khi và chỉ khi flex 0 0 auto*/
-        align-self: stretch;
-        border: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .tab-btn:active {
@@ -3227,12 +3232,9 @@ img {
     }
 }
 
-/* Accessibility: visible focus styles for keyboard users (tab buttons) */
-.tab-btn:focus,
-.tab-btn:focus-visible {
-    outline: 3px solid rgba(11, 116, 222, 0.9);
-    outline-offset: 2px;
-    box-shadow: 0 0 0 3px rgba(11, 116, 222, 0.12);
+/* Remove default focus outline (no keyboard navigation) */
+.tab-btn:focus {
+    outline: none;
 }
 
 /* Tab content sections spacing */

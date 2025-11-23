@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Tools - Product Style Injector
  * Plugin URI: https://anmitools.com/plugins/product-style-injector
  * Description: Injects common CSS/JS for holder product pages and conditionally enqueues helper scripts (image lightbox, tabs, contact slider).
- * Version: 2.1.8
+ * Version: 2.2.0
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: An Mi Tools Vietnam
@@ -16,7 +16,13 @@
  * Update URI: false
  *
  * @package AnMiProductStyleInjector
- * @version 2.1.8
+ * @version 2.2.0
+ * 
+ * CHANGELOG v2.2.0 (2025-11-23):
+ * - SIMPLIFIED: Always enqueue tab-navigation.js for all holder products
+ * - REMOVED: Complex tab detection logic (strpos, detect_product_slugs)
+ * - REASON: Tab detection was causing tabs to disappear on some pages
+ * - RESULT: More reliable, simpler code, tabs always work
  */
 
 // Exit early if loaded outside of WordPress
@@ -30,7 +36,7 @@ if (!defined('ABSPATH')) {
 class AnMi_Product_Style_Injector {
 
     /** @var string Plugin semantic version (also used as fallback cache-bust) */
-    private $version = '2.1.8';
+    private $version = '2.2.0';
 
     /** @var string Absolute path to plugin css directory */
     private $css_dir;
@@ -82,36 +88,6 @@ class AnMi_Product_Style_Injector {
      * ------------------------------------------------------------------ */
 
     /**
-     * Parse post content and return any section class names that map to CSS files
-     *
-     * @param string $content
-     * @return array
-     */
-    private function detect_product_slugs($content) {
-        $slugs = array();
-
-        if (empty($content)) {
-            return $slugs;
-        }
-
-        // Find <section class="..."> occurrences and split class lists
-        preg_match_all('/<section\s+class=["\']([^"\']+)["\']/', $content, $matches);
-        if (!empty($matches[1])) {
-            foreach ($matches[1] as $classList) {
-                $classes = preg_split('/\s+/', trim($classList));
-                foreach ($classes as $single) {
-                    $single = trim($single);
-                    if ($single && $this->css_file_exists($single)) {
-                        $slugs[] = $single;
-                    }
-                }
-            }
-        }
-
-        return array_unique($slugs);
-    }
-
-    /**
      * Check for the existence of a CSS file for a given slug
      * @param string $slug
      * @return bool
@@ -153,11 +129,10 @@ class AnMi_Product_Style_Injector {
         // Enqueue shared helper scripts (image lightbox always for holder pages)
         wp_enqueue_script('anmi-image-lightbox', plugins_url('js/image-lightbox.js', __FILE__), array(), $version, true);
 
-        // Tab navigation: enqueue only when page contains tabs or a detected slug indicates it
-        $detected_slugs = $this->detect_product_slugs($post->post_content);
-        $has_tabs = (strpos($post->post_content, 'product-tabs') !== false) || in_array('product-tabs', $detected_slugs, true);
+        // ✅ SIMPLIFIED: Always enqueue tab-navigation.js for all holder products
+        // No complex detection needed - if it's a holder product, it likely has tabs
         $tab_js_path = dirname(__FILE__) . '/js/tab-navigation.js';
-        if ($has_tabs && file_exists($tab_js_path)) {
+        if (file_exists($tab_js_path)) {
             wp_enqueue_script('anmi-tab-navigation', plugins_url('js/tab-navigation.js', __FILE__), array(), $version, true);
         }
 
@@ -166,7 +141,7 @@ class AnMi_Product_Style_Injector {
 
         // Optional debug logging when WP_DEBUG is enabled
         if (defined('WP_DEBUG') && WP_DEBUG) {
-            error_log("An Mi Product Style Injector: assets enqueued for post {$post->ID}");
+            error_log("An Mi Product Style Injector v{$this->version}: assets enqueued for post {$post->ID}");
         }
     }
 
@@ -296,22 +271,56 @@ class AnMi_Product_Style_Injector {
                 </thead>
                 <tbody>
                     <?php
-                    $common_css = $this->css_dir . 'anmi-products-common.css';
+                    $common_css = $this->css_dir . $this->common_css_file;
                     if (file_exists($common_css)) {
                         $size = size_format(filesize($common_css));
                         $modified = date('Y-m-d H:i:s', filemtime($common_css));
                         echo "<tr>";
-                        echo "<td><strong>anmi-products-common.css</strong></td>";
-                        echo "<td><code>{$this->css_url}anmi-products-common.css</code></td>";
+                        echo "<td><strong>{$this->common_css_file}</strong></td>";
+                        echo "<td><code>{$this->css_url}{$this->common_css_file}</code></td>";
                         echo "<td>{$size}</td>";
                         echo "<td>{$modified}</td>";
                         echo "<td><span style='color: green; font-weight: bold;'>✓ Đã tồn tại</span></td>";
                         echo "</tr>";
                     } else {
                         echo "<tr>";
-                        echo "<td><strong>anmi-products-common.css</strong></td>";
-                        echo "<td colspan='3'><code>{$this->css_dir}anmi-products-common.css</code></td>";
+                        echo "<td><strong>{$this->common_css_file}</strong></td>";
+                        echo "<td colspan='3'><code>{$this->css_dir}{$this->common_css_file}</code></td>";
                         echo "<td><span style='color: red; font-weight: bold;'>✗ Chưa tồn tại</span></td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+
+            <h2>JavaScript Helper Files:</h2>
+            <table class="widefat">
+                <thead>
+                    <tr>
+                        <th>Tên file</th>
+                        <th>Chức năng</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $js_files = array(
+                        'image-lightbox.js' => 'Click ảnh để phóng to (lightbox)',
+                        'tab-navigation.js' => 'Chuyển tab nội dung (LUÔN LOAD)',
+                        'contact-slider.js' => 'Vuốt xem chi nhánh (mobile)'
+                    );
+                    
+                    foreach ($js_files as $filename => $description) {
+                        $js_path = dirname(__FILE__) . '/js/' . $filename;
+                        $exists = file_exists($js_path);
+                        $status = $exists 
+                            ? "<span style='color: green; font-weight: bold;'>✓ Đã tồn tại</span>" 
+                            : "<span style='color: red; font-weight: bold;'>✗ Chưa tồn tại</span>";
+                        
+                        echo "<tr>";
+                        echo "<td><strong>{$filename}</strong></td>";
+                        echo "<td>{$description}</td>";
+                        echo "<td>{$status}</td>";
                         echo "</tr>";
                     }
                     ?>
@@ -320,14 +329,25 @@ class AnMi_Product_Style_Injector {
 
             <h2>Hướng dẫn sử dụng:</h2>
             <ol>
-                <li>Đặt file <code>anmi-products-common.css</code> vào thư mục: <code><?php echo esc_html($this->css_dir); ?></code></li>
+                <li>Đặt file <code><?php echo esc_html($this->common_css_file); ?></code> vào thư mục: <code><?php echo esc_html($this->css_dir); ?></code></li>
+                <li>Đặt 3 file JS vào thư mục: <code><?php echo esc_html(dirname(__FILE__) . '/js/'); ?></code></li>
                 <li>Trong nội dung bài viết, sử dụng: <code>&lt;section class="ten-san-pham"&gt;...&lt;/section&gt;</code></li>
-                <li>Plugin sẽ tự động load CSS chung khi phát hiện có section product</li>
+                <li>Plugin sẽ tự động load CSS + JS khi phát hiện holder product</li>
             </ol>
 
-            <h2>Danh sách sản phẩm áp dụng (tóm tắt):</h2>
-            <div style="background: #f5f5f5; padding: 15px; border-radius: 5px; max-height: 300px; overflow-y: auto;">
-                <p>File CSS chung áp dụng cho nhiều sản phẩm holder (ví dụ: BT, HSK, NBJ,...)</p>
+            <h2>Danh sách sản phẩm áp dụng:</h2>
+            <div style="background: #f5f5f5; padding: 15px; border-radius: 5px;">
+                <p><strong>Holder product patterns:</strong> <?php echo implode(', ', $this->holder_slug_patterns); ?></p>
+                <p><strong>Parent category:</strong> <?php echo esc_html($this->parent_slug); ?></p>
+            </div>
+
+            <div style="margin-top: 20px; padding: 15px; background: #e7f3ff; border-left: 4px solid #0066cc; border-radius: 4px;">
+                <h3 style="margin-top: 0;">📋 v2.2.0 Update Notes:</h3>
+                <ul style="margin: 0;">
+                    <li><strong>Tab Navigation:</strong> Luôn load cho tất cả holder products (không cần phát hiện)</li>
+                    <li><strong>Lý do:</strong> Logic phát hiện phức tạp gây lỗi tabs biến mất</li>
+                    <li><strong>Kết quả:</strong> Code đơn giản hơn, tabs luôn hoạt động</li>
+                </ul>
             </div>
         </div>
         <?php
