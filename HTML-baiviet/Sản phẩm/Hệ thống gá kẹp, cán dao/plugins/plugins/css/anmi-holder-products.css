@@ -890,6 +890,13 @@ details[open] summary .toggle {
     text-align: center;
 }
 
+.specs-list {
+    background: white;
+    border: 1px solid #9996;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
 /* Specifications Grid (for file 39 style) */
 .specs-grid {
     display: grid;
@@ -976,6 +983,8 @@ details[open] summary .toggle {
     border: 1px solid var(--anmi-border-color-card);
     overflow: hidden;
     transition: all 0.3s ease;
+    padding: 1rem;
+    margin: 0.5rem;
 }
 
 .application-item:hover {
