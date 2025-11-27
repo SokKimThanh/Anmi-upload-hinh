@@ -5,7 +5,7 @@ primary_keyword: "bt-mtb morse taper"
 tags: "BT-MTB, morse taper, tool holder, drawbar type, bầu kẹp dao phay côn, đuôi ren"
 category: "BT SIDE LOCK"
 catalog_page: "18"
-seo_title: "BT-MTB Morse Taper Holder - Bầu kẹp côn đuôi ren có ốc siết"
+seo_title: "BT-MTB Morse Taper Holder - MT1–MT5 (5 Sizes) - Bầu kẹp đuôi ren có ốc siết"
 seo_description: "BT-MTB Morse Taper Holder của An Mi Tools. Loại kẹp bằng ốc siết (Drawbar), chuyên dùng cho dao phay ngón chuôi côn MT1-MT5. An toàn, độ đảo thấp."
 social_image_facebook: ""
 social_image_twitter: ""
@@ -19,6 +19,8 @@ schema_type: "Product"
 <section class="bt-mtb-morse-taper-nut">
     <h2>Tổng quan BT-MTB Morse Taper Tool Holder</h2>
     <p><strong>BT-MTB</strong> là bầu kẹp côn Morse thiết kế cho dao cụ có <strong>đuôi ren (Drawbar thread)</strong> thay vì đuôi dẹt. Sản phẩm sử dụng cơ cấu ốc siết bên trong (Bolt G) để kéo chặt dao vào bầu kẹp, đảm bảo độ cứng vững cao nhất, thường dùng cho dao phay ngón chuôi côn hoặc doa tinh.</p>
+
+    <p>Tham khảo thêm về chuôi côn Morse: <a href="https://en.wikipedia.org/wiki/Morse_taper">Morse taper (Wikipedia)</a> — mô tả nguyên lý chuôi côn và các chuẩn kích thước liên quan.</p>
 
     <h3>Đặc điểm kỹ thuật</h3>
     <ul>
