@@ -1,0 +1,55 @@
+---
+title: "Dao Phay Vai Vuông FM905 & Mảnh SDKT13T3"
+slug: "dao-phay-vai-vuong-fm905-sdkt13t3"
+primary_keyword: "Dao phay vai vuông FM905"
+tags: "square shoulder milling, dao phay vai vuong, fm905, sdkt13t3, an mi tools"
+category: "DỤNG CỤ GHÉP MẢNH"
+seo_title: "Dao Phay Vai Vuông FM905 & Mảnh SDKT13T3 Cho 90° Sâu"
+seo_description: "FM905 dùng mảnh SDKT13T3, góc 90°, cho phép chiều sâu cắt lớn, phù hợp phay vai vuông nặng."
+social_image_facebook: "fm905-sdkt13t3.jpg"
+seo_score_target: ">=70"
+---
+
+<section class="dao-phay-vai-vuong-fm905-sdkt13t3" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
+
+# Dao Phay Vai Vuông FM905 & Mảnh SDKT13T3
+
+## 1. Tổng quan sản phẩm
+Dòng **FM905** là dao phay vai vuông **góc 90°** dùng mảnh **SDKT13T3***, tập trung cho các ứng dụng **phay nặng với chiều sâu cắt lớn**.
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="fm905-holder-overview.jpg" style="width:1000px; height:auto;" alt="Dao phay vai vuông FM905 dùng mảnh SDKT13T3">
+  <figcaption style="color:#333333;">Hình ảnh dao phay vai vuông FM905 dùng mảnh SDKT13T3</figcaption>
+</figure>
+
+## 2. Thông số mảnh dao (Insert Specifications)
+
+| Mã Insert | Lớp phủ (Grade) | Vật liệu gia công | Đặc điểm |
+| :--- | :--- | :--- | :--- |
+| SDKT13T3* | OC3220, OP2202, OP1315, OP1325, OP1340, OP1030, OP1630, OK434 | P / M / K / N / S / H | Mảnh phay vai vuông chịu tải nặng, cho phép chiều sâu cắt lớn |
+
+## 3. Bảng các mã đài dao tương thích (Compatible Holders)
+
+| Mã Đài Dao (Order Code) | Đường kính (DC) | Số me cắt | Lỗ cốt (DCON) | Góc cắt (KAPR) | APMX (mm) |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| TH-FM905-A22-50-4-SD13 | 50 | 4 | 22 | 90 | 12.0 |
+| TH-FM905-A22-63-5-SD13 | 63 | 5 | 22 | 90 | 12.0 |
+| TH-FM905-A27-80-6-SD13 | 80 | 6 | 27 | 90 | 12.0 |
+| TH-FM905-B32-100-7-SD13 | 100 | 7 | 32 | 90 | 12.0 |
+| TH-FM905-B40-125-8-SD13 | 125 | 8 | 40 | 90 | 12.0 |
+| TH-FM905-C40-160-10-SD13 | 160 | 10 | 40 | 90 | 12.0 |
+| TH-FM905-C60-200-12-SD13 | 200 | 12 | 60 | 90 | 12.0 |
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="fm905-drawing.jpg" style="width:1000px; height:auto; border:1px solid rgba(0,0,0,0.08);" alt="Bản vẽ kỹ thuật dao phay vai vuông FM905">
+  <figcaption style="color:#333333;">Bản vẽ kỹ thuật dao phay vai vuông FM905 và vị trí lắp mảnh SDKT13T3</figcaption>
+</figure>
+
+## 4. Ứng dụng gia công thực tế
+FM905 phù hợp cho phay vai vuông nặng trên các chi tiết thép kết cấu, khuôn lớn, phôi rèn, đúc.
+
+- Ứng dụng chính: Phay vai vuông nặng với chiều sâu cắt lớn, phay rãnh sâu.
+- Vật liệu gia công: P, M, K, S, H (ưu tiên chọn grade chịu mài mòn và chịu va đập tốt).
+- Khuyến nghị: Dùng máy có công suất lớn, gá kẹp chi tiết chắc chắn để tận dụng hết năng lực cắt của FM905.
+
+</section>

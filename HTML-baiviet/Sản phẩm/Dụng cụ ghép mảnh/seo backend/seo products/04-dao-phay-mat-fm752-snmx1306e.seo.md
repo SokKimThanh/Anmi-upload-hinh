@@ -1,0 +1,57 @@
+---
+title: "Đài Dao Phay Mặt Góc 75° FM752 & Mảnh SNMX1306E"
+slug: "dao-phay-mat-fm752-snmx1306e"
+primary_keyword: "Dao phay mặt FM752"
+tags: "milling insert, dao phay mặt, fm752, snmx1306e, an mi tools"
+category: "DỤNG CỤ GHÉP MẢNH"
+seo_title: "Dao Phay Mặt Góc 75° FM752 & Mảnh SNMX1306E Giảm Lực Cắt"
+seo_description: "Dòng dao phay mặt FM752 dùng mảnh SNMX1306E, góc cắt 75°, APMX 10 mm, tối ưu giảm lực cắt hướng kính cho gia công ổn định."
+social_image_facebook: "fm752-snmx1306e.jpg"
+seo_score_target: ">=70"
+---
+
+<section class="dao-phay-mat-fm752-snmx1306e" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
+
+# Đài Dao Phay Mặt Góc 75° FM752 & Mảnh SNMX1306E
+
+## 1. Tổng quan sản phẩm
+Dòng dao phay mặt **FM752** sử dụng mảnh **SNMX1306E** với góc tiếp xúc **KAPR = 75°** và chiều sâu cắt tối đa **APMX = 10 mm**. Góc 75° giúp **giảm lực cắt hướng kính**, cải thiện độ ổn định khi gá kẹp chưa thật vững hoặc khi gia công trên các chi tiết thành mỏng.
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="fm752-holder-overview.jpg" style="width:1000px; height:auto;" alt="Đài dao phay mặt FM752 dùng mảnh SNMX1306E">
+  <figcaption style="color:#333333;">Hình ảnh đài dao phay mặt FM752 dùng mảnh SNMX1306E</figcaption>
+</figure>
+
+## 2. Thông số mảnh dao (Insert Specifications)
+Mảnh **SNMX1306E*** (SNMX1306ENN) là dạng vuông, nhiều cạnh cắt, được tối ưu cho cắt êm và ổn định.
+
+| Mã Insert | Lớp phủ (Grade) | Vật liệu gia công | Đặc điểm hình dạng / chipbreaker |
+| :--- | :--- | :--- | :--- |
+| SNMX1306E* | OC3220, OP2202, OP1315, OP1325, OP1340, OP1030, OP1630, OK434 | P / M / K / N / S / H | Mảnh vuông kích thước lớn, biên dạng E tối ưu phân mảnh phoi, phù hợp phay mặt sâu tới 10 mm với lực cắt êm |
+
+## 3. Bảng các mã đài dao tương thích (Compatible Holders)
+Các holder **FM752** dưới đây dùng chung mảnh **SNMX1306E*** với KAPR = 75° và APMX = 10 mm.
+
+| Mã Đài Dao (Order Code) | Đường kính (DC) | Số me cắt | Lỗ cốt (DCON) | Góc cắt (KAPR) | APMX (mm) | Vít (Screw) | Chìa vặn (Wrench) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| TH-FM752-A22-50-5-SN13 | 50 | 5 | 22 | 75 | 10.0 | SA0411 | T15P |
+| TH-FM752-A22-63-6-SN13 | 63 | 6 | 22 | 75 | 10.0 | SA0411 | T15P |
+| TH-FM752-A27-80-7-SN13 | 80 | 7 | 27 | 75 | 10.0 | SA0411 | T15P |
+| TH-FM752-B32-100-8-SN13 | 100 | 8 | 32 | 75 | 10.0 | SA0411 | T15P |
+| TH-FM752-B40-125-10-SN13 | 125 | 10 | 40 | 75 | 10.0 | SA0411 | T15P |
+| TH-FM752-C40-160-12-SN13 | 160 | 12 | 40 | 75 | 10.0 | SA0411 | T15P |
+| TH-FM752-C60-200-16-SN13 | 200 | 16 | 60 | 75 | 10.0 | SA0411 | T15P |
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="fm752-drawing.jpg" style="width:1000px; height:auto; border:1px solid rgba(0,0,0,0.08);" alt="Bản vẽ kỹ thuật đài dao phay mặt FM752">
+  <figcaption style="color:#333333;">Bản vẽ kỹ thuật đài dao phay mặt FM752 và vị trí lắp mảnh SNMX1306E</figcaption>
+</figure>
+
+## 4. Ứng dụng gia công thực tế
+Nhờ góc cắt 75°, dòng **FM752** rất phù hợp trong các trường hợp cần **giảm lực cắt hướng kính**, tránh bẻ gãy chi tiết mỏng hoặc giảm tải cho trục chính máy.
+
+- Ứng dụng chính: Phay mặt sâu, phay thô đến bán tinh với yêu cầu lực cắt nhẹ.
+- Vật liệu gia công phù hợp: Thép P, gang K, inox M và một số hợp kim khó cắt S/H (chọn grade phủ phù hợp).
+- Khuyến nghị: Dùng FM752 cho chi tiết thành mỏng, chi tiết gá kẹp chưa cứng vững hoặc khi máy có công suất trung bình nhưng vẫn cần chiều sâu cắt lớn.
+
+</section>
