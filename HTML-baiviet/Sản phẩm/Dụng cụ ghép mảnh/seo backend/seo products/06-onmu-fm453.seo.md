@@ -1,10 +1,10 @@
 ---
 title: "FM453 & ONMU0504/0705/0906 – Dao Phay Mặt Đa Cạnh Kinh Tế"
-slug: "dao-phay-mat-fm453-onmu"
+slug: "onmu-fm453"
 primary_keyword: "Dao phay mặt FM453"
 tags: "milling insert, dao phay mặt, an mi tools, fm453, onmu0504, onmu0705, onmu0906"
+seo_title: "FM453 & ONMU – Dao Phay Mặt Đa Cạnh Kinh Tế | An Mi Tools"
 category: "DỤNG CỤ GHÉP MẢNH"
-catalog_page: "[Số trang]"
 seo_title: "FM453 & ONMU – Dao Phay Mặt Đa Cạnh Kinh Tế | An Mi Tools"
 seo_description: "FM453 dùng mảnh ONMU0504/0705/0906 đa cạnh, KAPR 45°, APMX 3.2–5.5 mm, giải pháp phay mặt kinh tế với nhiều cạnh cắt."
 social_image_facebook: "fm453-onmu.jpg"
@@ -16,7 +16,7 @@ date_modified: "2025-11-28"
 schema_type: "Product"
 ---
 
-<section class="dao-phay-mat-fm453-onmu" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
+<section class="onmu-fm453" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
 
 # Đài Dao Phay Mặt FM453 & Mảnh Đa Cạnh ONMU0504/0705/0906
 

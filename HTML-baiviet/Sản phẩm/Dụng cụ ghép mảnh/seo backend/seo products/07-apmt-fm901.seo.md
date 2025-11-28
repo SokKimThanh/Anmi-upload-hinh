@@ -1,10 +1,8 @@
 ---
 title: "FM901 & APMT1135/1604 – Dao Phay Vai Vuông 90° Phổ Biến"
-slug: "dao-phay-vai-vuong-fm901-apmt"
+slug: "apmt-fm901"
 primary_keyword: "Dao phay vai vuông FM901"
 tags: "square shoulder milling, dao phay vai vuông, an mi tools, fm901, apmt1135, apmt1604"
-category: "DỤNG CỤ GHÉP MẢNH"
-catalog_page: "[Số trang]"
 seo_title: "FM901 & APMT1135/1604 – Dao Phay Vai Vuông 90° | An Mi Tools"
 seo_description: "Dòng dao vai vuông FM901 dùng mảnh APMT1135/1604, KAPR 90°, APMX 10–15 mm, giải pháp phổ biến cho phay vai vuông."
 social_image_facebook: "fm901-apmt.jpg"
@@ -16,7 +14,7 @@ date_modified: "2025-11-28"
 schema_type: "Product"
 ---
 
-<section class="dao-phay-vai-vuong-fm901-apmt" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
+<section class="apmt-fm901" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
 
 # Dao Phay Vai Vuông 90° FM901 & Mảnh APMT1135/1604
 
