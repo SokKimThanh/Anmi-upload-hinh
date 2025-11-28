@@ -1,13 +1,19 @@
 ---
-title: "Dao Phay Tạo Hình RM01 & Mảnh RPMW1003/RPKT1204"
+title: "RM01 & RPMW1003/RPKT1204 – Dao Phay Tạo Hình Đa Năng"
 slug: "dao-phay-tao-hinh-rm01-rpmw1003-rpkt1204"
 primary_keyword: "Dao phay tạo hình RM01"
-tags: "profiling, dao phay tao hinh, rm01, rpmw1003, rpkt1204, an mi tools"
+tags: "profiling, dao phay tao hinh, an mi tools, rm01, rpmw1003, rpkt1204"
 category: "DỤNG CỤ GHÉP MẢNH"
-seo_title: "Dao Phay Tạo Hình RM01 & Mảnh RPMW1003/RPKT1204"
+catalog_page: "[Số trang]"
+seo_title: "RM01 & RPMW1003/RPKT1204 – Dao Phay Tạo Hình | An Mi Tools"
 seo_description: "RM01 dùng mảnh RPMW1003 và RPKT1204 cho phay tạo hình, bo góc, lượn cong với bề mặt mịn."
 social_image_facebook: "rm01-rpmw-rpkt.jpg"
+social_image_twitter: "rm01-rpmw-rpkt.jpg"
 seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
 ---
 
 <section class="dao-phay-tao-hinh-rm01-rpmw1003-rpkt1204" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">

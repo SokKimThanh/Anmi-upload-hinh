@@ -1,13 +1,19 @@
 ---
-title: "Dao Phay Vai Vuông FM903 & Mảnh WNMX0403/0806"
+title: "FM903 & WNMX0403/0806 – Dao Phay Vai Vuông 90° Linh Hoạt"
 slug: "dao-phay-vai-vuong-fm903-wnmx0403-0806"
 primary_keyword: "Dao phay vai vuông FM903"
-tags: "square shoulder milling, dao phay vai vuong, fm903, wnmx0403, wnmx0806, an mi tools"
+tags: "square shoulder milling, dao phay vai vuong, an mi tools, fm903, wnmx0403, wnmx0806"
 category: "DỤNG CỤ GHÉP MẢNH"
-seo_title: "Dao Phay Vai Vuông FM903 & Mảnh WNMX0403/0806 Cho 90°"
+catalog_page: "[Số trang]"
+seo_title: "FM903 & WNMX0403/0806 – Dao Phay Vai Vuông 90° | An Mi Tools"
 seo_description: "FM903 dùng mảnh WNMX0403 và WNMX0806, gồm cả dạng cán trụ và dạng đĩa/cán vuông, đáp ứng linh hoạt nhu cầu phay vai vuông 90°."
 social_image_facebook: "fm903-wnmx.jpg"
+social_image_twitter: "fm903-wnmx.jpg"
 seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
 ---
 
 <section class="dao-phay-vai-vuong-fm903-wnmx0403-0806" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">

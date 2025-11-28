@@ -1,13 +1,19 @@
 ---
-title: "Dao Phay Vai Vuông FM904 & Mảnh LNGX1306"
+title: "FM904 & LNGX1306 – Dao Phay Vai Vuông 90° Năng Suất Cao"
 slug: "dao-phay-vai-vuong-fm904-lngx1306"
 primary_keyword: "Dao phay vai vuông FM904"
-tags: "square shoulder milling, dao phay vai vuong, fm904, lngx1306, an mi tools"
+tags: "square shoulder milling, dao phay vai vuong, an mi tools, fm904, lngx1306"
 category: "DỤNG CỤ GHÉP MẢNH"
-seo_title: "Dao Phay Vai Vuông FM904 & Mảnh LNGX1306 Cho Năng Suất Cao"
-seo_description: "FM904 dùng mảnh LNGX1306, góc 90°, phù hợp phay vai vuông năng suất cao với bề mặt đẹp."
+catalog_page: "[Số trang]"
+seo_title: "FM904 & LNGX1306 – Dao Phay Vai Vuông Năng Suất Cao | An Mi Tools"
+seo_description: "FM904 dùng mảnh LNGX1306, KAPR 90°, phù hợp phay vai vuông năng suất cao với bề mặt đẹp."
 social_image_facebook: "fm904-lngx1306.jpg"
+social_image_twitter: "fm904-lngx1306.jpg"
 seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
 ---
 
 <section class="dao-phay-vai-vuong-fm904-lngx1306" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">

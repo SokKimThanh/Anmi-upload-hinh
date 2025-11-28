@@ -9,17 +9,23 @@ seo_description: "Đài dao phay mặt FM454 dùng mảnh ODMT0605 8 cạnh, gó
 social_image_facebook: "fm454-odmt0605.jpg"
 seo_score_target: ">=70"
 ---
-
-<section class="dao-phay-mat-fm454-odmt0605" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
-
-# Đài Dao Phay Mặt FM454 & Mảnh Phay ODMT0605
-
-## 1. Tổng quan sản phẩm
-Dòng dao phay mặt **FM454** sử dụng mảnh bát giác **ODMT0605** với **8 cạnh cắt kinh tế**, cho phép đảo chiều sử dụng nhiều lần để tối ưu chi phí. Góc tiếp xúc **KAPR = 45°** kết hợp với chiều sâu cắt tối đa **APMX = 4.3 mm** phù hợp cho phay mặt thô đến bán tinh trên nhiều loại vật liệu khác nhau.
-
-<figure style="width:1000px; margin:auto; text-align:center;">
-  <img src="fm454-holder-overview.jpg" style="width:1000px; height:auto;" alt="Đài dao phay mặt FM454 dùng mảnh ODMT0605">
-  <figcaption style="color:#333333;">Hình ảnh thực tế đài dao phay mặt FM454 dùng mảnh ODMT0605</figcaption>
+---
+title: "FM454 & ODMT0605 – Dao Phay Mặt Đa Cạnh Hiệu Quả"
+slug: "dao-phay-mat-fm454-odmt0605"
+primary_keyword: "Dao phay mặt FM454"
+tags: "milling insert, dao phay mặt, an mi tools, fm454, odmt0605"
+category: "DỤNG CỤ GHÉP MẢNH"
+catalog_page: "[Số trang]"
+seo_title: "FM454 & ODMT0605 – Dao Phay Mặt Đa Cạnh | An Mi Tools"
+seo_description: "Dòng dao phay mặt FM454 dùng mảnh ODMT0605 đa cạnh, KAPR 45°, APMX 4.3 mm, giải pháp kinh tế cho phay mặt thép và gang."
+social_image_facebook: "fm454-odmt0605.jpg"
+social_image_twitter: "fm454-odmt0605.jpg"
+seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
+---
 </figure>
 
 ## 2. Thông số mảnh dao (Insert Specifications)

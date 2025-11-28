@@ -9,17 +9,23 @@ seo_description: "Dòng dao phay mặt hạng nặng FM452 dùng mảnh SNMX/SNG
 social_image_facebook: "fm452-snmx1306.jpg"
 seo_score_target: ">=70"
 ---
-
-<section class="dao-phay-mat-fm452-snmx1306" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
-
-# Đài Dao Phay Mặt FM452 & Mảnh Phay SNMX1306 / SNGX1306ANN
-
-## 1. Tổng quan sản phẩm
-Dòng dao phay mặt **FM452** được thiết kế cho **gia công hạng nặng (heavy duty)**, sử dụng mảnh phay kích thước lớn **SNMX1306 / SNGX1306ANN**. Với góc tiếp xúc **KAPR = 45°** và **APMX = 6.5 mm**, FM452 cho phép chiều sâu cắt lớn, phù hợp cắt thô nặng trên phôi thép và gang với độ ổn định cao.
-
-<figure style="width:1000px; margin:auto; text-align:center;">
-  <img src="fm452-holder-overview.jpg" style="width:1000px; height:auto;" alt="Đài dao phay mặt FM452 dùng mảnh SNMX1306/SNGX1306ANN">
-  <figcaption style="color:#333333;">Hình ảnh đài dao phay mặt FM452 dùng mảnh SNMX1306 / SNGX1306ANN</figcaption>
+---
+title: "FM452 & SNMX/SNGX1306 – Dao Phay Mặt Nặng Góc 45°"
+slug: "dao-phay-mat-fm452-snmx1306"
+primary_keyword: "Dao phay mặt nặng FM452"
+tags: "milling insert, dao phay mặt, an mi tools, fm452, snmx1306, sngx1306"
+category: "DỤNG CỤ GHÉP MẢNH"
+catalog_page: "[Số trang]"
+seo_title: "FM452 & SNMX/SNGX1306 – Dao Phay Mặt Nặng | An Mi Tools"
+seo_description: "Dòng dao phay mặt nặng FM452 dùng mảnh SNMX1306A/SNGX1306ANN, KAPR 45°, APMX 6.5 mm, tối ưu cho phay thô nặng trên thép và gang."
+social_image_facebook: "fm452-snmx1306.jpg"
+social_image_twitter: "fm452-snmx1306.jpg"
+seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
+---
 </figure>
 
 ## 2. Thông số mảnh dao (Insert Specifications)

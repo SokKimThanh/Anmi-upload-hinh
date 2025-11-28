@@ -1,13 +1,19 @@
 ---
-title: "Đài Dao Phay Mặt Góc 88° FM882 & Mảnh SNMX1306Z"
+title: "FM882 & SNMX1306Z – Dao Phay Mặt Góc 88° APMX 11 mm"
 slug: "dao-phay-mat-fm882-snmx1306z"
 primary_keyword: "Dao phay mặt FM882"
-tags: "milling insert, dao phay mặt, fm882, snmx1306z, an mi tools"
+tags: "milling insert, dao phay mặt, an mi tools, fm882, snmx1306z"
 category: "DỤNG CỤ GHÉP MẢNH"
-seo_title: "Dao Phay Mặt Góc Lớn FM882 & Mảnh SNMX1306Z Cho APMX 11 mm"
-seo_description: "Dòng dao phay mặt FM882 dùng mảnh SNMX1306Z, góc cắt 88°, APMX 11 mm, phù hợp cắt sâu và tạo vai gần 90°."
+catalog_page: "[Số trang]"
+seo_title: "FM882 & SNMX1306Z – Dao Phay Mặt Góc 88° | An Mi Tools"
+seo_description: "Dòng dao phay mặt FM882 dùng mảnh SNMX1306Z, KAPR 88°, APMX 11 mm, thích hợp cắt sâu và tạo vai gần 90°."
 social_image_facebook: "fm882-snmx1306z.jpg"
+social_image_twitter: "fm882-snmx1306z.jpg"
 seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
 ---
 
 <section class="dao-phay-mat-fm882-snmx1306z" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">

@@ -1,13 +1,19 @@
 ---
-title: "Dao Phay Vai Vuông FM902 & Mảnh Tam Giác TNGX1306"
+title: "FM902 & TNGX1306 – Dao Phay Vai Vuông 90° Đa Cạnh"
 slug: "dao-phay-vai-vuong-fm902-tngx1306"
 primary_keyword: "Dao phay vai vuông FM902"
-tags: "square shoulder milling, dao phay vai vuong, fm902, tngx1306, an mi tools"
+tags: "square shoulder milling, dao phay vai vuong, an mi tools, fm902, tngx1306"
 category: "DỤNG CỤ GHÉP MẢNH"
-seo_title: "Dao Phay Vai Vuông FM902 & Mảnh TNGX1306 3 Cạnh Cắt"
-seo_description: "FM902 dùng mảnh tam giác TNGX1306, góc 90°, nhiều cạnh cắt, giải pháp kinh tế cho phay vai vuông."
+catalog_page: "[Số trang]"
+seo_title: "FM902 & TNGX1306 – Dao Phay Vai Vuông Đa Cạnh | An Mi Tools"
+seo_description: "FM902 dùng mảnh tam giác TNGX1306, KAPR 90°, nhiều cạnh cắt, giải pháp kinh tế cho phay vai vuông."
 social_image_facebook: "fm902-tngx1306.jpg"
+social_image_twitter: "fm902-tngx1306.jpg"
 seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
 ---
 
 <section class="dao-phay-vai-vuong-fm902-tngx1306" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">

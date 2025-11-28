@@ -1,13 +1,19 @@
 ---
-title: "Dao Phay High Feed HM192 & Mảnh PDMT1305"
+title: "HM192 & PDMT1305 – Dao Phay High Feed KAPR 19°"
 slug: "dao-phay-high-feed-hm192-pdmt1305"
 primary_keyword: "Dao phay high feed HM192"
-tags: "high feed milling, dao phay high feed, hm192, pdmt1305, an mi tools"
+tags: "high feed milling, dao phay high feed, an mi tools, hm192, pdmt1305"
 category: "DỤNG CỤ GHÉP MẢNH"
-seo_title: "Dao Phay High Feed HM192 & Mảnh PDMT1305, KAPR 19°"
-seo_description: "HM192 dùng mảnh PDMT1305, góc cắt 19°, APMX 1.9 mm, tối ưu cho phay high feed với bước tiến lớn và chiều sâu cắt nhỏ."
+catalog_page: "[Số trang]"
+seo_title: "HM192 & PDMT1305 – Dao Phay High Feed | An Mi Tools"
+seo_description: "HM192 dùng mảnh PDMT1305, KAPR 19°, APMX 1.9 mm, tối ưu cho phay high feed với bước tiến lớn và chiều sâu cắt nhỏ."
 social_image_facebook: "hm192-pdmt1305.jpg"
+social_image_twitter: "hm192-pdmt1305.jpg"
 seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
 ---
 
 <section class="dao-phay-high-feed-hm192-pdmt1305" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">

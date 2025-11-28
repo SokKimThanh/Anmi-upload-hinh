@@ -1,13 +1,19 @@
 ---
-title: "Đài Dao Phay Mặt Góc 75° FM752 & Mảnh SNMX1306E"
+title: "FM752 & SNMX1306E – Dao Phay Mặt Góc 75° Giảm Lực Cắt"
 slug: "dao-phay-mat-fm752-snmx1306e"
 primary_keyword: "Dao phay mặt FM752"
-tags: "milling insert, dao phay mặt, fm752, snmx1306e, an mi tools"
+tags: "milling insert, dao phay mặt, an mi tools, fm752, snmx1306e"
 category: "DỤNG CỤ GHÉP MẢNH"
-seo_title: "Dao Phay Mặt Góc 75° FM752 & Mảnh SNMX1306E Giảm Lực Cắt"
-seo_description: "Dòng dao phay mặt FM752 dùng mảnh SNMX1306E, góc cắt 75°, APMX 10 mm, tối ưu giảm lực cắt hướng kính cho gia công ổn định."
+catalog_page: "[Số trang]"
+seo_title: "FM752 & SNMX1306E – Dao Phay Mặt Góc 75° | An Mi Tools"
+seo_description: "Dòng dao phay mặt FM752 dùng mảnh SNMX1306E, KAPR 75°, APMX 10 mm, tối ưu giảm lực cắt hướng kính cho gia công ổn định."
 social_image_facebook: "fm752-snmx1306e.jpg"
+social_image_twitter: "fm752-snmx1306e.jpg"
 seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
 ---
 
 <section class="dao-phay-mat-fm752-snmx1306e" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">

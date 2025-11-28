@@ -1,13 +1,19 @@
 ---
-title: "Đầu Dao Phay Vai Vuông FM901F & Mảnh BXKT11T3"
+title: "FM901F & BXKT11T3 – Đầu Dao Phay Vai Vuông 90° Modular"
 slug: "dau-phay-vai-vuong-fm901f-bxkt11t3"
 primary_keyword: "Đầu phay vai vuông FM901F"
-tags: "square shoulder milling, dau phay vai vuong, fm901f, bxkt11t3, an mi tools"
+tags: "square shoulder milling, dau phay vai vuong, an mi tools, fm901f, bxkt11t3"
 category: "DỤNG CỤ GHÉP MẢNH"
-seo_title: "Đầu Dao Phay Vai Vuông FM901F & Mảnh BXKT11T3 Cho 90°"
-seo_description: "Đầu dao phay vai vuông FM901F dùng mảnh BXKT11T3, góc 90°, giải pháp đầu phay lắp trên cán modul giúp linh hoạt chiều dài và gá kẹp."
+catalog_page: "[Số trang]"
+seo_title: "FM901F & BXKT11T3 – Đầu Dao Phay Vai Vuông Modular | An Mi Tools"
+seo_description: "Đầu dao phay vai vuông FM901F dùng mảnh BXKT11T3, KAPR 90°, giải pháp đầu phay lắp trên cán modul giúp linh hoạt chiều dài và gá kẹp."
 social_image_facebook: "fm901f-bxkt11t3.jpg"
+social_image_twitter: "fm901f-bxkt11t3.jpg"
 seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
 ---
 
 <section class="dau-phay-vai-vuong-fm901f-bxkt11t3" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
