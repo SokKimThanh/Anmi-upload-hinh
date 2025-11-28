@@ -266,94 +266,79 @@ class Anmi_PM_Logger {
     }
 
     /**
-     * Get color for action type
+     * Get color for action type (returns CSS class)
      */
     private static function get_action_color($action) {
         $colors = [
-            'upload_success'        => 'badge-success',
-            'activate_success'      => 'badge-success',
-            'activate_failed'       => 'badge-danger',
-            'upload_rejected'       => 'badge-danger',
-            'health_check_failed'   => 'badge-warning',
-            'rollback_restore'      => 'badge-warning',
-            'delete_success'        => 'badge-neutral',
+            'upload_success'         => 'badge-success',
+            'activate_success'       => 'badge-success',
+            'activate_failed'        => 'badge-danger',
+            'upload_rejected'        => 'badge-danger',
+            'health_check_failed'    => 'badge-warning',
+            'rollback_restore'       => 'badge-warning',
+            'delete_success'         => 'badge-neutral',
             'plugin_renamed_detected'=> 'badge-info',
         ];
 
         return $colors[$action] ?? 'badge-neutral';
     }
-                    <thead>
-                        <tr>
-                            <th style="width: 180px;"><?php _e('Timestamp', 'anmi-plugin-manager'); ?></th>
-                            <th style="width: 200px;"><?php _e('Action', 'anmi-plugin-manager'); ?></th>
-                            <th style="width: 100px;"><?php _e('User', 'anmi-plugin-manager'); ?></th>
-                            <th><?php _e('Details', 'anmi-plugin-manager'); ?></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($logs as $log): ?>
-                        <tr>
-                            <td><?php echo esc_html($log['timestamp']); ?></td>
-                            <td>
-                                <strong style="<?php echo self::get_action_color($log['action']); ?>">
-                                    <?php echo esc_html($log['action']); ?>
-                                </strong>
-                            </td>
-                            <td>
-                                <?php 
-                                $user = get_userdata($log['user_id']);
-                                echo $user ? esc_html($user->user_login) : 'System';
-                                ?>
-                            </td>
-                            <td>
-                                <details>
-                                    <summary style="cursor: pointer;">View Data</summary>
-                                    <pre style="background: #f6f7f7; padding: 10px; margin-top: 8px; overflow-x: auto;"><?php 
-                                        echo esc_html(json_encode($log['data'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)); 
-                                    ?></pre>
-                                </details>
-                            </td>
-                        </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
-                
-                <?php if ($total_pages > 1): ?>
-                <div class="tablenav bottom">
-                    <div class="tablenav-pages">
-                        <?php
-                        echo paginate_links([
-                            'base' => add_query_arg('paged', '%#%'),
-                            'format' => '',
-                            'current' => $page,
-                            'total' => $total_pages,
-                            'prev_text' => '&laquo;',
-                            'next_text' => '&raquo;'
-                        ]);
-                        ?>
-                    </div>
-                </div>
-                <?php endif; ?>
-            <?php endif; ?>
-        </div>
-        <?php
-    }
-    
+
     /**
-     * Get color for action type
+     * Output logs table HTML (moved from inline HTML)
      */
-    private static function get_action_color($action) {
-        $colors = [
-            'upload_success' => 'color: #00a32a;',
-            'activate_success' => 'color: #00a32a;',
-            'activate_failed' => 'color: #d63638;',
-            'upload_rejected' => 'color: #d63638;',
-            'health_check_failed' => 'color: #d63638;',
-            'rollback_restore' => 'color: #dba617;',
-            'delete_success' => 'color: #646970;',
-            'plugin_renamed_detected' => 'color: #2271b1;'
-        ];
-        
-        return isset($colors[$action]) ? $colors[$action] : '';
+    public static function output_logs_table($logs, $total_pages, $page) {
+        ?>
+        <table class="wp-list-table widefat fixed striped">
+            <thead>
+                <tr>
+                    <th style="width: 180px;"><?php _e('Timestamp', 'anmi-plugin-manager'); ?></th>
+                    <th style="width: 200px;"><?php _e('Action', 'anmi-plugin-manager'); ?></th>
+                    <th style="width: 100px;"><?php _e('User', 'anmi-plugin-manager'); ?></th>
+                    <th><?php _e('Details', 'anmi-plugin-manager'); ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($logs as $log): ?>
+                <tr>
+                    <td><?php echo esc_html($log['timestamp']); ?></td>
+                    <td>
+                        <strong style="<?php echo self::get_action_color($log['action']); ?>">
+                            <?php echo esc_html($log['action']); ?>
+                        </strong>
+                    </td>
+                    <td>
+                        <?php 
+                        $user = get_userdata($log['user_id']);
+                        echo $user ? esc_html($user->user_login) : 'System';
+                        ?>
+                    </td>
+                    <td>
+                        <details>
+                            <summary style="cursor: pointer;">View Data</summary>
+                            <pre style="background: #f6f7f7; padding: 10px; margin-top: 8px; overflow-x: auto;"><?php 
+                                echo esc_html(json_encode($log['data'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)); 
+                            ?></pre>
+                        </details>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <?php if ($total_pages > 1): ?>
+        <div class="tablenav bottom">
+            <div class="tablenav-pages">
+                <?php
+                echo paginate_links([
+                    'base' => add_query_arg('paged', '%#%'),
+                    'format' => '',
+                    'current' => $page,
+                    'total' => $total_pages,
+                    'prev_text' => '&laquo;',
+                    'next_text' => '&raquo;'
+                ]);
+                ?>
+            </div>
+        </div>
+        <?php endif;
     }
-}
+} 
