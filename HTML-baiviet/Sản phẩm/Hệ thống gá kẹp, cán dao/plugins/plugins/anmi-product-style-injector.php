@@ -48,11 +48,8 @@ class AnMi_Product_Style_Injector {
     /** @var string URL to plugin css directory */
     private $css_url;
 
-    /** @var string WooCommerce product_cat slug for holder system products */
-    private $holder_tools_cat = 'he-thong-ga-kep-can-dao';
-
-    /** @var string WooCommerce product_cat slug for milling insert/holder products */
-    private $milling_tools_cat = 'dung-cu-ghep-manh';
+    /** @var string Parent category slug used to detect holder products */
+    private $parent_slug = 'he-thong-ga-kep-can-dao';
 
     /** @var string Common CSS filename used for holder products */
     private $common_css_file = 'anmi-holder-products.css';
@@ -84,6 +81,22 @@ class AnMi_Product_Style_Injector {
         'sd', // SDKT
         'rp', // RPMW, RPKT
         'pd'  // PDMT
+    );
+
+    /** @var array 4-letter insert codes (safer than 2-letter prefixes) */
+    private $milling_insert_codes_4 = array(
+        'sekt', 'seet',
+        'odmt',
+        'snmx', 'sngx',
+        'onmu',
+        'apmt',
+        'bxkt',
+        'tngx',
+        'wnmx',
+        'lngx',
+        'sdkt',
+        'rpmw', 'rpkt',
+        'pdmt',
     );
 
     /**
@@ -221,29 +234,22 @@ class AnMi_Product_Style_Injector {
      * @return bool
      */
     private function is_holder_product($post) {
-        // 1) Quick heuristic: search for class patterns in the content
+        // 1) Quick heuristic: search for specific CSS CLASSES in the content
+        // An toan hon: Chi tim class="bt-..." chu khong tim text bat ky
         foreach ($this->holder_slug_patterns as $pattern) {
             if (strpos($post->post_content, 'class="' . $pattern) !== false || strpos($post->post_content, "class='{$pattern}") !== false) {
                 return true;
             }
         }
 
-        // 1b) Detect milling insert/holder slug patterns in content (e.g. sekt12t3-fm451)
-        $content_slug = strtolower($post->post_content);
-        foreach ($this->milling_insert_prefixes as $insert_prefix) {
-            foreach ($this->milling_holder_prefixes as $holder_prefix) {
-                // pattern like "sekt" + something + "-fm451" is already in slug, but we just need presence of both prefixes
-                if (strpos($content_slug, $insert_prefix) !== false && strpos($content_slug, $holder_prefix) !== false) {
-                    return true;
-                }
-            }
-        }
+        // REMOVED: 1b Content text search (quá rủi ro false positive với từ khóa 2 chữ cái 'on', 'in', 'se')
 
         // 2) Category-based detection
         $categories = get_the_category($post->ID);
         if ($categories) {
             foreach ($categories as $category) {
-                if (strpos($category->slug, 'bt-') === 0 || strpos($category->slug, 'hsk-') === 0) {
+                // Check parent category OR specific prefix categories
+                if ($category->slug === $this->parent_slug || strpos($category->slug, 'bt-') === 0 || strpos($category->slug, 'hsk-') === 0) {
                     return true;
                 }
             }
@@ -267,11 +273,14 @@ class AnMi_Product_Style_Injector {
                 }
             }
 
-            // 3c) Combined insert-holder slugs (e.g. sekt12t3-fm451, odmt0605-fm454, ...)
-            foreach ($this->milling_insert_prefixes as $insert_prefix) {
-                foreach ($this->milling_holder_prefixes as $holder_prefix) {
-                    if (strpos($slug, $insert_prefix) !== false && strpos($slug, $holder_prefix) !== false) {
-                        return true;
+            // 3c) Combined insert-holder slugs (e.g. sekt12t3-fm451)
+            // Dung ma insert 4 ky tu de giam false positive (sekt, odmt, snmx, apmt, ...)
+            foreach ($this->milling_insert_codes_4 as $insert_code) {
+                if (strpos($slug, $insert_code) !== false) {
+                    foreach ($this->milling_holder_prefixes as $holder_prefix) {
+                        if (strpos($slug, $holder_prefix) !== false) {
+                            return true;
+                        }
                     }
                 }
             }
@@ -295,34 +304,26 @@ class AnMi_Product_Style_Injector {
 
         $should_load = false;
 
+        // Logic 1: Luôn load cho Post Type 'product' (WooCommerce)
         if ($post->post_type === 'product') {
             $should_load = true;
         }
 
-        if (!$should_load && !empty($post->post_name)) {
-            foreach ($this->holder_slug_patterns as $pattern) {
-                if (strpos($post->post_name, $pattern) === 0) {
-                    $should_load = true;
-                    break;
-                }
+        // Logic 2: Tái sử dụng logic is_holder_product để nhất quán
+        if (!$should_load) {
+            // Lưu ý: Trong context editor, $post có thể chưa đầy đủ, nhưng post_name thường đã có nếu là bài cũ
+            // Hoặc check category
+            if ($this->is_holder_product($post)) {
+                $should_load = true;
             }
         }
-
+        
+        // Fallback: Check term thủ công nếu is_holder_product lỡ không bắt được trong môi trường admin
         if (!$should_load) {
-            $categories = get_the_terms($post->ID, 'category');
-            if ($categories) {
+             $categories = get_the_terms($post->ID, 'category');
+             if ($categories && !is_wp_error($categories)) {
                 foreach ($categories as $category) {
-                    if (strpos($category->slug, 'holder') !== false || strpos($category->slug, 'ga-kep') !== false) {
-                        $should_load = true;
-                        break;
-                    }
-                }
-            }
-
-            $product_cats = get_the_terms($post->ID, 'product_cat');
-            if ($product_cats) {
-                foreach ($product_cats as $category) {
-                    if (strpos($category->slug, 'holder') !== false || strpos($category->slug, 'ga-kep') !== false) {
+                    if ($category->slug === $this->parent_slug || strpos($category->slug, 'holder') !== false || strpos($category->slug, 'ga-kep') !== false) {
                         $should_load = true;
                         break;
                     }
@@ -336,11 +337,10 @@ class AnMi_Product_Style_Injector {
             $version = file_exists($css_path) ? filemtime($css_path) : $this->version;
 
             wp_enqueue_style('anmi-holder-products-editor', $css_url, array('wp-edit-blocks'), $version, 'all');
+            
+            // Sửa màu nền editor để dễ nhìn code trắng (nếu CSS dùng màu chữ trắng/sáng)
             $custom_css = ".editor-styles-wrapper { background-color: #FCF7EC; padding: 20px; }";
             wp_add_inline_style('anmi-holder-products-editor', $custom_css);
-            if (defined('WP_DEBUG') && WP_DEBUG) {
-                error_log("An Mi Product Style Injector: loaded editor CSS for post {$post->ID}");
-            }
         }
     }
 
