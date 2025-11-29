@@ -274,9 +274,16 @@ class AnMi_Product_Style_Injector
 
             // 3c) Combined insert-holder slugs (e.g. sekt12t3-fm451)
             foreach ($this->milling_insert_codes_4 as $insert_code) {
+                // Bước 1: slug phải chứa mã insert 4 ký tự (SEKT, ODMT, APMT, ...)
                 if (strpos($slug, $insert_code) !== false) {
                     foreach ($this->milling_holder_prefixes as $holder_prefix) {
-                        if (strpos($slug, $holder_prefix) !== false) {
+                        // Bước 2: mã holder nên xuất hiện sau dấu gạch ngang: -fm, -hm, -rm
+                        if (strpos($slug, '-' . $holder_prefix) !== false) {
+                            return true;
+                        }
+
+                        // Fallback: trường hợp slug bắt đầu trực tiếp bằng fm/hm/rm
+                        if (strpos($slug, $holder_prefix) === 0) {
                             return true;
                         }
                     }
