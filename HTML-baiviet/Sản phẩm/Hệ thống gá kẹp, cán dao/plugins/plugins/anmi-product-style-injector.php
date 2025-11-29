@@ -3,7 +3,7 @@
  * Plugin Name: An Mi Tools - Product Style Injector
  * Plugin URI: https://anmitools.com/plugins/product-style-injector
  * Description: Injects common CSS/JS for holder product pages and conditionally enqueues helper scripts (image lightbox, tabs, contact slider).
- * Version: 2.2.0
+ * Version: 2.3.0
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: An Mi Tools Vietnam
@@ -16,8 +16,12 @@
  * Update URI: false
  *
  * @package AnMiProductStyleInjector
- * @version 2.2.0
+ * @version 2.3.0
  * 
+ * CHANGELOG v2.3.0 (2025-11-29):
+ * - ADDED: Milling holder (FM/LM/SM/HM/RM/CM) + insert (SE/OD/SN/ON/AP/BX/TN/WN/LN/SD/RP/PD) slug detection
+ * - EFFECT: Holder CSS/JS now tự động áp dụng cho các trang dao phay ghép mảnh dùng slug dạng insert-holder (ví dụ: sekt12t3-fm451)
+ *
  * CHANGELOG v2.2.0 (2025-11-23):
  * - SIMPLIFIED: Always enqueue tab-navigation.js for all holder products
  * - REMOVED: Complex tab detection logic (strpos, detect_product_slugs)
@@ -36,7 +40,7 @@ if (!defined('ABSPATH')) {
 class AnMi_Product_Style_Injector {
 
     /** @var string Plugin semantic version (also used as fallback cache-bust) */
-    private $version = '2.2.0';
+    private $version = '2.3.0';
 
     /** @var string Absolute path to plugin css directory */
     private $css_dir;
