@@ -48,8 +48,11 @@ class AnMi_Product_Style_Injector {
     /** @var string URL to plugin css directory */
     private $css_url;
 
-    /** @var string Parent category slug used to detect holder products */
-    private $parent_slug = 'he-thong-ga-kep-can-dao';
+    /** @var string WooCommerce product_cat slug for holder system products */
+    private $holder_tools_cat = 'he-thong-ga-kep-can-dao';
+
+    /** @var string WooCommerce product_cat slug for milling insert/holder products */
+    private $milling_tools_cat = 'dung-cu-ghep-manh';
 
     /** @var string Common CSS filename used for holder products */
     private $common_css_file = 'anmi-holder-products.css';
@@ -128,6 +131,38 @@ class AnMi_Product_Style_Injector {
      * ------------------------------------------------------------------ */
 
     /**
+     * Check if current product belongs to either holder system or milling insert/holder categories
+     * (he-thong-ga-kep-can-dao, dung-cu-ghep-manh) or their child categories.
+     *
+     * @param int $product_id
+     * @return bool
+     */
+    private function is_supported_product_category($product_id) {
+        if (!is_singular('product')) {
+            return false;
+        }
+
+        $terms = get_the_terms($product_id, 'product_cat');
+        if (empty($terms) || is_wp_error($terms)) {
+            return false;
+        }
+
+        foreach ($terms as $term) {
+            // Exact match holder or milling categories
+            if ($term->slug === $this->holder_tools_cat || $term->slug === $this->milling_tools_cat) {
+                return true;
+            }
+
+            // Child categories: holder-tools-*, dung-cu-ghep-manh-*
+            if (strpos($term->slug, $this->holder_tools_cat . '-') === 0 || strpos($term->slug, $this->milling_tools_cat . '-') === 0) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
      * Conditionally enqueue common CSS and helper scripts for holder product pages
      */
     public function enqueue_product_styles() {
@@ -140,8 +175,16 @@ class AnMi_Product_Style_Injector {
             return;
         }
 
-        // Determine whether this post should be treated as a holder product
-        $is_holder_product = $this->is_holder_product($post);
+        // Determine whether this post should be treated as a holder/milling product
+        $is_holder_product = false;
+
+        // 1) WooCommerce products in supported categories (he-thong-ga-kep-can-dao, dung-cu-ghep-manh)
+        if ($post->post_type === 'product' && $this->is_supported_product_category($post->ID)) {
+            $is_holder_product = true;
+        } else {
+            // 2) Fallback: legacy holder detection for other (non-product) content if needed
+            $is_holder_product = $this->is_holder_product($post);
+        }
         if (!$is_holder_product) {
             return;
         }
@@ -200,7 +243,7 @@ class AnMi_Product_Style_Injector {
         $categories = get_the_category($post->ID);
         if ($categories) {
             foreach ($categories as $category) {
-                if ($category->slug === $this->parent_slug || strpos($category->slug, 'bt-') === 0 || strpos($category->slug, 'hsk-') === 0) {
+                if (strpos($category->slug, 'bt-') === 0 || strpos($category->slug, 'hsk-') === 0) {
                     return true;
                 }
             }
@@ -269,7 +312,7 @@ class AnMi_Product_Style_Injector {
             $categories = get_the_terms($post->ID, 'category');
             if ($categories) {
                 foreach ($categories as $category) {
-                    if ($category->slug === $this->parent_slug || strpos($category->slug, 'holder') !== false || strpos($category->slug, 'ga-kep') !== false) {
+                    if (strpos($category->slug, 'holder') !== false || strpos($category->slug, 'ga-kep') !== false) {
                         $should_load = true;
                         break;
                     }
@@ -279,7 +322,7 @@ class AnMi_Product_Style_Injector {
             $product_cats = get_the_terms($post->ID, 'product_cat');
             if ($product_cats) {
                 foreach ($product_cats as $category) {
-                    if ($category->slug === $this->parent_slug || strpos($category->slug, 'holder') !== false || strpos($category->slug, 'ga-kep') !== false) {
+                    if (strpos($category->slug, 'holder') !== false || strpos($category->slug, 'ga-kep') !== false) {
                         $should_load = true;
                         break;
                     }
@@ -395,7 +438,7 @@ class AnMi_Product_Style_Injector {
             <h2>Danh sách sản phẩm áp dụng:</h2>
             <div style="background: #f5f5f5; padding: 15px; border-radius: 5px;">
                 <p><strong>Holder product patterns:</strong> <?php echo implode(', ', $this->holder_slug_patterns); ?></p>
-                <p><strong>Parent category:</strong> <?php echo esc_html($this->parent_slug); ?></p>
+                <p><strong>Holder category (product_cat):</strong> <?php echo esc_html($this->holder_tools_cat); ?></p>
             </div>
 
             <div style="margin-top: 20px; padding: 15px; background: #e7f3ff; border-left: 4px solid #0066cc; border-radius: 4px;">
