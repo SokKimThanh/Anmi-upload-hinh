@@ -56,6 +56,29 @@ class AnMi_Product_Style_Injector {
         'ck-', 'lbk', 'cbs', 'sb-', 'gc-', 'er-', 'sk-', 'nt-'
     );
 
+    /** @var array Prefixes used to detect milling holder families (FM/HM/RM...) */
+    private $milling_holder_prefixes = array(
+        'fm', // Face milling: FM451, FM454, FM452, FM752, FM882, FM901, FM901F, FM902, FM903, FM904, FM905
+        'hm', // High feed: HM192
+        'rm'  // Profiling: RM01, RM02
+    );
+
+    /** @var array Prefixes used to detect milling insert families (SE/OD/SN/...) */
+    private $milling_insert_prefixes = array(
+        'se', // SEKT, SEET
+        'od', // ODMT
+        'sn', // SNMX, SNGX, SNMXE, SNMXZ
+        'on', // ONMU
+        'ap', // APMT
+        'bx', // BXKT
+        'tn', // TNGX
+        'wn', // WNMX
+        'ln', // LNGX
+        'sd', // SDKT
+        'rp', // RPMW, RPKT
+        'pd'  // PDMT
+    );
+
     /**
      * Constructor
      */
@@ -158,6 +181,17 @@ class AnMi_Product_Style_Injector {
             }
         }
 
+        // 1b) Detect milling insert/holder slug patterns in content (e.g. sekt12t3-fm451)
+        $content_slug = strtolower($post->post_content);
+        foreach ($this->milling_insert_prefixes as $insert_prefix) {
+            foreach ($this->milling_holder_prefixes as $holder_prefix) {
+                // pattern like "sekt" + something + "-fm451" is already in slug, but we just need presence of both prefixes
+                if (strpos($content_slug, $insert_prefix) !== false && strpos($content_slug, $holder_prefix) !== false) {
+                    return true;
+                }
+            }
+        }
+
         // 2) Category-based detection
         $categories = get_the_category($post->ID);
         if ($categories) {
@@ -168,11 +202,30 @@ class AnMi_Product_Style_Injector {
             }
         }
 
-        // 3) Post slug prefix check
+        // 3) Post slug prefix / combined milling code check
         if (!empty($post->post_name)) {
+            $slug = strtolower($post->post_name);
+
+            // 3a) Existing holder prefixes (bt-, hsk-, ...)
             foreach ($this->holder_slug_patterns as $pattern) {
-                if (strpos($post->post_name, $pattern) === 0) {
+                if (strpos($slug, $pattern) === 0) {
                     return true;
+                }
+            }
+
+            // 3b) Milling holder family prefixes (fm, hm, rm) at slug start
+            foreach ($this->milling_holder_prefixes as $holder_prefix) {
+                if (strpos($slug, $holder_prefix) === 0) {
+                    return true;
+                }
+            }
+
+            // 3c) Combined insert-holder slugs (e.g. sekt12t3-fm451, odmt0605-fm454, ...)
+            foreach ($this->milling_insert_prefixes as $insert_prefix) {
+                foreach ($this->milling_holder_prefixes as $holder_prefix) {
+                    if (strpos($slug, $insert_prefix) !== false && strpos($slug, $holder_prefix) !== false) {
+                        return true;
+                    }
                 }
             }
         }
