@@ -237,9 +237,21 @@ class AnMi_Product_Style_Injector
      */
     private function is_holder_product($post)
     {
-        // 1) Quick heuristic: search for specific CSS CLASSES in the content
+        $content = $post->post_content;
+
+        // 1) Search for specific CSS CLASSES in the content
+
+        // 1a. Check Holder classes (bt-, hsk-, ...)
         foreach ($this->holder_slug_patterns as $pattern) {
-            if (strpos($post->post_content, 'class="' . $pattern) !== false || strpos($post->post_content, "class='{$pattern}") !== false) {
+            if (strpos($content, 'class="' . $pattern) !== false || strpos($content, "class='{$pattern}") !== false) {
+                return true;
+            }
+        }
+
+        // 1b. Check Milling Insert classes (sekt, apmt, odmt...) - NEW
+        // Chỉ cần tìm thấy mã insert 4 ký tự trong class là cho load CSS luôn
+        foreach ($this->milling_insert_codes_4 as $pattern) {
+            if (strpos($content, 'class="' . $pattern) !== false || strpos($content, "class='{$pattern}") !== false) {
                 return true;
             }
         }
@@ -274,16 +286,9 @@ class AnMi_Product_Style_Injector
 
             // 3c) Combined insert-holder slugs (e.g. sekt12t3-fm451)
             foreach ($this->milling_insert_codes_4 as $insert_code) {
-                // Bước 1: slug phải chứa mã insert 4 ký tự (SEKT, ODMT, APMT, ...)
                 if (strpos($slug, $insert_code) !== false) {
                     foreach ($this->milling_holder_prefixes as $holder_prefix) {
-                        // Bước 2: mã holder nên xuất hiện sau dấu gạch ngang: -fm, -hm, -rm
-                        if (strpos($slug, '-' . $holder_prefix) !== false) {
-                            return true;
-                        }
-
-                        // Fallback: trường hợp slug bắt đầu trực tiếp bằng fm/hm/rm
-                        if (strpos($slug, $holder_prefix) === 0) {
+                        if (strpos($slug, $holder_prefix) !== false) {
                             return true;
                         }
                     }
