@@ -1,0 +1,2624 @@
+BEST - SELLING
+MILLING INSERT
+AN MI TOOLS AN MI TOOLS
+2025
+Tel
+Ha Noi
+Hai Phong
+Da Nang
+Vinh Phuc
+Bac Ninh
+Ho Chi Minh
+Tel
+: 85 Hoang Van Thai, Lien Chieu, Da Nang
+: 17 Ton Duc Thang, Vinh Yen, Vinh Phuc
+: 76 Nguyen Dang, Suoi Hoa, Bac Ninh
+: 75 Do Xuan Hop, W. Phuoc Long B, Thu Duc, HCM
+: +84 28 6262 3959
+South Factory: 75 Do Xuan Hop, W. Phuoc Long B, Thu Duc, HCM
+: Suite 409, CT4 Building, Song Da Urban Area, Me Tri Street,
+Nam Tu Liem District, Ha Noi
+: +84 24 3556 2635
+: P2825 Hoang Huy Grand Tower 2A, Hong Bang District, Hai Phong
+North Factory: L3, Pho Noi Textile Garment Industrial Park, My Hao District, Hung Yen±0.025
+±0.025
+±0.013
+±0.005
+±0.013
+±0.013
+±0.005
+±0.005
+±0.025
+±0.13-±0.38
+±0.08-±0.18
+±0.08-±0.18
+±0.025
+±0.025
+±0.013
+±0.013
+±0.025
+±0.025
+±0.08-±0.25
+±0.05-±0.13
+±0.05-±0.13
+±0.05-±0.13
+±0.05-±0.13
+±0.05-±0.13
+±0.1
+±0.13
+±0.13
+±0.025
+±0.025
+±0.025
+±0.025
+±0.025
+±0.025
+±0.025
+±0.013
+±0.025
+25.4
+25.4
+12.7
+12.7
+6.35
+6.35
+9.525
+9.525
+19.05
+19.05
+15.875
+15.875 ±0.1
+±0.1
+...
+±0.08
+±0.08
+±0.08
+±0.05
+±0.05
+±0.13
+±0.15
+±0.15
+...
+±0.1
+±0.1
+±0.08
+±0.08
+±0.18
+±0.08
+±0.05
+±0.05
+±0.13
+±0.13
+±0.15
+±0.15
+±0.1
+±0.1
+±0.05
+±0.05
+±0.13
+±0.13
+±0.15
+±0.15
+...
+±0.08
+±0.08
+±0.08
+±0.1
+±0.1
+...
+●Tolerance of Inscribed
+Circle
+±0.18
+±0.18
+...
+±0.08
+±0.11
+±0.11
+±0.05
+±0.05
+±0.15
+...
+...
+...
+...
+...
+...
+±0.16
+±0.16
+...
+±0.05
+±0.05
+...
+...
+...
+...
+...
+...
+...
+±0.08
+0.1
+±0.1
+±0.13
+±0.05
+5 6 8 10 12 16 20 25 32
+25.4
+3.97
+5.56
+12.7
+6.35
+31.75
+9.525
+19.05
+15.875
+06
+09
+16
+19
+25
+12
+25
+15
+07
+11
+20
+08
+31
+06
+10
+19
+19
+25
+25
+05
+15
+32
+12
+12
+09 09
+16
+19
+25
+15
+12
+06
+09
+11
+16
+27
+33
+22
+16
+11
+22 08
+06 16
+2.38
+2.58
+3.18
+5.56
+1.98
+0.79
+1.59
+4.76
+7.94
+0.99
+4.96
+12.7
+3.97
+5.95
+6.35
+6.75
+9.52
+9.72
+11.11
+Shape
+Clearance Angle Tolerance
+Chip Breaker and Hole Cutting Edge Length
+Cutting Egde Preparation(mm)
+Thickness
+Cutting Direction
+Chip Breaker
+Code
+35°
+85°
+55°
+55°
+82°
+75°
+75°
+86°
+80°
+Symbol
+m(mm) d=I.C. (mm) s (mm)
+Inscribed
+Circle
+Inscribed
+Circle
+Regular
+Triangle
+Regular
+Triangle
+Square
+Square
+80°
+Rhombus
+80°
+Rhombus
+55°
+Rhombu
+s
+55°
+Rhombu
+s
+35°
+Rhombus
+35°
+Rhombus
+(reference)M grade tolerance detail(according to shape, size.)
+Tolerance of insert nose height
+Round
+Round
+The Height Between Insert Bottom And Nose
+A D K O S V
+A C E G P
+B E L P T W
+B D F N O
+C H M R T Z
+B H C J W T Q U A F C H E G J K L M N U
+N R F A M G X
+A D E F P Z
+C
+A B C D E F G N P Z
+D
+Wiper Land and
+Clearance Angle
+R
+F E T S
+S T V W K
+K P W
+00
+T0
+01
+T1
+02
+T2
+03
+T3
+04
+T4
+05
+T5
+06
+T6
+07
+09
+T9
+11
+12
+L N
+OPR
+OPF
+R
+OPM
+80°
+3 7 1
+1°
+30
+20°
+0
+5 1
+5 2
+5°
+° °
+° °
+°
+°
+143
+αn
+144
+Symbol
+Y Y Y Y Y Y Y Y
+N S N D N S N D
+Center
+Hole Chip Breaker
+N N N Y Y Y
+N S D N S D
+Center
+Chip BreakerInsert Profile
+Hole
+75 其它
+°
+45°
+85°
+60°
+90°
+Kr°
+3°
+5°
+7°
+0°
+25 其它
+°
+20°
+30°
+15°
+11°
+Insert Shape
+0 1 2 3 4 5
+5°
+25°
+20°
+30°
+15°
+10°
+0 1 2 3 4 5 6 7
+0.1
+0.4
+0.3
+0.2
+0.25
+0.35
+0.15
+0.45
+Symbol
+Left
+Right
+Neutral
+Thickness(mm)
+Inscribed Circle
+diameter(mm)
+T P K N2204ED
+T P K N2204ED
+R R
+T P K N2204ED
+T P K N2204ED
+R R
+T P K N2204E
+D
+R
+T P K N2204ED R
+T P K N2204ED R
+T P K N2204ED
+T P K N2204E
+D
+T P K N2204E
+D
+R
+R R
+T32
+T32
+OPM
+OPM T32
+T32
+OPM
+OPM
+T3
+2
+OP
+M
+T32 OPM
+T32 OPM
+T32
+T3
+2 T
+3
+2
+OP
+M O
+P
+O M
+PM
+＞ ＞ ＞ 6＞ ≤ ≤ ≤ ≤
+5°
+65°
+65°
+65°
+65°
+65°
+65°
+65°
+Milling Insert Naming Rule Milling Insert Naming Rule
+Others
+A C D E
+B/a
+A B C D E
+/a
+Insert Profile Symbol
+1 2Lead Angle
+Type of Tools
+Differentiate Code
+Cutting Tool Diameter
+Adaptor Type
+Teeth Number
+Cutting Direction : Right / Left
+Type
+Face milling
+Quare-shoulder milling
+Indexable Helical Milling
+Tool
+Slot milling High feed Profiling tool Chamfer milling A interface B interface C interface
+GB5342-96 of φ50-φ80 shell Facmilling Cutter
+GB5342-96 of φ50-φ80 shell Facmilling Cutter
+D interface Cylindrical shank Lateral solid
+GB5342-96 of φ315Facmilling Cutter
+GB5342-96 ofφ100-φ160 shell Facmilling Cutter
+Morse taper shank
+FM
+45°
+LM
+75°
+SM HM RM
+90°
+CM A B C D P W MT
+45° 75° 90°
+Shell Structure
+Type of Adapter Type of Adapter
+Type of Adapter Type of Adapter
+Millng Tools Naming Rule Millng Tools Naming Rule
+FM
+FM
+FM
+FM
+45
+2 2 2 2
+A22 63
+A22 63
+A22 63
+A22 63
+5 5 5 5
+SN
+13
+SN
+13
+SN
+13
+SN
+13
+L L L L
+FM 2 A22 63 5 SN
+13
+L
+FM
+FM
+2 2
+A22 63
+A22 63
+5 5
+SN
+13
+SN
+13
+L L
+FM 45 2 A22 63 5 SN
+13
+L
+A C D E
+A C D E
+145 146
+45
+45
+45
+45
+45
+45
+3 4
+45Grade introduction Chipbreaker introduction
+= »
+C V D
+P V D
+C o a t i n g
+U n c o a t e d
+B r a n d
+s t a b l e c u t t i n g
+c o n d i t i o n
+n o r m a l c u t t i n g
+c o n d i t i o n
+b a d c u t t i n g
+c o n d i t i o n
+＃
+chipbreaker structure schematic application scenarios
+strength cutting edge design， good antiimpact resistance， highly optimized for
+general use.
+sharp cutting edge design， provide smooth
+cutting， suitable for steady cutting condition.
+OM
+OL
+P M K N S H
+O K 4 3 4
+O P 1 3 2 5
+O P 1 0 3 0
+O P 1 6 3 0
+O P 1 3 4 0
+O P 1 3 1 5
+O P 2 2 0 2
+O C 3 2 2 0
+= » » » »＃
+» » ＃
+» = » » »
+»
+A C D E
+A C D E
+1457 6148Indexable milling insert list Indexable milling insert list
+FM451
+FM454
+FM752
+FM452
+KAPR=7°5
+KAPR=4°5
+KAPR=4°5
+KAPR=4°5
+APMX=5.9
+APMX=4.3
+APMX=6.5
+APMX=10.0
+SEKT12T3*
+SEET12T3*
+ODMT0605*
+SNMX1306A*
+SNMX1306E*
+FM453
+FM901
+FM882
+FM901F
+KAPR=9°0
+KAPR=9°0
+KAPR=8°8
+KAPR=4°5
+APMX=5.5
+APMX=15.0
+APMX=11.0
+APMX=10.0
+16- 26
+16- 80
+50- 200
+50- 200
+BXKT11T3*
+APMT1135*
+APMT1604*
+ONMU0705*
+ONMU0504*
+ONMU0906*
+SNMX1306Z*
+Ø50-Ø200
+Ø50-Ø200
+Ø50-Ø250
+Ø50-Ø200
+A C D E
+A C D E
+Type Diameter Adaptable Inserts Insert Shape Type Diameter Adaptable Inserts Insert Shape
+149 150
+T o o l S h a p e A p p r o a c h a n g l e
+L a M A X
+T o o l S h a p e A p p r o a c h a n g l e
+L a M A X
+Face Milling
+Face Milling Square Shoulder Milling
+7 8FM902
+FM903
+FM904
+FM905
+APMX=8.0
+APMX=13.0
+APMX=12.4
+APMX=10.7
+KAPR=90 °
+KAPR=90 °
+KAPR=90 °
+KAPR=90 °
+Ø20-Ø80
+Ø50-Ø200
+Ø20-Ø200
+Ø40-Ø200
+WNMX0403*
+WNMX0806*
+TNGX1306*
+SDKT13T3*
+LNGX1306*
+APMX=1.9
+KAPR=19 °
+Ø16-Ø63
+Ø25-Ø125
+Ø50-Ø125
+RPMW1003*
+RDKW10T3*
+RDKW1204*
+PDMT1305*
+RPKT1204*
+RM02
+RM01
+HM192
+A C D E
+A C D E
+151 152
+Type Tool Shape Approach angle Diameter Adaptable Inserts Insert Shape Type Diameter Adaptable Inserts Insert Shape
+La MAX
+Tool Shape Approach angle
+La MAX
+Profiling tool High feed
+Square Shoulder Milling
+Indexable milling insert list Indexable milling insert list
+9 10KAPR=45 °
+Type
+Number
+of
+flutes
+stock
+DC DCX DCON
+Dimension
+LF LH APMX
+Interfa
+ce
+Adaptable
+Inserts
+Type
+Material
+Dimension
+TH-FM451-A22-50-3-SE12
+TH-FM451-A22-63-5-SE12
+TH-FM451-A22-50-4-SE12
+TH-FM451-A22-63-4-SE12
+TH-FM451-A27-80-4-SE12
+TH-FM451-A27-80-6-SE12
+TH-FM451-B32-100-5-SE12
+TH-FM451-B32-100-7-SE12
+TH-FM451-B40-125-6-SE12
+TH-FM451-B40-125-8-SE12
+TH-FM451-C60-200-12-SE12
+TH-FM451-C40-160-10-SE12
+●●●●●●●●●●○○
+3 4 4 5 4 6 5 7 6 8 10 12
+50
+50
+63
+63
+80
+80
+100
+100
+125
+125
+160
+200
+63.7
+63.7
+76.7
+76.7
+93.7
+93.7
+113.7
+113.7
+138.7
+138.7
+173.7
+213.7
+22
+22
+22
+22
+27
+27
+32
+32
+40
+40
+40
+60
+40
+40
+40
+40
+50
+50
+50
+50
+63
+63
+63
+63
+5.9
+5.9
+5.9
+5.9
+5.9
+5.9
+5.9
+5.9
+5.9
+5.9
+5.9
+5.9
+A A A A A A B B B B C C ●
+SE*12T3 * SA03512 T15P
+13.4
+13.4
+13.4
+13.4
+3.97
+3.97
+3.97
+3.97
+1.3
+1.3
+1.3
+1.3
+○○○
+○○○ ●
+●
+○
+＃
+＃＃
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Face milling FM451 series FM451 milling insert
+PＭＫＮＳＨ
+=
+»
+» = =
+» »»
+» »»
+» »
+»
+»
+ＣＶＤ
+ＰＶＤ
+IC L W1 S D1 RE BS
+O Ｃ 3 ２ ２ ０
+O Ｐ 2 ２ ０ ２
+O Ｐ 1 ３ １ ５
+O Ｐ 1 ３ ２ ５
+O Ｐ 1 ０ ３ ０
+O Ｐ 1 ６ ３ ０
+O Ｐ 1 ３ ４ ０
+O Ｋ ４ ３ ４
+Screw Wrench
+IC-SEKT12T3-OM
+IC-SEET12T3-QPM
+IC-SEET12T3-QPR
+IC-SEET12T3-QPF
+A C D E
+A C D E
+153 154
+Uncoated
+s t a b l e c u t t i n g
+c o n d i t i o n
+n o r m a l c u t t i n g
+c o n d i t i o n
+b a d c u t t i n g
+c o n d i t i o n
+11 12KAPR=45 °
+DC
+50
+DCX
+60.4
+DCON
+22
+LF
+40
+LH APMX
+4.3
+ＣＶＤ
+ＰＶＤ
+TH-FM454-B32-100-7-OD06
+TH-FM454-B40-125-8-OD06
+TH-FM454-A22-63-5-OD06-C
+TH-FM454-A22-50-4-OD06-C
+TH-FM454-A27-80-6-OD06-C
+TH-FM454-C60-200-12-OD06
+TH-FM454-C40-160-10-OD06
+IC-ODMT0605ADR-OM
+●●●●●○○
+4 5 6 7 8 10 12
+63
+80
+100
+125
+160
+200
+73.4
+90.4
+110.4
+135.4
+170.4
+210.4
+22
+27
+32
+40
+40
+60
+40
+50
+50
+63
+63
+63
+4.3
+4.3
+4.3
+4.3
+4.3
+4.3
+A A A B B C C
+●
+OD*0605ADR* SA0512 T20P
+16.2 5.9 1.2 ○
+●
+●
+＃
+＃＃
+PＭＫＮＳＨ
+=
+»
+» = =
+» »»
+» »»
+» »
+»
+»
+IC L W1 S D1 RE BS
+A C D E
+A C D E
+155 156
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type
+Number
+of
+flutes
+stock
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Type
+Material
+Dimension
+Screw Wrench
+Uncoated
+Face milling FM454 series FM454 milling insert
+s t a b l e c u t t i n g
+c o n d i t i o n
+n o r m a l c u t t i n g
+c o n d i t i o n
+b a d c u t t i n g
+c o n d i t i o n
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+13 14KAPR=45
+°
+DC
+50
+DCX
+64.6
+DCON
+22
+LF
+40
+LH APMX
+6.5
+ＣＶＤ
+ＰＶＤ
+TH-FM452-A22-50-5-SN13
+TH-FM452-A22-63-4-SN13
+TH-FM452-A22-63-6-SN13
+TH-FM452-A27-80-5-SN13
+TH-FM452-A27-80-7-SN13
+TH-FM452-B32-100-6-SN13
+TH-FM452-B32-100-8-SN13
+TH-FM452-B40-125-8-SN13
+TH-FM452-B40-125-10-SN13
+TH-FM452-D60-315-24-SN13
+TH-FM452-C60-250-20-SN13
+TH-FM452-C40-160-12-SN13
+TH-FM452-C60-200-16-SN13
+IC-SNGX1306ANN-LM
+IC-SNMX1306ANN-OM
+IC-SNMX1306ANN-OL
+●●●●●●●●●●●○○
+5 4 6 5 7 6 8 8 10 12 16 20 24
+63
+63
+80
+80
+100
+100
+125
+125
+160
+200
+250
+315
+77.6
+77.6
+94.6
+94.6
+114.6
+114.6
+139.6
+139.6
+174.6
+214.6
+264.6
+329.6
+22
+22
+27
+27
+32
+32
+40
+40
+40
+60
+60
+60
+40
+40
+50
+50
+50
+50
+63
+63
+63
+63
+63
+70
+6.5
+6.5
+6.5
+6.5
+6.5
+6.5
+6.5
+6.5
+6.5
+6.5
+6.5
+6.5
+A A A A A B B B B C C C D
+●
+13
+13
+13
+6.8
+6.8
+6.8
+1.6
+1.6
+1.6
+●○
+●
+●●○
+＃
+○
+SN*1306ANN* SA0411 T15P
+PＭＫＮＳＨ
+=
+» =
+»=
+» »»
+» »»
+» »
+»
+»
+＃＃
+IC L W1 S D1 RE BS
+A C D E
+A C D E
+157 158
+Stock available ○Make-to-order Stock available ○ Make-to-order
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Type
+Material
+Dimension
+Screw Wrench
+Uncoated
+Face milling FM452 series FM452 milling insert
+stable cutting condition normal cutting condition bad cutting condition
+O Ｃ 3 ２ ２
+０ O
+Ｐ 2 ２ ０
+２ O
+Ｐ 1 ３ １
+５ O
+Ｐ 1 ３ ２
+５ O
+Ｐ 1 ０ ３
+０ O
+Ｐ 1 ６ ３
+０ O
+Ｐ 1 ３ ４
+０ O
+Ｋ ４ ３
+４
+15 16KAPR=75 °
+DC DCX DCON LF
+40
+LH APMX
+ＣＶＤ
+ＰＶＤ
+TH-FM752-A22-50-5-SN13
+TH-FM752-A22-63-6-SN13
+TH-FM752-A27-80-7-SN13
+TH-FM752-B32-100-8-SN13
+TH-FM752-B40-125-10-SN13
+TH-FM752-C40-160-12-SN13
+TH-FM752-C60-200-16-SN13
+ICSNMX1306ENN-OM
+●●●●●○○
+5 6 7 8 10 12 16
+50
+63
+80
+100
+125
+160
+200
+57.2
+87.2
+87.2
+114.6
+139.6
+174.6
+214.6
+22
+22
+27
+32
+40
+40
+60
+40
+50
+50
+63
+63
+63
+10
+10
+10
+10
+10
+10
+10
+A A A B B C C
+●
+SN*1306ENN* SA0411 T15P
+13 7 1 ○
+●
+●
+＃
+＃＃
+PＭＫＮＳＨ
+=
+» =
+» =
+» »»
+» »»
+» »
+»
+»
+IC L W1 S D1 RE BS
+A C D E
+A C D E
+159 160
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Type
+Material
+Dimension
+Screw Wrench
+Uncoated
+Face milling FM752 series FM752 milling insert
+s t a b l e c u t t i n g
+c o n d i t i o n
+n o r m a l c u t t i n g
+c o n d i t i o n
+b a d c u t t i n g
+c o n d i t i o n
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+17 18KAPR=88
+°
+DC
+50
+DCX
+50.6
+DCON
+22
+LF
+40
+LH APMX
+11
+ＣＶＤ
+ＰＶＤ
+TH-FM882-A22-50-5-SN13
+TH-FM882-A22-63-6-SN13
+TH-FM882-A27-80-7-SN13
+TH-FM882-B32-100-8-SN13
+TH-FM882-B40-125-10-SN13
+TH-FM882-C40-160-12-SN13
+TH-FM882-C60-200-16-SN13
+IC-SNMX1306ZNN-OM
+IC-SNMX1306ZNN-OL
+●●●●●○○
+5 6 7 8 10 12 16
+63
+80
+100
+125
+160
+200
+63.6
+80.6
+100.6
+125.6
+160.6
+200.6
+22
+27
+32
+40
+40
+60
+40
+50
+50
+63
+63
+63
+11
+11
+11
+11
+11
+11
+A A A B B C C ●
+SN*1306ZNN* SA0411 T15P
+13
+13
+7 7
+0.8
+0.8
+1 1
+●
+●
+●●
+＃
+＃＃
+PＭＫＮＳＨ
+=
+» =
+» =
+» »»
+» »»
+» »
+»
+»
+IC L W1 S D1 RE BS
+A C D E
+A C D E
+161 162
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type
+Number
+stock of flutes
+Dimension
+Interface
+Adaptable
+Inserts
+Type
+Material
+Dimension
+Screw Wrench
+Uncoated
+Face milling FM882 series FM882 milling insert
+s t a b l e c u t t i n g
+c o n d i t i o n
+n o r m a l c u t t i n g
+c o n d i t i o n
+b a d c u t t i n g
+c o n d i t i o n
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+19 20KAPR=45
+°
+DC
+53
+DCX
+64.6
+DCON
+22
+LF LH APMX
+3.2
+ＣＶＤ
+ＰＶＤ
+TH-FM453-A22-63-5-ON09
+TH-FM453-A22-50-5-ON05
+TH-FM453-A22-63-6-ON05
+TH-FM453-A22-63-6-ON07
+TH-FM453-A27-80-7-ON05
+TH-FM453-A27-80-7-ON07
+TH-FM453-A27-80-6-ON09
+TH-FM453-B32-100-7-ON09
+TH-FM453-B40-125-8-ON09
+TH-FM453-B32-100-8-ON05
+TH-FM453-B32-100-8-ON07
+TH-FM453-B40-125-10-ON05
+TH-FM453-B40-125-10-ON07
+TH-FM453-C60-200-12-ON09
+TH-FM453-C40-160-12-ON05
+TH-FM453-C60-200-16-ON05
+TH-FM453-C40-160-10-ON09
+TH-FM453-C40-160-12-ON0 7
+TH-FM453-C60-200-16-ON0 7 IC-ONMU070508-OM
+IC-ONGU0504ANR-W
+IC-ONMU0504ANN-OM
+IC-ONMU0906ANN-OM
+IC-ONMU0504ANN-OL
+IC-ONMU0906ANN-OL
+●●●●●○○ ●●●●○○ ●●●●○○
+5 6 7 8 10 12 16 6 7 8 10 12 16 5 6 7 8 10 12
+66
+83
+103
+128
+163
+203
+63
+80
+100
+125
+160
+200
+63
+80
+100
+125
+160
+200
+77.6
+94.6
+114.6
+139.6
+174.6
+214.6
+74.4
+91.4
+111.4
+136.4
+171.4
+211.4
+76.2
+93.2
+113.2
+138.2
+173.2
+213.2
+22
+27
+32
+40
+40
+60
+22
+27
+32
+40
+40
+60
+22
+27
+32
+40
+40
+60
+50
+50
+50
+63
+63
+63
+50
+50
+50
+63
+63
+63
+48.4
+48.4
+48.4
+48.4
+61.4
+61.4
+61.4
+3.2
+3.2
+3.2
+3.2
+3.2
+3.2
+4.3
+4.3
+4.3
+4.3
+4.3
+4.3
+5.5
+5.5
+5.5
+5.5
+5.5
+5.5
+A A A B B C C A A B B C C A A B B C C
+●
+ON*0504*
+ON*0705*
+ON*0906*
+SA0411
+SA0512
+SA0512
+T15P
+T20P
+T20P
+13
+13
+13
+17.5
+20.5
+20.5
+5.9
+5.9
+5.9
+6.3
+7.2
+7.2
+0.8
+0.4
+4.2
+1.2
+1.2
+● ○ ○
+●
+●●○ ● ●●
+＃
+＃＃ ○
+PＭＫＮＳＨ
+=
+» =
+»
+= »
+»»
+» »»
+» »
+»
+»
+IC L W1 S D1 RE BS
+A C D E
+A C D E
+163 164
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type Number
+stock of flutes
+Dimension
+Interface Adaptable
+Inserts
+Type
+Material
+Dimension
+Screw Wrench
+Uncoated
+Face milling FM453 series FM453 milling insert
+stable cutting condition normal cutting condition bad cutting condition
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+21 22KAPR=90 °
+KAPR=90 °
+DC DCX DCON LF LH APMX
+DC
+40
+DCX DCON
+16
+LF
+50
+LH APMX
+10
+TH-FM901-P25-25-2-AP16-120
+TH-FM901-P25-25-3-AP11-120
+TH-FM901-P25-25-2-AP16-170
+TH-FM901-P32-32-3-AP16-200
+TH-FM901-P25-26-2-AP16-200
+TH-FM901-P25-25-3-AP11-170
+TH-FM901-P20-20-2-AP11-120
+TH-FM901-P20-21-2-AP11-200
+TH-FM901-P32-32-3-AP16-160
+TH-FM901-P20-20-2-AP11-170
+TH-FM901-P20-21-2-AP11-150
+TH-FM901-P25-26-2-AP16-160
+TH-FM901-P16-17-2-AP11-200
+TH-FM901-P32-40-4-AP16-200
+TH-FM901-P16-17-2-AP11-150
+TH-FM901-P16-16-2-AP11-120
+TH-FM901-P16-16-2-AP11-170
+TH-FM901-P32-40-4-AP16-160
+●○●○●○●○●○ ●○●○●○●○
+●
+AP*1135*
+AP*1604* SA0411
+SA025065 T08P
+T15P
+○○○ ●●○
+5 6 7 4 5 6
+50
+63
+50
+63
+80
+22
+22
+22
+22
+27
+50
+50
+50
+50
+50
+10
+10
+15
+15
+15
+A A A A A A
+●
+AP*1135*
+AP*1604* SA0411
+SA025065 T08P
+T15P
+2 2 2 2 2 2 2 2 3 3 2 2 2 2 3 3 4 4
+25
+25
+26
+26
+32
+32
+40
+40
+16
+16
+17
+17
+20
+20
+21
+21
+25
+25
+16
+16
+16
+16
+20
+20
+20
+20
+25
+25
+25
+25
+25
+25
+32
+32
+32
+32
+120
+170
+150
+200
+120
+170
+150
+200
+120
+170
+120
+170
+160
+200
+160
+200
+160
+200
+35
+40
+40
+50
+35
+40
+40
+50
+35
+40
+35
+40
+40
+50
+40
+50
+40
+50
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+15
+15
+15
+15
+15
+15
+15
+15
+P P P P P P P P P P P P P P P P P P
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Screw Wrench
+IC-FM901-A22-63-7-AP11
+IC-FM901-A22-63-5-AP16
+IC-FM901-A22-50-6-AP11
+IC-FM901-A22-50-4-AP16
+IC-FM901-A27-80-6-AP16
+IC-FM901-A16-40-5-AP11
+Screw Wrench
+A C D E
+A C D E
+165 166
+Type Number
+of flutes
+stock Dimension Interfa
+ce
+Adaptable
+Inserts
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Square shoulder milling insert FM901 series Square shoulder milling insert FM901 series
+23 24P
+=
+»
+» = =
+» »»
+» »»
+» »
+»
+»
+11.4
+17.4
+6.22
+9.27
+3.5
+4.8
+0.8
+0.8
+1
+1.5
+●
+○○
+＃ ●●
+＃＃
+○●○●○●
+2 2 2 2 3 3
+16
+17
+20
+21
+25
+26
+16
+16
+20
+20
+25
+25
+120
+150
+120
+170
+120
+170
+35
+40
+35
+40
+35
+40
+10
+10
+10
+10
+10
+10
+P P P P P P
+●
+BX*11T3* SA025065T08P
+ＭＫＮＳＨ
+ＣＶＤ
+ＰＶＤ
+DC DCX DCON LF LH APMX
+IC L W1 S D1 RE BS
+IC-APMT1135PDER-SDX
+IC-APMT1604PDER-SDX
+KAPR=90 °
+TH-FM901F-P25-25-3-BX11-120
+TH-FM901F-P20-20-2-BX11-120
+TH-FM901F-P16-17-2-BX11-150
+TH-FM901F-P20-21-2-BX11-200
+TH-FM901F-P25-26-3-BX11-200
+TH-FM901F-P16-16-2-BX11-1 00
+A C D E
+B/
+a
+A B C D E
+/
+a
+167 168
+Stock available ○Make-to-order
+Type Stock available ○ Make-to-order
+Material
+Dimension
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts Screw Wrench
+Uncoated
+FM901 milling insert Square shoulder milling insert FM901 series
+stable cutting condition normal cutting condition bad cutting condition
+O Ｃ 3 ２ ２ ０
+O Ｐ 2 ２ ０ ２
+O Ｐ 1 ３ １ ５
+O Ｐ 1 ３ ２ ５
+O Ｐ 1 ０ ３ ０
+O Ｐ 1 ６ ３ ０
+O Ｐ 1 ３ ４ ０
+O Ｋ ４ ３ ４
+25 26KAPR=90 °
+DC
+17
+DCX MD
+M8
+L 2
+5
+W 12
+APMX
+10
+ＣＶＤ
+ＰＶＤ
+TH-FM901F-M8-17-2-BX11
+TH-FM901F-M12-26-3-BX11
+TH-FM901F-M10-21-2-BX11
+IC-BXKT11T304PER-OM
+IC-IC-BXKT11T308PER-OM
+●●●
+2 2 3
+21
+26
+M10
+M12
+29
+37
+14
+17
+10
+10
+●
+BX*11T3* SA025065 T08P
+12.2
+12.2
+6.8
+6.8
+3.7
+3.7
+0.4
+0.8
+1.8
+1.4
+○○
+●
+●●
+＃
+＃＃
+PＭＫＮＳＨ
+=
+» =
+» =
+» »»
+» »»
+» »
+»
+»
+IC L W1 S D1 RE BS
+A C D E
+B/
+a
+A B C D E
+/
+a
+169 170
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Type
+Material
+Dimension
+Screw Wrench
+Uncoated
+FM901F indexable milling head FM901F milling insert
+s t a b l e c u t t i n g
+c o n d i t i o n
+n o r m a l c u t t i n g
+c o n d i t i o n
+b a d c u t t i n g
+c o n d i t i o n
+O Ｃ 3 ２ ２
+０ O
+Ｐ 2 ２ ０
+２ O
+Ｐ 1 ３ １
+５ O
+Ｐ 1 ３ ２
+５ O
+Ｐ 1 ０ ３
+０ O
+Ｐ 1 ６ ３
+０ O
+Ｐ 1 ３ ４
+０ O
+Ｋ ４ ３
+４
+27 28KAPR=90 °
+DC
+50
+DCX DCON
+22
+LF
+40
+LH APMX
+13
+ＣＶＤ
+ＰＶＤ
+TH-FM902-A22-63-5-TN13
+TH-FM902-A22-50-4-TN13
+TH-FM902-A27-80-7-TN13
+TH-FM902-B32-100-8-TN13
+TH-FM902-B40-125-10-TN13
+TH-FM902-C40-160-12-TN13
+TH-FM902-C60-200-16-TN13
+IC-TNGX1306PNFR-1
+●●●●●○○
+4 5 7 8 10 12 16
+63
+80
+100
+125
+160
+200
+22
+27
+32
+40
+40
+60
+40
+50
+50
+63
+63
+63
+13
+13
+13
+13
+13
+13
+A A A B B C C ●
+TN*1306* SA0411 T15P
+11.46 7.6 1.3 ○
+○ ●
+●
+＃
+＃＃
+PＭＫＮＳＨ
+=
+» =
+»
+= »
+»»
+» »»
+» »
+»
+»
+IC L W1 S D1 RE BS
+A C D E
+B/
+a
+A B C D E
+/
+a
+171 172
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Type
+Material
+Dimension
+Screw Wrench
+Uncoated
+Square shoulder milling insert FM902 series FM902 milling insert
+stable cutting condition normal cutting condition bad cutting condition
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+29 30°
+KAPR=90
+KAPR=90 °
+DC
+20
+DCX DCON LF
+120
+LH
+35
+APMX
+3.8
+DC
+40
+DCX DCON
+22
+LF
+40
+LH APMX
+TH-FM903-P20-20-2-WN04-120 3.8
+TH-FM903-P25-25-4-WN04-120
+TH-FM903-P20-20-3-WN04-120
+TH-FM903-P20-21-3-WN04-120
+TH-FM903-P25-26-4-WN04-120
+TH-FM903-P32-32-4-WN04-150
+TH-FM903-P32-33-4-WN04-150
+TH-FM903-W32-32-2-WN08-120
+TH-FM903-W32-40-4-WN08-120
+TH-FM903-A22-50-5-WN08
+TH-FM903-A22-63-6-WN08
+TH-FM903-A22-50-6-WN04
+TH-FM903-A27-80-7-WN08
+TH-FM903-A16-40-5-WN04
+TH-FM903-B32-100-8-WN08
+TH-FM903-B40-125-10-WN08
+TH-FM903-C40-160-12-WN08
+TH-FM903-C60-200-16-WN08
+○●○●○●○ ○○
+2 3 3 4 4 4 4 2 4
+20
+21
+25
+26
+32
+33
+32
+40
+120
+120
+120
+120
+150
+150
+120
+120
+35
+35
+35
+35
+35
+35
+35
+35
+8 8
+3.8
+3.8
+3.8
+3.8
+3.8
+3.8
+P P P P P P P W W ●
+WN*X0403*
+WN*X0806* SA0411
+SA025065 T08P
+T15P
+●● ●●●●●○○
+5 6 5 6 7 8 10 12 16
+50
+50
+63
+80
+100
+125
+160
+200
+22
+22
+22
+27
+32
+40
+40
+60
+40
+40
+40
+50
+50
+63
+63
+63
+8 8 8 8 8 8 8
+3.8
+A A A A A B B C C ●
+WN*X0403*
+WN*X0806* SA0411
+SA025065 T08P
+T15P
+A C D E
+B/
+a
+A B C D E
+/
+a
+173 174
+Stock available ○Make-to-order Stock available ○ Make-to-order
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Type Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Screw Wrench Inserts Screw Wrench
+Square shoulder milling insert FM903 series Square shoulder milling insert FM903 series
+31 32PＭＫＮＳＨ
+=
+» =
+»
+= »
+»»
+» »»
+» »
+»
+»
+6.5
+6.5
+12.85
+12.85
+12.85
+12.85
+12.85
+4 4
+7.8
+7.8
+6.45
+6.57
+6.45
+0.4
+0.8
+0.4
+0.8
+0.8
+0.8
+0.8 2
+0.5
+2.5
+1.1
+0.8
+1.8
+0.85 ○
+○ ○● ○
+●
+○● ○●●○○
+＃
+＃＃
+●○●○●○
+5 6 6 8 8 10
+50
+50
+63
+63
+80
+80
+22
+22
+22
+22
+27
+27
+40
+40
+40
+40
+50
+50
+8 8 8 8 8 8
+●
+A A A A A A
+LNGX1306* SA0411 T15P
+ＣＶＤ
+ＰＶＤ
+DC DCX DCON LF LH APMX
+IC L W1 S D1 RE BS
+IC-WNGX040304R-LM
+IC-WNGX080604R-LM
+IC-WNGX080608R-LM
+IC-WNGX080608R-LF
+IC-WNMX040308R-OM
+IC-WNMX080608R-OM
+IC-WNMX080608R-OL
+TH-FM904-A22-50-5-LN13
+TH-FM904-A22-50-6-LN13
+TH-FM904-A22-63-6-LN13
+TH-FM904-A22-63-8-LN13
+TH-FM904-A27-80-7-LN13
+TH-FM904-A27-80-10-LN13
+KAPR=90 °
+A C D E
+B/
+a
+A B C D E
+/
+a
+175 176
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type
+Material
+Dimension
+Type Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Screw Wrench
+Uncoated
+FM903 milling insert Square shoulder milling insert FM904 series
+stable cutting condition normal cutting condition bad cutting condition
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+33 34PＭＫＮＳＨ
+=
+»
+» = =
+» »»
+» »»
+» »
+»
+»
+13.2 12.4 6.7 0.8 2.4 ○
+●
+●
+＃
+＃＃ ○
+○●●●●●○○
+4 5 6 7 8 10 12 16
+50
+50
+63
+80
+100
+125
+160
+200
+22
+22
+22
+27
+32
+40
+40
+60
+40
+40
+40
+50
+50
+63
+63
+63
+10.7
+10.7
+10.7
+10.7
+10.7
+10.7
+10.7
+10.7
+A A A A B B C C ●
+SDKT13T3* SA0411 T15P
+ＣＶＤ
+ＰＶＤ
+DC DCX DCON LF LH APMX
+IC L LE S D1 RE BS
+IC-LNGX130608PR-LM
+TH-FM905-A22-50-5-SD13
+TH-FM905-A22-50-4-SD13
+TH-FM905-A22-63-6-SD13
+TH-FM905-A27-80-7-SD13
+TH-FM905-B32-100-8-SD13
+TH-FM905-B40-125-10-SD13
+TH-FM905-C40-160-12-SD13
+TH-FM905-C60-200-16-SD13
+KAPR=90 °
+A C D E
+B/
+a
+A B C D E
+/
+a
+177 178
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type
+Material
+Dimension
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Screw Wrench
+Uncoated
+FM904 milling insert Square shoulder milling insert FM905 series
+stable cutting condition normal cutting condition bad cutting condition
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+35 36PＭＫＮＳＨ
+=
+» =
+»
+= »
+»»
+» »»
+» »
+»
+»
+13.8
+13.8
+4.1
+4.1 1.0
+1.2 ○
+○
+●
+●●
+＃
+＃＃
+●●○●○ ○○●○○●○
+2 3 3 3 4 2 3 2 3 2 3 4
+25
+30
+35
+40
+40
+32
+32
+32
+32
+35
+40
+40
+20
+25
+32
+32
+32
+25
+25
+32
+32
+32
+32
+32
+160
+160
+160
+160
+160
+160
+160
+160
+160
+160
+200
+200
+45
+45
+45
+45
+45
+50
+50
+45
+45
+50
+50
+50
+5 5 5 5 5 6 6 6 6 6 6 6
+P P P P P P P P P P P P ●
+RP*1003*
+RP*1204*
+CR-R5
+CR-R6
+SA04 09
+SA03510
+SA04 09
+T15P
+T15P
+ＣＶＤ
+ＰＶＤ
+DC DCX DCON LF LH APMX
+IC L W1 S D1 RE BS
+IC-SDKT13T320PER-OM
+IC-SDKT13T308PER-OM
+TH-RM01-P20-25-2-RP10-160-CR
+TH-RM01-P25-30-2-RP10-160-CR
+TH-RM01-P32-40-3-RP10-160-CR
+TH-RM01-P32-35-3-RP10-160-CR
+TH-RM01-P32-40-4-RP10-160-CR
+TH-RM01-P25-32-2-RP12-160-CR
+TH-RM01-P25-32-3-RP12-160-CR
+TH-RM01-P32-32-2-RP12-160-CR
+TH-RM01-P32-32-3-RP12-160-CR
+TH-RM01-P32-35-2-RP12-160-CR
+TH-RM01-P32-40-3-RP12-200-CR
+TH-RM01-P32-40-4-RP12-200-CR
+A C D E
+B/
+a
+A B C D E
+/
+a
+179 180
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type
+Material
+Dimension
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Screw：
+Screw：
+Pressing
+Plate：
+Pressing
+Plate：
+Accessorie
+s
+Wrench
+Uncoated
+FM905 milling insert Profiling milling insert RM01 series
+stable cutting condition normal cutting condition bad cutting condition
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+37 38DC DCX
+50
+DCON
+22
+LF
+50
+LH APMX
+5
+ＣＶＤ
+ＰＶＤ
+TH-RM01-A22-50-4-RP10-CR
+TH-RM01-A22-63-5-RP10-CR
+TH-RM01-A27-80-6-RP10-CR
+TH-RM01-A22-50-4-RP12 -CR
+TH-RM01-A22-63-5-RP12-CR
+TH-RM01-A27-80-6-RP12-CR
+TH-RM01-B32-100-7-RP10-CR
+TH-RM01-B32-100-7-RP12-CR
+IC-RPKT1204MO-SD
+IC-RPMW1003MO-SD
+●○○○ ●●○○
+4 5 6 7 4 5 6 7
+63
+80
+100
+50
+63
+80
+100
+22
+27
+32
+22
+22
+27
+32
+50
+50
+50
+50
+50
+50
+50
+5 5 5 6 6 6 6
+A A A B A A A B ●
+RP*1003*
+RP*1204*
+CR-R5
+Screw：
+SA03510
+SA04 09
+CR-R6
+SA04 09
+T15P
+T15P
+10
+12
+3.18
+4.76
+11
+11
+●
+○○
+＃
+●●
+＃＃
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Screw：
+Pressing
+Plate：
+Pressing
+Plate：
+Accessories Wrench
+Type
+Material
+Dimension
+PＭＫＮＳＨ
+=
+»
+» = =
+» »»
+» »»
+» »
+»
+»
+IC L W1 S D1 α BS
+A C D E
+B/
+a
+A B C D E
+/
+a
+181 182
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Uncoated
+Profiling milling insert RM01 series RM01 milling insert
+stable cutting condition normal cutting condition bad cutting condition
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+39 40DC DCX
+50
+DCON
+22
+LF
+40
+LH APMX
+1.9
+ＣＶＤ
+ＰＶＤ
+TH-HM192-A22-63-5-PD13
+TH-HM192-A22-50-4-PD13
+TH-HM192-A27-80-6-PD13
+TH-HM192-B32-100-7-PD13
+TH-HM192-B40-125-8-PD13
+TH-HM192-C60-200-12-PD13
+TH-HM192-C40-160-10-PD13
+IC-PDMT1305ZDSR-SAM
+●●●●●○○
+4 5 6 7 8 10 12
+63
+80
+100
+125
+160
+200
+22
+27
+32
+40
+40
+60
+40
+50
+50
+63
+63
+63
+1.9
+1.9
+1.9
+1.9
+1.9
+1.9
+A A A B B C C ●
+PD*1305* SA0411 T15P
+13 5.1 1.7
+●
+●
+＃
+＃＃
+PＭＫＮＳＨ
+=
+»
+» = =
+» »»
+» »»
+» »
+»
+»
+IC L W1 S D1 RE BS
+A C D E
+B/
+a
+A B C D E
+/
+a
+183 184
+Stock available ○Make-to-order
+Stock available ○ Make-to-order
+Type
+Number
+stock of flutes
+Dimension
+Interfa
+ce
+Adaptable
+Inserts
+Type
+Material
+Dimension
+Screw Wrench
+Uncoated
+High feed milling insert HM192 series HM192 milling insert
+stable cutting condition normal cutting condition bad cutting condition
+OＣ 3２ ２ ０
+OＰ 2２ ０ ２
+OＰ 1３ １ ５
+OＰ 1３ ２ ５
+OＰ 1０ ３ ０
+OＰ 1６ ３ ０
+OＰ 1３ ４ ０
+OＫ ４ ３ ４
+41 42
