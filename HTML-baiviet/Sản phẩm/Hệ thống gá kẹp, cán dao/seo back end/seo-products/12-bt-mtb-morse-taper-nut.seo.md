@@ -1,18 +1,18 @@
 ---
-title: "BT-MTB Morse Taper Tool Holder (Drawbar Nut Type)"
+title: "BT-MTB Morse Taper Tool Holder MT1-MT5 Drawbar Type Run-out 0.005mm"
 slug: "bt-mtb-morse-taper-nut"
-primary_keyword: "bt-mtb morse taper"
+primary_keyword: "BT-MTB Morse Taper Tool Holder"
 tags: "BT-MTB, morse taper, tool holder, drawbar type, bầu kẹp dao phay côn, đuôi ren"
 category: "BT SIDE LOCK"
 catalog_page: "18"
-seo_title: "BT-MTB Morse Taper Holder - MT1–MT5 (5 Sizes) - Bầu kẹp đuôi ren có ốc siết"
-seo_description: "BT-MTB Morse Taper Holder của An Mi Tools. Loại kẹp bằng ốc siết (Drawbar), chuyên dùng cho dao phay ngón chuôi côn MT1-MT5. An toàn, độ đảo thấp."
+seo_title: "BT-MTB Morse Taper Holder MT1-MT5 Drawbar Type | An Mi Tools"
+seo_description: "Mua BT-MTB Morse Taper Tool Holder chính hãng. Drawbar nut type, MT1-MT5, run-out ≤0.005mm, phù hợp dao phay ngón chuôi côn và doa tinh. An toàn cao."
 social_image_facebook: ""
 social_image_twitter: ""
 seo_score_target: ">=70"
 author: "An Mi Tools Technical Team"
 date_published: "2025-10-20"
-date_modified: "2025-11-27"
+date_modified: "2025-12-09"
 schema_type: "Product"
 ---
 
