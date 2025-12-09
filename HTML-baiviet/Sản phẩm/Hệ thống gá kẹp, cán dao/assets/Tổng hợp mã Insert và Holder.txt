@@ -1,0 +1,452 @@
+﻿BÁO CÁO  PHÂN TÍCH CHUYÊN SÂU:  HỆ  
+THỐNG  DỤNG CỤ GIA CÔNG CHÍNH  
+XÁC VÀ TƯƠNG QUAN  KỸ THUẬT GIỮA  
+BẦU  KẸP VÀ  MẢNH CẮT (TOOLING  
+SYSTEMS 2025)  
+
+1. Tổng Quan Về  Hệ Sinh Thái  Dụng Cụ Cắt Gọt  Hiện  
+Đại  
+
+Trong kỷ nguyên sản xuất cơ khí chính xác, vai trò của hệ thống dụng cụ (tooling systems) đã  
+vượt xa chức năng giữ dao đơn thuần để trở thành yếu tố quyết định trực tiếp đến năng suất,  
+độ chính xác bề mặt và tuổi thọ của máy CNC. Báo cáo này được xây dựng dựa trên sự phân  
+tích toàn diện các tài liệu kỹ thuật của An Mi Tools (phiên bản 2025), một đơn vị có hơn 20  
+
+                                                              1 
+năm kinh nghiệm và quy trình sản xuất khép kín tại Việt Nam.  Mục tiêu cốt lõi của nghiên cứu  
+này là tổng hợp, hệ thống hóa và giải mã các mối liên kết kỹ thuật phức tạp giữa các mã bầu  
+kẹp (holder), áo côn (collet) và các mã mảnh cắt (insert) đi kèm, đặc biệt tập trung vào các  
+ứng dụng phay, khoan, ta-rô và doa lỗ tốc độ cao.  
+
+Sự chuyển dịch của ngành công nghiệp về hướng gia công tốc độ cao (High Speed Machining  
+- HSM) và gia công khuôn mẫu chính xác đã thúc đẩy sự phát triển của các dòng bầu kẹp có  
+khả năng cân bằng động học vượt trội (G2.5 tại 25,000 - 40,000 vòng/phút) và độ đảo  
+(run-out) cực thấp, thường dưới mức 0.003mm.1 Báo cáo sẽ đi sâu vào phân tích cơ chế vật lý  
+
+của các hệ thống kẹp này, từ nguyên lý kẹp nhiệt, thủy lực cho đến các thiết kế cơ khí chính  
+xác như SK, GER và các hệ thống doa module phức tạp.  
+
+2.  Hệ Thống  Bầu  Kẹp  Phay Tốc Độ Cao: Cơ Chế Và Ứng  
+Dụng  
+
+Phay tốc độ cao đòi hỏi sự ổn định tuyệt đối của hệ thống dao cụ để chống lại lực ly tâm và  
+rung động. Dữ liệu từ tài liệu kỹ thuật cho thấy sự phân hóa rõ rệt giữa các dòng bầu kẹp dựa  
+trên thiết kế côn và đai ốc.  
+
+2.1.  Phân Tích  Dòng  Bầu  Kẹp  BT-SK (High Speed Slim Chuck)  
+
+Dòng bầu kẹp SK đại diện cho giải pháp tối ưu cho phay tinh và phay bán tinh ở tốc độ vòng  
+quay lớn. Khác biệt cơ bản so với hệ thống ER truyền thống nằm ở góc côn hẹp (8 độ so với 16  
+﻿độ của ER), giúp gia tăng lực kẹp hướng tâm và cải thiện độ đồng tâm.  
+
+Đặc tính kỹ thuật và Tương thích hệ thống:  
+Sự ưu việt của dòng SK nằm ở thiết kế đai ốc (nut) không có các rãnh gió lớn, giúp giảm tiếng  
+ồn khí động học và sức cản gió khi vận hành ở tốc độ lên tới 40,000 vòng/phút.1 Độ cứng bề  
+mặt của bầu kẹp đạt HV 220, đảm bảo độ bền mỏi cao trong môi trường gia công khắc nghiệt.  
+Bảng dưới đây tổng hợp các thông số kỹ thuật quan trọng và sự tương thích giữa bầu kẹp và  
+collet SK:  
+
+Bảng 1: Thông số kỹ thuật và tương thích hệ thống  BT-SK  
+
+  Mã  Bầu           Dải  Kẹp         Tốc độ tối        Collet           Mã Đai Ốc         Ứng  Dụng  
+  Kẹp               (Clamping        đa (Max           Tương            (Nut)             Khuyên  
+  (Holder           Range)           RPM)              Thích                              Dùng  
+  Model)  
+
+  BT30-SK6-         1.0 ~ 6.0        40,000            SK6              SK6-SP /          Phay tinh  
+  60/90             mm                                                  SK6-CN            chi tiết nhỏ,  
+                                                                                          khuôn mẫu  
+                                                                                          chính xác  
+
+  BT30-SK10         1.0 ~ 10.0       30,000            SK10             SK10-SP /         Phay bán  
+  -60/90            mm                                                  SK10-CN           tinh, khoan  
+                                                                                          lỗ nhỏ  
+
+  BT40-SK10         1.0 ~ 10.0       30,000            SK10             SK10-SP           Gia công  
+  -90/120           mm                                                                    hốc sâu  
+                                                                                          (Deep  
+                                                                                          cavity)  
+
+  BT40-SK16         1.0 ~ 16.0       25,000            SK16             SK16-SP           Phay đa  
+  -90/120           mm                                                                    dụng tốc  
+                                                                                          độ cao  
+
+  BT50-SK2          1.0 ~ 20.0       20,000            SK20             SK20-SP           Gia công  
+  0-100/150         mm                                                                    khuôn lớn,  
+                                                                                          yêu cầu độ  
+                                                                                          vươn dài  
+
+Nguồn dữ liệu: 1  
+﻿Cơ chế hoạt động:  
+Collet SK được thiết kế để nằm sâu trong thân bầu kẹp, tạo ra một cấu trúc "Slim" (thon gọn)  
+cho phép dao cụ tiếp cận các vị trí hẹp mà không xảy ra va chạm. Việc sử dụng vòng bi kim  
+trong một số loại đai ốc cao cấp giúp giảm ma sát khi siết, chuyển hóa tối đa lực vặn tay thành  
+lực kẹp giữ dao. Độ đảo của hệ thống này được duy trì ổn định ở mức $\le 0.003$mm tại  
+khoảng cách 3D, yếu tố sống còn để đảm bảo tuổi thọ của các loại dao phay ngón carbide  
+đường kính nhỏ.1  
+
+2.2.  Dòng  Bầu  Kẹp  BT-GER và  BT-HGER (High Speed  ER Collet Chuck)  
+
+Mặc dù hệ thống ER là tiêu chuẩn công nghiệp phổ biến nhất, dòng GER và HGER của An Mi  
+Tools thể hiện sự nâng cấp đáng kể về khả năng cân bằng động. Sự khác biệt nằm ở quy trình  
+gia công và cân bằng đai ốc (Nut).  
+
+Sự tiến hóa từ ER sang GER/HGER:  
+Trong khi các bầu kẹp ER thông thường chỉ đảm bảo độ đảo khoảng 0.005mm - 0.01mm,  
+dòng GER được chế tạo với dung sai chặt chẽ hơn để đạt mức 0.003mm.1 Đai ốc của dòng  
+GER thường được thiết kế trơn hoặc được cân bằng động kỹ lưỡng (Pre-balanced G2.5) để  
+loại bỏ sự mất cân bằng khối lượng gây ra bởi các rãnh kẹp cờ lê truyền thống.  
+Bảng 2:  Phân tích kỹ thuật dòng  BT-GER/ HGER  
+
+  Mã Sản  Phẩm        Dải  Kẹp (mm)       Chuẩn Collet        Tốc độ (RPM)        Đặc Điểm  Kỹ  
+                                                                                  Thuật  Nổi  Bật  
+
+  BT30-GER16          1.0 ~ 10.0          ER16                30,000              Thiết kế cân  
+                                                                                  bằng G2.5, phù  
+                                                                                  hợp máy phay  
+                                                                                  tốc độ cao cỡ  
+                                                                                  nhỏ.  
+
+  BT30-GER20          1.0 ~ 13.0          ER20                30,000              Tăng dải kẹp  
+                                                                                  nhưng vẫn giữ  
+                                                                                  tốc độ cao.  
+
+  BT40-HGER2          1.0 ~ 16.0          ER25                25,000              Dòng "H"  
+  5                                                                               (High speed)  
+                                                                                  tăng cường độ  
+                                                                                  cứng vững cho  
+                                                                                  thân bầu kẹp.  
+
+  BT40-HGER3          1.0 ~ 20.0          ER32                20,000              Phù hợp cho  
+  2                                                                               phay thô nhẹ  
+                                                                                  và bán tinh với  
+﻿                                                                                         dao đường  
+                                                                                         kính lớn.  
+
+  NBT30-GER             1.0 ~ 20.0            ER16/20/25/32        30,000                Dòng không  
+  Series                                                                                 mặt bích (No  
+                                                                                         Flange) hoặc  
+                                                                                         thiết kế cổ  
+                                                                                         ngắn cho máy  
+                                                                                         thay dao  
+                                                                                         nhanh.  
+
+Nguồn dữ liệu: 1  
+
+Một điểm đáng lưu ý trong dữ liệu là sự xuất hiện của các mã  NBT (như NBT30-GER16), ám chỉ  
+các thiết kế tối ưu hóa cho các dòng máy taro-khoan (Drill Tap Center) hoặc máy có cơ cấu  
+thay dao đặc biệt, nơi không gian và trọng lượng dao cụ cần được tối thiểu hóa.1  
+
+2.3.  Hệ Thống  Kẹp  Nhiệt (Shrink  Fit) và Thủy  Lực (Hydraulic)  
+
+Đây là phân khúc cao cấp nhất, giải quyết triệt để các vấn đề về độ đảo và lực kẹp mà các hệ  
+thống cơ khí (SK, ER) gặp phải.  
+
+Bầu kẹp nhiệt (Shrink Fit - BT-SR / HSK-SR):  
+Sử dụng nguyên lý giãn nở nhiệt của vật liệu thép hợp kim đặc biệt. Khi nung nóng bằng máy  
+gia nhiệt cảm ứng, lỗ kẹp mở rộng để đưa cán dao vào; khi nguội đi, nó co lại tạo ra lực kẹp  
+hướng tâm cực lớn và đồng đều 360 độ.  
+ ●    Mã sản phẩm: BT30-SR4, BT40-SR10, HSK63A-SR16....1  
+
+ ●   Góc nghiêng: 4.5 độ tiêu chuẩn, tối ưu hóa khả năng tránh va chạm khuôn.  
+ ●    Ứng dụng: Lý tưởng cho gia công khuôn mẫu độ cứng cao và phay tinh tốc độ cực cao  
+      (>25,000 vòng/phút) do không có chi tiết chuyển động (như đai ốc, collet) gây mất cân  
+     bằng.  
+
+Bầu kẹp thủy lực (Hydraulic Chuck):  
+Sử dụng áp suất thủy lực nội tại để biến dạng màng ngăn kim loại ôm chặt cán dao. Ưu điểm  
+lớn nhất là khả năng giảm chấn (damping), giúp hấp thụ rung động cắt, từ đó kéo dài tuổi thọ  
+mảnh cắt và cải thiện độ bóng bề mặt. Tuy nhiên, hệ thống này yêu cầu cán dao phải đạt dung  
+sai h6 chính xác.1  
+
+3.  Hệ Thống  Doa  Lỗ (Boring Systems):  Kiến Thức  
+Chuyên Sâu Về  Insert và  Holder  
+
+Đây là phần phức tạp nhất và chứa đựng nhiều thông tin chi tiết nhất về sự phối hợp giữa cán  
+﻿dao (holder) và mảnh cắt (insert). Hệ thống doa của An Mi Tools được chia thành Doa Tinh  
+(Fine Boring) và Doa Thô (Rough Boring), mỗi loại sử dụng một hệ thống mã hóa insert riêng  
+biệt.  
+
+3.1.  Hệ Thống  Doa Tinh (Fine  Boring  Heads)  
+
+Đầu doa tinh được thiết kế để đạt độ chính xác kích thước đến 0.01mm (hoặc 0.002mm với  
+đầu hiển thị số). Cấu trúc của chúng thường bao gồm: Bầu kẹp chính (Master Holder) -> Đầu  
+doa (Boring Head) -> Thanh doa (Boring Bar) -> Mảnh cắt (Insert).  
+
+a. Dòng NBH2084 (Dải doa rộng $\Phi8 \sim \Phi280$ mm)  
+Hệ thống này sử dụng đầu doa NBH2084 kết hợp với bộ 8 thanh doa (Boring Bar) mã hiệu  
+SBJ. Sự lựa chọn thanh doa sẽ quyết định loại mảnh cắt cần sử dụng.  
+Bảng 3: Chi tiết mã thanh doa và  Insert tương ứng cho  NBH2084  
+
+  Mã Thanh           Dải  Doa          Mã  Insert        Loại Vít           Cờ  Lê            Đặc Điểm  
+  Doa (Bar)          (mm)              (Mảnh cắt)        Kẹp                (Spanner)         Kỹ Thuật  
+                                                         (Clamp  
+                                                         Screw)  
+
+  SBJ-2008-          8 ~ 11            TBGT0601.         M2.0x5             T6                Thanh nhỏ,  
+  32                                   .L                                                     dùng insert  
+                                                                                              tam giác 60  
+                                                                                              độ (TBGT)  
+                                                                                              để giảm lực  
+                                                                                              cắt.  
+
+  SBJ-2010-          10 ~ 13           TBGT0601.         M2.0x5             T6                Tương tự  
+  40                                   .L                                                     trên, tăng  
+                                                                                              chiều dài  
+                                                                                              doa.  
+
+  SBJ-2012-          12 ~ 17           TPGH0902          M2.5x6             T8                Chuyển  
+  53                                   ..L                                                    sang insert  
+                                                                                              tam giác 60  
+                                                                                              độ (TPGH)  
+                                                                                              lớn hơn,  
+                                                                                              chịu lực tốt  
+                                                                                              hơn.  
+
+  SBJ-2016-          16 ~ 21           TPGH0902          M2.5x6             T8                Dùng cho  
+                                                                                              dải trung  
+﻿  68                                      ..L                                                        bình.  
+
+  SBJ-2020-           20 ~ 130            TPGH1103.          M3.0x7              T8                  Insert  
+  83                                      .L                                                         TPGH1103  
+                                                                                                     là phổ biến  
+                                                                                                     nhất cho  
+                                                                                                     dải doa  
+                                                                                                     rộng.  
+
+  SBJ-2025-           25 ~ 135            TPGH1103.          M3.0x7              T8                  Thanh doa  
+  96                                      .L                                                         lớn, tăng độ  
+                                                                                                     cứng vững.  
+
+  SBJ-2030-           30 ~ 140            TPGH1103.          M3.0x7              T8                  Doa sâu.  
+  115                                     .L  
+
+  SBJ-2020-           120 ~ 280           TPGH1103.          M3.0x7              T8                  Thanh nối  
+  L                                       .L                                                         dài cho  
+                                                                                                     đường kính  
+                                                                                                     lớn.  
+
+                               1    1  
+Nguồn dữ liệu chi tiết từ   và. 
+
+Phân tích  Insert: Các mã insert TBGT và TPGH là loại dương (positive), có góc thoát lớn và  
+độ sắc bén cao. Điều này là bắt buộc trong doa tinh để giảm thiểu lực cắt hướng tâm (radial  
+cutting force), nguyên nhân chính gây ra hiện tượng rung động (chatter) và sai số hình học lỗ  
+(độ tròn, độ trụ). Hậu tố "..L" thường chỉ hướng cắt hoặc lớp phủ chuyên dụng cho gia công  
+tinh.  
+
+b. Dòng NBJ16 (Hệ thống doa lỗ nhỏ $\Phi6 \sim \Phi51$ mm)  
+Thiết kế cho các ứng dụng yêu cầu không gian hẹp.  
+
+                                                                                                      1 
+ ●    Dải 6-9mm: Dùng thanh doa SBJ-1606-24, Insert WBGT0601..L, Vít M2.0x4.  Insert  
+      WBGT (dạng lượng giác 80 độ mở rộng) cung cấp độ cứng vững tốt hơn cho các lỗ rất  
+      nhỏ so với TBGT.  
+ ●    Dải 8-13mm: Dùng Insert TBGT0601..L.1  
+
+ ●    Dải 12-21mm: Dùng Insert TPGH0902..L.1  
+
+ ●    Dải 20-51mm: Dùng Insert TPGH1103..L.1  
+
+c. Dòng EWN (Đầu doa tinh cân bằng động cao)  
+Dòng EWN sử dụng cơ chế dịch chuyển đầu kẹp insert (Insert Holder) thay vì thay toàn bộ  
+thanh doa, giúp duy trì cân bằng động tốt hơn.  
+﻿ ●   EWN20-36 đến  EWN32-60: Sử dụng Insert TPGH080202. Lưu ý mã Insert này  
+     (080202) nhỏ hơn so với chuẩn 0902 hoặc 1103 của dòng NBH, nhằm tối ưu hóa cho đầu  
+     doa compact.1  
+
+ ●   EWN41-74 trở lên: Chuyển sang sử dụng Insert TCMT110204. Mã TCMT (tam giác 60  
+     độ, mặt cắt dương) cung cấp sự cân bằng tốt giữa độ sắc bén và độ bền cạnh cắt cho  
+     các đường kính lớn hơn.  
+
+3.2.  Hệ Thống  Doa Thô (Rough  Boring  Heads)  
+
+Doa thô ưu tiên khả năng loại bỏ vật liệu nhanh, chịu được lực cắt lớn và va đập. Do đó, hệ  
+thống dao và insert có cấu trúc hoàn toàn khác biệt.  
+
+a. Dòng RBH (Twin-bit Rough Boring Head)  
+Sử dụng hai lưỡi cắt đối xứng để cân bằng lực cắt hướng kính, cho phép tăng tốc độ tiến dao  
+(feed rate) gấp đôi. Các đầu dao RBH sử dụng hệ thống kẹp insert dạng mô-đun (CCMT  
+holders).  
+Bảng 4:  Phân tích mã  Insert cho dòng  RBH  
+
+  Mã Đầu         Dải  Doa      Mã             Mã            Vít  Kẹp      Cờ  Lê         Phân  
+  Doa            (mm)          Modular        Insert                                     Tích  Kỹ  
+  (Head)                       Holder        (Mảnh                                       Thuật  
+                                             cắt)  
+
+  RBH19-2        19 ~ 25       LBK1          CCMT06         M2.5          T8             Dùng  
+  5                                          02                                          insert  
+                                                                                         nhỏ  
+                                                                                         CCMT06 
+                                                                                         02 (hình  
+                                                                                         thoi 80  
+                                                                                         độ) để  
+                                                                                         đảm bảo  
+                                                                                         không  
+                                                                                         gian  
+                                                                                         thoát  
+                                                                                         phoi  
+                                                                                         trong lỗ  
+                                                                                         nhỏ.  
+
+  RBH25-3       25 ~ 33        LBK2          CCMT06         M2.5          T8             Vẫn dùng  
+  3                                          02                                          insert  
+                                                                                         nhỏ  
+                                                                                         nhưng  
+﻿                                                                                              thân  
+                                                                                              holder  
+                                                                                              lớn hơn.  
+
+  RBH32-4        32 ~ 42         LBK3           CCMT06         M2.5            T8               
+  2                                             02  
+
+  RBH40-         40 ~ 55         LBK4           CCMT09         M4              T15            Chuyển  
+  55                                            T3                                            sang  
+                                                                                              insert  
+                                                                                              trung  
+                                                                                              bình  
+                                                                                              (09T3)  
+                                                                                              để chịu  
+                                                                                              lực cắt  
+                                                                                              lớn hơn.  
+
+  RBH52-7        52 ~ 70         LBK5           CCMT09         M4              T15              
+  0                                             T3  
+
+  RBH68-2        68 ~ 204        LBK6 /         CCMT12         M5              T20            Dùng  
+  04                             BST            04                                            insert lớn  
+                                                                                              nhất  
+                                                                                              (1204)  
+                                                                                              cho hiệu  
+                                                                                              suất phá  
+                                                                                              thô tối  
+                                                                                              đa.  
+
+Nguồn dữ liệu:.1  
+
+Tại sao là CCMT? Insert CCMT là loại mảnh cắt hình thoi 80 độ, góc thoát dương (7 độ). Góc  
+80 độ mang lại độ bền đầu mũi dao cao hơn nhiều so với hình tam giác (60 độ) của  
+TPGH/TBGT, giúp nó chịu được tải trọng va đập khi doa thô, đồng thời góc thoát dương giúp  
+giảm lực cắt so với các loại insert âm (như CNMG).  
+
+b. Dòng CBH (Large Diameter Boring $\Phi200 \sim \Phi910$)  
+Dành cho các lỗ kích thước lớn, sử dụng hệ thống trượt (slide) trên các mặt bích (flange).  
+ ●   Sử dụng Module Holder mã hiệu  BST.  
+ ●   Mã Insert tiêu chuẩn: TCMT110204. Một số cấu hình đặc biệt có thể sử dụng CCMT1204  
+﻿     hoặc SCMT1204 (hình vuông) tùy thuộc vào module gắn dao (cartridge) được lựa chọn.1  
+
+3.3.  Hệ Thống  Lắp Ghép  Module (Modular Connection)  
+
+Để kết nối đầu doa với trục chính máy, An Mi Tools sử dụng hai chuẩn kết nối module chính,  
+cho phép linh hoạt thay đổi chiều dài:  
+
+  1.  Hệ thống CK (CK1 - CK7): Kết nối bằng vít ngang qua thân. Đây là chuẩn kết nối rất  
+     cứng vững, thường dùng cho doa tinh (NBH, EWN) để giảm thiểu sai số cộng dồn. Ví dụ:  
+     Đầu doa NBJ16 kết nối với bầu kẹp qua chuẩn CK6.1  
+
+ 2.  Hệ thống  LBK (LBK1 -  LBK6): Kết nối kiểu trục-lỗ có chốt định vị. Phổ biến cho các đầu  
+     doa thô RBH. Ví dụ: RBH68-92 sử dụng chuẩn kết nối LBK6.1  
+
+4.  Hệ Thống Ta-rô (Tapping Systems): Đồng  Bộ  Hóa và  
+Bảo Vệ  
+
+Gia công ren là quá trình đòi hỏi sự đồng bộ chính xác giữa chuyển động quay của trục chính  
+và chuyển động tịnh tiến trục Z.  
+
+4.1.  Bầu  Kẹp Ta-rô  Nổi (Tension & Compression /  Floating)  
+
+Giải pháp cho các máy CNC đời cũ hoặc khi khả năng đồng bộ của máy không hoàn hảo. Bầu  
+kẹp cho phép trục ta-rô dịch chuyển dọc trục (nén hoặc kéo) một khoảng nhỏ (thường là vài  
+mm) để bù trừ sai số giữa bước ren lý thuyết và thực tế.  
+
+ ●   Mã sản phẩm: BT30-G3, BT40-G12, BT50-G24.  
+ ●   Collet Ta-rô (G-Series): Sử dụng cơ chế ly hợp trượt (Torque protection). Khi mô-men  
+     xoắn vượt quá giới hạn cài đặt (ví dụ khi mũi ta-rô chạm đáy lỗ mù hoặc bị kẹt phoi),  
+     collet sẽ trượt để ngăn gãy mũi ta-rô.  
+      ○  G3 (G0312): Dải kẹp M3-M12. Lực bảo vệ từ 2.26 đến 11.3 N.m.1  
+
+      ○  G12 (G1224): Dải kẹp M12-M24. Lực bảo vệ từ 22.6 đến 67.8 N.m.1  
+
+      ○  G24 (G2442): Dải kẹp M24-M42. Lực bảo vệ lên tới 170 N.m.1  
+
+4.2.  Bầu  Kẹp Ta-rô Cứng (Rigid Tapping - TER)  
+
+Dành cho máy CNC hiện đại có chức năng Rigid Tapping. Hệ thống này không có cơ chế bù  
+trừ dọc trục, giúp định vị ren chính xác tuyệt đối.  
+
+ ●   Mã sản phẩm: BT-TER (ví dụ: TER16, TER20, TER32).  
+ ●   Collet đặc biệt: Sử dụng Collet ER nhưng có lỗ vuông ở đáy (Square drive). Phần vuông  
+     này khớp với chuôi mũi ta-rô, ngăn chặn tuyệt đối hiện tượng xoay trượt của mũi ta-rô  
+     trong collet khi chịu mô-men xoắn lớn.1  
+
+5.  Phụ  Kiện  Kết  Nối: Collet,  Nut và  Pull Stud  
+﻿Sự toàn vẹn của hệ thống tooling phụ thuộc vào các chi tiết nhỏ nhất.  
+
+5.1. Collet và Đai Ốc (Nut)  
+
+        1 
+Dữ liệu   cho thấy sự đa dạng của các loại đai ốc ER, phục vụ các mục đích khác nhau:  
+
+ ●   Nut  ER-A (Hexagonal): Dùng cho ER11, ER16, ER20. Vặn bằng cờ lê miệng mở. Ưu điểm  
+     là dễ thao tác nhưng cân bằng động kém hơn ở tốc độ cao.  
+ ●   Nut  ER-M (Mini): Đường kính nhỏ, dùng cho các vị trí hẹp (khuôn sâu). Cần cờ lê chuyên  
+     dụng.  
+ ●   Nut  ER-UM (Round/ Notched): Dùng cho ER25, ER32, ER40. Dạng tròn có rãnh, cân  
+     bằng tốt hơn loại lục giác và cho lực siết lớn hơn.  
+ ●   Nut GER: Dòng đai ốc đặc biệt cho bầu kẹp GER, được mài nhẵn và cân bằng động G2.5.1  
+
+5.2. Đuôi Chuột (Pull Stud /  Retention  Knob)  
+
+Đây là chi tiết chịu lực kéo giữ bầu kẹp vào trục chính. Việc chọn sai Pull Stud (ví dụ: sai góc  
+độ 45/60/90 độ hoặc chiều dài) có thể gây hỏng trục chính ngay lập tức.  
+
+ ●   MAS  BT: Tiêu chuẩn phổ biến nhất tại Châu Á. Có các biến thể góc 30°, 45°, 60°, 90°.  
+ ●   DIN 69872: Tiêu chuẩn Đức, thường dùng cho máy Châu Âu.  
+ ●   MAZAK / CAT: Các chuẩn riêng biệt cho máy Mazak hoặc thị trường Mỹ.  
+ ●   Coolant Through: Các mã Pull Stud có lỗ thông ở giữa cho phép tưới nguội xuyên tâm.1  
+
+6.  Hệ Thống  Dụng Cụ  Phụ Trợ (Drilling & Oil-Feed)  
+
+6.1.  Bầu  Kẹp  Khoan APU và SDC  
+
+ ●   APU (Drill Chuck  Holder): Tích hợp đầu kẹp khoan vào thân bầu BT, giảm chiều dài và  
+     tăng độ cứng vững so với việc dùng đầu kẹp khoan rời lắp vào bầu côn. Độ đảo 0.05mm.  
+ ●   SDC (Slim  Drill Chuck): Một thiết kế tiên tiến sử dụng cơ chế kẹp "Back locking" (khóa  
+     ngược) không cần đai ốc bên ngoài.1 Điều này giúp đầu kẹp cực kỳ thon gọn, tránh va  
+
+     chạm và đạt độ đảo thấp (0.003mm), phù hợp cho mũi khoan carbide đường kính nhỏ từ  
+     2-12mm.  
+
+6.2.  Bầu  Kẹp  Dẫn  Dầu (Oil-Feed Tool  Holder)  
+
+ ●   Mã sản phẩm: BT-SLO và BT-ERO.  
+ ●   Chức năng: Cung cấp khả năng tưới nguội xuyên tâm cho các máy CNC đời cũ không có  
+     tính năng này tích hợp trong trục chính (Through Spindle Coolant). Bầu kẹp có cơ cấu  
+     dẫn dầu từ bên hông (Side Lock Oil) vào tâm dao.1  
+
+7.  Kết  Luận và  Khuyến  Nghị Ứng  Dụng  
+
+Hệ thống dụng cụ của An Mi Tools phiên bản 2025 thể hiện một sự hoàn thiện cao về mặt kỹ  
+thuật, đáp ứng đầy đủ các nhu cầu từ gia công thô năng suất cao (RBH, Power Chuck) đến gia  
+﻿công tinh siêu chính xác (NBH, SK, Shrink Fit).  
+
+Khuyến nghị cho kỹ sư công nghệ:  
+
+ 1.  Doa lỗ: Luôn tuân thủ bảng tương thích Insert-Holder (Bảng 3, 4). Việc sử dụng sai loại  
+     insert (ví dụ dùng CCMT cho đầu doa tinh NBH) sẽ dẫn đến sai số kích thước và bề mặt  
+     không đạt do lực cắt quá lớn.  
+ 2.   Tốc độ cao: Với trục chính >15,000 vòng/phút, ưu tiên sử dụng bầu kẹp SK hoặc Shrink  
+     Fit để bảo vệ vòng bi trục chính khỏi rung động.  
+ 3.   Ta-rô: Sử dụng bầu kẹp  Rigid (TER) với collet lỗ vuông cho các ứng dụng ta-rô hàng loạt  
+     trên máy hiện đại để loại bỏ hiện tượng trượt dao và sai bước ren.  
+ 4.  Lắp ráp: Chú ý đến loại đai ốc (Nut). Đai ốc cân bằng động (GER) không thể thay thế tùy  
+     tiện bằng đai ốc thường (ER-UM) trong các ứng dụng tốc độ cao dù kích thước ren có  
+     thể giống nhau.  
+
+Báo cáo này đóng vai trò là tài liệu tham chiếu kỹ thuật cốt lõi, giúp tối ưu hóa quy trình lựa  
+chọn và vận hành hệ thống dụng cụ cắt gọt trong môi trường sản xuất công nghiệp hiện đại.  
+
+Nguồn trích dẫn  
+
+   1.  9 Tooling Systems-1-25.txt  
