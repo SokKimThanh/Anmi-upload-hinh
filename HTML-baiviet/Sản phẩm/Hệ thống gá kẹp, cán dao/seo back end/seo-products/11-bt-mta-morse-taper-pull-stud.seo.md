@@ -1,18 +1,18 @@
 ---
-title: "BT-MTA Morse Taper Drill Chuck (Tang Type)"
+title: "BT-MTA Morse Taper Drill Chuck MT1-MT5 Tang Type Run-out 0.005mm"
 slug: "bt-mta-morse-taper-pull-stud"
-primary_keyword: "bt-mta morse taper"
+primary_keyword: "BT-MTA Morse Taper Drill Chuck"
 tags: "BT-MTA, morse taper, drill chuck, tang type, áo côn, bầu kẹp mũi khoan"
 category: "BT SIDE LOCK"
 catalog_page: "17"
-seo_title: "BT-MTA Morse Taper Holder - Bầu kẹp mũi khoan đuôi dẹt CNC"
-seo_description: "BT-MTA Morse Taper Drill Chuck của An Mi Tools. Chuyên dùng kẹp mũi khoan đuôi dẹt (Tang type) MT1-MT5 cho máy phay CNC BT30, BT40, BT50. Chính xác, cứng vững."
+seo_title: "BT-MTA Morse Taper Drill Chuck MT1-MT5 Tang Type | An Mi Tools"
+seo_description: "Mua BT-MTA Morse Taper Drill Chuck chính hãng. Tang type MT1-MT5, run-out ≤0.005mm, rãnh then chống xoay, phù hợp mũi khoan ruột gà và doa tiệt diện lớn."
 social_image_facebook: ""
 social_image_twitter: ""
 seo_score_target: ">=70"
 author: "An Mi Tools Technical Team"
 date_published: "2025-10-20"
-date_modified: "2025-11-27"
+date_modified: "2025-12-10"
 schema_type: "Product"
 ---
 
