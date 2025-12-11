@@ -1,18 +1,18 @@
 ---
-title: "BT-SDC High Precision Holder: 5 Ưu Điểm Kẹp Back-Locking 0.003mm"
+title: "BT-SDC High Precision Holder Φ2-12mm Back-Locking Run-out 0.003mm"
 slug: "bt-sdc-high-precision-holder"
-primary_keyword: "bt-sdc high precision holder"
+primary_keyword: "BT-SDC High Precision Holder"
 tags: "BT-SDC, high precision, tool holder, SDC Collet, SDC Extension, An Mi Tools"
 category: "BT SIDE LOCK"
 catalog_page: "15"
-seo_title: "BT-SDC High Precision Holder - Bầu Kẹp Không Đai Ốc Độ Chính Xác 0.003mm"
-seo_description: "BT-SDC High Precision Holder của An Mi Tools: Thiết kế Back-locking không đai ốc, độ đảo 0.003mm, cân bằng G2.5 30.000 RPM. Kèm SDC Collet và Extension."
+seo_title: "BT-SDC High Precision Holder Φ2-12mm Back-Locking Run-out 0.003mm | An Mi Tools"
+seo_description: "Mua BT-SDC High Precision Holder chính hãng. Thiết kế Back-Locking không đai ốc, độ đảo 0.003mm, cân bằng G2.5 30,000 RPM, phù hợp gia công khuôn mẫu CNC."
 social_image_facebook: "https://anmitools.com/wp-content/uploads/2025/10/bt-sdc-high-precision-holder-facebook.webp"
 social_image_twitter: "https://anmitools.com/wp-content/uploads/2025/10/bt-sdc-high-precision-holder-twitter.webp"
 seo_score_target: ">=85"
 author: "An Mi Tools Technical Team"
 date_published: "2025-10-20"
-date_modified: "2025-11-26"
+date_modified: "2025-12-11"
 schema_type: "Product"
 ---
 
