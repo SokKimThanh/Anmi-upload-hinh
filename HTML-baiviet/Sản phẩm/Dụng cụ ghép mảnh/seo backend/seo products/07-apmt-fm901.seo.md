@@ -1,33 +1,34 @@
 ---
-title: "FM901 & APMT1135/1604 – Dao Phay Vai Vuông 90° Phổ Biến"
+title: "Dao phay vai vuông FM901 & Mảnh APMT1135/1604 – KAPR 90° Phổ Biến"
 slug: "apmt-fm901"
 primary_keyword: "Dao phay vai vuông FM901"
-tags: "square shoulder milling, dao phay vai vuông, an mi tools, fm901, apmt1135, apmt1604"
-seo_title: "FM901 & APMT1135/1604 – Dao Phay Vai Vuông 90° | An Mi Tools"
-seo_description: "Dòng dao vai vuông FM901 dùng mảnh APMT1135/1604, KAPR 90°, APMX 10–15 mm, giải pháp phổ biến cho phay vai vuông."
+tags: "square shoulder milling, dao phay vai vuong, an mi tools, fm901, apmt1135, apmt1604"
+category: "DỤNG CỤ GHÉP MẢNH"
+seo_title: "Dao phay vai vuông FM901 & Mảnh APMT1135/1604 – KAPR 90° | An Mi Tools"
+seo_description: "Dao phay vai vuông FM901 dùng mảnh APMT1135/1604, KAPR 90°, APMX 10–15 mm, giải pháp phổ biến cho phay vai vuông khuôn mẫu và chi tiết máy."
 social_image_facebook: "fm901-apmt.jpg"
 social_image_twitter: "fm901-apmt.jpg"
 seo_score_target: ">=70"
 author: "An Mi Tools Technical Team"
 date_published: "2025-11-28"
-date_modified: "2025-11-28"
+date_modified: "2025-12-11"
 schema_type: "Product"
 ---
 
 <section class="apmt-fm901" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
 
-# Dao Phay Vai Vuông 90° FM901 & Mảnh APMT1135/1604
+# Dao Phay Vai Vuông FM901 & Mảnh APMT1135/1604
 
 ## 1. Tổng quan sản phẩm
-Dòng **FM901** là dao phay vai vuông **góc 90°** sử dụng mảnh phay chuẩn **APMT1135 (AP11) và APMT1604 (AP16)**. Với **APMX 10 mm cho AP11** và **15 mm cho AP16**, FM901 là một trong những dòng dao vai vuông phổ biến nhất, phù hợp nhiều ứng dụng gia công khuôn mẫu và chi tiết máy.
+**Dao phay vai vuông FM901** là giải pháp phay vai vuông **góc 90°** sử dụng mảnh phay chuẩn **APMT1135 (AP11) và APMT1604 (AP16)**. Với **APMX 10 mm cho AP11** và **15 mm cho AP16**, FM901 là một trong những dòng dao vai vuông phổ biến nhất, phù hợp cho nhiều ứng dụng gia công khuôn mẫu và chi tiết máy.
 
 <figure style="width:1000px; margin:auto; text-align:center;">
-  <img src="fm901-holder-overview.jpg" style="width:1000px; height:auto;" alt="Dao phay vai vuông FM901 dùng mảnh APMT">
+  <img src="https://anmitools.com/wp-content/uploads/2025/11/07-apmt-fm901-holder-anh-seo.webp" style="width:1000px; height:auto;" alt="Dao phay vai vuông FM901 dùng mảnh APMT">
   <figcaption style="color:#333333;">Hình ảnh dao phay vai vuông FM901 dùng mảnh APMT1135/1604</figcaption>
 </figure>
 
-## 2. Thông số mảnh dao (Insert Specifications)
-Mảnh **APMT1135** và **APMT1604** là chuẩn công nghiệp, có nhiều lựa chọn lớp phủ và chipbreaker.
+## 2. Thông số kỹ thuật mảnh dao FM901 (Insert Specifications)
+Mảnh **APMT1135** và **APMT1604** là chuẩn công nghiệp, có nhiều lựa chọn lớp phủ và chipbreaker phù hợp với đa dạng vật liệu gia công.
 
 | Mã Insert | APMX (mm) | Lớp phủ (Grade) | Vật liệu gia công | Đặc điểm |
 | :--- | :---: | :--- | :--- | :--- |
@@ -61,15 +62,16 @@ Mảnh **APMT1135** và **APMT1604** là chuẩn công nghiệp, có nhiều l�
 | IC-FM901-A22-63-5-AP16 | APMT1604* | 63 | 5 | 22 | 90 | 15 |
 
 <figure style="width:1000px; margin:auto; text-align:center;">
-  <img src="fm901-drawing.jpg" style="width:1000px; height:auto; border:1px solid rgba(0,0,0,0.08);" alt="Bản vẽ kỹ thuật dao phay vai vuông FM901">
+  <img src="https://anmitools.com/wp-content/uploads/2025/11/07-apmt-fm901-holder-thong-so-ky-thuat.webp" style="width:1000px; height:auto; border:1px solid rgba(0,0,0,0.08);" alt="Bản vẽ kỹ thuật dao phay vai vuông FM901">
   <figcaption style="color:#333333;">Bản vẽ kỹ thuật dao phay vai vuông FM901 và vị trí lắp mảnh APMT</figcaption>
 </figure>
 
-## 4. Ứng dụng gia công thực tế
-FM901 là lựa chọn tiêu chuẩn cho **phay vai vuông 90°**, phay rãnh và phay biên dạng đơn giản.
+## 4. Ứng dụng gia công thực tế với dao phay vai vuông FM901
+FM901 là lựa chọn tiêu chuẩn cho **phay vai vuông 90°**, phay rãnh và phay biên dạng đơn giản trong ngành khuôn mẫu và cơ khí chế tạo.
 
-- Ứng dụng chính: Phay vai vuông, phay rãnh, phay hốc trên thép, gang, inox.
-- Vật liệu gia công phù hợp: P, M, K chủ đạo, có thêm option cho S, H.
-- Khuyến nghị: Chọn APMT1135 cho dao đường kính nhỏ và công suất máy trung bình; dùng APMT1604 cho dao lớn và cần chiều sâu cắt tới 15 mm.
+- **Ứng dụng chính**: Phay vai vuông, phay rãnh, phay hốc trên thép, gang, inox và hợp kim nhôm.
+- **Vật liệu gia công phù hợp**: P, M, K chủ đạo, có thêm option cho S, H tùy grade lớp phủ.
+- **Khuyến nghị lựa chọn**: Chọn APMT1135 (AP11) cho dao đường kính nhỏ đến trung bình và công suất máy trung bình; dùng APMT1604 (AP16) cho dao lớn và cần chiều sâu cắt tới 15 mm.
+- **Lưu ý**: Đảm bảo mảnh được lắp chặt và kiểm tra định kỳ trước khi gia công để đạt độ chính xác cao nhất.
 
 </section>
