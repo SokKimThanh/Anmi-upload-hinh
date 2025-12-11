@@ -1,0 +1,90 @@
+---
+title: "Dao phay vai vuông FM903 – FM903 & WNMX0403/0806 90° Linh Hoạt"
+slug: "dao-phay-vai-vuong-fm903-wnmx0403-0806"
+primary_keyword: "Dao phay vai vuông FM903"
+tags: "square shoulder milling, dao phay vai vuong, an mi tools, fm903, wnmx0403, wnmx0806"
+category: "DỤNG CỤ GHÉP MẢNH"
+seo_title: "Dao phay vai vuông FM903 – FM903 & WNMX0403/0806 90° Linh Hoạt | An Mi Tools"
+seo_description: "Dao phay vai vuông FM903 dùng mảnh WNMX0403 và WNMX0806, gồm cả dạng cán trụ và dạng đĩa/cán vuông, đáp ứng linh hoạt nhu cầu phay vai vuông 90°."
+social_image_facebook: "fm903-wnmx.jpg"
+social_image_twitter: "fm903-wnmx.jpg"
+seo_score_target: ">=70"
+author: "An Mi Tools Technical Team"
+date_published: "2025-11-28"
+date_modified: "2025-11-28"
+schema_type: "Product"
+---
+
+<section class="wnmx-fm903" style="background-color:#FCF7EC; color:#000000; padding:1.5rem;">
+
+**Dao phay vai vuông FM903** là hệ thống dao phay vai vuông 90° dùng mảnh WNMX0403 và WNMX0806, bao phủ từ dao cán trụ nhỏ đến dao dạng đĩa/cán vuông đường kính lớn.
+
+# Dao Phay Vai Vuông FM903 & Mảnh WNMX0403/0806
+
+## 1. Tổng quan sản phẩm
+Dòng **dao phay vai vuông FM903** là hệ thống dao phay vai vuông **góc 90°** dùng mảnh **WNMX0403* (WN04)** và **WNMX0806* (WN08)**, bao gồm cả **dao cán trụ** và **dao dạng đĩa/cán vuông**, giúp linh hoạt trong nhiều kiểu gá kẹp và điều kiện gia công khác nhau.
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="fm903-holder-overview.jpg" style="width:1000px; height:auto;" alt="Dao phay vai vuông FM903 dùng mảnh WNMX0403/0806">
+  <figcaption style="color:#333333;">Hình ảnh dao phay vai vuông FM903 dùng mảnh WNMX0403/0806</figcaption>
+</figure>
+
+## 2. Thông số mảnh dao (Insert Specifications)
+
+| Mã Insert | Kích thước | Lớp phủ (Grade) | Vật liệu gia công | Đặc điểm |
+| :--- | :--- | :--- | :--- | :--- |
+| WNMX0403* | Size nhỏ (WN04) | OC3220, OP2202, OP1315, OP1325, OP1340, OP1030, OP1630, OK434 | P / M / K / N / S / H | Mảnh nhỏ, phù hợp dao cán trụ đường kính nhỏ |
+| WNMX0806* | Size lớn (WN08) | OC3220, OP2202, OP1315, OP1325, OP1340, OP1030, OP1630, OK434 | P / M / K / N / S / H | Mảnh lớn, dùng cho dao dạng đĩa/cán vuông đường kính lớn |
+
+## 3. Bảng các mã đài dao tương thích (Compatible Holders)
+### 3.1. FM903 – Dạng cán trụ dùng WNMX0403 (WN04)
+
+Theo catalog, dạng cán trụ FM903 dùng mảnh **WNMX0403*** có APMX = **3.8 mm**, dải đường kính 20–32 mm.
+
+| Mã Đài Dao (Order Code)       | Mã Insert   | DC (mm) | Số me cắt | Cán (mm) | Góc cắt (KAPR) | APMX (mm) |
+| :---                          | :---        | :---:   | :---:     | :---:    | :---:          | :---:     |
+| TH-FM903-P20-20-2-WN04-120    | WNMX0403*   | 20      | 2         | 20       | 90             | 3.8       |
+| TH-FM903-P20-20-3-WN04-120    | WNMX0403*   | 20      | 3         | 20       | 90             | 3.8       |
+| TH-FM903-P20-21-3-WN04-120    | WNMX0403*   | 20      | 3         | 21       | 90             | 3.8       |
+| TH-FM903-P25-25-4-WN04-120    | WNMX0403*   | 25      | 4         | 25       | 90             | 3.8       |
+| TH-FM903-P25-26-4-WN04-120    | WNMX0403*   | 25      | 4         | 26       | 90             | 3.8       |
+| TH-FM903-P32-32-4-WN04-150    | WNMX0403*   | 32      | 4         | 32       | 90             | 3.8       |
+| TH-FM903-P32-33-4-WN04-150    | WNMX0403*   | 32      | 4         | 33       | 90             | 3.8       |
+
+### 3.2. FM903 – Dạng đĩa / cán vuông dùng WNMX0806 (WN08)
+
+Dạng đĩa/cán vuông FM903 dùng mảnh **WNMX0806*** có APMX = **8.0 mm**, bao phủ từ dạng cán vuông đến dạng đĩa lỗ cốt 22–60 mm.
+
+| Mã Đài Dao (Order Code)       | Mã Insert   | DC (mm) | Số me cắt | Lỗ cốt / Cán (DCON) | Kiểu thân dao | Góc cắt (KAPR) | APMX (mm) |
+| :---                          | :---        | :---:   | :---:     | :---:               | :---          | :---:          | :---:     |
+| TH-FM903-W32-32-2-WN08-120    | WNMX0806*   | 32      | 2         | 32                  | Cán vuông     | 90             | 8.0       |
+| TH-FM903-W32-40-4-WN08-120    | WNMX0806*   | 32      | 4         | 40                  | Cán vuông     | 90             | 8.0       |
+| TH-FM903-A22-50-5-WN08        | WNMX0806*   | 50      | 5         | 22                  | Shell Mill    | 90             | 8.0       |
+| TH-FM903-A22-63-6-WN08        | WNMX0806*   | 63      | 6         | 22                  | Shell Mill    | 90             | 8.0       |
+| TH-FM903-A27-80-7-WN08        | WNMX0806*   | 80      | 7         | 27                  | Shell Mill    | 90             | 8.0       |
+| TH-FM903-B32-100-8-WN08       | WNMX0806*   | 100     | 8         | 32                  | Shell Mill    | 90             | 8.0       |
+| TH-FM903-B40-125-10-WN08      | WNMX0806*   | 125     | 10        | 40                  | Shell Mill    | 90             | 8.0       |
+| TH-FM903-C40-160-12-WN08      | WNMX0806*   | 160     | 12        | 40                  | Shell Mill    | 90             | 8.0       |
+| TH-FM903-C60-200-16-WN08      | WNMX0806*   | 200     | 16        | 60                  | Shell Mill    | 90             | 8.0       |
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="fm903-drawing.jpg" style="width:1000px; height:auto; border:1px solid rgba(0,0,0,0.08);" alt="Bản vẽ kỹ thuật dao phay vai vuông FM903">
+  <figcaption style="color:#333333;">Bản vẽ kỹ thuật dao phay vai vuông FM903 với hai loại mảnh WNMX0403/0806</figcaption>
+</figure>
+
+## 4. Ứng dụng gia công thực tế
+**Dao phay vai vuông FM903** bao phủ dải ứng dụng rộng từ dao nhỏ cán trụ đến dao lớn dạng đĩa, thích hợp phay vai vuông trong nhiều điều kiện máy khác nhau.
+
+- Ứng dụng chính: Phay vai vuông 90°, phay rãnh, phay hốc trên nhiều loại vật liệu.
+- Vật liệu gia công: Thép, gang, inox, hợp kim chịu nhiệt, vật liệu cứng (chọn grade phù hợp nhóm P/M/K/S/H).
+- Khuyến nghị: Dùng WNMX0403 cho dao đường kính nhỏ, yêu cầu linh hoạt; dùng WNMX0806 cho dao đường kính lớn, khi cần chiều rộng vai và năng suất cao hơn.
+
+Khi cần một hệ **dao phay vai vuông FM903** linh hoạt cho nhiều kích thước dao nhưng vẫn muốn tối ưu quản lý mảnh insert, FM903 với WNMX0403/0806 là lựa chọn cân bằng giữa linh hoạt và hiệu quả tồn kho.
+
+Để tìm hiểu thêm về kỹ thuật phay vai vuông (square shoulder milling) và cách lựa chọn **dao phay vai vuông FM903** theo từng ứng dụng, bạn có thể tham khảo tài liệu kỹ thuật chuyên sâu kết hợp với danh mục sản phẩm của An Mi Tools.
+
+[Tổng quan về phay vai vuông (Square Shoulder Milling)](https://www.sandvik.coromant.com/en-gb/knowledge/milling/shoulder-milling/ "Square shoulder milling guide"){:rel="noopener noreferrer"}
+
+[Xem thêm các dòng dao phay vai vuông khác của An Mi Tools](https://anmitools.com/dung-cu-ghep-manh/ "Danh mục dao phay vai vuông An Mi Tools")
+
+</section>

@@ -1,0 +1,77 @@
+ 
+Upload các file: Catalog (.txt), File nội dung SEO (.md), File mẫu HTML/CSS (nếu có).
+
+Copy & Paste Prompt bên dưới vào khung chat.
+
+Thay thế tên sản phẩm ở dòng đầu tiên (nếu cần chỉ định cụ thể).
+
+MASTER PROMPT: QUY TRÌNH TẠO HTML SẢN PHẨM CHUẨN SEO TỪ CATALOG
+VAI TRÒ: Bạn là một chuyên gia Kỹ thuật viên SEO và Lập trình viên Front-end chuyên nghiệp của "An Mi Tools". Nhiệm vụ của bạn là tổng hợp thông tin từ các tài liệu thô và tạo ra một trang HTML sản phẩm hoàn chỉnh, chuẩn SEO và tuân thủ nghiêm ngặt thiết kế giao diện (UI/UX).
+
+ĐẦU VÀO DỮ LIỆU (CONTEXT):
+
+Catalog Kỹ Thuật (.txt): Chứa thông số chính xác, bảng dữ liệu, mã sản phẩm.
+
+File SEO Draft (.md): Chứa từ khóa chính (Primary Keyword), Title, Description và sườn nội dung sơ bộ.
+
+File CSS/HTML Mẫu: Chứa cấu trúc Tab (Overview, Features, Specs...) và các class CSS chuẩn (ví dụ: .product-tabs, .bordered-img).
+
+NHIỆM VỤ CỤ THỂ:
+
+Bước 1: Trích xuất & Xác thực Dữ liệu (Data Extraction)
+
+Xác định sản phẩm chính trong file .md.
+
+Tìm kiếm trong Catalog (.txt) thông tin của sản phẩm chính đó.
+
+QUAN TRỌNG: Tự động tìm kiếm trong Catalog 2 sản phẩm phụ/phụ kiện đi kèm (Ví dụ: Nếu sản phẩm chính là Holder, hãy tìm Collet tương ứng và Extension/Pull Stud đi kèm).
+
+Lấy thông số kỹ thuật chi tiết (L, D, độ đảo, RPM, v.v.) của cả 3 sản phẩm này.
+
+Bước 2: Chiến lược Hình ảnh (Image Strategy)
+
+Tổng số lượng ảnh tối thiểu: 6 ảnh (2 ảnh cho mỗi sản phẩm: Sản phẩm chính, Phụ kiện 1, Phụ kiện 2).
+
+Quy tắc phân loại ảnh: Mỗi sản phẩm phải có:
+
+01 Ảnh thực tế: Đặt ở tab "Tổng quan" hoặc phần giới thiệu.
+
+01 Ảnh kỹ thuật (Bản vẽ/Bảng thông số): Đặt ở tab "Thông số kỹ thuật".
+
+Sử dụng thẻ <img> chuẩn HTML5 (không có dấu / ở cuối), class bordered-img, và thuộc tính data-lightbox="true".
+
+Alt text phải chứa từ khóa chính và mô tả chi tiết ảnh.
+
+Bước 3: Tối ưu hóa SEO (SEO Optimization)
+
+Kiểm tra file .md: Nếu thiếu từ khóa trong H1, H2, Meta Description hoặc mật độ thấp (<1%), hãy tự động viết lại nội dung để khắc phục.
+
+Đảm bảo từ khóa chính xuất hiện ở: Đầu tiêu đề, URL (slug), H1, H2, Alt text ảnh và rải đều trong nội dung (mật độ ~1-1.5%).
+
+Nội dung phải dài tối thiểu 600 từ, phân bổ hợp lý vào các Tab.
+
+Bước 4: Xây dựng cấu trúc HTML (Coding Structure)
+
+Sử dụng cấu trúc Tabs Navigation chuẩn như file mẫu:
+
+Tab 1: Tổng quan (Giới thiệu chung, ảnh thực tế sản phẩm chính).
+
+Tab 2: Tính năng (Các điểm nổi bật dạng list).
+
+Tab 3: Thông số (Bảng thông số kỹ thuật chi tiết của cả 3 sản phẩm, kèm ảnh bản vẽ kỹ thuật).
+
+Tab 4: Ứng dụng (Các trường hợp sử dụng, kết hợp ảnh thực tế phụ kiện).
+
+Tab 5: Liên hệ (Thông tin hotline, CTA).
+
+Tuyệt đối: Loại bỏ hoàn toàn các ký hiệu trích dẫn nguồn như , .
+
+Sử dụng đúng các class CSS của An Mi Tools (ví dụ: .product-images-grid, .specifications, .product-intro).
+
+YÊU CẦU ĐẦU RA:
+
+Chỉ trả về Mã HTML duy nhất (nằm trong cặp thẻ <section class="...">).
+
+Mã phải sạch, không lỗi cú pháp (đặc biệt là thẻ img), sẵn sàng để copy vào WordPress Editor.
+
+HÃY BẮT ĐẦU XỬ LÝ CHO SẢN PHẨM TRONG FILE SEO.MD ĐƯỢC GỬI KÈM.
