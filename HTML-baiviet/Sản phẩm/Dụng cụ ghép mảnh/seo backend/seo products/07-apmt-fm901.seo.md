@@ -30,6 +30,16 @@ schema_type: "Product"
 ## 2. Thông số kỹ thuật mảnh dao FM901 (Insert Specifications)
 Mảnh **APMT1135** và **APMT1604** là chuẩn công nghiệp, có nhiều lựa chọn lớp phủ và chipbreaker phù hợp với đa dạng vật liệu gia công.
 
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="https://anmitools.com/wp-content/uploads/2025/11/07-apmt-fm901-insert-anh-seo.webp" style="width:1000px; height:auto;" alt="Mảnh dao APMT1135 và APMT1604 cho dao phay FM901">
+  <figcaption style="color:#333333;">Mảnh dao APMT1135 và APMT1604 dùng cho dao phay vai vuông FM901, KAPR 90°</figcaption>
+</figure>
+
+<figure style="width:1000px; margin:auto; text-align:center;">
+  <img src="https://anmitools.com/wp-content/uploads/2025/11/07-apmt-fm901-insert-thong-so-ky-thuat.webp" style="width:1000px; height:auto; border:1px solid rgba(0,0,0,0.08);" alt="Bản vẽ kỹ thuật mảnh APMT1135 và APMT1604">
+  <figcaption style="color:#333333;">Bản vẽ kỹ thuật mảnh APMT1135 (IC 11.4mm) và APMT1604 (IC 17.4mm)</figcaption>
+</figure>
+
 | Mã Insert | APMX (mm) | Lớp phủ (Grade) | Vật liệu gia công | Đặc điểm |
 | :--- | :---: | :--- | :--- | :--- |
 | APMT1135* | 10 | OC3220, OP2202, OP1315, OP1325, OP1340, OP1030, OP1630, OK434 | P / M / K / N / S / H | Mảnh size 11, thích hợp dao đường kính nhỏ đến trung bình |
@@ -38,28 +48,41 @@ Mảnh **APMT1135** và **APMT1604** là chuẩn công nghiệp, có nhiều l�
 ## 3. Bảng các mã đài dao tương thích (Compatible Holders)
 ### 3.1. FM901 – Dạng cán trụ (Cylindrical Shank)
 
-| Mã Đài Dao | Mã Insert | DC (mm) | Số me cắt | Góc cắt (KAPR) | APMX (mm) |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| TH-FM901-P20-20-2-AP11-120 | APMT1135* | 20 | 2 | 90 | 10 |
-| TH-FM901-P20-20-2-AP11-170 | APMT1135* | 20 | 2 | 90 | 10 |
-| TH-FM901-P20-21-2-AP11-150 | APMT1135* | 20 | 2 | 90 | 10 |
-| TH-FM901-P20-21-2-AP11-200 | APMT1135* | 20 | 2 | 90 | 10 |
-| TH-FM901-P16-16-2-AP11-120 | APMT1135* | 16 | 2 | 90 | 10 |
-| TH-FM901-P16-16-2-AP11-170 | APMT1135* | 16 | 2 | 90 | 10 |
-| TH-FM901-P16-17-2-AP11-150 | APMT1135* | 16 | 2 | 90 | 10 |
-| TH-FM901-P16-17-2-AP11-200 | APMT1135* | 16 | 2 | 90 | 10 |
-| TH-FM901-P25-25-3-AP11-120 | APMT1135* | 25 | 3 | 90 | 10 |
-| TH-FM901-P25-25-3-AP11-170 | APMT1135* | 25 | 3 | 90 | 10 |
-| TH-FM901-P25-25-3-AP11-200 | APMT1135* | 25 | 3 | 90 | 10 |
+**Lưu ý:** FM901 có nhiều option chiều dài cán (LF) khác nhau: 120mm, 150mm, 160mm, 170mm, 200mm. Chiều dài làm việc (LH) tương ứng từ 35mm đến 50mm, phù hợp cho các ứng dụng gia công sâu khác nhau.
+
+| Mã Đài Dao | Mã Insert | DC (mm) | Số me cắt | LF (mm) | LH (mm) | APMX (mm) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| TH-FM901-P16-16-2-AP11-120 | APMT1135* | 16 | 2 | 120 | 35 | 10 |
+| TH-FM901-P16-16-2-AP11-170 | APMT1135* | 16 | 2 | 170 | 40 | 10 |
+| TH-FM901-P16-17-2-AP11-150 | APMT1135* | 17 | 2 | 150 | 40 | 10 |
+| TH-FM901-P16-17-2-AP11-200 | APMT1135* | 17 | 2 | 200 | 50 | 10 |
+| TH-FM901-P20-20-2-AP11-120 | APMT1135* | 20 | 2 | 120 | 35 | 10 |
+| TH-FM901-P20-20-2-AP11-170 | APMT1135* | 20 | 2 | 170 | 40 | 10 |
+| TH-FM901-P20-21-2-AP11-150 | APMT1135* | 21 | 2 | 150 | 40 | 10 |
+| TH-FM901-P20-21-2-AP11-200 | APMT1135* | 21 | 2 | 200 | 50 | 10 |
+| TH-FM901-P25-25-3-AP11-120 | APMT1135* | 25 | 3 | 120 | 35 | 10 |
+| TH-FM901-P25-25-3-AP11-170 | APMT1135* | 25 | 3 | 170 | 40 | 10 |
+| TH-FM901-P25-25-2-AP16-120 | APMT1604* | 25 | 2 | 120 | 35 | 15 |
+| TH-FM901-P25-25-2-AP16-170 | APMT1604* | 25 | 2 | 170 | 40 | 15 |
+| TH-FM901-P25-26-2-AP16-160 | APMT1604* | 26 | 2 | 160 | 40 | 15 |
+| TH-FM901-P25-26-2-AP16-200 | APMT1604* | 26 | 2 | 200 | 50 | 15 |
+| TH-FM901-P32-32-3-AP16-160 | APMT1604* | 32 | 3 | 160 | 40 | 15 |
+| TH-FM901-P32-32-3-AP16-200 | APMT1604* | 32 | 3 | 200 | 50 | 15 |
+| TH-FM901-P32-40-4-AP16-160 | APMT1604* | 40 | 4 | 160 | 40 | 15 |
+| TH-FM901-P32-40-4-AP16-200 | APMT1604* | 40 | 4 | 200 | 50 | 15 |
 
 ### 3.2. FM901 – Dạng đĩa (Shell Mill)
 
-| Mã Đài Dao | Mã Insert | DC (mm) | Số me cắt | Lỗ cốt (DCON) | Góc cắt (KAPR) | APMX (mm) |
+**Lưu ý:** Dạng đĩa (IC) có lỗ cốt (DCON) theo chuẩn A16, A22, A27. Chiều dài cố định (LF) 50mm cho tất cả các model.
+
+| Mã Đài Dao | Mã Insert | DC (mm) | Số me cắt | Lỗ cốt (DCON) | LF (mm) | APMX (mm) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| IC-FM901-A22-50-6-AP11 | APMT1135* | 50 | 6 | 22 | 90 | 10 |
-| IC-FM901-A22-63-7-AP11 | APMT1135* | 63 | 7 | 22 | 90 | 10 |
-| IC-FM901-A22-50-4-AP16 | APMT1604* | 50 | 4 | 22 | 90 | 15 |
-| IC-FM901-A22-63-5-AP16 | APMT1604* | 63 | 5 | 22 | 90 | 15 |
+| IC-FM901-A16-40-5-AP11 | APMT1135* | 40 | 5 | 16 | 50 | 10 |
+| IC-FM901-A22-50-6-AP11 | APMT1135* | 50 | 6 | 22 | 50 | 10 |
+| IC-FM901-A22-63-7-AP11 | APMT1135* | 63 | 7 | 22 | 50 | 10 |
+| IC-FM901-A22-50-4-AP16 | APMT1604* | 50 | 4 | 22 | 50 | 15 |
+| IC-FM901-A22-63-5-AP16 | APMT1604* | 63 | 5 | 22 | 50 | 15 |
+| IC-FM901-A27-80-6-AP16 | APMT1604* | 80 | 6 | 27 | 50 | 15 |
 
 <figure style="width:1000px; margin:auto; text-align:center;">
   <img src="https://anmitools.com/wp-content/uploads/2025/11/07-apmt-fm901-holder-thong-so-ky-thuat.webp" style="width:1000px; height:auto; border:1px solid rgba(0,0,0,0.08);" alt="Bản vẽ kỹ thuật dao phay vai vuông FM901">
