@@ -16,69 +16,90 @@ date_modified: "2025-10-20"
 schema_type: "Product"
 ---
 
-<section class="bt-oz-heavy-duty-tool-holder">
-  
-	<figure class="product-image">
-		<img src="https://anmitools.com/wp-content/uploads/2025/09/BT-OZ-Heavy-Duty-Tool-Holder.webp" 
-				 alt="BT-OZ Heavy Duty Tool Holder - Đầu kẹp OZ25/OZ32 16 rãnh chống rung cho boring, reaming chính xác" 
-				 loading="lazy" 
-				 width="800" 
-				 height="600">
-		<figcaption>BT-OZ Heavy Duty Tool Holder - Đầu kẹp OZ25/OZ32 16 rãnh chống rung, tối ưu cho boring, reaming và gia công lỗ sâu</figcaption>
-	</figure>
+# BT-OZ Heavy Duty Tool Holder – Cán Dao Tải Trọng Nặng Dùng OZ Collet
 
-	<h1>BT-OZ Heavy Duty Tool Holder – Đầu Kẹp OZ25/OZ32 16 Rãnh Chống Rung Cho Boring, Reaming Chính Xác</h1>
+## BT-OZ Heavy Duty Tool Holder – bt-oz heavy duty holder Cho Boring, Reaming Và Lỗ Sâu
 
-	<div class="section product-intro">
-		<p><strong>BT-OZ Heavy Duty Tool Holder</strong> là dòng cán dao tải trọng nặng dùng <strong>OZ collet (OZ25, OZ32)</strong>, thiết kế <strong>16 rãnh kẹp</strong> giúp tăng cứng vững và <strong>giảm rung mạnh</strong> cho các ứng dụng <strong>boring, reaming</strong> và <strong>gia công lỗ sâu</strong>. So với hệ <a href="https://anmitools.com/san-pham/bt-er-collet-chuck-standard/" rel="noopener">BT-ER Collet Chuck Standard</a> dùng ER collet đa năng, OZ collet ngắn hơn, thân dày hơn nên phù hợp hơn cho dao vươn dài.</p>
+**BT-OZ Heavy Duty Tool Holder** thuộc nhóm **BT SIDE LOCK** của **An Mi Tools**, được thiết kế cho các ứng dụng
+**bt-oz heavy duty holder** cần **chống rung mạnh** khi gia công lỗ sâu, dao vươn dài và boring/reaming chính xác.
 
-		<p>Với dải kẹp <strong>Φ3~32mm</strong>, run-out <strong>≤0.005mm</strong> và tương thích taper <strong>BT30/BT40/BT50</strong>, BT-OZ Heavy Duty Tool Holder giúp giữ ổn định boring bar, reamer và dao khoan sâu, hạn chế rung, cải thiện độ bóng bề mặt và kéo dài tuổi thọ dao trong các xưởng gia công CNC tại Việt Nam.</p>
-	</div>
+Khác với hệ thống **BT-ER Collet Chuck Standard** dùng ER collet đa năng, BT-OZ sử dụng **OZ collet (OZ25, OZ32)**
+ngắn hơn, thân dày hơn, kết hợp **16 rãnh kẹp** bên trong giúp tăng độ cứng vững và phân bố lực kẹp đều 360°.
+Kết quả là holder phù hợp hơn cho các ứng dụng tải nặng, dao dài và yêu cầu độ ổn định cao khi gia công lỗ.
 
-	<div class="section product-features">
-		<h2>🔷 Đặc Điểm Nổi Bật BT-OZ Heavy Duty</h2>
-		<ul>
-			<li>✅ <strong>OZ25/OZ32 collet</strong> – Kẹp dao Φ3–32mm, thân collet dày, cứng vững cao</li>
-			<li>✅ <strong>16 rãnh chống rung</strong> – Phân bổ lực kẹp đều 360°, giảm rung cho dao vươn dài</li>
-			<li>✅ <strong>Run-out ≤0.005mm</strong> – Đáp ứng boring, reaming cấp chính xác IT6–IT7</li>
-			<li>✅ <strong>Tối ưu cho lỗ sâu</strong> – Hạn chế dao bị hú, sứt mẻ khi L/D &gt;4</li>
-			<li>✅ <strong>Phối hợp cùng BT-C/BT-ER</strong> – BT-OZ chuyên lỗ chính xác, BT-C cho phay thô tải nặng, BT-ER cho ứng dụng đa năng</li>
-		</ul>
-	</div>
+Với dải kẹp **Φ3~32mm**, tương thích taper **BT30/BT40/BT50** và run-out **≤0.005mm (tại L≈3×D)**, BT-OZ Heavy Duty
+Tool Holder giúp ổn định boring bar, reamer và mũi khoan sâu, cải thiện độ bóng bề mặt và kéo dài tuổi thọ dao
+cho các xưởng gia công CNC tại Việt Nam.
 
-	<div class="section quick-specs">
-		<h2>📐 Thông Số Nhanh BT-OZ Heavy Duty Tool Holder</h2>
-		<div class="specs-grid">
-			<div class="spec-row">
-				<div class="spec-label">Collet</div>
-				<div class="spec-value">OZ25, OZ32</div>
-			</div>
-			<div class="spec-row">
-				<div class="spec-label">Dải kẹp</div>
-				<div class="spec-value">Φ3 ~ 32mm</div>
-			</div>
-			<div class="spec-row">
-				<div class="spec-label">Run-out</div>
-				<div class="spec-value">≤0.005mm (tại L≈3×D)</div>
-			</div>
-			<div class="spec-row">
-				<div class="spec-label">Chuẩn taper</div>
-				<div class="spec-value">BT30 / BT40 / BT50</div>
-			</div>
-			<div class="spec-row">
-				<div class="spec-label">Ứng dụng</div>
-				<div class="spec-value">Boring, reaming, deep hole drilling, dao vươn dài</div>
-			</div>
-		</div>
-	</div>
+## 5 Tính Năng Vượt Trội Của BT-OZ Heavy Duty Tool Holder
 
-	<div class="section related-products">
-		<h2>🔗 Sản Phẩm Liên Quan</h2>
-		<p>Để xây dựng hệ thống gá kẹp hoàn chỉnh, bạn có thể tham khảo thêm:</p>
-		<ul>
-			<li>🔹 <a href="https://anmitools.com/san-pham/bt-er-collet-chuck-standard/" rel="noopener">BT-ER Collet Chuck Standard</a> – Đầu kẹp ER đa năng, kinh tế cho hầu hết ứng dụng.</li>
-			<li>🔹 <a href="https://anmitools.com/san-pham/bt-c-power-chuck-tool-holder/" rel="noopener">BT-C Power Chuck Tool Holder</a> – Đầu kẹp tải nặng cho phay thô, dao đường kính lớn.</li>
-		</ul>
-	</div>
+1. **OZ25/OZ32 collet – kẹp dao Φ3–32mm:** Phù hợp từ mũi khoan nhỏ đến boring bar/reamer lớn, hỗ trợ cả gia công
+   lỗ tiêu chuẩn và lỗ sâu.
+2. **16 rãnh chống rung bên trong holder:** Lực kẹp được phân bố đều quanh chu vi, giảm rung rõ rệt so với ER collet
+   khi dùng dao có tỷ lệ L/D &gt;4.
+3. **Run-out ≤0.005mm:** Đáp ứng tốt các ứng dụng boring, reaming với cấp chính xác IT6–IT7, hạn chế sai số kích
+   thước và độ tròn lỗ.
+4. **Tương thích BT30/BT40/BT50:** Dễ dàng tích hợp với các dòng máy phay và trung tâm gia công CNC phổ biến
+   (Fanuc, Haas, Mazak, DMG Mori, Okuma…).
+5. **Kết hợp linh hoạt với BT-ER và BT-C:** BT-OZ chuyên cho lỗ chính xác và dao vươn dài, trong khi
+   [BT-ER Collet Chuck Standard](https://anmitools.com/san-pham/bt-er-collet-chuck-standard/) phù hợp ứng dụng
+   đa năng và [BT-C Power Chuck Tool Holder](https://anmitools.com/san-pham/bt-c-power-chuck-tool-holder/)
+   tối ưu cho phay thô tải nặng.
 
-</section>
+## Thông Số Kỹ Thuật BT-OZ Heavy Duty Tool Holder
+
+| Thông Số                 | Giá Trị                                                                 |
+|--------------------------|-------------------------------------------------------------------------|
+| **Collet**               | OZ25, OZ32                                                              |
+| **Dải kẹp**             | Φ3 ~ 32mm                                                               |
+| **Run-out**             | ≤0.005mm (đo tại L≈3×D)                                                 |
+| **Số rãnh**             | 16 rãnh chống rung, phân bố lực kẹp đều 360°                           |
+| **Chuẩn taper**         | BT30 / BT40 / BT50 (BT SIDE LOCK, tương đương ISO 7388/2)              |
+| **Ứng dụng chính**      | Boring, reaming, deep hole drilling, end milling với dao vươn dài      |
+| **Vật liệu phù hợp**    | Thép carbon, thép hợp kim, inox, gang xám, gang cầu                    |
+
+## Ứng Dụng Thực Tế BT-OZ Heavy Duty Tool Holder
+
+### 1. Boring Và Reaming Lỗ Chính Xác
+
+Trong các ứng dụng boring/reaming cấp chính xác IT6–IT7, **bt-oz heavy duty holder** giúp giữ ổn định boring bar
+và reamer, hạn chế rung, cải thiện độ đồng tâm và độ tròn lỗ. Đặc biệt hữu ích khi xử lý lỗ dài, lỗ bậc hoặc lỗ
+trên chi tiết có thành mỏng.
+
+### 2. Deep Hole Drilling Với Dao Vươn Dài
+
+Khi khoan lỗ sâu với tỷ lệ L/D &gt;4, cấu trúc **16 rãnh kẹp** và collet ngắn giúp giảm dao động uốn, hạn chế hiện tượng
+dao bị hú hoặc gãy. BT-OZ Heavy Duty Tool Holder phù hợp cho khoan sâu trên thép, inox hoặc gang yêu cầu bề mặt
+thành lỗ mịn.
+
+### 3. End Milling Với Dao Dài Trên Kết Cấu Khó Kẹp
+
+Đối với các chi tiết dạng khung, plate mỏng hoặc kết cấu khó gá, việc dùng dao phay cạnh/end mill vươn dài thường
+dễ bị rung. BT-OZ giúp tăng cứng vững hệ thống kẹp, cho phép nâng lượng chạy dao và chiều sâu cắt mà vẫn kiểm soát
+được độ rung và chất lượng bề mặt.
+
+## Câu Hỏi Thường Gặp Về BT-OZ Heavy Duty Tool Holder
+
+**BT-OZ khác gì so với BT-ER Collet Chuck Standard?**
+
+BT-OZ dùng **OZ collet ngắn với 16 rãnh** bên trong holder, tập trung cho boring, reaming và dao vươn dài cần chống
+rung mạnh. BT-ER dùng ER collet đa năng, phù hợp hơn cho phay/khoan/taro thông thường với chi phí kinh tế.
+
+**Nên chọn BT-OZ hay BT-C Power Chuck cho gia công tải nặng?**
+
+BT-OZ ưu tiên **gia công lỗ chính xác và dao vươn dài**, trong khi [BT-C Power Chuck Tool Holder](https://anmitools.com/san-pham/bt-c-power-chuck-tool-holder/)
+thiết kế cho **phay thô tải nặng** với dao đường kính lớn. Nhiều xưởng kết hợp cả BT-OZ, BT-ER và BT-C để tối ưu
+toàn bộ dải ứng dụng.
+
+## 📞 Liên Hệ Tư Vấn & Đặt Hàng BT-OZ
+
+**An Mi Tools** cung cấp **BT-OZ Heavy Duty Tool Holder** chính hãng, tư vấn chọn taper (BT30/40/50), size holder và
+bộ collet OZ25/OZ32 phù hợp từng dòng máy CNC.
+
+- Xem thêm danh mục hệ thống gá kẹp, cán dao: https://anmitools.com/he-thong-ga-kep-can-dao/
+- Liên hệ tư vấn: https://anmitools.com/lien-he/
+
+<div class="cta-buttons">
+  <a href="https://anmitools.com/contact-us/" class="btn btn-primary">💬 Báo Giá BT-OZ</a>
+  <a href="https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/" class="btn btn-primary">📄 Tải Catalog</a>
+</div>
