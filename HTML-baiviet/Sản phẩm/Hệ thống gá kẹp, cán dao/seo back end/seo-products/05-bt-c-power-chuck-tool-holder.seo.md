@@ -2,7 +2,7 @@
 title: "BT-C Power Chuck Tool Holder"
 slug: "bt-c-power-chuck-tool-holder"
 primary_keyword: "bt-c power chuck tool holder"
-tags: "BT-C, power chuck, tool holder, heavy duty machining"
+tags: "BT-C, BT C, bt-c power chuck tool holder, power chuck, tool holder, BT side lock, dau kep BT-C, dau kep power chuck, heavy duty machining, rough milling, BT30, BT40, BT50, C collet"
 category: "BT SIDE LOCK"
 catalog_page: "6"
 seo_title: "BT-C Power Chuck Tool Holder 2025 - bt-c power chuck tool holder heavy-duty machining"
