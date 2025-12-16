@@ -78,13 +78,17 @@ BT-C Power Chuck đặc biệt phù hợp cho:
 - **Ngành đóng tàu:** Khung tàu, bệ đỡ, trục chân vịt (propeller shaft)…
 - **Ngành năng lượng:** Turbine lớn, generator housing, valve body và các chi tiết chịu tải cao.
 
+Nếu anh/chị muốn tham khảo thêm các khuyến nghị tổng quát về **heavy-duty machining** và lựa chọn dao phay phù hợp, có thể xem thêm tài liệu kỹ thuật từ các hãng dụng cụ cắt quốc tế, ví dụ:
+
+- Hướng dẫn tối ưu phay thô tải nặng (heavy-duty milling) của Sandvik Coromant: https://www.sandvik.coromant.com
+
 ## Câu Hỏi Thường Gặp Về BT-C Power Chuck Tool Holder
 
 **BT-C khác gì so với BT-ER Collet Chuck Standard?**
 
 BT-C dùng **C collet 16 rãnh** với lực kẹp ma sát rất lớn, chuyên cho **heavy-duty machining**. Lực kẹp mạnh gấp nhiều lần
 ER collet tiêu chuẩn và không cho phép dao trượt khi cắt sâu. BT-ER đa năng, kinh tế hơn nhưng không phù hợp cho phay thô
-sâu hoặc tải trọng quá lớn.
+sâu hoặc tải trọng quá lớn. Anh/chị có thể tham khảo thêm so sánh tổng quan giữa các loại holder và collet system trên Wikipedia: https://en.wikipedia.org/wiki/Tool_holder
 
 **Có nên dùng BT-C cho finishing không?**
 
