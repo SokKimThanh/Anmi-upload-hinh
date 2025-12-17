@@ -118,6 +118,44 @@ class AnMi_Product_Style_Injector
     );
 
     /**
+     * Danh sách chi nhánh/địa chỉ (quản lý tập trung)
+     *
+     * Có thể override từ theme/plugin khác bằng filter:
+     * `anmi_product_style_offices`
+     */
+    private function get_offices()
+    {
+        $offices = array(
+            array(
+                'title' => '🏢 Trụ sở Hà Nội',
+                'phone_display' => '091 519 2325',
+                'phone_tel' => '+84915192325',
+                'address_html' => 'P.409, Cầu thang 5, CT4-ĐN3, Khu đô thị Sông Đà Mỹ Đình, Đường Đỗ Đình Thiện, Phường Từ Liêm, Thành phố Hà Nội.',
+            ),
+            array(
+                'title' => '🏢 Chi nhánh TP. Hồ Chí Minh',
+                'phone_display' => '091 315 2529',
+                'phone_tel' => '+84913152529',
+                'address_html' => '75 Đỗ Xuân Hợp, Phường Phước Long, TP.HCM',
+            ),
+            array(
+                'title' => '🏢 Chi nhánh Hải Phòng',
+                'phone_display' => '033 583 6600',
+                'phone_tel' => '+84335836600',
+                'address_html' => 'P2825 Hoàng Huy Grand Tower, số 2A Sở Dầu, Phường Hồng Bàng, Thành phố Hải Phòng',
+            ),
+            array(
+                'title' => '🏢 Chi nhánh Đà Nẵng',
+                'phone_display' => '091 204 1331',
+                'phone_tel' => '+84912041331',
+                'address_html' => '85 Hoàng Văn Thái, Phường Hòa Khánh, Thành phố Đà Nẵng',
+            ),
+        );
+
+        return apply_filters('anmi_product_style_offices', $offices);
+    }
+
+    /**
      * Constructor
      */
     public function __construct()
@@ -144,6 +182,96 @@ class AnMi_Product_Style_Injector
 
         // Add a lightweight admin page for debugging/file info
         add_action('admin_menu', array($this, 'add_admin_menu'));
+
+        // Shortcodes (centralized reusable blocks)
+        add_action('init', array($this, 'register_shortcodes'));
+    }
+
+    /**
+     * Register shortcodes
+     */
+    public function register_shortcodes()
+    {
+        add_shortcode('anmi_offices', array($this, 'shortcode_offices'));
+    }
+
+    /**
+     * Shortcode: [anmi_offices]
+     */
+    public function shortcode_offices($atts)
+    {
+        $atts = shortcode_atts(
+            array(
+                'wrapper' => '1',
+                'dots' => '1',
+            ),
+            $atts,
+            'anmi_offices'
+        );
+
+        $offices = $this->get_offices();
+        if (empty($offices) || !is_array($offices)) {
+            return '';
+        }
+
+        $render_wrapper = ($atts['wrapper'] !== '0');
+        $render_dots = ($atts['dots'] !== '0');
+
+        ob_start();
+
+        if ($render_wrapper) {
+            echo '<div class="contact-info-wrapper">';
+        }
+
+        echo '<div class="contact-info">';
+
+        foreach ($offices as $office) {
+            $title = isset($office['title']) ? (string) $office['title'] : '';
+            $phone_display = isset($office['phone_display']) ? (string) $office['phone_display'] : '';
+            $phone_tel = isset($office['phone_tel']) ? (string) $office['phone_tel'] : '';
+            $address_html = isset($office['address_html']) ? (string) $office['address_html'] : '';
+
+            if ($title === '' && $phone_display === '' && $address_html === '') {
+                continue;
+            }
+
+            echo '<div class="office">';
+
+            if ($title !== '') {
+                echo '<h3>' . esc_html($title) . '</h3>';
+            }
+
+            echo '<div class="contact-meta">';
+            echo '<span class="contact-meta-label">Hotline</span>';
+            if ($phone_tel !== '' && $phone_display !== '') {
+                echo '<a class="contact-meta-value" href="tel:' . esc_attr($phone_tel) . '">' . esc_html($phone_display) . '</a>';
+            } elseif ($phone_display !== '') {
+                echo '<span class="contact-meta-value">' . esc_html($phone_display) . '</span>';
+            }
+            echo '</div>';
+
+            if ($address_html !== '') {
+                echo '<div class="contact-address">';
+                echo '<span class="contact-address-label">Địa chỉ</span>';
+                echo '<p class="contact-address-value">' . wp_kses_post($address_html) . '</p>';
+                echo '</div>';
+            }
+
+            echo '</div>';
+        }
+
+        echo '</div>';
+
+        if ($render_dots) {
+            echo '<div class="contact-slider-dots" aria-hidden="true"></div>';
+            $render_wrapper = ($atts['wrapper'] !== '0');
+            $render_dots = ($atts['dots'] !== '0');
+
+        if ($render_wrapper) {
+            echo '</div>';
+        }
+                echo '<div class="contact-info-wrapper">';
+        return ob_get_clean();
     }
 
     /* ---------------------------------------------------------------------
@@ -157,7 +285,7 @@ class AnMi_Product_Style_Injector
      */
     private function is_supported_product_category($product_id)
     {
-        if (!is_singular('product')) {
+                echo '<div class="office">';
             return false;
         }
 
@@ -166,16 +294,16 @@ class AnMi_Product_Style_Injector
             return false;
         }
 
-        foreach ($terms as $term) {
+                    echo '<a class="contact-meta-value" href="tel:' . esc_attr($phone_tel) . '">' . esc_html($phone_display) . '</a>';
             // Exact match holder or milling categories
-            if ($term->slug === $this->holder_tools_cat || $term->slug === $this->milling_tools_cat) {
+                    echo '<span class="contact-meta-value">' . esc_html($phone_display) . '</span>';
                 return true;
             }
 
             // Child categories check
-            if (strpos($term->slug, $this->holder_tools_cat . '-') === 0 || strpos($term->slug, $this->milling_tools_cat . '-') === 0) {
-                return true;
-            }
+                    echo '<div class="contact-address">';
+                    echo '<span class="contact-address-label">Địa chỉ</span>';
+                    echo '<p class="contact-address-value">' . wp_kses_post($address_html) . '</p>';
         }
 
         return false;
@@ -185,7 +313,7 @@ class AnMi_Product_Style_Injector
      * Conditionally enqueue common CSS and helper scripts for holder product pages
      */
     public function enqueue_product_styles()
-    {
+                echo '<div class="contact-slider-dots" aria-hidden="true"></div>';
         if (!is_singular()) {
             return;
         }
