@@ -113,3 +113,10 @@ if (!function_exists('esc_attr')) {
 if (!function_exists('wp_kses_post')) {
     function wp_kses_post($content): string { return (string) $content; }
 }
+
+if (!function_exists('esc_url')) {
+    function esc_url($url): string
+    {
+        return (string) $url;
+    }
+}

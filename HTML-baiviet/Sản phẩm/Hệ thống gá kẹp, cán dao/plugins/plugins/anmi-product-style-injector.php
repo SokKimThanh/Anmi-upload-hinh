@@ -193,6 +193,7 @@ class AnMi_Product_Style_Injector
     public function register_shortcodes()
     {
         add_shortcode('anmi_offices', array($this, 'shortcode_offices'));
+        add_shortcode('anmi_contact_tab', array($this, 'shortcode_contact_tab'));
     }
 
     /**
@@ -269,6 +270,97 @@ class AnMi_Product_Style_Injector
         if ($render_wrapper) {
             echo '</div>';
         }
+
+        return ob_get_clean();
+    }
+
+    /**
+     * Shortcode: [anmi_contact_tab]
+     * Mẫu tab Liên hệ theo đúng thứ tự/layout của mẫu file 14.
+     *
+     * Attributes:
+     * - product: tên/mã sản phẩm để hiển thị trong tiêu đề và caption (vd: "HM192 & PDMT1305")
+     * - heading: override tiêu đề H2
+     * - intro: đoạn mô tả (HTML nhẹ)
+     * - quote_url: link báo giá (default: https://anmitools.com/contact-us/)
+     * - quote_text: text nút báo giá (default: "💬 Báo Giá")
+     * - catalog_url: link catalog (default: trang catalog hiện dùng)
+     * - catalog_text: text nút catalog (default: "📄 Tải Catalog Tooling")
+     */
+    public function shortcode_contact_tab($atts)
+    {
+        $atts = shortcode_atts(
+            array(
+                'product' => '',
+                'heading' => '',
+                'intro' => '',
+                'quote_url' => 'https://anmitools.com/contact-us/',
+                'quote_text' => '💬 Báo Giá',
+                'catalog_url' => 'https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/',
+                'catalog_text' => '📄 Tải Catalog Tooling',
+            ),
+            $atts,
+            'anmi_contact_tab'
+        );
+
+        $product = trim((string) $atts['product']);
+        $heading = trim((string) $atts['heading']);
+        $intro = (string) $atts['intro'];
+
+        if ($heading === '') {
+            $heading = $product !== '' ? ('📞 Liên Hệ Mua ' . $product . ' Chính Hãng') : '📞 Liên Hệ Mua Hàng Chính Hãng';
+        }
+
+        if ($intro === '') {
+            $intro = '<strong>An Mi Tools</strong> cung cấp sản phẩm chính hãng, hỗ trợ tư vấn kỹ thuật theo từng loại máy và vật liệu.';
+        }
+
+        // Lấy hotline chính (ưu tiên chi nhánh đầu tiên)
+        $offices = $this->get_offices();
+        $primary_hotline = '';
+        if (is_array($offices) && !empty($offices) && isset($offices[0]['phone_display'])) {
+            $primary_hotline = (string) $offices[0]['phone_display'];
+        }
+
+        $hotline_img = 'https://anmitools.com/wp-content/uploads/2025/10/HOTLINE-1900x1200-copy.webp';
+        $address_img = 'https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp';
+
+        $mobile_caption = $primary_hotline !== ''
+            ? ('Gọi ngay ' . $primary_hotline . ($product !== '' ? (' để được tư vấn ' . $product) : ' để được tư vấn sản phẩm'))
+            : ($product !== '' ? ('Gọi ngay để được tư vấn ' . $product) : 'Gọi ngay để được tư vấn sản phẩm');
+
+        ob_start();
+
+        echo '<div class="section support-contact">';
+        echo '<h2>' . esc_html($heading) . '</h2>';
+        echo '<p>' . wp_kses_post($intro) . '</p>';
+
+        echo '<div class="contact-cta cta-buttons">';
+        echo '<a href="' . esc_url($atts['quote_url']) . '" class="btn btn-primary cta-button">' . esc_html($atts['quote_text']) . '</a>';
+        echo '<a href="' . esc_url($atts['catalog_url']) . '" class="btn btn-primary cta-button">' . esc_html($atts['catalog_text']) . '</a>';
+        echo '</div>';
+
+        // Danh sách chi nhánh + dots (mobile swipe)
+        echo $this->shortcode_offices(array('wrapper' => '1', 'dots' => '1'));
+
+        // Desktop images
+        echo '<figure class="contact-image contact-image-desktop">';
+        echo '<img src="' . esc_url($hotline_img) . '" alt="An Mi Tools - Hotline tư vấn sản phẩm" loading="lazy" width="1900" height="1200">';
+        echo '<figcaption>Gọi ngay hotline để được tư vấn chuyên sâu về sản phẩm</figcaption>';
+        echo '</figure>';
+
+        echo '<figure class="contact-image contact-image-desktop">';
+        echo '<img src="' . esc_url($address_img) . '" alt="An Mi Tools - Thông tin liên hệ và hỗ trợ kỹ thuật 24/7" loading="lazy" width="1200" height="400">';
+        echo '<figcaption>Thông tin liên hệ <strong>An Mi Tools</strong> - Hỗ trợ kỹ thuật 24/7 và các giải pháp gá kẹp công cụ CNC</figcaption>';
+        echo '</figure>';
+
+        // Mobile image
+        echo '<figure class="contact-image contact-image-mobile">';
+        echo '<img src="' . esc_url($hotline_img) . '" alt="An Mi Tools - Hotline" loading="lazy" width="1900" height="1200">';
+        echo '<figcaption>' . esc_html($mobile_caption) . '</figcaption>';
+        echo '</figure>';
+
+        echo '</div>';
 
         return ob_get_clean();
     }
@@ -365,6 +457,11 @@ class AnMi_Product_Style_Injector
     private function is_holder_product($post)
     {
         $content = $post->post_content;
+
+        // Shortcode-based pages: ensure CSS/JS still loads even when HTML classes are not present in raw content
+        if (strpos($content, '[anmi_offices') !== false || strpos($content, '[anmi_contact_tab') !== false) {
+            return true;
+        }
 
         // 1) Search for specific CSS CLASSES in the content
 
