@@ -264,13 +264,12 @@ class AnMi_Product_Style_Injector
 
         if ($render_dots) {
             echo '<div class="contact-slider-dots" aria-hidden="true"></div>';
-            $render_wrapper = ($atts['wrapper'] !== '0');
-            $render_dots = ($atts['dots'] !== '0');
+        }
 
         if ($render_wrapper) {
             echo '</div>';
         }
-                echo '<div class="contact-info-wrapper">';
+
         return ob_get_clean();
     }
 
@@ -285,7 +284,7 @@ class AnMi_Product_Style_Injector
      */
     private function is_supported_product_category($product_id)
     {
-                echo '<div class="office">';
+        if (!is_singular('product')) {
             return false;
         }
 
@@ -294,16 +293,16 @@ class AnMi_Product_Style_Injector
             return false;
         }
 
-                    echo '<a class="contact-meta-value" href="tel:' . esc_attr($phone_tel) . '">' . esc_html($phone_display) . '</a>';
+        foreach ($terms as $term) {
             // Exact match holder or milling categories
-                    echo '<span class="contact-meta-value">' . esc_html($phone_display) . '</span>';
+            if ($term->slug === $this->holder_tools_cat || $term->slug === $this->milling_tools_cat) {
                 return true;
             }
 
             // Child categories check
-                    echo '<div class="contact-address">';
-                    echo '<span class="contact-address-label">Địa chỉ</span>';
-                    echo '<p class="contact-address-value">' . wp_kses_post($address_html) . '</p>';
+            if (strpos($term->slug, $this->holder_tools_cat . '-') === 0 || strpos($term->slug, $this->milling_tools_cat . '-') === 0) {
+                return true;
+            }
         }
 
         return false;
@@ -313,7 +312,7 @@ class AnMi_Product_Style_Injector
      * Conditionally enqueue common CSS and helper scripts for holder product pages
      */
     public function enqueue_product_styles()
-                echo '<div class="contact-slider-dots" aria-hidden="true"></div>';
+    {
         if (!is_singular()) {
             return;
         }
