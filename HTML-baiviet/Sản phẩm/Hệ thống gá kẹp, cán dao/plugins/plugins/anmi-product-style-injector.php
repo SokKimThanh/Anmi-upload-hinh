@@ -118,6 +118,44 @@ class AnMi_Product_Style_Injector
     );
 
     /**
+     * Danh sách chi nhánh/địa chỉ (quản lý tập trung)
+     *
+     * Có thể override từ theme/plugin khác bằng filter:
+     * `anmi_product_style_offices`
+     */
+    private function get_offices()
+    {
+        $offices = array(
+            array(
+                'title' => '🏢 Trụ sở Hà Nội',
+                'phone_display' => '091 519 2325',
+                'phone_tel' => '+84915192325',
+                'address_html' => 'P.409, Cầu thang 5, CT4-ĐN3, Khu đô thị Sông Đà Mỹ Đình, Đường Đỗ Đình Thiện, Phường Từ Liêm, Thành phố Hà Nội.',
+            ),
+            array(
+                'title' => '🏢 Chi nhánh TP. Hồ Chí Minh',
+                'phone_display' => '091 315 2529',
+                'phone_tel' => '+84913152529',
+                'address_html' => '75 Đỗ Xuân Hợp, Phường Phước Long, TP.HCM',
+            ),
+            array(
+                'title' => '🏢 Chi nhánh Hải Phòng',
+                'phone_display' => '033 583 6600',
+                'phone_tel' => '+84335836600',
+                'address_html' => 'P2825 Hoàng Huy Grand Tower, số 2A Sở Dầu, Phường Hồng Bàng, Thành phố Hải Phòng',
+            ),
+            array(
+                'title' => '🏢 Chi nhánh Đà Nẵng',
+                'phone_display' => '091 204 1331',
+                'phone_tel' => '+84912041331',
+                'address_html' => '85 Hoàng Văn Thái, Phường Hòa Khánh, Thành phố Đà Nẵng',
+            ),
+        );
+
+        return apply_filters('anmi_product_style_offices', $offices);
+    }
+
+    /**
      * Constructor
      */
     public function __construct()
@@ -144,6 +182,187 @@ class AnMi_Product_Style_Injector
 
         // Add a lightweight admin page for debugging/file info
         add_action('admin_menu', array($this, 'add_admin_menu'));
+
+        // Shortcodes (centralized reusable blocks)
+        add_action('init', array($this, 'register_shortcodes'));
+    }
+
+    /**
+     * Register shortcodes
+     */
+    public function register_shortcodes()
+    {
+        add_shortcode('anmi_offices', array($this, 'shortcode_offices'));
+        add_shortcode('anmi_contact_tab', array($this, 'shortcode_contact_tab'));
+    }
+
+    /**
+     * Shortcode: [anmi_offices]
+     */
+    public function shortcode_offices($atts)
+    {
+        $atts = shortcode_atts(
+            array(
+                'wrapper' => '1',
+                'dots' => '1',
+            ),
+            $atts,
+            'anmi_offices'
+        );
+
+        $offices = $this->get_offices();
+        if (empty($offices) || !is_array($offices)) {
+            return '';
+        }
+
+        $render_wrapper = ($atts['wrapper'] !== '0');
+        $render_dots = ($atts['dots'] !== '0');
+
+        ob_start();
+
+        if ($render_wrapper) {
+            echo '<div class="contact-info-wrapper">';
+        }
+
+        echo '<div class="contact-info">';
+
+        foreach ($offices as $office) {
+            $title = isset($office['title']) ? (string) $office['title'] : '';
+            $phone_display = isset($office['phone_display']) ? (string) $office['phone_display'] : '';
+            $phone_tel = isset($office['phone_tel']) ? (string) $office['phone_tel'] : '';
+            $address_html = isset($office['address_html']) ? (string) $office['address_html'] : '';
+
+            if ($title === '' && $phone_display === '' && $address_html === '') {
+                continue;
+            }
+
+            echo '<div class="office">';
+
+            if ($title !== '') {
+                echo '<h3>' . esc_html($title) . '</h3>';
+            }
+
+            echo '<div class="contact-meta">';
+            echo '<span class="contact-meta-label">Hotline</span>';
+            if ($phone_tel !== '' && $phone_display !== '') {
+                echo '<a class="contact-meta-value" href="tel:' . esc_attr($phone_tel) . '">' . esc_html($phone_display) . '</a>';
+            } elseif ($phone_display !== '') {
+                echo '<span class="contact-meta-value">' . esc_html($phone_display) . '</span>';
+            }
+            echo '</div>';
+
+            if ($address_html !== '') {
+                echo '<div class="contact-address">';
+                echo '<span class="contact-address-label">Địa chỉ</span>';
+                echo '<p class="contact-address-value">' . wp_kses_post($address_html) . '</p>';
+                echo '</div>';
+            }
+
+            echo '</div>';
+        }
+
+        echo '</div>';
+
+        if ($render_dots) {
+            echo '<div class="contact-slider-dots" aria-hidden="true"></div>';
+        }
+
+        if ($render_wrapper) {
+            echo '</div>';
+        }
+
+        return ob_get_clean();
+    }
+
+    /**
+     * Shortcode: [anmi_contact_tab]
+     * Mẫu tab Liên hệ theo đúng thứ tự/layout của mẫu file 14.
+     *
+     * Attributes:
+     * - product: tên/mã sản phẩm để hiển thị trong tiêu đề và caption (vd: "HM192 & PDMT1305")
+     * - heading: override tiêu đề H2
+     * - intro: đoạn mô tả (HTML nhẹ)
+     * - quote_url: link báo giá (default: https://anmitools.com/contact-us/)
+     * - quote_text: text nút báo giá (default: "💬 Báo Giá")
+     * - catalog_url: link catalog (default: trang catalog hiện dùng)
+     * - catalog_text: text nút catalog (default: "📄 Tải Catalog Tooling")
+     */
+    public function shortcode_contact_tab($atts)
+    {
+        $atts = shortcode_atts(
+            array(
+                'product' => '',
+                'heading' => '',
+                'intro' => '',
+                'quote_url' => 'https://anmitools.com/contact-us/',
+                'quote_text' => '💬 Báo Giá',
+                'catalog_url' => 'https://anmitools.com/catalog-anmi-tools/tai-xuong/catalog-san-pham-an-mi-tools/',
+                'catalog_text' => '📄 Tải Catalog Tooling',
+            ),
+            $atts,
+            'anmi_contact_tab'
+        );
+
+        $product = trim((string) $atts['product']);
+        $heading = trim((string) $atts['heading']);
+        $intro = (string) $atts['intro'];
+
+        if ($heading === '') {
+            $heading = $product !== '' ? ('📞 Liên Hệ Mua ' . $product . ' Chính Hãng') : '📞 Liên Hệ Mua Hàng Chính Hãng';
+        }
+
+        if ($intro === '') {
+            $intro = '<strong>An Mi Tools</strong> cung cấp sản phẩm chính hãng, hỗ trợ tư vấn kỹ thuật theo từng loại máy và vật liệu.';
+        }
+
+        // Lấy hotline chính (ưu tiên chi nhánh đầu tiên)
+        $offices = $this->get_offices();
+        $primary_hotline = '';
+        if (is_array($offices) && !empty($offices) && isset($offices[0]['phone_display'])) {
+            $primary_hotline = (string) $offices[0]['phone_display'];
+        }
+
+        $hotline_img = 'https://anmitools.com/wp-content/uploads/2025/10/HOTLINE-1900x1200-copy.webp';
+        $address_img = 'https://anmitools.com/wp-content/uploads/2025/09/trang-30_tools_diachi-editbyAI.webp';
+
+        $mobile_caption = $primary_hotline !== ''
+            ? ('Gọi ngay ' . $primary_hotline . ($product !== '' ? (' để được tư vấn ' . $product) : ' để được tư vấn sản phẩm'))
+            : ($product !== '' ? ('Gọi ngay để được tư vấn ' . $product) : 'Gọi ngay để được tư vấn sản phẩm');
+
+        ob_start();
+
+        echo '<div class="section support-contact">';
+        echo '<h2>' . esc_html($heading) . '</h2>';
+        echo '<p>' . wp_kses_post($intro) . '</p>';
+
+        echo '<div class="contact-cta cta-buttons">';
+        echo '<a href="' . esc_url($atts['quote_url']) . '" class="btn btn-primary cta-button">' . esc_html($atts['quote_text']) . '</a>';
+        echo '<a href="' . esc_url($atts['catalog_url']) . '" class="btn btn-primary cta-button">' . esc_html($atts['catalog_text']) . '</a>';
+        echo '</div>';
+
+        // Danh sách chi nhánh + dots (mobile swipe)
+        echo $this->shortcode_offices(array('wrapper' => '1', 'dots' => '1'));
+
+        // Desktop images
+        echo '<figure class="contact-image contact-image-desktop">';
+        echo '<img src="' . esc_url($hotline_img) . '" alt="An Mi Tools - Hotline tư vấn sản phẩm" loading="lazy" width="1900" height="1200">';
+        echo '<figcaption>Gọi ngay hotline để được tư vấn chuyên sâu về sản phẩm</figcaption>';
+        echo '</figure>';
+
+        echo '<figure class="contact-image contact-image-desktop">';
+        echo '<img src="' . esc_url($address_img) . '" alt="An Mi Tools - Thông tin liên hệ và hỗ trợ kỹ thuật 24/7" loading="lazy" width="1200" height="400">';
+        echo '<figcaption>Thông tin liên hệ <strong>An Mi Tools</strong> - Hỗ trợ kỹ thuật 24/7 và các giải pháp gá kẹp công cụ CNC</figcaption>';
+        echo '</figure>';
+
+        // Mobile image
+        echo '<figure class="contact-image contact-image-mobile">';
+        echo '<img src="' . esc_url($hotline_img) . '" alt="An Mi Tools - Hotline" loading="lazy" width="1900" height="1200">';
+        echo '<figcaption>' . esc_html($mobile_caption) . '</figcaption>';
+        echo '</figure>';
+
+        echo '</div>';
+
+        return ob_get_clean();
     }
 
     /* ---------------------------------------------------------------------
@@ -238,6 +457,11 @@ class AnMi_Product_Style_Injector
     private function is_holder_product($post)
     {
         $content = $post->post_content;
+
+        // Shortcode-based pages: ensure CSS/JS still loads even when HTML classes are not present in raw content
+        if (strpos($content, '[anmi_offices') !== false || strpos($content, '[anmi_contact_tab') !== false) {
+            return true;
+        }
 
         // 1) Search for specific CSS CLASSES in the content
 
