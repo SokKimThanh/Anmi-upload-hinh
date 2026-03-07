@@ -1,0 +1,8 @@
+Tiêu chí,Bài viết Tuyển dụng,Bài viết SEO Website
+Mục đích chính,Thu hút nhân tài phù hợp và thuyết phục họ nộp CV.,Leo thứ hạng trên Google và kéo traffic (lượt truy cập).
+Đối tượng đọc,Ứng viên tiềm năng (đang tìm việc hoặc quan tâm cơ hội).,"Người dùng đang tìm kiếm thông tin, giải pháp."
+Từ khóa (Keywords),"Tên vị trí, địa điểm, kỹ năng chuyên môn (Ví dụ: ""Content Marketing Manager Quận 1"").","Các cụm từ tìm kiếm phổ biến (Ví dụ: ""Cách viết content hay"", ""Mẫu bài viết chuẩn SEO"")."
+Cấu trúc,"Tập trung vào: JD (Mô tả), Quyền lợi, Yêu cầu, Cách thức ứng tuyển.","Tập trung vào: Tiêu đề H1, H2, H3, mật độ từ khóa, liên kết nội bộ (Internal link)."
+Yếu tố cảm xúc,"Rất cao. Cần làm nổi bật văn hóa công ty, ""chạm"" vào mong muốn sự nghiệp.","Trung bình. Ưu tiên tính hữu ích, logic và độ chính xác của thông tin."
+Lời kêu gọi (CTA),"""Ứng tuyển ngay"", ""Gửi CV về..."", ""Gia nhập team mình"".","""Đăng ký ngay"", ""Xem thêm"", ""Mua hàng"", ""Để lại bình luận""."
+Tuổi thọ,Ngắn hạn (thường kết thúc khi tìm được người).,"Dài hạn (càng lâu đời, càng uy tín nếu nội dung tốt)."

@@ -1,0 +1,30 @@
+Khu vực,Địa chỉ chi tiết,Nhân sự phân bổ/tuyển dụng
+Hà Nội,"Tòa CT4, KĐT Sông Đà Mỹ Đình, Nam Từ Liêm",1 Marketing (Kiêm TLBH) + 2 TLBH + 1 NVBH
+Hải Phòng,"P2825 Hoàng Huy Grand Tower, Hồng Bàng",1 NVBH
+Bắc Ninh,"76 Nguyễn Đăng, Suối Hoa",1 NVBH
+Hưng Yên,Nhà máy phía Bắc: KCN Dệt may Phố Nối B,1 NVBH (Vị trí Biệt kích)
+Đà Nẵng,"85 Hoàng Văn Thái, Liên Chiểu",1 NVBH (Khu vực Miền Trung)
+TP. HCM,"75 Đỗ Xuân Hợp, Phước Long B, Thủ Đức",2 NVBH
+Đồng Nai - VT,(Khai thác thị trường lân cận HCM),5 NVBH
+Vĩnh Phúc,"103 Tôn Đức Thắng, Vĩnh Yên",(Hiện tại định biên trên chưa nhắc tới - có thể cần bổ sung)
+
+STT,Bộ phận/Khu vực,Số lượng & Vai trò,Ghi chú
+1,Marketing,1 người,Người này vừa làm Marketing vừa kiêm nhiệm Trợ lý bán hàng.
+2,Bán hàng Hà Nội (BHHN),3 người,Gồm 2 Trợ lý bán hàng và 1 Nhân viên bán hàng.
+3,Bán hàng Hải Phòng (BHHP),1 người,1 Nhân viên bán hàng phụ trách khu vực HP.
+4,Bán hàng Bắc Ninh (BHBN),1 người,1 Nhân viên bán hàng phụ trách khu vực BN.
+5,Biệt kích (Hưng Yên),1 người,"Đây thường là vị trí ""đánh thuê"" hoặc khai phá thị trường mới tại Hưng Yên."
+6,Bán hàng TP.HCM (BHHCM),2 người,2 Nhân viên bán hàng phụ trách khu vực HCM.
+7,Bán hàng Đồng Nai - Vũng Tàu,5 người,"Đội ngũ đông nhất, tập trung 5 Nhân viên bán hàng."
+8,Bán hàng Miền Trung (BHMT),1 người,1 Nhân viên bán hàng phụ trách khu vực Đà Nẵng.
+
+Giải thích các thuật ngữ viết tắt:
+NVBH: Nhân viên bán hàng (Sales Staff).
+
+TLBH: Trợ lý bán hàng (Sales Assistant) - người hỗ trợ các thủ tục, giấy tờ, đơn hàng cho đội kinh doanh.
+
+Kiêm nhiệm: Một người đảm nhận cùng lúc hai vai trò.
+
+BH + [Tên địa phương]: Viết tắt của "Bán hàng" tại khu vực đó (Ví dụ: BHHN là Bán hàng Hà Nội).
+
+
