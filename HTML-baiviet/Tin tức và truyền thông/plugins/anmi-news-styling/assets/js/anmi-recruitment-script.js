@@ -20,4 +20,22 @@
     }
   });
 
+  /* ── Region selector (CTA box) ───────────────────────────────── */
+  $(document).on('click', '.region-btn', function () {
+    var $btn   = $(this);
+    var target = $btn.data('target');
+    var $cta   = $btn.closest('.cta-box');
+
+    // Đổi trạng thái nút
+    $cta.find('.region-btn')
+      .removeClass('btn-primary').addClass('btn-outline-primary')
+      .attr('aria-pressed', 'false');
+    $btn.removeClass('btn-outline-primary').addClass('btn-primary')
+      .attr('aria-pressed', 'true');
+
+    // Hiện panel được chọn, ẩn panel còn lại
+    $cta.find('.region-panel').hide();
+    $cta.find('.region-panel[data-region="' + target + '"]').show();
+  });
+
 })(jQuery);

@@ -338,10 +338,15 @@
 
       <div class="cta-box border border-2 border-primary rounded-4 p-4 p-md-5 mt-5">
         <h2>Cách Ứng Tuyển Vị Trí Trợ Lý Bán Hàng 2026</h2>
-        <p class="mb-3">Quan tâm? Gửi CV ngay qua email hoặc form online, hoặc gọi thẳng cho HR:</p>
+        <p class="mb-3">Quan tâm? Chọn khu vực của bạn để xem thông tin liên hệ và form ứng tuyển phù hợp:</p>
+
+        <div class="region-selector d-flex gap-2 mb-4" role="group" aria-label="Chọn khu vực ứng tuyển">
+          <button type="button" class="btn btn-outline-primary region-btn" data-target="bac">📍 Phía Bắc</button>
+          <button type="button" class="btn btn-outline-primary region-btn" data-target="nam">📍 Phía Nam</button>
+        </div>
 
         <div class="row g-3 mb-3">
-          <div class="col-sm-6">
+          <div class="col-sm-6 region-panel" data-region="bac" style="display:none">
             <div class="border rounded-3 p-3 bg-white h-100">
               <div class="fw-bold text-primary mb-1">📍 Phía Bắc</div>
               <div class="small">Hà Nội · Hải Phòng · Bắc Ninh · Hưng Yên · Đà Nẵng</div>
@@ -352,7 +357,7 @@
               <div class="small text-muted mt-1">Tiêu đề: [TLBH] – Họ tên – Khu vực</div>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 region-panel" data-region="nam" style="display:none">
             <div class="border rounded-3 p-3 bg-white h-100">
               <div class="fw-bold text-primary mb-1">📍 Phía Nam</div>
               <div class="small">TP. HCM · Đồng Nai · Vũng Tàu</div>
@@ -366,11 +371,11 @@
         </div>
 
         <div class="row g-3 mb-3">
-          <div class="col-sm-6">
+          <div class="col-12 region-panel" data-region="bac" style="display:none">
             <div class="small fw-semibold mb-1">Form ứng tuyển – Phía Bắc:</div>
             [contact-form-7 id="1f70f3a" title="Ứng tuyển – Phía Bắc"]
           </div>
-          <div class="col-sm-6">
+          <div class="col-12 region-panel" data-region="nam" style="display:none">
             <div class="small fw-semibold mb-1">Form ứng tuyển – Phía Nam:</div>
             [contact-form-7 id="a3fbfcb" title="Ứng tuyển – Phía Nam"]
           </div>
