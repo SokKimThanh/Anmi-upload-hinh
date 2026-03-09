@@ -176,7 +176,7 @@
 |---|---|
 | **Focus Keyword** | `tuyển dụng nhân viên kinh doanh kỹ thuật` |
 | **SEO Title** | `Tuyển Dụng Nhân Viên Kinh Doanh Kỹ Thuật – 7 Khu Vực Tuyển Dụng | ANMI Tools 2026` |
-| **URL Slug** | `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat` *(42 ký tự – đạt chuẩn ≤ 50)* |
+| **URL Slug** | `tuyen-dung-kinh-doanh-ky-thuat` *(31 ký tự – tối ưu)* |
 | **Meta Description** | `ANMI tuyển dụng Nhân viên Kinh doanh Kỹ thuật tại Hà Nội, HCM, Đà Nẵng và 6 khu vực. Lương cạnh tranh, môi trường quốc tế, làm việc cùng chuyên gia Nhật – Hàn. Ứng tuyển ngay!` *(157 ký tự)* |
 | **OG Image** | `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat-anmi-2026.jpg` *(< 200KB, cài trong Social tab)* |
 
@@ -279,7 +279,7 @@ H2 → Cách Ứng Tuyển – Nhân Viên Kinh Doanh Kỹ Thuật 2026         
 - [ ] Tab *Social* → OG Image đã đặt: `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat-anmi-2026.jpg`
 
 **Kiểm tra nội dung bài viết:**
-- [ ] Slug: `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat` – không dấu, có từ khóa, ≤ 50 ký tự
+- [ ] Slug: `tuyen-dung-kinh-doanh-ky-thuat` – không dấu, có từ khóa, ≤ 50 ký tự
 - [ ] Không có thẻ H1 thủ công trong phần body bài viết
 - [ ] Featured Image đã đặt → alt text chứa từ khóa chính
 - [ ] Tên file ảnh đặt đúng chuẩn trước khi upload
