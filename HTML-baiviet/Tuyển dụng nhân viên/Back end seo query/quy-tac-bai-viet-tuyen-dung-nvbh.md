@@ -167,7 +167,7 @@ Form CF7 hiện đang dùng chung cho 3 vị trí:
 - [ ] Mật độ từ khóa ~1%
 - [ ] 2–4 internal link đã kiểm tra URL đúng
 - [ ] External link có `target="_blank" rel="noopener noreferrer"`
-- [ ] **Điền số hotline HR** thực tế vào `href="tel:+84..."` *(còn để trống)*
+- [ ] ~~**Điền số hotline HR** thực tế vào `href="tel:+84..."` *(đã điền)*~~
 - [ ] Upload ảnh: `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat-anmi-2026.jpg` (< 200KB)
 
 **Sau khi đăng:**
@@ -181,5 +181,5 @@ Form CF7 hiện đang dùng chung cho 3 vị trí:
 
 | Hạng mục | Trạng thái |
 |---|---|
-| Số điện thoại HR (Ms. Lan Phương & Ms. Thảo) | ⏳ Chưa có – điền trước khi publish |
+| Số điện thoại HR (Ms. Lan Phương & Ms. Thảo) | ✅ Đã điền: HN `091 519 2325` / HCM `091 315 2529` |
 | Kiểm tra URL internal link khớp WordPress thực tế | ⏳ Cần xác nhận sau khi đăng |
