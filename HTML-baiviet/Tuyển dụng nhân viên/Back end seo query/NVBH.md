@@ -161,3 +161,134 @@
 |---|---|---|
 | Họ tên: ................... | Họ tên: ................... | Họ tên: ................... |
 | Ngày: ..../..../......... | Ngày: ..../..../......... | Ngày: ..../..../......... |
+
+---
+
+## X. SEO BACKEND – CẤU HÌNH RANK MATH & SCHEMA
+
+> Phần này dành cho người đăng bài lên WordPress. Điền đầy đủ trước khi nhấn **Publish**.
+
+---
+
+### 1. Thông tin SEO cơ bản (Rank Math → tab General)
+
+| Mục | Nội dung |
+|---|---|
+| **Focus Keyword** | `tuyển dụng nhân viên kinh doanh kỹ thuật` |
+| **SEO Title** | `Tuyển Dụng Nhân Viên Kinh Doanh Kỹ Thuật – 7 Khu Vực Tuyển Dụng | ANMI Tools 2026` |
+| **URL Slug** | `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat` *(42 ký tự – đạt chuẩn ≤ 50)* |
+| **Meta Description** | `ANMI tuyển dụng Nhân viên Kinh doanh Kỹ thuật tại Hà Nội, HCM, Đà Nẵng và 6 khu vực. Lương cạnh tranh, môi trường quốc tế, làm việc cùng chuyên gia Nhật – Hàn. Ứng tuyển ngay!` *(157 ký tự)* |
+| **OG Image** | `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat-anmi-2026.jpg` *(< 200KB, cài trong Social tab)* |
+
+---
+
+### 2. Chiến lược từ khóa (Keyword Strategy)
+
+| Loại | Từ khóa |
+|---|---|
+| **Từ khóa chính** | `tuyển dụng nhân viên kinh doanh kỹ thuật` |
+| **Từ khóa phụ** | `tuyển dụng nhân viên bán hàng kỹ thuật`, `việc làm cơ khí`, `ANMI tuyển dụng 2026`, `sales kỹ thuật` |
+| **Từ khóa địa phương** | `tuyển dụng tại Hà Nội`, `việc làm Nam Từ Liêm`, `tuyển dụng Thủ Đức`, `tuyển dụng Bắc Ninh`, `việc làm Hải Phòng`, `tuyển dụng KCN Phố Nối Hưng Yên`, `việc làm Đà Nẵng`, `tuyển dụng Đồng Nai – Vũng Tàu` |
+| **Từ khóa đuôi dài** | `tuyển dụng sales kỹ thuật cơ khí 2026`, `nhân viên kinh doanh dụng cụ cắt`, `việc làm B2B kỹ thuật tại Việt Nam` |
+
+**Mật độ từ khóa mục tiêu:** ~1% *(bài ~1.400 từ → từ khóa chính xuất hiện **12–15 lần** trong bài)*
+
+---
+
+### 3. Schema JobPosting (Rank Math → tab Schema → Add Schema → Job Posting)
+
+| Trường Schema | Nội dung điền |
+|---|---|
+| `jobTitle` | `Nhân Viên Kinh Doanh Kỹ Thuật` |
+| `hiringOrganization.name` | `Công ty ANMI Tools` |
+| `hiringOrganization.sameAs` | `https://anmitools.com` |
+| `hiringOrganization.logo` | `https://anmitools.com/wp-content/uploads/logo-anmi.png` |
+| `datePosted` | `2026-03-07` |
+| `validThrough` | `2026-04-30T00:00` |
+| `employmentType` | `FULL_TIME` |
+| `baseSalary.currency` | `VND` |
+| `baseSalary.minValue` | `10,000,000` |
+| `baseSalary.maxValue` | `25,000,000` |
+| `baseSalary.unitText` | `MONTH` |
+| `educationRequirements` | `Cao đẳng trở lên, chuyên ngành Cơ khí` |
+| `experienceRequirements` | `Ưu tiên có kinh nghiệm Sales kỹ thuật` |
+| `jobLocation[1]` | Tòa CT4, KĐT Sông Đà Mỹ Đình, Nam Từ Liêm, Hà Nội |
+| `jobLocation[2]` | 75 Đỗ Xuân Hợp, Phước Long B, Thủ Đức, TP. Hồ Chí Minh |
+
+> Rank Math là plugin **duy nhất hỗ trợ schema JobPosting miễn phí**. Sau khi đăng, kiểm tra tại [search.google.com/test/rich-results](https://search.google.com/test/rich-results).
+
+---
+
+### 4. Ảnh đại diện (Featured Image & Alt Text)
+
+| Mục | Nội dung |
+|---|---|
+| **Tên file ảnh** | `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat-anmi-2026.jpg` |
+| **Alt text** | `tuyển dụng nhân viên kinh doanh kỹ thuật ANMI Tools tại 7 khu vực toàn quốc 2026` |
+| **Kích thước tối đa** | < 200KB *(nén bằng Smush / ShortPixel trước khi upload)* |
+| **OG Image (mạng xã hội)** | Cùng ảnh trên hoặc ảnh riêng 1200×630px; cài trong *Rank Math → tab Social → OG Image* |
+
+---
+
+### 5. Internal Link & External Link
+
+| Loại | Anchor text gợi ý | URL đích |
+|---|---|---|
+| **Internal** | Tuyển dụng Trợ lý Bán hàng tại ANMI Tools | `/tuyen-dung-tro-ly-ban-hang-hcm/` |
+| **Internal** | văn hóa và sứ mệnh của ANMI Tools | `/ve-chung-toi/` |
+| **Internal** | Form ứng tuyển trực tuyến tại đây | `/ung-tuyen/` |
+| **Internal** | Xem bản đồ văn phòng Hà Nội | `/ve-chung-toi/#van-phong-ha-noi/` |
+| **External** | trang LinkedIn của ANMI Tools | `https://www.linkedin.com/company/anmitools` *(target=_blank, noopener noreferrer)* |
+
+---
+
+### 6. Cấu trúc Heading (kiểm tra trước khi đăng)
+
+```
+H1 → [Tự động từ Title field WordPress – KHÔNG lặp lại H1 trong body]
+H2 → Số Lượng & Khu Vực Tuyển Dụng Nhân Viên Kinh Doanh Kỹ Thuật  ← có từ khóa ✅
+H2 → Mô Tả Công Việc – Nhân Viên Kinh Doanh Kỹ Thuật               ← có từ khóa ✅
+  H3 → 1. Lập Kế Hoạch Kinh Doanh
+  H3 → 2. Phát Triển & Chăm Sóc Khách Hàng
+  H3 → 3. Báo Cáo & Phân Tích Thị Trường
+H2 → Yêu Cầu Ứng Viên
+  H3 → Học Vấn & Chuyên Môn (Bắt buộc)
+  H3 → Kinh Nghiệm (Ưu tiên)
+  H3 → Kỹ Năng Cứng
+  H3 → Kỹ Năng Mềm
+  H3 → Ngoại Hình & Giao Tiếp
+  H3 → Thái Độ Phù Hợp Văn Hóa ANMI
+H2 → Quyền Lợi & Chế Độ Đãi Ngộ
+H2 → Vị Trí Đặc Biệt: Tuyển Dụng Nhân Viên Kinh Doanh Kỹ Thuật Hưng Yên  ← có từ khóa ✅
+H2 → Quy Trình Tuyển Dụng Nhân Viên Kinh Doanh Kỹ Thuật Tại ANMI Tools    ← có từ khóa ✅
+H2 → Bạn Phù Hợp Với Vị Trí Nào?
+H2 → Về ANMI Tools – Nhà Phân Phối Dụng Cụ Cắt Kỹ Thuật Cao
+H2 → Cách Ứng Tuyển – Nhân Viên Kinh Doanh Kỹ Thuật 2026                  ← có từ khóa ✅
+```
+
+---
+
+### 7. Checklist Rank Math – Trước khi nhấn Publish
+
+**Rank Math panel (thanh bên phải soạn bài):**
+- [ ] Điểm Rank Math **≥ 80** (màu xanh lá)
+- [ ] Tab *General* → Focus Keyword: `tuyển dụng nhân viên kinh doanh kỹ thuật` đã điền
+- [ ] Tab *General* → Meta Description viết tay, thanh đo **màu xanh** (150–160 ký tự)
+- [ ] Tab *General* → SEO Title kiểm tra lại: có từ khóa gần đầu + có số + có năm
+- [ ] Tab *Schema* → Job Posting đã thêm và điền đủ tất cả trường bắt buộc (xem mục 3)
+- [ ] Tab *Social* → OG Image đã đặt: `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat-anmi-2026.jpg`
+
+**Kiểm tra nội dung bài viết:**
+- [ ] Slug: `tuyen-dung-nhan-vien-kinh-doanh-ky-thuat` – không dấu, có từ khóa, ≤ 50 ký tự
+- [ ] Không có thẻ H1 thủ công trong phần body bài viết
+- [ ] Featured Image đã đặt → alt text chứa từ khóa chính
+- [ ] Tên file ảnh đặt đúng chuẩn trước khi upload
+- [ ] Có inline image (`<figure><img ... />`) trong bài với alt text đúng
+- [ ] Mật độ từ khóa ~1% *(kiểm tra bằng Rank Math hoặc Ctrl+F trên trình duyệt)*
+- [ ] Có 2–4 internal link sang trang liên quan
+- [ ] External link có `target="_blank" rel="noopener noreferrer"`
+- [ ] Kiểm tra PageSpeed Mobile **≥ 80 điểm** tại [pagespeed.web.dev](https://pagespeed.web.dev/)
+
+**Sau khi đăng bài:**
+- [ ] Google Search Console → *URL Inspection* → dán URL → nhấn **"Request Indexing"**
+- [ ] Kiểm tra rich result schema JobPosting: [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
