@@ -55,7 +55,11 @@
 | **Mail nhận (To)** | `admsales7@anmitools.com` |
 | **Mail gửi (From)** | `ANMI Tools <wordpress@anmitools.com>` |
 | **Tiêu đề (Subject)** | `[NVBH-BẮC] – [your-name] – [your-region]` |
-| **Tiêu đề bổ sung** | `Reply-To: [your-email]` || **Tệp đính kèm** | `[your-cv]` *(điền vào ô Tệp đính kèm – CF7 tự gửi file CV kèm email)* |
+| **Tiêu đề bổ sung** | `Reply-To: [your-email]` |
+| **Tệp đính kèm** | `[your-cv]` *(điền vào ô Tệp đính kèm – CF7 tự gửi file CV kèm email)* |
+
+> ⚠️ **Cảnh báo `!` bên cạnh `[your-email]` ở ô Mail nhận:** Đây là thông báo bảo mật **cố ý của CF7 từ bản 5.6+** — **không thể tắt** vì `[your-email]` là giá trị do người dùng nhập. Form **vẫn gửi email tự động đúng về ứng viên** bình thường. **Bỏ qua cảnh báo này.**
+
 **Nội dung tin nhắn:**
 
 ```
@@ -164,7 +168,11 @@ Website: https://anmitools.com
 | **Mail nhận (To)** | `admsales14@anmitools.com` |
 | **Mail gửi (From)** | `ANMI Tools <wordpress@anmitools.com>` |
 | **Tiêu đề (Subject)** | `[NVBH-NAM] – [your-name] – [your-region]` |
-| **Tiêu đề bổ sung** | `Reply-To: [your-email]` || **Tệp đính kèm** | `[your-cv]` *(điền vào ô Tệp đính kèm – CF7 tự gửi file CV kèm email)* |
+| **Tiêu đề bổ sung** | `Reply-To: [your-email]` |
+| **Tệp đính kèm** | `[your-cv]` *(điền vào ô Tệp đính kèm – CF7 tự gửi file CV kèm email)* |
+
+> ⚠️ **Cảnh báo `!` bên cạnh `[your-email]` ở ô Mail nhận:** Đây là thông báo bảo mật **cố ý của CF7 từ bản 5.6+** — **không thể tắt** vì `[your-email]` là giá trị do người dùng nhập. Form **vẫn gửi email tự động đúng về ứng viên** bình thường. **Bỏ qua cảnh báo này.**
+
 **Nội dung tin nhắn:**
 
 ```
