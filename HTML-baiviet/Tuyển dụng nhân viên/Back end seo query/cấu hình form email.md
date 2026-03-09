@@ -237,7 +237,7 @@ Sau khi lưu 2 form, WordPress cấp shortcode. Dán vào trang `/ung-tuyen/`:
 [contact-form-7 id="1f70f3a" title="Ứng tuyển – Phía Bắc"]
 
 <h3>Khu vực Phía Nam – TP. HCM, Đồng Nai, Vũng Tàu</h3>
-[contact-form-7 id="YY" title="Ứng tuyển – Phía Nam"]
+[contact-form-7 id="a3fbfcb" title="Ứng tuyển – Phía Nam"]
 ```
 
 > Thay `YY` bằng ID thực tế của Form 2 sau khi lưu.
