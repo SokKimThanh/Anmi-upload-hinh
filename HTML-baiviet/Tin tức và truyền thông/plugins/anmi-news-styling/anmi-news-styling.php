@@ -163,6 +163,27 @@ class AnMi_News_Styling {
                 '1.0.1',
                 'all'
             );
+
+            // Bootstrap 5 JS (bundle includes Popper)
+            if ( ! wp_script_is( 'bootstrap', 'enqueued' ) ) {
+                wp_enqueue_script(
+                    'bootstrap',
+                    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+                    array(),
+                    '5.3.3',
+                    true
+                );
+            }
+
+            wp_enqueue_script( 'jquery' );
+
+            wp_enqueue_script(
+                'anmi-recruitment-script',
+                plugin_dir_url( __FILE__ ) . 'assets/js/anmi-recruitment-script.js',
+                array( 'jquery', 'bootstrap' ),
+                '1.0.1',
+                true
+            );
         }
     }
     
