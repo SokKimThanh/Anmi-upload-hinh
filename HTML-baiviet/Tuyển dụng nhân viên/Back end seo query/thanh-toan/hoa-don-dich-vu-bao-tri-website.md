@@ -44,6 +44,7 @@
 | 17 | Sửa internal link sang slug chính thức `/nhan-vien-kinh-doanh-ky-thuat/` (bỏ tiền tố `tuyen-dung-` sai) trong file TLBH | 0,25 | 22.000 | 5.500 |
 | 18 | Bỏ class `bg-primary bg-opacity-10` khỏi `.cta-box` cả 2 file – nền trắng mặc định theo theme | 0,25 | 22.000 | 5.500 |
 | 19 | Thêm region selector (2 nút "Phía Bắc / Phía Nam") vào khối CTA cả 2 file: ẩn toàn bộ card liên hệ + form CF7 mặc định, hiện đúng khu vực khi click; thêm JS handler vào plugin `anmi-recruitment-script.js` | 1,5 | 22.000 | 33.000 |
+| 20 | Sửa email liên hệ trong file TLBH: thay `hr@anmitools.com` bằng email đúng theo từng khu vực (`admsales7@anmitools.com` – Ms. Lan Phương / Phía Bắc; `admsales14@anmitools.com` – Ms. Thảo / Phía Nam) | 0,25 | 22.000 | 5.500 |
 
 ---
 
@@ -51,14 +52,14 @@
 
 | | |
 |---|---|
-| **Tổng số giờ** | 16,5 giờ |
+| **Tổng số giờ** | 16,75 giờ |
 | **Đơn giá lập trình / SEO** | 22.000 VNĐ / giờ |
-| **Phí dịch vụ SEO & lập trình** | 363.000 VNĐ |
+| **Phí dịch vụ SEO & lập trình** | 368.500 VNĐ |
 | **Phí thiết kế hình ảnh** | 4 ảnh × 50.000 = 200.000 VNĐ |
 | **Thuế VAT** | Không tính *(thỏa thuận)* |
-| **Tổng thanh toán** | **563.000 VNĐ** |
+| **Tổng thanh toán** | **568.500 VNĐ** |
 
-*(Năm trăm sáu mươi ba nghìn đồng chẵn)*
+*(Năm trăm sáu mươi tám nghìn năm trăm đồng chẵn)*
 
 ---
 
