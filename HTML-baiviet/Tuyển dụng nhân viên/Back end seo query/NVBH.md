@@ -288,7 +288,25 @@ H2 → Cách Ứng Tuyển – Nhân Viên Kinh Doanh Kỹ Thuật 2026         
 - [ ] Có 2–4 internal link sang trang liên quan
 - [ ] External link có `target="_blank" rel="noopener noreferrer"`
 - [ ] Kiểm tra PageSpeed Mobile **≥ 80 điểm** tại [pagespeed.web.dev](https://pagespeed.web.dev/)
+- [ ] Email phía Bắc (đã điền): admsales7@anmitools.com – Ms. Lan Phương
+- [ ] Email phía Nam (đã điền): admsales14@anmitools.com – Ms. Thảo
+- [ ] Hotline HR: điền số thực tế vào `href="tel:+84..."` trước khi đăng
 
 **Sau khi đăng bài:**
 - [ ] Google Search Console → *URL Inspection* → dán URL → nhấn **"Request Indexing"**
 - [ ] Kiểm tra rich result schema JobPosting: [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
+
+---
+
+### 8. Thông Tin Liên Hệ Ứng Tuyển (CTA)
+
+| Khu vực | Người phụ trách | Email liên hệ | Tiêu đề email mẫu |
+|---|---|---|---|
+| **Phía Bắc** *(Hà Nội, Hải Phòng, Bắc Ninh, Hưng Yên, Đà Nẵng)* | Ms. Lan Phương | admsales7@anmitools.com | `[NVBH] – [Họ tên] – [Khu vực]` |
+| **Phía Nam** *(TP. HCM, Đồng Nai – Vũng Tàu)* | Ms. Thảo | admsales14@anmitools.com | `[NVBH] – [Họ tên] – [Khu vực]` |
+
+**Form online:** `/ung-tuyen/`
+
+**Hotline HR:** Chưa có số – cập nhật trước khi đăng (giờ hành chính, thứ 2 – thứ 6)
+
+**Hạn nộp hồ sơ:** 30/04/2026
