@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hóa Đơn ANMI-2026-0309-01 – Đã Thanh Toán</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Be Vietnam Pro', Arial, sans-serif;
+      font-size: 13px;
+      color: #1a1a2e;
+      background: #f4f6f9;
+      padding: 30px;
+    }
+
+    .invoice-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* PAID WATERMARK */
+    .watermark {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-35deg);
+      font-size: 110px;
+      font-weight: 900;
+      color: rgba(22, 163, 74, 0.08);
+      letter-spacing: 8px;
+      pointer-events: none;
+      white-space: nowrap;
+      z-index: 0;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #064e3b 0%, #065f46 60%, #047857 100%);
+      color: #fff;
+      padding: 36px 40px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+      z-index: 1;
+    }
+    .header-left h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .header-left p {
+      font-size: 12px;
+      opacity: 0.7;
+      letter-spacing: 0.5px;
+    }
+    .header-right { text-align: right; }
+    .invoice-number {
+      font-size: 13px;
+      font-weight: 600;
+      background: rgba(255,255,255,0.15);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    .header-right .date {
+      font-size: 12px;
+      opacity: 0.75;
+    }
+    .status-badge {
+      display: inline-block;
+      background: #16a34a;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 12px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      margin-top: 8px;
+      border: 1.5px solid rgba(255,255,255,0.4);
+    }
+
+    /* PAID STAMP */
+    .paid-stamp {
+      position: absolute;
+      top: 24px;
+      right: 180px;
+      background: transparent;
+      border: 3.5px solid rgba(255,255,255,0.55);
+      border-radius: 8px;
+      padding: 6px 16px;
+      transform: rotate(-8deg);
+      color: rgba(255,255,255,0.75);
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    /* PARTIES */
+    .parties {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-bottom: 1px solid #e8ecf0;
+      position: relative;
+      z-index: 1;
+    }
+    .party { padding: 24px 40px; }
+    .party:first-child { border-right: 1px solid #e8ecf0; }
+    .party-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #047857;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .party-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 4px;
+    }
+    .party-sub { font-size: 12px; color: #666; line-height: 1.6; }
+
+    /* PAYMENT INFO */
+    .payment-info {
+      background: #f0fdf4;
+      border-left: 4px solid #16a34a;
+      margin: 0 40px 20px;
+      padding: 14px 18px;
+      border-radius: 0 6px 6px 0;
+      position: relative;
+      z-index: 1;
+    }
+    .payment-info .pi-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #047857;
+      margin-bottom: 8px;
+    }
+    .payment-info table { width: 100%; }
+    .payment-info td {
+      font-size: 12px;
+      color: #374151;
+      padding: 2px 8px 2px 0;
+    }
+    .payment-info td:first-child { font-weight: 600; width: 160px; color: #065f46; }
+
+    /* TABLE */
+    .table-section { padding: 0 40px 30px; position: relative; z-index: 1; }
+    .section-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #047857;
+      text-transform: uppercase;
+      padding: 20px 0 12px;
+      border-bottom: 2px solid #047857;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    thead th {
+      background: #f0fdf4;
+      padding: 10px 12px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 700;
+      color: #555;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #d1fae5;
+    }
+    thead th.num { text-align: center; width: 32px; }
+    thead th.hours { text-align: center; width: 80px; }
+    thead th.price { text-align: right; width: 120px; }
+    thead th.total { text-align: right; width: 120px; }
+
+    tbody tr { border-bottom: 1px solid #f0f2f5; }
+    tbody tr:hover { background: #fafffe; }
+    tbody td {
+      padding: 10px 12px;
+      vertical-align: top;
+      line-height: 1.5;
+      color: #2d2d2d;
+    }
+    tbody td.num { text-align: center; color: #aaa; font-size: 11px; }
+    tbody td.hours { text-align: center; font-weight: 600; color: #047857; }
+    tbody td.price { text-align: right; color: #555; }
+    tbody td.total { text-align: right; font-weight: 600; color: #1a1a2e; }
+    tbody td code {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      background: #ecfdf5;
+      color: #047857;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    tr.img-row td { background: #fffbf0; }
+    tr.img-row td.total { color: #c47b00; }
+
+    /* SUMMARY */
+    .summary-section {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 40px 30px;
+      position: relative;
+      z-index: 1;
+    }
+    .summary-box {
+      width: 320px;
+      background: #f8f9fb;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 9px 18px;
+      border-bottom: 1px solid #eef0f3;
+      font-size: 12.5px;
+    }
+    .summary-row:last-child { border-bottom: none; }
+    .summary-row.sub { color: #666; }
+    .summary-row.highlight {
+      background: #16a34a;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 14px 18px;
+    }
+    .summary-label { font-weight: 500; }
+    .summary-value { font-weight: 600; }
+
+    .in-words {
+      margin: 0 40px 24px;
+      font-size: 12px;
+      color: #666;
+      font-style: italic;
+      text-align: right;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* NOTES */
+    .notes-section {
+      margin: 0 40px 30px;
+      background: #f0fdf4;
+      border-left: 3px solid #16a34a;
+      border-radius: 0 6px 6px 0;
+      padding: 14px 18px;
+      position: relative;
+      z-index: 1;
+    }
+    .notes-section .note-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #047857;
+      margin-bottom: 8px;
+    }
+    .notes-section ul { padding-left: 16px; }
+    .notes-section li { font-size: 12px; color: #444; line-height: 1.7; }
+
+    /* SIGNATURE */
+    .signature-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-top: 1px solid #e8ecf0;
+      padding: 24px 40px 30px;
+      position: relative;
+      z-index: 1;
+    }
+    .sig-block { text-align: center; }
+    .sig-block:first-child { border-right: 1px solid #e8ecf0; }
+    .sig-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #047857;
+      margin-bottom: 50px;
+    }
+    .sig-line {
+      border-top: 1px solid #ccc;
+      padding-top: 6px;
+      font-size: 12px;
+      color: #555;
+      margin: 0 30px;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #064e3b;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      font-size: 11px;
+      padding: 14px;
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .invoice-wrap { box-shadow: none; border-radius: 0; }
+      .watermark { position: fixed; }
+      @page { margin: 15mm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="watermark">ĐÃ THANH TOÁN</div>
+
+<div class="invoice-wrap">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>HÓA ĐƠN DỊCH VỤ</h1>
+      <p>Bảo trì & SEO Website</p>
+    </div>
+    <div class="paid-stamp">PAID</div>
+    <div class="header-right">
+      <div class="invoice-number">ANMI-2026-0309-01</div>
+      <div class="date">Ngày lập: 09/03/2026</div>
+      <div class="status-badge">✓ ĐÃ THANH TOÁN</div>
+    </div>
+  </div>
+
+  <!-- PARTIES -->
+  <div class="parties">
+    <div class="party">
+      <div class="party-label">Bên cung cấp dịch vụ</div>
+      <div class="party-name">Sok Kim Thanh</div>
+      <div class="party-sub">Freelance Developer & SEO Specialist</div>
+    </div>
+    <div class="party">
+      <div class="party-label">Bên nhận dịch vụ</div>
+      <div class="party-name">Doãn An Mi</div>
+      <div class="party-sub">
+        Dự án: Bảo trì website ANMI Tools<br />
+        Mục: Trang Tuyển dụng
+      </div>
+    </div>
+  </div>
+
+  <!-- PAYMENT INFO -->
+  <div class="payment-info">
+    <div class="pi-title">Thông tin thanh toán</div>
+    <table>
+      <tr>
+        <td>Ngày thanh toán:</td>
+        <td>09/03/2026</td>
+      </tr>
+      <tr>
+        <td>Số tiền:</td>
+        <td><strong>358.500 VNĐ</strong></td>
+      </tr>
+      <tr>
+        <td>Trạng thái:</td>
+        <td><strong style="color:#16a34a">✓ Đã thanh toán đầy đủ</strong></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-section">
+    <div class="section-title">Chi tiết công việc thực hiện</div>
+    <table>
+      <thead>
+        <tr>
+          <th class="num">#</th>
+          <th>Hạng mục công việc</th>
+          <th class="hours">Số giờ</th>
+          <th class="price">Đơn giá</th>
+          <th class="total">Thành tiền</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td>Tối ưu SEO bài viết NVBH: sửa SEO title (thêm số "7 Khu Vực"), bổ sung <code>&lt;figure&gt;&lt;img&gt;</code> với alt text, thêm keyword vào H2, tăng mật độ keyword ~1%</td>
+          <td class="hours">2,5</td>
+          <td class="price">22.000</td>
+          <td class="total">55.000</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td>Bổ sung mục X. SEO Backend vào <code>NVBH.md</code> (8 sections: keyword strategy, schema, checklist, CTA...)</td>
+          <td class="hours">1,5</td>
+          <td class="price">22.000</td>
+          <td class="total">33.000</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td>Cập nhật slug, LinkedIn URL, internal URL <code>/gioi-thieu-an-mi-tools/</code>, email liên hệ 2 vùng (Ms. Lan Phương / Ms. Thảo)</td>
+          <td class="hours">0,5</td>
+          <td class="price">22.000</td>
+          <td class="total">11.000</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td>Tạo file cấu hình form CF7 gồm 2 form đầy đủ: nội dung form, Mail 1, Mail 2 auto-reply, ghi chú vận hành</td>
+          <td class="hours">2,0</td>
+          <td class="price">22.000</td>
+          <td class="total">44.000</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td>Xử lý cảnh báo CF7 "email không an toàn" (Mail kiểu 2 <code>[your-email]</code>), cập nhật ghi chú đúng trong cả 2 form</td>
+          <td class="hours">0,5</td>
+          <td class="price">22.000</td>
+          <td class="total">11.000</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td>Thêm vị trí "Nhân viên Marketing" vào dropdown CF7; chuyển Subject email HR sang tag động <code>[your-position]</code></td>
+          <td class="hours">0,5</td>
+          <td class="price">22.000</td>
+          <td class="total">11.000</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td>Đổi tên form CF7 bỏ "NVBH" → <code>Ứng tuyển – Phía Bắc / Nam</code> (cập nhật 3 vị trí)</td>
+          <td class="hours">0,25</td>
+          <td class="price">22.000</td>
+          <td class="total">5.500</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td>Cập nhật shortcode ID Form 2 (<code>YY</code> → <code>a3fbfcb</code>) trong file cấu hình và file HTML bài NVBH</td>
+          <td class="hours">0,25</td>
+          <td class="price">22.000</td>
+          <td class="total">5.500</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td>Tạo file tổng hợp quy tắc <code>quy-tac-bai-viet-tuyen-dung-nvbh.md</code> (11 mục: SEO, heading, ảnh, link, schema, checklist...)</td>
+          <td class="hours">1,0</td>
+          <td class="price">22.000</td>
+          <td class="total">22.000</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td>Áp dụng 6 quy tắc SEO vào bài viết TLBH: sửa title, thêm ảnh inline, keyword lần 2, LinkedIn URL, internal URL, nhúng CF7 shortcode</td>
+          <td class="hours">1,5</td>
+          <td class="price">22.000</td>
+          <td class="total">33.000</td>
+        </tr>
+        <tr>
+          <td class="num">11</td>
+          <td>Cập nhật số hotline HR (HN: 091 519 2325 / HCM: 091 315 2529) đồng thời vào 3 file</td>
+          <td class="hours">0,25</td>
+          <td class="price">22.000</td>
+          <td class="total">5.500</td>
+        </tr>
+        <tr>
+          <td class="num">12</td>
+          <td>Bổ sung mục X. SEO Backend vào <code>TLBH.md</code> (8 sections: schema, keyword strategy, checklist, CTA...)</td>
+          <td class="hours">1,0</td>
+          <td class="price">22.000</td>
+          <td class="total">22.000</td>
+        </tr>
+        <tr class="img-row">
+          <td class="num">13</td>
+          <td>Thiết kế ảnh đại diện (2 ảnh): <code>tuyen-dung-nhan-vien-kinh-doanh-ky-thuat-anmi-2026.jpg</code> + <code>tuyen-dung-tro-ly-ban-hang-anmi-2026.jpg</code></td>
+          <td class="hours">2 ảnh</td>
+          <td class="price">50.000</td>
+          <td class="total">100.000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="summary-section">
+    <div class="summary-box">
+      <div class="summary-row sub">
+        <span class="summary-label">Tổng số giờ lập trình / SEO</span>
+        <span class="summary-value">11,75 giờ</span>
+      </div>
+      <div class="summary-row sub">
+        <span class="summary-label">Phí dịch vụ SEO & lập trình</span>
+        <span class="summary-value">258.500 VNĐ</span>
+      </div>
+      <div class="summary-row sub">
+        <span class="summary-label">Phí thiết kế hình ảnh</span>
+        <span class="summary-value">100.000 VNĐ</span>
+      </div>
+      <div class="summary-row sub">
+        <span class="summary-label">Thuế VAT</span>
+        <span class="summary-value">Không tính</span>
+      </div>
+      <div class="summary-row highlight">
+        <span class="summary-label">✓ ĐÃ THANH TOÁN</span>
+        <span class="summary-value">358.500 VNĐ</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="in-words">
+    <em>Bằng chữ: Ba trăm năm mươi tám nghìn năm trăm đồng chẵn</em>
+  </div>
+
+  <!-- NOTES -->
+  <div class="notes-section">
+    <div class="note-title">Ghi chú</div>
+    <ul>
+      <li>Hóa đơn này xác nhận đã thanh toán đầy đủ ngày 09/03/2026.</li>
+      <li>Toàn bộ file HTML, tài liệu SEO backend và cấu hình CF7 đã bàn giao hoàn chỉnh.</li>
+      <li>Hai form CF7 đã có shortcode ID thực tế, sẵn sàng nhúng vào trang <code>/ung-tuyen/</code>.</li>
+    </ul>
+  </div>
+
+  <!-- SIGNATURE -->
+  <div class="signature-section">
+    <div class="sig-block">
+      <div class="sig-label">Bên cung cấp dịch vụ</div>
+      <div class="sig-line">Sok Kim Thanh</div>
+    </div>
+    <div class="sig-block">
+      <div class="sig-label">Bên nhận dịch vụ</div>
+      <div class="sig-line">Doãn An Mi</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Hóa đơn số ANMI-2026-0309-01 &nbsp;|&nbsp; Ngày thanh toán: 09/03/2026 &nbsp;|&nbsp; Để in PDF: Ctrl+P → Save as PDF → A4
+  </div>
+
+</div>
+</body>
+</html>
