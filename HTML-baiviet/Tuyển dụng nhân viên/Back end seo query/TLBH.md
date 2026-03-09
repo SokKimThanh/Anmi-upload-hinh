@@ -139,3 +139,139 @@
 |---|---|---|
 | Họ tên: ................... | Họ tên: ................... | Họ tên: ................... |
 | Ngày: ..../..../......... | Ngày: ..../..../......... | Ngày: ..../..../......... |
+
+---
+
+## X. SEO BACKEND – CẤU HÌNH RANK MATH & SCHEMA
+
+> Phần này dành cho người đăng bài lên WordPress. Điền đầy đủ trước khi nhấn **Publish**.
+
+---
+
+### 1. Thông tin SEO cơ bản (Rank Math → tab General)
+
+| Mục | Nội dung |
+|---|---|
+| **Focus Keyword** | `tuyển dụng trợ lý bán hàng` |
+| **SEO Title** | `Tuyển Dụng Trợ Lý Bán Hàng – 2 Văn Phòng Hà Nội & HCM | ANMI Tools 2026` |
+| **URL Slug** | `tuyen-dung-tro-ly-ban-hang` |
+| **Meta Description** | `ANMI tuyển dụng Trợ lý Bán hàng tại Hà Nội và TP.HCM 2026. Xử lý đơn hàng, báo giá, chăm sóc khách hàng. Lương tốt, đào tạo bài bản, môi trường chuyên nghiệp. Ứng tuyển ngay!` *(159 ký tự)* |
+| **OG Image** | `tuyen-dung-tro-ly-ban-hang-anmi-2026.jpg` *(< 200KB, cài trong Social tab)* |
+
+---
+
+### 2. Chiến lược từ khóa
+
+| Loại | Từ khóa |
+|---|---|
+| **Từ khóa chính** | `tuyển dụng trợ lý bán hàng` |
+| **Từ khóa phụ** | `tuyển dụng sales admin`, `việc làm văn phòng kỹ thuật`, `ANMI tuyển dụng 2026`, `trợ lý kinh doanh` |
+| **Từ khóa địa phương** | `tuyển dụng tại Hà Nội Nam Từ Liêm`, `việc làm Thủ Đức TP.HCM`, `tuyển dụng văn phòng Hà Nội 2026` |
+| **Từ khóa đuôi dài** | `tuyển dụng trợ lý bán hàng kỹ thuật công nghiệp`, `sales admin xử lý đơn hàng`, `việc làm hành chính kinh doanh ổn định` |
+
+**Mật độ từ khóa mục tiêu:** ~1%
+
+---
+
+### 3. Schema JobPosting (Rank Math → tab Schema → Add Schema → Job Posting)
+
+| Trường Schema | Nội dung điền |
+|---|---|
+| `title` | `Trợ Lý Bán Hàng` |
+| `hiringOrganization.name` | `Công ty ANMI Tools` |
+| `hiringOrganization.sameAs` | `https://anmitools.com` |
+| `hiringOrganization.logo` | `https://anmitools.com/wp-content/uploads/logo-anmi.png` |
+| `datePosted` | `2026-03-07` |
+| `validThrough` | `2026-04-30T00:00` |
+| `employmentType` | `FULL_TIME` |
+| `baseSalary.currency` | `VND` |
+| `baseSalary.minValue` | `8,000,000` |
+| `baseSalary.maxValue` | `15,000,000` |
+| `baseSalary.unitText` | `MONTH` |
+| `educationRequirements` | `Cao đẳng / Đại học trở lên` |
+| `experienceRequirements` | `1–2 năm kinh nghiệm tại vị trí tương đương` |
+| `jobLocation[1]` | Tòa CT4, KĐT Sông Đà Mỹ Đình, Nam Từ Liêm, Hà Nội |
+| `jobLocation[2]` | 75 Đỗ Xuân Hợp, Phước Long B, Thủ Đức, TP. Hồ Chí Minh |
+
+---
+
+### 4. Ảnh đại diện
+
+| Mục | Nội dung |
+|---|---|
+| **Tên file** | `tuyen-dung-tro-ly-ban-hang-anmi-2026.jpg` |
+| **Alt text** | `tuyển dụng trợ lý bán hàng ANMI Tools tại Hà Nội và TP.HCM 2026` |
+| **Kích thước** | 800×450px, < 200KB |
+| **Tag HTML** | `<figure><img ... loading="lazy" /></figure>` đặt ngay sau đoạn mở đầu |
+| **OG Image** | 1200×630px, cài trong *Rank Math → Social tab* |
+
+---
+
+### 5. Internal Link & External Link
+
+| Loại | Anchor text | URL đích |
+|---|---|---|
+| **Internal** | Tuyển dụng Nhân viên Kinh doanh Kỹ thuật tại ANMI Tools | `/tuyen-dung-nhan-vien-kinh-doanh-ky-thuat/` |
+| **Internal** | sứ mệnh và văn hóa của ANMI Tools | `/gioi-thieu-an-mi-tools/` |
+| **Internal** | Điền form ứng tuyển trực tuyến | `/ung-tuyen/` |
+| **External** | ANMI Tools trên LinkedIn | `https://www.linkedin.com/company/anmi-tools/` *(target=_blank, noopener noreferrer)* |
+
+---
+
+### 6. Cấu trúc Heading
+
+```
+H1 → [Tự động từ WordPress Title – KHÔNG lặp H1 trong body]
+H2 → Số Lượng & Địa Điểm Tuyển Dụng Trợ Lý Bán Hàng        ← có keyword
+H2 → Mô Tả Công Việc – Trợ Lý Bán Hàng ANMI Tools           ← có keyword
+  H3 → 1. Xử Lý Báo Giá & Đơn Hàng
+  H3 → 2. Báo Cáo Doanh Thu & Bảng Tính Hiệu Quả Kinh Doanh
+  H3 → 3. Chăm Sóc Khách Hàng Định Kỳ
+H2 → Yêu Cầu Ứng Viên Trợ Lý Bán Hàng                       ← có keyword
+  H3 → Học Vấn & Chuyên Môn (Bắt buộc)
+  H3 → Kinh Nghiệm
+  H3 → Kỹ Năng Cứng
+  H3 → Kỹ Năng Mềm
+  H3 → Thái Độ Phù Hợp Văn Hóa ANMI
+H2 → Quyền Lợi & Chế Độ Đãi Ngộ
+H2 → Quy Trình Tuyển Dụng Tại ANMI Tools
+H2 → Bạn Phù Hợp Với Vị Trí Nào?
+H2 → Về ANMI Tools – Môi Trường Làm Việc Của Bạn
+H2 → Cách Ứng Tuyển Vị Trí Trợ Lý Bán Hàng 2026             ← có keyword
+```
+
+---
+
+### 7. Checklist Rank Math – Trước khi nhấn Publish
+
+- [ ] Điểm Rank Math **≥ 80** (màu xanh lá)
+- [ ] Focus Keyword: `tuyển dụng trợ lý bán hàng` đã điền
+- [ ] Meta Description 150–160 ký tự, thanh đo xanh
+- [ ] SEO Title: có keyword + có số "2" + có năm 2026
+- [ ] Slug: `tuyen-dung-tro-ly-ban-hang`
+- [ ] Schema JobPosting điền đủ (xem mục 3)
+- [ ] OG Image cài trong Rank Math → Social tab
+- [ ] Featured Image đặt đúng, alt text chứa từ khóa chính
+- [ ] Không có H1 thủ công trong body
+- [ ] Mật độ từ khóa ~1%
+- [ ] Internal link đã kiểm tra URL đúng
+- [ ] External link có `target="_blank" rel="noopener noreferrer"`
+- [ ] Upload ảnh: `tuyen-dung-tro-ly-ban-hang-anmi-2026.jpg` (< 200KB)
+- [ ] Điền số hotline thực tế vào `href="tel:..."` *(đã có: HN 091 519 2325 / HCM 091 315 2529)*
+
+**Sau khi đăng:**
+- [ ] Google Search Console → URL Inspection → **Request Indexing**
+- [ ] Kiểm tra rich result: [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
+
+---
+
+### 8. Thông Tin Liên Hệ Ứng Tuyển (CTA)
+
+| Khu vực | Email liên hệ | Hotline | CF7 Shortcode ID |
+|---|---|---|---|
+| **Phía Bắc** (Hà Nội) | `hr@anmitools.com` | `091 519 2325` | `id="1f70f3a"` |
+| **Phía Nam** (TP. HCM) | `hr@anmitools.com` | `091 315 2529` | `id="a3fbfcb"` |
+
+**Tiêu đề email mẫu:** `[TLBH] – [Họ tên] – [Khu vực ứng tuyển]`
+
+**Hạn nộp hồ sơ:** 30/04/2026
