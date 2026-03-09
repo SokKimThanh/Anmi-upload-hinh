@@ -3,9 +3,9 @@
 
 ---
 
-## FORM 1 – ỨNG TUYỂN NVBH PHÍA BẮC
+## FORM 1 – ỨNG TUYỂN PHÍA BẮc
 
-**Tên form:** `Ứng tuyển NVBH – Phía Bắc`
+**Tên form:** `Ứng tuyển – Phía Bắc`
 
 ---
 
@@ -25,7 +25,7 @@
     [select* your-region "-- Chọn khu vực --" "Hà Nội" "Hải Phòng" "Bắc Ninh" "Hưng Yên" "Đà Nẵng"] </label>
 
 <label> Vị trí ứng tuyển *
-    [select* your-position "-- Chọn vị trí --" "Nhân viên Kinh doanh Kỹ thuật (NVBH)" "Trợ lý Bán hàng (TLBH)"] </label>
+    [select* your-position "-- Chọn vị trí --" "Nhân viên Kinh doanh Kỹ thuật (NVBH)" "Trợ lý Bán hàng (TLBH)" "Nhân viên Marketing"] </label>
 
 <label> Trình độ học vấn *
     [select* your-education "-- Chọn trình độ --" "Cao đẳng" "Đại học" "Sau đại học"] </label>
@@ -54,7 +54,7 @@
 |---|---|
 | **Mail nhận (To)** | `admsales7@anmitools.com` |
 | **Mail gửi (From)** | `ANMI Tools <wordpress@anmitools.com>` |
-| **Tiêu đề (Subject)** | `[NVBH-BẮC] – [your-name] – [your-region]` |
+| **Tiêu đề (Subject)** | `[your-position] – [your-name] – [your-region] – Phía Bắc` |
 | **Tiêu đề bổ sung** | `Reply-To: [your-email]` |
 | **Tệp đính kèm** | `[your-cv]` *(điền vào ô Tệp đính kèm – CF7 tự gửi file CV kèm email)* |
 
@@ -116,9 +116,9 @@ Website: https://anmitools.com
 ---
 ---
 
-## FORM 2 – ỨNG TUYỂN NVBH PHÍA NAM
+## FORM 2 – ỨNG TUYỂN PHÍA NAM
 
-**Tên form:** `Ứng tuyển NVBH – Phía Nam`
+**Tên form:** `Ứng tuyển – Phía Nam`
 
 ---
 
@@ -138,7 +138,7 @@ Website: https://anmitools.com
     [select* your-region "-- Chọn khu vực --" "TP. Hồ Chí Minh" "Đồng Nai" "Vũng Tàu"] </label>
 
 <label> Vị trí ứng tuyển *
-    [select* your-position "-- Chọn vị trí --" "Nhân viên Kinh doanh Kỹ thuật (NVBH)" "Trợ lý Bán hàng (TLBH)"] </label>
+    [select* your-position "-- Chọn vị trí --" "Nhân viên Kinh doanh Kỹ thuật (NVBH)" "Trợ lý Bán hàng (TLBH)" "Nhân viên Marketing"] </label>
 
 <label> Trình độ học vấn *
     [select* your-education "-- Chọn trình độ --" "Cao đẳng" "Đại học" "Sau đại học"] </label>
@@ -167,7 +167,7 @@ Website: https://anmitools.com
 |---|---|
 | **Mail nhận (To)** | `admsales14@anmitools.com` |
 | **Mail gửi (From)** | `ANMI Tools <wordpress@anmitools.com>` |
-| **Tiêu đề (Subject)** | `[NVBH-NAM] – [your-name] – [your-region]` |
+| **Tiêu đề (Subject)** | `[your-position] – [your-name] – [your-region] – Phía Nam` |
 | **Tiêu đề bổ sung** | `Reply-To: [your-email]` |
 | **Tệp đính kèm** | `[your-cv]` *(điền vào ô Tệp đính kèm – CF7 tự gửi file CV kèm email)* |
 
@@ -234,10 +234,10 @@ Sau khi lưu 2 form, WordPress cấp shortcode. Dán vào trang `/ung-tuyen/`:
 
 ```
 <h3>Khu vực Phía Bắc – Hà Nội, Hải Phòng, Bắc Ninh, Hưng Yên, Đà Nẵng</h3>
-[contact-form-7 id="1f70f3a" title="Ứng tuyển NVBH – Phía Bắc"]
+[contact-form-7 id="1f70f3a" title="Ứng tuyển – Phía Bắc"]
 
 <h3>Khu vực Phía Nam – TP. HCM, Đồng Nai, Vũng Tàu</h3>
-[contact-form-7 id="YY" title="Ứng tuyển NVBH – Phía Nam"]
+[contact-form-7 id="YY" title="Ứng tuyển – Phía Nam"]
 ```
 
 > Thay `YY` bằng ID thực tế của Form 2 sau khi lưu.
