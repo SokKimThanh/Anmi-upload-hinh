@@ -159,6 +159,33 @@ article[class*="anmi-article"] br {
     font-style: italic;
 }
 
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--anmi-spacing-md);
+    font-size: 0.9rem;
+    color: var(--anmi-gray-medium);
+}
+
+.article-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.article-meta span::before {
+    content: "•";
+    margin: 0 var(--anmi-spacing-xs);
+    color: var(--anmi-gray-light);
+}
+
+.article-meta span:first-child::before {
+    content: none;
+}
+
+.article-introduction .subtitle {
+    max-width: 100%;
+}
+
 /* Section transition style */
 .section-transition {
     margin: var(--anmi-spacing-lg) 0;
