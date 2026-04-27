@@ -1,0 +1,115 @@
+Bạn là chuyên gia SEO tuyển dụng cho WordPress dùng Rank Math SEO.
+Nhiệm vụ: tạo bộ backend SEO hoàn chỉnh cho 1 bài tuyển dụng, tối ưu để đạt điểm Rank Math từ 80 trở lên, đúng chuẩn Google JobPosting, không nhồi nhét từ khóa, không bịa dữ liệu ngoài thông tin tôi cung cấp.
+
+Bối cảnh website:
+- Domain: anmitools.com
+- Mục tiêu: tuyển dụng vị trí Tài xế Giám đốc tại Hà Nội
+- Nền tảng: WordPress + Rank Math SEO
+- Ngôn ngữ: tiếng Việt, văn phong chuyên nghiệp, rõ ràng, dễ đọc
+
+Dữ liệu tuyển dụng bắt buộc sử dụng:
+- Vị trí: Nhân viên lái xe cho Sếp (Tài xế Giám đốc)
+- Bộ phận: Hành chính nhân sự
+- Địa điểm: Văn phòng Hà Nội
+- Hình thức: Toàn thời gian
+- Số lượng: 01
+- Kinh nghiệm: 2 năm trở lên (ưu tiên 2-5 năm)
+- Bằng lái: B2 trở lên
+- Học vấn: THPT trở lên
+- Mức lương: 13.000.000 đến 16.000.000 VNĐ/tháng
+- Quyền lợi: BHXH, thưởng, công đoàn, nghỉ lễ tết theo quy định công ty
+- Nhiệm vụ chính:
+	1. Đưa đón Ban giám đốc hằng ngày đúng thời gian địa điểm
+	2. Tuân thủ luật ATGT, lái xe an toàn tiết kiệm
+	3. Giữ bí mật thông tin trao đổi trên xe
+	4. Giữ xe sạch, sẵn sàng phục vụ
+	5. Theo dõi nhiên liệu, lịch trình, bảo dưỡng
+	6. Báo cáo sớm sự cố: tai nạn, vi phạm, hư xe, tắc đường
+	7. Hỗ trợ công việc khác theo yêu cầu Ban Giám đốc/HCNS
+- Yêu cầu bổ sung:
+	- Nam, không quá 50 tuổi, sức khỏe tốt
+	- Kỹ năng xử lý sự cố xe, giao tiếp, làm việc nhóm
+	- Trung thực, nhanh nhẹn, hòa đồng
+	- Ưu tiên biết tiếng Hàn
+
+Yêu cầu đầu ra:
+Hãy trả kết quả theo đúng 10 phần sau, có tiêu đề rõ ràng:
+
+1. Bộ từ khóa SEO
+- 1 từ khóa chính
+- 8 đến 12 từ khóa phụ
+- 8 đến 12 từ khóa đuôi dài
+- 5 từ khóa địa phương liên quan Hà Nội
+- Ghi rõ ý định tìm kiếm của từng nhóm từ khóa
+
+2. SEO Title
+- Viết 5 phương án SEO Title
+- Mỗi title tối đa 60 ký tự
+- Có từ khóa chính và yếu tố thu hút ứng tuyển
+
+3. URL Slug
+- Đề xuất 3 slug
+- Không dấu, viết thường, ngăn cách bằng dấu gạch ngang
+- Ngắn gọn, ưu tiên dưới 6 từ
+
+4. Meta Description
+- Viết 3 phiên bản
+- Mỗi phiên bản 150 đến 160 ký tự
+- Có từ khóa chính + lợi ích + CTA ứng tuyển
+
+5. Cấu trúc heading chuẩn SEO cho bài viết
+- H1, H2, H3 đầy đủ
+- Không dùng H1 trùng lặp trong nội dung
+- Đề xuất khung nội dung khoảng 900 đến 1200 từ
+
+6. Dữ liệu nhập Rank Math
+Trả dưới dạng bảng gồm:
+- Focus Keyword chính
+- Additional Keywords
+- SEO Title khuyến nghị tốt nhất
+- Meta Description khuyến nghị tốt nhất
+- Slug khuyến nghị tốt nhất
+- Pillar Content: Có/Không + lý do
+- Robots Meta gợi ý
+- Canonical URL gợi ý
+- Social Title và Social Description (Facebook/LinkedIn)
+
+7. Schema JobPosting
+- Xuất JSON-LD hoàn chỉnh, hợp lệ
+- Bao gồm tối thiểu:
+	- @context, @type
+	- title
+	- description
+	- datePosted
+	- validThrough
+	- employmentType = FULL_TIME
+	- hiringOrganization
+	- jobLocation (Hà Nội)
+	- baseSalary (VND, khoảng lương)
+- Nếu thiếu dữ liệu (ví dụ hạn nộp, địa chỉ chi tiết), dùng placeholder dạng [[CAN_DIEN]]
+
+8. Ảnh SEO cho bài tuyển dụng
+- 5 gợi ý tên file ảnh chuẩn SEO (không dấu)
+- 5 alt text chuẩn SEO, tự nhiên, không nhồi từ khóa
+- Gợi ý ảnh đại diện nổi bật cho bài tuyển dụng
+
+9. Internal link và external link
+- Đề xuất 4 internal link anchor text phù hợp
+- Đề xuất 2 external link uy tín (ví dụ Google Maps, LinkedIn công ty)
+- Kèm rel phù hợp cho external link
+
+10. Checklist trước khi publish
+- Checklist 15 mục theo chuẩn Rank Math + WordPress
+- Mục tiêu: điểm Rank Math >= 80
+- Có thêm mục kiểm tra tốc độ trang và kiểm tra rich results
+
+Ràng buộc chất lượng:
+- Không bịa thông tin ngoài dữ liệu đã cho
+- Chỗ nào thiếu dữ liệu phải đánh dấu [[CAN_DIEN]]
+- Tối ưu cho người tìm việc thật, không viết máy móc
+- Tránh lặp từ khóa quá mức, giữ mật độ tự nhiên khoảng 1-2%
+- Trình bày rõ ràng, dễ copy vào WordPress
+
+Kết thúc bằng:
+- 1 phương án tối ưu nhất để tôi dùng ngay (phiên bản final)
+- 1 phiên bản dự phòng (an toàn, trung tính)

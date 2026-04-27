@@ -1,0 +1,20 @@
+PROMPT TẠO ẢNH (DÙNG CHO MIDJOURNEY / SDXL / FIRELY)
+
+Thiết kế một ảnh tuyển dụng chuyên nghiệp cho doanh nghiệp cơ khí công nghiệp ANMI Tools, chủ đề: "Tuyển Tài xế Giám đốc tại Hà Nội". Bối cảnh buổi sáng tại khu văn phòng hiện đại ở Hà Nội, xe của sếp là Jeep hoặc BMW X6 màu đen sạch sẽ đỗ ngay ngắn trước sảnh (ưu tiên thể hiện đúng dáng SUV sang trọng của BMW X6 nếu chọn BMW). Nhân vật chính là nam tài xế người Việt khoảng 35-45 tuổi, trang phục lịch sự (áo sơ mi trắng, quần tây sẫm màu), tác phong tự tin, chỉn chu, đang mở cửa xe với thái độ chuyên nghiệp. Cảnh thể hiện sự đúng giờ, an toàn, tin cậy và bảo mật. Phong cách ảnh chụp thực tế, ánh sáng tự nhiên, màu sắc trung tính cao cấp (xanh navy, trắng, xám), độ chi tiết cao.
+
+Yêu cầu trình bày bổ sung trên ảnh:
+- Có tiêu đề tuyển dụng nổi bật, bắt mắt, dễ đọc, nội dung tiêu đề: "TUYỂN TÀI XẾ GIÁM ĐỐC".
+- Bố cục tiêu đề theo phong cách banner tuyển dụng doanh nghiệp (rõ phân cấp chữ, tương phản tốt, không rối mắt).
+- Chừa một vùng trống sạch ở góc trên bên trái để gắn logo ANMI thủ công sau này (không tự vẽ logo, không chèn logo giả).
+- Vẫn giữ một khoảng trống thị giác hợp lý để không che nhân vật và xe.
+
+Không có logo giả, không có chữ bị lỗi chính tả, không watermark, không nhân vật méo tay hoặc dị dạng, không phong cách hoạt hình, không hiệu ứng quá ảo.
+
+Yêu cầu chất lượng: photorealistic, sharp focus, clean composition, recruitment campaign visual, corporate branding mood, 8k details.
+
+Thông số gợi ý:
+- Tỉ lệ ảnh: 16:9 (ảnh bìa website)
+- Góc máy: ngang tầm mắt, hơi chếch 3/4 để thấy rõ người và xe
+- Độ ưu tiên: gương mặt thân thiện, xe sạch, văn phòng chuyên nghiệp, cảm giác đáng tin cậy
+
+Negative prompt (nếu công cụ hỗ trợ): blurry, low quality, cartoon, anime, deformed hands, extra fingers, distorted face, noisy background, typo text, watermark, oversaturated colors.
