@@ -1,15 +1,28 @@
 ﻿<style>
-    /* Màu gốc: #091A4D — ta chọn màu sáng hơn / h4 a, h4 a span { color: #2B5CAA; / màu chữ sáng hơn, giữ tông xanh dương */
-    text-decoration: underline; font-weight: 600; transition: color 0.18s ease, transform 0.12s ease;
-    }
-    </p >
-    <p >/* Khi hover / focus để nổi bật hơn / h4 a:hover, h4 a:focus, h4 a span:hover, h4 a span:focus { color: #1746D1; / nhạt hơn khi hover để nổi bật */ transform: translateY(-1px); text-decoration: none;
+    /* Chứng nhận - Tiêu đề và link chi tiết */
+    h4 a, h4 a span {
+        color: #2B5CAA;
+        text-decoration: underline;
+        font-weight: 600;
+        transition: color 0.18s ease, transform 0.12s ease;
     }
 
-    </p >
-    <p >/* Nếu muốn chỉ thay đổi phần "Nhấn xem chi tiết" (nếu có lớp cụ thể) */ h4 a .read-more {
+    /* Hover - nổi bật hơn */
+    h4 a:hover, 
+    h4 a:focus, 
+    h4 a span:hover, 
+    h4 a span:focus {
+        color: #1746D1;
+        transform: translateY(-1px);
+        text-decoration: none;
+    }
+
+    /* Phần "Nhấn xem chi tiết" */
+    h4 a .read-more,
+    h4 a span.read-more {
         color: #2B5CAA;
         font-weight: 600;
+        text-decoration: underline;
     }
 
     h4 a span.read-more:hover {
@@ -18,7 +31,6 @@
 
     .read-more {
         text-decoration: underline;
-        
     }
 </style>
 <h3>Chứng nhận của Công ty TNHH Dụng Cụ An Mi</h3>
