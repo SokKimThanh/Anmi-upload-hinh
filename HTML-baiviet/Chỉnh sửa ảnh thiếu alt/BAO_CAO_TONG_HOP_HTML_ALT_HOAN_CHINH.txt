@@ -1,0 +1,710 @@
+BAO CAO TONG HOP HTML VA ANH THIEU ALT
+Ngay tao: 2026-05-07 09:29:56
+
+I. PHAM VI QUET
+ - Sản phẩm
+ - Menu-Contact
+ - Giải pháp theo ngành
+ - Tải về
+ - Tin tức và truyền thông
+ - trang chu
+ - Tuyển dụng nhân viên
+ - Về chúng tôi
+
+II. THONG KE
+ - Tong file HTML/HTM: 123
+ - File trong thu muc SEO WEBSITE: 28
+ - File trong thu muc SEO HTML: 68
+ - So file co anh can sua alt: 7
+ - Tong anh can sua alt: 10
+
+III. DANH SACH FILE HTML THEO THU MUC
+
+[Giải pháp theo ngành/oto-xemay] - 2 file
+ - html-cbn-dungcu-oto-xemay.html
+ - html-pcd-dung-oto-xemay.html
+
+[Menu-Contact] - 1 file
+ - menu-contact.html
+
+[Sản phẩm/Dụng cụ ghép mảnh/Mảnh MCD CVD] - 4 file
+ - dao-phay-cau-loi-mcd.html
+ - dao-phay-cau-lom-mcd-cvd.html
+ - dao-phay-mot-luoi-cat-mcd-cvd.html
+ - dao-phay-vat-mep-mcd.html
+
+[Sản phẩm/Dụng cụ ghép mảnh/Mảnh PCD/Mảnh Dao PCD IDAPKT Series] - 2 file
+ - Mảnh Dao PCD IDAPKT Series - Hình Chữ Nhật Góc Cắt Tam Giác.html
+ - Mảnh Dao PCD IDCCGW Series - Kim Cương Góc 80° (4 Biến Thể).html
+
+[Sản phẩm/Dụng cụ ghép mảnh/seo backend/seo html] - 14 file
+ - 01-sekt12t3-fm451.seo.html
+ - 02-odmt0605-fm454.seo.html
+ - 03-snmx1306-fm452.seo.html
+ - 04-snmx1306e-fm752.seo.html
+ - 05-snmx1306z-fm882.seo.html
+ - 06-onmu-fm453.seo.html
+ - 07-apmt-fm901.seo.html
+ - 08-bxkt11t3-fm901f.seo.html
+ - 09-tngx1306-fm902.seo.html
+ - 10-wnmx-fm903.seo.html
+ - 11-lngx1306-fm904.seo.html
+ - 12-sdkt13t3-fm905.seo.html
+ - 13-rpmw1003-rm01.seo.html
+ - 14-pdmt1305-hm192.seo.html
+
+[Sản phẩm/Dụng cụ liền khối/Dao đánh bavia/Seo website] - 28 file
+ - 01-carbide-burr-la-gi.html
+ - 02-so-sanh-cac-loai-carbide-burr.html
+ - 03-huong-dan-chon-carbide-burr.html
+ - 04-double-cut-carbide-burr.html
+ - 05-single-cut-carbide-burr.html
+ - 06-aluminium-cut-carbide-burr.html
+ - 07-fine-cut-carbide-burr.html
+ - 08-diamond-cut-carbide-burr.html
+ - 09-coarse-cut-carbide-burr.html
+ - 10-chip-breaker-cut-carbide-burr.html
+ - 11-carbide-burr-type-a-dang-tru.html
+ - 12-carbide-burr-type-b-tru-co-dau-cat.html
+ - 13-carbide-burr-type-c-tru-mui-cau.html
+ - 14-carbide-burr-type-d-dang-cau.html
+ - 15-carbide-burr-type-e-dang-oval.html
+ - 16-carbide-burr-type-f-cay-mui-cau.html
+ - 17-carbide-burr-type-g-cay-nhon.html
+ - 18-carbide-burr-type-h-dang-ngon-lua.html
+ - 19-carbide-burr-type-j-vat-mep-60-do.html
+ - 20-carbide-burr-type-k-vat-mep-90-do.html
+ - 21-carbide-burr-type-l-non-mui-cau.html
+ - 22-carbide-burr-type-m-dang-non.html
+ - 23-carbide-burr-type-n-non-nguoc.html
+ - 24-carbide-burr-gia-cong-thep.html
+ - 25-carbide-burr-gia-cong-inox.html
+ - 26-carbide-burr-gia-cong-nhom.html
+ - 27-carbide-burr-xu-ly-diem-han.html
+ - 28-carbide-burr-vat-mep-loai-bo-bavia.html
+
+[Sản phẩm/Giải pháp ngành 3c] - 1 file
+ - OneFluteEndmill.html
+
+[Sản phẩm/Hệ thống gá kẹp, cán dao/plugins/anmi-banner-video/assets/css] - 1 file
+ - full.html
+
+[Sản phẩm/Hệ thống gá kẹp, cán dao/seo back end/seo html] - 49 file
+ - 01-bt-sk-high-speed-tool-holder.seo.html
+ - 02-bt-ger-high-speed-er-collet-chuck.seo.html
+ - 03-bt-hger-high-speed-er-collet-chuck.seo.html
+ - 04-bt-er-collet-chuck-standard.seo.html
+ - 05-bt-c-power-chuck-tool-holder.seo.html
+ - 06-bt-oz-heavy-duty-tool-holder.seo.html
+ - 07-bt-apu-drill-chuck-holder.seo.html
+ - 08-bt-fma-face-milling-arbor.seo.html
+ - 09-bt-fmb-face-milling-arbor.seo.html
+ - 10-bt-sla-weldon-tool-holder.seo.html
+ - 11-bt-mta-morse-taper-pull-stud.seo.html
+ - 12-bt-mtb-morse-taper-nut.seo.html
+ - 12-bt-slo-ero-oil-feed-tool-holder.seo.html
+ - 13-bt-sdc-high-precision-tool-holder.seo.html
+ - 13-bt-slo-oil-feed-side-lock.seo.html
+ - 14-bt-ero-oil-feed-er-collet.seo.html
+ - 14-bt-sr-shrink-fit-chuck.seo.html
+ - 15-bt-hs-hydraulic-chuck.seo.html
+ - 16-hsk-er-high-speed-tool-holder.seo.html
+ - 17-hsk-gsk-ultra-precision-tool-holder.seo.html
+ - 18-hsk-sr-shrink-fit-tool-holder.seo.html
+ - 19-hsk-hs-hydraulic-tool-holder.seo.html
+ - 20-hsk-fmb-face-milling-arbor.seo.html
+ - 21-hsk-sla-weldon-tool-holder.seo.html
+ - 22-hsk-apu-drill-chuck-holder.seo.html
+ - 23-hsk-c-power-chuck-holder.seo.html
+ - 24-bt-tension-compression-tapping-holder.seo.html
+ - 25-nbh2084-micro-boring-system.seo.html
+ - 26-nbj16-micro-boring-system.seo.html
+ - 27-ewn-micro-boring-head.seo.html
+ - 28-rbh-adjustable-rough-boring-head.seo.html
+ - 29-cbh-large-diameter-fine-boring-head.seo.html
+ - 30-cbs-angle-boring-tool.seo.html
+ - 31-sb-fixed-diameter-boring-cutter.seo.html
+ - 32-gc-fixed-diameter-boring-cutter.seo.html
+ - 33-ck-lbk-modular-boring-bar.seo.html
+ - 34-tck-bst-twin-blade-boring-system.seo.html
+ - 35-bt-rigid-tapping-tool-holder.seo.html
+ - 36-mta-mtb-morse-taper-floating-tapping-holder.seo.html
+ - 37-cat-tool-holder-system.seo.html
+ - 38-er-high-precision-collet.seo.html
+ - 38-nt-tool-holder-system.seo.html
+ - 39-mas-bt-mazak-tool-holder.seo.html
+ - 39-sk-high-precision-collet.seo.html
+ - 40-tool-holder-maintenance-guide.seo.html
+ - 41-bt-er-extension-holder.seo.html
+ - 42-ewe-digital-boring-head.seo.html
+ - 43-ewb-round-bit-boring-head.seo.html
+ - 44-accessories-tooling-support.seo.html
+
+[Tin tức và truyền thông/Báo chí/HopTacDungCuCat] - 1 file
+ - hop-tac-truongcokhioto-anmi.html
+
+[Tin tức và truyền thông/Báo chí/PhongThiNghiemDungCuCatChinhXacAnmi/seo backend/seo html] - 1 file
+ - 01-phong-thi-nghiem-dung-cu-cat-chinh-xac-an-mi-hcmute.seo.html
+
+[Tin tức và truyền thông/Chứng nhận] - 1 file
+ - code-danhmuc-chungnhan.html
+
+[Tin tức và truyền thông/Tin nội bộ/Hợp tác với trường SPKT HCM] - 3 file
+ - anmi-spkt-cooperation.html
+ - hoptac-anmi-dhspkt-tphcm-en.html
+ - hoptac-anmi-dhspkt-tphcm.html
+
+[Tin tức và truyền thông/Tin truyền thông/Công thương TV mở rộng sản phẩm cơ khí] - 1 file
+ - mo-rong-thi-truong-san-pham-co-khi-an-mi-tools-vtv1.html
+
+[Tin tức và truyền thông/Tin truyền thông/Lễ tôn vinh và trao danh hiệu sản phẩm cn chủ lực tphn 2025] - 1 file
+ - Le-ton-vinh-va-trao-danh-hieu-san-pham-cn-chu-luc-tphn-2025.html
+
+[Tin tức và truyền thông/Tin truyền thông/Year end party] - 2 file
+ - year-end-party-an-mi-tool.html
+ - year-end-party-có nội dung của các bài viết khác.html
+
+[trang chu] - 1 file
+ - dichvu.html
+
+[trang chu/DichVu] - 1 file
+ - dichvu.html
+
+[Tuyển dụng nhân viên/TuyenNhanVienBanHang/Back end seo query/thanh-toan] - 2 file
+ - hoa-don-ANMI-2026-0309-01-DA-THANH-TOAN.html
+ - hoa-don-ANMI-2026-0309-01.html
+
+[Tuyển dụng nhân viên/TuyenNhanVienBanHang/Bài viết tuyển dụng] - 2 file
+ - tuyen-dung-nhan-vien-kinh-doanh-ky-thuat.html
+ - tuyen-dung-tro-ly-ban-hang.html
+
+[Tuyển dụng nhân viên/TuyenTaiXeGiamDoc] - 1 file
+ - TuyenTaixegiamdoc.html
+
+[Tải về/Catalog/seo html/Anmi] - 2 file
+ - anmi-tools-en.html
+ - anmi-tools.html
+
+[Tải về/Catalog/seo html/dormer-phramet] - 1 file
+ - dormer-phramet.html
+
+[Tải về/Catalog/seo html/korloy] - 1 file
+ - korloy.html
+
+IV. DANH SACH ANH CAN SUA ALT
+
+[Sản phẩm/Dụng cụ ghép mảnh/Mảnh MCD CVD/dao-phay-mot-luoi-cat-mcd-cvd.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/09/DaoPhayMCDVCDw1000transparent.webp | alt rong
+
+[Sản phẩm/Dụng cụ ghép mảnh/Mảnh PCD/Mảnh Dao PCD IDAPKT Series/Mảnh Dao PCD IDAPKT Series - Hình Chữ Nhật Góc Cắt Tam Giác.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDAPKT160402-1024x853.webp | alt rong
+
+[Sản phẩm/Dụng cụ ghép mảnh/Mảnh PCD/Mảnh Dao PCD IDAPKT Series/Mảnh Dao PCD IDCCGW Series - Kim Cương Góc 80° (4 Biến Thể).html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDCCGW09T302-NoTitle.webp | alt rong
+
+[Sản phẩm/Hệ thống gá kẹp, cán dao/seo back end/seo html/38-nt-tool-holder-system.seo.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/nt-tool-holder.webp | alt rong
+
+[Tin tức và truyền thông/Tin nội bộ/Hợp tác với trường SPKT HCM/hoptac-anmi-dhspkt-tphcm.html] - 4 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/09/01-1.jpg | alt rong
+ - #2 | https://anmitools.com/wp-content/uploads/2025/09/02-1.jpg | alt rong
+ - #3 | https://anmitools.com/wp-content/uploads/2025/09/03-1.jpg | alt rong
+ - #4 | https://anmitools.com/wp-content/uploads/2025/09/04-1.jpg | alt rong
+
+[trang chu/dichvu.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp | alt rong
+
+[trang chu/DichVu/dichvu.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp | alt rong
+
+V. NOI DUNG GOM TU BAO CAO TRUOC
+
+----- BAT DAU FILE: Danh_sach_anh_thieu_alt_TOAN_DIEN.txt -----
+==========================================================================================
+BÁOCÁO TOÀN DIỆN - SCAN ẢNH THIẾU ALT TEXT
+==========================================================================================
+Ngày tạo: 2026-05-07 09:20:59
+Phạm vi: Tất cả thư mục con (bao gồm thư mục 'seo html' sâu)
+
+📊 THỐNG KÊ TỔNG QUAN:
+   • Tổng file HTML scanned: 123
+   • Tổng ảnh trong tất cả HTML: 639
+   • File HTML có ảnh cần sửa: 7
+   • Tổng ảnh cần sửa: 10
+
+🔧 THỐNG KÊ SỬA CHỮA:
+   • File 'seo html' cần sửa: 1
+   • Ảnh trong 'seo html' cần sửa: 1
+
+==========================================================================================
+
+🔴 THỨ NHẤT - THỨ MỤC 'SEO HTML' (ưu tiên cao)
+------------------------------------------------------------------------------------------
+
+[1] 📄 Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\38-nt-tool-holder-system.seo.html
+     Ảnh cần sửa: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/nt-tool-holder.webp
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+------------------------------------------------------------------------------------------
+
+🟡 THỨ HAI - CÁC FILE KHÁC
+------------------------------------------------------------------------------------------
+
+[1] 📄 Sản phẩm\Dụng cụ ghép mảnh\Mảnh MCD CVD\dao-phay-mot-luoi-cat-mcd-cvd.html
+     Ảnh cần sửa: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/DaoPhayMCDVCDw1000transparent.webp
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+------------------------------------------------------------------------------------------
+
+[2] 📄 Sản phẩm\Dụng cụ ghép mảnh\Mảnh PCD\Mảnh Dao PCD IDAPKT Series\Mảnh Dao PCD IDAPKT Series - Hình Chữ Nhật Góc Cắt Tam Giác.html
+     Ảnh cần sửa: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDAPKT160402-1024x853.webp
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+------------------------------------------------------------------------------------------
+
+[3] 📄 Sản phẩm\Dụng cụ ghép mảnh\Mảnh PCD\Mảnh Dao PCD IDAPKT Series\Mảnh Dao PCD IDCCGW Series - Kim Cương Góc 80° (4 Biến Thể).html
+     Ảnh cần sửa: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDCCGW09T302-NoTitle.webp
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+------------------------------------------------------------------------------------------
+
+[4] 📄 Tin tức và truyền thông\Tin nội bộ\Hợp tác với trường SPKT HCM\hoptac-anmi-dhspkt-tphcm.html
+     Ảnh cần sửa: 4
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/01-1.jpg
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+     ✗ Ảnh #2
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/02-1.jpg
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+     ✗ Ảnh #3
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/03-1.jpg
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+     ✗ Ảnh #4
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/04-1.jpg
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+------------------------------------------------------------------------------------------
+
+[5] 📄 trang chu\DichVu\dichvu.html
+     Ảnh cần sửa: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+------------------------------------------------------------------------------------------
+
+[6] 📄 trang chu\dichvu.html
+     Ảnh cần sửa: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp
+       ⚠️  Alt: alt="" (rỗng - cần bổ sung)
+
+------------------------------------------------------------------------------------------
+----- KET THUC FILE: Danh_sach_anh_thieu_alt_TOAN_DIEN.txt -----
+
+----- BAT DAU FILE: Danh_sach_file_html_theo_thu_muc.txt -----
+﻿DANH SACH FILE HTML/HTM THEO THU MUC
+Ngay tao: 2026-05-07 09:24:15
+Tong so file: 123
+So file trong thu muc SEO WEBSITE: 28
+So file trong thu muc SEO HTML: 68
+
+=== CAC THU MUC CHUA HTML ===
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Giải pháp theo ngành\oto-xemay] - 2 file
+ - html-cbn-dungcu-oto-xemay.html
+ - html-pcd-dung-oto-xemay.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Menu-Contact] - 1 file
+ - menu-contact.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\Mảnh MCD CVD] - 4 file
+ - dao-phay-cau-loi-mcd.html
+ - dao-phay-cau-lom-mcd-cvd.html
+ - dao-phay-mot-luoi-cat-mcd-cvd.html
+ - dao-phay-vat-mep-mcd.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\Mảnh PCD\Mảnh Dao PCD IDAPKT Series] - 2 file
+ - Mảnh Dao PCD IDAPKT Series - Hình Chữ Nhật Góc Cắt Tam Giác.html
+ - Mảnh Dao PCD IDCCGW Series - Kim Cương Góc 80° (4 Biến Thể).html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html] - 14 file
+ - 01-sekt12t3-fm451.seo.html
+ - 02-odmt0605-fm454.seo.html
+ - 03-snmx1306-fm452.seo.html
+ - 04-snmx1306e-fm752.seo.html
+ - 05-snmx1306z-fm882.seo.html
+ - 06-onmu-fm453.seo.html
+ - 07-apmt-fm901.seo.html
+ - 08-bxkt11t3-fm901f.seo.html
+ - 09-tngx1306-fm902.seo.html
+ - 10-wnmx-fm903.seo.html
+ - 11-lngx1306-fm904.seo.html
+ - 12-sdkt13t3-fm905.seo.html
+ - 13-rpmw1003-rm01.seo.html
+ - 14-pdmt1305-hm192.seo.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website] - 28 file
+ - 01-carbide-burr-la-gi.html
+ - 02-so-sanh-cac-loai-carbide-burr.html
+ - 03-huong-dan-chon-carbide-burr.html
+ - 04-double-cut-carbide-burr.html
+ - 05-single-cut-carbide-burr.html
+ - 06-aluminium-cut-carbide-burr.html
+ - 07-fine-cut-carbide-burr.html
+ - 08-diamond-cut-carbide-burr.html
+ - 09-coarse-cut-carbide-burr.html
+ - 10-chip-breaker-cut-carbide-burr.html
+ - 11-carbide-burr-type-a-dang-tru.html
+ - 12-carbide-burr-type-b-tru-co-dau-cat.html
+ - 13-carbide-burr-type-c-tru-mui-cau.html
+ - 14-carbide-burr-type-d-dang-cau.html
+ - 15-carbide-burr-type-e-dang-oval.html
+ - 16-carbide-burr-type-f-cay-mui-cau.html
+ - 17-carbide-burr-type-g-cay-nhon.html
+ - 18-carbide-burr-type-h-dang-ngon-lua.html
+ - 19-carbide-burr-type-j-vat-mep-60-do.html
+ - 20-carbide-burr-type-k-vat-mep-90-do.html
+ - 21-carbide-burr-type-l-non-mui-cau.html
+ - 22-carbide-burr-type-m-dang-non.html
+ - 23-carbide-burr-type-n-non-nguoc.html
+ - 24-carbide-burr-gia-cong-thep.html
+ - 25-carbide-burr-gia-cong-inox.html
+ - 26-carbide-burr-gia-cong-nhom.html
+ - 27-carbide-burr-xu-ly-diem-han.html
+ - 28-carbide-burr-vat-mep-loai-bo-bavia.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Giải pháp ngành 3c] - 1 file
+ - OneFluteEndmill.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\plugins\anmi-banner-video\assets\css] - 1 file
+ - full.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html] - 49 file
+ - 01-bt-sk-high-speed-tool-holder.seo.html
+ - 02-bt-ger-high-speed-er-collet-chuck.seo.html
+ - 03-bt-hger-high-speed-er-collet-chuck.seo.html
+ - 04-bt-er-collet-chuck-standard.seo.html
+ - 05-bt-c-power-chuck-tool-holder.seo.html
+ - 06-bt-oz-heavy-duty-tool-holder.seo.html
+ - 07-bt-apu-drill-chuck-holder.seo.html
+ - 08-bt-fma-face-milling-arbor.seo.html
+ - 09-bt-fmb-face-milling-arbor.seo.html
+ - 10-bt-sla-weldon-tool-holder.seo.html
+ - 11-bt-mta-morse-taper-pull-stud.seo.html
+ - 12-bt-mtb-morse-taper-nut.seo.html
+ - 12-bt-slo-ero-oil-feed-tool-holder.seo.html
+ - 13-bt-sdc-high-precision-tool-holder.seo.html
+ - 13-bt-slo-oil-feed-side-lock.seo.html
+ - 14-bt-ero-oil-feed-er-collet.seo.html
+ - 14-bt-sr-shrink-fit-chuck.seo.html
+ - 15-bt-hs-hydraulic-chuck.seo.html
+ - 16-hsk-er-high-speed-tool-holder.seo.html
+ - 17-hsk-gsk-ultra-precision-tool-holder.seo.html
+ - 18-hsk-sr-shrink-fit-tool-holder.seo.html
+ - 19-hsk-hs-hydraulic-tool-holder.seo.html
+ - 20-hsk-fmb-face-milling-arbor.seo.html
+ - 21-hsk-sla-weldon-tool-holder.seo.html
+ - 22-hsk-apu-drill-chuck-holder.seo.html
+ - 23-hsk-c-power-chuck-holder.seo.html
+ - 24-bt-tension-compression-tapping-holder.seo.html
+ - 25-nbh2084-micro-boring-system.seo.html
+ - 26-nbj16-micro-boring-system.seo.html
+ - 27-ewn-micro-boring-head.seo.html
+ - 28-rbh-adjustable-rough-boring-head.seo.html
+ - 29-cbh-large-diameter-fine-boring-head.seo.html
+ - 30-cbs-angle-boring-tool.seo.html
+ - 31-sb-fixed-diameter-boring-cutter.seo.html
+ - 32-gc-fixed-diameter-boring-cutter.seo.html
+ - 33-ck-lbk-modular-boring-bar.seo.html
+ - 34-tck-bst-twin-blade-boring-system.seo.html
+ - 35-bt-rigid-tapping-tool-holder.seo.html
+ - 36-mta-mtb-morse-taper-floating-tapping-holder.seo.html
+ - 37-cat-tool-holder-system.seo.html
+ - 38-er-high-precision-collet.seo.html
+ - 38-nt-tool-holder-system.seo.html
+ - 39-mas-bt-mazak-tool-holder.seo.html
+ - 39-sk-high-precision-collet.seo.html
+ - 40-tool-holder-maintenance-guide.seo.html
+ - 41-bt-er-extension-holder.seo.html
+ - 42-ewe-digital-boring-head.seo.html
+ - 43-ewb-round-bit-boring-head.seo.html
+ - 44-accessories-tooling-support.seo.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tải về\Catalog\seo html\Anmi] - 2 file
+ - anmi-tools.html
+ - anmi-tools-en.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tải về\Catalog\seo html\dormer-phramet] - 1 file
+ - dormer-phramet.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tải về\Catalog\seo html\korloy] - 1 file
+ - korloy.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tin tức và truyền thông\Báo chí\HopTacDungCuCat] - 1 file
+ - hop-tac-truongcokhioto-anmi.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tin tức và truyền thông\Báo chí\PhongThiNghiemDungCuCatChinhXacAnmi\seo backend\seo html] - 1 file
+ - 01-phong-thi-nghiem-dung-cu-cat-chinh-xac-an-mi-hcmute.seo.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tin tức và truyền thông\Chứng nhận] - 1 file
+ - code-danhmuc-chungnhan.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tin tức và truyền thông\Tin nội bộ\Hợp tác với trường SPKT HCM] - 3 file
+ - anmi-spkt-cooperation.html
+ - hoptac-anmi-dhspkt-tphcm.html
+ - hoptac-anmi-dhspkt-tphcm-en.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tin tức và truyền thông\Tin truyền thông\Công thương TV mở rộng sản phẩm cơ khí] - 1 file
+ - mo-rong-thi-truong-san-pham-co-khi-an-mi-tools-vtv1.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tin tức và truyền thông\Tin truyền thông\Lễ tôn vinh và trao danh hiệu sản phẩm cn chủ lực tphn 2025] - 1 file
+ - Le-ton-vinh-va-trao-danh-hieu-san-pham-cn-chu-luc-tphn-2025.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tin tức và truyền thông\Tin truyền thông\Year end party] - 2 file
+ - year-end-party-an-mi-tool.html
+ - year-end-party-có nội dung của các bài viết khác.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\trang chu] - 1 file
+ - dichvu.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\trang chu\DichVu] - 1 file
+ - dichvu.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tuyển dụng nhân viên\TuyenNhanVienBanHang\Back end seo query\thanh-toan] - 2 file
+ - hoa-don-ANMI-2026-0309-01.html
+ - hoa-don-ANMI-2026-0309-01-DA-THANH-TOAN.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tuyển dụng nhân viên\TuyenNhanVienBanHang\Bài viết tuyển dụng] - 2 file
+ - tuyen-dung-nhan-vien-kinh-doanh-ky-thuat.html
+ - tuyen-dung-tro-ly-ban-hang.html
+
+[H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tuyển dụng nhân viên\TuyenTaiXeGiamDoc] - 1 file
+ - TuyenTaixegiamdoc.html
+
+=== RIENG SEO WEBSITE ===
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\01-carbide-burr-la-gi.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\02-so-sanh-cac-loai-carbide-burr.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\03-huong-dan-chon-carbide-burr.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\04-double-cut-carbide-burr.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\05-single-cut-carbide-burr.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\06-aluminium-cut-carbide-burr.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\07-fine-cut-carbide-burr.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\08-diamond-cut-carbide-burr.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\09-coarse-cut-carbide-burr.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\10-chip-breaker-cut-carbide-burr.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\11-carbide-burr-type-a-dang-tru.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\12-carbide-burr-type-b-tru-co-dau-cat.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\13-carbide-burr-type-c-tru-mui-cau.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\14-carbide-burr-type-d-dang-cau.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\15-carbide-burr-type-e-dang-oval.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\16-carbide-burr-type-f-cay-mui-cau.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\17-carbide-burr-type-g-cay-nhon.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\18-carbide-burr-type-h-dang-ngon-lua.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\19-carbide-burr-type-j-vat-mep-60-do.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\20-carbide-burr-type-k-vat-mep-90-do.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\21-carbide-burr-type-l-non-mui-cau.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\22-carbide-burr-type-m-dang-non.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\23-carbide-burr-type-n-non-nguoc.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\24-carbide-burr-gia-cong-thep.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\25-carbide-burr-gia-cong-inox.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\26-carbide-burr-gia-cong-nhom.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\27-carbide-burr-xu-ly-diem-han.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ liền khối\Dao đánh bavia\Seo website\28-carbide-burr-vat-mep-loai-bo-bavia.html
+
+=== RIENG SEO HTML ===
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\01-sekt12t3-fm451.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\02-odmt0605-fm454.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\03-snmx1306-fm452.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\04-snmx1306e-fm752.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\05-snmx1306z-fm882.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\06-onmu-fm453.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\07-apmt-fm901.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\08-bxkt11t3-fm901f.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\09-tngx1306-fm902.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\10-wnmx-fm903.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\11-lngx1306-fm904.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\12-sdkt13t3-fm905.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\13-rpmw1003-rm01.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Dụng cụ ghép mảnh\seo backend\seo html\14-pdmt1305-hm192.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\01-bt-sk-high-speed-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\02-bt-ger-high-speed-er-collet-chuck.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\03-bt-hger-high-speed-er-collet-chuck.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\04-bt-er-collet-chuck-standard.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\05-bt-c-power-chuck-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\06-bt-oz-heavy-duty-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\07-bt-apu-drill-chuck-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\08-bt-fma-face-milling-arbor.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\09-bt-fmb-face-milling-arbor.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\10-bt-sla-weldon-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\11-bt-mta-morse-taper-pull-stud.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\12-bt-mtb-morse-taper-nut.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\12-bt-slo-ero-oil-feed-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\13-bt-sdc-high-precision-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\13-bt-slo-oil-feed-side-lock.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\14-bt-ero-oil-feed-er-collet.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\14-bt-sr-shrink-fit-chuck.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\15-bt-hs-hydraulic-chuck.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\16-hsk-er-high-speed-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\17-hsk-gsk-ultra-precision-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\18-hsk-sr-shrink-fit-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\19-hsk-hs-hydraulic-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\20-hsk-fmb-face-milling-arbor.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\21-hsk-sla-weldon-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\22-hsk-apu-drill-chuck-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\23-hsk-c-power-chuck-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\24-bt-tension-compression-tapping-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\25-nbh2084-micro-boring-system.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\26-nbj16-micro-boring-system.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\27-ewn-micro-boring-head.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\28-rbh-adjustable-rough-boring-head.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\29-cbh-large-diameter-fine-boring-head.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\30-cbs-angle-boring-tool.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\31-sb-fixed-diameter-boring-cutter.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\32-gc-fixed-diameter-boring-cutter.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\33-ck-lbk-modular-boring-bar.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\34-tck-bst-twin-blade-boring-system.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\35-bt-rigid-tapping-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\36-mta-mtb-morse-taper-floating-tapping-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\37-cat-tool-holder-system.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\38-er-high-precision-collet.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\38-nt-tool-holder-system.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\39-mas-bt-mazak-tool-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\39-sk-high-precision-collet.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\40-tool-holder-maintenance-guide.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\41-bt-er-extension-holder.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\42-ewe-digital-boring-head.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\43-ewb-round-bit-boring-head.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\44-accessories-tooling-support.seo.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tải về\Catalog\seo html\Anmi\anmi-tools.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tải về\Catalog\seo html\Anmi\anmi-tools-en.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tải về\Catalog\seo html\dormer-phramet\dormer-phramet.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tải về\Catalog\seo html\korloy\korloy.html
+ - H:\Dự Án bảo trì phần mềm website\Anmi-upload-hinh\HTML-baiviet\Tin tức và truyền thông\Báo chí\PhongThiNghiemDungCuCatChinhXacAnmi\seo backend\seo html\01-phong-thi-nghiem-dung-cu-cat-chinh-xac-an-mi-hcmute.seo.html
+----- KET THUC FILE: Danh_sach_file_html_theo_thu_muc.txt -----
+
+----- BAT DAU FILE: Chỉnh sửa ảnh thiếu alt/Danh_sach_anh_thieu_alt.txt -----
+================================================================================
+DANH SÁCH CÁC FILE HTML CHỨA LINK ẢNH KHÔNG CÓ ALT TEXT
+================================================================================
+Ngày tạo: 2026-05-07 09:00:32
+
+📋 THỐNG KÊ:
+   - Tổng file HTML có ảnh cần chỉnh sửa: 7
+   - Tổng số ảnh cần chỉnh sửa: 10
+
+================================================================================
+
+[1] 📄 FILE: Sản phẩm\Dụng cụ ghép mảnh\Mảnh MCD CVD\dao-phay-mot-luoi-cat-mcd-cvd.html
+     Số ảnh cần chỉnh: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/DaoPhayMCDVCDw1000transparent.webp
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="aligncenter wp-image-3664" src="https://anmitools.com/wp-content/uploads/2025/09/DaoPhayMCDVCDw1000transparent.webp" alt="" width="296" he...
+
+--------------------------------------------------------------------------------
+
+[2] 📄 FILE: Sản phẩm\Dụng cụ ghép mảnh\Mảnh PCD\Mảnh Dao PCD IDAPKT Series\Mảnh Dao PCD IDAPKT Series - Hình Chữ Nhật Góc Cắt Tam Giác.html
+     Số ảnh cần chỉnh: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDAPKT160402-1024x853.webp
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="aligncenter size-large wp-image-3756" src="https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDAPKT160402-1024x853.webp" a...
+
+--------------------------------------------------------------------------------
+
+[3] 📄 FILE: Sản phẩm\Dụng cụ ghép mảnh\Mảnh PCD\Mảnh Dao PCD IDAPKT Series\Mảnh Dao PCD IDCCGW Series - Kim Cương Góc 80° (4 Biến Thể).html
+     Số ảnh cần chỉnh: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDCCGW09T302-NoTitle.webp
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="aligncenter size-full wp-image-3763" src="https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDCCGW09T302-NoTitle.webp" alt...
+
+--------------------------------------------------------------------------------
+
+[4] 📄 FILE: Sản phẩm\Hệ thống gá kẹp, cán dao\seo back end\seo html\38-nt-tool-holder-system.seo.html
+     Số ảnh cần chỉnh: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/nt-tool-holder.webp
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="aligncenter size-full wp-image-4425" src="https://anmitools.com/wp-content/uploads/2025/10/nt-tool-holder.webp" alt="" width="1000" height...
+
+--------------------------------------------------------------------------------
+
+[5] 📄 FILE: Tin tức và truyền thông\Tin nội bộ\Hợp tác với trường SPKT HCM\hoptac-anmi-dhspkt-tphcm.html
+     Số ảnh cần chỉnh: 4
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/01-1.jpg
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="aligncenter size-full wp-image-3707" src="https://anmitools.com/wp-content/uploads/2025/09/01-1.jpg" alt="" width="2048" height="1536" />...
+
+     ✗ Ảnh #2
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/02-1.jpg
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="aligncenter size-full wp-image-3708" src="https://anmitools.com/wp-content/uploads/2025/09/02-1.jpg" alt="" width="2048" height="1536" />...
+
+     ✗ Ảnh #3
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/03-1.jpg
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="aligncenter size-full wp-image-3709" src="https://anmitools.com/wp-content/uploads/2025/09/03-1.jpg" alt="" width="2048" height="1536" />...
+
+     ✗ Ảnh #4
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/09/04-1.jpg
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="aligncenter size-full wp-image-3710" src="https://anmitools.com/wp-content/uploads/2025/09/04-1.jpg" alt="" width="2048" height="1536" />...
+
+--------------------------------------------------------------------------------
+
+[6] 📄 FILE: trang chu\DichVu\dichvu.html
+     Số ảnh cần chỉnh: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="img-fluid rounded" src="https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp" alt="" />
+
+--------------------------------------------------------------------------------
+
+[7] 📄 FILE: trang chu\dichvu.html
+     Số ảnh cần chỉnh: 1
+
+     ✗ Ảnh #1
+       📷 URL: https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp
+       ⚠️  Alt hiện tại: alt="" (rỗng, cần bổ sung)
+       HTML: <img class="img-fluid rounded" src="https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp" alt="" />
+
+--------------------------------------------------------------------------------
+----- KET THUC FILE: Chỉnh sửa ảnh thiếu alt/Danh_sach_anh_thieu_alt.txt -----
+
+----- BAT DAU FILE: Chỉnh sửa ảnh thiếu alt/chỉnh sửa ảnh thiếu alt.txt -----
+----- KET THUC FILE: Chỉnh sửa ảnh thiếu alt/chỉnh sửa ảnh thiếu alt.txt -----
+
+VI. KIEM TRA DOI CHIEU LAN 2 (HTML PARSER)
+ - File doi chieu: Chỉnh sửa ảnh thiếu alt/KIEM_TRA_LAN_2_HTMLPARSER.txt
+ - Tong file HTML/HTM da quet: 123
+ - So file co anh thieu alt/alt rong: 7
+ - Tong so anh thieu alt/alt rong: 10
+ - Ket luan: Ket qua doi chieu LAN 2 TRUNG KHOP voi bao cao tong hop.

@@ -1,0 +1,29 @@
+KIEM TRA LAN 2 BANG HTML PARSER
+Ngay tao: 2026-05-07 09:30:50
+Tong file HTML/HTM da quet: 123
+So file co anh thieu alt/alt rong: 7
+Tong so anh thieu alt/alt rong: 10
+
+[Sản phẩm/Dụng cụ ghép mảnh/Mảnh MCD CVD/dao-phay-mot-luoi-cat-mcd-cvd.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/09/DaoPhayMCDVCDw1000transparent.webp | ALT_RONG
+
+[Sản phẩm/Dụng cụ ghép mảnh/Mảnh PCD/Mảnh Dao PCD IDAPKT Series/Mảnh Dao PCD IDAPKT Series - Hình Chữ Nhật Góc Cắt Tam Giác.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDAPKT160402-1024x853.webp | ALT_RONG
+
+[Sản phẩm/Dụng cụ ghép mảnh/Mảnh PCD/Mảnh Dao PCD IDAPKT Series/Mảnh Dao PCD IDCCGW Series - Kim Cương Góc 80° (4 Biến Thể).html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDCCGW09T302-NoTitle.webp | ALT_RONG
+
+[Sản phẩm/Hệ thống gá kẹp, cán dao/seo back end/seo html/38-nt-tool-holder-system.seo.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/nt-tool-holder.webp | ALT_RONG
+
+[Tin tức và truyền thông/Tin nội bộ/Hợp tác với trường SPKT HCM/hoptac-anmi-dhspkt-tphcm.html] - 4 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/09/01-1.jpg | ALT_RONG
+ - #2 | https://anmitools.com/wp-content/uploads/2025/09/02-1.jpg | ALT_RONG
+ - #3 | https://anmitools.com/wp-content/uploads/2025/09/03-1.jpg | ALT_RONG
+ - #4 | https://anmitools.com/wp-content/uploads/2025/09/04-1.jpg | ALT_RONG
+
+[trang chu/dichvu.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp | ALT_RONG
+
+[trang chu/DichVu/dichvu.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp | ALT_RONG

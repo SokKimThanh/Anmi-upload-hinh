@@ -1,0 +1,25 @@
+﻿DANH SACH RIENG: FILE HTML VA ANH THIEU ALT
+Ngay tao: 2026-05-07 09:39:54
+Nguon: Chỉnh sửa ảnh thiếu alt/BAO_CAO_TONG_HOP_HTML_ALT_HOAN_CHINH.txt
+Thong ke:
+ - So file co anh thieu alt: 7
+ - Tong so anh thieu alt: 10
+
+
+chỉnh sửa xong [Sản phẩm/Dụng cụ ghép mảnh/Mảnh MCD CVD/dao-phay-mot-luoi-cat-mcd-cvd.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/09/DaoPhayMCDVCDw1000transparent.webp | alt rong
+chỉnh sửa xong [Sản phẩm/Dụng cụ ghép mảnh/Mảnh PCD/Mảnh Dao PCD IDAPKT Series/Mảnh Dao PCD IDAPKT Series - Hình Chữ Nhật Góc Cắt Tam Giác.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDAPKT160402-1024x853.webp | alt rong
+chỉnh sua hoan tat [Sản phẩm/Dụng cụ ghép mảnh/Mảnh PCD/Mảnh Dao PCD IDAPKT Series/Mảnh Dao PCD IDCCGW Series - Kim Cương Góc 80° (4 Biến Thể).html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/Manh-Dao-Cat-PCD-IDCCGW09T302-NoTitle.webp | alt rong
+chinh sua hoan tat [Sản phẩm/Hệ thống gá kẹp, cán dao/seo back end/seo html/38-nt-tool-holder-system.seo.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/nt-tool-holder.webp | alt rong
+[Tin tức và truyền thông/Tin nội bộ/Hợp tác với trường SPKT HCM/hoptac-anmi-dhspkt-tphcm.html] - 4 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/09/01-1.jpg | alt rong
+ - #2 | https://anmitools.com/wp-content/uploads/2025/09/02-1.jpg | alt rong
+ - #3 | https://anmitools.com/wp-content/uploads/2025/09/03-1.jpg | alt rong
+ - #4 | https://anmitools.com/wp-content/uploads/2025/09/04-1.jpg | alt rong
+[trang chu/dichvu.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp | alt rong
+[trang chu/DichVu/dichvu.html] - 1 anh
+ - #1 | https://anmitools.com/wp-content/uploads/2025/10/dichvu-danhbong-copy.webp | alt rong
